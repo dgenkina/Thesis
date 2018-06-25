@@ -1,0 +1,65 @@
+Thesis outline:
+
+
+Introduction
+	Usual BS about how cold atoms are well controlled and tunable and we can use them
+	to one day solve many body problems that are currently not solvable and engineer 
+	quantum systems that don't even exist elsewhere just for shits and giggles. 
+
+Chapter 1: BECs and DFGs intro 
+	Bose-Einstein Condesnation
+		Bose-Einstein distribution leading to phase transition
+		-- Figure: pictures of bimodal distribution from theory & expt
+		Brief overview of how we make BECs
+		Average number, density, size
+		-- Figure: images of in situ (partial transfer) BECs
+	Degenerate Fermi gas
+		Fermi-Dirac distribution leading to deviation from Maxwell-Boltzman (no phase transition)
+		Brief overview of how we made DFGs
+		Average number, density, size - contrast with BEC
+		Brief status report on 2-D MOT plans		
+	
+
+Chapter 2: Atom - light interactions
+	Absorbtion Imaging
+		Intro to absorption imaging
+		Time-of-flight
+	Optical lattices (1-D)
+		Full Hamiltonian
+		Tight binding approximation
+		Pulsed lattice (calibration)
+		-- Figure: a few images of lattice orders, plus fitted pulsing experiment
+		Adiabatically loaded lattice
+		-- Figure: adiabatically loaded lattice for different momenta
+	Rf and Raman coupling
+		Hyperfine structure
+		Hamiltonains
+		Gauge transformation for raman
+		Pulsed raman and rf
+		-- Figure: a few images of Raman and rf pulsing with SG, plus fitted calibration curves
+		Adiabatically loaded Raman and rf
+		-- Figure: pictures of adiabatically loaded Raman and rf
+
+Chapter 3: S-wave scattering experiment
+
+Chapter 4: Imaging simulation for s-wave scattering experiment
+
+
+Chapter 5: WTF is Chern number
+	Integral over the Berry curvature definition in infinite system
+	Bulk-edge correspondence in finite system
+	Quantum Hall effect (with/without disorder)
+	Hofstadter Butterfly
+	Flux per plaquette as phase
+	
+Chapter 6: Synthetic dimensions (first paper)
+	Lattice + Raman Hamiltonian
+	Effective magnetic field explanation
+	-- Figure: images of loaded 'bulk' and 'edge' states
+	
+
+Chapter 7: Synthetic dimensions (my paper)
+
+Appendix A: 
+
+Conclusion
