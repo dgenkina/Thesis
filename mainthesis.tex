@@ -17,7 +17,16 @@
 %\newcommand{\mydriver}{dvips} %Making a DVI and converting that to PS using dvips (may later be converted to PDF).
 %\newcommand{\mydriver}{dvipsone} %Making a DVI and converting that to PS using dvipsone (may later be converted to PDF).
 %\newcommand{\mydriver}{ps2pdf} %Same as the one for dvips except it is compatible with Ghostscript's PDF writer.
-
+\newcommand{\swave}[0]{$\it{s}$-wave}
+\newcommand{\pwave}[0]{$\it{p}$-wave}
+\newcommand{\K}{$^{40}\rm{K}$}
+\newcommand{\Rb}{$^{87}\rm{Rb}$}
+\newcommand{\us}{$\rm{\mu s}$}
+\newcommand{\mT}{$\rm{mT}$}
+\newcommand{\ez}{$\bf{\mathit{e}_z}$}
+\newcommand{\ex}{$\bf{\mathit{e}_x}$}
+\newcommand{\um}{$\rm{\mu m}$}
+\renewcommand{\thefootnote}{\arabic{footnote}}
 
 \documentclass[12pt,\mydriver]{umdthesis-2}  %12pt is larger than 11pt
 
@@ -39,6 +48,8 @@
 \usepackage{subeqn}
 \usepackage{subfigure}
 \usepackage{braket}
+\usepackage{algorithmic}
+\usepackage{algorithm}
 
 %hyperref
 \usepackage[colorlinks=true,urlcolor=black,linkcolor=blue,citecolor=blue]{hyperref}
@@ -60,27 +71,27 @@
 \include{Copyright} %(highly recommended, non-numbered)
 
 %Pages from this point start at lower-case Roman number ii)
-\pagestyle{plain} \pagenumbering{roman} \setcounter{page}{2}
-\addcontentsline{toc}{chapter}{Preface}
-\include{Preface}  %(if present, start at lower-case Roman number ii)
-\addcontentsline{toc}{chapter}{Foreword}
-\include{Foreword} %(if present, lower-case Roman)
-\addcontentsline{toc}{chapter}{Dedication}
-\include{Dedication} %(if present, lower-case Roman)
-\addcontentsline{toc}{chapter}{Acknowledgements}
-\include{Acknowledgements} %(if present, lower-case Roman)
+%\pagestyle{plain} \pagenumbering{roman} \setcounter{page}{2}
+%\addcontentsline{toc}{chapter}{Preface}
+%\include{Preface}  %(if present, start at lower-case Roman number ii)
+%\addcontentsline{toc}{chapter}{Foreword}
+%\include{Foreword} %(if present, lower-case Roman)
+%\addcontentsline{toc}{chapter}{Dedication}
+%\include{Dedication} %(if present, lower-case Roman)
+%\addcontentsline{toc}{chapter}{Acknowledgements}
+%\include{Acknowledgements} %(if present, lower-case Roman)
 
 \renewcommand{\baselinestretch}{1}
 \small\normalsize
 \tableofcontents %(required, lower-case Roman)
 \newpage
-\listoftables %(if present, lower-case Roman)
-\newpage
-\listoffigures %(if present, lower-case Roman)
-\newpage
-% LIST OF ABBREVIATIONS
-\addcontentsline{toc}{chapter}{List of Abbreviations}
-\include{Abbreviations-supertabular}
+%\listoftables %(if present, lower-case Roman)
+%\newpage
+%\listoffigures %(if present, lower-case Roman)
+%\newpage
+%% LIST OF ABBREVIATIONS
+%\addcontentsline{toc}{chapter}{List of Abbreviations}
+%\include{Abbreviations-supertabular}
 
 \newpage
 \setlength{\parskip}{0em}
@@ -93,20 +104,25 @@
 %\include{Chapter1}
 
 
-\include{Chapter3}
-\titleformat{\chapter}
-{\normalfont\large}{Appendix \thechapter:}{1em}{}
+%\include{Chapter3}
+%\titleformat{\chapter}
+%{\normalfont\large}{Appendix \thechapter:}{1em}{}
+
+
+\include{Chapter2}
+%\titleformat{\chapter}
+%{\normalfont\large}{Appendix \thechapter:}{1em}{}
 %\include{AppendixA}
 
 \renewcommand{\baselinestretch}{1}
 \small\normalsize
-\include{Bibliography} %Delete this line if using Bibtex or Natbib
+%\include{Bibliography} %Delete this line if using Bibtex or Natbib
 
 %When using Bibtex, delete the previous line and use the following
 %three lines:
-%\newpage
-%\bibliographystyle{unsrt}
-%\bibliography{Galactic,Dottie} %replace "Galactic,Dottie" with the
+\newpage
+\bibliographystyle{unsrt}
+\bibliography{Bibliography} %replace "Galactic,Dottie" with the
 %                 file name(s) of your bib file(s)
 
 %When using Natbib, use the following three lines:

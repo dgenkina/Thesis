@@ -1,26 +1,20 @@
-%Chapter 2
+%Chapter 4
 
-\renewcommand{\thechapter}{2}
+\renewcommand{\thechapter}{4}
 
 
 \chapter{Absorption imaging in the presence of strong recoil induced detuning}
 
 
-\section{Near-resonant atom-light interaction}
+\section{On-resonant atom-light interaction}
 
-In this section, we will assume the atom can be treated as a two-level system: one with a ground and excited atomic state, with an energy difference of energy difference $\hbar\omega_0$. When such an atom, starting in the ground state, is illuminated by a laser beam with frequency $\hbar\omega_{\rm{L}}$, there are three kinds of transitions that occur: during aborption the atom aborbs a photon from the laser and goes from the ground to the excited state; during stimulated emission, the atom emits a photon into the field of the laser beam and jump from the excited to the ground state; during spontaneous emission, the atom decays to the ground state from the excited state with no help from the laser, emitting into a random vacuum mode. Stimulated emission results in coherent light co-propagating with the laser beam, while spontaneous emission results in light scattering incoherently in any direction. The rate of spontaneous emission from an excited state is given by the natural transition linewidth of the transition $\Gamma$. 
-
-When interacting with a laser field an atom scatters photons from the laser field into the vacuum modes. In the two-level atom approximation, the rate of scattering is \cite{LCT}
+\section{Absorption imaging}
+Absorption imaging measures the shadow cast by an atomic ensemble in an illuminating probe laser beam with angular frequency $\omega_{\rm{L}}$. This imaging technique relies on optical transitions between ground and excited atomic states. Such atomic transitions have an energy difference $\hbar\omega_0$, and a natural transition linewidth $\Gamma$. When interacting with a laser field an atom scatters photons from the laser field into the vacuum modes. In the two-level atom approximation, the rate of scattering is \cite{LCT}
 \begin{equation}
 \gamma_{\rm{sc}}= \frac{\Gamma}{2} \frac{\tilde{I}}{1+4\tilde{\delta}^2 +\tilde{I}},
 \label{eq:scatrate}
 \end{equation}
 where $\tilde{I}=I/I_{\rm{sat}}$ is the laser intensity in units of the saturation intensity, and $\tilde{\delta}=\delta/\Gamma$ is the detuning $\delta=\omega_{\rm{L}}-\omega_0$ in units of the natural linewidth. 
-
-
-\section{Absorption imaging}
-
-Absorption imaging measures the shadow cast by an atomic ensemble in an illuminating probe laser beam with angular frequency $\omega_{\rm{L}}$. 
 \par An absorption image is obtained by shining an on- or near-resonant probe beam ($\tilde{\delta}\ll1$) onto the atomic cloud. Some of the light is scattered by the atoms, and the unscattered light, $\tilde{I}_f(x,y)$, is imaged onto a camera, as depicted in Fig. \ref{fig:absorptionIntor}(a) (top). The probe light is reapplied with the atoms absent to calibrate the intensity $\tilde{I}_0(x,y)$ of light unaffected by the atoms (bottom).
 \begin{figure}
 	\subfigure[]{\includegraphics*[scale=0.5]{Chapter4 Figures/Picture1a}}
@@ -117,17 +111,13 @@ We recognize the right hand sides of Eq. (\ref{eq6}) and Eq. (\ref{eq8}) as the 
 \caption{Optical depth as a function of probe intensity as predicted by the simulation (blue symbols) and by Eq. (\ref{eq2}) (green curves), for three different imaging times. As expected, the predictions agree in both the high and low intensity limits, and differ for probe intensities comparable to the saturation intensity and longer imaging times. }
 \label{fig:IsatLimits}
 \end{figure}
-
+\par We used the results of this simulation to check the self-consistency of the  stationary atom assumption, i.e. the distance traveled by the atoms (as deduced from integrating the acquired recoil velocity over the imaging time) is less than the bin size. As can be seen from Fig. \ref{fig:simTests}(a), not only do the atoms travel more than the bin size, but they travel far beyond the initial extent of the cloud. Moreover, owing to the higher initial scatter rate, the back of the cloud overtakes the front for long imaging times. Thus, the atomic distribution as a function of position changes dramatically during the imaging pulse, and the stationary assumption is invalid.
 \begin{figure}
 	\subfigure[]{\includegraphics{Chapter4 Figures/figure4.pdf}}
 	\subfigure[]{\includegraphics{Chapter4 Figures/figure5.pdf}}
 \caption{(a) Position of atoms as a function of imaging time for atoms in the first (solid green), middle (dashed red), and last (dotted blue) bins of the simulated density distribution for an initial cloud 50 \um{} in extent. The probe intensity used in this calculation was $1.2\, I_{\rm{sat}}$, and the column density was $\sigma_0 n=1.6$. (b) The velocity of a single composite atom as a function of probe intensity for various imaging times. Simulation data (dots) and numerical  solutions of Eq. (\ref{eq10}) (lines) are in agreement.}
 \label{fig:simTests}
-\end{figure}	
-
-
-We used the results of this simulation to check the self-consistency of the  stationary atom assumption, i.e. the distance traveled by the atoms (as deduced from integrating the acquired recoil velocity over the imaging time) is less than the bin size. As can be seen from Fig. \ref{fig:simTests}(a), not only do the atoms travel more than the bin size, but they travel far beyond the initial extent of the cloud. Moreover, owing to the higher initial scatter rate, the back of the cloud overtakes the front for long imaging times. Thus, the atomic distribution as a function of position changes dramatically during the imaging pulse, and the stationary assumption is invalid.
-
+\end{figure}
 
 \section{Traveling atom model}
 To account for the changing atomic distribution during the imaging pulse, we numerically simulated the classical kinetics of atoms subject to the recoil driven optical forces. To simulate large ensembles in a reasonable time, we modeled composite atoms, each describing the aggregate behavior of $N_{\rm{ca}}$ atoms. The amended algorithm is shown in Alg. (\ref{algorithm2}).
