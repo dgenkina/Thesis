@@ -33,6 +33,7 @@
 \usepackage{titlesec}
    \titleformat{\chapter}
       {\normalfont\large}{Chapter \thechapter:}{1em}{}
+\usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{cite}
 \usepackage{lscape}
@@ -45,7 +46,7 @@
 \usepackage{slashbox}
 \usepackage{longtable}
 \usepackage{supertabular}
-\usepackage{subeqn}
+%\usepackage{subeqn}
 \usepackage{subfigure}
 \usepackage{braket}
 \usepackage{algorithmic}
@@ -81,10 +82,10 @@
 %\addcontentsline{toc}{chapter}{Acknowledgements}
 %\include{Acknowledgements} %(if present, lower-case Roman)
 
-\renewcommand{\baselinestretch}{1}
-\small\normalsize
-\tableofcontents %(required, lower-case Roman)
-\newpage
+%\renewcommand{\baselinestretch}{1}
+%\small\normalsize
+%\tableofcontents %(required, lower-case Roman)
+%\newpage
 %\listoftables %(if present, lower-case Roman)
 %\newpage
 %\listoffigures %(if present, lower-case Roman)
@@ -93,14 +94,14 @@
 %\addcontentsline{toc}{chapter}{List of Abbreviations}
 %\include{Abbreviations-supertabular}
 
-\newpage
-\setlength{\parskip}{0em}
-\renewcommand{\baselinestretch}{2}
-\small\normalsize
+%\newpage
+%\setlength{\parskip}{0em}
+%\renewcommand{\baselinestretch}{2}
+%\small\normalsize
 
 %Pages from this point start at Arabic numeral 1
-\setcounter{page}{1}
-\pagenumbering{arabic}
+%\setcounter{page}{1}
+%\pagenumbering{arabic}
 %\include{Chapter1}
 
 
@@ -114,8 +115,8 @@
 %{\normalfont\large}{Appendix \thechapter:}{1em}{}
 %\include{AppendixA}
 
-\renewcommand{\baselinestretch}{1}
-\small\normalsize
+%\renewcommand{\baselinestretch}{1}
+%\small\normalsize
 %\include{Bibliography} %Delete this line if using Bibtex or Natbib
 
 %When using Bibtex, delete the previous line and use the following
@@ -123,7 +124,7 @@
 \newpage
 \bibliographystyle{unsrt}
 \bibliography{Bibliography} %replace "Galactic,Dottie" with the
-%                 file name(s) of your bib file(s)
+               %  file name(s) of your bib file(s)
 
 %When using Natbib, use the following three lines:
 %\newpage

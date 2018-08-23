@@ -10,72 +10,130 @@
 
 In this section, we will assume the atom can be treated as a two-level system: one with a ground and excited atomic state, with an energy difference of energy difference $\hbar\omega_0$. When such an atom, starting in the ground state, is illuminated by a laser beam with frequency $\hbar\omega_{\rm{L}}$, there are three kinds of transitions that occur: during aborption the atom aborbs a photon from the laser and goes from the ground to the excited state; during stimulated emission, the atom emits a photon into the field of the laser beam and jump from the excited to the ground state; during spontaneous emission, the atom decays to the ground state from the excited state with no help from the laser, emitting into a random vacuum mode. Stimulated emission results in coherent light co-propagating with the laser beam, while spontaneous emission results in light scattering incoherently in any direction. The rate of spontaneous emission from an excited state is given by the natural transition linewidth of the transition $\Gamma$. 
 
-When interacting with a laser field an atom scatters photons from the laser field into the vacuum modes. In the two-level atom approximation, the rate of scattering is \cite{LCT}
+On timescales short compared to $1/\Gamma$, spontaneous emission can be ignored, and an atom undergoes coherent Rabi oscillations between the ground and excited states via cycles of absorption and stimulated emission\cite{LCT}. Taking $c_g$ and $c_e$ to be the time-dependent coefficients multiplying the eigen state wavefuntions of the ground and excited state respectively, and assuming the atom starts in the ground state $c_g(t=0)=1$, the excited state population is given by
 \begin{equation}
-\gamma_{\rm{sc}}= \frac{\Gamma}{2} \frac{\tilde{I}}{1+4\tilde{\delta}^2 +\tilde{I}},
+c_e(t)=-i\frac{\Omega}{\Omega'}sin\left(\frac{\Omega't}{2}\right)e^{-i\delta t/2},
+\end{equation}
+where $\Omega$ is the Rabi frequency given by $SOMETHING IN TERMS OF INTENSITY$, $\Omega'=\sqrt{\Omega^2+\delta^2}$ is the generalized Rabi frequency and $\delta=\omega_0-\omega_{\rm{L}}$ is the detuniong of the laser from atomic resonance. 
+
+In the regime where spontaneous emission cannot be ignored, Rabi oscillations of each individual atom are intermittently interrupted by decay to the ground state. Averaging over an atomic ensamble, on the time scale of a single Rabi oscillation the overall excited state population reaches a steady state, and the rate of spontaneous emission becomes constant. Since during spontaneous emission the ejected photon can go into any vacuum mode, this process can be thought of as the scattering of photons by the atoms. This scattering rate is given by\cite{LCT}
+\begin{equation}
+\gamma_{\rm{sc}}= \frac{\Gamma}{2} \frac{I/I_{\rm{sat}}}{1+4(\delta/\Gamma)^2 +I/I_{\rm{sat}}},
 \label{eq:scatrate}
 \end{equation}
-where $\tilde{I}=I/I_{\rm{sat}}$ is the laser intensity in units of the saturation intensity, and $\tilde{\delta}=\delta/\Gamma$ is the detuning $\delta=\omega_{\rm{L}}-\omega_0$ in units of the natural linewidth. 
+where $I_{\rm{sat}}$ is the saturation intensity. This is the intensity at which the timescale of spontaneous emission matches the Rabi oscillation rate, reducing the capacity for absorption of extra light.   
 
 
 \section{Absorption imaging}
 
-Absorption imaging measures the shadow cast by an atomic ensemble in an illuminating probe laser beam with angular frequency $\omega_{\rm{L}}$. 
-\par An absorption image is obtained by shining an on- or near-resonant probe beam ($\tilde{\delta}\ll1$) onto the atomic cloud. Some of the light is scattered by the atoms, and the unscattered light, $\tilde{I}_f(x,y)$, is imaged onto a camera, as depicted in Fig. \ref{fig:absorptionIntor}(a) (top). The probe light is reapplied with the atoms absent to calibrate the intensity $\tilde{I}_0(x,y)$ of light unaffected by the atoms (bottom).
+Absorption imaging takes advantage of the on-resonant interaction described in the previous section. An on or near-resonant laser beam ($\delta/\Gamma\ll 1$) is shined at the atoms, and the aborbed light acts to create a shadow in the shape of the atoms in the laser beam. This beam with the shadow is then imaged on a camera, in our case a CCD, as depicted in Figure \ref{fig:absorptionIntor}a (top). This is called the atom image, and the intensity distribution over the camera is denoted by $I_f(x,y)$, where the subscript f stands for final - the intensity after the light has encountered the atoms. To quantify the 'shadowed out' intensity, after the atoms have left the trap the same laser intensity is shined directly at the camera, as in Figure \ref{fig:absorptionIntor}a (bottom).   This is called the probe image, and the intensity distribution over the camera is denoted by $I_0(x,y)$, where the subscript 0 indicated initial - the intensity before the light had encountered the atoms.
+
+
+
+%Absorption imaging measures the shadow cast by an atomic ensemble in an illuminating probe laser beam with angular frequency $\omega_{\rm{L}}$. 
+%\par An absorption image is obtained by shining an on- or near-resonant probe beam ($\tilde{\delta}\ll1$) onto the atomic cloud. Some of the light is scattered by the atoms, and the unscattered light, $\tilde{I}_f(x,y)$, is imaged onto a camera, as depicted in Fig. \ref{fig:absorptionIntor}(a) (top). The probe light is reapplied with the atoms absent to calibrate the intensity $\tilde{I}_0(x,y)$ of light unaffected by the atoms (bottom).
 \begin{figure}
-	\subfigure[]{\includegraphics*[scale=0.5]{Chapter4 Figures/Picture1a}}
-	\subfigure[]{\includegraphics*{Chapter4 Figures/Picture1c.pdf}}
-	\subfigure[]{\includegraphics*[scale=0.55]{Chapter4 Figures/Picture1b}}
+	\subfigure[]{\includegraphics[scale=0.5]{"Chapter4 Figures/Picture1a"}}
+	\subfigure[]{\includegraphics{"Chapter4 Figures/Picture1c".pdf}}
+	\subfigure[]{\includegraphics[scale=0.55]{"Chapter4 Figures/Picture1b"}}
 \caption{Absorption imaging. (a) Near resonant probe light illuminates the atoms, and the transmitted light (containing a shadow of the atoms) is imaged on the camera. A second image taken with no atoms provides a reference. (b)  The probe beam is partially absorbed as it traverses the cloud, and the intensity seen by atoms further along the imaging direction \ez{} is lowered.  (c) An atomic cloud illuminated by a probe light field absorbs photons from the probe and re-emits them in all directions. This process results in a net acceleration of the cloud in the direction of the probe light as well as diffusive spreading in the transverse directions.  }
 \label{fig:absorptionIntor}
 \end{figure}
 
-The intensity $\tilde{I}_f(x,y)$ is related to the number of atoms the light encountered. Consider the light as it travels along the imaging axis \ez{} through a 3D atomic density profile $\rho(x,y,z)$. We focus on a single pixel of the camera: sensitive to a single column of atoms $\rho(z)$ giving  $\tilde{I}_0$ and $\tilde{I}_f$. Our task is to invert the problem and obtain a column density $n = \int \rho\left(z\right) \,\mathrm{d}z$ given $\tilde{I}_0$ and $\tilde{I}_f$. As the light travels through a column of atoms, each atom scatters light according to Eq. (\ref{eq:scatrate}). Therefore, the atoms further along the imaging axis $z$ experience a reduced optical intensity due to attenuation of the laser field by the other atoms (Fig. \ref{fig:absorptionIntor}(b)). The intensity change from scattering as a function of $z$ is
+To recover the atom number distribution encountered by the light, consider an atomic cloud with 3D density $\rho(x,y,z)$. Since we can only obtain 2D information from the camera, we can only hope to recover a 2D atomic column density $n(x,y)=\int\rho(x,y,z)\mathrm{d}z$. Focusing in on a single pixel of the camera, we can consider a single value of $I_0$ and $I_f$ to recover a local $n$. As the laser light propagates through the atomic cloud, the intensity of the light will diminish due to absorption. This absorption as a function of propagation direction $z$ can be expressed using the scattering rate equation Eq. \ref{eq:scatrate} as the number of photons scattered by the atoms (proportional to the atomic density times the scattering rate) times the photon energy $\hbar\omega_{\rm{L}}$:
 \begin{equation}
-\frac{d\tilde{I}(z)}{dz}=-\hbar\omega_{\rm{L}}\rho(z)\gamma_{sc}(z)=-\rho(z)\sigma_0\frac{\tilde{I}(z)}{1+4\tilde{\delta}^2 +\tilde{I}},
+\frac{d}{dz}\frac{I(z)}{I_{\rm{sat}}}=-\hbar\omega_{\rm{L}}\rho(z)\gamma_{sc}(z)=-\rho(z)\sigma_0\frac{I(z)/I_{\rm{sat}}}{1+4\delta^2 /\Gamma^2+I(z)/I_{\rm{sat}}},
 \label{eq:dIdz}
 \end{equation}
-where $\sigma_0$ is the resonant scattering cross section. Integrating this equation yields a relation between the observed optical depth $OD=-\ln \left(I_f/I_0\right)$ and the atomic column density $n$ \cite{Reinaudi07} --- we call the column density deduced in this manner $\sigma_0 n^{\rm{(1)}}$:
+where the resonant scattering cross section is $\sigma_0=3\lambda_0^2/2\pi$, and $\lambda_0$ is the wavelength asociatted with atomic resonance. 
+
+Integrating both sides of Eq. \ref{eq:dIdz}, we obtain
 \begin{equation}
-\sigma_0 n^{\rm{(1)}} = \left(1+4\tilde{\delta}^2\right)OD+ \tilde{I}_0-\tilde{I}_f.
+\sigma_0 n = \left(1+4\delta^2/\Gamma^2\right)\mathrm{ln}(I_0/I_f)+ \left(I_0-I_f\right)/I_{\rm{sat}}.
 \label{eq2}
 \end{equation}
-When the probe intensity is much smaller than the saturation intensity, $\tilde{I}_0\ll1$, and the probe light is on resonance, $\tilde{\delta}=0$, the right hand side of Eq. (\ref{eq2}) reduces to the optical depth \cite{Reinaudi07}, giving the simple relationship $\sigma_0 n^{\rm{(0)}}=OD$. 
-	\par Equations (\ref{eq:dIdz})-(\ref{eq2}) neglect the atomic recoil momentum and its effect on the laser detuning \cite{Konstantinidis12}. When an atom absorbs a photon from the laser light field it acquires a momentum kick $\hbar  k_{\rm{r}}$ in the direction of the light field. The associated recoil velocity is $v_{\rm{r}}=\hbar k_{\rm{r}}/m$, where $m$ is the atomic mass and $\hbar k_{\rm{r}}= h/\lambda$ is the recoil momentum from the laser with wavelength $\lambda$. Each re-emitted photon imparts a similar recoil momentum $\bf{\mathit{p}_e}$, but over many scattering events this momentum distribution averages to zero. Therefore the atom  will acquire an average velocity per photon $v_{\rm{r}}$ along \ez{}. The variance of $\bf{\mathit{p}_e}$, however, is not zero, allowing the atoms to acquire some momentum transverse to the laser field. While we ignore this correction, it results in the reduction of spatial resolution in the final image and its effect on the atomic cloud is pictured in Fig. \ref{fig:absorptionIntor}(c).
+The quantity $OD=ln(I_0/I_f)$ is called the optical depth of the cloud. When the probe intensity $I_0$ is much smaller than the saturation intensity, the second term in Eq. \ref{eq2} becomes negligible. Assuming further that the probe light is on resonance, $\delta=0$, the atomic column density becomes simply $\sigma_0 n=OD$. Figure \ref{fig:absorptionIntor}b shows a Gaussian atomic density distribution (top) and the resulting probe intensity as a function of position in the cloud (bottom). The intensity drops from its initial to final value gradually as it traverses the cloud.
+
+However, there is an important effect that the above equations do not account for. Namely, as the atoms absorb light from the probe beam, they also get a momentum kick equal to the momentum of a photon during each collision $\hbar k_r=h/\lambda_L$ in the direction of propagation. It is true that the absorbed photon will then be re-emitted by the atom, inducing a loss of momentum, but since this happens through the process of spontaneous emission into a random vacuum mode, the average momentum kick acquired this way over many re-emissions will average to zero. On average, each photon absorbed will induce a change in velocity of the atom of $v_r=\hbar k_r/m$, where $m$ is the atomic mass, as depicted in Fig. \ref{fig:absorptionIntor}c. As the velocity of the atom changes, due to the Doppler effect, the apparent laser frequency will change as well. Therefore, even if the laser light is exactly on-resonant for a stationary atom, it will become off-resonant for longer imaging times, and Eq. \ref{eq:dIdz} will acquire a time dependence. For most experiments, this effect is small and can be neglected. However, if the imaging time becomes of order a recoil time $t_r$, a time after which the recoil-induced detuning $\delta$ becomes of order $\Gamma$, this effect becomes significant. We explore this effect in the following sections.  
+
+%The intensity $\tilde{I}_f(x,y)$ is related to the number of atoms the light encountered. Consider the light as it travels along the imaging axis \ez{} through a 3D atomic density profile $\rho(x,y,z)$. We focus on a single pixel of the camera: sensitive to a single column of atoms $\rho(z)$ giving  $\tilde{I}_0$ and $\tilde{I}_f$. Our task is to invert the problem and obtain a column density $n = \int \rho\left(z\right) \,\mathrm{d}z$ given $\tilde{I}_0$ and $\tilde{I}_f$. As the light travels through a column of atoms, each atom scatters light according to Eq. (\ref{eq:scatrate}). Therefore, the atoms further along the imaging axis $z$ experience a reduced optical intensity due to attenuation of the laser field by the other atoms (Fig. \ref{fig:absorptionIntor}(b)). The intensity change from scattering as a function of $z$ is
+%\begin{equation}
+%\frac{d\tilde{I}(z)}{dz}=-\hbar\omega_{\rm{L}}\rho(z)\gamma_{sc}(z)=-\rho(z)\sigma_0\frac{\tilde{I}(z)}{1+4\tilde{\delta}^2 +\tilde{I}},
+%\label{eq:dIdz}
+%\end{equation}
+%where $\sigma_0$ is the resonant scattering cross section. Integrating this equation yields a relation between the observed optical depth $OD=-\ln \left(I_f/I_0\right)$ and the atomic column density $n$ \cite{Reinaudi07} --- we call the column density deduced in this manner $\sigma_0 n^{\rm{(1)}}$:
+%\begin{equation}
+%\sigma_0 n^{\rm{(1)}} = \left(1+4\tilde{\delta}^2\right)OD+ \tilde{I}_0-\tilde{I}_f.
+%\label{eq2}
+%\end{equation}
+%When the probe intensity is much smaller than the saturation intensity, $\tilde{I}_0\ll1$, and the probe light is on resonance, $\tilde{\delta}=0$, the right hand side of Eq. (\ref{eq2}) reduces to the optical depth \cite{Reinaudi07}, giving the simple relationship $\sigma_0 n^{\rm{(0)}}=OD$. 
+%\par Equations (\ref{eq:dIdz})-(\ref{eq2}) neglect the atomic recoil momentum and its effect on the laser detuning \cite{Konstantinidis12}. When an atom absorbs a photon from the laser light field it acquires a momentum kick $\hbar  k_{\rm{r}}$ in the direction of the light field. The associated recoil velocity is $v_{\rm{r}}=\hbar k_{\rm{r}}/m$, where $m$ is the atomic mass and $\hbar k_{\rm{r}}= h/\lambda$ is the recoil momentum from the laser with wavelength $\lambda$. Each re-emitted photon imparts a similar recoil momentum $\bf{\mathit{p}_e}$, but over many scattering events this momentum distribution averages to zero. Therefore the atom  will acquire an average velocity per photon $v_{\rm{r}}$ along \ez{}. The variance of $\bf{\mathit{p}_e}$, however, is not zero, allowing the atoms to acquire some momentum transverse to the laser field. While we ignore this correction, it results in the reduction of spatial resolution in the final image and its effect on the atomic cloud is pictured in Fig. \ref{fig:absorptionIntor}(c).
 
 
 \section{Recoil-induced detuning}
 
+After absorbing a number of photons $N$, an atom will obtain a recoil velocity of $N v_{\rm{r}}$. Via the Doppler effect, this will result in a detuning $\delta=N k_{\rm{r}} v_{\rm{r}}$. This detuning will increase as more atoms are absorbed, and therefore depend on time, making the absorbed intensity also time dependent. We can generalize Eq. \ref{eq:dIdz} to include a time dependence on the detuning term and therefore also the intensity: 
+\begin{equation}
+\frac{d}{dz}\frac{I(z,t)}{I_{\rm{sat}}}=-\rho(z)\sigma_0\frac{I(z,t)/I_{\rm{sat}}}{1+4\delta(z,t)^2 /\Gamma^2+I(z,t)/I_{\rm{sat}}}. \label{eq3}
+\end{equation}
+The number of photons absorbed per atom will depend on the intensity lost, up until the current time, at that location. The detuning will therefore be proportional to the total number of photons lost up until time $t$ at that location, proportional to the absorbed intensity divided by the single photon energy $\hbar\omega_L$, divided by the number of atoms that participated in the aborption $\rho(z)$ times the detuning $ k_{\rm{r}} v_{\rm{r}}$:
+\begin{equation}
+\delta(t,z)=\frac{ k_{\rm{r}} v_{\rm{r}}}{\hbar\omega_L\rho(z)}\int_0^t\frac{dI(z,\tau)}{dz}\mathrm{d}\tau.
+\label{eq4}
+\end{equation}
+These equations are interdependent, and cannot be in general solved analytically. 
 
-\par The average atom velocity parallel the light field after scattering $N$ photons is $N v_{\rm{r}}$ and it is Doppler shifted  $\delta= k_{\rm{r}} N v_{\rm{r}}$ from resonance. For any probe intensity, there is an imaging time that we call the recoil time $t_{\rm{r}}$ after which  $\delta>\Gamma/2$ and, even if the probe beam is initially on resonance with the atomic transition, we cannot neglect the detuning's  effect on the scattering rate. Furthermore, this detuning varies both with imaging time $t$ and with distance along the propagation direction $z$ (Fig. \ref{fig:expos}(a)). Thus, the laser's spatially varying intensity profile in the atomic cloud also depends on time:
+Figure \ref{fig:expos}a shows the velocity and detuning as a function of position in space for three different imaging times, calculated numberically. All calculations in this chapter were done for a cloud of $^40\mathrm{K}$ atoms, as that is relevant to our experiment described in the next chapter. The resonant wavelength is $PUT ALL NUMBERS FOR K IN HERE$
+
+\section{Perturbative treatment}
+We can treat these equations perturbatively in time. To first order, we can set the detuning in Eq. \ref{eq3} to $\delta=0$, assume $I(z)$ is time independent, and plug that into Eq. \ref{eq4} to obtain 
+\begin{align}
+\delta(t,z)&=\frac{ k_{\rm{r}} v_{\rm{r}}}{\hbar\omega_L\rho(z)}\int_0^t-\rho(z)\sigma_0\frac{I(z)}{1+I(z)/I_{\rm{sat}}}\mathrm{d}\tau \\
+&=\frac{ k_{\rm{r}} v_{\rm{r}}\sigma_0}{\hbar\omega_L}\frac{I(z)}{1+I/I_{\rm{sat}}}t.
+\label{eq:recursive}
+\end{align} 
+This can then be recursively plugged into Eq. \ref{eq3} to obtain
 \begin{equation}
-\frac{d\tilde{I}(t,z)}{dz}=-\sigma_0 \rho(t,z) \frac{\tilde{I}(t,z)}{1+4\tilde{\delta}(t,z)^2 +\tilde{I}(t,z)}. \label{eq3}
+\frac{d}{dz}\frac{I(z,t)}{I_{\rm{sat}}}=-\rho(z)\sigma_0\frac{I(z,t)/I_{\rm{sat}}}{1+4\left(\frac{ k_{\rm{r}} v_{\rm{r}}\sigma_0}{\hbar\omega_L\Gamma}\frac{I(z)}{1+I/I_{\rm{sat}}}\right)^2 t^2 +I(z,t)/I_{\rm{sat}}}.
 \end{equation}
-Assuming that the atoms do not move significantly during the imaging time (we will remove this assumption shortly), the dimensionless detuning is
+Integrating both sides of the above equation, we obtain a perturbative equation to second order in time \cite{LJLthesis}:
 \begin{equation}
-\tilde{\delta}(t,z)=\frac{ k_{\rm{r}} v_{\rm{r}}}{2\sigma_0 \rho(t,z)}\int_0^t \frac{d\tilde{I}(z,\tau)}{dz}\,\mathrm{d}\tau; \label{eq4}
+\sigma_0 n = ln(I_0/I_f) + \frac{I_0-I_f}{I_{\rm{sat}}} + \frac{ (k_{\rm{r}} v_{\rm{r}} t)^2}{3}\left(\frac{I_{\rm{sat}}}{I_f+I_{\rm{sat}}}-\frac{I_{\rm{sat}}}{I_0+I_{\rm{sat}}} +\rm{ ln}\left(\frac{I_f+I_{\rm{sat}}}{I_0+I_{\rm{sat}}}\right)\right).
+\label{eq:perturb}
 \end{equation}
-the relationship between the atomic density and the observed intensities is no longer straightforward.
+In Fig. \ref{fig:expos}b, we examine for what imaging times the above perturbative equation, as well as the modelt that completely ignores recoil induced detuning, is valid. We do this by performing numerical simulations to extract a value for the final intensity $I_f$ and using Eq. \ref{ eq2} and Eq. \ref{eq:perturb} to extract values $\sigma_0 n$ that would be deduced from experimnet. We find that within the recoil time, both analytic expressions start to differ from the true atomic column density by over $5\%$, and the perturbative model of Eq. \ref{eq:perturb} quickly divereges thereafter. 
+
+In the following sections, we describe two versions of numerical simulations that we have performed in order to appropriately extract atomic column densities from experimental data.  
+%
+%\par The average atom velocity parallel the light field after scattering $N$ photons is $N v_{\rm{r}}$ and it is Doppler shifted  $\delta= k_{\rm{r}} N v_{\rm{r}}$ from resonance. For any probe intensity, there is an imaging time that we call the recoil time $t_{\rm{r}}$ after which  $\delta>\Gamma/2$ and, even if the probe beam is initially on resonance with the atomic transition, we cannot neglect the detuning's  effect on the scattering rate. Furthermore, this detuning varies both with imaging time $t$ and with distance along the propagation direction $z$ (Fig. \ref{fig:expos}(a)). Thus, the laser's spatially varying intensity profile in the atomic cloud also depends on time:
+%\begin{equation}
+%\frac{d\tilde{I}(t,z)}{dz}=-\sigma_0 \rho(t,z) \frac{\tilde{I}(t,z)}{1+4\tilde{\delta}(t,z)^2 +\tilde{I}(t,z)}. \label{eq3}
+%\end{equation}
+%Assuming that the atoms do not move significantly during the imaging time (we will remove this assumption shortly), the dimensionless detuning is
+%\begin{equation}
+%\tilde{\delta}(t,z)=\frac{ k_{\rm{r}} v_{\rm{r}}}{2\sigma_0 \rho(t,z)}\int_0^t \frac{d\tilde{I}(z,\tau)}{dz}\,\mathrm{d}\tau; \label{eq4}
+%\end{equation}
+%the relationship between the atomic density and the observed intensities is no longer straightforward.
 \begin{figure}
-	\subfigure[]{\includegraphics{Chapter4 Figures/figure1.pdf}}
-	\subfigure[]{\includegraphics{Chapter4 Figures/figure2.pdf}}
+	\subfigure[]{\includegraphics{"Chapter4 Figures/figure1".pdf}}
+	\subfigure[]{\includegraphics{"Chapter4 Figures/figure2".pdf}}
 \caption{(a) Dependence of velocity and detuning on position simulated for \K{} at three different imaging times and a probe intensity $\tilde{I}_0=0.8$. (b) Column densities deduced from optical depths obtained from recoil detuning corrected simulation of on-resonant imaging of $^{40}K$ atoms at probe intensity $\tilde{I}_0=0.8$. The input column density $\sigma_0 n=1.6$. $\sigma_0 n^{\rm{(1)}}$ is the high probe intensity corrected column density given by Eq. (\ref{eq2}). $\sigma_0 n^{\rm{(2)}}$ is the column density as expanded to second order in time, Eq. (\ref{eq:OD2}).}
 \label{fig:expos}
 \end{figure}
-\par By considering this equation perturbatively in imaging time we obtain corrections to second order \cite{LJLthesis}
-
-\begin{eqnarray}
-&\sigma_0 n^{\rm{(2)}}  =  c_0+c_1t+c_2t^2, \mbox{ where } \\
- &c_0= \sigma_0 n^{\rm{(1)}}, c_1=0, c_2=\frac{( k_{\rm{r}} v_{\rm{r}})^2}{3}\left[\frac{1}{\tilde{I}_f+1}-\frac{1}{\tilde{I}_0+1}+\mathrm{ln}\left(\frac{\tilde{I}_f+1}{\tilde{I}_0+1}\right)\right]
-\label{eq:OD2}
-\end{eqnarray}
-As shown in  Fig. \ref{fig:expos}(b), the perturbative treatment is accurate to times up to the recoil time after which it begins to diverge. To adequately correct for the recoil induced detuning of the atoms, we numerically simulated the imaging process to obtain $\tilde{I}_f$ as a function of imaging time, atomic density, and probe intensity.
-%\begin{figure}
+%\par By considering this equation perturbatively in imaging time we obtain corrections to second order \cite{LJLthesis}
+%
+%\begin{eqnarray}
+%&\sigma_0 n^{\rm{(2)}}  =  c_0+c_1t+c_2t^2, \mbox{ where } \\
+% &c_0= \sigma_0 n^{\rm{(1)}}, c_1=0, c_2=\frac{( k_{\rm{r}} v_{\rm{r}})^2}{3}\left[\frac{1}{\tilde{I}_f+1}-\frac{1}{\tilde{I}_0+1}+\mathrm{ln}\left(\frac{\tilde{I}_f+1}{\tilde{I}_0+1}\right)\right]
+%\label{eq:OD2}
+%\end{eqnarray}
+%As shown in  Fig. \ref{fig:expos}(b), the perturbative treatment is accurate to times up to the recoil time after which it begins to diverge. To adequately correct for the recoil induced detuning of the atoms, we numerically simulated the imaging process to obtain $\tilde{I}_f$ as a function of imaging time, atomic density, and probe intensity.
+%%\begin{figure}
 %	\includegraphics*{figure2.pdf}
 %\caption{Using time dependent $I_f$ values obtained from recoil detuning corrected simulation of on-resonant imaging of $^{40}K$ atoms at probe intensity $I_0=0.8\, I_{\rm{sat}}$, this graph shows the optical depths obtained by each model. The `true' optical depth is $\sigma_0 n=1.6$. $OD_1$ is the high probe intensity corrected optical depth given by Eq. (\ref{eq2}). $OD_2$ is the high probe intensity corrected and expanded to second order in time optical depth, Eq. (\ref{eq:OD2}) \cite{LJLthesis}. The recoil time is the time it takes for the cloud, on average, to become detuned by a linewidth $\Gamma$. Both models start to differ from the true value before a recoil time.  }
 %\label{fig:ODcorrections}
 %\end{figure}
-\par In the following, we describe two versions of this simulation. First, we took a simplistic approach where the spatial distribution of atoms did not change appreciably during the imaging time: $vt\ll I_0/(\hbar \omega_{\rm{L}} \gamma_{\rm{sc}} \rho)$. We verified this approach in known limits and then cross-checked the validity of the static assumption. For realistic input parameters, we found this assumption to be invalid. We then developed a quasi-classical approach and allowed the atoms to move during the imaging time. While the atomic trajectories were wildly different than in the static atom approximation, we found that the predicted $OD$s only differed on the 0.5$\%$ level.
+%\par In the following, we describe two versions of this simulation. First, we took a simplistic approach where the spatial distribution of atoms did not change appreciably during the imaging time: $vt\ll I_0/(\hbar \omega_{\rm{L}} \gamma_{\rm{sc}} \rho)$. We verified this approach in known limits and then cross-checked the validity of the static assumption. For realistic input parameters, we found this assumption to be invalid. We then developed a quasi-classical approach and allowed the atoms to move during the imaging time. While the atomic trajectories were wildly different than in the static atom approximation, we found that the predicted $OD$s only differed on the 0.5$\%$ level.
 
 
 \section{Stationary atom model}
@@ -113,14 +171,14 @@ In the limit where the probe intensity is much larger than the saturation intens
 \end{eqnarray}
 We recognize the right hand sides of Eq. (\ref{eq6}) and Eq. (\ref{eq8}) as the two terms in Eq. (\ref{eq2}). Thus, as shown in  Fig. \ref{fig:IsatLimits}, $OD^{\rm{sim1}}$  coincides with the optical depth as predicted by Eq. (\ref{eq2}) in both the small and large probe intensity limits.
 \begin{figure}
-	\includegraphics{Chapter4 Figures/figure3.pdf}
+	\includegraphics{"Chapter4 Figures/figure3".pdf}
 \caption{Optical depth as a function of probe intensity as predicted by the simulation (blue symbols) and by Eq. (\ref{eq2}) (green curves), for three different imaging times. As expected, the predictions agree in both the high and low intensity limits, and differ for probe intensities comparable to the saturation intensity and longer imaging times. }
 \label{fig:IsatLimits}
 \end{figure}
 
 \begin{figure}
-	\subfigure[]{\includegraphics{Chapter4 Figures/figure4.pdf}}
-	\subfigure[]{\includegraphics{Chapter4 Figures/figure5.pdf}}
+	\subfigure[]{\includegraphics{"Chapter4 Figures/figure4".pdf}}
+	\subfigure[]{\includegraphics{"Chapter4 Figures/figure5".pdf}}
 \caption{(a) Position of atoms as a function of imaging time for atoms in the first (solid green), middle (dashed red), and last (dotted blue) bins of the simulated density distribution for an initial cloud 50 \um{} in extent. The probe intensity used in this calculation was $1.2\, I_{\rm{sat}}$, and the column density was $\sigma_0 n=1.6$. (b) The velocity of a single composite atom as a function of probe intensity for various imaging times. Simulation data (dots) and numerical  solutions of Eq. (\ref{eq10}) (lines) are in agreement.}
 \label{fig:simTests}
 \end{figure}	
@@ -167,15 +225,15 @@ Equation (\ref{eq10}) can be solved numerically, and is in agreement with our si
 %\end{figure}
 \par We used this model to study the time evolution of the cloud shape during imaging and visualized the phase space evolution of superatoms, shown in Fig. \ref{fig:phaseSpace}. The cloud is strongly distorted during imaging.
 \begin{figure}
-	\subfigure[]{\includegraphics{Chapter4 Figures/figure6a.pdf}}
-	\subfigure[]{\includegraphics{Chapter4 Figures/figure6b.pdf}}
+	\subfigure[]{\includegraphics{"Chapter4 Figures/figure6a".pdf}}
+	\subfigure[]{\includegraphics{"Chapter4 Figures/figure6b".pdf}}
 \caption{Phase space evolution of an atomic cloud exposed to probe light with intensity $\tilde{I}_0=1.2$. We defined $\Delta v=v -\left< v(t) \right>$  and $\Delta z=z-\left< z(t) \right>$, subtracting out the center of mass position and velocity of the cloud. The column density $\sigma_0 n$ is 1.6, and the initial cloud is a Gaussian with a width of 10 $\mu$m in (a) and 1 $\mu$m in (b). The center of mass velocities $\left< v\right>$ are (0,  3.41, 5.26, 6.52, 7.50, 8.32) m/s sequentially, and are the same for both initial cloud widths. }
 \label{fig:phaseSpace}
 \end{figure}
 \par We compared the optical depths predicted by each of the two models, $OD^{\rm{sim1}}$ and $OD^{\rm{sim2}}$. As seen Fig. \ref{fig:compareModelsAndIsat}(a), the predicted optical depths were hardly changed by including the full time evolution:  $\left|OD^{\rm{sim1}}-OD^{\rm{sim2}}\right|/OD^{\rm{sim1}} \le 0.005$. Thus, for the purposes of deducing the atom density from experimental optical depths, the stationary atom model is sufficient. Furthermore, we simulated a range of initial density profiles $\rho(z)$, and found their impact to be negligible \--- the only observable is the integrated atomic density $n=\int\rho(z)\mathrm{d}z$. Still, for interpreting experimental images, we used the data generated by the traveling atom simulation.
 \begin{figure}
-	\subfigure[]{\includegraphics{Chapter4 Figures/figure7.pdf}}
-	\subfigure[]{\includegraphics{Chapter4 Figures/figure8.pdf}}
+	\subfigure[]{\includegraphics{"Chapter4 Figures/figure7".pdf}}
+	\subfigure[]{\includegraphics{"Chapter4 Figures/figure8".pdf}}
 \caption{(a) Top. Optical depth as a function of probe intensity for an imaging time $t=100$ \us. $OD^{\rm{(1)}}$ and $OD^{\rm{(2)}}$ are optical depths predicted from a given column density by Eq. (\ref{eq2}) and (\ref{eq:OD2}) respectively.  The two versions of simulated optical depth, $OD^{\rm{sim1}}$ (green curve) and $OD^{\rm{sim2}}$ (green dots) are plotted. Bottom. The fractional difference between two versions of the simulated $OD$, $\left|OD^{\rm{sim1}}-OD^{\rm{sim2}}\right|/OD^{\rm{sim1}}$. (b) The optical depth as a function of probe intensity for three imaging times: $t=40$ \us{} (cyan),  $t=75$ \us{} (magenta),  $t=100$ \us{} (red). The dots represent experimental data and the lines represent the best fit of simulated data. The optimal fit parameters pictured are a $\sigma_0 n$ of 1.627(5) and saturation intensity of 29(7) counts/\us{}.  }
 \label{fig:compareModelsAndIsat}
 \end{figure}
@@ -185,8 +243,8 @@ This simulation allowed us to interpret experimental data. For a given imaging t
 \par The only source of measurement uncertainty we considered was the Poisson noise on the detected arriving photons (i.e., photoelectrons) with standard deviation proportional to $q_{\rm{e}}\sqrt{N_p}$, where $q_{\rm{e}}$ is the quantum efficiency of the camera and $N_p$ is the photon number. We then propagated this uncertainty through our correction scheme to obtain the uncertainty in our deduced value of $\sigma_0 n$. We define the SNR as $\sigma_0 n/\delta_{\sigma_0 n}$, where $ \delta_{\sigma_0 n}$ is the propagated measurement uncertainty.
 \par As seen in Fig. \ref{fig:SNR}(a), after about 40 \us{} extending the imaging time no longer yields appreciable improvement in SNR. Imaging for 40 \us{} as opposed to 10 \us{} where the uncorrected model is appropriate, improves the SNR by a factor of  1.5. We performed the experiments described in the second section at 40 \us{} imaging time. Figure \ref{fig:SNR}(b) shows that the optimal probe intensity varies with the atomic column density. For low atom numbers, $\sigma_0 n\approx0.1$, a probe intensity of $\tilde{I}_0\approx0.6$ is best. However, in our experiment the probe intensity had a Gaussian profile and was not uniform over the whole image.  The typical probe intensities used in our experiments varied over the $2\tilde{I}_0=0.1-0.7$  range.
 \begin{figure}
-	\subfigure[]{\includegraphics{Chapter4 Figures/figure9a.pdf}}
-	\subfigure[]{\includegraphics{Chapter4 Figures/figure9b.pdf}}
+	\subfigure[]{\includegraphics{"Chapter4 Figures/figure9a".pdf}}
+	\subfigure[]{\includegraphics{"Chapter4 Figures/figure9b".pdf}}
 \caption{SNR for three different column densities after correcting for recoil induced detuning. (a) SNR as a function of imaging time for a probe intensity of $\tilde{I}_0=5.0$ and (b) SNR as a function of probe intensity for an imaging time of 50 \us{}.}
 \label{fig:SNR}
 \end{figure}

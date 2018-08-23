@@ -28,6 +28,9 @@ Chapter 2: Atom - light interactions
 
 
 Chapter 3: S-wave scattering experiment
+	- Intro with explanation of how we used to have K and refer to Lauren's thesis
+	- Actual paper matereial
+	- 2D MOT status update
 
 
 Chapter 4: Synthetic dimensional lattice
