@@ -17,7 +17,8 @@ Chapter 1: BECs and DFGs intro
 		Fermi-Dirac distribution leading to deviation from Maxwell-Boltzman (no phase transition)
 		Brief overview of how we made DFGs
 		Average number, density, size - contrast with BEC
-		Brief status report on 2-D MOT plans		
+		Brief status report on 2-D MOT plans	
+	Brief description of RbK apparatus	
 	
 
 Chapter 2: Atom - light interactions

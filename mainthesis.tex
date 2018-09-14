@@ -33,6 +33,7 @@
 \usepackage{titlesec}
    \titleformat{\chapter}
       {\normalfont\large}{Chapter \thechapter:}{1em}{}
+\usepackage{setspace}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{cite}
@@ -55,6 +56,14 @@
 %hyperref
 \usepackage[colorlinks=true,urlcolor=black,linkcolor=blue,citecolor=blue]{hyperref}
 
+
+%set footnote separation
+%onehalfspacing baselineskip looks like double spaced for footnote size text
+\singlespacing
+\setlength{\footnotesep}{\baselineskip}
+
+%setup the document margins etc.
+\doublespacing
 \newcommand{\tbsp}{\rule{0pt}{18pt}} %used to get a vertical distance after \hline
 \renewcommand{\baselinestretch}{2}
 \setlength{\textwidth}{5.9in}
@@ -108,7 +117,10 @@
 %\include{Chapter3}
 %\titleformat{\chapter}
 %{\normalfont\large}{Appendix \thechapter:}{1em}{}
-
+\doublespacing
+\normalsize
+\setcounter{page}{1}
+\pagenumbering{arabic}
 
 \include{Chapter2}
 \include{Chapter4}

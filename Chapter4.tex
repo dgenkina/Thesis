@@ -67,25 +67,75 @@ Re-writing ${\rm sin}^2(k_L x) = (e^{-2ik_L x} + e^{2 i k_L x} - 2)/4$, multiply
 \begin{equation}
 \frac{\hbar^2}{2m}(q + 2 k_L j)^2 a_j - \frac{V_0}{4}(a_{j+1}+a_{j-1}) = E_n a_j.
 \end{equation}
-This can be expressed in matrix form, in the basis of momentum orders
+This can be expressed in matrix form
 \begin{equation}
+H_L =
  \begin{pmatrix} \ddots &  & & & & & & \\ 
- & \frac{\hbar^2}{2m}(q + 4 k_L j)^2 & \frac{V_0}{4} & 0 & 0 & 0 &  \\
- & \frac{V_0}{4} &\frac{\hbar^2}{2m}(q + 2 k_L j)^2 & \frac{V_0}{4} & 0 & 0 &  \\
+ & \frac{\hbar^2}{2m}(q + 4 k_L )^2 & \frac{V_0}{4} & 0 & 0 & 0 &  \\
+ & \frac{V_0}{4} &\frac{\hbar^2}{2m}(q + 2 k_L )^2 & \frac{V_0}{4} & 0 & 0 &  \\
 & 0 & \frac{V_0}{4} & \frac{\hbar^2}{2m}q^2 & \frac{V_0}{4} & 0 &  \\
- & 0 & 0 & \frac{V_0}{4} & \frac{\hbar^2}{2m}(q - 2 k_L j)^2 &\frac{V_0}{4} &  \\
- &  & 0 & 0 & \frac{V_0}{4} & \frac{\hbar^2}{2m}(q + 4 k_L j)^2 &  \\
-& & & & & & &  \ddots \end{pmatrix} \\
+ & 0 & 0 & \frac{V_0}{4} & \frac{\hbar^2}{2m}(q - 2 k_L)^2 &\frac{V_0}{4} &  \\
+ &  & 0 & 0 & \frac{V_0}{4} & \frac{\hbar^2}{2m}(q - 4 k_L)^2 &  \\
+& & & & & & &  \ddots \end{pmatrix} \\,
 \end{equation}
-This matrix can be diagonalized for every value of the crystal momentum $q$, with some examples shown in Figure [ADD BAND STRUCTURE FIGURE]
-In any numerical simulation, the number of momentum orders that can be included is finite. We determine the value of the parameter $n = {\rm max}(|j|)$ as the lowest $n$ at which the eigenvalues stop changing to machine precision from $n-1$. The code for finding and plotting the eigenvalues and eigenvectors of the lattice hamiltonian is included in Appendix [MAKE APPENDIX WIHT CODE].
+in the basis of momentum orders $\ket{k}=e^{i k x}$ given by:
+\begin{equation}
+ \begin{pmatrix} \vdots \\
+\ket{q+4 k_L}\\
+\ket{q+2 k_L}\\
+\ket{q}\\
+\ket{q -2 k_L}\\
+\ket{q - 4 k_L}\\
+\vdots
+\end{pmatrix} \\.
+\end{equation}
+
+This matrix can be diagonalized for every value of the crystal momentum $q$, with some examples shown in Figure [ADD BAND STRUCTURE FIGURE]. It is convenient to define the lattice recoil energy $E_L = \hbar^2 k_L^2/2m$. Then, we can re-write the Hamiltonian with $V_0$ in units of $E_L$ and momenta $q$ in units of $k_L$ as 
+\begin{equation}
+H_L/E_L =
+ \begin{pmatrix} \ddots &  & & & & & & \\ 
+ & (q + 4)^2 & \frac{V_0}{4} & 0 & 0 & 0 &  \\
+ & \frac{V_0}{4} &(q + 2)^2 & \frac{V_0}{4} & 0 & 0 &  \\
+& 0 & \frac{V_0}{4} & q^2 & \frac{V_0}{4} & 0 &  \\
+ & 0 & 0 & \frac{V_0}{4} & (q - 2)^2 &\frac{V_0}{4} &  \\
+ &  & 0 & 0 & \frac{V_0}{4} & (q  - 4)^2 &  \\
+& & & & & & &  \ddots \end{pmatrix} \\.
+\end{equation}
+
+In any numerical simulation, the number of momentum orders that can be included is finite. We determine the value of the parameter $n = {\rm max}(|j|)$ as the lowest $n$ at which the eigenvalues stop changing to machine precision from $n-1$. The code for finding and plotting the eigenvalues and eigenvectors of the lattice hamiltonian is included in Appendix [MAKE APPENDIX WITH CODE?].
+
 \subsection{Tight binding approximation}
 
 
-\subsection{Pulsed lattice}
+\subsection{Pulsing vs adiabatic loading of the lattice}
+
+The lattice depth parameter $V_0/4$, for a range of values, can be well calibrated experimentally by pulsing on the lattice. Here, the word pulsing indicates that the lattice is turned on fully non-adiabatically, if not instantaneously, such that the original bare momentum state is projected onto the lattice eigenbasis. If the atoms start out stationary in the trap, the bare state in the momentum basis is simply
+\begin{equation}
+\ket{\Psi_0} = \begin{pmatrix} \vdots \\
+0\\
+0\\
+1\\
+0\\
+0\\
+\vdots
+\end{pmatrix} \\.
+\end{equation}
+
+Since the lattice eigenbasis is distinct from the bare one, this will necessarily excite the atoms into a superposition of lattice eigenstates, each evolving with a different phase according to the eigenenergy while the lattice is on. Then, when the lattice is snapped back off, the wavefunction is projected back into the bare basis, and the varying phase accumulation results in a beating of the different momentum orders. This can be calculated simply by using the time evolution operator
+\begin{equation}
+\ket{\Psi(t)} = e^{-i H_L t/\hbar}\ket{\Psi_0}.
+\label{eqn:timeEvolveLat}
+\end{equation}
+By pulsing on the lattice for variable amounts of time $t$, we can obtain fractional populations in the different momentum states. Time-of-flight imaging captures the momentum distribution of the cloud, and the different entries of $\Psi(t)$ in the momentum basis will thus appear as different clouds on the absorption image [INCLUDE IMAGES FROM PULSING DATA]. The fractional population in these clouds corresponds to a measurement of $|a_j|^2$.  Typically for our values of the lattice depth $V_0 < 10 E_L$, it is sufficient to simply count three central momentum orders, $k = q, q \pm 2 k_L$. Then, we can fit Eq. \ref{eqn:timeEvolveLat} to the data with fitting parameter $V_0$, thus deducing the lattuce depth. Some examples of these pulsing experiments are presented in figure [MAKE FIGURE]:
+%Flea3,PIXIS_20Aug2017_0034-0063
+%low lattice power:
+%Flea3,PIXIS_20Aug2017_0124-0153
+
+In contrast to pulsing, adiabatic loading turns the lattice on slowly, such that the atomic wavefunction starting in the bare ground state can continuously adjust to remain in the ground state of the current Hamiltonian, without projecting onto any of the higher bands. The adiabatic timescale depends on the spacing between the ground and next excited band (or if starting in a different eigenstate, the nearest eigenstate). If the energy difference between the ground and first excited state is $\Delta E$, the timescale on which the lattice is turned on must fullfill $t \gg h/\Delta E$.  
+
+[FIND PICTURES OF ADIABATICALLY LOADED LATTICE STATES]
 
 
-\subsection{Adiabatically loaded lattice}
 
 \section{Raman and rf coupling}\label{chap:4sec:rf}
 

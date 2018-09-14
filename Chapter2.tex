@@ -33,9 +33,9 @@ Absorption imaging takes advantage of the on-resonant interaction described in t
 %Absorption imaging measures the shadow cast by an atomic ensemble in an illuminating probe laser beam with angular frequency $\omega_{\rm{L}}$. 
 %\par An absorption image is obtained by shining an on- or near-resonant probe beam ($\tilde{\delta}\ll1$) onto the atomic cloud. Some of the light is scattered by the atoms, and the unscattered light, $\tilde{I}_f(x,y)$, is imaged onto a camera, as depicted in Fig. \ref{fig:absorptionIntor}(a) (top). The probe light is reapplied with the atoms absent to calibrate the intensity $\tilde{I}_0(x,y)$ of light unaffected by the atoms (bottom).
 \begin{figure}
-	\subfigure[]{\includegraphics[scale=0.5]{"Chapter4 Figures/Picture1a"}}
-	\subfigure[]{\includegraphics{"Chapter4 Figures/Picture1c".pdf}}
-	\subfigure[]{\includegraphics[scale=0.55]{"Chapter4 Figures/Picture1b"}}
+	\subfigure[]{\includegraphics[scale=0.5]{"Chapter2 Figures/Picture1a"}}
+	\subfigure[]{\includegraphics{"Chapter2 Figures/Picture1c".pdf}}
+	\subfigure[]{\includegraphics[scale=0.55]{"Chapter2 Figures/Picture1b"}}
 \caption{Absorption imaging. (a) Near resonant probe light illuminates the atoms, and the transmitted light (containing a shadow of the atoms) is imaged on the camera. A second image taken with no atoms provides a reference. (b)  The probe beam is partially absorbed as it traverses the cloud, and the intensity seen by atoms further along the imaging direction \ez{} is lowered.  (c) An atomic cloud illuminated by a probe light field absorbs photons from the probe and re-emits them in all directions. This process results in a net acceleration of the cloud in the direction of the probe light as well as diffusive spreading in the transverse directions.  }
 \label{fig:absorptionIntor}
 \end{figure}
@@ -115,8 +115,8 @@ In the following sections, we describe two versions of numerical simulations tha
 %\end{equation}
 %the relationship between the atomic density and the observed intensities is no longer straightforward.
 \begin{figure}
-	\subfigure[]{\includegraphics{"Chapter4 Figures/figure1".pdf}}
-	\subfigure[]{\includegraphics{"Chapter4 Figures/figure2".pdf}}
+	\subfigure[]{\includegraphics{"Chapter2 Figures/figure1".pdf}}
+	\subfigure[]{\includegraphics{"Chapter2 Figures/figure2".pdf}}
 \caption{(a) Dependence of velocity and detuning on position simulated for \K{} at three different imaging times and a probe intensity $\tilde{I}_0=0.8$. (b) Column densities deduced from optical depths obtained from recoil detuning corrected simulation of on-resonant imaging of $^{40}K$ atoms at probe intensity $\tilde{I}_0=0.8$. The input column density $\sigma_0 n=1.6$. $\sigma_0 n^{\rm{(1)}}$ is the high probe intensity corrected column density given by Eq. (\ref{eq2}). $\sigma_0 n^{\rm{(2)}}$ is the column density as expanded to second order in time, Eq. (\ref{eq:perturb}).}
 \label{fig:expos}
 \end{figure}
@@ -180,7 +180,7 @@ Even at longer imaging times, the problem can be analytically solved for limits 
 %\end{eqnarray}
 %We recognize the right hand sides of Eq. (\ref{eq6}) and Eq. (\ref{eq8}) as the two terms in Eq. (\ref{eq2}). Thus, as shown in  Fig. \ref{fig:IsatLimits}, $OD^{\rm{sim1}}$  coincides with the optical depth as predicted by Eq. (\ref{eq2}) in both the small and large probe intensity limits.
 \begin{figure}
-	\includegraphics{"Chapter4 Figures/figure3".pdf}
+	\includegraphics{"Chapter2 Figures/figure3".pdf}
 \caption{Optical depth as a function of probe intensity as predicted by the simulation (blue symbols) and by Eq. (\ref{eq2}) (green curves), for three different imaging times. As expected, the predictions agree in both the high and low intensity limits, and differ for probe intensities comparable to the saturation intensity and longer imaging times. }
 \label{fig:IsatLimits}
 \end{figure}
@@ -188,8 +188,8 @@ Even at longer imaging times, the problem can be analytically solved for limits 
 The simulation allows us to extract both the intensity and the detuning as a function of both time and position. We can use this information to infer the velocity and therefore the displacement of the atoms during the imaging pulse, and check if our assumption that the atoms stay in their original 'bins' during the image pulse is valid. Figure \ref{fig:simTests}a shows the position, deduced by integrating the recoil-induced velocity, as a function of time of the first, middle, and last spatial 'bin' for a probe intensity slightly above saturation, $I = 1.2 I_{\mathrm{sat}}$. As seen in the figure, not only do the atoms move beyond their 'bins', but also at long imaging times the first atoms (which have absorbed the most light) overtake the last ones. Therefore, the atomic cloud does not maintain shape during the imaging pulse, and our initial assumption is invalid.  
 
 \begin{figure}
-	\subfigure[]{\includegraphics{"Chapter4 Figures/figure4".pdf}}
-	\subfigure[]{\includegraphics{"Chapter4 Figures/figure5".pdf}}
+	\subfigure[]{\includegraphics{"Chapter2 Figures/figure4".pdf}}
+	\subfigure[]{\includegraphics{"Chapter2 Figures/figure5".pdf}}
 \caption{(a) Position of atoms as a function of imaging time for atoms in the first (solid green), middle (dashed red), and last (dotted blue) bins of the simulated density distribution for an initial cloud 50 \um{} in extent. The probe intensity used in this calculation was $1.2\, I_{\rm{sat}}$, and the column density was $\sigma_0 n=1.6$. (b) The velocity of a single composite atom as a function of probe intensity for various imaging times. Simulation data (dots) and numerical  solutions of Eq. (\ref{eq10}) (lines) are in agreement.}
 \label{fig:simTests}
 \end{figure}	
@@ -241,8 +241,8 @@ Equation (\ref{eq10}) can be solved numerically, and is in agreement with our si
 We then used this version of the simulation to look at the motion of composite atoms as a function of imaging time in phase space (ie, velocity and position). Some examples of this motion can be seen in  Fig. \ref{fig:phaseSpace}. As seen in the figure, the atomic cloud is significantly distorted during the imaging pulse and the atoms perform some crazy acrobatics. 
 %We used this model to study the time evolution of the cloud shape during imaging and visualized the phase space evolution of superatoms, shown in Fig. \ref{fig:phaseSpace}. The cloud is strongly distorted during imaging.
 \begin{figure}
-	\subfigure[]{\includegraphics{"Chapter4 Figures/figure6a".pdf}}
-	\subfigure[]{\includegraphics{"Chapter4 Figures/figure6b".pdf}}
+	\subfigure[]{\includegraphics{"Chapter2 Figures/figure6a".pdf}}
+	\subfigure[]{\includegraphics{"Chapter2 Figures/figure6b".pdf}}
 \caption{Phase space evolution of an atomic cloud exposed to probe light with intensity $\tilde{I}_0=1.2$. We defined $\Delta v=v -\left< v(t) \right>$  and $\Delta z=z-\left< z(t) \right>$, subtracting out the center of mass position and velocity of the cloud. The column density $\sigma_0 n$ is 1.6, and the initial cloud is a Gaussian with a width of 10 $\mu$m in (a) and 1 $\mu$m in (b). The center of mass velocities $\left< v\right>$ are (0,  3.41, 5.26, 6.52, 7.50, 8.32) m/s sequentially, and are the same for both initial cloud widths. }
 \label{fig:phaseSpace}
 \end{figure}
@@ -253,8 +253,8 @@ It remains to check how the atoms' acrobatics affect the resulting optical depth
 
 
 \begin{figure}
-	\subfigure[]{\includegraphics{"Chapter4 Figures/figure7".pdf}}
-	\subfigure[]{\includegraphics{"Chapter4 Figures/figure8".pdf}}
+	\subfigure[]{\includegraphics{"Chapter2 Figures/figure7".pdf}}
+	\subfigure[]{\includegraphics{"Chapter2 Figures/figure8".pdf}}
 \caption{(a) Top. Optical depth as a function of probe intensity for an imaging time $t=100$ \us. $OD^{\rm{(1)}}$ and $OD^{\rm{(2)}}$ are optical depths predicted from a given column density by Eq. (\ref{eq2}) and (\ref{eq:perturb}) respectively.  The two versions of simulated optical depth, $OD^{\rm{sim1}}$ (green curve) and $OD^{\rm{sim2}}$ (green dots) are plotted. Bottom. The fractional difference between two versions of the simulated $OD$, $\left|OD^{\rm{sim1}}-OD^{\rm{sim2}}\right|/OD^{\rm{sim1}}$. (b) The optical depth as a function of probe intensity for three imaging times: $t=40$ \us{} (cyan),  $t=75$ \us{} (magenta),  $t=100$ \us{} (red). The dots represent experimental data and the lines represent the best fit of simulated data. The optimal fit parameters pictured are a $\sigma_0 n$ of 1.627(5) and saturation intensity of 29(7) counts/\us{}.}
 \label{fig:compareModelsAndIsat}
 \end{figure}
@@ -293,15 +293,15 @@ This simulation allowed us to interpret experimental data. For a given imaging t
 
 
 \begin{figure}
-	\subfigure[]{\includegraphics{"Chapter4 Figures/figure9a".pdf}}
-	\subfigure[]{\includegraphics{"Chapter4 Figures/figure9b".pdf}}
+	\subfigure[]{\includegraphics{"Chapter2 Figures/figure9a".pdf}}
+	\subfigure[]{\includegraphics{"Chapter2 Figures/figure9b".pdf}}
 \caption{SNR for three different column densities after correcting for recoil induced detuning. (a) SNR as a function of imaging time for a probe intensity of $\tilde{I}_0=5.0$ and (b) SNR as a function of probe intensity for an imaging time of 50 \us{}.}
 \label{fig:SNR}
 \end{figure}
 
 %
 %\begin{figure}
-%	\includegraphics{"Chapter4 Figures/figure8".pdf}
+%	\includegraphics{"Chapter2 Figures/figure8".pdf}
 %\caption{The optical depth as a function of probe intensity for three imaging times: $t=40$\us{} (blue),  $t=75$\us{} (green),  $t=100$\us{} (red). The dots represent experimental data and the lines represent the best fit of simulated data. The optimal fit parameters pictured are a $\sigma_0 n$ of 1.62 and saturation intensity of 29 counts/\us{}. }
 %\label{fig:isatCalib}
 %\end{figure}
