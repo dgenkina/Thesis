@@ -11,6 +11,7 @@
 
 
 \section{One dimensional optical lattices}\label{chap:4sec:1DOL}
+	The first, 'real' dimension in the synthetic dimensional lattice is discretized into sites by an optical lattice. Optical lattices are a staple of cold atomic physics, and are commonly used to emulate the crystal structure present in metals and other condensed matter systems. In this section, we describe the orgin of the periodic potential, derive the Hamiltonian and show how the lattice depth is detected and calibrated in the lab. 
 
 \subsection{Far off-resonant atom-light interaction}
 	As described in section \ref{chap:2sec:atomLight}, on timescales where spontaneous emission can be neglected, two-level atoms exposed to laser radiation undergo coherent Rabi oscillations between the two levels. Starting with $c_g$ and $c_e$ as the time-dependent coefficients multiplying the eigenstate wavefuntions of the ground and excited state respectively, and assuming the atom starts in the ground state $c_g(t=0)=1$, we make the traditional transformation to the rotating frame:
@@ -106,6 +107,27 @@ In any numerical simulation, the number of momentum orders that can be included 
 
 \subsection{Tight binding approximation}
 
+In the limit of large lattice depths, $V_0 > \approx 5 E_L$, the lattice Hamiltonian is well approximated by the tight-binding model. In the tight binding model, the basis is assumed to be a set of orthogonal functions, called Wannier functions, localized to each lattice site $\ket{j}$.  The approximation lies in assuming only nearest neighbor tunnelings between the sites, forming the tight-binding Hamiltonian
+\begin{equation}
+H_{\rm tb} = - t \ket{j}\bra{j+1} + {\rm H.c.},
+\end{equation}
+where $t$ is the tunneling amplitude between nearest neighbor sites and H.c. stands for Hermitian conjugate. We have neglected the diagonal kinetic energy term, as it will be equal for every Wannier function $\ket{j}$ and thus represents a constant energy offset. All the information about the lattice depth is therefore reflected in the tunneling amplitude $t$. 
+
+The tight binding Hamiltonian can also be expressed in the momentum basis by Fourier transforming the basis functions:
+\begin{equation}
+\ket{j} = \frac{1}{\sqrt{N}}\sum_{k_j} e^{-i k_j j}\ket{k_j},
+\end{equation}
+giving the Hamiltonian
+\begin{equation}
+H_{\rm tb} = - \frac{1}{N}\sum_{k_1}\sum{k_2} t e^{-i j k_1} e^{i k_2 (j+1)} \ket{k_1}\bra{k_2} + {\rm H.c} = 2 t {\rm cos}(k)\ket{k}\bra{k}.
+\end{equation}  
+From this we can directly read off the band structure of the tight binding Hamiltonian. First, we notice that we only obtain one band - to approximate higher bands with the tight binding approximation we would need to construct a different set of Wannier functions and a different tunneling strength. Second, we see that the lowest band is simply a cosine - therefore we have solved for the band structure without even defining what the basis Wannier functions are! Third, the amplitude of the cosine function is given by the tunneling strength $t$. This gives us a good clue as to how to determine the appropriate tunneling given a lattice depth $V_0$ - [FIND EXPRESSION FOR AMPLITUDE OF LOWEST BAND COSINE AT LARGE V0] simply find a $t$ that matches the amplitude of the lowest band. 
+
+The precise form of the Wannier functions depends on both the depth of the lattice and the band being reproduced. It is not necessary for us to find their full expression, as the band structure can be calculated without them. The most commonly used definition, however, is
+\begin{equation}
+\ket{j} = \int_{\rm BZ} e^{i q j a}\Psi_q(x) {\rm d} q,
+\end{equation}
+where the integral is over the Brillouin zone, from $-k_L$ to $k_L$, $a$ is the lattice spacing $\lambda_L/2$, and $\Psi_q$ is the Bloch wavefunction at crystal momentum $q$. 
 
 \subsection{Pulsing vs adiabatic loading of the lattice}
 
@@ -138,6 +160,8 @@ In contrast to pulsing, adiabatic loading turns the lattice on slowly, such that
 
 
 \section{Raman and rf coupling}\label{chap:4sec:rf}
+
+	The second, 'synthetic' dimension in the effectively 2-D lattice is formed by the internal hyperfine states of the atoms, forming sites along a second dimension. To induce tunneling along the synthetic sites, analogous to lattice hopping between neighboring sites, we must engeneer some coupling between them. There are two ways we induce this tunneling - with rf coupling, tuned to be directly resonant with the energy difference between the hyperfine levels, and with two-photon Raman coupling, tuned such that the energy difference between the two photons matches the hyperfine splitting. In this section we describe the hypefine structure of \Rb{}, derive the Hamiltonians for both rf and Raman coupled states, and show how the Raman and rf coupled states are measured and calibrated in the lab.
 
 
 \subsection{Hyperfine structure}
