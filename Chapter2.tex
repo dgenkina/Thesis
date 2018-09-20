@@ -12,9 +12,9 @@ In this section, we will assume the atom can be treated as a two-level system: o
 
 On timescales short compared to $1/\Gamma$, spontaneous emission can be ignored, and an atom undergoes coherent Rabi oscillations between the ground and excited states via cycles of absorption and stimulated emission\cite{LCT}. Taking $c_g$ and $c_e$ to be the time-dependent coefficients multiplying the eigenstate wavefuntions of the ground and excited state respectively, and assuming the atom starts in the ground state $c_g(t=0)=1$, the excited state population is given by
 \begin{equation}
-c_e(t)=-i\frac{\Omega}{\Omega'}sin\left(\frac{\Omega't}{2}\right)e^{-i\delta t/2},
+c_e(t)=-i\frac{\Omega}{\Omega'}{\rm sin}\left(\frac{\Omega't}{2}\right)e^{-i\delta t/2},
 \end{equation}
-where $\Omega$ is the Rabi frequency given by $SOMETHING IN TERMS OF INTENSITY$, $\Omega'=\sqrt{\Omega^2+\delta^2}$ is the generalized Rabi frequency and $\delta=\omega_0-\omega_{\rm{L}}$ is the detuniong of the laser from atomic resonance. 
+where $\Omega$ is the Rabi frequency given by $\Omega^2 = \frac{\Gamma\lambda_L^3}{h(2\pi)^3}I$, with $\lambda_L$ as the laser wavelength, $h$ as Plank's constant and $I$ as the laser intensity,  $\Omega'=\sqrt{\Omega^2+\delta^2}$ is the generalized Rabi frequency and $\delta=\omega_0-\omega_{\rm{L}}$ is the detuniong of the laser from atomic resonance. 
 
 In the regime where spontaneous emission cannot be ignored, Rabi oscillations of each individual atom are intermittently interrupted by decay to the ground state. Averaging over an atomic ensamble, on the time scale of a single Rabi oscillation the overall excited state population reaches a steady state, and the rate of spontaneous emission becomes constant. Since during spontaneous emission the ejected photon can go into any vacuum mode, this process can be thought of as the scattering of photons by the atoms. This scattering rate is given by\cite{LCT}
 \begin{equation}
@@ -33,9 +33,9 @@ Absorption imaging takes advantage of the on-resonant interaction described in t
 %Absorption imaging measures the shadow cast by an atomic ensemble in an illuminating probe laser beam with angular frequency $\omega_{\rm{L}}$. 
 %\par An absorption image is obtained by shining an on- or near-resonant probe beam ($\tilde{\delta}\ll1$) onto the atomic cloud. Some of the light is scattered by the atoms, and the unscattered light, $\tilde{I}_f(x,y)$, is imaged onto a camera, as depicted in Fig. \ref{fig:absorptionIntor}(a) (top). The probe light is reapplied with the atoms absent to calibrate the intensity $\tilde{I}_0(x,y)$ of light unaffected by the atoms (bottom).
 \begin{figure}
-	\subfigure[]{\includegraphics[scale=0.5]{"Chapter2 Figures/Picture1a"}}
-	\subfigure[]{\includegraphics{"Chapter2 Figures/Picture1c".pdf}}
-	\subfigure[]{\includegraphics[scale=0.55]{"Chapter2 Figures/Picture1b"}}
+	\subfigure[]{\includegraphics[scale=0.45]{"Chapter2 Figures/Picture1a"}}
+	\subfigure[]{\includegraphics[scale = 0.9]{"Chapter2 Figures/Picture1c".pdf}}
+	\subfigure[]{\includegraphics[scale=0.5]{"Chapter2 Figures/Picture1b"}}
 \caption{Absorption imaging. (a) Near resonant probe light illuminates the atoms, and the transmitted light (containing a shadow of the atoms) is imaged on the camera. A second image taken with no atoms provides a reference. (b)  The probe beam is partially absorbed as it traverses the cloud, and the intensity seen by atoms further along the imaging direction \ez{} is lowered.  (c) An atomic cloud illuminated by a probe light field absorbs photons from the probe and re-emits them in all directions. This process results in a net acceleration of the cloud in the direction of the probe light as well as diffusive spreading in the transverse directions.  }
 \label{fig:absorptionIntor}
 \end{figure}
@@ -83,7 +83,7 @@ The number of photons absorbed per atom will depend on the intensity lost, up un
 \end{equation}
 These equations are interdependent, and cannot be in general solved analytically. 
 
-Figure \ref{fig:expos}a shows the velocity and detuning as a function of position in space for three different imaging times, calculated numberically. All calculations in this chapter were done for a cloud of $^40\mathrm{K}$ atoms, as that is relevant to our experiment described in the next chapter. The resonant wavelength is $PUT ALL NUMBERS FOR K IN HERE$
+Figure \ref{fig:expos}a shows the velocity and detuning as a function of position in space for three different imaging times, calculated numberically. All calculations in this chapter were done for a cloud of $^{40}\mathrm{K}$ atoms, as that is relevant to our experiment described in the next chapter. The resonant wavelength is $\lambda_L = 770.11$ nm, the natural linewidth of the transition is $\Gamma =  6.035$ MHz, the resulting saturation intensity and recoil velocity are $I_{\rm sat} = 17.5$ $ \rm{W/m^2}$ and $v_{\rm r}=0.01297$ m/s.  
 
 \section{Perturbative treatment}
 We can treat these equations perturbatively in time. To first order, we can set the detuning in Eq. \ref{eq3} to $\delta=0$, assume $I(z)$ is time independent, and plug that into Eq. \ref{eq4} to obtain 
@@ -115,9 +115,9 @@ In the following sections, we describe two versions of numerical simulations tha
 %\end{equation}
 %the relationship between the atomic density and the observed intensities is no longer straightforward.
 \begin{figure}
-	\subfigure[]{\includegraphics{"Chapter2 Figures/figure1".pdf}}
-	\subfigure[]{\includegraphics{"Chapter2 Figures/figure2".pdf}}
-\caption{(a) Dependence of velocity and detuning on position simulated for \K{} at three different imaging times and a probe intensity $\tilde{I}_0=0.8$. (b) Column densities deduced from optical depths obtained from recoil detuning corrected simulation of on-resonant imaging of $^{40}K$ atoms at probe intensity $\tilde{I}_0=0.8$. The input column density $\sigma_0 n=1.6$. $\sigma_0 n^{\rm{(1)}}$ is the high probe intensity corrected column density given by Eq. (\ref{eq2}). $\sigma_0 n^{\rm{(2)}}$ is the column density as expanded to second order in time, Eq. (\ref{eq:perturb}).}
+	\subfigure[]{\includegraphics[scale=1.0]{"Chapter2 Figures/figure1".pdf}}
+	\subfigure[]{\includegraphics[scale=1.0]{"Chapter2 Figures/figure2".pdf}}
+\caption{(a) Dependence of velocity and detuning on position simulated for \K{} at three different imaging times and a probe intensity $I_0=0.8 I_{\rm sat}$. (b) Column densities deduced from optical depths obtained from recoil detuning corrected simulation of on-resonant imaging of $^{40}K$ atoms at probe intensity $I_0=0.8 I_{\rm sat}$. The blue line is the input column density $\sigma_0 n=1.6$. The green line is the high probe intensity corrected column density given by Eq. (\ref{eq2}). The red line is the column density as expanded to second order in time, Eq. (\ref{eq:perturb}).}
 \label{fig:expos}
 \end{figure}
 %\par By considering this equation perturbatively in imaging time we obtain corrections to second order \cite{LJLthesis}
@@ -241,8 +241,8 @@ Equation (\ref{eq10}) can be solved numerically, and is in agreement with our si
 We then used this version of the simulation to look at the motion of composite atoms as a function of imaging time in phase space (ie, velocity and position). Some examples of this motion can be seen in  Fig. \ref{fig:phaseSpace}. As seen in the figure, the atomic cloud is significantly distorted during the imaging pulse and the atoms perform some crazy acrobatics. 
 %We used this model to study the time evolution of the cloud shape during imaging and visualized the phase space evolution of superatoms, shown in Fig. \ref{fig:phaseSpace}. The cloud is strongly distorted during imaging.
 \begin{figure}
-	\subfigure[]{\includegraphics{"Chapter2 Figures/figure6a".pdf}}
-	\subfigure[]{\includegraphics{"Chapter2 Figures/figure6b".pdf}}
+	\subfigure[]{\includegraphics[scale=0.9]{"Chapter2 Figures/figure6a".pdf}}
+	\subfigure[]{\includegraphics[scale=0.9]{"Chapter2 Figures/figure6b".pdf}}
 \caption{Phase space evolution of an atomic cloud exposed to probe light with intensity $\tilde{I}_0=1.2$. We defined $\Delta v=v -\left< v(t) \right>$  and $\Delta z=z-\left< z(t) \right>$, subtracting out the center of mass position and velocity of the cloud. The column density $\sigma_0 n$ is 1.6, and the initial cloud is a Gaussian with a width of 10 $\mu$m in (a) and 1 $\mu$m in (b). The center of mass velocities $\left< v\right>$ are (0,  3.41, 5.26, 6.52, 7.50, 8.32) m/s sequentially, and are the same for both initial cloud widths. }
 \label{fig:phaseSpace}
 \end{figure}
@@ -295,7 +295,7 @@ This simulation allowed us to interpret experimental data. For a given imaging t
 \begin{figure}
 	\subfigure[]{\includegraphics{"Chapter2 Figures/figure9a".pdf}}
 	\subfigure[]{\includegraphics{"Chapter2 Figures/figure9b".pdf}}
-\caption{SNR for three different column densities after correcting for recoil induced detuning. (a) SNR as a function of imaging time for a probe intensity of $\tilde{I}_0=5.0$ and (b) SNR as a function of probe intensity for an imaging time of 50 \us{}.}
+\caption{SNR for three different column densities after correcting for recoil induced detuning. (a) SNR as a function of imaging time for a probe intensity of $I_0=5.0 I_{\rm sat}$ and (b) SNR as a function of probe intensity for an imaging time of 50 \us{}.}
 \label{fig:SNR}
 \end{figure}
 

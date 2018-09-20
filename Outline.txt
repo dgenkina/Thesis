@@ -2,7 +2,7 @@ Thesis outline:
 
 
 Introduction
-	Usual BS about how cold atoms are well controlled and tunable and we can use them
+	Something about how cold atoms are well controlled and tunable and we can use them
 	to one day solve many body problems that are currently not solvable and engineer 
 	quantum systems that don't even exist elsewhere just for shits and giggles. 
 
@@ -54,9 +54,11 @@ Chapter 4: Synthetic dimensional lattice
 		Lattice + Raman Hamiltonian
 		Effective magnetic field explanation
 		-- Figure: images of loaded 'bulk' and 'edge' states
+		Observation of skipping orbits
+		-- Figure: skipping orbits from Hsin-I and Ben's paper
 	
 
-Chapter 5: WTF is Chern number
+Chapter 5: What is Chern number
 	Integral over the Berry curvature definition in infinite system
 	Bulk-edge correspondence in finite system
 	Quantum Hall effect (with/without disorder)
