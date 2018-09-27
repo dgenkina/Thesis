@@ -91,7 +91,7 @@ in the basis of momentum orders $\ket{k}=e^{i k x}$ given by:
 \end{pmatrix} \\.
 \end{equation}
 
-This matrix can be diagonalized for every value of the crystal momentum $q$, with some examples shown in Figure [ADD BAND STRUCTURE FIGURE]. It is convenient to define the lattice recoil energy $E_L = \hbar^2 k_L^2/2m$. Then, we can re-write the Hamiltonian with $V_0$ in units of $E_L$ and momenta $q$ in units of $k_L$ as 
+This matrix can be diagonalized for every value of the crystal momentum $q$, withthe resulting band structure shown in Figure \ref{fig:latticeBandStructure}. It is convenient to define the lattice recoil energy $E_L = \hbar^2 k_L^2/2m$. Then, we can re-write the Hamiltonian with $V_0$ in units of $E_L$ and momenta $q$ in units of $k_L$ as 
 \begin{equation}
 H_L/E_L =
  \begin{pmatrix} \ddots &  & & & & & & \\ 
@@ -102,6 +102,12 @@ H_L/E_L =
  &  & 0 & 0 & \frac{V_0}{4} & (q  - 4)^2 &  \\
 & & & & & & &  \ddots \end{pmatrix} \\.
 \end{equation}
+
+\begin{figure}
+	\includegraphics{"Chapter4 Figures/figure1".pdf}
+\caption{Lattice band structure in the extended zone scheme. The dashed lines represent the limit of zero lattice depth, with the regular parabolic dispersion relation of a free particle repating with reciprocal lattice period. The solid lines are the dispersion relation at $V_0 = 4.0 E_L$, showing the opening of gaps at crossings of the zero lattice depth bands. The black lines demarcate the first Brillouin zone. }
+\label{fig:latticeBandStructure}
+\end{figure}
 
 In any numerical simulation, the number of momentum orders that can be included is finite. We determine the value of the parameter $n = {\rm max}(|j|)$ as the lowest $n$ at which the eigenvalues stop changing to machine precision from $n-1$. The code for finding and plotting the eigenvalues and eigenvectors of the lattice hamiltonian is included in Appendix [MAKE APPENDIX WITH CODE?].
 
@@ -121,17 +127,17 @@ giving the Hamiltonian
 \begin{equation}
 H_{\rm tb} = - \frac{1}{N}\sum_{k_1}\sum{k_2} t e^{-i j k_1} e^{i k_2 (j+1)} \ket{k_1}\bra{k_2} + {\rm H.c} = 2 t {\rm cos}(k)\ket{k}\bra{k}.
 \end{equation}  
-From this we can directly read off the band structure of the tight binding Hamiltonian. First, we notice that we only obtain one band - to approximate higher bands with the tight binding approximation we would need to construct a different set of Wannier functions and a different tunneling strength. Second, we see that the lowest band is simply a cosine - therefore we have solved for the band structure without even defining what the basis Wannier functions are! Third, the amplitude of the cosine function is given by the tunneling strength $t$. This gives us a good clue as to how to determine the appropriate tunneling given a lattice depth $V_0$ - [FIND EXPRESSION FOR AMPLITUDE OF LOWEST BAND COSINE AT LARGE V0] simply find a $t$ that matches the amplitude of the lowest band. 
+From this we can directly read off the band structure of the tight binding Hamiltonian. First, we notice that we only obtain one band - to approximate higher bands with the tight binding approximation we would need to construct a different set of Wannier functions and a different tunneling strength. Second, we see that the lowest band is simply a cosine - therefore we have solved for the band structure without even defining what the basis Wannier functions are! Third, the amplitude of the cosine function is given by the tunneling strength $t$. This gives us a good clue as to how to determine the appropriate tunneling given a lattice depth $V_0$ - simply find a $t$ that matches the amplitude of the lowest band, which becomes cosinusoidal in the deep lattice limit. 
 
-The precise form of the Wannier functions depends on both the depth of the lattice and the band being reproduced. It is not necessary for us to find their full expression, as the band structure can be calculated without them. The most commonly used definition, however, is
+The precise form of the Wannier functions depends on both the depth of the lattice and the band being reproduced. It is not necessary for us to find their full expression, as the band structure can be calculated without them. The definition, however, is
 \begin{equation}
-\ket{j} = \int_{\rm BZ} e^{i q j a}\Psi_q(x) {\rm d} q,
+\ket{j} = \int_{\rm BZ} e^{i \phi(q) - i q j a}\Psi_q(x) {\rm d} q,
 \end{equation}
-where the integral is over the Brillouin zone, from $-k_L$ to $k_L$, $a$ is the lattice spacing $\lambda_L/2$, and $\Psi_q$ is the Bloch wavefunction at crystal momentum $q$. 
+where the integral is over the Brillouin zone, from $-k_L$ to $k_L$, $a$ is the lattice spacing $\lambda_L/2$, and $\Psi_q$ is the Bloch wavefunction at crystal momentum $q$, and $\phi(q)$ is the phase associated with each Bloch wavefuntion. The Bloch wavefunctions individually have arbitrary phase. The phase plays an important role in combining the Bloch wavefunctions into a Wannier function, finding the proper phase relationship to make the wavefunction maximally localized at each site\cite{Marzari2012}. 
 
 \subsection{Pulsing vs adiabatic loading of the lattice}
 
-The lattice depth parameter $V_0/4$, for a range of values, can be well calibrated experimentally by pulsing on the lattice. Here, the word pulsing indicates that the lattice is turned on fully non-adiabatically, if not instantaneously, such that the original bare momentum state is projected onto the lattice eigenbasis. If the atoms start out stationary in the trap, the bare state in the momentum basis is simply
+The lattice depth parameter $V_0/4$, for a range of values, can be well calibrated experimentally by pulsing on the lattice. Here, the word pulsing indicates that the lattice is turned on fully non-adiabatically, if not instantaneously, such that the original bare momentum state is projected onto the lattice eigenbasis, as shown in Figure \ref{fig:pulsingSchematic}a. If the atoms start out stationary in the trap, the bare state in the momentum basis is simply
 \begin{equation}
 \ket{\Psi_0} = \begin{pmatrix} \vdots \\
 0\\
@@ -140,10 +146,16 @@ The lattice depth parameter $V_0/4$, for a range of values, can be well calibrat
 0\\
 0\\
 \vdots
-\end{pmatrix} \\.
+\end{pmatrix} \\,
 \end{equation}
+as depicted in  Figure \ref{fig:pulsingSchematic}b.
 
-Since the lattice eigenbasis is distinct from the bare one, this will necessarily excite the atoms into a superposition of lattice eigenstates, each evolving with a different phase according to the eigenenergy while the lattice is on. Then, when the lattice is snapped back off, the wavefunction is projected back into the bare basis, and the varying phase accumulation results in a beating of the different momentum orders. This can be calculated simply by using the time evolution operator
+\begin{figure}
+\includegraphics{"Chapter4 Figures/figure2".pdf}
+\caption{Lattice pulsing. (a) Lattice depth as a function of time during a pulsing experiment. The lattice is turned on instantaneously at $t=0$ and held on for a variable amount of time until being turned off instantaneously at a final time $t=t_f$. (b) Atomic population before $t=0$. The dispersion relation is that of a free particle, and all of the atoms start out at $q=0$ in the lowest energy level. Here, the area of the dots is proportional to the fractional population in the energy state. (c) Atomic population after the lattice is turned on for a lattice depth of $V_0 = 8.0 E_L$. The energy spectrum now shows the lattice band structure, and some atomic population is projected onto the excited bands. (d) Atomic population after the lattice is snapped off at $t_f = 150$ $\mu$s. The wavefunction is projected back onto the bare states, with some fraction (blue circle) in the lowest band at $k=0$ and some fraction in the excited band, with equal population being projected onto the $k = 2 k_L$ (green) and $k=-2k_L$ (red). }
+\label{fig:pulsingSchematic}
+\end{figure}
+Since the lattice eigenbasis is distinct from the bare one, instiantaneously turning on the lattice will necessarily excite the atoms into a superposition of lattice eigenstates, each evolving with a different phase according to the eigenenergy while the lattice is on, as shown in  Figure \ref{fig:pulsingSchematic}c. Then, when the lattice is snapped back off, the wavefunction is projected back into the bare basis, and the varying phase accumulation results in a beating of the different momentum orders, see  Figure \ref{fig:pulsingSchematic}d. This can be calculated simply by using the time evolution operator
 \begin{equation}
 \ket{\Psi(t)} = e^{-i H_L t/\hbar}\ket{\Psi_0}.
 \label{eqn:timeEvolveLat}
@@ -153,7 +165,13 @@ By pulsing on the lattice for variable amounts of time $t$, we can obtain fracti
 %low lattice power:
 %Flea3,PIXIS_20Aug2017_0124-0153
 
-In contrast to pulsing, adiabatic loading turns the lattice on slowly, such that the atomic wavefunction starting in the bare ground state can continuously adjust to remain in the ground state of the current Hamiltonian, without projecting onto any of the higher bands. The adiabatic timescale depends on the spacing between the ground and next excited band (or if starting in a different eigenstate, the nearest eigenstate). If the energy difference between the ground and first excited state is $\Delta E$, the timescale on which the lattice is turned on must fullfill $t \gg h/\Delta E$.  
+In contrast to pulsing, adiabatic loading turns the lattice on slowly, such that the atomic wavefunction starting in the bare ground state can continuously adjust to remain in the ground state of the current Hamiltonian, without projecting onto any of the higher bands. This process is illustrated in Figure \ref{fig:pulsingSchematic}. The adiabatic timescale depends on the spacing between the ground and next excited band (or if starting in a different eigenstate, the nearest eigenstate). If the energy difference between the ground and first excited state is $\Delta E$, the timescale on which the lattice is turned on must fullfill $t \gg h/\Delta E$.  
+
+\begin{figure}
+\includegraphics{"Chapter4 Figures/figure3".pdf}
+\caption{Adiabatic lattice loading. (a) Lattice depth as a function of time during adiabatic turn-on. The lattice is ramped on starting at $t=0$, slowly increasng to a final lattice depth and turned off instantaneously at a final time $t=t_f$. (b) Atomic population before $t=0$. All atoms are at $k=0$ in the lowest bare band. (c) Atomic population after the lattice is turned on adiabatically to a lattice depth of $V_0 = 8.0 E_L$. All atoms remain in the lowest band, but the band is no longer bare. (d) Atomic population after the lattice is snapped off. The wavefunction is projected back onto the bare states, with some fraction (blue circle) in the lowest band at $k=0$ and some fraction in the excited band, with equal population being projected onto the $k = 2 k_L$ (green) and $k=-2k_L$ (red). Since the lowest lattice band is a superposition of bare bands, some atoms are excited to the higher bare bands. }
+\label{fig:pulsingSchematic}
+\end{figure}
 
 [FIND PICTURES OF ADIABATICALLY LOADED LATTICE STATES]
 
@@ -165,7 +183,7 @@ In contrast to pulsing, adiabatic loading turns the lattice on slowly, such that
 
 
 \subsection{Hyperfine structure}
-
+	Alkali atoms' energy levels can be understood as primarily the energy state of the single electron in the outer shell. Fine structure arises from different combinations of angular momenta, including orbital angular momentum of the outermost electron with respect to the nucleus $\mathbf{L}$, the electron spin $\mathbf{S}$ and the nuclear spin $\mathbf{I}$. The total electron angular momentum is the combination of orbital and the spin angular momenta $\mathbf{J} = \mathbf{L} +\mathbf{S}$, and the quantum number can be any integer $|L - S| \leq J \leq |L + S|$. The ground state of \Rb{}, in term notation $^{2S+1}L_J$ is $^2S_{1/2}$, where $S$ is orbital notation indicating $L=0$. 
 
 \subsection{Raman and rf coupling Hamiltonians}
 
