@@ -1,19 +1,38 @@
 \begin{thebibliography}{1}
 
-\bibitem{LCT}
-H.J. Metcalf and P.~van~der Straten.
-\newblock {\em Laser Cooling and Trapping}.
-\newblock Graduate Texts in Contemporary Physics. Springer New York, 1999.
-
-\bibitem{LJLthesis}
-Lindsey~J. LeBlanc.
-\newblock {\em {Exploring many-body physics with ultracold atoms}}.
-\newblock PhD thesis, University of Toronto, 2011.
-
 \bibitem{Stuhl2015}
 B.~K. Stuhl, H.-I. Lu, L.~M. Aycock, D.~Genkina, and I.~B. Spielman.
 \newblock Visualizing edge states with an atomic bose gas in the quantum hall
   regime.
 \newblock {\em Science}, 349(6255):1514--, Sep 2015.
+
+\bibitem{Ashcroft}
+N.W. Ashcroft and N.D. Mermin.
+\newblock {\em {Solid State Physics}}.
+\newblock Saunders College, Philadelphia, 1976.
+
+\bibitem{Marzari2012}
+Nicola Marzari, Arash~A. Mostofi, Jonathan~R. Yates, Ivo Souza, and David
+  Vanderbilt.
+\newblock Maximally localized wannier functions: Theory and applications.
+\newblock {\em Rev. Mod. Phys.}, 84:1419--1475, Oct 2012.
+
+\bibitem{Steck}
+Daniel~Adam Steck.
+\newblock Rubidium 87 d line data.
+\newblock Available online, http://steck.us/alkalidata, January 2015.
+\newblock revision 2.1.5.
+
+\bibitem{KarinaThesis}
+Karina Jimenez-Garcia.
+\newblock {\em Artificial Gauge Fields for Ultracold Neutral Atoms}.
+\newblock PhD thesis, Joint Quantum Institute, National Institute of Standards
+  and Technology, and the University of Maryland, 2012.
+
+\bibitem{Karina2012}
+K.~Jim\'enez-Garc\'{\i}a, L.~J. LeBlanc, R.~A. Williams, M.~C. Beeler, A.~R.
+  Perry, and I.~B. Spielman.
+\newblock Peierls substitution in an engineered lattice potential.
+\newblock {\em Phys. Rev. Lett.}, 108:225303, May 2012.
 
 \end{thebibliography}

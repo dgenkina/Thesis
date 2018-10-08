@@ -183,12 +183,38 @@ In contrast to pulsing, adiabatic loading turns the lattice on slowly, such that
 
 
 \subsection{Hyperfine structure}
-	Alkali atoms' energy levels can be understood as primarily the energy state of the single electron in the outer shell. Fine structure arises from different combinations of angular momenta, including orbital angular momentum of the outermost electron with respect to the nucleus $\mathbf{L}$, the electron spin $\mathbf{S}$ and the nuclear spin $\mathbf{I}$. The total electron angular momentum is the combination of orbital and the spin angular momenta $\mathbf{J} = \mathbf{L} +\mathbf{S}$, and the quantum number can be any integer $|L - S| \leq J \leq |L + S|$. The ground state of \Rb{}, in term notation $^{2S+1}L_J$ is $^2S_{1/2}$, where $S$ is orbital notation indicating $L=0$. 
+	Alkali atoms' energy levels can be understood as primarily the energy state of the single electron in the outer shell. Fine structure arises from different combinations of angular momenta, including orbital angular momentum of the outermost electron with respect to the nucleus $\mathbf{L}$, the electron spin $\mathbf{S}$ and the nuclear spin $\mathbf{I}$. The total electron angular momentum is the combination of orbital and the spin angular momenta $\mathbf{J} = \mathbf{L} +\mathbf{S}$, and the quantum number can be any integer $|L - S| \leq J \leq |L + S|$. The ground state of \Rb{}, in term notation $^{2S+1}L_J$ is $^2S_{1/2}$, where $S$ is orbital notation indicating $L=0$. Since the total spin quantum number $J=1/2$, this produces two possible spin projection quantum numbers, $m_J=\pm1/2$.
+
+	There is also a contribution from the nuclear spin $\mathbf{I}$, resolvable at low magnetic fields, which gives rise to hyperfine structure of the states. For \Rb{}, $I=3/2$. The total spin, including nuclear spin, is indicated by the quantum number $F$, and $|J - I| \leq F \leq |J + I|$. The interaction with the nuclear spin splits the ground state of \Rb{} into two manifolds, $F=1$ and $F=2$, with three hyperfine states in the $F=1$ manifold ($m_F=0,\pm1$) and five hyperfine states in the $F=2$ manifold ($m_F=0,\pm1,\pm2$). These states couple to an external magnetic field $B_z$ along some direction $\mathbf{e}_z$ via the Hamiltonian $H_B=\mu_B(g_JJ_z+g_II_z)B_z/\hbar$. Here $\mu_B$ is the Bohr magneton, and $g_J$ and $g_I$ are Lande g-factors. Since $g_J\gg g_I$, at high fields the nuclear spin interaction becomes small compared to the total energy shift, and the levels are grouped according to their $m_J$ quantum number, as seen in Figure \ref{fig:hyperfineSteck}.
+
+At low fields, however, the states are approximately linearly dependent on the $m_F$ quantum number. The linear shift from the $B=0$ states is known as the linear Zeeman shift. In the intermediate regime, the correction to the linear shift can be expressed in terms of and energy correction to each hyperfine state $\epsilon(B)|m_F|^2$, known as the quadratic Zeeman shift. For the magnetic fields used in experiments described in this thesis, this correction is sufficient for describing the energy levels. 
+
+\begin{figure}
+	\includegraphics[scale=0.6]{"Chapter4 Figures/HyperfineFromSteck".pdf}
+\caption{Energy structure of hyperfine states of the ground state of \Rb{} as a function of external magnetic field strength in Gauss.  Figure from ref. \cite{Steck}}
+\label{fig:hyperfineSteck}
+\end{figure}
 
 \subsection{Raman and rf coupling Hamiltonians}
 
+	For the $F=1$ manifold, there are three available spin states $m_F = 0,\pm1$. There are many ways of introducing coupling terms between the different hyperfine states. Here, we will explain two methods: rf coupling and Raman coupling. Rf coupling is a radio-frequency oscillating magnetic field, in our case produced by a pair of circular coils in series side by side above the atoms (see \cite{KarinaThesis}).
 
-\subsection{Adiabatically loaded Raman and rf dressed states}
+\begin{figure}
+	\subfigure[]{\includegraphics[scale=0.3]{"Chapter4 Figures/RfRamanSetupBeams".pdf}}
+	\subfigure[]{\includegraphics[scale=0.3]{"Chapter4 Figures/RfRamanSetupLevels".pdf}}
+\caption{Raman and rf coupling schematic. (a) Beam geometry of the Raman beams and rf relative to the external field. The Raman beams have a frequency difference $\Delta\omega$, and are linearly polarized in perpendicular directions. (b) Level structure of both Raman and Rf coupling for hyperfine states of the $F=1$ manifold. The hyperfine splitting sparates  the levels by an energy $\hbar\omega_z$. The quadratic Zeeman shift $\epsilon$ lowers the energy of the $m_F=0$ state, and the detuning $\delta$ of either the Raman or the rf fields shifts the energies of the $m_F=\pm1$ states. Raman transitions are two-photon, exciting up to a virtual state and coming back down to an adjacent hyperfine state, with an accompanying momentum transfer. Rf couples adjacent hyperfine states directly. Figure taken from ref. \cite{Karina2012}}
+\label{fig:RamanRfSchematic}
+\end{figure}
+
+Hamiltonians 
+
+Figure: band structure bare/dressed rf/Raman
+
+
+\subsection{Calibration and adiabatic laoding of Raman and Rf dressed states}
+Figure: Pulsing experiments
+
+Figure: Pictures of adiabatically loaded states
 
 
 \section{Synthetic dimensions}\label{chap:4sec:syn_dim}
