@@ -195,9 +195,38 @@ At low fields, however, the states are approximately linearly dependent on the $
 \label{fig:hyperfineSteck}
 \end{figure}
 
-\subsection{Raman and rf coupling Hamiltonians}
+The form of the Hamiltonian in this regime for any value of $F$ is given by
+\begin{equation}
+H_0 = H_{\rm KE} + \hbar \omega_z \mathbf{F_z} + \hbar\epsilon \mathbf{F_z}^2,
+\end{equation}
+where $\hbar \omega_z = \mu_B g_F B_z/\hbar$, and the kinetic energy Hamiltonian $H_{\rm KE} = \hbar^2 \vec{k}^2/2m \mathcal{I}$, and $\mathcal{I}$ is the identity matrix.
 
-	For the $F=1$ manifold, there are three available spin states $m_F = 0,\pm1$. There are many ways of introducing coupling terms between the different hyperfine states. Here, we will explain two methods: rf coupling and Raman coupling. Rf coupling is a radio-frequency oscillating magnetic field, in our case produced by a pair of circular coils in series side by side above the atoms (see \cite{KarinaThesis}).
+\subsection{Rf coupling Hamiltonian}
+
+	For the $F=1$ manifold, there are three available spin states $m_F = 0,\pm1$. There are many ways of introducing coupling terms between the different hyperfine states. Here, we will explain two methods: rf coupling and Raman coupling. Rf coupling is a radio-frequency oscillating magnetic field, in our case produced by a pair of circular coils in series side by side above the atoms (see \cite{KarinaThesis}). Assuming the rf oscillating field is polarized along the $\mathbf{e}_x$, with the bias field along $\mathbf{e}_z$, the coupling Hamiltonian is given by $H_{rf} = \mu_B g_F \vec{\mathbf{F}}\cdot{}\vec{B} = \mu_B g_F \mathbf{F}_x B_x {\rm cos}(\omega t)$, where $2 \pi\omega$ is the rf frequency. The schematic of this setup is shown in Figure \ref{fig:RamanRfSchematic}.
+	The eignestates of the bare Hamiltonian $H_0$ are the constituent $m_F$ states. The eigenstates of the coupled Hamiltonian $H_0 + H_{rf}(t)$ can be expressed as a linear superposition of the bare eignestates $\Psi(\vec{x},t)=\sum_{m_F}c_{m_F}(t)\phi_{m_F}(\vec{x})e^{-i\omega_{m_F}t}$. The Hamiltonian in this basis can then be written as\cite{LCT}
+\begin{equation}
+H = H_{\rm KE} + \hbar
+ \begin{pmatrix} 0 & \Omega {\rm cos}(\omega t)e^{i\omega_zt}  & 0  \\ 
+\Omega {\rm cos}(\omega t)e^{-i\omega_zt}  & 0 &  \Omega {\rm cos}(\omega t)e^{i\omega_zt} \\
+ 0 & \Omega {\rm cos}(\omega t)e^{-i\omega_zt}  & 0  \\
+ \end{pmatrix} \\,
+\end{equation}
+where $\Omega$ is the Rabi frequency, proportional to $B_x$.
+	 We can then transfer into the rotating frame $c'_{m_F} = e^{-i m_F \delta t}c_{m_F}$, where $\delta = \omega_z - \omega$. Then we apply the rotating wave approximation, that the fast oscillating terms average to zero over time scales of interest $e^{2i\omega t}\approx 0$, and obtain 
+
+\begin{equation}
+H = H_{\rm KE} + \hbar
+ \begin{pmatrix} \delta & \Omega/2  &  0  \\ 
+\Omega/2 & -\epsilon &  \Omega/2 \\
+ 0 & \Omega/2  & -\delta  \\
+ \end{pmatrix} \\,
+\label{eqn:rfHam}
+\end{equation}
+or for any value of $F$
+\begin{equation}
+H = H_{\rm KE} + \hbar\delta F_z + \hbar \epsilon F^2_z + \Omega F_x/2.
+\end{equation}
 
 \begin{figure}
 	\subfigure[]{\includegraphics[scale=0.3]{"Chapter4 Figures/RfRamanSetupBeams".pdf}}
@@ -206,12 +235,55 @@ At low fields, however, the states are approximately linearly dependent on the $
 \label{fig:RamanRfSchematic}
 \end{figure}
 
-Hamiltonians 
+The band structure of this Hamiltonian can be seen in Figure \ref{fig:RfBandStruct}, where we have diaganolized Eq. \ref{eqn:rfHam} for a range of momenta $k_x$ (we have islolated $k_x$ for comparison with Raman coupling, as will be seen in the next section). The parabolas are simply the free particle dispersion relations along one dimension, with three bands arising from the three available spin states. It is convenient to define the magnetization of an eigenstate $m = \sum_{m_F} m_F*p_{m_F}$, where $p_{m_F}$ is the fractional population in the $m_F$ state. We have indicated the magnetization of the eigentate by coloring the eigenenrgies, with $m=-1$ in red, $m=0$ in green, and $m=+1$ in blue. In Figure \ref{fig:RfBandStruct}a, both the detuning and the coupling strength are zero. Therefore, there are simply three free particle dispersions, each exactly correlated with a particular spin state, the $m_F=\pm1$ are degenerate and the $m_F=0$ state is slightly offset by the quadratic shift $\hbar\epsilon$. In Figure \ref{fig:RfBandStruct}c, the coupling strength is again zero, but the detuning has been turned on, lifting the degeneracy between   the $m_F=\pm1$ states. Figure \ref{fig:RfBandStruct}b,d shows the same conditions as a,c, respectively, but with the coupling strength turned on. In Figure \ref{fig:RfBandStruct}b, where the detuning is zero and the quadratic shift is negligible compared to the coupling strength, all states average to a magnetization of zero--the $m_F=\pm1$ states are symmetrically populated. In Figure \ref{fig:RfBandStruct}d, this symmetry is broken by the presence of a detuning.  
 
-Figure: band structure bare/dressed rf/Raman
+\begin{figure}
+	\includegraphics{"Chapter4 Figures/rfBandStructure".pdf}
+\caption{Band structure of the rf Hamiltonian, Eq. \ref{eqn:rfHam}, in momentum space. For all plots, the quadratic Zeeman shift $\hbar\epsilon = 0.04 E_R$, and the color represents magnetization, labeled by the colorbar. (a) $\hbar\Omega=0$, $\hbar\delta = 0$. No coupling or detuning is present, so the only separation between the bands is due to the quadratic shift $\hbar\epsilon$. (b) $\hbar\Omega=5.0 E_R$, $\hbar\delta = 0$. (c) $\hbar\Omega=0$, $\hbar\delta = 1.0 E_R$. Even though the coupling strength is zero, the bands are separated by the detuning. (d) $\hbar\Omega=5.0 E_R$, $\hbar\delta = 1.0 E_R$.}
+\label{fig:RfBandStruct}
+\end{figure}
 
+\section{Raman coupling Hamiltonian}
 
-\subsection{Calibration and adiabatic laoding of Raman and Rf dressed states}
+	The counter-propagating Raman beams, as seen in Figure \ref{fig:RamanRfSchematic}, couple the same states as the rf. The do so via the vector light shift created by the pair of beams. The electric field due to the right going beam (red in Figure \ref{fig:RamanRfSchematic}a) is $\mathbf{E} = E_0 {\rm exp}(ik_R x - i\omega t) \mathbf{e}_y$, where $E_0$ is the amplitude of the electric field and $\hbar k_R = h/\lambda_R=\hbar\omega/c$. The electric field from the left going beam (gray in Figure \ref{fig:RamanRfSchematic}b) is $\mathbf{E} = E_0 {\rm exp}(-i k_R x - i(\omega +\Delta \omega)t) \mathbf{e}_z$. This combines to give an effective field from the vector light shift\cite{SteckTextbook} $B_{\rm eff}\propto \mathbf{E}\times\mathbf{E^*} \propto -E^2_0 {\rm cos}(2k_R x + \Delta\omega t)\mathbf{e}_x$. Going through the same procedure as for the rf coupling case, including the  transfer into the rotating frame and the rotating wave approximation, we obtain the same Hamiltonian in the basis of bare spin states $\ket{-1},\ket{0},\ket{1}$ but with an extra phase factor:
+	 
+\begin{equation}
+H = H_{\rm KE} + \hbar
+ \begin{pmatrix} \delta & \Omega/2 e^{-i 2 k_R x}  &  0  \\ 
+\Omega/2 e^{i 2 k_R x} & -\epsilon &  \Omega/2 e^{-i 2 k_R x}\\
+ 0 & \Omega/2 e^{i 2 k_R x} & -\delta  \\
+ \end{pmatrix} \\,
+\end{equation}
+where $\delta = \omega_z - \Delta\omega$.
+
+	This phase difference between the rf and Raman Hamiltonian has an intuitive physical explanation. In order to undergo a Raman transition, an atom first absorbs a photon from one beam, getting a momentum kick equal to the recoil momentum $\hbar k_R$. Then, to decay back down to an adjacent spin state, the undergoes stimulated emission into the field of the other (counter-propagating) beam, acquiring another recoil momentum kick in the same direction for a total of $2\hbar k_R \mathbf{e}_x$. Therefore, the Raman coupling Hamiltonian for $F=1$, after transforming into the rotating frame and performing the rotating wave approximation, can be written in the same way as the rf Hamiltonian in Eq. \ref{eqn:rfHam} with the addition of a momentum kick---in real space, an aquired phase---of $e^{i 2 k_R x}$.
+
+	We can again make a basis transformation to get rid of this phase. Let us define  $\ket{-1}' = {\rm exp}(-2ik_R x)\ket{-1} = \ket{k_x-2k_R,-1},\ket{0}' = \ket{0} = \ket{k_x,0},\ket{1}' = {\rm exp}(2ik_R x)\ket{1}=\ket{k_x+2k_R,1}$, where for third definition we went into the momentum basis and labelled the states by a combination of their momentum and spin state. Then, including the kinetic energy term along $\mathbf{e}_x$ explicitly, we obtain the Hamiltonian in the new basis as:
+ \begin{equation}
+H = H_{\rm KE}^{(y,z)} +
+ \begin{pmatrix} \frac{\hbar^2(k_x-2k_R)^2}{2m}+\hbar\delta & \hbar\Omega/2  &  0  \\ 
+\hbar\Omega/2 & \frac{\hbar^2 k_x^2}{2m} - \hbar\epsilon &  \hbar\Omega/2\\
+ 0 & \hbar\Omega/2 &  \frac{\hbar^2(k_x+2k_R)^2}{2m} -\hbar\delta  \\
+ \end{pmatrix} \\.
+\label{RamanHam}
+\end{equation}
+
+It is convenient to define the Raman recoil energy as $E_R = \frac{\hbar^2 k_R^2}{2m}$. The band structure of this Hamiltonian is shown in Figure \ref{fig:RamanBandStruct}, for several representative parameter values, with the magnetization labelled by the color. Figure \ref{fig:RamanBandStruct}a shows the band structure in the limit of zero coupling and zero detuning, but where we have already gone into the basis $ \ket{k_x-2k_R,-1}, \ket{k_x,0},\ket{k_x+2k_R,1}$; therefore, the free particle parabola corresponding to the $m_F=1$ spin states is shifted to center on $k_x=-2k_R$ and the $m_F=-1$ parabola is shifted to center on $k_x = 2k_R$. As the coupling is turned on to $\hbar\Omega = 1 E_R$ in Figure \ref{fig:RamanBandStruct}b, the points where the parabolas cross become 'avoided crossings', separating into three bands where magnetization (and the underlying spin distribution) depends on the momentum $k_x$. As the coupling strength is turned up even further to $\hbar\Omega = 5 E_R$ in Figure \ref{fig:RamanBandStruct}c, the lowest band goes from having three minima, one corresponding to each original spin state, to only one minimum. This transition happens at $\hbar\Omega = 4 E_R$\cite{KarinaThesis}. In Figure \ref{fig:RamanBandStruct}d, we show the band structure again in the limit of zero coupling, but this time with a detuning of $\hbar\delta = 1.0 E_R$. Note that the detuning tips the parabolas with respect to each other. Figure \ref{fig:RamanBandStruct}e shows the detuned system with coupling strenth turned up to $\hbar\Omega = 1 E_R$, still in the three minima regime but with avoided crossings creating three momentum and spin coupled bands. In Figure \ref{fig:RamanBandStruct}f, the detuned system is turned up to a coupling strength of $\hbar\Omega = 5E_R$, creating a single minimum, this time offset from $k_x = 0$.
+
+\begin{figure}
+	\includegraphics{"Chapter4 Figures/RamanBandStructure".pdf}
+\caption{Band structure of the Raman Hamiltonian, Eq. \ref{eqn:RamanHam}, in momentum space. For all plots, the quadratic Zeeman shift $\hbar\epsilon = 0.04 E_R$, and the color represents magnetization, labeled by the colorbar. (a) $\hbar\Omega=0$, $\hbar\delta = 0$. (b) $\hbar\Omega=1.0 E_R$, $\hbar\delta = 0$. (c) $\hbar\Omega=5.0 E_R$, $\hbar\delta = 0.0$. (d) $\hbar\Omega=0.0$, $\hbar\delta = 1.0 E_R$. (e) $\hbar\Omega=1.0 E_R$, $\hbar\delta = 1.0 E_R$. (f) $\hbar\Omega=5.0 E_R$, $\hbar\delta = 1.0 E_R$}
+\label{fig:RamanBandStruct}
+\end{figure}
+
+We can write the general $F$ version of the Raman coupled Hamiltonian in the basis $\ket{k_x + m_F*2k_R,m_F}$, where $-F\leq m_F \leq F$, as:
+\begin{equation}
+H = H_{\rm KE}^{(y,z)} + \hbar^2 (k_x \mathcal{I} + 2k_R F_z)^2/2m +  \hbar\delta F_z + \hbar \epsilon F^2_z + \Omega F_x/2.
+\end{equation}
+
+\subsection{Calibration and adiabatic loading of Raman and Rf dressed states}
+To calibrate the rf and Raman coupling strengths, we take a similar approach to the 1-D lattice calibration: start in a pure spin state, for example $m_F = 0$, and turn the coupling on non-adiabatically to induce Rabi oscillations between the coupled states. Then, during time-of-flight, apply a Stern-Gerlach gradient pulse to separate the spin compoenets and observe the fractional population in different spin states as a function of Rabi oscillation time.   
+
 Figure: Pulsing experiments
 
 Figure: Pictures of adiabatically loaded states

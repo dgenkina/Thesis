@@ -41,8 +41,8 @@ m0=-2
 tau=0.0003*Erecoil/hbar
 rampOnt=0.0001*Erecoil/hbar
 
-
-dataFile=np.load('../Chapter4 Figures/27Jan2017_files_34-63.npz')
+filename = '27Jan2017_files_34-63.npz'
+dataFile=np.load(filename)
 omegaGuess=0.5
 deltaGuess=-0.03
 
@@ -470,6 +470,11 @@ if S==2:
     panel.plot(tList*1.0e6,fractionP2,'co', label=r'$m_F$=+2')
 panel.set_xlabel('Lattice pulse time [us]')
 plt.legend()
+
+np.savez('RfPulsingF2',filename=filename,tList = tList, fractionP=fractionP,
+         fraction0=fraction0, fractionM=fractionM, fractionM2=fractionM2,
+         fractionP2=fractionP2, tForFit=tForFit*hbar/Erecoil, pops_fitted=pops_fitted,
+         popt=popt,pcov=pcov)
 ##
 ##figure=plt.figure()
 ##pan=figure.add_subplot(1,1,1)

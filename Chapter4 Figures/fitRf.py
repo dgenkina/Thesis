@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 from scipy import optimize 
 from numpy import linalg as LA
 from scipy import linalg as sLA
+import readIgor
 
 hbar = 1.0545718e-34 # reduced Planck constant m^2 kg/s
 mRb =1.44467e-25 #mass of rubidium in kg
@@ -20,15 +21,15 @@ Erecoil = (2.0*np.pi*hbar)**2.0/(2.0*mRb*lambdaR**2.0) #recoil energy
 m0=0
 
 def RfHamiltonian(k, omega, delta, epsilon):
-    H = np.array([[(k)**2.0 - delta, omega/2.0, 0.0],[omega/2.0, k**2.0-epsilon,omega/2.0],[0.0,omega/2.0,(k)**2.0 + delta]])
+    H = np.array([[(k)**2.0 + delta, omega/2.0, 0.0],[omega/2.0, k**2.0-epsilon,omega/2.0],[0.0,omega/2.0,(k)**2.0 - delta]])
     return H
     
 from scipy.linalg import block_diag
 
-def propagateRfHamiltonian(t, omega, delta,epsilon):  
+def propagateRfHamiltonian(t, omega, delta):  
     t=np.array(t)
     k = 0.0
-  #  epsilon=0.0
+    epsilon=0.048
     psi0 = np.array([0+1j*0.0, 0.0+1j*0.0, 0.0+1j*0.0])
     psi0[m0+1]=1.0+0.0j
     H = RfHamiltonian(k, omega, delta ,epsilon)
@@ -104,36 +105,36 @@ def RfBandStructure(omega, delta, epsilon, kList = np.linspace(-2.0,2.0,600), pl
         
     return Energies,magnetization
     
-#roiList=[[500, 550, 510,560], [500, 550, 460, 510] ,[500, 550,400,450]]
-##
-#filestart=73
-#filestop=92
-#fileroot = 'Y:/Data/2017/June/28/PIXIS_28Jun2017' 
-##counts, fractions, waveDict, probeAvg =batchCountMultipleROIs(fileroot,filestart,filestop,roiList,bgndLoc='top')                      
-#tList=waveDict['PulseTime']-0.000005
-#tRecoils = tList*Erecoil/hbar
-#fractions=np.array(fractions)
+roiList=[[545, 585, 390, 430], [545, 585, 440, 480] ,[545, 585,490,530]]
 #
-#a=np.array(tRecoils)
-#
-#popt,pcov = optimize.curve_fit(propagateRfHamiltonian,a,fractions.flatten(), p0=(4.2,0.0))
-#print popt,pcov
-#tForFit=np.linspace(np.min(tRecoils),np.max(tRecoils),200)
-#pops_fitted=propagateRfHamiltonian(tForFit,*popt)
-#sort=np.argsort(tRecoils)
-#tSorted=tRecoils[sort]
-#pop0 = np.array([pops_fitted[i*3] for i in range(tForFit.size)])
-#pop1 = np.array([pops_fitted[i*3+1] for i in range(tForFit.size)]) 
-#pop2 = np.array([pops_fitted[i*3+2] for i in range(tForFit.size)]) 
-#
-#figure=plt.figure()
-#panel=figure.add_subplot(1,1,1)
-#panel.set_title(r'$\Omega$ = ' + str(np.round(popt[0],2)) + r' $E_L/\hbar$, $\delta$ = '+str(np.round(popt[1],3))+r' $E_L/\hbar$')#, epsilon = ' + str(np.round(popt[2],3))+ ' Er')
-#panel.plot(tList*1e6,fractions[:,0],'ro', label='mF=-1') #tRecoils*hbar*1e6/Erecoil
-#panel.plot(tList*1e6,fractions[:,1],'go', label='mF=0')
-#panel.plot(tList*1e6,fractions[:,2],'bo', label='mF=+1')
-#panel.plot(tForFit*hbar*1e6/Erecoil,pop0,'r-')
-#panel.plot(tForFit*hbar*1e6/Erecoil,pop1,'g-')
-#panel.plot(tForFit*hbar*1e6/Erecoil,pop2,'b-')
-#panel.set_xlabel(r'pulse time [$\mu s$]')
-#legend()
+filestart=34
+filestop=63
+fileroot = 'C:/Users/swooty/Documents/Thesis Data/2017Jan27 rf calibrations/PIXIS_27Jan2017' 
+#counts, fractions, waveDict, probeAvg = readIgor.batchCountMultipleROIs(fileroot,filestart,filestop,roiList,bgndLoc='top')                      
+tList=waveDict['pulseDelay']
+tRecoils = tList*Erecoil/hbar
+fractions=np.array(fractions)
+
+a=np.array(tRecoils)
+
+popt,pcov = optimize.curve_fit(propagateRfHamiltonian,a,fractions.flatten(), p0=(4.2,0.0))
+print popt,pcov
+tForFit=np.linspace(np.min(tRecoils),np.max(tRecoils),200)
+pops_fitted=propagateRfHamiltonian(tForFit,*popt)
+sort=np.argsort(tRecoils)
+tSorted=tRecoils[sort]
+pop0 = np.array([pops_fitted[i*3] for i in range(tForFit.size)])
+pop1 = np.array([pops_fitted[i*3+1] for i in range(tForFit.size)]) 
+pop2 = np.array([pops_fitted[i*3+2] for i in range(tForFit.size)]) 
+
+figure=plt.figure()
+panel=figure.add_subplot(1,1,1)
+panel.set_title(r'$\Omega$ = ' + str(np.round(popt[0],2)) + r' $E_L/\hbar$, $\delta$ = '+str(np.round(popt[1],3))+r' $E_L/\hbar$')#, epsilon = ' + str(np.round(popt[2],3))+ ' Er')
+panel.plot(tList*1e6,fractions[:,0],'ro', label='mF=-1') #tRecoils*hbar*1e6/Erecoil
+panel.plot(tList*1e6,fractions[:,1],'go', label='mF=0')
+panel.plot(tList*1e6,fractions[:,2],'bo', label='mF=+1')
+panel.plot(tForFit*hbar*1e6/Erecoil,pop0,'r-')
+panel.plot(tForFit*hbar*1e6/Erecoil,pop1,'g-')
+panel.plot(tForFit*hbar*1e6/Erecoil,pop2,'b-')
+panel.set_xlabel(r'pulse time [$\mu s$]')
+legend()

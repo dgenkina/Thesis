@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2018.8.16)  8 OCT 2018 19:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2018.8.16)  20 OCT 2018 14:32
 entering extended mode
 **./mainthesis.tex
 (mainthesis.tex
@@ -313,6 +313,9 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@every@algorithm=\toks25
 \c@algorithm=\count122
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\bbold\bbold.sty"
+Package: bbold 1994/04/06 Bbold symbol package
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2016/06/24 v6.83q Hypertext links for LaTeX
 
@@ -425,20 +428,20 @@ LaTeX Warning: Label `fig:pulsingSchematic' multiply defined.
 ))
 \openout1 = `mainthesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
  ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count133
@@ -462,7 +465,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-Package hyperref Info: Link coloring ON on input line 77.
+Package hyperref Info: Link coloring ON on input line 78.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -472,9 +475,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count139
 )
-LaTeX Info: Redefining \ref on input line 77.
-LaTeX Info: Redefining \pageref on input line 77.
-LaTeX Info: Redefining \nameref on input line 77.
+LaTeX Info: Redefining \ref on input line 78.
+LaTeX Info: Redefining \pageref on input line 78.
+LaTeX Info: Redefining \nameref on input line 78.
 
 (mainthesis.out) (mainthesis.out)
 \@outlinefile=\write3
@@ -487,19 +490,14 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 15.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-Overfull \hbox (203.98683pt too wide) in paragraph at lines 14--26
-  [] 
- []
-
-) [1
+)) [1
 
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 \openout2 = `Titlepage.aux'.
 
  (Titlepage.tex
-Underfull \hbox (badness 10000) in paragraph at lines 31--33
+Underfull \hbox (badness 10000) in paragraph at lines 30--32
 
  []
 
@@ -558,7 +556,7 @@ Overfull \hbox (19.96951pt too wide) detected at line 81
 []\OML/cmm/m/it/12 H[] \OT1/cmr/m/n/12 = [] [] \OML/cmm/m/it/12 ;
  []
 
-[5] <"Chapter4 Figures/figure1".pdf, id=134, 448.07399pt x 289.08pt>
+[5] <"Chapter4 Figures/figure1".pdf, id=138, 448.07399pt x 289.08pt>
 File: "Chapter4 Figures/figure1".pdf Graphic file (type pdf)
 
 <use "Chapter4 Figures/figure1".pdf>
@@ -571,7 +569,7 @@ Overfull \hbox (21.68033pt too wide) in paragraph at lines 107--108
  []
 
 [6 <./Chapter4 Figures/figure1.pdf>] [7] [8]
-<"Chapter4 Figures/figure2".pdf, id=183, 448.07399pt x 289.08pt>
+<"Chapter4 Figures/figure2".pdf, id=187, 448.07399pt x 289.08pt>
 File: "Chapter4 Figures/figure2".pdf Graphic file (type pdf)
 
 <use "Chapter4 Figures/figure2".pdf>
@@ -584,7 +582,7 @@ Overfull \hbox (21.68033pt too wide) in paragraph at lines 154--155
  []
 
 [9] [10 <./Chapter4 Figures/figure2.pdf>]
-<"Chapter4 Figures/figure3".pdf, id=228, 448.07399pt x 289.08pt>
+<"Chapter4 Figures/figure3".pdf, id=232, 448.07399pt x 289.08pt>
 File: "Chapter4 Figures/figure3".pdf Graphic file (type pdf)
 
 <use "Chapter4 Figures/figure3".pdf>
@@ -597,7 +595,7 @@ Overfull \hbox (21.68033pt too wide) in paragraph at lines 171--172
  []
 
 [11] [12 <./Chapter4 Figures/figure3.pdf>]
-<"Chapter4 Figures/HyperfineFromSteck".pdf, id=261, 794.97pt x 614.295pt>
+<"Chapter4 Figures/HyperfineFromSteck".pdf, id=265, 794.97pt x 614.295pt>
 File: "Chapter4 Figures/HyperfineFromSteck".pdf Graphic file (type pdf)
 
 <use "Chapter4 Figures/HyperfineFromSteck".pdf>
@@ -609,47 +607,88 @@ Overfull \hbox (50.59314pt too wide) in paragraph at lines 193--194
 [][] 
  []
 
-[13] <"Chapter4 Figures/RfRamanSetupBeams".pdf, id=270, 794.97pt x 614.295pt>
+[13]
+
+LaTeX Warning: Citation `LCT' on page 14 undefined on input line 207.
+
+[14 <./Chapter4 Figures/HyperfineFromSteck.pdf, page is rotated 90 degrees>]
+[15] <"Chapter4 Figures/RfRamanSetupBeams".pdf, id=294, 794.97pt x 614.295pt>
 File: "Chapter4 Figures/RfRamanSetupBeams".pdf Graphic file (type pdf)
 
 <use "Chapter4 Figures/RfRamanSetupBeams".pdf>
 Package pdftex.def Info: "Chapter4 Figures/RfRamanSetupBeams".pdf used on input
- line 203.
+ line 232.
 (pdftex.def)             Requested size: 238.49284pt x 184.28992pt.
 
-<"Chapter4 Figures/RfRamanSetupLevels".pdf, id=271, 794.97pt x 614.295pt>
+<"Chapter4 Figures/RfRamanSetupLevels".pdf, id=295, 794.97pt x 614.295pt>
 File: "Chapter4 Figures/RfRamanSetupLevels".pdf Graphic file (type pdf)
 
 <use "Chapter4 Figures/RfRamanSetupLevels".pdf>
 Package pdftex.def Info: "Chapter4 Figures/RfRamanSetupLevels".pdf used on inpu
-t line 204.
+t line 233.
 (pdftex.def)             Requested size: 238.49284pt x 184.28992pt.
 
-Overfull \hbox (53.20422pt too wide) in paragraph at lines 203--205
+Overfull \hbox (53.20422pt too wide) in paragraph at lines 232--234
 [][] [][] 
  []
 
-[14 <./Chapter4 Figures/HyperfineFromSteck.pdf, page is rotated 90 degrees>]
-[15 <./Chapter4 Figures/RfRamanSetupBeams.pdf, page is rotated 90 degrees> <./C
-hapter4 Figures/RfRamanSetupLevels.pdf, page is rotated 90 degrees>]) [16]
-(mainthesis.bbl
+[16 <./Chapter4 Figures/RfRamanSetupBeams.pdf, page is rotated 90 degrees> <./C
+hapter4 Figures/RfRamanSetupLevels.pdf, page is rotated 90 degrees>]
+<"Chapter4 Figures/rfBandStructure".pdf, id=321, 448.07399pt x 289.08pt>
+File: "Chapter4 Figures/rfBandStructure".pdf Graphic file (type pdf)
+
+<use "Chapter4 Figures/rfBandStructure".pdf>
+Package pdftex.def Info: "Chapter4 Figures/rfBandStructure".pdf used on input l
+ine 241.
+(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
+
+Overfull \hbox (21.68033pt too wide) in paragraph at lines 241--242
+[][] 
+ []
+
+
+LaTeX Warning: Citation `SteckTextbook' on page 17 undefined on input line 248.
+
+
+[17] [18 <./Chapter4 Figures/rfBandStructure.pdf>] [19]
+<"Chapter4 Figures/RamanBandStructure".pdf, id=390, 448.07399pt x 289.08pt>
+File: "Chapter4 Figures/RamanBandStructure".pdf Graphic file (type pdf)
+
+<use "Chapter4 Figures/RamanBandStructure".pdf>
+Package pdftex.def Info: "Chapter4 Figures/RamanBandStructure".pdf used on inpu
+t line 274.
+(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
+
+Overfull \hbox (21.68033pt too wide) in paragraph at lines 274--275
+[][] 
+ []
+
+
+LaTeX Warning: Reference `eqn:RamanHam' on page 20 undefined on input line 275.
+
+
+
+LaTeX Warning: Reference `eqn:RamanHam' on page 20 undefined on input line 275.
+
+
+) [20] [21 <./Chapter4 Figures/RamanBandStructure.pdf>] [22] (mainthesis.bbl
 Underfull \hbox (badness 3138) in paragraph at lines 21--25
 []\OT1/cmr/m/n/12 Daniel Adam Steck.  Ru-bid-ium 87 d line data.  Avail-able on
 -line,
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 148.
- [17
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 149.
+ [23
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 148.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 149.
  (mainthesis.aux (Abstract.aux) (Titlepage.aux) (Copyright.aux)
 (Chapter4.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 148.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 148.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 149.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 149.
 Package rerunfilecheck Info: File `mainthesis.out' has not changed.
-(rerunfilecheck)             Checksum: 8A95147698FFBE22E28D96D3179F2472;1320.
+(rerunfilecheck)             Checksum: EDC5A43D277F29F92A3B0FC604B7C201;1383.
 
 
 LaTeX Warning: There were undefined references.
@@ -657,34 +696,35 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 148.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
  ) 
 Here is how much of TeX's memory you used:
- 7144 strings out of 493333
- 101957 string characters out of 3139191
- 206968 words of memory out of 3000000
- 10442 multiletter control sequences out of 15000+200000
+ 7190 strings out of 493333
+ 102872 string characters out of 3139191
+ 208177 words of memory out of 3000000
+ 10466 multiletter control sequences out of 15000+200000
  9498 words of font info for 36 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,10n,34p,1182b,350s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,10n,34p,1914b,350s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmti12.pfb>
-Output written on mainthesis.pdf (21 pages, 486837 bytes).
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mti12.pfb>
+Output written on mainthesis.pdf (27 pages, 783791 bytes).
 PDF statistics:
- 365 PDF objects out of 1000 (max. 8388607)
- 68 named destinations out of 1000 (max. 500000)
- 159 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 515 PDF objects out of 1000 (max. 8388607)
+ 84 named destinations out of 1000 (max. 500000)
+ 177 words of extra memory for PDF output out of 10000 (max. 10000000)
 

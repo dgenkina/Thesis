@@ -2,11 +2,12 @@ Thesis outline:
 
 
 Introduction
-	Something about how cold atoms are well controlled and tunable and we can use them
-	to one day solve many body problems that are currently not solvable and engineer 
-	quantum systems that don't even exist elsewhere just for shits and giggles. 
 
-Chapter 1: BECs and DFGs intro 
+
+Chapter 1: Introduction
+	
+Something about how cold atoms are well controlled and tunable and we can use them to one day solve many body problems that are currently not solvable and engineer quantum systems that don't even exist elsewhere just for shits and giggles. 
+
 	Bose-Einstein Condesnation
 		Bose-Einstein distribution leading to phase transition
 		-- Figure: pictures of bimodal distribution from theory & expt
@@ -18,23 +19,14 @@ Chapter 1: BECs and DFGs intro
 		Brief overview of how we made DFGs
 		Average number, density, size - contrast with BEC
 		Brief status report on 2-D MOT plans	
-	Brief description of RbK apparatus	
+	RbK apparatus overview
 	
 
 Chapter 2: Atom - light interactions
 	Absorbtion Imaging
-		Intro to absorption imaging
+		On-resonant atom-light interaction
+		Absorption imaging
 		Time-of-flight
-	Imaging simulation for s-wave scattering experiment
-
-
-Chapter 3: S-wave scattering experiment
-	- Intro with explanation of how we used to have K and refer to Lauren's thesis
-	- Actual paper matereial
-	- 2D MOT status update
-
-
-Chapter 4: Synthetic dimensional lattice
 	Optical lattices (1-D)
 		Full Hamiltonian
 		Tight binding approximation
@@ -50,6 +42,26 @@ Chapter 4: Synthetic dimensional lattice
 		-- Figure: a few images of Raman and rf pulsing with SG, plus fitted calibration curves
 		Adiabatically loaded Raman and rf
 		-- Figure: pictures of adiabatically loaded Raman and rf
+
+Chapter 3:
+	Imaging simulation for s-wave scattering experiment
+
+
+Chapter 4: S-wave scattering experiment
+	- Intro with explanation of how we used to have K and refer to Lauren's thesis
+	- Actual paper matereial
+	- 2D MOT status update
+
+
+Chapter 5: What is Chern number
+	Integral over the Berry curvature definition in infinite system
+	Bulk-edge correspondence in finite system
+	Quantum Hall effect (with/without disorder)
+	Hofstadter Butterfly
+	Flux per plaquette as phase
+
+Chapter 6: Synthetic dimensional lattice
+
 	Synthetic dimensions
 		Lattice + Raman Hamiltonian
 		Effective magnetic field explanation
@@ -58,15 +70,7 @@ Chapter 4: Synthetic dimensional lattice
 		-- Figure: skipping orbits from Hsin-I and Ben's paper
 	
 
-Chapter 5: What is Chern number
-	Integral over the Berry curvature definition in infinite system
-	Bulk-edge correspondence in finite system
-	Quantum Hall effect (with/without disorder)
-	Hofstadter Butterfly
-	Flux per plaquette as phase
-	
-
-Chapter 6: Measuring Chern number in synthetic dimensions (my paper)
+Chapter 7: Measuring Chern number in synthetic dimensions (my paper)
 	
 
 

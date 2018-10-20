@@ -45,7 +45,7 @@ def FxFlat(S):
     return F 
     
 def RamanF2(k, omega, delta, epsilon):
-    Kinetic=(k-2.0*(np.arange(2*S+1)-S))**2.0
+    Kinetic=(k+2.0*(np.arange(2*S+1)-S))**2.0
     H=np.diag(Kinetic)
     H+=delta*Fz(S)
     H+=((-1.0)**(S+1))*epsilon*(Fz(S)**2.0)
