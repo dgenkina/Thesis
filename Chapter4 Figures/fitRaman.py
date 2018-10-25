@@ -10,6 +10,8 @@ import matplotlib.pyplot as plt
 from scipy import optimize 
 from numpy import linalg as LA
 from matplotlib import cm
+import readIgor
+
 
 hbar = 1.0545718e-34 # reduced Planck constant m^2 kg/s
 mRb =1.44467e-25 #mass of rubidium in kg
@@ -20,7 +22,7 @@ Erecoil = (2.0*np.pi*hbar)**2.0/(2.0*mRb*lambdaR**2.0) #recoil energy
 S=1
 m0=0
 k=0.0
-epsilon=0.011
+epsilon=0.0375
 
 
 def Fz(S):
@@ -149,66 +151,39 @@ def propagateHamiltonianFit(t,  omega, delta):
 
 
     return pops.flatten()
-#roiList=np.array([[500, 540, 450, 510], 
-#         [580,620, 510, 570]])
-#roiFlea=([280,330,200,250])
-#
-#filestart=304
-#filestop=333
-#fileroot = 'Y:/Data/2017/July/26/PIXIS_26Jul2017' 
-#filerootFlea='Y:/Data/2017/July/26/Flea3_26Jul2017'
-#counts,fractions,waveDict,probe = batchCountMultipleROIs(fileroot,filestart,filestop,roiList,bgndLoc="top")          
-#            
-#tList=waveDict['HzDelay3']
-#tRecoils = tList*Erecoil/hbar
-#fractions=np.array(fractions)
-#frac0=np.array(fractions[:,0])
-#checkField=False
-#if checkField:
-#    fileList=np.arange(filestart,filestop+1)
-#    imbal=np.zeros(fileList.size)
-#    for ind, filenum in enumerate(fileList):
-#        filenameFlea=filerootFlea+"_"+ str(filenum).zfill(4) + ".ibw"
-#        dictFlea =processIBW(filenameFlea, angle=-37)
-#        od1=dictFlea['od1'][roiFlea[0]:roiFlea[1],roiFlea[2]:roiFlea[3]]
-#        od2=dictFlea['od2'][roiFlea[0]:roiFlea[1],roiFlea[2]:roiFlea[3]]   
-#        num1=np.sum(od1)
-#        num2=np.sum(od2)
-#        imbal[ind]=np.abs(num1-num2)/(num1+num2)
-#    cutoff=1.0
-#    fieldGoodArray=((imbal<cutoff) & (imbal>0.0))
-###print tRecoils
-##psi0=np.array([0+1j*0.0,1.0+1j*0.0,0.0+1j*0.0])
-##k=0.0
-##def constrainedHamiltonian(omega,delta):
-##    return lambda t, omega, delta, epsilon: np.array(propagateHamiltonian(t, psi0, k, omega, delta, epsilon))
-##H=constrainedHamiltonian(psi0,k)
-###print H(1.0,4.0,0.0,0.0)
-##a=np.array(tRecoils)
-##b=np.array(frac0)
-#fracs=np.zeros((fractions.shape[0],2*S+1))
-#fracs[:,2]=fractions[:,0]
-#fracs[:,3]=fractions[:,1]
-##popt,pcov = optimize.curve_fit(propagateHamiltonianFit,tRecoils,fracs.flatten(), p0=(0.3,-4.2))
-##popt=(0.3,-4.2)
-##print popt
-##print np.diag(np.sqrt(pcov))
-#tForFit=np.linspace(np.min(tRecoils),np.max(tRecoils),700)
-#pops_fitted=propagateHamiltonianFit(tForFit,*popt).reshape(tForFit.size,2*S+1)
-##sort=np.argsort(tRecoils)
-##tSorted=tRecoils[sort]
-##pop0 = np.array([pops_fitted[i*3] for i in range(tForFit.size)])
-##pop1 = np.array([pops_fitted[i*3+1] for i in range(tForFit.size)]) 
-##pop2 = np.array([pops_fitted[i*3+2] for i in range(tForFit.size)]) 
-#
-#figure=plt.figure()
-#panel=figure.add_subplot(1,1,1)
-##panel.set_title('Omega = ' + str(np.round(popt[0],3)) + ' Er/hbar, delta = '+str(np.round(popt[1],3))+' Er/hbar')
-#panel.plot(tRecoils*hbar*1.0e6/Erecoil,fractions[:,0],'go', label='mF=0')
-#panel.plot(tRecoils*hbar*1.0e6/Erecoil,fractions[:,1],'bo', label='mF=+1')
-##panel.plot(tRecoils*hbar*1.0e6/Erecoil,fractions[:,2],'ro', label='mF=-1')
-##panel.plot(tForFit*hbar*1.0e6/Erecoil,pops_fitted[:,3],'b-')
-##panel.plot(tForFit*hbar*1.0e6/Erecoil,pops_fitted[:,2],'g-')
-#panel.set_xlabel('Raman hold time [us]')
-#legend()
 
+if __name__=='__main__':
+    roiList=np.array([[420,465,495,555],
+            [530, 575, 585,645], 
+             [615,660, 685,745]])
+    
+    filestart=39
+    filestop=67
+    fileroot = 'C:/Users/swooty/Documents/Thesis Data/Raman pulsing F=1/PIXIS_17Feb2016' 
+    counts,fractions,waveDict,probe = readIgor.batchCountMultipleROIs(fileroot,filestart,filestop,roiList,bgndLoc="top")          
+                
+    tList=waveDict['holdDelay']
+    tRecoils = tList*Erecoil/hbar
+    fractions=np.array(fractions)
+
+    popt,pcov = optimize.curve_fit(propagateHamiltonianFit,tRecoils,fractions.flatten(), p0=(4.0,0.0))
+
+    tForFit=np.linspace(np.min(tRecoils),np.max(tRecoils),700)
+    pops_fitted=propagateHamiltonianFit(tForFit,*popt).reshape(tForFit.size,2*S+1)
+
+    
+    figure=plt.figure()
+    panel=figure.add_subplot(1,1,1)
+    panel.set_title('Omega = ' + str(np.round(popt[0],3)) + ' Er/hbar, delta = '+str(np.round(popt[1],3))+' Er/hbar')
+    panel.plot(tRecoils*hbar*1.0e6/Erecoil,fractions[:,0],'bo', label='mF=+1')
+    panel.plot(tRecoils*hbar*1.0e6/Erecoil,fractions[:,1],'go', label='mF=0')
+    panel.plot(tRecoils*hbar*1.0e6/Erecoil,fractions[:,2],'ro', label='mF=-1')
+    panel.plot(tForFit*hbar*1.0e6/Erecoil,pops_fitted[:,0],'b-')
+    panel.plot(tForFit*hbar*1.0e6/Erecoil,pops_fitted[:,1],'g-')
+    panel.plot(tForFit*hbar*1.0e6/Erecoil,pops_fitted[:,2],'r-')
+    panel.set_xlabel('Raman hold time [us]')
+    plt.legend()
+    
+    np.savez('RamanPulsingF1',time=tRecoils*hbar/Erecoil,tForFit=tForFit*hbar/Erecoil,
+             fractions=fractions,pops_fitted=pops_fitted,popt=popt,pcov=np.sqrt(np.diag(pcov)))
+    

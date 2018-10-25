@@ -34,14 +34,14 @@ n=7
 k=0.0
 epsilon=0.0207
 U=4.4
-S=2
-m0=-2
+S=1
+m0=0
 #delta=0.0
 #omega=0.5
 tau=0.0003*Erecoil/hbar
 rampOnt=0.0001*Erecoil/hbar
 
-filename = '27Jan2017_files_34-63.npz'
+filename = '10Mar2017_files_4-33.npz'
 dataFile=np.load(filename)
 omegaGuess=0.5
 deltaGuess=-0.03
@@ -471,9 +471,13 @@ if S==2:
 panel.set_xlabel('Lattice pulse time [us]')
 plt.legend()
 
-np.savez('RfPulsingF2',filename=filename,tList = tList, fractionP=fractionP,
-         fraction0=fraction0, fractionM=fractionM, fractionM2=fractionM2,
-         fractionP2=fractionP2, tForFit=tForFit*hbar/Erecoil, pops_fitted=pops_fitted,
+#np.savez('RfPulsingF2',filename=filename,tList = tList, fractionP=fractionP,
+#         fraction0=fraction0, fractionM=fractionM, fractionM2=fractionM2,
+#         fractionP2=fractionP2, tForFit=tForFit*hbar/Erecoil, pops_fitted=pops_fitted,
+#         popt=popt,pcov=pcov)
+
+np.savez('RfPulsingF1',filename=filename,tList = tList, fractionP=fractionP,
+         fraction0=fraction0, fractionM=fractionM, tForFit=tForFit*hbar/Erecoil, pops_fitted=pops_fitted,
          popt=popt,pcov=pcov)
 ##
 ##figure=plt.figure()

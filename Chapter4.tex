@@ -160,10 +160,12 @@ Since the lattice eigenbasis is distinct from the bare one, instiantaneously tur
 \ket{\Psi(t)} = e^{-i H_L t/\hbar}\ket{\Psi_0}.
 \label{eqn:timeEvolveLat}
 \end{equation}
-By pulsing on the lattice for variable amounts of time $t$, we can obtain fractional populations in the different momentum states. Time-of-flight imaging captures the momentum distribution of the cloud, and the different entries of $\Psi(t)$ in the momentum basis will thus appear as different clouds on the absorption image [INCLUDE IMAGES FROM PULSING DATA]. The fractional population in these clouds corresponds to a measurement of $|a_j|^2$.  Typically for our values of the lattice depth $V_0 < 10 E_L$, it is sufficient to simply count three central momentum orders, $k = q, q \pm 2 k_L$. Then, we can fit Eq. \ref{eqn:timeEvolveLat} to the data with fitting parameter $V_0$, thus deducing the lattuce depth. Some examples of these pulsing experiments are presented in figure [MAKE FIGURE]:
-%Flea3,PIXIS_20Aug2017_0034-0063
-%low lattice power:
-%Flea3,PIXIS_20Aug2017_0124-0153
+By pulsing on the lattice for variable amounts of time $t$, we can obtain fractional populations in the different momentum states. Time-of-flight imaging captures the momentum distribution of the cloud, and the different entries of $\Psi(t)$ in the momentum basis will thus appear as different clouds on the absorption image, as shown in Figure \ref{fig:latticePulsing}a. The fractional population in these clouds corresponds to a measurement of $|a_j|^2$.  Typically for our values of the lattice depth $V_0 < 10 E_L$, it is sufficient to simply count three central momentum orders, $k = q, q \pm 2 k_L$. Then, we can fit Eq. \ref{eqn:timeEvolveLat} to the data with fitting parameter $V_0$, thus deducing the lattuce depth. Some examples of these pulsing experiments are presented in figure \ref{fig:latticePulsing}b,c.
+\begin{figure}
+	\includegraphics{"Chapter4 Figures/LatticePulsing".pdf}
+\caption{Lattice pulsing for calibration. (a) An example time-of-flight image from a pulsing experiment. The three different clouds are different momentum orders. (b) Fractional populations in the different momentum orders as a function of pulsing time at a low lattice power. Data is indicated by dots and best fit theory is represented by lines. The lattice depth from fit is $V_0=5.57\pm0.07 E_L$. (c)Fractional populations in the different momentum orders as a function of pulsing time at a higher lattice power. Data is indicated by dots and best fit theory is represented by lines. The lattice depth from fit is $V_0=12.69\pm0.07 E_L$. }
+\label{fig:latticePulsing}
+\end{figure}
 
 In contrast to pulsing, adiabatic loading turns the lattice on slowly, such that the atomic wavefunction starting in the bare ground state can continuously adjust to remain in the ground state of the current Hamiltonian, without projecting onto any of the higher bands. This process is illustrated in Figure \ref{fig:pulsingSchematic}. The adiabatic timescale depends on the spacing between the ground and next excited band (or if starting in a different eigenstate, the nearest eigenstate). If the energy difference between the ground and first excited state is $\Delta E$, the timescale on which the lattice is turned on must fullfill $t \gg h/\Delta E$.  
 
@@ -172,9 +174,6 @@ In contrast to pulsing, adiabatic loading turns the lattice on slowly, such that
 \caption{Adiabatic lattice loading. (a) Lattice depth as a function of time during adiabatic turn-on. The lattice is ramped on starting at $t=0$, slowly increasng to a final lattice depth and turned off instantaneously at a final time $t=t_f$. (b) Atomic population before $t=0$. All atoms are at $k=0$ in the lowest bare band. (c) Atomic population after the lattice is turned on adiabatically to a lattice depth of $V_0 = 8.0 E_L$. All atoms remain in the lowest band, but the band is no longer bare. (d) Atomic population after the lattice is snapped off. The wavefunction is projected back onto the bare states, with some fraction (blue circle) in the lowest band at $k=0$ and some fraction in the excited band, with equal population being projected onto the $k = 2 k_L$ (green) and $k=-2k_L$ (red). Since the lowest lattice band is a superposition of bare bands, some atoms are excited to the higher bare bands. }
 \label{fig:pulsingSchematic}
 \end{figure}
-
-[FIND PICTURES OF ADIABATICALLY LOADED LATTICE STATES]
-
 
 
 \section{Raman and rf coupling}\label{chap:4sec:rf}
@@ -206,7 +205,7 @@ where $\hbar \omega_z = \mu_B g_F B_z/\hbar$, and the kinetic energy Hamiltonian
 	For the $F=1$ manifold, there are three available spin states $m_F = 0,\pm1$. There are many ways of introducing coupling terms between the different hyperfine states. Here, we will explain two methods: rf coupling and Raman coupling. Rf coupling is a radio-frequency oscillating magnetic field, in our case produced by a pair of circular coils in series side by side above the atoms (see \cite{KarinaThesis}). Assuming the rf oscillating field is polarized along the $\mathbf{e}_x$, with the bias field along $\mathbf{e}_z$, the coupling Hamiltonian is given by $H_{rf} = \mu_B g_F \vec{\mathbf{F}}\cdot{}\vec{B} = \mu_B g_F \mathbf{F}_x B_x {\rm cos}(\omega t)$, where $2 \pi\omega$ is the rf frequency. The schematic of this setup is shown in Figure \ref{fig:RamanRfSchematic}.
 	The eignestates of the bare Hamiltonian $H_0$ are the constituent $m_F$ states. The eigenstates of the coupled Hamiltonian $H_0 + H_{rf}(t)$ can be expressed as a linear superposition of the bare eignestates $\Psi(\vec{x},t)=\sum_{m_F}c_{m_F}(t)\phi_{m_F}(\vec{x})e^{-i\omega_{m_F}t}$. The Hamiltonian in this basis can then be written as\cite{LCT}
 \begin{equation}
-H = H_{\rm KE} + \hbar
+H_{\rm rf} = H_{\rm KE} + \hbar
  \begin{pmatrix} 0 & \Omega {\rm cos}(\omega t)e^{i\omega_zt}  & 0  \\ 
 \Omega {\rm cos}(\omega t)e^{-i\omega_zt}  & 0 &  \Omega {\rm cos}(\omega t)e^{i\omega_zt} \\
  0 & \Omega {\rm cos}(\omega t)e^{-i\omega_zt}  & 0  \\
@@ -216,7 +215,7 @@ where $\Omega$ is the Rabi frequency, proportional to $B_x$.
 	 We can then transfer into the rotating frame $c'_{m_F} = e^{-i m_F \delta t}c_{m_F}$, where $\delta = \omega_z - \omega$. Then we apply the rotating wave approximation, that the fast oscillating terms average to zero over time scales of interest $e^{2i\omega t}\approx 0$, and obtain 
 
 \begin{equation}
-H = H_{\rm KE} + \hbar
+H_{\rm rf} = H_{\rm KE} + \hbar
  \begin{pmatrix} \delta & \Omega/2  &  0  \\ 
 \Omega/2 & -\epsilon &  \Omega/2 \\
  0 & \Omega/2  & -\delta  \\
@@ -225,7 +224,7 @@ H = H_{\rm KE} + \hbar
 \end{equation}
 or for any value of $F$
 \begin{equation}
-H = H_{\rm KE} + \hbar\delta F_z + \hbar \epsilon F^2_z + \Omega F_x/2.
+H_{\rm rf} = H_{\rm KE} + \hbar\delta F_z + \hbar \epsilon F^2_z + \Omega F_x/2.
 \end{equation}
 
 \begin{figure}
@@ -248,7 +247,7 @@ The band structure of this Hamiltonian can be seen in Figure \ref{fig:RfBandStru
 	The counter-propagating Raman beams, as seen in Figure \ref{fig:RamanRfSchematic}, couple the same states as the rf. The do so via the vector light shift created by the pair of beams. The electric field due to the right going beam (red in Figure \ref{fig:RamanRfSchematic}a) is $\mathbf{E} = E_0 {\rm exp}(ik_R x - i\omega t) \mathbf{e}_y$, where $E_0$ is the amplitude of the electric field and $\hbar k_R = h/\lambda_R=\hbar\omega/c$. The electric field from the left going beam (gray in Figure \ref{fig:RamanRfSchematic}b) is $\mathbf{E} = E_0 {\rm exp}(-i k_R x - i(\omega +\Delta \omega)t) \mathbf{e}_z$. This combines to give an effective field from the vector light shift\cite{SteckTextbook} $B_{\rm eff}\propto \mathbf{E}\times\mathbf{E^*} \propto -E^2_0 {\rm cos}(2k_R x + \Delta\omega t)\mathbf{e}_x$. Going through the same procedure as for the rf coupling case, including the  transfer into the rotating frame and the rotating wave approximation, we obtain the same Hamiltonian in the basis of bare spin states $\ket{-1},\ket{0},\ket{1}$ but with an extra phase factor:
 	 
 \begin{equation}
-H = H_{\rm KE} + \hbar
+H_{\rm Raman} = H_{\rm KE} + \hbar
  \begin{pmatrix} \delta & \Omega/2 e^{-i 2 k_R x}  &  0  \\ 
 \Omega/2 e^{i 2 k_R x} & -\epsilon &  \Omega/2 e^{-i 2 k_R x}\\
  0 & \Omega/2 e^{i 2 k_R x} & -\delta  \\
@@ -260,7 +259,7 @@ where $\delta = \omega_z - \Delta\omega$.
 
 	We can again make a basis transformation to get rid of this phase. Let us define  $\ket{-1}' = {\rm exp}(-2ik_R x)\ket{-1} = \ket{k_x-2k_R,-1},\ket{0}' = \ket{0} = \ket{k_x,0},\ket{1}' = {\rm exp}(2ik_R x)\ket{1}=\ket{k_x+2k_R,1}$, where for third definition we went into the momentum basis and labelled the states by a combination of their momentum and spin state. Then, including the kinetic energy term along $\mathbf{e}_x$ explicitly, we obtain the Hamiltonian in the new basis as:
  \begin{equation}
-H = H_{\rm KE}^{(y,z)} +
+H_{\rm Raman} = H_{\rm KE}^{(y,z)} +
  \begin{pmatrix} \frac{\hbar^2(k_x-2k_R)^2}{2m}+\hbar\delta & \hbar\Omega/2  &  0  \\ 
 \hbar\Omega/2 & \frac{\hbar^2 k_x^2}{2m} - \hbar\epsilon &  \hbar\Omega/2\\
  0 & \hbar\Omega/2 &  \frac{\hbar^2(k_x+2k_R)^2}{2m} -\hbar\delta  \\
@@ -278,27 +277,95 @@ It is convenient to define the Raman recoil energy as $E_R = \frac{\hbar^2 k_R^2
 
 We can write the general $F$ version of the Raman coupled Hamiltonian in the basis $\ket{k_x + m_F*2k_R,m_F}$, where $-F\leq m_F \leq F$, as:
 \begin{equation}
-H = H_{\rm KE}^{(y,z)} + \hbar^2 (k_x \mathcal{I} + 2k_R F_z)^2/2m +  \hbar\delta F_z + \hbar \epsilon F^2_z + \Omega F_x/2.
+H_{\rm Raman} = H_{\rm KE}^{(y,z)} + \hbar^2 (k_x \mathcal{I} + 2k_R F_z)^2/2m +  \hbar\delta F_z + \hbar \epsilon F^2_z + \Omega F_x/2.
 \end{equation}
 
-\subsection{Calibration and adiabatic loading of Raman and Rf dressed states}
-To calibrate the rf and Raman coupling strengths, we take a similar approach to the 1-D lattice calibration: start in a pure spin state, for example $m_F = 0$, and turn the coupling on non-adiabatically to induce Rabi oscillations between the coupled states. Then, during time-of-flight, apply a Stern-Gerlach gradient pulse to separate the spin compoenets and observe the fractional population in different spin states as a function of Rabi oscillation time.   
+\subsection{Calibration of Raman and Rf dressed states}
+To calibrate the rf and Raman coupling strengths, we take a similar approach to the 1-D lattice calibration: start in a pure spin state, for example $m_F = 0$, and turn the coupling on non-adiabatically to induce Rabi oscillations between the coupled states. Then, during time-of-flight, apply a Stern-Gerlach gradient pulse to separate the spin compoenets and observe the fractional populations in different spin states as a function of Rabi oscillation time.  
 
-Figure: Pulsing experiments
-
-Figure: Pictures of adiabatically loaded states
+Figure \ref{fig:RfPulsing}a,b shows example images obtained in time-of-flight when pulsing on an rf coupling field for atoms in the $F=1$ and $F=2$ manifold, respectively. The Stern-Gerlach gradient pulse separates the spin components along the horizontal axis in the images. The fractional population in each state can then be obtained by summing up the optical depth in each cloud and dividing by the total optical depth. Similarly, Figure \ref{fig:RamanPulsing}a shows an example time-of-flight image obtained when pulsing on a Raman coupling field on an $F=1$ cloud initially in the $m_F=0$ spin state. Here, the spin states are separated along the horizontal axis by the same Sternch-Gerlach pulse. In addition, the recoil momentum obtained when undergoing a Raman transition separates the different spin states along  the vertical axis---parallel to the Raman beams along ${\bf e}_x$. The direction of the Stern-Gerlach gradient was chosen purposefully to be perpendicular to the Raman direction ${\bf e}_x$ for easy separation of the two effects. 
 
 
-\section{Synthetic dimensions}\label{chap:4sec:syn_dim}
+\begin{figure}
+	\includegraphics{"Chapter4 Figures/RfPulsing".pdf}
+\caption{Pulsing on rf coupling. (a) Example time-of-flight image during an rf pusling experiment in the $F=1$ manifold. Spin states are separated via a Stern-Gerlach pulse along the horizontal direction. (b) Example time-of-flight image during an rf pusling experiment in the $F=2$ manifold. Here, 5 spin components are present.  (c) Pulsing experiment in the $F=1$ manifold. Dots represent fractional populations in different spin states measured from time-of-flight images, and lines repressent best fit theory curves.  Fitted parameters are $\hbar\Omega=0.863\pm0.004 E_R$, $\hbar\delta=-0.198\pm0.007 E_R$. (d)Pulsing experiment in the $F=2$ manifold. Dots represent fractional populations in different spin states measured from time-of-flight images, and lines repressent best fit theory curves. Fitted parameters are $\hbar\Omega=1.000\pm0.002 E_R$, $\hbar\delta = -0.061\pm0.001 E_R$. $\hbar\epsilon=0.038 E_R$ for all panels.}
+\label{fig:RfPulsing}
+\end{figure}
 
+These population oscillations can then be fit for coupling strength $\hbar\Omega$ and detuning $\hbar\delta$ Note that the quadratic Zeeman shift $\hbar\epsilon$ is set by the strength of the bias field $B_0$ and therefore often well known - we do not fit for this. The theoretic predictions are obtained by applying the time evolution operator $U={\rm exp}(-i H_{\rm Raman/rf} t/\hbar)$ to an initial state $\Psi$ in the appropriate basis. Figure \ref{fig:RfPulsing}c shows an example time series of rf pulsing in the $F=1$ maifold, starting in the $m_F=0$ state. The lines of best fit are overlayed on experimental data, extracting fit parameters $\hbar\Omega=0.863\pm0.004 E_R$ and $\hbar\delta=-0.198\pm0.007 E_R$. Figure \ref{fig:RfPulsing}d shows an example time series of rf pulsing in the $F=2$ maifold, starting in the $m_F=-2$ state. Here, the extracted fit parameters were $\hbar\Omega=1.000\pm0.002 E_R$ and $\hbar\delta = -0.061\pm0.001 E_R$.
 
-\subsection{Lattice Hamiltonian with Raman coupling}
+\begin{figure}
+	\includegraphics{"Chapter4 Figures/RamanPulsing".pdf}
+\caption{Pulsing on Raman coupling. (a) Example time-of-flight image during a Raman pulsing experiment in the $F=1$ manifold. A Stern-Gerlach pulse during time-of-flight separates different spin components along the horizontal direction, and different momentum orders fly apart along the vertical direction. (b) Fractional population in different spin states during a Raman pulsing experiment as a function of time. Dots represent data and lines represent a best fit from theory. The fitted parameters are $\hbar\Omega=1.47\pm0.01 E_R$, $\hbar\delta = 0.004\pm0.024 E_R$. The quadratic Zeeman shift was $\hbar\epsilon=0.038 E_R$. }
+\label{fig:RamanPulsing}
+\end{figure}
 
+Figure \ref{fig:RamanPulsing}b shows an example time series of Raman pulsing in the $F=1$ manifold, starting in the $m_F=0$ state, with fitted parameters  $\hbar\Omega=1.47\pm0.01 E_R$ and $\hbar\delta = 0.004\pm0.024 E_R$. Note that although the coupling strength is almost double the rf coupling strenth in Figure \ref{fig:RfPulsing}c, the contrast (peak to peak oscillation of the fractional population in, say, the $mF=0$ state) is much lower in the Raman data than in the rf. This is a direct consequence of the recoil momentum transfer, and can be understood by looking at the band structure. For rf, the coupled bands at initial momentum $k_x=0$ are separated by the coupling strength, see Figure \ref{fig:rfBandStruct}b. For Raman, even at zero coupling strength, due to the shifting of the parabolas by $2k_R$, and $k_x=0$ the higher bands are $\hbar^2(2k_R)^2/2m=4E_R$ separated from the lower bands. Therefore, the energy difference is larger and the fraction in the excited band will be lower, leading to lower contrast. 
 
-\subsection{Emergence of effective magnetic field}
+\section{High effective magnetic fields via synthetic dimensions}\label{chap:4sec:syn_dim}
 
+In condensed matter, 2-D systems in high fields have proved to be of great technological use and scientific interest. The integer quantum Hall effect (IQHE)\cite{Klitzing1980}, with it's quantized Hall resistance, had given rise to an ultra-precise standard for resistivity. It was also the 
+%	In materials the quantum Hall effects represent an extreme quantum limit, where a system's behavior defies any description with classical physics.  In the modern parlance, the integer quantum Hall effect (IQHE) for two-dimensional (2-D) electronic systems in magnetic fields\cite{Klitzing1980} was the first topological insulator\cite{Hasan2010}: a bulk insulator with dispersing edge states --- always present in finite-sized topological systems--- which give rise to the IQHE's signature quantized Hall resistance\cite{Thouless1982}.  
+%	
+%	In classical systems the magnetic field acts purely through the Lorentz force, while in quantum systems a particle with charge $q$ in a uniform field $B$ additionally acquires an Aharonov-Bohm phase $\phi_{\rm AB}/2\pi = \mathcal{A} B / \Phi_0$ after its path encircles an area $\mathcal{A}$ normal to $B$.  (Here $\Phi_0=2\pi\hbar/q$ is the flux quanta and $2\pi\hbar$ is Planck's constant.)   As proposed in Ref.~\cite{Celi2014}, we engineered an elongated 2-D square lattice formed from the sites of an optical lattice along the long direction and the internal atomic spin states along the narrow direction: a synthetic dimension.  We directly controlled the acquired phases as atoms traversed the lattice, giving a tunneling phase $\phi_{\rm AB}/2\pi \approx4/3$ around each plaquette.  These phases take the place of the Aharonov-Bohm phases produced by true magnetic fields and suffice to fully define the effective magnetic field.  Aharonov-Bohm phases of order unity in the Harper-Hofstadter Hamiltonian ---currently realized in engineered materials\cite{Geisler2004,Hunt2013}, or in atomic\cite{Jaksch2003,Aidelsburger2013,Miyake2013,Jotzu2014,Aidelsburger2014,Mancini2015} and optical\cite{Hafezi2013} settings--- fragment the low-field Landau levels into the fractal energy bands of the Hofstadter butterfly\cite{Hofstadter1976}.   Such Hofstadter bands are generally associated with a non-zero topological index: the Chern number\cite{Thouless1982}.
+%	
+%	Topologically nontrivial bulk properties are reflected by the presence of edge channels, composed of edge states, with quantized conductance.  In fermionic systems, the number of edge channels is fixed by the aggregate topological index of the filled bands\cite{Thouless1982,Hasan2010,Beugeling2012}; this ultimately gives rise to phenomena such as the IQHE for electrons.    Conceptually the constituent edge states can be viewed as skipping orbits\cite{Buttiker1988PRB,Hasan2010,Montambaux2011}: in the presence of a strong magnetic field, nascent cyclotron orbits near the boundary reflect from the hard wall before completing an orbit, leading to skipping trajectories following the system's boundary.  In contrast, localized bulk states correspond to closed cyclotron orbits.
+%	
+%	By applying large effective fields to atomic Bose-Einstein condensates (BECs), we directly imaged individual, deterministically prepared, bulk and edge eigenstates.  In IQHE systems these states would govern the conductivity, but as individual eigenstates they exhibit no time-dependance.  The corresponding dynamical entities are edge magnetoplasmons, consisting of superpositions of edge eigenstates in different Landau levels\cite{Kern1991,Ashoori1992}, or here magnetic bands.  We launched these excitations and recorded their full motion for the first time, observing both a chiral drift along the system's edge and the underlying skipping motion.
+
+\subsection{Synthetic dimensions}
+
+Figure: Schematic of beams,$ F=1$ and$ F=2 $dots with phasaes
+
+par1: Explain setup
+
+par2: Aharanov-Bohm phase
+
+par3: Explanation of phases in Syn. dim. 
+
+par4: Effective field strength in terms of $\phi_{AB}$
+
+\subsection{Synthetic dimensions Hamiltonian}
+
+Figure: Band structure, F=1 and F=2, with and without Raman coupling
+
+par1: Write out full Hamiltonian
+
+par2: Talk about band structure, periodic and spin dependent 
+
+par3: How we calibrate the synthetic dimensions system by pulsing
+
+Figure: example TOF images, pulsing experiments for F=1 and F=2
+
+par4: Write out tight binding version, explain how closely it applies. Figure: fits for effective tunneling amplitudes?
 
 \subsection{Eigenstates of the synthetic 2-D lattice}
 
+\begin{figure}
+	\includegraphics{"SynDim Figures/Fig2_EdgeStates".pdf}
+\caption{}
+\label{fig:TOFeigenstates}
+\end{figure}
+
+par1: 'Edge' and 'bulk' states of electrons in a magnetic field
+
+par2: Explain loading procedure for adiabatic states
+
+par3: Explain figure, magnetic length
 
 \subsection{Observation of skipping orbits}
+
+\begin{figure}
+	\includegraphics{"SynDim Figures/Fig4_SkippingOrbit".pdf}
+\caption{}
+\label{fig:skippingOrbits}
+\end{figure}
+
+par1: Skipping orbits in 2-D electrons in a magnetic fields
+
+par2: Experimental sequence for skipping orbits measurement
+
+par3: How position is calculated from integrating velocity as a function of time. Explain figure
+
+
+

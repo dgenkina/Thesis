@@ -11,7 +11,7 @@ import numpy as np
 from scipy import ndimage
 import matplotlib.pyplot as plt
 
-PIXIS_background_filename ='C:/Users/swooty/Documents/Thesis Data/PIXIS_10Apr2017_10003.ibw'
+PIXIS_background_filename ='C:/Users/swooty/Documents/Thesis Data/PIXIS_13Jun2017_10003.ibw'
 bgndImage=IgorBin.LoadIBW(PIXIS_background_filename)['Data']
 PIXIS_background1=np.array(bgndImage[:,0:bgndImage.shape[1]/2], dtype=float)
 PIXIS_background2=np.array(bgndImage[:,bgndImage.shape[1]/2:], dtype=float)
@@ -186,9 +186,9 @@ def countMultipleROIs(filename,roiList,background=True,bgndLoc="left",roiB=0,sho
     
     return (counts, fractions, outDict,probe)
     
-def showImage(fileroot,filenum,vmin=-0.2,vmax=2.0):
+def showImage(fileroot,filenum,vmin=-0.2,vmax=2.0, **kwargs):
     filename = fileroot + "_"+ str(filenum).zfill(4) + ".ibw"
-    outDict=processIBW(filename)
+    outDict=processIBW(filename, **kwargs)
     od = outDict['rotOD']
     
     if showImage:

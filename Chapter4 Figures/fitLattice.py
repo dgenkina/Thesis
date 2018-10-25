@@ -12,7 +12,7 @@ from scipy import linalg as sLA
 from scipy import stats
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
-#import readIgor
+import readIgor
 
 hbar = 1.0545718e-34 # reduced Planck constant m^2 kg/s
 mRb =1.44467e-25 #mass of rubidium in kg
@@ -279,39 +279,42 @@ def blochCollect(U,n,plot=True,save=False):
         np.savez(filename,U=U,n=n,klist=klist,bC=bC)
     return 
     
-#
-#roiList=[[445,475,470,495], [505, 535, 470, 495], [570, 600, 470,495]]
-#roiList2=[[450,450,465,465], [500, 550, 455, 505], [500, 550, 505, 555]]
-#filestart=34
-#filestop=63
-#fileroot = 'Y:/Data/2017/October/25/PIXIS_25Oct2017' 
-#counts, fractions, waveDict, probeAvg = batchCountMultipleROIs(fileroot,filestart,filestop,roiList,bgndLoc='right') 
-#
-#time=waveDict['pulseDelay']
-#tRecoils = time*Erecoil/hbar
-#fractions=np.array(fractions)
-#
-#Uguess=2.0
-#popt,pcov = optimize.curve_fit(propagateLatHamFit,tRecoils,fractions.flatten(), p0=(Uguess))
-#print popt,pcov
-#tForFit=np.linspace(np.min(tRecoils),np.max(tRecoils),100)
-#pops_fitted=propagateLatHamFit(tForFit,*popt)
-#pop0 = np.array([pops_fitted[i*3] for i in range(tForFit.size)])
-#pop1 = np.array([pops_fitted[i*3+1] for i in range(tForFit.size)]) 
-#pop2 = np.array([pops_fitted[i*3+2] for i in range(tForFit.size)]) 
-#
-#
-#figure=plt.figure()
-#panel=figure.add_subplot(1,1,1)
-#panel.set_title('U = '+str(np.round(popt[0],4))+' E_L')#, epsilon = ' + str(np.round(popt[2],3))+ ' Er')
-#panel.plot(time*1e6,fractions[:,0],'bo', label='kx=+2kR')
-#panel.plot(time*1e6,fractions[:,1],'go', label='kx=0')
-#panel.plot(time*1e6,fractions[:,2],'ro', label='kx=-2kR')
-#panel.plot(tForFit*1e6*hbar/Erecoil,pop0,'b-')
-#panel.plot(tForFit*1e6*hbar/Erecoil,pop1,'g-')
-#panel.plot(tForFit*1e6*hbar/Erecoil,pop2,'r-')
-#panel.set_xlabel('Lattice pulse time [us]')
-#legend()
-#
-#
+if __name__ == '__main__':
+    roiList=[[445,475,470,495], [505, 535, 470, 495], [570, 600, 470,495]]
+    roiList2=[[450,450,465,465], [500, 550, 455, 505], [500, 550, 505, 555]]
+    filestart=94
+    filestop=123
+    fileroot = 'C:/Users/swooty/Documents/Thesis Data/2017Aug20 Lattice calibrations/PIXIS_20Aug2017' 
+    counts, fractions, waveDict, probeAvg = readIgor.batchCountMultipleROIs(fileroot,filestart,filestop,roiList,bgndLoc='right') 
+    
+    time=waveDict['pulseDelay']
+    tRecoils = time*Erecoil/hbar
+    fractions=np.array(fractions)
+    
+    Uguess=5.0
+    popt,pcov = optimize.curve_fit(propagateLatHamFit,tRecoils,fractions.flatten(), p0=(Uguess))
+    print popt,pcov
+    tForFit=np.linspace(np.min(tRecoils),np.max(tRecoils),100)
+    pops_fitted=propagateLatHamFit(tForFit,*popt)
+    pop0 = np.array([pops_fitted[i*3] for i in range(tForFit.size)])
+    pop1 = np.array([pops_fitted[i*3+1] for i in range(tForFit.size)]) 
+    pop2 = np.array([pops_fitted[i*3+2] for i in range(tForFit.size)]) 
+    
+    
+    figure=plt.figure()
+    panel=figure.add_subplot(1,1,1)
+    panel.set_title('U = '+str(np.round(popt[0],4))+r' $E_L$')#, epsilon = ' + str(np.round(popt[2],3))+ ' Er')
+    panel.plot(time*1e6,fractions[:,0],'bo', label=r'$k_x=+2k_R$')
+    panel.plot(time*1e6,fractions[:,1],'go', label=r'$k_x=0$')
+    panel.plot(time*1e6,fractions[:,2],'ro', label=r'$k_x=-2k_R$')
+    panel.plot(tForFit*1e6*hbar/Erecoil,pop0,'b-')
+    panel.plot(tForFit*1e6*hbar/Erecoil,pop1,'g-')
+    panel.plot(tForFit*1e6*hbar/Erecoil,pop2,'r-')
+    panel.set_xlabel('Lattice pulse time [us]')
+    plt.legend()
+    
+    np.savez('LatticePulsingLowU', popt=popt, pcov = np.sqrt(pcov), time=time,
+             fractions=fractions, tForFit=tForFit*hbar/Erecoil,pop0=pop0,
+             pop1=pop1,pop2=pop2)
+
 
