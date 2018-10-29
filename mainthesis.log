@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2018.8.16)  25 OCT 2018 16:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2018.8.16)  29 OCT 2018 17:50
 entering extended mode
 **./mainthesis.tex
 (mainthesis.tex
@@ -421,11 +421,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 LaTeX Warning: Unused global option(s):
     [pdflatex].
 
-(mainthesis.aux (Abstract.aux) (Titlepage.aux) (Copyright.aux) (Chapter4.aux
-
-LaTeX Warning: Label `fig:pulsingSchematic' multiply defined.
-
-))
+(mainthesis.aux (Abstract.aux) (Titlepage.aux) (Copyright.aux)
+(SynDimChapter.aux))
 \openout1 = `mainthesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
@@ -442,7 +439,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
 LaTeX Font Info:    ... okay on input line 78.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
 LaTeX Font Info:    ... okay on input line 78.
- ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count133
 \scratchdimen=\dimen150
@@ -519,280 +517,97 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
 
 
 ] [4])
-\openout2 = `Chapter4.aux'.
+\openout2 = `SynDimChapter.aux'.
 
- (Chapter4.tex
-Chapter 4.
+ (SynDimChapter.tex
+Chapter 6.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.15 
-      [1
+l.12 T
+      he work described in this chapter was published in\cite{Stuhl2015}.
+[1
 
 
-]
+] <"SynDim Figures/Fig1_Schematic".pdf, id=71, 361.44937pt x 319.82887pt>
+File: "SynDim Figures/Fig1_Schematic".pdf Graphic file (type pdf)
 
-LaTeX Warning: Reference `chap:2sec:atomLight' on page 2 undefined on input lin
-e 17.
-
+<use "SynDim Figures/Fig1_Schematic".pdf>
+Package pdftex.def Info: "SynDim Figures/Fig1_Schematic".pdf used on input line
+ 30.
+(pdftex.def)             Requested size: 361.44847pt x 319.82808pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.27 
-      [2]pdfTeX warning (ext4): destination with the same identifier (name{page
-.3}) has been already used, duplicate ignored
+l.38 I
+      n the case of Raman coupling, however, there is a momentum kick of $2k...
+[2]pdfTeX warning (ext4): destination with the same identifier (name{page.3}) h
+as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.44 \subsection{Lattice Hamiltonian}
-                                      [3]pdfTeX warning (ext4): destination wit
+l.38 I
+      n the case of Raman coupling, however, there is a momentum kick of $2k...
+[3 <./SynDim Figures/Fig1_Schematic.pdf>]pdfTeX warning (ext4): destination wit
 h the same identifier (name{page.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.68 \begin{equation}
-                      [4]
-Overfull \hbox (19.96951pt too wide) detected at line 81
-[]\OML/cmm/m/it/12 H[] \OT1/cmr/m/n/12 = [] [] \OML/cmm/m/it/12 ;
- []
-
-[5] <"Chapter4 Figures/figure1".pdf, id=138, 448.07399pt x 289.08pt>
-File: "Chapter4 Figures/figure1".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/figure1".pdf>
-Package pdftex.def Info: "Chapter4 Figures/figure1".pdf used on input line 107.
-
-(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 107--108
-[][] 
- []
-
-[6 <./Chapter4 Figures/figure1.pdf>] [7] [8]
-<"Chapter4 Figures/figure2".pdf, id=187, 448.07399pt x 289.08pt>
-File: "Chapter4 Figures/figure2".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/figure2".pdf>
-Package pdftex.def Info: "Chapter4 Figures/figure2".pdf used on input line 154.
-
-(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 154--155
-[][] 
- []
-
-<"Chapter4 Figures/LatticePulsing".pdf, id=193, 448.07399pt x 289.08pt>
-File: "Chapter4 Figures/LatticePulsing".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/LatticePulsing".pdf>
-Package pdftex.def Info: "Chapter4 Figures/LatticePulsing".pdf used on input li
-ne 165.
-(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 165--166
-[][] 
- []
-
-[9] [10 <./Chapter4 Figures/figure2.pdf>]
-<"Chapter4 Figures/figure3".pdf, id=236, 448.07399pt x 289.08pt>
-File: "Chapter4 Figures/figure3".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/figure3".pdf>
-Package pdftex.def Info: "Chapter4 Figures/figure3".pdf used on input line 173.
-
-(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 173--174
-[][] 
- []
-
-[11 <./Chapter4 Figures/LatticePulsing.pdf>] [12] [13 <./Chapter4 Figures/figur
-e3.pdf>]
-<"Chapter4 Figures/HyperfineFromSteck".pdf, id=311, 794.97pt x 614.295pt>
-File: "Chapter4 Figures/HyperfineFromSteck".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/HyperfineFromSteck".pdf>
-Package pdftex.def Info: "Chapter4 Figures/HyperfineFromSteck".pdf used on inpu
-t line 192.
-(pdftex.def)             Requested size: 476.98569pt x 368.57983pt.
-
-Overfull \hbox (50.59314pt too wide) in paragraph at lines 192--193
-[][] 
- []
-
-
-LaTeX Warning: Citation `LCT' on page 14 undefined on input line 206.
-
-[14] [15 <./Chapter4 Figures/HyperfineFromSteck.pdf, page is rotated 90 degrees
->] <"Chapter4 Figures/RfRamanSetupBeams".pdf, id=332, 794.97pt x 614.295pt>
-File: "Chapter4 Figures/RfRamanSetupBeams".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/RfRamanSetupBeams".pdf>
-Package pdftex.def Info: "Chapter4 Figures/RfRamanSetupBeams".pdf used on input
- line 231.
-(pdftex.def)             Requested size: 238.49284pt x 184.28992pt.
-
-<"Chapter4 Figures/RfRamanSetupLevels".pdf, id=333, 794.97pt x 614.295pt>
-File: "Chapter4 Figures/RfRamanSetupLevels".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/RfRamanSetupLevels".pdf>
-Package pdftex.def Info: "Chapter4 Figures/RfRamanSetupLevels".pdf used on inpu
-t line 232.
-(pdftex.def)             Requested size: 238.49284pt x 184.28992pt.
-
-Overfull \hbox (53.20422pt too wide) in paragraph at lines 231--233
-[][] [][] 
- []
-
-[16] [17 <./Chapter4 Figures/RfRamanSetupBeams.pdf, page is rotated 90 degrees>
- <./Chapter4 Figures/RfRamanSetupLevels.pdf, page is rotated 90 degrees>]
-<"Chapter4 Figures/rfBandStructure".pdf, id=367, 448.07399pt x 289.08pt>
-File: "Chapter4 Figures/rfBandStructure".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/rfBandStructure".pdf>
-Package pdftex.def Info: "Chapter4 Figures/rfBandStructure".pdf used on input l
-ine 240.
-(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 240--241
-[][] 
- []
-
-
-LaTeX Warning: Citation `SteckTextbook' on page 18 undefined on input line 247.
-
-
-[18] [19 <./Chapter4 Figures/rfBandStructure.pdf>] [20]
-<"Chapter4 Figures/RamanBandStructure".pdf, id=434, 448.07399pt x 289.08pt>
-File: "Chapter4 Figures/RamanBandStructure".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/RamanBandStructure".pdf>
-Package pdftex.def Info: "Chapter4 Figures/RamanBandStructure".pdf used on inpu
-t line 273.
-(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 273--274
-[][] 
- []
-
-
-LaTeX Warning: Reference `eqn:RamanHam' on page 21 undefined on input line 274.
-
-
-
-LaTeX Warning: Reference `eqn:RamanHam' on page 21 undefined on input line 274.
-
-
-[21] [22 <./Chapter4 Figures/RamanBandStructure.pdf>]
-<"Chapter4 Figures/RfPulsing".pdf, id=490, 448.07399pt x 433.62pt>
-File: "Chapter4 Figures/RfPulsing".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/RfPulsing".pdf>
-Package pdftex.def Info: "Chapter4 Figures/RfPulsing".pdf used on input line 29
-0.
-(pdftex.def)             Requested size: 448.07288pt x 433.61894pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 290--291
-[][] 
- []
-
-<"Chapter4 Figures/RamanPulsing".pdf, id=493, 448.07399pt x 433.62pt>
-File: "Chapter4 Figures/RamanPulsing".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/RamanPulsing".pdf>
-Package pdftex.def Info: "Chapter4 Figures/RamanPulsing".pdf used on input line
- 298.
-(pdftex.def)             Requested size: 448.07288pt x 433.61894pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 298--299
-[][] 
- []
-
-
-LaTeX Warning: Reference `fig:rfBandStruct' on page 23 undefined on input line 
-303.
-
-[23] [24 <./Chapter4 Figures/RfPulsing.pdf>] [25 <./Chapter4 Figures/RamanPulsi
-ng.pdf>]
-
-LaTeX Warning: Citation `Klitzing1980' on page 26 undefined on input line 307.
-
-[26] <"SynDim Figures/Fig2_EdgeStates".pdf, id=588, 264.99pt x 404.02745pt>
+l.41 
+      [4]
+<"SynDim Figures/Fig2_EdgeStates".pdf, id=225, 264.99pt x 404.02745pt>
 File: "SynDim Figures/Fig2_EdgeStates".pdf Graphic file (type pdf)
 
 <use "SynDim Figures/Fig2_EdgeStates".pdf>
 Package pdftex.def Info: "SynDim Figures/Fig2_EdgeStates".pdf used on input lin
-e 345.
+e 59.
 (pdftex.def)             Requested size: 264.98935pt x 404.02646pt.
 
-<"SynDim Figures/Fig4_SkippingOrbit".pdf, id=589, 266.9975pt x 402.50375pt>
+<"SynDim Figures/Fig4_SkippingOrbit".pdf, id=226, 266.9975pt x 402.50375pt>
 File: "SynDim Figures/Fig4_SkippingOrbit".pdf Graphic file (type pdf)
 
 <use "SynDim Figures/Fig4_SkippingOrbit".pdf>
 Package pdftex.def Info: "SynDim Figures/Fig4_SkippingOrbit".pdf used on input 
-line 359.
+line 73.
 (pdftex.def)             Requested size: 266.99683pt x 402.50276pt.
-) [27] [28 <./SynDim Figures/Fig2_EdgeStates.pdf>] [29 <./SynDim Figures/Fig4_S
-kippingOrbit.pdf>] (mainthesis.bbl
-Underfull \hbox (badness 3138) in paragraph at lines 21--25
-[]\OT1/cmr/m/n/12 Daniel Adam Steck.  Ru-bid-ium 87 d line data.  Avail-able on
--line,
- []
-
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 149.
- [30
+) [5] [6 <./SynDim Figures/Fig2_EdgeStates.pdf>] [7 <./SynDim Figures/Fig4_Skip
+pingOrbit.pdf>] (mainthesis.bbl
+[8
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 149.
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ‰ in font cmr12!
+ [9])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 158.
+ [10]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 158.
  (mainthesis.aux (Abstract.aux) (Titlepage.aux) (Copyright.aux)
-(Chapter4.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 149.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 149.
-
-
-Package rerunfilecheck Warning: File `mainthesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `mainthesis.out':
-(rerunfilecheck)             Before: 69C92725FCB08D743332A087D8D108CA;1394
-(rerunfilecheck)             After:  900EE55622A96CF5C0AF0847169CD8E1;1372.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
+(SynDimChapter.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 158.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 158.
+Package rerunfilecheck Info: File `mainthesis.out' has not changed.
+(rerunfilecheck)             Checksum: F792F38E57D065A1770653F47CDBD790;457.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 158.
  ) 
 Here is how much of TeX's memory you used:
- 7235 strings out of 493333
- 104015 string characters out of 3139191
- 210354 words of memory out of 3000000
- 10493 multiletter control sequences out of 15000+200000
+ 7096 strings out of 493333
+ 101068 string characters out of 3139191
+ 197686 words of memory out of 3000000
+ 10425 multiletter control sequences out of 15000+200000
  9498 words of font info for 36 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,10n,34p,1914b,354s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,8n,34p,1507b,445s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mti12.pfb>
-Output written on mainthesis.pdf (34 pages, 1518603 bytes).
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmti12.pfb>
+Output written on mainthesis.pdf (14 pages, 689690 bytes).
 PDF statistics:
- 762 PDF objects out of 1000 (max. 8388607)
- 96 named destinations out of 1000 (max. 500000)
- 202 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 381 PDF objects out of 1000 (max. 8388607)
+ 36 named destinations out of 1000 (max. 500000)
+ 64 words of extra memory for PDF output out of 10000 (max. 10000000)
 

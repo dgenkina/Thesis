@@ -1,0 +1,82 @@
+\renewcommand{\thechapter}{6}
+
+\chapter{Synthetic Magnetic Fields in Synthetic Dimensions}
+
+
+In condensed matter, 2-D systems in high fields have proved to be of great technological use and scientific interest. The integer quantum Hall effect (IQHE)\cite{Klitzing1980}, with it's quantized Hall resistance, had given rise to an ultra-precise standard for resistivity. It was also one of the first examples of topology playing an important role in physics---the precise quantization of the Hall conductance is guaranteed by the non-trivial topology of the system\cite{Thouless1982}. This quantizes the magnetic flux into flux quanta of $\Phi_0=2\pi\hbar/e$, where $e$ is the electron charge, and leads to a new 'plateau' in the resistivity when an additional quantum of flux is threaded through the system. 
+
+In the IQHE system, the underlying lattice structure of metal is effectively washed out---the magnetic flux per individual lattice plaquette is negligible. However, new physics arises when the magnetic flux per plaquette is increased to some non-negligible fractionj of the flux quantum, giving rise to the Hofstadter butterfly\cite{Hofstadter1976}. These regimes are har to reach experiementally, since the typical plaquette size in crystalline material is of order a square angstrum, and the magnetic field necessary to thread create a magnetic flux of $\Phi_0$ through such a narrow area is of order $\approx10^4$ Tesla, not accessable with current technology. 
+
+Several platforms have, however, reached the Hofstadter regime by engineering systems with large effective plaquette size, in engineered materials\cite{Geisler2004,Hunt2013}, and in atomic\cite{Jaksch2003,Aidelsburger2013,Miyake2013,Jotzu2014,Aidelsburger2014,Mancini2015} and optical\cite{Hafezi2013} settings. Here, we use the approach of synthetic dimensions \cite{Celi2014} to reach the Hofstadter regime. We demonstrate the non-trivial topology of the system created, and use it to image skipping orbits at the edge of the 2-D system---a hallmark of 2-D electron systems in a semiclassical treatment. 
+
+The work described in this chapter was published in\cite{Stuhl2015}.
+
+%	In materials the quantum Hall effects represent an extreme quantum limit, where a system's behavior defies any description with classical physics.  In the modern parlance, the integer quantum Hall effect (IQHE) for two-dimensional (2-D) electronic systems in magnetic fields\cite{Klitzing1980} was the first topological insulator\cite{Hasan2010}: a bulk insulator with dispersing edge states --- always present in finite-sized topological systems--- which give rise to the IQHE's signature quantized Hall resistance\cite{Thouless1982}.  
+%	
+%	In classical systems the magnetic field acts purely through the Lorentz force, while in quantum systems a particle with charge $q$ in a uniform field $B$ additionally acquires an Aharonov-Bohm phase $\phi_{\rm AB}/2\pi = \mathcal{A} B / \Phi_0$ after its path encircles an area $\mathcal{A}$ normal to $B$.  (Here $\Phi_0=2\pi\hbar/q$ is the flux quanta and $2\pi\hbar$ is Planck's constant.)   As proposed in Ref.~\cite{Celi2014}, we engineered an elongated 2-D square lattice formed from the sites of an optical lattice along the long direction and the internal atomic spin states along the narrow direction: a synthetic dimension.  We directly controlled the acquired phases as atoms traversed the lattice, giving a tunneling phase $\phi_{\rm AB}/2\pi \approx4/3$ around each plaquette.  These phases take the place of the Aharonov-Bohm phases produced by true magnetic fields and suffice to fully define the effective magnetic field.  Aharonov-Bohm phases of order unity in the Harper-Hofstadter Hamiltonian ---currently realized in engineered materials\cite{Geisler2004,Hunt2013}, or in atomic\cite{Jaksch2003,Aidelsburger2013,Miyake2013,Jotzu2014,Aidelsburger2014,Mancini2015} and optical\cite{Hafezi2013} settings--- fragment the low-field Landau levels into the fractal energy bands of the Hofstadter butterfly\cite{Hofstadter1976}.   Such Hofstadter bands are generally associated with a non-zero topological index: the Chern number\cite{Thouless1982}.
+%	
+%	Topologically nontrivial bulk properties are reflected by the presence of edge channels, composed of edge states, with quantized conductance.  In fermionic systems, the number of edge channels is fixed by the aggregate topological index of the filled bands\cite{Thouless1982,Hasan2010,Beugeling2012}; this ultimately gives rise to phenomena such as the IQHE for electrons.    Conceptually the constituent edge states can be viewed as skipping orbits\cite{Buttiker1988PRB,Hasan2010,Montambaux2011}: in the presence of a strong magnetic field, nascent cyclotron orbits near the boundary reflect from the hard wall before completing an orbit, leading to skipping trajectories following the system's boundary.  In contrast, localized bulk states correspond to closed cyclotron orbits.
+%	
+%	By applying large effective fields to atomic Bose-Einstein condensates (BECs), we directly imaged individual, deterministically prepared, bulk and edge eigenstates.  In IQHE systems these states would govern the conductivity, but as individual eigenstates they exhibit no time-dependance.  The corresponding dynamical entities are edge magnietoplasmons, consisting of superpositions of edge eigenstates in different Landau levels\cite{Kern1991,Ashoori1992}, or here magnetic bands.  We launched these excitations and recorded their full motion for the first time, observing both a chiral drift along the system's edge and the underlying skipping motion.
+
+\section{Synthetic dimensions setup}
+
+Any internal degree of freedom can be thought of as a synthetic dimension---the different internal states can be treated as sites along this synthetic direction. As long as there is some sense of distance along this direction, i.e. some of the internal states are 'nearest neighbors' while others are not, this is a meaningful treatment. In our case an effective 2-D lattice is formed by sites formed by a 1-D optical lattice along a 'real' direction, here  ${\bf e}_x$, and the atom's spin states forming sites along a 'synthetic' direction,  ${\bf e}_s$. 
+
+The experimental setup for this system is schematically represented in \ref{fig:synDimSchematic}a. The BEC is subject to a 1-D optical lattice, formed by a retro-reflected beam of $\lambda_L=1064 nm$ along  ${\bf e}_x$. A bias magnetic field $B_0$ along  ${\bf e}_z$ separates the different spin states. The spin states can be thought of a sites along a synthetic dimension even without any coupling field. However, only once a coupling field is present do they acquire a sense of distance. We couple them via rf or Raman coupling, which only couples adjacent spin states. The Raman beams illuminating the atoms are along the same  ${\bf e}_x$ direction as the 1-D optical lattice. The rf field has components both along the  ${\bf e}_x$ and  ${\bf e}_y$. 
+
+
+\begin{figure}
+	\includegraphics{"SynDim Figures/Fig1_Schematic".pdf}
+\caption{Setup of effective 2-D lattice. (a) Beam geometry. The BEC is subject to a bias magnetic field $B_0$ in the ${\bf e}_z$ direction. The 1-D lattice beam and Raman beams are both along the ${\bf e}_x$ direction, and the rf field can be applied with projections onto both the  ${\bf e}_x$ and  ${\bf e}_y$. (b) Schematic of the effective 2-D lattice. Sites along  ${\bf e}_x$ are formed by the 1-D optical lattice and labelled by site number $j$. Sites along the synthetic direction  ${\bf e}_s$ are formed by the spin states: 3 sites for atoms in the $F=1$ manifold and 5 sites for atoms in $F=2$. These sites are labelled by $m$. Raman transitions induce a phase shift, which can be gauge transformed into a tunneling phase along the  ${\bf e}_x$ direction. This leads to a net phase when hopping around a single lattice plaquette of $\phi_{AB}$.  }
+\label{fig:synDimSchematic}
+\end{figure}
+
+
+Figure \ref{fig:synDimSchematic}b sketches out the effective 2-D lattice created. Here, we have labelled the lattice sites along the 'real' direction  ${\bf e}_x$ by site index $j$. In the tight binding approximation, we can describe a lattice hopping between adjacent sites with tunneling amplitude $t_x$. Similarly, the sites along the 'synthetic' dimension are labelled by site index $m$ (identical to spin projection quantum number $m_F$), and the rf or Raman coupling here plays the role of a tunneling amplitude $t_s$. In the case of rf coupling, there is no momentum kick associated with spin exchange, and both $t_x$ and $t_s$ are real. 
+
+In the case of Raman coupling, however, there is a momentum kick of $2k_R$ associated with every spin transfer, and therefore a phase factor of ${\rm exp}(2i k_R x)$ with every spin 'tunneling' event. Since position $x$ is set by the 1-D lattice, $x_j = j \lambda_L/2 = j \pi/k_L$, and the space dependent phase factor is ${\rm exp}(2\pi i k_R/k_L j)$. An absolute phase change in the wavefunction is not meaningful. However, a phase aquired when going around a plaquette and coming back to the same palce is meaningful, as one could imagine one atom staying at the same site and the other going around a plaquette and coming back to detect the phase difference. In this setup, the phases acquired while going around a single plaquetter are, starting at some lattice site $\ket{j,m}$, are: $0$ (for tunneling right to $\ket{j+1,m}$), $2\pi i k_R/k_L (j+1)$ (for tunneling up to $\ket{j+1,m+1}$, $0$ (for tunneling left to $\ket{j,m+1}$) and $-2\pi i k_R/k_L j$ (for tunneling back down to $\ket{j,m}$). The total phase aquired is thus $\phi_{\rm AB} = 2\pi k_R/k_L$, independent of the starting lattice site. Since the absolute phase does not matter and only the value of t $\phi_{\rm AB}$, we can perform a phase transformation that shifts the tunneling phase onto the spatial direction, defining $t_x = |t_x|{\rm exp}(i\phi_{\rm AB}m)$ and $t_s=|t_s|$, as labelled in Figure \ref{fig:synDimSchematic}b. 
+
+To see how this phase implies an effective magnetic field, we draw an analogy to the Aharonov-Bohm effect\cite{Aharonov1959, Aharonov1992} from quantum mechanics. In this effect, consider an infinite solenoid with an electric current running through it. The magnetic field $B$ in this setup exists only inside the solenoid, while the magnetic vector potential persists outside the solenoid.  However, if two electrons are sent on a trajectory around the solenoid, even though they never pass through any magnetic field, they neverthless acquire a relative phase that can be detected by interfering them with each other. This relative phase is given by $\phi_{\rm AB} =2 \pi \Phi/\Phi_0$, where $\Phi = B*A$ is the magnetic flux through the solenoid ($A$ is the are pierced by the magnetic field) and $\Phi_0=h/e$ is the flux quantum, with $e$ the electron charge. Since in our system, the atoms acquire a phase when they perform a closed loop around a single lattice plaquette. Therefore, they behave as though there was an infinite solenoid piercing each plaquette with a magnetic field going through it, and the flux per plaquette in units of the flux quantum is $\Phi/\Phi_0=\phi_{\rm AB}/2\pi =  k_R/k_L$.
+
+\section{Hamiltonian of the effective 2-D system}
+
+Figure: Band structure, F=1 and F=2, with and without Raman coupling
+
+par1: Write out full Hamiltonian
+
+par2: Talk about band structure, periodic and spin dependent 
+
+par3: How we calibrate the synthetic dimensions system by pulsing
+
+Figure: example TOF images, pulsing experiments for F=1 and F=2
+
+par4: Write out tight binding version, explain how closely it applies. Figure: fits for effective tunneling amplitudes?
+
+\section{Eigenstates of the synthetic 2-D lattice}
+
+\begin{figure}
+	\includegraphics{"SynDim Figures/Fig2_EdgeStates".pdf}
+\caption{}
+\label{fig:TOFeigenstates}
+\end{figure}
+
+par1: 'Edge' and 'bulk' states of electrons in a magnetic field
+
+par2: Explain loading procedure for adiabatic states
+
+par3: Explain figure, magnetic length
+
+\section{Observation of skipping orbits}
+
+\begin{figure}
+	\includegraphics{"SynDim Figures/Fig4_SkippingOrbit".pdf}
+\caption{}
+\label{fig:skippingOrbits}
+\end{figure}
+
+par1: Skipping orbits in 2-D electrons in a magnetic fields
+
+par2: Experimental sequence for skipping orbits measurement
+
+par3: How position is calculated from integrating velocity as a function of time. Explain figure

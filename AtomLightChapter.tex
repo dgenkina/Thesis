@@ -1,0 +1,348 @@
+\renewcommand{\thechapter}{2}
+
+\chapter{Atom Light Interactions}
+
+\section{Near-resonant atom-light interaction}\label{chap:2sec:atomLight}
+
+In this section, we will assume the atom can be treated as a two-level system: one with a ground and excited atomic state, with an energy difference of energy difference $\hbar\omega_0$. When such an atom, starting in the ground state, is illuminated by a laser beam with frequency $\hbar\omega_{\rm{L}}$, there are three kinds of transitions that occur: during aborption the atom aborbs a photon from the laser and goes from the ground to the excited state; during stimulated emission, the atom emits a photon into the field of the laser beam and jump from the excited to the ground state; during spontaneous emission, the atom decays to the ground state from the excited state with no help from the laser, emitting into a random vacuum mode. Stimulated emission results in coherent light co-propagating with the laser beam, while spontaneous emission results in light scattering incoherently in any direction. The rate of spontaneous emission from an excited state is given by the natural transition linewidth of the transition $\Gamma$. 
+
+On timescales short compared to $1/\Gamma$, spontaneous emission can be ignored, and an atom undergoes coherent Rabi oscillations between the ground and excited states via cycles of absorption and stimulated emission\cite{LCT}. Taking $c_g$ and $c_e$ to be the time-dependent coefficients multiplying the eigenstate wavefuntions of the ground and excited state respectively, and assuming the atom starts in the ground state $c_g(t=0)=1$, the excited state population is given by
+\begin{equation}
+c_e(t)=-i\frac{\Omega}{\Omega'}{\rm sin}\left(\frac{\Omega't}{2}\right)e^{-i\delta t/2},
+\end{equation}
+where $\Omega$ is the Rabi frequency given by $\Omega^2 = \frac{\Gamma\lambda_L^3}{h(2\pi)^3}I$, with $\lambda_L$ as the laser wavelength, $h$ as Plank's constant and $I$ as the laser intensity,  $\Omega'=\sqrt{\Omega^2+\delta^2}$ is the generalized Rabi frequency and $\delta=\omega_0-\omega_{\rm{L}}$ is the detuniong of the laser from atomic resonance. 
+
+In the regime where spontaneous emission cannot be ignored, Rabi oscillations of each individual atom are intermittently interrupted by decay to the ground state. Averaging over an atomic ensamble, on the time scale of a single Rabi oscillation the overall excited state population reaches a steady state, and the rate of spontaneous emission becomes constant. Since during spontaneous emission the ejected photon can go into any vacuum mode, this process can be thought of as the scattering of photons by the atoms. This scattering rate is given by\cite{LCT}
+\begin{equation}
+\gamma_{\rm{sc}}= \frac{\Gamma}{2} \frac{I/I_{\rm{sat}}}{1+4(\delta/\Gamma)^2 +I/I_{\rm{sat}}},
+\label{eq:scatrate}
+\end{equation}
+where $I_{\rm{sat}}$ is the saturation intensity. This is the intensity at which the timescale of spontaneous emission matches the Rabi oscillation rate, reducing the capacity for absorption of extra light.   
+
+
+\section{Absorption imaging}
+
+Absorption imaging takes advantage of the on-resonant interaction described in the previous section. An on or near-resonant laser beam ($\delta/\Gamma\ll 1$) is shined at the atoms, and the aborbed light acts to create a shadow in the shape of the atoms in the laser beam. This beam with the shadow is then imaged on a camera, in our case a CCD, as depicted in Figure \ref{fig:absorptionIntor}a (top). This is called the atom image, and the intensity distribution over the camera is denoted by $I_f(x,y)$, where the subscript f stands for final - the intensity after the light has encountered the atoms. To quantify the 'shadowed out' intensity, after the atoms have left the trap the same laser intensity is shined directly at the camera, as in Figure \ref{fig:absorptionIntor}a (bottom).   This is called the probe image, and the intensity distribution over the camera is denoted by $I_0(x,y)$, where the subscript 0 indicated initial - the intensity before the light had encountered the atoms.
+
+
+
+%Absorption imaging measures the shadow cast by an atomic ensemble in an illuminating probe laser beam with angular frequency $\omega_{\rm{L}}$. 
+%\par An absorption image is obtained by shining an on- or near-resonant probe beam ($\tilde{\delta}\ll1$) onto the atomic cloud. Some of the light is scattered by the atoms, and the unscattered light, $\tilde{I}_f(x,y)$, is imaged onto a camera, as depicted in Fig. \ref{fig:absorptionIntor}(a) (top). The probe light is reapplied with the atoms absent to calibrate the intensity $\tilde{I}_0(x,y)$ of light unaffected by the atoms (bottom).
+\begin{figure}
+	\subfigure[]{\includegraphics[scale=0.45]{"Chapter2 Figures/Picture1a"}}
+	\subfigure[]{\includegraphics[scale = 0.9]{"Chapter2 Figures/Picture1c".pdf}}
+	\subfigure[]{\includegraphics[scale=0.5]{"Chapter2 Figures/Picture1b"}}
+\caption{Absorption imaging. (a) Near resonant probe light illuminates the atoms, and the transmitted light (containing a shadow of the atoms) is imaged on the camera. A second image taken with no atoms provides a reference. (b)  The probe beam is partially absorbed as it traverses the cloud, and the intensity seen by atoms further along the imaging direction \ez{} is lowered.  (c) An atomic cloud illuminated by a probe light field absorbs photons from the probe and re-emits them in all directions. This process results in a net acceleration of the cloud in the direction of the probe light as well as diffusive spreading in the transverse directions.  }
+\label{fig:absorptionIntor}
+\end{figure}
+
+To recover the atom number distribution encountered by the light, consider an atomic cloud with 3D density $\rho(x,y,z)$. Since we can only obtain 2D information from the camera, we can only hope to recover a 2D atomic column density $n(x,y)=\int\rho(x,y,z)\mathrm{d}z$. Focusing in on a single pixel of the camera, we can consider a single value of $I_0$ and $I_f$ to recover a local $n$. As the laser light propagates through the atomic cloud, the intensity of the light will diminish due to absorption. This absorption as a function of propagation direction $z$ can be expressed using the scattering rate equation Eq. \ref{eq:scatrate} as the number of photons scattered by the atoms (proportional to the atomic density times the scattering rate) times the photon energy $\hbar\omega_{\rm{L}}$:
+\begin{equation}
+\frac{d}{dz}\frac{I(z)}{I_{\rm{sat}}}=-\hbar\omega_{\rm{L}}\rho(z)\gamma_{sc}(z)=-\rho(z)\sigma_0\frac{I(z)/I_{\rm{sat}}}{1+4\delta^2 /\Gamma^2+I(z)/I_{\rm{sat}}},
+\label{eq:dIdz}
+\end{equation}
+where the resonant scattering cross section is $\sigma_0=3\lambda_0^2/2\pi$, and $\lambda_0$ is the wavelength asociatted with atomic resonance. 
+
+Integrating both sides of Eq. \ref{eq:dIdz}, we obtain
+\begin{equation}
+\sigma_0 n = \left(1+4\delta^2/\Gamma^2\right)\mathrm{ln}(I_0/I_f)+ \left(I_0-I_f\right)/I_{\rm{sat}}.
+\label{eq2}
+\end{equation}
+The quantity $OD=ln(I_0/I_f)$ is called the optical depth of the cloud. When the probe intensity $I_0$ is much smaller than the saturation intensity, the second term in Eq. \ref{eq2} becomes negligible. Assuming further that the probe light is on resonance, $\delta=0$, the atomic column density becomes simply $\sigma_0 n=OD$. Figure \ref{fig:absorptionIntor}b shows a Gaussian atomic density distribution (top) and the resulting probe intensity as a function of position in the cloud (bottom). The intensity drops from its initial to final value gradually as it traverses the cloud.
+
+However, there is an important effect that the above equations do not account for. Namely, as the atoms absorb light from the probe beam, they also get a momentum kick equal to the momentum of a photon during each collision $\hbar k_r=h/\lambda_L$ in the direction of propagation. It is true that the absorbed photon will then be re-emitted by the atom, inducing a loss of momentum, but since this happens through the process of spontaneous emission into a random vacuum mode, the average momentum kick acquired this way over many re-emissions will average to zero. On average, each photon absorbed will induce a change in velocity of the atom of $v_r=\hbar k_r/m$, where $m$ is the atomic mass, as depicted in Fig. \ref{fig:absorptionIntor}c. As the velocity of the atom changes, due to the Doppler effect, the apparent laser frequency will change as well. Therefore, even if the laser light is exactly on-resonant for a stationary atom, it will become off-resonant for longer imaging times, and Eq. \ref{eq:dIdz} will acquire a time dependence. For most experiments, this effect is small and can be neglected. However, if the imaging time becomes of order a recoil time $t_r$, a time after which the recoil-induced detuning $\delta$ becomes of order $\Gamma$, this effect becomes significant. We explore this effect in Chapter \ref{AbsorptionImagingChapter}.  
+
+
+\section{One dimensional optical lattices}\label{chap:4sec:1DOL}
+
+
+\subsection{Far off-resonant atom-light interaction}
+	As described in section \ref{chap:2sec:atomLight}, on timescales where spontaneous emission can be neglected, two-level atoms exposed to laser radiation undergo coherent Rabi oscillations between the two levels. Starting with $c_g$ and $c_e$ as the time-dependent coefficients multiplying the eigenstate wavefuntions of the ground and excited state respectively, and assuming the atom starts in the ground state $c_g(t=0)=1$, we make the traditional transformation to the rotating frame:
+\begin{align}
+c'_g(t) & = c_g(t)\\
+c'_e(t) & = c_e(t) e^{-i\delta t}, 
+\end{align}
+where $\delta$ is the detuning of laser light from resonance. In this frame, we can write the atom-light Hamiltonian in the $\begin{pmatrix} c'_g \\ c'_e \end{pmatrix}$ basis as:
+\begin{equation}
+H = \hbar \begin{pmatrix} -\delta/2 & \Omega/2 \\ \Omega/2 & \delta/2 \end{pmatrix},
+\end{equation}
+where $\Omega$ is the coupling strength, also known as the Rabi frequency. In the limit of no coupling, $\Omega = 0$, in the rotating frame the eigenenegies are $E_{\pm} = \pm \hbar \delta/2$. For non-zero coupling, finding the eigenvalues of H gives $E_{\pm} = \pm \hbar \sqrt{\delta^2 + \Omega^2}/2$. Therefore, the bare (without light) eigenenrgies are shifted in the presence of the light. 
+
+	For a far detuned laser beam, one expects that no absorption of the light will actually take place, and the atom will remain entirely in the ground state. Indeed, solving the Shroedinger equation with the above Hamiltonian
+\begin{equation}
+i\hbar \frac{d}{dt} \begin{pmatrix} c'_g \\ c'_e \end{pmatrix} = H \begin{pmatrix} c'_g \\ c'_e \end{pmatrix}
+\end{equation}
+we obtain the oscillating excited state population 
+\begin{equation}
+c'_e(t) = -i \frac{\Omega}{\sqrt{\Omega^2 + \delta^2}}{\rm sin}\left(\frac{\sqrt{\Omega^2 + \delta^2}t}{2}\right),
+\end{equation}
+where the amplitude of the oscillation approches zero in the limit $\Omega \ll \delta$. Thus, the only effect of the light in this regime is to shift the eigenenergies of the ground and excited states. Expanding the energies in the small parameter $\Omega/\delta$, we obtain the shifted energies $E_{\pm} = \pm \hbar \sqrt{\delta^2 + \Omega^2}/2 \approx \pm (\delta/2 + \Omega^2/4\delta)$. The shift from bare energy levels is thus 
+\begin{equation}
+\Delta E_{\pm} = \pm \Omega^2/4\delta.
+\end{equation}
+This laser intensity dependent energy shift is called the AC Stark shift, and is the basis of most laser created potentials for cold atoms. 
+	
+	For the ground state, and a red detuned laser beam (where the laser frequency is lower than the resonant frequency), this creates energy minima in locations of maximal laser intensity. For the lattice described in this chapter, as well as for the trapping of our atoms in the final stages of cooling, we use high power (up to 10 W) lasers with wavelength $\lambda_L = 1064 $ nm. 
+
+\subsection{Lattice Hamiltonian}
+
+	Our 1-D optical lattice is created by retro-reflecting the  $\lambda_L = 1064 $ nm laser, creating a standing wave of light. Via the AC Stark shift, this creates a periodic potential for the atoms of the form
+\begin{equation}
+V = V_0 {\rm sin}^2 (k_L x),
+\end{equation} 
+where $k_L = 2\pi/\lambda_L$ is the wavenumber associated with the lattice recoil momentum. The time-independent Hamiltonian, for some eigenenergy $E_n$, will be given by
+\begin{equation}
+-\frac{\hbar^2}{2 m}\frac{d^2}{dx^2}\Psi_n(x)+V_0 {\rm sin}^2 (k_L x) \Psi_n(x) = E_n \Psi_n(x).
+\end{equation}
+Since the potential is spatially periodic, we can invoke Bloch's theorem \cite{Ashcroft}:
+\begin{equation}
+\Psi_{n,q} =  e^{iqx}u_{n,q}(x), 
+\end{equation}
+where $q$ is the crystal momentum restricted to $\pm\hbar k_L$, and $u_{n,q}(x)$ is the spatially varying part of the wavefunction. 
+Plugging this in to the Hamiltonian, we obtain
+\begin{equation}
+-\frac{\hbar^2}{2m}\left(-q^2 + 2iq\frac{d}{dx} + \frac{d^2}{dx^2}\right) u_{n,q}(x) + V_0{\rm sin}^2(k_L x) u_{n,q}(x) = E_n u_{n,q}(x).
+\end{equation}
+Expanding $u_{n,q}(x)$  in Fourier components commensurate with the lattice period of $2 k_L$ as $u_{n,q}(x) = \sum_{j=-\inf}^{\inf} a_j e^{i 2 k_L j x}$, we obtain
+\begin{equation}
+\sum_j \left(\frac{\hbar^2}{2m}(q + 2 k_L)^2 a_j + V_0 {\rm sin}^2(k_L x) a_j\right) e^{i 2 k_L j x} = E_n\sum_j a_j  e^{i 2 k_L j x}.
+\end{equation}
+Re-writing ${\rm sin}^2(k_L x) = (e^{-2ik_L x} + e^{2 i k_L x} - 2)/4$, multiplying both sides by $e^{i 2 k_L j' x}$ and invoking $\sum c_j e^{i k (j-j')} = \delta_{jj'}$, where $\delta_{j j'}$ is the Kroniker delta and $c_j$ are appropriately normalized coefficients, we get for any value of the index $j$
+\begin{equation}
+\frac{\hbar^2}{2m}(q + 2 k_L j)^2 a_j - \frac{V_0}{4}(a_{j+1}+a_{j-1}) = E_n a_j.
+\end{equation}
+This can be expressed in matrix form
+\begin{equation}
+H_L =
+ \begin{pmatrix} \ddots &  & & & & & & \\ 
+ & \frac{\hbar^2}{2m}(q + 4 k_L )^2 & \frac{V_0}{4} & 0 & 0 & 0 &  \\
+ & \frac{V_0}{4} &\frac{\hbar^2}{2m}(q + 2 k_L )^2 & \frac{V_0}{4} & 0 & 0 &  \\
+& 0 & \frac{V_0}{4} & \frac{\hbar^2}{2m}q^2 & \frac{V_0}{4} & 0 &  \\
+ & 0 & 0 & \frac{V_0}{4} & \frac{\hbar^2}{2m}(q - 2 k_L)^2 &\frac{V_0}{4} &  \\
+ &  & 0 & 0 & \frac{V_0}{4} & \frac{\hbar^2}{2m}(q - 4 k_L)^2 &  \\
+& & & & & & &  \ddots \end{pmatrix} \\,
+\end{equation}
+in the basis of momentum orders $\ket{k}=e^{i k x}$ given by:
+\begin{equation}
+ \begin{pmatrix} \vdots \\
+\ket{q+4 k_L}\\
+\ket{q+2 k_L}\\
+\ket{q}\\
+\ket{q -2 k_L}\\
+\ket{q - 4 k_L}\\
+\vdots
+\end{pmatrix} \\.
+\end{equation}
+
+This matrix can be diagonalized for every value of the crystal momentum $q$, withthe resulting band structure shown in Figure \ref{fig:latticeBandStructure}. It is convenient to define the lattice recoil energy $E_L = \hbar^2 k_L^2/2m$. Then, we can re-write the Hamiltonian with $V_0$ in units of $E_L$ and momenta $q$ in units of $k_L$ as 
+\begin{equation}
+H_L/E_L =
+ \begin{pmatrix} \ddots &  & & & & & & \\ 
+ & (q + 4)^2 & \frac{V_0}{4} & 0 & 0 & 0 &  \\
+ & \frac{V_0}{4} &(q + 2)^2 & \frac{V_0}{4} & 0 & 0 &  \\
+& 0 & \frac{V_0}{4} & q^2 & \frac{V_0}{4} & 0 &  \\
+ & 0 & 0 & \frac{V_0}{4} & (q - 2)^2 &\frac{V_0}{4} &  \\
+ &  & 0 & 0 & \frac{V_0}{4} & (q  - 4)^2 &  \\
+& & & & & & &  \ddots \end{pmatrix} \\.
+\end{equation}
+
+\begin{figure}
+	\includegraphics{"Chapter4 Figures/figure1".pdf}
+\caption{Lattice band structure in the extended zone scheme. The dashed lines represent the limit of zero lattice depth, with the regular parabolic dispersion relation of a free particle repating with reciprocal lattice period. The solid lines are the dispersion relation at $V_0 = 4.0 E_L$, showing the opening of gaps at crossings of the zero lattice depth bands. The black lines demarcate the first Brillouin zone. }
+\label{fig:latticeBandStructure}
+\end{figure}
+
+In any numerical simulation, the number of momentum orders that can be included is finite. We determine the value of the parameter $n = {\rm max}(|j|)$ as the lowest $n$ at which the eigenvalues stop changing to machine precision from $n-1$. The code for finding and plotting the eigenvalues and eigenvectors of the lattice hamiltonian is included in Appendix [MAKE APPENDIX WITH CODE?].
+
+\subsection{Tight binding approximation}
+
+In the limit of large lattice depths, $V_0 > \approx 5 E_L$, the lattice Hamiltonian is well approximated by the tight-binding model. In the tight binding model, the basis is assumed to be a set of orthogonal functions, called Wannier functions, localized to each lattice site $\ket{j}$.  The approximation lies in assuming only nearest neighbor tunnelings between the sites, forming the tight-binding Hamiltonian
+\begin{equation}
+H_{\rm tb} = - t \ket{j}\bra{j+1} + {\rm H.c.},
+\end{equation}
+where $t$ is the tunneling amplitude between nearest neighbor sites and H.c. stands for Hermitian conjugate. We have neglected the diagonal kinetic energy term, as it will be equal for every Wannier function $\ket{j}$ and thus represents a constant energy offset. All the information about the lattice depth is therefore reflected in the tunneling amplitude $t$. 
+
+The tight binding Hamiltonian can also be expressed in the momentum basis by Fourier transforming the basis functions:
+\begin{equation}
+\ket{j} = \frac{1}{\sqrt{N}}\sum_{k_j} e^{-i k_j j}\ket{k_j},
+\end{equation}
+giving the Hamiltonian
+\begin{equation}
+H_{\rm tb} = - \frac{1}{N}\sum_{k_1}\sum{k_2} t e^{-i j k_1} e^{i k_2 (j+1)} \ket{k_1}\bra{k_2} + {\rm H.c} = 2 t {\rm cos}(k)\ket{k}\bra{k}.
+\end{equation}  
+From this we can directly read off the band structure of the tight binding Hamiltonian. First, we notice that we only obtain one band - to approximate higher bands with the tight binding approximation we would need to construct a different set of Wannier functions and a different tunneling strength. Second, we see that the lowest band is simply a cosine - therefore we have solved for the band structure without even defining what the basis Wannier functions are! Third, the amplitude of the cosine function is given by the tunneling strength $t$. This gives us a good clue as to how to determine the appropriate tunneling given a lattice depth $V_0$ - simply find a $t$ that matches the amplitude of the lowest band, which becomes cosinusoidal in the deep lattice limit. 
+
+The precise form of the Wannier functions depends on both the depth of the lattice and the band being reproduced. It is not necessary for us to find their full expression, as the band structure can be calculated without them. The definition, however, is
+\begin{equation}
+\ket{j} = \int_{\rm BZ} e^{i \phi(q) - i q j a}\Psi_q(x) {\rm d} q,
+\end{equation}
+where the integral is over the Brillouin zone, from $-k_L$ to $k_L$, $a$ is the lattice spacing $\lambda_L/2$, and $\Psi_q$ is the Bloch wavefunction at crystal momentum $q$, and $\phi(q)$ is the phase associated with each Bloch wavefuntion. The Bloch wavefunctions individually have arbitrary phase. The phase plays an important role in combining the Bloch wavefunctions into a Wannier function, finding the proper phase relationship to make the wavefunction maximally localized at each site\cite{Marzari2012}. 
+
+\subsection{Pulsing vs adiabatic loading of the lattice}
+
+The lattice depth parameter $V_0/4$, for a range of values, can be well calibrated experimentally by pulsing on the lattice. Here, the word pulsing indicates that the lattice is turned on fully non-adiabatically, if not instantaneously, such that the original bare momentum state is projected onto the lattice eigenbasis, as shown in Figure \ref{fig:pulsingSchematic}a. If the atoms start out stationary in the trap, the bare state in the momentum basis is simply
+\begin{equation}
+\ket{\Psi_0} = \begin{pmatrix} \vdots \\
+0\\
+0\\
+1\\
+0\\
+0\\
+\vdots
+\end{pmatrix} \\,
+\end{equation}
+as depicted in  Figure \ref{fig:pulsingSchematic}b.
+
+\begin{figure}
+\includegraphics{"Chapter4 Figures/figure2".pdf}
+\caption{Lattice pulsing. (a) Lattice depth as a function of time during a pulsing experiment. The lattice is turned on instantaneously at $t=0$ and held on for a variable amount of time until being turned off instantaneously at a final time $t=t_f$. (b) Atomic population before $t=0$. The dispersion relation is that of a free particle, and all of the atoms start out at $q=0$ in the lowest energy level. Here, the area of the dots is proportional to the fractional population in the energy state. (c) Atomic population after the lattice is turned on for a lattice depth of $V_0 = 8.0 E_L$. The energy spectrum now shows the lattice band structure, and some atomic population is projected onto the excited bands. (d) Atomic population after the lattice is snapped off at $t_f = 150$ $\mu$s. The wavefunction is projected back onto the bare states, with some fraction (blue circle) in the lowest band at $k=0$ and some fraction in the excited band, with equal population being projected onto the $k = 2 k_L$ (green) and $k=-2k_L$ (red). }
+\label{fig:pulsingSchematic}
+\end{figure}
+Since the lattice eigenbasis is distinct from the bare one, instiantaneously turning on the lattice will necessarily excite the atoms into a superposition of lattice eigenstates, each evolving with a different phase according to the eigenenergy while the lattice is on, as shown in  Figure \ref{fig:pulsingSchematic}c. Then, when the lattice is snapped back off, the wavefunction is projected back into the bare basis, and the varying phase accumulation results in a beating of the different momentum orders, see  Figure \ref{fig:pulsingSchematic}d. This can be calculated simply by using the time evolution operator
+\begin{equation}
+\ket{\Psi(t)} = e^{-i H_L t/\hbar}\ket{\Psi_0}.
+\label{eqn:timeEvolveLat}
+\end{equation}
+By pulsing on the lattice for variable amounts of time $t$, we can obtain fractional populations in the different momentum states. Time-of-flight imaging captures the momentum distribution of the cloud, and the different entries of $\Psi(t)$ in the momentum basis will thus appear as different clouds on the absorption image, as shown in Figure \ref{fig:latticePulsing}a. The fractional population in these clouds corresponds to a measurement of $|a_j|^2$.  Typically for our values of the lattice depth $V_0 < 10 E_L$, it is sufficient to simply count three central momentum orders, $k = q, q \pm 2 k_L$. Then, we can fit Eq. \ref{eqn:timeEvolveLat} to the data with fitting parameter $V_0$, thus deducing the lattuce depth. Some examples of these pulsing experiments are presented in figure \ref{fig:latticePulsing}b,c.
+\begin{figure}
+	\includegraphics{"Chapter4 Figures/LatticePulsing".pdf}
+\caption{Lattice pulsing for calibration. (a) An example time-of-flight image from a pulsing experiment. The three different clouds are different momentum orders. (b) Fractional populations in the different momentum orders as a function of pulsing time at a low lattice power. Data is indicated by dots and best fit theory is represented by lines. The lattice depth from fit is $V_0=5.57\pm0.07 E_L$. (c)Fractional populations in the different momentum orders as a function of pulsing time at a higher lattice power. Data is indicated by dots and best fit theory is represented by lines. The lattice depth from fit is $V_0=12.69\pm0.07 E_L$. }
+\label{fig:latticePulsing}
+\end{figure}
+
+In contrast to pulsing, adiabatic loading turns the lattice on slowly, such that the atomic wavefunction starting in the bare ground state can continuously adjust to remain in the ground state of the current Hamiltonian, without projecting onto any of the higher bands. This process is illustrated in Figure \ref{fig:pulsingSchematic}. The adiabatic timescale depends on the spacing between the ground and next excited band (or if starting in a different eigenstate, the nearest eigenstate). If the energy difference between the ground and first excited state is $\Delta E$, the timescale on which the lattice is turned on must fullfill $t \gg h/\Delta E$.  
+
+\begin{figure}
+\includegraphics{"Chapter4 Figures/figure3".pdf}
+\caption{Adiabatic lattice loading. (a) Lattice depth as a function of time during adiabatic turn-on. The lattice is ramped on starting at $t=0$, slowly increasng to a final lattice depth and turned off instantaneously at a final time $t=t_f$. (b) Atomic population before $t=0$. All atoms are at $k=0$ in the lowest bare band. (c) Atomic population after the lattice is turned on adiabatically to a lattice depth of $V_0 = 8.0 E_L$. All atoms remain in the lowest band, but the band is no longer bare. (d) Atomic population after the lattice is snapped off. The wavefunction is projected back onto the bare states, with some fraction (blue circle) in the lowest band at $k=0$ and some fraction in the excited band, with equal population being projected onto the $k = 2 k_L$ (green) and $k=-2k_L$ (red). Since the lowest lattice band is a superposition of bare bands, some atoms are excited to the higher bare bands. }
+\label{fig:pulsingSchematic}
+\end{figure}
+
+
+\section{Raman and rf coupling}\label{chap:4sec:rf}
+
+\subsection{Hyperfine structure}
+	Alkali atoms' energy levels can be understood as primarily the energy state of the single electron in the outer shell. Fine structure arises from different combinations of angular momenta, including orbital angular momentum of the outermost electron with respect to the nucleus $\mathbf{L}$, the electron spin $\mathbf{S}$ and the nuclear spin $\mathbf{I}$. The total electron angular momentum is the combination of orbital and the spin angular momenta $\mathbf{J} = \mathbf{L} +\mathbf{S}$, and the quantum number can be any integer $|L - S| \leq J \leq |L + S|$. The ground state of \Rb{}, in term notation $^{2S+1}L_J$ is $^2S_{1/2}$, where $S$ is orbital notation indicating $L=0$. Since the total spin quantum number $J=1/2$, this produces two possible spin projection quantum numbers, $m_J=\pm1/2$.
+
+	There is also a contribution from the nuclear spin $\mathbf{I}$, resolvable at low magnetic fields, which gives rise to hyperfine structure of the states. For \Rb{}, $I=3/2$. The total spin, including nuclear spin, is indicated by the quantum number $F$, and $|J - I| \leq F \leq |J + I|$. The interaction with the nuclear spin splits the ground state of \Rb{} into two manifolds, $F=1$ and $F=2$, with three hyperfine states in the $F=1$ manifold ($m_F=0,\pm1$) and five hyperfine states in the $F=2$ manifold ($m_F=0,\pm1,\pm2$). These states couple to an external magnetic field $B_z$ along some direction $\mathbf{e}_z$ via the Hamiltonian $H_B=\mu_B(g_JJ_z+g_II_z)B_z/\hbar$. Here $\mu_B$ is the Bohr magneton, and $g_J$ and $g_I$ are Lande g-factors. Since $g_J\gg g_I$, at high fields the nuclear spin interaction becomes small compared to the total energy shift, and the levels are grouped according to their $m_J$ quantum number, as seen in Figure \ref{fig:hyperfineSteck}.
+
+At low fields, however, the states are approximately linearly dependent on the $m_F$ quantum number. The linear shift from the $B=0$ states is known as the linear Zeeman shift. In the intermediate regime, the correction to the linear shift can be expressed in terms of and energy correction to each hyperfine state $\epsilon(B)|m_F|^2$, known as the quadratic Zeeman shift. For the magnetic fields used in experiments described in this thesis, this correction is sufficient for describing the energy levels. 
+
+\begin{figure}
+	\includegraphics[scale=0.6]{"Chapter4 Figures/HyperfineFromSteck".pdf}
+\caption{Energy structure of hyperfine states of the ground state of \Rb{} as a function of external magnetic field strength in Gauss.  Figure from ref. \cite{Steck}}
+\label{fig:hyperfineSteck}
+\end{figure}
+
+The form of the Hamiltonian in this regime for any value of $F$ is given by
+\begin{equation}
+H_0 = H_{\rm KE} + \hbar \omega_z \mathbf{F_z} + \hbar\epsilon \mathbf{F_z}^2,
+\end{equation}
+where $\hbar \omega_z = \mu_B g_F B_z/\hbar$, and the kinetic energy Hamiltonian $H_{\rm KE} = \hbar^2 \vec{k}^2/2m \mathcal{I}$, and $\mathcal{I}$ is the identity matrix.
+
+\subsection{Rf coupling Hamiltonian}
+
+	For the $F=1$ manifold, there are three available spin states $m_F = 0,\pm1$. There are many ways of introducing coupling terms between the different hyperfine states. Here, we will explain two methods: rf coupling and Raman coupling. Rf coupling is a radio-frequency oscillating magnetic field, in our case produced by a pair of circular coils in series side by side above the atoms (see \cite{KarinaThesis}). Assuming the rf oscillating field is polarized along the $\mathbf{e}_x$, with the bias field along $\mathbf{e}_z$, the coupling Hamiltonian is given by $H_{rf} = \mu_B g_F \vec{\mathbf{F}}\cdot{}\vec{B} = \mu_B g_F \mathbf{F}_x B_x {\rm cos}(\omega t)$, where $2 \pi\omega$ is the rf frequency. The schematic of this setup is shown in Figure \ref{fig:RamanRfSchematic}.
+	The eignestates of the bare Hamiltonian $H_0$ are the constituent $m_F$ states. The eigenstates of the coupled Hamiltonian $H_0 + H_{rf}(t)$ can be expressed as a linear superposition of the bare eignestates $\Psi(\vec{x},t)=\sum_{m_F}c_{m_F}(t)\phi_{m_F}(\vec{x})e^{-i\omega_{m_F}t}$. The Hamiltonian in this basis can then be written as\cite{LCT}
+\begin{equation}
+H_{\rm rf} = H_{\rm KE} + \hbar
+ \begin{pmatrix} 0 & \Omega {\rm cos}(\omega t)e^{i\omega_zt}  & 0  \\ 
+\Omega {\rm cos}(\omega t)e^{-i\omega_zt}  & 0 &  \Omega {\rm cos}(\omega t)e^{i\omega_zt} \\
+ 0 & \Omega {\rm cos}(\omega t)e^{-i\omega_zt}  & 0  \\
+ \end{pmatrix} \\,
+\end{equation}
+where $\Omega$ is the Rabi frequency, proportional to $B_x$.
+	 We can then transfer into the rotating frame $c'_{m_F} = e^{-i m_F \delta t}c_{m_F}$, where $\delta = \omega_z - \omega$. Then we apply the rotating wave approximation, that the fast oscillating terms average to zero over time scales of interest $e^{2i\omega t}\approx 0$, and obtain 
+
+\begin{equation}
+H_{\rm rf} = H_{\rm KE} + \hbar
+ \begin{pmatrix} \delta & \Omega/2  &  0  \\ 
+\Omega/2 & -\epsilon &  \Omega/2 \\
+ 0 & \Omega/2  & -\delta  \\
+ \end{pmatrix} \\,
+\label{eqn:rfHam}
+\end{equation}
+or for any value of $F$
+\begin{equation}
+H_{\rm rf} = H_{\rm KE} + \hbar\delta F_z + \hbar \epsilon F^2_z + \Omega F_x/2.
+\end{equation}
+
+\begin{figure}
+	\subfigure[]{\includegraphics[scale=0.3]{"Chapter4 Figures/RfRamanSetupBeams".pdf}}
+	\subfigure[]{\includegraphics[scale=0.3]{"Chapter4 Figures/RfRamanSetupLevels".pdf}}
+\caption{Raman and rf coupling schematic. (a) Beam geometry of the Raman beams and rf relative to the external field. The Raman beams have a frequency difference $\Delta\omega$, and are linearly polarized in perpendicular directions. (b) Level structure of both Raman and Rf coupling for hyperfine states of the $F=1$ manifold. The hyperfine splitting sparates  the levels by an energy $\hbar\omega_z$. The quadratic Zeeman shift $\epsilon$ lowers the energy of the $m_F=0$ state, and the detuning $\delta$ of either the Raman or the rf fields shifts the energies of the $m_F=\pm1$ states. Raman transitions are two-photon, exciting up to a virtual state and coming back down to an adjacent hyperfine state, with an accompanying momentum transfer. Rf couples adjacent hyperfine states directly. Figure taken from ref. \cite{Karina2012}}
+\label{fig:RamanRfSchematic}
+\end{figure}
+
+The band structure of this Hamiltonian can be seen in Figure \ref{fig:RfBandStruct}, where we have diaganolized Eq. \ref{eqn:rfHam} for a range of momenta $k_x$ (we have islolated $k_x$ for comparison with Raman coupling, as will be seen in the next section). The parabolas are simply the free particle dispersion relations along one dimension, with three bands arising from the three available spin states. It is convenient to define the magnetization of an eigenstate $m = \sum_{m_F} m_F*p_{m_F}$, where $p_{m_F}$ is the fractional population in the $m_F$ state. We have indicated the magnetization of the eigentate by coloring the eigenenrgies, with $m=-1$ in red, $m=0$ in green, and $m=+1$ in blue. In Figure \ref{fig:RfBandStruct}a, both the detuning and the coupling strength are zero. Therefore, there are simply three free particle dispersions, each exactly correlated with a particular spin state, the $m_F=\pm1$ are degenerate and the $m_F=0$ state is slightly offset by the quadratic shift $\hbar\epsilon$. In Figure \ref{fig:RfBandStruct}c, the coupling strength is again zero, but the detuning has been turned on, lifting the degeneracy between   the $m_F=\pm1$ states. Figure \ref{fig:RfBandStruct}b,d shows the same conditions as a,c, respectively, but with the coupling strength turned on. In Figure \ref{fig:RfBandStruct}b, where the detuning is zero and the quadratic shift is negligible compared to the coupling strength, all states average to a magnetization of zero--the $m_F=\pm1$ states are symmetrically populated. In Figure \ref{fig:RfBandStruct}d, this symmetry is broken by the presence of a detuning.  
+
+\begin{figure}
+	\includegraphics{"Chapter4 Figures/rfBandStructure".pdf}
+\caption{Band structure of the rf Hamiltonian, Eq. \ref{eqn:rfHam}, in momentum space. For all plots, the quadratic Zeeman shift $\hbar\epsilon = 0.04 E_R$, and the color represents magnetization, labeled by the colorbar. (a) $\hbar\Omega=0$, $\hbar\delta = 0$. No coupling or detuning is present, so the only separation between the bands is due to the quadratic shift $\hbar\epsilon$. (b) $\hbar\Omega=5.0 E_R$, $\hbar\delta = 0$. (c) $\hbar\Omega=0$, $\hbar\delta = 1.0 E_R$. Even though the coupling strength is zero, the bands are separated by the detuning. (d) $\hbar\Omega=5.0 E_R$, $\hbar\delta = 1.0 E_R$.}
+\label{fig:RfBandStruct}
+\end{figure}
+
+\subsection{Raman coupling Hamiltonian}
+
+	The counter-propagating Raman beams, as seen in Figure \ref{fig:RamanRfSchematic}, couple the same states as the rf. The do so via the vector light shift created by the pair of beams. The electric field due to the right going beam (red in Figure \ref{fig:RamanRfSchematic}a) is $\mathbf{E} = E_0 {\rm exp}(ik_R x - i\omega t) \mathbf{e}_y$, where $E_0$ is the amplitude of the electric field and $\hbar k_R = h/\lambda_R=\hbar\omega/c$. The electric field from the left going beam (gray in Figure \ref{fig:RamanRfSchematic}b) is $\mathbf{E} = E_0 {\rm exp}(-i k_R x - i(\omega +\Delta \omega)t) \mathbf{e}_z$. This combines to give an effective field from the vector light shift\cite{SteckTextbook} $B_{\rm eff}\propto \mathbf{E}\times\mathbf{E^*} \propto -E^2_0 {\rm cos}(2k_R x + \Delta\omega t)\mathbf{e}_x$. Going through the same procedure as for the rf coupling case, including the  transfer into the rotating frame and the rotating wave approximation, we obtain the same Hamiltonian in the basis of bare spin states $\ket{-1},\ket{0},\ket{1}$ but with an extra phase factor:
+	 
+\begin{equation}
+H_{\rm Raman} = H_{\rm KE} + \hbar
+ \begin{pmatrix} \delta & \Omega/2 e^{-i 2 k_R x}  &  0  \\ 
+\Omega/2 e^{i 2 k_R x} & -\epsilon &  \Omega/2 e^{-i 2 k_R x}\\
+ 0 & \Omega/2 e^{i 2 k_R x} & -\delta  \\
+ \end{pmatrix} \\,
+\end{equation}
+where $\delta = \omega_z - \Delta\omega$.
+
+	This phase difference between the rf and Raman Hamiltonian has an intuitive physical explanation. In order to undergo a Raman transition, an atom first absorbs a photon from one beam, getting a momentum kick equal to the recoil momentum $\hbar k_R$. Then, to decay back down to an adjacent spin state, the undergoes stimulated emission into the field of the other (counter-propagating) beam, acquiring another recoil momentum kick in the same direction for a total of $2\hbar k_R \mathbf{e}_x$. Therefore, the Raman coupling Hamiltonian for $F=1$, after transforming into the rotating frame and performing the rotating wave approximation, can be written in the same way as the rf Hamiltonian in Eq. \ref{eqn:rfHam} with the addition of a momentum kick---in real space, an aquired phase---of $e^{i 2 k_R x}$.
+
+	We can again make a basis transformation to get rid of this phase. Let us define  $\ket{-1}' = {\rm exp}(-2ik_R x)\ket{-1} = \ket{k_x-2k_R,-1},\ket{0}' = \ket{0} = \ket{k_x,0},\ket{1}' = {\rm exp}(2ik_R x)\ket{1}=\ket{k_x+2k_R,1}$, where for third definition we went into the momentum basis and labelled the states by a combination of their momentum and spin state. Then, including the kinetic energy term along $\mathbf{e}_x$ explicitly, we obtain the Hamiltonian in the new basis as:
+ \begin{equation}
+H_{\rm Raman} = H_{\rm KE}^{(y,z)} +
+ \begin{pmatrix} \frac{\hbar^2(k_x-2k_R)^2}{2m}+\hbar\delta & \hbar\Omega/2  &  0  \\ 
+\hbar\Omega/2 & \frac{\hbar^2 k_x^2}{2m} - \hbar\epsilon &  \hbar\Omega/2\\
+ 0 & \hbar\Omega/2 &  \frac{\hbar^2(k_x+2k_R)^2}{2m} -\hbar\delta  \\
+ \end{pmatrix} \\.
+\label{RamanHam}
+\end{equation}
+
+It is convenient to define the Raman recoil energy as $E_R = \frac{\hbar^2 k_R^2}{2m}$. The band structure of this Hamiltonian is shown in Figure \ref{fig:RamanBandStruct}, for several representative parameter values, with the magnetization labelled by the color. Figure \ref{fig:RamanBandStruct}a shows the band structure in the limit of zero coupling and zero detuning, but where we have already gone into the basis $ \ket{k_x-2k_R,-1}, \ket{k_x,0},\ket{k_x+2k_R,1}$; therefore, the free particle parabola corresponding to the $m_F=1$ spin states is shifted to center on $k_x=-2k_R$ and the $m_F=-1$ parabola is shifted to center on $k_x = 2k_R$. As the coupling is turned on to $\hbar\Omega = 1 E_R$ in Figure \ref{fig:RamanBandStruct}b, the points where the parabolas cross become 'avoided crossings', separating into three bands where magnetization (and the underlying spin distribution) depends on the momentum $k_x$. As the coupling strength is turned up even further to $\hbar\Omega = 5 E_R$ in Figure \ref{fig:RamanBandStruct}c, the lowest band goes from having three minima, one corresponding to each original spin state, to only one minimum. This transition happens at $\hbar\Omega = 4 E_R$\cite{KarinaThesis}. In Figure \ref{fig:RamanBandStruct}d, we show the band structure again in the limit of zero coupling, but this time with a detuning of $\hbar\delta = 1.0 E_R$. Note that the detuning tips the parabolas with respect to each other. Figure \ref{fig:RamanBandStruct}e shows the detuned system with coupling strenth turned up to $\hbar\Omega = 1 E_R$, still in the three minima regime but with avoided crossings creating three momentum and spin coupled bands. In Figure \ref{fig:RamanBandStruct}f, the detuned system is turned up to a coupling strength of $\hbar\Omega = 5E_R$, creating a single minimum, this time offset from $k_x = 0$.
+
+\begin{figure}
+	\includegraphics{"Chapter4 Figures/RamanBandStructure".pdf}
+\caption{Band structure of the Raman Hamiltonian, Eq. \ref{eqn:RamanHam}, in momentum space. For all plots, the quadratic Zeeman shift $\hbar\epsilon = 0.04 E_R$, and the color represents magnetization, labeled by the colorbar. (a) $\hbar\Omega=0$, $\hbar\delta = 0$. (b) $\hbar\Omega=1.0 E_R$, $\hbar\delta = 0$. (c) $\hbar\Omega=5.0 E_R$, $\hbar\delta = 0.0$. (d) $\hbar\Omega=0.0$, $\hbar\delta = 1.0 E_R$. (e) $\hbar\Omega=1.0 E_R$, $\hbar\delta = 1.0 E_R$. (f) $\hbar\Omega=5.0 E_R$, $\hbar\delta = 1.0 E_R$}
+\label{fig:RamanBandStruct}
+\end{figure}
+
+We can write the general $F$ version of the Raman coupled Hamiltonian in the basis $\ket{k_x + m_F*2k_R,m_F}$, where $-F\leq m_F \leq F$, as:
+\begin{equation}
+H_{\rm Raman} = H_{\rm KE}^{(y,z)} + \hbar^2 (k_x \mathcal{I} + 2k_R F_z)^2/2m +  \hbar\delta F_z + \hbar \epsilon F^2_z + \Omega F_x/2.
+\end{equation}
+
+\subsection{Calibration of Raman and Rf dressed states}
+To calibrate the rf and Raman coupling strengths, we take a similar approach to the 1-D lattice calibration: start in a pure spin state, for example $m_F = 0$, and turn the coupling on non-adiabatically to induce Rabi oscillations between the coupled states. Then, during time-of-flight, apply a Stern-Gerlach gradient pulse to separate the spin compoenets and observe the fractional populations in different spin states as a function of Rabi oscillation time.  
+
+Figure \ref{fig:RfPulsing}a,b shows example images obtained in time-of-flight when pulsing on an rf coupling field for atoms in the $F=1$ and $F=2$ manifold, respectively. The Stern-Gerlach gradient pulse separates the spin components along the horizontal axis in the images. The fractional population in each state can then be obtained by summing up the optical depth in each cloud and dividing by the total optical depth. Similarly, Figure \ref{fig:RamanPulsing}a shows an example time-of-flight image obtained when pulsing on a Raman coupling field on an $F=1$ cloud initially in the $m_F=0$ spin state. Here, the spin states are separated along the horizontal axis by the same Sternch-Gerlach pulse. In addition, the recoil momentum obtained when undergoing a Raman transition separates the different spin states along  the vertical axis---parallel to the Raman beams along ${\bf e}_x$. The direction of the Stern-Gerlach gradient was chosen purposefully to be perpendicular to the Raman direction ${\bf e}_x$ for easy separation of the two effects. 
+
+
+\begin{figure}
+	\includegraphics{"Chapter4 Figures/RfPulsing".pdf}
+\caption{Pulsing on rf coupling. (a) Example time-of-flight image during an rf pusling experiment in the $F=1$ manifold. Spin states are separated via a Stern-Gerlach pulse along the horizontal direction. (b) Example time-of-flight image during an rf pusling experiment in the $F=2$ manifold. Here, 5 spin components are present.  (c) Pulsing experiment in the $F=1$ manifold. Dots represent fractional populations in different spin states measured from time-of-flight images, and lines repressent best fit theory curves.  Fitted parameters are $\hbar\Omega=0.863\pm0.004 E_R$, $\hbar\delta=-0.198\pm0.007 E_R$. (d)Pulsing experiment in the $F=2$ manifold. Dots represent fractional populations in different spin states measured from time-of-flight images, and lines repressent best fit theory curves. Fitted parameters are $\hbar\Omega=1.000\pm0.002 E_R$, $\hbar\delta = -0.061\pm0.001 E_R$. $\hbar\epsilon=0.038 E_R$ for all panels.}
+\label{fig:RfPulsing}
+\end{figure}
+
+These population oscillations can then be fit for coupling strength $\hbar\Omega$ and detuning $\hbar\delta$ Note that the quadratic Zeeman shift $\hbar\epsilon$ is set by the strength of the bias field $B_0$ and therefore often well known - we do not fit for this. The theoretic predictions are obtained by applying the time evolution operator $U={\rm exp}(-i H_{\rm Raman/rf} t/\hbar)$ to an initial state $\Psi$ in the appropriate basis. Figure \ref{fig:RfPulsing}c shows an example time series of rf pulsing in the $F=1$ maifold, starting in the $m_F=0$ state. The lines of best fit are overlayed on experimental data, extracting fit parameters $\hbar\Omega=0.863\pm0.004 E_R$ and $\hbar\delta=-0.198\pm0.007 E_R$. Figure \ref{fig:RfPulsing}d shows an example time series of rf pulsing in the $F=2$ maifold, starting in the $m_F=-2$ state. Here, the extracted fit parameters were $\hbar\Omega=1.000\pm0.002 E_R$ and $\hbar\delta = -0.061\pm0.001 E_R$.
+
+\begin{figure}
+	\includegraphics{"Chapter4 Figures/RamanPulsing".pdf}
+\caption{Pulsing on Raman coupling. (a) Example time-of-flight image during a Raman pulsing experiment in the $F=1$ manifold. A Stern-Gerlach pulse during time-of-flight separates different spin components along the horizontal direction, and different momentum orders fly apart along the vertical direction. (b) Fractional population in different spin states during a Raman pulsing experiment as a function of time. Dots represent data and lines represent a best fit from theory. The fitted parameters are $\hbar\Omega=1.47\pm0.01 E_R$, $\hbar\delta = 0.004\pm0.024 E_R$. The quadratic Zeeman shift was $\hbar\epsilon=0.038 E_R$. }
+\label{fig:RamanPulsing}
+\end{figure}
+
+Figure \ref{fig:RamanPulsing}b shows an example time series of Raman pulsing in the $F=1$ manifold, starting in the $m_F=0$ state, with fitted parameters  $\hbar\Omega=1.47\pm0.01 E_R$ and $\hbar\delta = 0.004\pm0.024 E_R$. Note that although the coupling strength is almost double the rf coupling strenth in Figure \ref{fig:RfPulsing}c, the contrast (peak to peak oscillation of the fractional population in, say, the $mF=0$ state) is much lower in the Raman data than in the rf. This is a direct consequence of the recoil momentum transfer, and can be understood by looking at the band structure. For rf, the coupled bands at initial momentum $k_x=0$ are separated by the coupling strength, see Figure \ref{fig:rfBandStruct}b. For Raman, even at zero coupling strength, due to the shifting of the parabolas by $2k_R$, and $k_x=0$ the higher bands are $\hbar^2(2k_R)^2/2m=4E_R$ separated from the lower bands. Therefore, the energy difference is larger and the fraction in the excited band will be lower, leading to lower contrast. 
+
+
+
+
+

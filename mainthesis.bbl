@@ -1,4 +1,87 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{Klitzing1980}
+K.~v. Klitzing, G.~Dorda, and M.~Pepper.
+\newblock New method for high-accuracy determination of the fine-structure
+  constant based on quantized hall resistance.
+\newblock {\em Phys. Rev. Lett.}, 45:494--497, Aug 1980.
+
+\bibitem{Thouless1982}
+D.~J. Thouless, M.~Kohmoto, M.~P. Nightingale, and M.~den Nijs.
+\newblock Quantized hall conductance in a two-dimensional periodic potential.
+\newblock {\em Phys. Rev. Lett.}, 49:405--408, Aug 1982.
+
+\bibitem{Hofstadter1976}
+Douglas~R. Hofstadter.
+\newblock Energy levels and wave functions of bloch electrons in rational and
+  irrational magnetic fields.
+\newblock {\em Phys. Rev. B}, 14:2239--2249, Sep 1976.
+
+\bibitem{Geisler2004}
+M.~C. Geisler, J.~H. Smet, V.~Umansky, K.~von Klitzing, B.~Naundorf,
+  R.~Ketzmerick, and H.~Schweizer.
+\newblock Detection of a landau band-coupling-induced rearrangement of the
+  hofstadter butterfly.
+\newblock {\em Phys. Rev. Lett.}, 92:256801, Jun 2004.
+
+\bibitem{Hunt2013}
+B.~Hunt, J.~D. Sanchez-Yamagishi, A.~F. Young, M.~Yankowitz, B.~J. LeRoy,
+  K.~Watanabe, T.~Taniguchi, P.~Moon, M.~Koshino, P.~Jarillo-Herrero, and R.~C.
+  Ashoori.
+\newblock {Massive Dirac Fermions and Hofstadter Butterfly in a van der Waals
+  Heterostructure}.
+\newblock {\em Science}, 340:1427, 2013.
+
+\bibitem{Jaksch2003}
+P.~Zoller D.~Jaksch.
+\newblock Creation of effective magnetic fields in optical lattices: the
+  hofstadter butterfly for cold neutral atoms.
+\newblock {\em New Journal of Physics}, 5(1):56, 2003.
+
+\bibitem{Aidelsburger2013}
+M.~Aidelsburger, M.~Atala, M.~Lohse, J.~T. Barreiro, B.~Paredes, and I.~Bloch.
+\newblock Realization of the hofstadter hamiltonian with ultracold atoms in
+  optical lattices.
+\newblock {\em Phys. Rev. Lett.}, 111(18):185301--, October 2013.
+
+\bibitem{Miyake2013}
+Hirokazu Miyake, Georgios~A. Siviloglou, Colin~J. Kennedy, William~Cody Burton,
+  and Wolfgang Ketterle.
+\newblock Realizing the harper hamiltonian with laser-assisted tunneling in
+  optical lattices.
+\newblock {\em Phys. Rev. Lett.}, 111:185302, Oct 2013.
+
+\bibitem{Jotzu2014}
+Gregor Jotzu, Michael Messer, Remi Desbuquois, Martin Lebrat, Thomas Uehlinger,
+  Daniel Greif, and Tilman Esslinger.
+\newblock Experimental realization of the topological haldane model with
+  ultracold fermions.
+\newblock {\em Nature}, 515(7526):237--240, Nov 2014.
+
+\bibitem{Aidelsburger2014}
+M~Aidelsburger, M~Lohse, C~Schweizer, M~Atala, J~T Barreiro, S~Nascimb{\`e}ne,
+  N.~R. Cooper, I.~Bloch, and N.~Goldman.
+\newblock {Measuring the Chern number of Hofstadter bands with ultracold
+  bosonic atoms}.
+\newblock {\em Nature Physics}, 11(2):162--166, December 2014.
+
+\bibitem{Mancini2015}
+M.~Mancini, G.~Pagano, G.~Cappellini, L.~Livi, M.~Rider, J.~Catani, C.~Sias,
+  P.~Zoller, M.~Inguscio, M.~Dalmonte, and L.~Fallani.
+\newblock Observation of chiral edge states with neutral fermions in synthetic
+  hall ribbons.
+\newblock {\em Science}, 349(6255):1510--, Sep 2015.
+
+\bibitem{Hafezi2013}
+M~Hafezi, S~Mittal, J~Fan, A~Migdall, and J~M Taylor.
+\newblock {Imaging topological edge states in silicon photonics}.
+\newblock {\em Nat. Photon.}, 7(12):1001--1005, October 2013.
+
+\bibitem{Celi2014}
+A.~Celi, P.~Massignan, J.~Ruseckas, N.~Goldman, I. B. Spielman,
+  G.~Juzeliunas, and M.~Lewenstein.
+\newblock Synthetic gauge fields in synthetic dimensions.
+\newblock {\em Phys. Rev. Lett.}, 112(4):043001--, Jan 2014.
 
 \bibitem{Stuhl2015}
 B.~K. Stuhl, H.-I. Lu, L.~M. Aycock, D.~Genkina, and I.~B. Spielman.
@@ -6,33 +89,15 @@ B.~K. Stuhl, H.-I. Lu, L.~M. Aycock, D.~Genkina, and I.~B. Spielman.
   regime.
 \newblock {\em Science}, 349(6255):1514--, Sep 2015.
 
-\bibitem{Ashcroft}
-N.W. Ashcroft and N.D. Mermin.
-\newblock {\em {Solid State Physics}}.
-\newblock Saunders College, Philadelphia, 1976.
+\bibitem{Aharonov1959}
+Y.~Aharonov and D.~Bohm.
+\newblock Significance of electromagnetic potentials in quantum theory.
+\newblock {\em Phys. Rev.}, 115:485, 1959.
 
-\bibitem{Marzari2012}
-Nicola Marzari, Arash~A. Mostofi, Jonathan~R. Yates, Ivo Souza, and David
-  Vanderbilt.
-\newblock Maximally localized wannier functions: Theory and applications.
-\newblock {\em Rev. Mod. Phys.}, 84:1419--1475, Oct 2012.
-
-\bibitem{Steck}
-Daniel~Adam Steck.
-\newblock Rubidium 87 d line data.
-\newblock Available online, http://steck.us/alkalidata, January 2015.
-\newblock revision 2.1.5.
-
-\bibitem{KarinaThesis}
-Karina Jimenez-Garcia.
-\newblock {\em Artificial Gauge Fields for Ultracold Neutral Atoms}.
-\newblock PhD thesis, Joint Quantum Institute, National Institute of Standards
-  and Technology, and the University of Maryland, 2012.
-
-\bibitem{Karina2012}
-K.~Jim\'enez-Garc\'{\i}a, L.~J. LeBlanc, R.~A. Williams, M.~C. Beeler, A.~R.
-  Perry, and I.~B. Spielman.
-\newblock Peierls substitution in an engineered lattice potential.
-\newblock {\em Phys. Rev. Lett.}, 108:225303, May 2012.
+\bibitem{Aharonov1992}
+Yakir Aharonov and Ady Stern.
+\newblock Origin of the geometric forces accompanying berry\char39{}s geometric
+  potentials.
+\newblock {\em Phys. Rev. Lett.}, 69(25):3593--3597, 1992.
 
 \end{thebibliography}
