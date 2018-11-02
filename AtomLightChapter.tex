@@ -179,7 +179,7 @@ The precise form of the Wannier functions depends on both the depth of the latti
 \end{equation}
 where the integral is over the Brillouin zone, from $-k_L$ to $k_L$, $a$ is the lattice spacing $\lambda_L/2$, and $\Psi_q$ is the Bloch wavefunction at crystal momentum $q$, and $\phi(q)$ is the phase associated with each Bloch wavefuntion. The Bloch wavefunctions individually have arbitrary phase. The phase plays an important role in combining the Bloch wavefunctions into a Wannier function, finding the proper phase relationship to make the wavefunction maximally localized at each site\cite{Marzari2012}. 
 
-\subsection{Pulsing vs adiabatic loading of the lattice}
+\subsection{Pulsing vs adiabatic loading of the lattice}\label{sec:LatticeCalib}
 
 The lattice depth parameter $V_0/4$, for a range of values, can be well calibrated experimentally by pulsing on the lattice. Here, the word pulsing indicates that the lattice is turned on fully non-adiabatically, if not instantaneously, such that the original bare momentum state is projected onto the lattice eigenbasis, as shown in Figure \ref{fig:pulsingSchematic}a. If the atoms start out stationary in the trap, the bare state in the momentum basis is simply
 \begin{equation}
@@ -283,7 +283,7 @@ The band structure of this Hamiltonian can be seen in Figure \ref{fig:RfBandStru
 \label{fig:RfBandStruct}
 \end{figure}
 
-\subsection{Raman coupling Hamiltonian}
+\subsection{Raman coupling Hamiltonian}\label{sec:Raman}
 
 	The counter-propagating Raman beams, as seen in Figure \ref{fig:RamanRfSchematic}, couple the same states as the rf. The do so via the vector light shift created by the pair of beams. The electric field due to the right going beam (red in Figure \ref{fig:RamanRfSchematic}a) is $\mathbf{E} = E_0 {\rm exp}(ik_R x - i\omega t) \mathbf{e}_y$, where $E_0$ is the amplitude of the electric field and $\hbar k_R = h/\lambda_R=\hbar\omega/c$. The electric field from the left going beam (gray in Figure \ref{fig:RamanRfSchematic}b) is $\mathbf{E} = E_0 {\rm exp}(-i k_R x - i(\omega +\Delta \omega)t) \mathbf{e}_z$. This combines to give an effective field from the vector light shift\cite{SteckTextbook} $B_{\rm eff}\propto \mathbf{E}\times\mathbf{E^*} \propto -E^2_0 {\rm cos}(2k_R x + \Delta\omega t)\mathbf{e}_x$. Going through the same procedure as for the rf coupling case, including the  transfer into the rotating frame and the rotating wave approximation, we obtain the same Hamiltonian in the basis of bare spin states $\ket{-1},\ket{0},\ket{1}$ but with an extra phase factor:
 	 
@@ -322,7 +322,7 @@ H_{\rm Raman} = H_{\rm KE}^{(y,z)} + \hbar^2 (k_x \mathcal{I} + 2k_R F_z)^2/2m +
 \label{eqn:RamanAllF}
 \end{equation}
 
-\subsection{Calibration of Raman and Rf dressed states}
+\subsection{Calibration of Raman and Rf dressed states}\label{sec:RamanCalib}
 To calibrate the rf and Raman coupling strengths, we take a similar approach to the 1-D lattice calibration: start in a pure spin state, for example $m_F = 0$, and turn the coupling on non-adiabatically to induce Rabi oscillations between the coupled states. Then, during time-of-flight, apply a Stern-Gerlach gradient pulse to separate the spin compoenets and observe the fractional populations in different spin states as a function of Rabi oscillation time.  
 
 Figure \ref{fig:RfPulsing}a,b shows example images obtained in time-of-flight when pulsing on an rf coupling field for atoms in the $F=1$ and $F=2$ manifold, respectively. The Stern-Gerlach gradient pulse separates the spin components along the horizontal axis in the images. The fractional population in each state can then be obtained by summing up the optical depth in each cloud and dividing by the total optical depth. Similarly, Figure \ref{fig:RamanPulsing}a shows an example time-of-flight image obtained when pulsing on a Raman coupling field on an $F=1$ cloud initially in the $m_F=0$ spin state. Here, the spin states are separated along the horizontal axis by the same Sternch-Gerlach pulse. In addition, the recoil momentum obtained when undergoing a Raman transition separates the different spin states along  the vertical axis---parallel to the Raman beams along ${\bf e}_x$. The direction of the Stern-Gerlach gradient was chosen purposefully to be perpendicular to the Raman direction ${\bf e}_x$ for easy separation of the two effects. 

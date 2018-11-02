@@ -41,6 +41,7 @@ To see how this phase implies an effective magnetic field, we draw an analogy to
 
 \section{Hamiltonian of the effective 2-D system}
 
+\subsection{Hamiltonian}
 The full Hamiltonian of this system, without making the tight binding approximation, can be written down by combining the lattice Hamiltonian (eqn. \ref{eqn:LatHam}) and the rf (eqn. \ref{eqn:rfHam}) or Raman Hamiltonian (eqn. \ref{eqn:RamanHam}). To do this, we write a new basis that encompasses both the momentum and the spin degrees of freedom. For the lattice Hamiltonian, we used the momentum basis
 \begin{equation}
  \begin{pmatrix} \vdots \\
@@ -85,44 +86,57 @@ H =
  &  {\bf \frac{V_0}{4}} &{\bf H_R}(0) & {\bf \frac{V_0}{4}}&  \\
  & {\bf 0} &  {\bf \frac{V_0}{4}} & {\bf H_R}(-2k_L)  &  \\
  & & & &  \ddots \end{pmatrix} \\,
-\label{eqn:LatHam}
+\label{eqn:SynDimHam}
 \end{equation}
 where ${\bf H_R}(x)$ is the Raman Hamiltonian with a momentum shift of $x$:
  \begin{equation}
-{\bf H_R}(x) = 
- \begin{pmatrix} \frac{\hbar^2(q + x -2k_R)^2}{2m}+\hbar\delta & \hbar\Omega/2  &  0  \\ 
-\hbar\Omega/2 & \frac{\hbar^2 (q+x)^2}{2m} - \hbar\epsilon &  \hbar\Omega/2\\
- 0 & \hbar\Omega/2 &  \frac{\hbar^2(q+x+2k_R)^2}{2m} -\hbar\delta  \\
+{\bf H_R}(n 2k_L) = 
+ \begin{pmatrix} \frac{\hbar^2(q + n 2k_L -2k_R)^2}{2m}+\hbar\delta & \hbar\Omega/2  &  0  \\ 
+\hbar\Omega/2 & \frac{\hbar^2 (q+n 2k_L)^2}{2m} - \hbar\epsilon &  \hbar\Omega/2\\
+ 0 & \hbar\Omega/2 &  \frac{\hbar^2(q+n 2k_L+2k_R)^2}{2m} -\hbar\delta  \\
  \end{pmatrix} \\,
 \end{equation}
 the matrix ${\bf \frac{V_0}{4}}$ is a 3x3 diagonal matrix lattice coupling strength $\frac{V_0}{4}$ on the diagonal, and $\bf 0$ is a 3x3 matrix of zeros. This extends in both directions with ${\bf H_R}(2nk_L)$ on the diagonal blocks and ${\bf \frac{V_0}{4}}$ as the first off-diagonal blocks and $\bf 0$ everywhere else. 
 
 This Hamiltonian is easily extended to higher $F$ values by replacing the Raman blocks ${\bf H_R}(x)$ with the corresponding Raman coupling Hamiltonian from eqn. \ref{eqn:RamanAllF}, and extending the diagonal matrix  ${\bf \frac{V_0}{4}}$ and the zero matrix $\bf 0$ to be ($2F+1$)x($2F+1$).
 
-CONVERT TO LATTICE UNITS
+For computational convenience, we convert to lattice recoil units, $E_L=\hbar^2 k_L^2/2m$, $k_L=2\pi/\lambda_L$. Then the diagonal blocks become
+ \begin{equation}
+{\bf H_R}(n)/E_L = 
+ \begin{pmatrix} (q + n -\phi_{\rm AB}/2\pi)^2+\hbar\delta & \hbar\Omega/2  &  0  \\ 
+\hbar\Omega/2 & (q+n)^2 - \hbar\epsilon &  \hbar\Omega/2\\
+ 0 & \hbar\Omega/2 & (q + n +\phi_{\rm AB}/2\pi)^2 -\hbar\delta  \\
+ \end{pmatrix} \\,
+\end{equation}
+where $\hbar\delta$, $\hbar\Omega$ and $\hbar\epsilon$ are now written in units of $E_L$, $q$ is written in units of $k_L$ and we have used the fact that $\phi_{\rm AB}/2\pi = k_R/k_L$. The off-diagonal blocks ${\bf \frac{V_0}{4}}$ will be the same 3x3 diagonal matices, with $\frac{V_0}{4}$ in units of $E_L$. 
 
-The band structure of this Hamiltonian is presented in A FIGURE. Here, we have restricted ourselves to the lowest lattice band 
-%\begin{equation}
-%H_L =
-% \begin{pmatrix} \ddots &  & & & & & & & & & &\\ 
-% & \frac{\hbar^2}{2m}(q + 4 k_L )^2 & \frac{V_0}{4} & 0 & 0 & 0 &  \\
-% & \frac{V_0}{4} &\frac{\hbar^2}{2m}(q + 2 k_L )^2 & \frac{V_0}{4} & 0 & 0 &  \\
-%& 0 & \frac{V_0}{4} & \frac{\hbar^2}{2m}q^2 & \frac{V_0}{4} & 0 &  \\
-% & 0 & 0 & \frac{V_0}{4} & \frac{\hbar^2}{2m}(q - 2 k_L)^2 &\frac{V_0}{4} &  \\
-% &  & 0 & 0 & \frac{V_0}{4} & \frac{\hbar^2}{2m}(q - 4 k_L)^2 &  \\
-%& & & & & & &  \ddots \end{pmatrix} \\,
-%\label{eqn:LatHam}
-%\end{equation}
+\subsection{Band structure}
+\begin{figure}
+	\includegraphics{"SynDim Figures/SynDimBandStructure".pdf}
+\caption{Band structure of the synthetic dimensions Hamiltonian, eqn. \ref{eqn:SynDimHam}. For all panels, the detuning $\hbar\delta=0$ and the quadratic shift $\hbar\epsilon=0.02 E_L$. (a) $F=1$, $\hbar\Omega=0.0$. (b) $F=1$, $\hbar\Omega=0.5$. (c) $F=2$, $\hbar\Omega=0.0$. (d) $F=2$, $\hbar\Omega=0.5$. }
+\label{fig:SynDimBandStruct}
+\end{figure}
 
-Figure: Band structure, F=1 and F=2, with and without Raman coupling
+The band structure of this Hamiltonian is presented in Figure \ref{fig:SynDimBandStruct}. Here, we have restricted ourselves to the lowest lattice band. We can do this because the energy splitting between the lowest and second lowest lattice band is of order $4 E_L$ (see Figure \ref{fig:latticeBandStructure}), while the width of the lowest band, given by the amplitude of the approximate sinusoid, is of order $0.3 E_L$ for our range of lattice depths, around $5.0 E_L$. As long as the Raman coupling stays small compared to the lattice band spacing, the higher lattice bands are energetically separated enough that they can be ignored. 
 
-par1: Write out full Hamiltonian
+Therefore, we can think of the Raman coupling analogously to the free space Raman coupling (see section \ref{sec:Raman}), except instead of free space parabolas each spin state gets a lowest lattice band sinusoid.   Figure \ref{fig:SynDimBandStruct}a shows this in the limit of no Raman coupling, $\Omega=0$, but with the lattice on at $V_0=4.0 E_L$. The quadratic Zeeman shift is $\hbar\epsilon=0.02 E_L$ and the detuning $\delta=0$. The $m_F=-1$ sinusoid is shifted $2k_R$, similarly to section \ref{sec:Raman}, but since the sinusoid is periodic with $2k_L$, it folds into the first Brillouin zone of the lattice, such that the nearest minimum to $q=0$ is at $q = 2k_R-2k_L = (2\phi_{\rm AB}/2\pi - 2)k_L$. The edges of the Brillouin zone are marked by horizontal lines. The color indicates magnetization $<m>=\sum_{m_F}m_F*n_{m_F}$, where $n_{m_F}$ is the fractional population in the $m_F$ state. In synthetic dimensions language, $<m>$ is the expectation value of position along ${\bf e}_s$.
 
-par2: Talk about band structure, periodic and spin dependent 
+In Figure \ref{fig:SynDimBandStruct}b, we have restricted ourselves to the first Brillouin zone and turned on the Raman coupling to $\hbar\Omega = 0.5 E_L$. The crossings of the bands in Figure \ref{fig:SynDimBandStruct}a become avoided crossings, and the lowest band now has a spin dependence on crystal momentum. Figure \ref{fig:SynDimBandStruct}c-d shows the same progression for the $F=2$ manifold. Figure \ref{fig:SynDimBandStruct}c is taken in the limit of $\hbar\Omega=0.0$. All of the 5 spin states get 'folded' back into the first Brillouin zone due to the lattice periodicity of the bands. The different heighs of the sinusoids are due to the quadratic Zeeman shift $\hbar\epsilon=0.02 E_L$. The lattice depth is again $V_0=5.0 E_L$ and detuning $\hbar\delta=0$. In Figure \ref{fig:SynDimBandStruct}d we have restricted ourselves to the first Brillouin zone and turned on the Raman coupling to $\hbar\Omega=0.5 E_L$.  Note that the inverted hyperfine structure in \ref{fig:SynDimBandStruct}c (meaning that the quadratic shift pushed the $m_F=0$ state up rather than down in energy compared to the others), combined with the Raman coupling serves to make the lowest band in the $F=2$ manifold close to flat. 
 
-par3: How we calibrate the synthetic dimensions system by pulsing
 
-Figure: example TOF images, pulsing experiments for F=1 and F=2
+\subsection{Calibration}
+
+To calibrate the lattice depth $V_0$ in the synthetic dimensions system, we can simply calibrate the lattice depth without Raman or rf coupling as described in Section \ref{sec:LatticeCalib}. However, we are operating at very low Raman coupling strengths, $\hbar\Omega\approx0.5 E_L$. This is necessary because in the synthetic dimensional system the Raman coupling plays the role of tunneling, which has to be small to approximate the tight binding limit. At these low Raman couplings, simple pulsing as described in Section \ref{sec:RamanCalib}, as the contrast of the Rabi oscillations would be too low to resolve. Therefore, we calibrate the Raman coupling and detuning with the full synthetic dimensions system, where the 'folding in' effect of the lattice makes the higher Raman bands much closer energetically than without the lattice, leading to larger constrast and allowing for accurate calibration.  
+
+\begin{figure}
+	\includegraphics{"SynDim Figures/SynDimPulsing".pdf}
+\caption{}
+\label{fig:SynDimPulsing}
+\end{figure}
+
+\subsection{Tight binding approximation}
+
+
 
 par4: Write out tight binding version, explain how closely it applies. Figure: fits for effective tunneling amplitudes?
 
@@ -139,6 +153,8 @@ par1: 'Edge' and 'bulk' states of electrons in a magnetic field
 par2: Explain loading procedure for adiabatic states
 
 par3: Explain figure, magnetic length
+
+\section{Chiral edge currents}
 
 \section{Observation of skipping orbits}
 

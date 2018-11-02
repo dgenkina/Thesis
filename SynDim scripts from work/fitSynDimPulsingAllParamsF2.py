@@ -29,20 +29,20 @@ lambdaL = 1.064e-6 #lattice wavelength in m
 Erecoil = (2.0*np.pi*hbar)**2.0/(2.0*mRb*lambdaL**2.0) #recoil energy
 
 
-c=0.0#1064.0/790.0#
+c=1064.0/790.0#0.0#
 n=7
 k=0.0
 epsilon=0.0207
 U=4.4
-S=2
-m0=-2
+S=1
+m0=0
 #delta=0.0
 #omega=0.5
 tau=0.0003*Erecoil/hbar
 rampOnt=0.0001*Erecoil/hbar
 
 
-dataFile=np.load('../Chapter4 Figures/27Jan2017_files_34-63.npz')
+dataFile=np.load('C:/Users/swooty/Documents/Thesis Data/Syn. dim. pulsing F=1/07Mar2017_files_754-783.npz')
 omegaGuess=0.5
 deltaGuess=-0.03
 
