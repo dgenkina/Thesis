@@ -37,9 +37,82 @@ Figure \ref{fig:synDimSchematic}b sketches out the effective 2-D lattice created
 
 In the case of Raman coupling, however, there is a momentum kick of $2k_R$ associated with every spin transfer, and therefore a phase factor of ${\rm exp}(2i k_R x)$ with every spin 'tunneling' event. Since position $x$ is set by the 1-D lattice, $x_j = j \lambda_L/2 = j \pi/k_L$, and the space dependent phase factor is ${\rm exp}(2\pi i k_R/k_L j)$. An absolute phase change in the wavefunction is not meaningful. However, a phase aquired when going around a plaquette and coming back to the same palce is meaningful, as one could imagine one atom staying at the same site and the other going around a plaquette and coming back to detect the phase difference. In this setup, the phases acquired while going around a single plaquetter are, starting at some lattice site $\ket{j,m}$, are: $0$ (for tunneling right to $\ket{j+1,m}$), $2\pi i k_R/k_L (j+1)$ (for tunneling up to $\ket{j+1,m+1}$, $0$ (for tunneling left to $\ket{j,m+1}$) and $-2\pi i k_R/k_L j$ (for tunneling back down to $\ket{j,m}$). The total phase aquired is thus $\phi_{\rm AB} = 2\pi k_R/k_L$, independent of the starting lattice site. Since the absolute phase does not matter and only the value of t $\phi_{\rm AB}$, we can perform a phase transformation that shifts the tunneling phase onto the spatial direction, defining $t_x = |t_x|{\rm exp}(i\phi_{\rm AB}m)$ and $t_s=|t_s|$, as labelled in Figure \ref{fig:synDimSchematic}b. 
 
-To see how this phase implies an effective magnetic field, we draw an analogy to the Aharonov-Bohm effect\cite{Aharonov1959, Aharonov1992} from quantum mechanics. In this effect, consider an infinite solenoid with an electric current running through it. The magnetic field $B$ in this setup exists only inside the solenoid, while the magnetic vector potential persists outside the solenoid.  However, if two electrons are sent on a trajectory around the solenoid, even though they never pass through any magnetic field, they neverthless acquire a relative phase that can be detected by interfering them with each other. This relative phase is given by $\phi_{\rm AB} =2 \pi \Phi/\Phi_0$, where $\Phi = B*A$ is the magnetic flux through the solenoid ($A$ is the are pierced by the magnetic field) and $\Phi_0=h/e$ is the flux quantum, with $e$ the electron charge. Since in our system, the atoms acquire a phase when they perform a closed loop around a single lattice plaquette. Therefore, they behave as though there was an infinite solenoid piercing each plaquette with a magnetic field going through it, and the flux per plaquette in units of the flux quantum is $\Phi/\Phi_0=\phi_{\rm AB}/2\pi =  k_R/k_L$.
+To see how this phase implies an effective magnetic field, we draw an analogy to the Aharonov-Bohm effect\cite{Aharonov1959, Aharonov1992} from quantum mechanics. In this effect, consider an infinite solenoid with an electric current running through it. The magnetic field $B$ in this setup exists only inside the solenoid, while the magnetic vector potential persists outside the solenoid.  However, if two electrons are sent on a trajectory around the solenoid, even though they never pass through any magnetic field, they neverthless acquire a relative phase that can be detected by interfering them with each other. This relative phase is given by $\phi_{\rm AB} =2 \pi \Phi/\Phi_0$, where $\Phi = B*A$ is the magnetic flux through the solenoid ($A$ is the are pierced by the magnetic field) and $\Phi_0=h/e$ is the flux quantum, with $e$ the electron charge. Since in our system, the atoms acquire a phase when they perform a closed loop around a single lattice plaquette. Therefore, they behave as though there was an infinite solenoid piercing each plaquette with a magnetic field going through it, and the flux per plaquette in units of the flux quantum is $\Phi/\Phi_0=\phi_{\rm AB}/2\pi =  k_R/k_L$. For the case of rf coupling, the phase acquired at every transition is $0$ and the fluxss $\Phi/\Phi_0=0$.
 
 \section{Hamiltonian of the effective 2-D system}
+
+The full Hamiltonian of this system, without making the tight binding approximation, can be written down by combining the lattice Hamiltonian (eqn. \ref{eqn:LatHam}) and the rf (eqn. \ref{eqn:rfHam}) or Raman Hamiltonian (eqn. \ref{eqn:RamanHam}). To do this, we write a new basis that encompasses both the momentum and the spin degrees of freedom. For the lattice Hamiltonian, we used the momentum basis
+\begin{equation}
+ \begin{pmatrix} \vdots \\
+\ket{q+4 k_L}\\
+\ket{q+2 k_L}\\
+\ket{q}\\
+\ket{q -2 k_L}\\
+\ket{q - 4 k_L}\\
+\vdots
+\end{pmatrix} \\.
+\end{equation}
+For the Raman Hamiltonian in the $F=1$ manifold, we used the spin and momentum basis
+\begin{equation}
+\begin{pmatrix}
+\ket{k_x-2k_R,-1}\\
+ \ket{k_x,0}\\
+\ket{k_x+2k_R,1}
+\end{pmatrix}\\.
+\end{equation}
+
+In a lattice, the momentum $k_x$ becomes crystal momentum $q$. For every state in the lattice basis, we now expand to three states, one for each spin state, with the appropriate momentum shifts. We obtain
+\begin{equation}
+ \begin{pmatrix} \vdots \\
+\ket{q+2k_L-2k_R,-1}\\
+ \ket{q+2k_L,0}\\
+\ket{q+2k_L+2k_R,1}\\
+\ket{q-2k_R,-1}\\
+ \ket{q,0}\\
+\ket{q+2k_R,1}\\
+\ket{q-2k_L-2k_R,-1}\\
+ \ket{q-2k_L,0}\\
+\ket{q-2k_L+2k_R,1}\\
+\vdots
+\end{pmatrix} \\.
+\end{equation}
+
+In this basis, we combine the lattice and Raman Hamiltonians (ommiting the kinetic energy in the other two directions) in an infinite block matrix form as 
+\begin{equation}
+H =
+ \begin{pmatrix} \ddots &  & & & \\ 
+ &{\bf H_R}(2k_L)  & {\bf \frac{V_0}{4}} &{\bf 0} &  \\
+ &  {\bf \frac{V_0}{4}} &{\bf H_R}(0) & {\bf \frac{V_0}{4}}&  \\
+ & {\bf 0} &  {\bf \frac{V_0}{4}} & {\bf H_R}(-2k_L)  &  \\
+ & & & &  \ddots \end{pmatrix} \\,
+\label{eqn:LatHam}
+\end{equation}
+where ${\bf H_R}(x)$ is the Raman Hamiltonian with a momentum shift of $x$:
+ \begin{equation}
+{\bf H_R}(x) = 
+ \begin{pmatrix} \frac{\hbar^2(q + x -2k_R)^2}{2m}+\hbar\delta & \hbar\Omega/2  &  0  \\ 
+\hbar\Omega/2 & \frac{\hbar^2 (q+x)^2}{2m} - \hbar\epsilon &  \hbar\Omega/2\\
+ 0 & \hbar\Omega/2 &  \frac{\hbar^2(q+x+2k_R)^2}{2m} -\hbar\delta  \\
+ \end{pmatrix} \\,
+\end{equation}
+the matrix ${\bf \frac{V_0}{4}}$ is a 3x3 diagonal matrix lattice coupling strength $\frac{V_0}{4}$ on the diagonal, and $\bf 0$ is a 3x3 matrix of zeros. This extends in both directions with ${\bf H_R}(2nk_L)$ on the diagonal blocks and ${\bf \frac{V_0}{4}}$ as the first off-diagonal blocks and $\bf 0$ everywhere else. 
+
+This Hamiltonian is easily extended to higher $F$ values by replacing the Raman blocks ${\bf H_R}(x)$ with the corresponding Raman coupling Hamiltonian from eqn. \ref{eqn:RamanAllF}, and extending the diagonal matrix  ${\bf \frac{V_0}{4}}$ and the zero matrix $\bf 0$ to be ($2F+1$)x($2F+1$).
+
+CONVERT TO LATTICE UNITS
+
+The band structure of this Hamiltonian is presented in A FIGURE. Here, we have restricted ourselves to the lowest lattice band 
+%\begin{equation}
+%H_L =
+% \begin{pmatrix} \ddots &  & & & & & & & & & &\\ 
+% & \frac{\hbar^2}{2m}(q + 4 k_L )^2 & \frac{V_0}{4} & 0 & 0 & 0 &  \\
+% & \frac{V_0}{4} &\frac{\hbar^2}{2m}(q + 2 k_L )^2 & \frac{V_0}{4} & 0 & 0 &  \\
+%& 0 & \frac{V_0}{4} & \frac{\hbar^2}{2m}q^2 & \frac{V_0}{4} & 0 &  \\
+% & 0 & 0 & \frac{V_0}{4} & \frac{\hbar^2}{2m}(q - 2 k_L)^2 &\frac{V_0}{4} &  \\
+% &  & 0 & 0 & \frac{V_0}{4} & \frac{\hbar^2}{2m}(q - 4 k_L)^2 &  \\
+%& & & & & & &  \ddots \end{pmatrix} \\,
+%\label{eqn:LatHam}
+%\end{equation}
 
 Figure: Band structure, F=1 and F=2, with and without Raman coupling
 

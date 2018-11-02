@@ -121,6 +121,7 @@ H_L =
  & 0 & 0 & \frac{V_0}{4} & \frac{\hbar^2}{2m}(q - 2 k_L)^2 &\frac{V_0}{4} &  \\
  &  & 0 & 0 & \frac{V_0}{4} & \frac{\hbar^2}{2m}(q - 4 k_L)^2 &  \\
 & & & & & & &  \ddots \end{pmatrix} \\,
+\label{eqn:LatHam}
 \end{equation}
 in the basis of momentum orders $\ket{k}=e^{i k x}$ given by:
 \begin{equation}
@@ -304,7 +305,7 @@ H_{\rm Raman} = H_{\rm KE}^{(y,z)} +
 \hbar\Omega/2 & \frac{\hbar^2 k_x^2}{2m} - \hbar\epsilon &  \hbar\Omega/2\\
  0 & \hbar\Omega/2 &  \frac{\hbar^2(k_x+2k_R)^2}{2m} -\hbar\delta  \\
  \end{pmatrix} \\.
-\label{RamanHam}
+\label{eqn:RamanHam}
 \end{equation}
 
 It is convenient to define the Raman recoil energy as $E_R = \frac{\hbar^2 k_R^2}{2m}$. The band structure of this Hamiltonian is shown in Figure \ref{fig:RamanBandStruct}, for several representative parameter values, with the magnetization labelled by the color. Figure \ref{fig:RamanBandStruct}a shows the band structure in the limit of zero coupling and zero detuning, but where we have already gone into the basis $ \ket{k_x-2k_R,-1}, \ket{k_x,0},\ket{k_x+2k_R,1}$; therefore, the free particle parabola corresponding to the $m_F=1$ spin states is shifted to center on $k_x=-2k_R$ and the $m_F=-1$ parabola is shifted to center on $k_x = 2k_R$. As the coupling is turned on to $\hbar\Omega = 1 E_R$ in Figure \ref{fig:RamanBandStruct}b, the points where the parabolas cross become 'avoided crossings', separating into three bands where magnetization (and the underlying spin distribution) depends on the momentum $k_x$. As the coupling strength is turned up even further to $\hbar\Omega = 5 E_R$ in Figure \ref{fig:RamanBandStruct}c, the lowest band goes from having three minima, one corresponding to each original spin state, to only one minimum. This transition happens at $\hbar\Omega = 4 E_R$\cite{KarinaThesis}. In Figure \ref{fig:RamanBandStruct}d, we show the band structure again in the limit of zero coupling, but this time with a detuning of $\hbar\delta = 1.0 E_R$. Note that the detuning tips the parabolas with respect to each other. Figure \ref{fig:RamanBandStruct}e shows the detuned system with coupling strenth turned up to $\hbar\Omega = 1 E_R$, still in the three minima regime but with avoided crossings creating three momentum and spin coupled bands. In Figure \ref{fig:RamanBandStruct}f, the detuned system is turned up to a coupling strength of $\hbar\Omega = 5E_R$, creating a single minimum, this time offset from $k_x = 0$.
@@ -318,6 +319,7 @@ It is convenient to define the Raman recoil energy as $E_R = \frac{\hbar^2 k_R^2
 We can write the general $F$ version of the Raman coupled Hamiltonian in the basis $\ket{k_x + m_F*2k_R,m_F}$, where $-F\leq m_F \leq F$, as:
 \begin{equation}
 H_{\rm Raman} = H_{\rm KE}^{(y,z)} + \hbar^2 (k_x \mathcal{I} + 2k_R F_z)^2/2m +  \hbar\delta F_z + \hbar \epsilon F^2_z + \Omega F_x/2.
+\label{eqn:RamanAllF}
 \end{equation}
 
 \subsection{Calibration of Raman and Rf dressed states}
