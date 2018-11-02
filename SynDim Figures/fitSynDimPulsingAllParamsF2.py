@@ -34,15 +34,15 @@ n=7
 k=0.0
 epsilon=0.0207
 U=4.4
-S=1
+S=2
 m0=0
 #delta=0.0
 #omega=0.5
 tau=0.0003*Erecoil/hbar
 rampOnt=0.0001*Erecoil/hbar
 
-
-dataFile=np.load('C:/Users/swooty/Documents/Thesis Data/Syn. dim. pulsing F=1/07Mar2017_files_754-783.npz')
+filepath = 'C:/Users/swooty/Documents/Thesis Data/Syn. dim. pulsing F=2/12Jul2017_files_4-33.npz'
+dataFile=np.load(filepath)
 omegaGuess=0.5
 deltaGuess=-0.03
 
@@ -470,6 +470,12 @@ if S==2:
     panel.plot(tList*1.0e6,fractionP2,'co', label=r'$m_F$=+2')
 panel.set_xlabel('Lattice pulse time [us]')
 plt.legend()
+
+np.savez('SynDimPulsingF2',tList=tList,tForFit=tForFit*hbar/Erecoil,
+         pops_fitted=pops_fitted,fractionP=fractionP,fraction0=fraction0,
+         fractionM=fractionM,popt=popt,
+         fractionM2=fractionM2,fractionP2=fractionP2,
+         pcov=np.sqrt(np.diag(pcov)),filepath=filepath)
 ##
 ##figure=plt.figure()
 ##pan=figure.add_subplot(1,1,1)
