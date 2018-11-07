@@ -25,27 +25,29 @@ q=3.0
 cLoc=1064.0/790.0#0.0#4.0/q#
 Flat=False
 
-omega = 0.4
+omega = 0.5
 delta = 0.0
 epsilon = 0.02
 U = 4.4
 n = 7
-S = 1
+S = 2
 s=2*S+1
-kList,E,pops, mFull = SynDimBandStructureGeneral.plotSynDimBandStructGen(omega, delta, epsilon, U, n, S, 0,c=cLoc,save=False,magCell=False,plot=False)
+kList,E,pops, mFull = SynDimBandStructureGeneral.plotSynDimBandStructGen(omega, 
+        delta, epsilon, U, n, S, 0,c=cLoc,save=False,magCell=False,plot=False)
 Efull = E[:,0:5]
 offset1 = np.average(E[:,0])
 
-tx = 0.1
+tx = 0.154
 #Flat=True
 #epsilon=0.0
 #ts=0.1
 
-tsList = np.linspace(0.160,0.161,50)
+tsList = np.linspace(0.30,0.31,10)
 diffList = np.zeros(tsList.size)
 
 for i,ts in enumerate(tsList):
-    kList, Etb, mTB = tightBindingHam.plotSynDimBandStructGenTBClean(ts, delta, epsilon, tx, S,0,c=cLoc,kList=kList,save=False,plots=False)
+    kList, Etb, mTB = tightBindingHam.plotSynDimBandStructGenTBClean(ts, delta, 
+                    epsilon, tx, S,0,c=cLoc,kList=kList,save=False,plots=False)
     offset2=np.average(Etb[:,0])
     diffList[i]=np.sum(np.abs(Etb[:,0:2]-offset2+offset1-Efull[:,0:2]))
     
@@ -67,6 +69,8 @@ d=panel.plot(kList/2.0,(Etb[:,0]-offset2+offset1)/tx,'b-',lw=lw,label = 'Tight b
 d=panel.plot(kList/2.0,Efull[:,0]/tx,'r-',lw=lw, label = 'Full Hamiltonian') #c=mFull[:,i],vmin=-S,vmax=S,
 d=panel.plot(kList/2.0,(Etb[:,1]-offset2+offset1)/tx,'b-',lw=lw) #c=mTB[:,i],vmin=-S,vmax=S, 
 d=panel.plot(kList/2.0,Efull[:,1]/tx,'r-',lw=lw) #c=mFull[:,i],vmin=-S,vmax=S,
+d=panel.plot(kList/2.0,(Etb[:,2]-offset2+offset1)/tx,'b-',lw=lw) #c=mTB[:,i],vmin=-S,vmax=S, 
+d=panel.plot(kList/2.0,Efull[:,2]/tx,'r-',lw=lw) #c=mFull[:,i],vmin=-S,vmax=S,
 panel.set_xlabel(r'Crystal momentum $q_x$ [$2k_L$]')   
 panel.set_ylabel(r'Energy [$t_x$]')
 plt.legend()
@@ -74,3 +78,6 @@ plt.legend()
 panel.set_title('tx = %.3f, ts = %.3f tx' %(tx,ts/tx))
     
 panel.set_xlim(-0.5,0.5)
+
+#np.savez('TBfitToFullF2',ts=ts,tx=tx,U=U,omega=omega,epsilon=epsilon,c=cLoc,Flat=Flat,
+#         delta=delta, kList=kList,Etb=Etb,Efull=Efull,offset1=offset1,offset2=offset2)

@@ -91,8 +91,8 @@ def RamanLatHam(k, omega, delta, epsilon, U, n, S, m0,c=c):
     for i in range(Ntot):
         spinI=np.float(i%(Nspin)-S)
         latI=np.float(np.divide(i,Nspin)-n)
-        kStates[i]=k-2.0*(spinI-m0)*c-2.0*latI
-        Kinetic[i]=(k-2.0*(spinI-m0)*c-2.0*latI)**2.0
+        kStates[i]=k+2.0*(spinI-m0)*c-2.0*latI
+        Kinetic[i]=(k+2.0*(spinI-m0)*c-2.0*latI)**2.0
     H=np.diag(Kinetic)
     H+=delta*sLA.block_diag(*[Fz(S)]*Nlat)
     try:
