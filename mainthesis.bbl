@@ -1,5 +1,17 @@
 \begin{thebibliography}{10}
 
+\bibitem{Steck}
+Daniel~Adam Steck.
+\newblock Rubidium 87 d line data.
+\newblock Available online, http://steck.us/alkalidata, April 2018.
+\newblock revision 2.1.5.
+
+\bibitem{Karina2012}
+K.~Jim\'enez-Garc\'{\i}a, L.~J. LeBlanc, R.~A. Williams, M.~C. Beeler, A.~R.
+  Perry, and I.~B. Spielman.
+\newblock Peierls substitution in an engineered lattice potential.
+\newblock {\em Phys. Rev. Lett.}, 108:225303, May 2012.
+
 \bibitem{LCT}
 H.J. Metcalf and P.~van~der Straten.
 \newblock {\em Laser Cooling and Trapping}.
@@ -16,23 +28,11 @@ Nicola Marzari, Arash~A. Mostofi, Jonathan~R. Yates, Ivo Souza, and David
 \newblock Maximally localized wannier functions: Theory and applications.
 \newblock {\em Rev. Mod. Phys.}, 84:1419--1475, Oct 2012.
 
-\bibitem{Steck}
-Daniel~Adam Steck.
-\newblock Rubidium 87 d line data.
-\newblock Available online, http://steck.us/alkalidata, April 2018.
-\newblock revision 2.1.5.
-
 \bibitem{KarinaThesis}
 Karina Jimenez-Garcia.
 \newblock {\em Artificial Gauge Fields for Ultracold Neutral Atoms}.
 \newblock PhD thesis, Joint Quantum Institute, National Institute of Standards
   and Technology, and the University of Maryland, 2012.
-
-\bibitem{Karina2012}
-K.~Jim\'enez-Garc\'{\i}a, L.~J. LeBlanc, R.~A. Williams, M.~C. Beeler, A.~R.
-  Perry, and I.~B. Spielman.
-\newblock Peierls substitution in an engineered lattice potential.
-\newblock {\em Phys. Rev. Lett.}, 108:225303, May 2012.
 
 \bibitem{SteckTextbook}
 Daniel~Adam Steck.
@@ -139,5 +139,10 @@ Yakir Aharonov and Ady Stern.
 \newblock Origin of the geometric forces accompanying berry\char39{}s geometric
   potentials.
 \newblock {\em Phys. Rev. Lett.}, 69(25):3593--3597, 1992.
+
+\bibitem{Hugel2014}
+Dario H\"{u}gel and Bel\'{e}n Paredes.
+\newblock {Chiral ladders and the edges of quantum Hall insulators}.
+\newblock {\em Phys. Rev. A}, 89(2):023619, 2014.
 
 \end{thebibliography}
