@@ -4,11 +4,89 @@
 
 \section{Bose-Einstein condensation}
 
-Derive bose-einstein condensation w/out interactions
+\subsection{Phase transition of a non-interacting Bose gas}
+Bose gases are characterized by the Bose-Einstein distribution giving the number of atoms $n(E_j)$ occupying each energy eigenstate $E_j$ as
+\begin{equation}
+n(E_j) = \frac{1}{e^{(E_j-\mu)/k_{\rm B}T}-1},
+\end{equation}
+where  $k_{\rm B}$ is the Boltzmann constant, $T$ is the temperature in Kelvin, $\mu$ is the chemical potential. Assuming the total atom number $N$ is fixed, the chemical potential $\mu(T,N)$ ensures that the total occupation of all $\sum_j n(E_j)=N$. 
+
+The Bose distribution leads to Bose-Einstein condensation, the collapse of a macoscopic fraction of the atoms into the ground state. This comes as a direct consequence of the Bose distribution's characteristic $-1$ in the denominator. Consider the occupation number $n(E_j)$---it must remain positive, as a negative occupation number is unphysical. That means that the quantity $e^{(E_j-\mu)/k_{\rm B}T}$ must remain greater than $1$, or $(E_j-\mu)/k_{\rm B}T<0$ for all $E_j$. Therefore, $\mu\leq E_0$, where $E_0$ is the ground state energy. 
+
+Then, for a given temperature $T$, there is a maximum occupation number for each excited state given by $n(E_j) = \frac{1}{e^{E_j/k_{\rm B}T}-1}$. The only energy state whose occupation number is unbounded is the ground state, as $n(E_0)$ tends toward infinity as $\mu$ tends towards $0$. Therefore, as the temperature decreases, the maximum occupation of each excited state decreases until they can no longer support all of the atoms. The remaining atoms then have no choice but to collapse into the lowest energy level and Bose condense. 
+
+We will show this quantitatively for the case of a 3-D harmonically trapped gas of atoms, relavant to the experiments described in this thesis. It is convenient to define the fugacity $\zeta=e^{\mu/k_{\rm B}T}$, and re-write the Bose-Einstein distribution as 
+eigenstate $E_j$ as
+\begin{equation}
+n(E_j) = \frac{\zeta}{e^{E_j/k_{\rm B}T}-\zeta}.
+\end{equation}
+The harmonic oscillator potentail can be written as 
+\begin{equation}
+V(r) = \frac{1}{2} m (\omega_x^2 x^2 + \omega_y^2 y^2 + \omega_z^2 z^2),
+\end{equation}
+where $\omega_x$, $\omega_y$ and $\omega_z$ are the angular trapping frequencies along ${\bf e}_x$, ${\bf e}_y$, and ${\bf e}_z$.  The eigenenergies with this potential are
+\begin{equation}
+E(j_x,j_y,j_z) = (\frac{1}{2} + j_x)\hbar\omega_x +(\frac{1}{2} + j_y)\hbar\omega_y+(\frac{1}{2} + j_z)\hbar\omega_z.
+\end{equation}
+
+In order to find $\mu$, we must find $\sum_{j_x,j_y,j_z}n(E(j_x,j_y,j_z))$ and set it equal to $N$. This task is greatly simplified by going to the continuum limit and finding the density of states. To do this, we neglect the zero-point energy (setting $E_0=0$, the effects of the zero-point energy are discussed in \cite{Pethick} section 2.5)  and assume there is on average one state per volume element $\hbar^3 \omega_x \omega_y \omega_z$. Then, the total number of states with energy less than or equal to some value $\epsilon$ is given by the volume of a prism made between points $(x,y,z)=(0,0,0),(\epsilon,0,0),(0,\epsilon,0)$ and $(0,0,\epsilon)$ in units of the volume element:
+\begin{equation}
+G(\epsilon) = \frac{\epsilon^3}{6\hbar^3\omega_x \omega_y \omega_z}.
+\end{equation}
+The density of states is given by 
+\begin{equation}
+g(\epsilon) = \frac{d}{d\epsilon} G(\epsilon) = \frac{\epsilon^2}{3\hbar^3\omega_x \omega_y \omega_z}. 
+\end{equation}
+
+Note that the occupation of the ground state is not included in this continuum picture. We can therefore use it only to calculate the total number of atoms in all of the excites states:
+\begin{equation}
+N_{\rm ex} = \int_0^{\infty} d\epsilon g(\epsilon) n(\epsilon) = \int_0^{\infty} d\epsilon \frac{\epsilon^2}{3\hbar\omega_x \omega_y \omega_z} \frac{\zeta}{e^{\epsilon/k_{\rm B}T}-\zeta} = \frac{(k_{\rm B}T)^3}{\hbar^3\omega_x \omega_y \omega_z}{\rm Li}_3(\zeta),
+\end{equation}
+where ${\rm Li}_3(\zeta)$ is the polylogarithm function\footnote{This calculation was done with Wolfram Alpha, not Russian algebra skills}. 
+We define the mean trapping frequency $\bar{\omega} = (\omega_x \omega_y \omega_z)^{1/3}$ and the harmonic oscillator energy as $\hbar\bar{\omega}$, with the thermal energy in harmonic oscillator units $\tau = k_{\rm B}T/\hbar\bar{\omega}$, giving
+\begin{equation}
+N_{\rm ex} = \tau^3 {\rm Li}_3(\zeta).
+\end{equation}
+
+Finding the occupation number of the ground state from the Bose-Einstein distribution
+\begin{equation}
+N_0 = \frac{\zeta}{1-\zeta},
+\end{equation}
+we can then find the chemical potential, or equivalently the fugacity $\zeta$, to satisfy
+\begin{equation}
+N = N_0 + N_{\rm ex}.
+\end{equation}
+This is a transcendental equation that can only be solved numerically. We present an example of the solution in Figure \ref{fig:BoseDistribution}. 
+
+\begin{figure}
+	\includegraphics{"BEC_DFG figures/condensation".pdf}
+\caption{Occupation of energy states of a 3-D harmonic oscillator. Here $\omega_x=\omega_y=\omega_z$}
+\label{fig:BoseDistribution}
+\end{figure}
+Hard limit on excited state population due to $\mu \ge E_0$, which is because occupation $n(E_0\ge0$.
+
+Density of states -> excited state population
+
+Critical temperature
+
+Plot: occupation fraction as a function of energy for fixed N at different T? 
+
+Phase coherence
+
+\subsection{Interacting Bose gas}
+
+Add in interactions: full Hamiltonain
+
+Mean-field approximation
+
+Thomas-Fermi radii
+
+Position space - pictures from uwave lock?
+
+Momentum space 
 
 Pictures of BEC condensing (steal from talk?)
 
-Derive GPE
 
 \section{Degenerate Fermi Gas}
 
@@ -27,4 +105,4 @@ Differences from Lauren's thesis:
 Brief description of DFG making procedure (of old)
 
 Differences from Lauren's thesis:
-	    Describe 2D MOT
+	    Describe 2D MOT'

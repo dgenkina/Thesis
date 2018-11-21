@@ -1,12 +1,22 @@
 Thesis outline:
 
 
-Introduction
-
-
 Chapter 1: Introduction
+	Condensed matter context
+		Quantum Hall Effect (with/without disorder)
+		Topology and the Chern number
+			Integral over the Berry curvature definition in infinite system
+			Bulk-edge correspondence in finite system
+			Quantum Hall effect 
+		Hofstadter Butterfly
+			Flux per plaquette as phase
+		Topological insulators
+	The case for quantum simulation	
+		General arguments
+		Some citations
 	
-Something about how cold atoms are well controlled and tunable and we can use them to one day solve many body problems that are currently not solvable and engineer quantum systems that don't even exist elsewhere just for shits and giggles. 
+
+Chapter 2: Basics of ultracold atoms
 
 	Bose-Einstein Condesnation
 		Bose-Einstein distribution leading to phase transition
@@ -22,11 +32,14 @@ Something about how cold atoms are well controlled and tunable and we can use th
 	RbK apparatus overview
 	
 
-Chapter 2: Atom - light interactions
-	Absorbtion Imaging
+Chapter 3: Atom - light interactions
+	Types of interactions
 		On-resonant atom-light interaction
-		Absorption imaging
-		Time-of-flight
+		Far off-resonant atom-light interaction
+		Hyperfine structure and magnetic fields
+
+	Absorbtion Imaging
+
 	Optical lattices (1-D)
 		Full Hamiltonian
 		Tight binding approximation
@@ -35,7 +48,6 @@ Chapter 2: Atom - light interactions
 		Adiabatically loaded lattice
 		-- Figure: adiabatically loaded lattice for different momenta
 	Rf and Raman coupling
-		Hyperfine structure
 		Hamiltonains
 		Gauge transformation for raman
 		Pulsed raman and rf
@@ -43,22 +55,14 @@ Chapter 2: Atom - light interactions
 		Adiabatically loaded Raman and rf
 		-- Figure: pictures of adiabatically loaded Raman and rf
 
-Chapter 3:
+Chapter 4:
 	Imaging simulation for s-wave scattering experiment
 
 
-Chapter 4: S-wave scattering experiment
+Chapter 5: S-wave scattering experiment
 	- Intro with explanation of how we used to have K and refer to Lauren's thesis
 	- Actual paper matereial
 	- 2D MOT status update
-
-
-Chapter 5: What is Chern number
-	Integral over the Berry curvature definition in infinite system
-	Bulk-edge correspondence in finite system
-	Quantum Hall effect (with/without disorder)
-	Hofstadter Butterfly
-	Flux per plaquette as phase
 
 Chapter 6: Synthetic dimensional lattice
 
