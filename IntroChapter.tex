@@ -1,4 +1,4 @@
-\renewcommand{\thechapter}{1}
+\renewcommand{\thechapter}{2}
 
 \chapter{Introduction}
 
@@ -83,6 +83,14 @@ f_c=1-\frac{N}{N_{\rm ex}}=1-\frac{(k_{\rm B}T)^3}{\hbar^3 \omega_x \omega_y \om
 \end{equation}
 where in the last step we have plugged in the definition of the critical temperature eqn. \ref{eqn:tc}.
 
+\begin{figure}
+	\includegraphics{"BEC_DFG figures/CondensingAtoms".png}
+\caption{Time-of-flight images of atoms. (a) Above the critical temperature - the atoms are thermally distirbuted. (b) Below the critical temperature - about half of the atoms are condensed in the central peak. (c) Far below the critical temperature - almost all atoms are condensed in the central peak.}
+\label{fig:CondensingAtoms}
+\end{figure}
+
+Figure \ref{fig:CondensingAtoms} shows the progression towards condensation as the temperature of a cloud of \Rb{} is decreased below $T_c$. The images are obtained via a time-of-flight measurement (see section \ref{sec:timeOfFlight}), where the atoms are allowed to expand freely, mapping the initial momentum to final position, imaged via absorption imaging (see section \ref{sec:absorptionImaging}). The $x$ and $y$ axes represent momentum along $x$ and $y$, while the z axis represents the number of atoms. The $z$ axis momentum is integrated over.  Figure \ref{fig:CondensingAtoms}a shows a cloud above the condensation temperature - the momentum distribution is gaussian, given by the Maxwell-Boltzmann distribution. In  fig. \ref{fig:CondensingAtoms}b, the temperature has been decreased below $T_c$, and about half the atoms have collapsed into the ground state, producing a large peak in atom number around zero momentum. In  fig. \ref{fig:CondensingAtoms}c, the temperature has been decreased even further and almost all the atoms populate the central peak - the distribution is no longer gaussian but a sharp peak around zero momentum. 
+
 
 \subsection{Interacting Bose gas}
 
@@ -96,23 +104,51 @@ where $m$ is the atomic mass and $\delta$ is the Dirac delta function. The full 
 \begin{equation}
 H=\sum_i \frac{p_i}{2m} + V(r_i) + U_0\sum_{i<j}\delta{r_i-r_j},
 \end{equation}
-where $i$ labels the particles, $p_i$ is the momentum, $r_i$ is the position, and $V$ is the external potential. 
+where $i$ labels the particles, $p_i$ is the momentum, $r_i$ is the position, and $V$ is the external potential.
 
-Add in interactions: full Hamiltonain
+We make the mean field approximation by assuming that no interactions between two atoms take them out of the ground state, and hence all atoms can be assumed to be in the same single particle wavefunction, making the overall wavefunction
+\begin{equation}
+\Psi(r_1,r_2,...r_N)=\prod_i^N \phi(r_i),
+\end{equation}
+where $\phi$ is the single particle wavefunction. It is convenient to define the wavefunction of the condensed state, $\psi(r) = \sqrt{N}\phi(r)$, making the normalization $N=\int dr |\psi(r)|^2$.
 
-Mean-field approximation
+The energy of this wavefunction under the Hamiltonian above is given by
+\begin{equation}
+E=\int dr\left[ \frac{\hbar^2}{2m}|\nabla\psi(r)|^2 + V(r)|\psi(r)|^2 + \frac{1}{2}U_0|\psi(r)|^4\right]
+\end{equation}
+Given $N$ particles, there are $N(N-1)/2$ unique pairs of particles that can have a pairwise interaction, approximately equal to $N^2/2$ for large $N$. The $N^2$ is absorbed into the definition of $\psi$, but the factor of $1/2$ remains on the final interaction term. The task of finding the condensed eigenstate reduces to minimizing this energy under the normalization constraint $N=\int dr |\psi(r)|^2$. This can be done by using the method of Lagrange multipliers to minimize $E-\mu N$. Then, we can minimize this quantity by finding the point where the derivative with respect to $\psi$ and $\psi^*$ is zero. Taking the derivative with respect to $\psi^*$ we obtain 
+\begin{equation}
+-\frac{\hbar^2}{2m} \nabla^2 \psi(r) + V(r)\psi(r) + U_0 |\psi(r)|^2\psi(r) = \mu \psi(r),
+\end{equation}
+which is the Gross-Pitaevskii equation. This is a non-linear equation that generally needs to be solved numerically.
 
-Thomas-Fermi radii
+There is another approximation that can be made in cases where the atomic density is high enough that the interaction energy is significantly larger than the kinetic energy. Then, the kinetic term in the Hamiltonian can be neglected. This is called the Thomas-Fermi approximation. Then, the wavefunction is given simply by
+\begin{equation}
+|\psi(r)|^2 = \frac{\mu - V(r)}{U_0}.
+\end{equation}
+In this approximation, the probability density simply takes the form of the inverse of the potential. In the case of a harmonically trapped BEC, it is shaped like an inverted parabola. The Thomas-Fermi radius, ie the extent of the particle wavefuntion, is the point where the probability density goes to zero: $\mu - V(r_0) = 0$. For a harmonic trap, along any direction, this is given by $r_0^2 = 2\mu/m\omega^2$. 
 
-Position space - pictures from uwave lock?
+\begin{figure}
+	\includegraphics{"BEC_DFG figures/InSitu".pdf}
+\caption{In situ measurement of a fraction of bose condensed atoms. (a) Absorption image taken of $\approx1\%$ of the cloud. The $x$ and $y$ axes represent $x$ and $y$ position, while color represents the atom number. (b) The blue line repesents atom number as a function of position along hte $x$ axis, integrated over the $y$ axis. The black dashed line represents the best fit of a Gaussian function to the atomic distribution. The dashed red line represents the best fit of a Thomas-Fermi profile to the atomic distribution.}
+\label{fig:InSitu}
+\end{figure}
 
-Momentum space 
-
-Pictures of BEC condensing (steal from talk?)
+Figure \ref{fig:InSitu}a shows an absorption image of a small fraction of a BEC in situ (see section \ref{sec:timeOfFlight}), meaning as they are in the trap - without expanding in time-of-flight. Therefore, the $x$ and $y$ axis represent position, while color represents the atom number. Figure \ref{fig:InSitu}b shows the atom number integrated over the y-axis in blue. The red dashed lines represent a best fit line to a Thomas-Fermi distribution, here an inverse parabola. The black dashed lines represent a best fit of a Gaussian to the atomic distribution. The Thomas-Fermi distirbution matches the atomic distribution more closely in the center where the density is high, but the Gaussian distribution does a better job at the tails of the distribution. This is due to the presence of some thermal atoms, which remain Maxwell-Boltzmann distributed. 
 
 
 \section{Degenerate Fermi Gas}
 
+Feshbach resonances 
+[COPIED FROM PAPER BEGIN]
+Feshbach resonances are widely used for tuning the interaction strength in ultracold atomic gases. They have been particularly instrumental in the study of interactions and interaction-dependent processes in cold Fermi gases. In contrast to atomic Bose-Einstein condensates (BECs), where even weak interactions play a crucial role, for example giving rise to their characteristic Thomas-Fermi density profiles \cite{KetterleBEC},  interractions must compete with the Fermi energy before becoming relevant. Practically speaking, the density of Fermi clouds is typically $\sim$1000 times less than that of BECs \footnote{This is not the case for recently realized erbium and dysprosium DFGs \cite{Aikawa14,Lu12}, where strong dipolar interactions are present.}, making it necessary to enhance the strength of interactions in order to observe significant interaction effects\cite{KetterleDFG}. The tunability of interactions provided by Feshbach resonances has allowed for creation of molecular Bose-Einstein condensates from Fermi gases \cite{Greiner03,Zwierlein03, Jochim03} as well as observation of the phase transition from the Bardeen-Cooper-Schrieffer (BCS) superconduting regime to the BEC regime at sufficiently low temperatures \cite{Bartenstein04, Bourdel04, Zwierlein04, Regal04}.
+\par A Feshbach resonance occurs when a diatomic molecular state energetically approaches the two-atom continuum \cite{Chin10, Timmermans99}. In experiment, the relative energy of the free atomic states in two hyperfine sublevels and the molecular state is defined by a bias magnetic field. Consequently, the Feshbach resonance can be accessed by changing the bias field. In the simple case where there are no inelastic two-body channels, such as for the \K{} resonance discussed in this work, the effect of the resonance on the scattering length between two free atoms is \cite{Chin10}
+\begin{equation}
+a(B)=a_{\rm{bg}}\left(1-\frac{\Delta}{B-B_0}\right),
+\label{feshbachEq}
+\end{equation}
+where $a_{\rm{bg}}$ is the background scattering length, $\Delta$ is the width of the resonance, and $B_0$ is the field value at which the resonance occurs. The scattering length diverges at the resonance.
+[COPIED FROM PAPER END]
 
 \section{RbK apparatus}
 
