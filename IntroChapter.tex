@@ -32,10 +32,12 @@ E(j_x,j_y,j_z) = (\frac{1}{2} + j_x)\hbar\omega_x +(\frac{1}{2} + j_y)\hbar\omeg
 In order to find $\mu$, we must find $\sum_{j_x,j_y,j_z}n(E(j_x,j_y,j_z))$ and set it equal to $N$. This task is greatly simplified by going to the continuum limit and finding the density of states. To do this, we neglect the zero-point energy (setting $E_0=0$, the effects of the zero-point energy are discussed in \cite{Pethick} section 2.5)  and assume there is on average one state per volume element $\hbar^3 \omega_x \omega_y \omega_z$. Then, the total number of states with energy less than or equal to some value $\epsilon$ is given by the volume of a prism made between points $(x,y,z)=(0,0,0),(\epsilon,0,0),(0,\epsilon,0)$ and $(0,0,\epsilon)$ in units of the volume element:
 \begin{equation}
 G(\epsilon) = \frac{\epsilon^3}{6\hbar^3\omega_x \omega_y \omega_z}.
+\label{eqn:numberOfStates}
 \end{equation}
 The density of states is given by 
 \begin{equation}
 g(\epsilon) = \frac{d}{d\epsilon} G(\epsilon) = \frac{\epsilon^2}{3\hbar^3\omega_x \omega_y \omega_z}. 
+\label{eqn:densityOfStates}
 \end{equation}
 
 Note that the occupation of the ground state is not included in this continuum picture. We can therefore use it only to calculate the total number of atoms in all of the excites states:
@@ -138,17 +140,70 @@ Figure \ref{fig:InSitu}a shows an absorption image of a small fraction of a BEC 
 
 
 \section{Degenerate Fermi Gas}
+\subsection{Fermi statistcs and the onset of degeneracy}
+The occupation of different energy levels by Fermions is given by the Fermi-Dirac distribution:
+\begin{equation}
+n(\epsilon)= \frac{1}{e^{(\epsilon-\mu)/k_BT}+1}.
+\end{equation}
+The difference from the Bose-Einstein distribution is simply the sign of the $1$ in the denominator. This has important implications, however. First, since $e^x$ varies between $0$ and $\inf$, the occupation $n(\epsilon)$ varies between $1$ and $0$ - a consequence of the Pauli exclusion principle. Second, as the temperature $T$ tends towards $0$, there become two distinct cases: $\epsilon-\mu>0$ and $\epsilon-\mu<0$. If $\epsilon-\mu>0$, $e^{(\epsilon-\mu)/k_BT}$ tends towards $\inf$, and $n(\epsilon)$ tends towards $0$. If  $\epsilon-\mu<0$, $e^{(\epsilon-\mu)/k_BT}$ tends towards $0$, and $n(\epsilon)$ tends towards $1$. Therefore, at $T=0$, the energy states below the chemical potential $\mu$ are maximally occupied (with probability $1$) and the energy states above the chemical potential are unoccupied. 
 
-Feshbach resonances 
-[COPIED FROM PAPER BEGIN]
-Feshbach resonances are widely used for tuning the interaction strength in ultracold atomic gases. They have been particularly instrumental in the study of interactions and interaction-dependent processes in cold Fermi gases. In contrast to atomic Bose-Einstein condensates (BECs), where even weak interactions play a crucial role, for example giving rise to their characteristic Thomas-Fermi density profiles \cite{KetterleBEC},  interractions must compete with the Fermi energy before becoming relevant. Practically speaking, the density of Fermi clouds is typically $\sim$1000 times less than that of BECs \footnote{This is not the case for recently realized erbium and dysprosium DFGs \cite{Aikawa14,Lu12}, where strong dipolar interactions are present.}, making it necessary to enhance the strength of interactions in order to observe significant interaction effects\cite{KetterleDFG}. The tunability of interactions provided by Feshbach resonances has allowed for creation of molecular Bose-Einstein condensates from Fermi gases \cite{Greiner03,Zwierlein03, Jochim03} as well as observation of the phase transition from the Bardeen-Cooper-Schrieffer (BCS) superconduting regime to the BEC regime at sufficiently low temperatures \cite{Bartenstein04, Bourdel04, Zwierlein04, Regal04}.
-\par A Feshbach resonance occurs when a diatomic molecular state energetically approaches the two-atom continuum \cite{Chin10, Timmermans99}. In experiment, the relative energy of the free atomic states in two hyperfine sublevels and the molecular state is defined by a bias magnetic field. Consequently, the Feshbach resonance can be accessed by changing the bias field. In the simple case where there are no inelastic two-body channels, such as for the \K{} resonance discussed in this work, the effect of the resonance on the scattering length between two free atoms is \cite{Chin10}
+We can use this to determine the chemical potential at $T=0$ by constraining the total atom number:
+\begin{equation}
+N=\sum_j n(E_j) = \sum_{\epsilon_j<\mu} 1.
+\end{equation}
+Again, we take the common example of the 3-D harmonic trap. Then the task reduces to simply finding the number of energy levels at or below a certain energy $\mu$. This is given by eqn. \ref{eqn:numberOfStates}. From this, we find the chemical potential at zero energy, which is known as the Fermi energy $E_F$, as
+\begin{equation}
+E_F = (6 N)^{1/3}\hbar\bar{\omega},
+\end{equation}
+where $\bar{\omega}=(\omega_x\omega_y\omega_z)^{1/3}$ is the geometric mean of the three trapping frequencies. From the Fermi energy, we can define the associated Fermi temperature $T_F$ as
+\begin{equation}
+T_F = \frac{(6 N)^{1/3}\hbar\bar{\omega}}{k_B},
+\end{equation}
+and the Fermi momentum $\hbar k_F$ as
+\begin{equation}
+\hbar k_F = \sqrt{2 m E_F},
+\end{equation}
+where $m$ is the mass of the Fermion. 
+
+For higher temeperatures, we can solve for the chemical potential, or the fugacity $\zeta$, by integrating the Fermi-Dirac distribution weighted by the density of states (eqn. \ref{eqn:densityOfStates}) to obtain
+\begin{equation}
+N = \int_0^{\infty} \frac{\epsilon^2}{2\hbar^3 \bar{\omega}^3}\frac{\zeta}{e^{\epsilon/k_B T}+\zeta} = -\frac{(k_BT)^3}{\hbar^3 \bar{\omega}^3}Li_3(-\zeta),
+\end{equation}
+where $Li_3$ is again the polylogarithm function. Again, this is a transcendental equation that can be solved numerically. However, in contrast to the BEC case, we do not have to consider the ground state occupation separately, as it is bounded by $1$ like every other state. 
+
+\begin{figure}
+	\includegraphics{"BEC_DFG figures/FermiDist".pdf}
+\caption{Occupation number as a function of energy for a Fermi gas of $N=10^6$ atoms in a 3-D harmonic oscillator with frequencies $\omega_x=\omega_y=\omega_z=2\pi 50$ Hz. The Fermi temperature for these parameters is $T_F=436$ nK.}
+\label{fig:FermiDist}
+\end{figure}
+
+We show an example of the occupation distribution for different temperatures in Figure \ref{fig:FermiDist}. Here, we have used the same parameter values as for the BEC case: $N=10^6$ and $\omega_x=\omega_y=\omega_z=2\pi 50$ Hz. The Fermi temperature for these parameters is $T_F=436$ nK.  For illustrative purposes, we plot $n(\epsilon)$, unweighted by the density of states $g(\epsilon)$. At zero temperature (red line in the figure), only states below the Fermi energy are occupied. At higher temperatures, the distribution is smoothed out (green and orange lines) until at the Fermi temperature there is almost no significance to the Fermi energy.
+
+In contrast with Bose-Einstein condensation, the transition to a Degenerate Fermi Gas (DFG) is not a phase transition, and there is no absolute measure of the onset of degeneracy. Instead, a Fermi gas can be considered degenerate when the occupation function $n(\epsilon)$ differs significantly from that of a thermal gas. This occurs when the temperature is of order $0.2 T_F$. 
+
+\subsection{Interactions and Feshbach resonances}
+Although the magnitgude of the contact interaction $U_0$ for DFGs is not intrinsially different from that of BECs. There are, however, two key differences. First, the Pauli exclusion principle forbids s-wave interactions between atoms of the same spin. Higher partial wave interactions are 'frozen out' at low temperatures, when the impact parameter of the collision becomes larger than the effective cross section of interactions (see \cite{KetterleDFG}, sec. 2.1.2). Therefore, in order to observe interactions, and indeed to cool the gas to degeneracy, another species needs to be present so that intraspecies s-wave interactions can occur. This can be a different atomic species or a different spin state of the same atom. 
+
+Second, the densities of standard DFGs ($\approx 10^{12}$ atoms/cm$^3$) are much lower than that of BECs ($\approx 10^{14}$ atoms/cm$^3$). Since the likelyhood of two-body collisions is proportional to the atomic density $\rho^2$, this leads to a much smaller effect of interactions in DFGs.
+
+A widely used technique for enhancing interaction effects in DFGs is Feshbach resonances. A Feshbach resonance occurs between two spiecies (either atomic species or spin species of the same atom) when the open channel, ie the two particles independently in their external potential, energetically approaches a closed channel, ie a bound molecular state of the two species, shown schematically in Figure \ref{fig:FeshbachSchematic}a. 
+
+Generally, the atoms in an open channel are energetically sensitive to a bachground magnetic field $B$ via the hyperfine interaction $H_B=\mu\cdot B$, where $\mu$ is the magnetic dipole moment. Tuning the magnetic field should therefore tune the energy of the open channel. The molecular bound state may also have an overall magnetic moment, but it is generally not identical to that of the two atoms in the open channel, and therefore varies differently with the background field. Figure \ref{fig:FeshbachSchematic}b shows an example where the bound state has zero magnetic moment. Here, the energy of both the closed and open channel as a function of backround magnetic field $B$ is plotted in the vicinity of a Feshbach resonance. The resonance occures at a field $B_0$ where the energies of the two channels coincide.
+
+\begin{figure}
+	\includegraphics{"BEC_DFG figures/FeshbachSchematic".png}
+\caption{Schematic of a Feshbach resonance. (a) Pictoral representation of energy as a function of interatomic distance for an open channel (red) and closed channel (blue). (b) Energy as a function of background magnetic field $B$ for the closed (blue) and open (red) channels. The energies coincide at the Feshbach resonance point $B_0$. Energy of Figure taken from \cite{KetterleDFG}.}
+\label{fig:FeshbachSchematic}
+\end{figure}
+
+Assuming there is at least infinitesmal coupling between the closed and open channels, as the energies of the two channels approach each other the perturbative correction term to the energy grows and the interaction between the atoms is effected. This is most easily seen in the s-wave case through changes the scattering length $a$. In the case where there are no inelastic two-body channels, such as for the \K{} resonance discussed in this thesis, the interatomic scattering length as a function of background field is given by\cite{Chin10}
 \begin{equation}
 a(B)=a_{\rm{bg}}\left(1-\frac{\Delta}{B-B_0}\right),
 \label{feshbachEq}
 \end{equation}
 where $a_{\rm{bg}}$ is the background scattering length, $\Delta$ is the width of the resonance, and $B_0$ is the field value at which the resonance occurs. The scattering length diverges at the resonance.
-[COPIED FROM PAPER END]
+
+The tunability of interactions provided by Feshbach resonances has allowed for creation of molecular Bose-Einstein condensates from Fermi gases \cite{Greiner03,Zwierlein03, Jochim03} as well as observation of the phase transition from the Bardeen-Cooper-Schrieffer (BCS) superconduting regime to the BEC regime at sufficiently low temperatures \cite{Bartenstein04, Bourdel04, Zwierlein04, Regal04}.
 
 \section{RbK apparatus}
 
