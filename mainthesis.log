@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2018.8.16)  5 DEC 2018 17:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2018.8.16)  7 DEC 2018 15:56
 entering extended mode
 **./mainthesis.tex
 (mainthesis.tex
@@ -422,15 +422,7 @@ LaTeX Warning: Unused global option(s):
     [pdflatex].
 
 (mainthesis.aux (Abstract.aux) (Titlepage.aux) (Copyright.aux)
-(IntroChapter.aux
-
-LaTeX Warning: Label `fig:FermiDist' multiply defined.
-
-) (AtomLightChapter.aux
-
-LaTeX Warning: Label `fig:pulsingSchematic' multiply defined.
-
-))
+(IntroChapter.aux))
 \openout1 = `mainthesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
@@ -537,11 +529,11 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
 
 LaTeX Warning: Citation `KetterleDFG' on page 7 undefined on input line 6.
 
-[7] [8])
+)
 \tf@lof=\write6
 \openout6 = `mainthesis.lof'.
 
- [9] [10]
+ [7] [8]
 \openout2 = `IntroChapter.aux'.
 
  (IntroChapter.tex
@@ -563,7 +555,7 @@ ier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.64 
-      [3] <"BEC_DFG figures/condensation".pdf, id=362, 375.804pt x 216.81pt>
+      [3] <"BEC_DFG figures/condensation".pdf, id=197, 375.804pt x 216.81pt>
 File: "BEC_DFG figures/condensation".pdf Graphic file (type pdf)
 
 <use "BEC_DFG figures/condensation".pdf>
@@ -576,13 +568,22 @@ been already used, duplicate ignored
                    \relax 
 l.72 \begin{equation}
                       [4 <./BEC_DFG figures/condensation.pdf>]
-<"BEC_DFG figures/CondensingAtoms".png, id=393, 426.8748pt x 128.1588pt>
+<"BEC_DFG figures/CondensingAtoms".png, id=228, 426.8748pt x 128.1588pt>
 File: "BEC_DFG figures/CondensingAtoms".png Graphic file (type png)
 
 <use "BEC_DFG figures/CondensingAtoms".png>
 Package pdftex.def Info: "BEC_DFG figures/CondensingAtoms".png used on input li
 ne 89.
 (pdftex.def)             Requested size: 426.87375pt x 128.15848pt.
+
+
+LaTeX Warning: Reference `sec:timeOfFlight' on page 5 undefined on input line 9
+4.
+
+
+LaTeX Warning: Reference `sec:absorptionImaging' on page 5 undefined on input l
+ine 94.
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
 been already used, duplicate ignored
 <to be read again> 
@@ -600,30 +601,24 @@ tifier (name{page.7}) has been already used, duplicate ignored
                    \relax 
 l.124 \end{equation}
                      [7]
-<"BEC_DFG figures/InSitu".pdf, id=421, 325.215pt x 433.62pt>
+<"BEC_DFG figures/InSitu".pdf, id=255, 325.215pt x 433.62pt>
 File: "BEC_DFG figures/InSitu".pdf Graphic file (type pdf)
 
 <use "BEC_DFG figures/InSitu".pdf>
 Package pdftex.def Info: "BEC_DFG figures/InSitu".pdf used on input line 134.
 (pdftex.def)             Requested size: 325.2142pt x 433.61894pt.
+
+
+LaTeX Warning: Reference `sec:timeOfFlight' on page 8 undefined on input line 1
+39.
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.147 \end{equation}
-                     [8]pdfTeX warning (ext4): destination with the same identi
-fier (name{page.9}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.147 \end{equation}
-                     [9 <./BEC_DFG figures/InSitu.pdf>]pdfTeX warning (ext4): d
-estination with the same identifier (name{page.10}) has been already used, dupl
-icate ignored
-<to be read again> 
-                   \relax 
-l.161 \end{equation}
-                     [10]
-<"BEC_DFG figures/FermiDist".pdf, id=451, 448.07399pt x 216.81pt>
+                     [8] [9 <./BEC_DFG figures/InSitu.pdf>] [10]
+<"BEC_DFG figures/FermiDist".pdf, id=285, 448.07399pt x 216.81pt>
 File: "BEC_DFG figures/FermiDist".pdf Graphic file (type pdf)
 
 <use "BEC_DFG figures/FermiDist".pdf>
@@ -640,15 +635,7 @@ Overfull \hbox (21.68033pt too wide) in paragraph at lines 175--176
 LaTeX Warning: Citation `KetterleDFG' on page 12 undefined on input line 185.
 
 [12 <./BEC_DFG figures/FermiDist.pdf>]
-
-LaTeX Warning: Reference `fig:FeshbachSchematic' on page 13 undefined on input 
-line 189.
-
-
-LaTeX Warning: Reference `fig:FeshbachSchematic' on page 13 undefined on input 
-line 191.
-
-<"BEC_DFG figures/FeshbachSchematic".png, id=483, 433.62pt x 244.7544pt>
+<"BEC_DFG figures/FeshbachSchematic".png, id=320, 433.62pt x 244.7544pt>
 File: "BEC_DFG figures/FeshbachSchematic".png Graphic file (type png)
 
 <use "BEC_DFG figures/FeshbachSchematic".png>
@@ -692,248 +679,93 @@ LaTeX Warning: Citation `Zwierlein04' on page 15 undefined on input line 206.
 
 LaTeX Warning: Citation `Regal04' on page 15 undefined on input line 206.
 
-) [15]
-\openout2 = `AtomLightChapter.aux'.
 
- (AtomLightChapter.tex
-Chapter 3.
-[16
+LaTeX Warning: Citation `Lin2009' on page 15 undefined on input line 210.
 
 
-] [17] <"Chapter2 Figures/Picture1a".png, id=514, 246.1998pt x 359.9046pt>
-File: "Chapter2 Figures/Picture1a".png Graphic file (type png)
+LaTeX Warning: Citation `LaurenThesis' on page 15 undefined on input line 210.
 
-<use "Chapter2 Figures/Picture1a".png>
-Package pdftex.def Info: "Chapter2 Figures/Picture1a".png used on input line 32
-.
-(pdftex.def)             Requested size: 110.78888pt x 161.95557pt.
+<"BEC_DFG figures/ExperimentPicture".png, id=332, 433.62pt x 338.7054pt>
+File: "BEC_DFG figures/ExperimentPicture".png Graphic file (type png)
 
-<"Chapter2 Figures/Picture1c".pdf, id=515, 173.448pt x 187.902pt>
-File: "Chapter2 Figures/Picture1c".pdf Graphic file (type pdf)
+<use "BEC_DFG figures/ExperimentPicture".png>
+Package pdftex.def Info: "BEC_DFG figures/ExperimentPicture".png used on input 
+line 215.
+(pdftex.def)             Requested size: 433.61894pt x 338.70457pt.
 
-<use "Chapter2 Figures/Picture1c".pdf>
-Package pdftex.def Info: "Chapter2 Figures/Picture1c".pdf used on input line 33
-.
-(pdftex.def)             Requested size: 156.10175pt x 169.11023pt.
-
-<"Chapter2 Figures/Picture1b".png, id=516, 250.536pt x 304.4976pt>
-File: "Chapter2 Figures/Picture1b".png Graphic file (type png)
-
-<use "Chapter2 Figures/Picture1b".png>
-Package pdftex.def Info: "Chapter2 Figures/Picture1b".png used on input line 34
-.
-(pdftex.def)             Requested size: 125.26768pt x 152.24843pt.
- [18 <./Chapter2 Figures/Picture1a.png> <./Chapter2 Figures/Picture1c.pdf> <./C
-hapter2 Figures/Picture1b.png>]
-
-LaTeX Warning: Reference `AbsorptionImagingChapter' on page 19 undefined on inp
-ut line 53.
-
-[19] [20] [21] [22] [23]
-Overfull \hbox (19.96951pt too wide) detected at line 130
-[]\OML/cmm/m/it/12 H[] \OT1/cmr/m/n/12 = [] [] \OML/cmm/m/it/12 ;
- []
-
-[24] <"Chapter4 Figures/figure1".pdf, id=606, 448.07399pt x 289.08pt>
-File: "Chapter4 Figures/figure1".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/figure1".pdf>
-Package pdftex.def Info: "Chapter4 Figures/figure1".pdf used on input line 156.
-
-(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 156--157
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 215--216
 [][] 
  []
 
-[25 <./Chapter4 Figures/figure1.pdf>] [26] [27]
-<"Chapter4 Figures/figure2".pdf, id=648, 448.07399pt x 289.08pt>
-File: "Chapter4 Figures/figure2".pdf Graphic file (type pdf)
+[15] [16 <./BEC_DFG figures/ExperimentPicture.png>]
+<"BEC_DFG figures/BirdsEyeApparatus".pdf, id=350, 439.72781pt x 390.86827pt>
+File: "BEC_DFG figures/BirdsEyeApparatus".pdf Graphic file (type pdf)
 
-<use "Chapter4 Figures/figure2".pdf>
-Package pdftex.def Info: "Chapter4 Figures/figure2".pdf used on input line 203.
+<use "BEC_DFG figures/BirdsEyeApparatus".pdf>
+Package pdftex.def Info: "BEC_DFG figures/BirdsEyeApparatus".pdf used on input 
+line 225.
+(pdftex.def)             Requested size: 439.72673pt x 390.86731pt.
 
-(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 203--204
+Overfull \hbox (13.33418pt too wide) in paragraph at lines 225--226
 [][] 
  []
 
-<"Chapter4 Figures/LatticePulsing".pdf, id=654, 448.07399pt x 289.08pt>
-File: "Chapter4 Figures/LatticePulsing".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/LatticePulsing".pdf>
-Package pdftex.def Info: "Chapter4 Figures/LatticePulsing".pdf used on input li
-ne 214.
-(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 214--215
-[][] 
- []
-
-[28] [29 <./Chapter4 Figures/figure2.pdf>]
-<"Chapter4 Figures/figure3".pdf, id=689, 448.07399pt x 289.08pt>
-File: "Chapter4 Figures/figure3".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/figure3".pdf>
-Package pdftex.def Info: "Chapter4 Figures/figure3".pdf used on input line 222.
-
-(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 222--223
-[][] 
- []
-
-[30 <./Chapter4 Figures/LatticePulsing.pdf>] [31] [32 <./Chapter4 Figures/figur
-e3.pdf>]
-<"Chapter4 Figures/HyperfineFromSteck".pdf, id=760, 794.97pt x 614.295pt>
-File: "Chapter4 Figures/HyperfineFromSteck".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/HyperfineFromSteck".pdf>
-Package pdftex.def Info: "Chapter4 Figures/HyperfineFromSteck".pdf used on inpu
-t line 238.
-(pdftex.def)             Requested size: 476.98569pt x 368.57983pt.
-
-Overfull \hbox (50.59314pt too wide) in paragraph at lines 238--239
-[][] 
- []
-
-[33 <./Chapter4 Figures/HyperfineFromSteck.pdf, page is rotated 90 degrees>]
-[34] <"Chapter4 Figures/RfRamanSetupBeams".pdf, id=781, 794.97pt x 614.295pt>
-File: "Chapter4 Figures/RfRamanSetupBeams".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/RfRamanSetupBeams".pdf>
-Package pdftex.def Info: "Chapter4 Figures/RfRamanSetupBeams".pdf used on input
- line 277.
-(pdftex.def)             Requested size: 238.49284pt x 184.28992pt.
-
-<"Chapter4 Figures/RfRamanSetupLevels".pdf, id=782, 794.97pt x 614.295pt>
-File: "Chapter4 Figures/RfRamanSetupLevels".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/RfRamanSetupLevels".pdf>
-Package pdftex.def Info: "Chapter4 Figures/RfRamanSetupLevels".pdf used on inpu
-t line 278.
-(pdftex.def)             Requested size: 238.49284pt x 184.28992pt.
-
-Overfull \hbox (53.20422pt too wide) in paragraph at lines 277--279
-[][] [][] 
- []
-
-[35 <./Chapter4 Figures/RfRamanSetupBeams.pdf, page is rotated 90 degrees> <./C
-hapter4 Figures/RfRamanSetupLevels.pdf, page is rotated 90 degrees>]
-<"Chapter4 Figures/rfBandStructure".pdf, id=805, 448.07399pt x 289.08pt>
-File: "Chapter4 Figures/rfBandStructure".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/rfBandStructure".pdf>
-Package pdftex.def Info: "Chapter4 Figures/rfBandStructure".pdf used on input l
-ine 286.
-(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 286--287
-[][] 
- []
-
-[36] [37 <./Chapter4 Figures/rfBandStructure.pdf>] [38]
-<"Chapter4 Figures/RamanBandStructure".pdf, id=872, 448.07399pt x 289.08pt>
-File: "Chapter4 Figures/RamanBandStructure".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/RamanBandStructure".pdf>
-Package pdftex.def Info: "Chapter4 Figures/RamanBandStructure".pdf used on inpu
-t line 319.
-(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 319--320
-[][] 
- []
-
-[39] [40 <./Chapter4 Figures/RamanBandStructure.pdf>]
-<"Chapter4 Figures/RfPulsing".pdf, id=930, 448.07399pt x 433.62pt>
-File: "Chapter4 Figures/RfPulsing".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/RfPulsing".pdf>
-Package pdftex.def Info: "Chapter4 Figures/RfPulsing".pdf used on input line 33
-7.
-(pdftex.def)             Requested size: 448.07288pt x 433.61894pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 337--338
-[][] 
- []
-
-<"Chapter4 Figures/RamanPulsing".pdf, id=933, 448.07399pt x 433.62pt>
-File: "Chapter4 Figures/RamanPulsing".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/RamanPulsing".pdf>
-Package pdftex.def Info: "Chapter4 Figures/RamanPulsing".pdf used on input line
- 345.
-(pdftex.def)             Requested size: 448.07288pt x 433.61894pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 345--346
-[][] 
- []
-
-
-LaTeX Warning: Reference `fig:rfBandStruct' on page 41 undefined on input line 
-350.
-
-[41] [42 <./Chapter4 Figures/RfPulsing.pdf>] [43 <./Chapter4 Figures/RamanPulsi
-ng.pdf>]) [44] (mainthesis.bbl
+[17] [18 <./BEC_DFG figures/BirdsEyeApparatus.pdf>]) [19] (mainthesis.bbl
 Underfull \hbox (badness 2503) in paragraph at lines 4--8
 []\OT1/cmr/m/n/12 Daniel Adam Steck.  Ru-bid-ium 87 d line data.  Avail-able on
 -line,
  []
 
-[45
+[20
 
-] [46]
+] [21]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ‰ in font cmr12!
- [47])
+ [22])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 158.
- [48]
+ [23]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 158.
  (mainthesis.aux (Abstract.aux) (Titlepage.aux)
-(Copyright.aux) (IntroChapter.aux) (AtomLightChapter.aux))
+(Copyright.aux) (IntroChapter.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 158.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 158.
 Package rerunfilecheck Info: File `mainthesis.out' has not changed.
-(rerunfilecheck)             Checksum: AC60796954188490573DA49C2DA7ABD6;1888.
+(rerunfilecheck)             Checksum: F29DE1C5BC043E76C6B1F3DC3DF5FAC2;1105.
 
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 158.
  ) 
 Here is how much of TeX's memory you used:
- 7449 strings out of 493333
- 107378 string characters out of 3139191
- 227515 words of memory out of 3000000
- 10589 multiletter control sequences out of 15000+200000
+ 7266 strings out of 493333
+ 103659 string characters out of 3139191
+ 203165 words of memory out of 3000000
+ 10508 multiletter control sequences out of 15000+200000
  12942 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,10n,34p,1922b,447s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,8n,34p,1576b,447s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mti12.pfb>
-Output written on mainthesis.pdf (58 pages, 1572060 bytes).
+amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmti12.pfb>
+Output written on mainthesis.pdf (31 pages, 2084369 bytes).
 PDF statistics:
- 1143 PDF objects out of 1200 (max. 8388607)
- 182 named destinations out of 1000 (max. 500000)
- 296 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 482 PDF objects out of 1000 (max. 8388607)
+ 101 named destinations out of 1000 (max. 500000)
+ 156 words of extra memory for PDF output out of 10000 (max. 10000000)
 

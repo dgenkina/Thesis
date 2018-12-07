@@ -207,16 +207,40 @@ The tunability of interactions provided by Feshbach resonances has allowed for c
 
 \section{RbK apparatus}
 
-Bird's eye view picture
+The rubidium-potassium (RbK) appartus at NIST Gaithersburg has been previously detailed in \cite{Lin2009,KarinaThesis, LaurenThesis}. In this thesis, we will give a brief overview of the apparatus and how it is used to produce BECs of \Rb{} and DFGs of \K{}, and only give detailed documentation for those parts of the apparatus that differ from previous works. 
 
+A photograph of the main experiment is shown in Figure \ref{fig:ExperimentPicture}. This is mounted on an optical table, with the science chamber elevated above the surface of the table. The atoms start at the ovens (off to the right, not in the photograph) and travel down the Zeeman slower until they are trapped in the science chamber. The optical dipole trap laser, as well as the 1-D optical lattice laser, are located on the optical table and coupled into optical fibers, which are output on the main floor of breadboard before being sent towards the atoms. All other lasers are located on other optical table and brought over to the experiment table via optical fibers. 
+
+\begin{figure}
+	\includegraphics{"BEC_DFG figures/ExperimentPicture".png}
+\caption{Photograph of RbK apparatus at NIST Gaithersburg. The main science chamber is at the center, hidden behind optics and coils. The Zeeman slower connects the atomic ovens (not shown) to the chamber. There are several levels of breadboards on which optics are mounted, labelled here as basement (surface of optical table), main floor, balcony and attic.}
+\label{fig:ExperimentPicture}
+\end{figure}
+
+Figure \ref{fig:BirdsEyeApparatus} details the beam paths of the light going through the atoms. Figure \ref{fig:BirdsEyeApparatus}a shows a side view of the apparatus. The up and down going MOTcooling beams are shown in red, reaching the atoms when the flipper mirrors $M_{top}$ and $M_{bottom}$ are flipped in. The down going probe beam, used for imaging along the $x-y$ axis both in situ and in time-of-flight, is shown in solid blue. The probe beam is split via a polarizing beam splitter cube to allow for both in situ and time-of-flight imagnig of the same cloud, shown in the inset in fig.  \ref{fig:BirdsEyeApparatus}b and described in greater detail in sec. \ref{sec:BECchanges}.  The dashed blue line represents the upward going probe beam introduced for alignment purposes, described in greater detail in sec. \ref{sec:BECchanges}. 
+
+Figure \ref{fig:BirdsEyeApparatus}b show's a bird's eye view of the apparatus, with optics on the main floor breadboard. The slower cooling (solid dark blue) and slower repump (dashed dark blue) are coming in from the left to slow the atoms as they are moving through the Zeeman slower. The remaining four MOT cooling beams, coming from four opposing directions, are shown in red.  They reach the atoms when their flipper mirrrors, $M1-4$, are flipped in. All six flipper mirrors are computer controlled by the same digital channel, so they can be flipped in and out together. Only the beams going in through mirrors $M1$ and $M2$ are accompanied by MOT repump light, dashed red lines. The optical dipole trap beams (solid green) come from the same 1064 nm laser, and are split via an acousto-optic modulator into two orders, which enter from opposite directions and intersect each other at approximately a $90$ degree angle, providing confinement along all three axes. There are three available Raman beams (solid magenta): Raman A, entering past the flipped-out $M2$ mirror, Raman B, at $90$ degrees to Raman A entering past the $M1$ mirror, and Raman C, counter-propagating with Raman A and entering past the $M4$ mirror. There is a 1-D optical lattice beam (dashed green), also 1064 nm, sent in past the $M2$ mirror and retroreflected on the opposite end of the chamber to form a standing wave patter. Lastly, there is another imaging beam, imaging the atoms along the $x-z$ plane, going to a Flea3 camera. 
+
+\begin{figure}
+	\includegraphics{"BEC_DFG figures/BirdsEyeApparatus".pdf}
+\caption{Schematic of RbK apparatus. (a) Side view of apparatus. Only beams propagating along the \ez{} direction through the atoms is pictured. (b) Top view of apparatus. Only beams propagating along the $x-y$ plane are shown. Schematic is not to scale and the angles are approximate}
+\label{fig:BirdsEyeApparatus}
+\end{figure}
+
+\subsection{Procedure for making a BEC}
 Brief description of BEC making procedure
+
+\subsection{Changes to apparatus for Rubidium}\label{sec:BECchanges}
 
 Differences from Lauren's thesis:
 
+    Put master laser setup in
+    PBS cube on XY imaging system
     Describe Hsin-I's new imaging path
     Describe extra lens for beam shaping the dipole trap
 
+\subsection{Procedure for making a DFG}
 Brief description of DFG making procedure (of old)
-
+\subsection{Current status of Potassium apparatus}
 Differences from Lauren's thesis:
 	    Describe 2D MOT'
