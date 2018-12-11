@@ -1,5 +1,11 @@
 \begin{thebibliography}{10}
 
+\bibitem{KetterleDFG}
+W.~Ketterle and M.~W. Zwierlein.
+\newblock {Making, probing and understanding ultracold Fermi gases}.
+\newblock In {\em Ultracold Fermi Gases, Proceedings of the International
+  School of Physics `Enrico Fermi', Course CLXIV}, Varenna, 20-30 June 2006.
+
 \bibitem{Steck}
 Daniel~Adam Steck.
 \newblock Rubidium 87 d line data.
@@ -11,18 +17,6 @@ K.~Jim\'enez-Garc\'{\i}a, L.~J. LeBlanc, R.~A. Williams, M.~C. Beeler, A.~R.
   Perry, and I.~B. Spielman.
 \newblock Peierls substitution in an engineered lattice potential.
 \newblock {\em Phys. Rev. Lett.}, 108:225303, May 2012.
-
-\bibitem{Pethick}
-C.J. Pethick and H.~Smith.
-\newblock {\em {Bose-Einstein Condensation of Dilute Gases}}.
-\newblock Cambridge University Press, Cambridge, UK, 2002.
-
-\bibitem{Egorov2013}
-M.~Egorov, B.~Opanchuk, P.~Drummond, B.~V. Hall, P.~Hannaford, and A.~I.
-  Sidorov.
-\newblock Measurement of $s$-wave scattering lengths in a two-component
-  bose-einstein condensate.
-\newblock {\em Phys. Rev. A}, 87:053614, May 2013.
 
 \bibitem{LCT}
 H.J. Metcalf and P.~van~der Straten.
@@ -52,114 +46,90 @@ Daniel~Adam Steck.
 \newblock Available online at http://steck.us/teaching, January 2015.
 \newblock revision 0.12.2.
 
+\bibitem{Genkina2015}
+D.~Genkina, L.~M. Aycock, B.~K. Stuhl, H-I Lu, R.~A. Williams, and I.~B.
+  Spielman.
+\newblock Feshbach enhanced s-wave scattering of fermions: direct observation
+  with optimized absorption imaging.
+\newblock {\em New Journal of Physics}, 18:013001, Dec 2015.
+
 \bibitem{LJLthesis}
 Lindsey~J. LeBlanc.
 \newblock {\em {Exploring many-body physics with ultracold atoms}}.
 \newblock PhD thesis, University of Toronto, 2011.
 
-\bibitem{Klitzing1980}
-K.~v. Klitzing, G.~Dorda, and M.~Pepper.
-\newblock New method for high-accuracy determination of the fine-structure
-  constant based on quantized hall resistance.
-\newblock {\em Phys. Rev. Lett.}, 45:494--497, Aug 1980.
+\bibitem{Regal04}
+C.~A. Regal, M.~Greiner, and D.~S. Jin.
+\newblock {Observation of resonance condensation of fermionic atom pairs}.
+\newblock {\em Phys. Rev. Lett.}, {92}({4}), {2004}.
 
-\bibitem{Thouless1982}
-D.~J. Thouless, M.~Kohmoto, M.~P. Nightingale, and M.~den Nijs.
-\newblock Quantized hall conductance in a two-dimensional periodic potential.
-\newblock {\em Phys. Rev. Lett.}, 49:405--408, Aug 1982.
+\bibitem{Tiesinga93}
+E.~Tiesinga, B.~J. Verhaar, and H.~T.~C. Stoof.
+\newblock {Threshold and resonance phenomena in ultracold ground-state
+  collisions}.
+\newblock {\em Phys. Rev. A}, {47}({5, B}):{4114--4122}, {1993}.
 
-\bibitem{Hofstadter1976}
-Douglas~R. Hofstadter.
-\newblock Energy levels and wave functions of bloch electrons in rational and
-  irrational magnetic fields.
-\newblock {\em Phys. Rev. B}, 14:2239--2249, Sep 1976.
+\bibitem{Lysebo09}
+M.~Lysebo and L.~Veseth.
+\newblock {\textit{Ab initio} calculation of Feshbach resonances in cold atomic
+  collisions: $s$- and $p$-wave Feshbach resonances in $^{6}\rm{Li}_{2}$}.
+\newblock {\em Phys. Rev. A}, 79:062704, 2009.
 
-\bibitem{Geisler2004}
-M.~C. Geisler, J.~H. Smet, V.~Umansky, K.~von Klitzing, B.~Naundorf,
-  R.~Ketzmerick, and H.~Schweizer.
-\newblock Detection of a landau band-coupling-induced rearrangement of the
-  hofstadter butterfly.
-\newblock {\em Phys. Rev. Lett.}, 92:256801, Jun 2004.
+\bibitem{Gao11}
+B.~Gao.
+\newblock {Analytic description of atomic interaction at ultracold
+  temperatures. II. Scattering around a magnetic Feshbach resonance}.
+\newblock {\em Phys. Rev. A}, 84:022706, 2011.
 
-\bibitem{Hunt2013}
-B.~Hunt, J.~D. Sanchez-Yamagishi, A.~F. Young, M.~Yankowitz, B.~J. LeRoy,
-  K.~Watanabe, T.~Taniguchi, P.~Moon, M.~Koshino, P.~Jarillo-Herrero, and R.~C.
-  Ashoori.
-\newblock {Massive Dirac Fermions and Hofstadter Butterfly in a van der Waals
-  Heterostructure}.
-\newblock {\em Science}, 340:1427, 2013.
+\bibitem{Inouye98}
+S.~Inouye, M.~R. Andrews, J.~Stenger, H.~J. Miesner, D.~M. Stamper-Kurn, and
+  W.~Ketterle.
+\newblock {Observation of Feshbach resonances in a Bose-Einstein condensate}.
+\newblock {\em {Nature}}, {392}({6672}):{151--154}, {1998}.
 
-\bibitem{Jaksch2003}
-P.~Zoller D.~Jaksch.
-\newblock Creation of effective magnetic fields in optical lattices: the
-  hofstadter butterfly for cold neutral atoms.
-\newblock {\em New Journal of Physics}, 5(1):56, 2003.
+\bibitem{Cornish00}
+S.~L. Cornish, N.~R. Claussen, J.~L. Roberts, E.~A. Cornell, and C.~E. Wieman.
+\newblock {Stable Rb-85 Bose-Einstein condensates with widely tunable
+  interactions}.
+\newblock {\em Phys. Rev. Lett.}, {85}({9}):{1795--1798}, {2000}.
 
-\bibitem{Aidelsburger2013}
-M.~Aidelsburger, M.~Atala, M.~Lohse, J.~T. Barreiro, B.~Paredes, and I.~Bloch.
-\newblock Realization of the hofstadter hamiltonian with ultracold atoms in
-  optical lattices.
-\newblock {\em Phys. Rev. Lett.}, 111(18):185301--, October 2013.
+\bibitem{Regal03}
+C.~A. Regal and D.~S. Jin.
+\newblock {Measurement of positive and negative scattering lengths in a Fermi
+  gas of atoms}.
+\newblock {\em Phys. Rev. Lett.}, 90:230404, 2003.
 
-\bibitem{Miyake2013}
-Hirokazu Miyake, Georgios~A. Siviloglou, Colin~J. Kennedy, William~Cody Burton,
-  and Wolfgang Ketterle.
-\newblock Realizing the harper hamiltonian with laser-assisted tunneling in
-  optical lattices.
-\newblock {\em Phys. Rev. Lett.}, 111:185302, Oct 2013.
+\bibitem{OHara02}
+K.~M. O'Hara, S.~L. Hemmer, M.~E. Gehm, S.~R. Granade, and J.~E. Thomas.
+\newblock {Observation of a strongly interacting degenerate Fermi gas of
+  atoms}.
+\newblock {\em Science}, 298(5601):2179--2182, 2002.
 
-\bibitem{Jotzu2014}
-Gregor Jotzu, Michael Messer, Remi Desbuquois, Martin Lebrat, Thomas Uehlinger,
-  Daniel Greif, and Tilman Esslinger.
-\newblock Experimental realization of the topological haldane model with
-  ultracold fermions.
-\newblock {\em Nature}, 515(7526):237--240, Nov 2014.
+\bibitem{Monroe93}
+C.~Monroe, E.~Cornell, C.~Sackett, C.~Myatt, and C.~Wieman.
+\newblock {Measurement of Cs-Cs elastic scattering at \textit{T} =30 $\mu${}K}.
+\newblock {\em Phys. Rev. Lett.}, 70:414--417, 1993.
 
-\bibitem{Aidelsburger2014}
-M~Aidelsburger, M~Lohse, C~Schweizer, M~Atala, J~T Barreiro, S~Nascimb{\`e}ne,
-  N.~R. Cooper, I.~Bloch, and N.~Goldman.
-\newblock {Measuring the Chern number of Hofstadter bands with ultracold
-  bosonic atoms}.
-\newblock {\em Nature Physics}, 11(2):162--166, December 2014.
+\bibitem{DeMarco99}
+B.~DeMarco, J.~L. Bohn, J.~P. Burke, M.~Holland, and D.~S. Jin.
+\newblock Measurement of $\mathit{p}$-wave threshold law using evaporatively
+  cooled fermionic atoms.
+\newblock {\em Phys. Rev. Lett.}, 82:4208--4211, 1999.
 
-\bibitem{Mancini2015}
-M.~Mancini, G.~Pagano, G.~Cappellini, L.~Livi, M.~Rider, J.~Catani, C.~Sias,
-  P.~Zoller, M.~Inguscio, M.~Dalmonte, and L.~Fallani.
-\newblock Observation of chiral edge states with neutral fermions in synthetic
-  hall ribbons.
-\newblock {\em Science}, 349(6255):1510--, Sep 2015.
+\bibitem{Chin10}
+C.~Chin, R.~Grimm, P.~Julienne, and E.~Tiesinga.
+\newblock Feshbach resonances in ultracold gases.
+\newblock {\em Rev. Mod. Phys.}, 82:1225--1286, 2010.
 
-\bibitem{Hafezi2013}
-M~Hafezi, S~Mittal, J~Fan, A~Migdall, and J~M Taylor.
-\newblock {Imaging topological edge states in silicon photonics}.
-\newblock {\em Nat. Photon.}, 7(12):1001--1005, October 2013.
+\bibitem{Wu05}
+S.~Wu, Y.-J. Wang, Q.~Diot, and M.~Prentiss.
+\newblock {Splitting matter waves using an optimized standing-wave light-pulse
+  sequence}.
+\newblock {\em Phys. Rev. A}, 71:043602, 2005.
 
-\bibitem{Celi2014}
-A.~Celi, P.~Massignan, J.~Ruseckas, N.~Goldman, I. B. Spielman,
-  G.~Juzeliunas, and M.~Lewenstein.
-\newblock Synthetic gauge fields in synthetic dimensions.
-\newblock {\em Phys. Rev. Lett.}, 112(4):043001--, Jan 2014.
-
-\bibitem{Stuhl2015}
-B.~K. Stuhl, H.-I. Lu, L.~M. Aycock, D.~Genkina, and I.~B. Spielman.
-\newblock Visualizing edge states with an atomic bose gas in the quantum hall
-  regime.
-\newblock {\em Science}, 349(6255):1514--, Sep 2015.
-
-\bibitem{Aharonov1959}
-Y.~Aharonov and D.~Bohm.
-\newblock Significance of electromagnetic potentials in quantum theory.
-\newblock {\em Phys. Rev.}, 115:485, 1959.
-
-\bibitem{Aharonov1992}
-Yakir Aharonov and Ady Stern.
-\newblock Origin of the geometric forces accompanying berry\char39{}s geometric
-  potentials.
-\newblock {\em Phys. Rev. Lett.}, 69(25):3593--3597, 1992.
-
-\bibitem{Hugel2014}
-Dario H\"{u}gel and Bel\'{e}n Paredes.
-\newblock {Chiral ladders and the edges of quantum Hall insulators}.
-\newblock {\em Phys. Rev. A}, 89(2):023619, 2014.
+\bibitem{Edwards10}
+M.~Edwards, B.~Benton, J.~Heward, and C.~W. Clark.
+\newblock Momentum-space engineering of gaseous bose-einstein condensates.
+\newblock {\em Phys. Rev. A}, 82:063613, 2010.
 
 \end{thebibliography}
