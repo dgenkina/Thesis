@@ -225,11 +225,13 @@ Figure \ref{fig:BirdsEyeApparatus} details the beam paths of the light going thr
 \label{fig:BirdsEyeApparatus}
 \end{figure}
 
-Figure \ref{fig:BirdsEyeApparatus}b show's a bird's eye view of the apparatus, with optics on the main floor breadboard. The slower cooling (solid dark blue) and slower repump (dashed dark blue) are coming in from the left to slow the atoms as they are moving through the Zeeman slower. The remaining four MOT cooling beams, coming from four opposing directions, are shown in red.  They reach the atoms when their flipper mirrrors, $M1-4$, are flipped in. All six flipper mirrors are computer controlled by the same digital channel, so they can be flipped in and out together. Only the beams going in through mirrors $M1$ and $M2$ are accompanied by MOT repump light, dashed red lines. 
+Figure \ref{fig:BirdsEyeApparatus}b show's a bird's eye view of the apparatus, with optics on the main floor breadboard. The slower cooling (solid dark blue) and slower repump (dashed dark blue) are coming in from the left to slow the atoms as they are moving through the Zeeman slower. The remaining four MOT cooling beams, coming from four opposing directions, are shown in red.  They reach the atoms when their flipper mirrrors, $M1-4$, are flipped in. All six flipper mirrors are computer controlled by the same digital channel, so they can be flipped in and out together. Only the beams going in through mirrors $M1$ and $M2$ are accompanied by MOT repump light, dashed red lines. The repump light for \Rb{} (both MOT and slower) comes from a Toptica DL-100 laser. The cooling light (MOT, slower) as well as imaging beams, come from a Toptica TA-100 tapered amplifier system. Both laser are frequency referenced against a master laser, a toptica DL-pro, which is frequency stabalized to a \Rb{} atomic transition via saturation spectroscopy (see section \ref{sec:BECchanges}).
 
-The optical dipole trap beams (solid green) come from the same 1064 nm laser (IPG YDL-30-LP), and are split via an acousto-optic modulator into two orders, which enter from opposite directions and intersect each other at approximately a $90$ degree angle, providing confinement along all three axes. There are three available Raman beams (solid magenta): Raman A, entering past the flipped-out $M2$ mirror, Raman B, at $90$ degrees to Raman A entering past the $M1$ mirror, and Raman C, counter-propagating with Raman A and entering past the $M4$ mirror. For experiments described in Chapters \ref{SynDimChapter,BlochOscChapter}, we used the Raman A and C beams. There is a 1-D optical lattice beam (dashed green), also 1064 nm (IPG YAR-10K-1064-LP-SF, seeded by a pick off from a [FILL IN PART NUMBER]), sent in past the $M2$ mirror and retroreflected on the opposite end of the chamber to form a standing wave pattern. This was also used for experiments in Chapters \ref{SynDimChapter,BlochOscChapter}. There is also another imaging beam, imaging the atoms along the $x-z$ plane, going to a Flea3 camera. 
+The optical dipole trap beams (solid green) come from the same 1064 nm laser (IPG YDL-30-LP), and are split via an acousto-optic modulator into two orders, which enter from opposite directions and intersect each other at approximately a $90$ degree angle, providing confinement along all three axes.  There is a 1-D optical lattice beam (dashed green), also 1064 nm (IPG YAR-10K-1064-LP-SF, seeded by a pick off from an NPPhotonics seed laser), sent in past the $M2$ mirror and retroreflected on the opposite end of the chamber to form a standing wave pattern. This was also used for experiments in Chapters \ref{SynDimChapter,BlochOscChapter}. There is also another imaging beam, imaging the atoms along the $x-z$ plane, going to a Flea3 camera. 
 
-When \K{} atoms are in use, the slower cooling, slower repump, MOT cooling, MOT repump and imaging beams are all a combination of frequencies for both \Rb{} and \K{}, fiber coupled before they were sent to the main experiment table. [DETAIL PART NUMBERS AND FREQUENCIES] In addition, a green plug beam (solid dark green in \ref{fig:BirdsEyeApparatus}b) is used (see section \ref{sec:DFGsequence}). For \K{} experiments detailed in Chapter \ref{SwaveScatteringChapter}, we used a near resonant retroreflected optical lattice beam, shown in dashed dark magenta entering past the $M4$ flipper mirror, coming out past the $M2$ mirror before getting retro-reflected.
+There are three available Raman beams (solid magenta): Raman A, entering past the flipped-out $M2$ mirror, Raman B, at $90$ degrees to Raman A entering past the $M1$ mirror, and Raman C, counter-propagating with Raman A and entering past the $M4$ mirror. The Raman beams are derived from a tunable Coherent MBR-110 Ti:Sapphire laser seeded by a Coherent Verdi V-10 laser. For experiments described in Chapters \ref{SynDimChapter,BlochOscChapter}, we used the Raman A and C beams.
+
+When \K{} atoms are in use, the slower cooling, slower repump, MOT cooling, MOT repump and imaging beams are all a combination of frequencies for both \Rb{} and \K{}, fiber coupled before they were sent to the main experiment table. Both the \K{} cooling and repump lasers are Toptica TA-pro systems, with the repump laser frequency stabalized to the \K{} atomic transition. In addition, a green plug beam (solid dark green in \ref{fig:BirdsEyeApparatus}b) is used (see section \ref{sec:DFGsequence}), derived from a Coherent Verdi V-5 laser. For \K{} experiments detailed in Chapter \ref{SwaveScatteringChapter}, we used a near resonant retroreflected optical lattice beam, shown in dashed dark magenta entering past the $M4$ flipper mirror, coming out past the $M2$ mirror before getting retro-reflected.
 
 \subsection{Magnetic coils}\label{sec:magneticCoils}
 \begin{figure}
@@ -245,119 +247,39 @@ There are three pairs of bias coils, used to cancel constant background fields o
 
 \subsection{Procedure for making a BEC}\label{sec:BECsequence}
 
-In the first step of the BEC making procedure, the atoms starting at the oven are cooled via a Zeeman slower and captured in a Magneto-Optical trap in the sicence chamber. During this step, the Zeeman slower is on, with both the coils and the slower cooling and repump lights on. These beams (dark blue in Figure \ref{fig:BirdsEyeApparatus}b)address the $F=2$ to $F=3$ transition of \Rb{}. At the same time, the flipper mirrors $M1-4$,$M_{bottom}$,$M_{top}$ are flipped in and the MOT cooling and repump beams (red in Figure \ref{fig:BirdsEyeApparatus}) are on. The quad coils are on in anti-Helmholtz configuration with 25 A of current running through them, producing a field gradient of $\frac{dB_z}{dz}\approx13$ Gauss/cm. This step can be set to take anywhere from $\approx0.7$ s to $\approx5$ s depending on how many atoms are necessary.  
+In the first step of the BEC making procedure, the atoms starting at the oven are cooled via a Zeeman slower and captured in a Magneto-Optical trap in the sicence chamber. During this step, the Zeeman slower is on, with both the coils and the slower cooling and repump lights on. These beams (dark blue in Figure \ref{fig:BirdsEyeApparatus}b) are $7.6$ MHz red detuned from the $\ket{F=2,m_F=2}$ to $\ket{F=3,m_F=3}$ transition of \Rb{} ($133$ MHz beat note offset from master laser). At the same time, the flipper mirrors $M1-4$,$M_{bottom}$,$M_{top}$ are flipped in and the MOT cooling and repump beams (red in Figure \ref{fig:BirdsEyeApparatus}) are on. The quad coils are on in anti-Helmholtz configuration with 25 A of current running through them, producing a field gradient of $\frac{dB_z}{dz}\approx13$ Gauss/cm. This step can be set to take anywhere from $\approx0.7$ s to $\approx5$ s depending on how many atoms are needed.  
 
-Next is the optical molasses step. For this step, the Zeeman coils and slower lights are turned off. The quad coil current is also switched off, leaving just the MOT cooling light and only leakage MOT repump light. [LOOK UP MOLASSES DETUNINGS EXACTLY]. This is the sub-doppler cooling stage. Since the repump light is all but off in this step, the atoms are also depumped into the $F=1$ manifold. Then, the atoms are optically pumped into the $\ket{F=1,m_F=-1}$ state to make them trappable by the quadropole field. This is done by turning on the slower repump beam (dashed dark blue in fig. \ref{fig:BirdsEyeApparatus}b) [LOOK UP TIME]. Then, the XZ imaging beam (blue in fig. \ref{fig:BirdsEyeApparatus}b) is briefly turned on to get rid of any remaining $F=2$ atoms. 
+Next is the optical molasses step, during which sub-Doppler cooling of the atoms occurs. For this step, the Zeeman coils and slower lights are turned off. The quad coil current is also switched off, leaving just the MOT cooling light and only leakage MOT repump light. The MOT cooling light is set to $-20.6$ MHz below the the $\ket{F=2,m_F=2}$ to $\ket{F=3,m_F=3}$ transition ($120$ MHz beat-note command). It is then linearly ramped in $19$ ms down to a detuning of $-90.2$ MHz ($50$ MHz beat-note command). Since the repump light is all but off in this step, the atoms are also depumped into the $F=1$ manifold. Then, the atoms are optically pumped into the $\ket{F=1,m_F=-1}$ state to make them trappable by the quadropole field. This is done by turning on the slower repump beam (dashed dark blue in fig. \ref{fig:BirdsEyeApparatus}b) $1$ ms. Then, the XZ imaging beam (blue in fig. \ref{fig:BirdsEyeApparatus}b) is briefly turned on to get rid of any remaining $F=2$ atoms. 
 
-Next, we compress the atoms and perform forced Rf evaporation. To compress, the quad coils arefirst turned on to 130 A. After holding for 20 ms, we sweep the current linearly to 250 A in 200 ms. The forced rf evaporation is then performed by turning on the rf coupling field and sweeping the frequency from 20 MHz to 4 MHz in 4 s [CHECK TIME] to couple the highest energy atoms from $\ket{F=1,m_F=-1}$ to $\ket{F=1,m_F=0}$ and allow them to escape the trap. The slow ramp is designed to allow the system to rethermalize through collisions as the hottest atoms are ejected. During rf evaporation, the crossed optical dipole trap
+Next, we compress the atoms and perform forced Rf evaporation. To compress, the quad coils are first turned on to $130$ A. After holding for 20 ms, we sweep the current linearly to $250$ A in $200$ ms. The forced rf evaporation is then performed by turning on the rf coupling field and sweeping the frequency from $20$ MHz to $4$ MHz in $4$ s to couple the highest energy atoms from $\ket{F=1,m_F=-1}$ to $\ket{F=1,m_F=0}$ and allow them to escape the trap. The slow ramp is designed to allow the system to rethermalize through collisions as the hottest atoms are ejected.  During rf evaporation, the crossed optical dipole trap (ODT) is on at an initial command power of $2.0$ and initial split (command to AOM controlling the power split between the two crossing beams, shown in fig. \ref{fig:BirdsEyeApparatus}b) of $0.01$. This allows any atoms that are cold enough to see the optical trap  to be captured by it.
 
-Then, the atoms are loaded into the crossed optical dipole trap, where further evaporation occurs.
+Then, the atoms are decompressed and loaded into the ODT. The quad current is ramped down to $60$ A exponentially with a time constant of $\tau=1.5$ s in $3$ s. This is the quad current at which the atoms are only barely suspended against gravity by the quadrupole trap. At the same time, the biasZ current is ramped down from $10$ A to $8$ A, lowering the center of the quadrupole trap to the ODT. Then, the atoms are evaporated in the ODT. This is done over the course of $5$ s, ramping down the depth of the ODT and allowing the hottest atoms to escape. During this step, the ODT power is ramped exponentially from the initial command of $2.0$ to a final command of $0.4$, while the split command is ramped up linearly from $0.01$ to $0.65$, effectively turning on the crossing $-1^{st}$ order beam. It is during this evaporation step that the atoms are cooled below the critical temperature and condensed.
 
-% The lack of repump caused the atoms to be optically
-%pumped into the F = 1 ground state. Whe optically pumped the atoms into the
-%|F = 1,mF = −1i for 1 ms state by illuminating them with the slower repumping
-%light. We then turn on the xz imaging probe to blow away any remaining F = 2
-%atoms.
-%We then rapidly turned on a quadrupole magnetic trap with a current of
-%130 A in our large coils in an anti-Helmholtz configuration. After a 20 ms hold,
-%we linearly ramped the current from 130 A to 250 A in 0.2 s to compress the
-%atoms and increase their collision rate. After compression, we turn on our optical
-%dipole trap. For all experiments in this thesis, the beam propagating along
-%ex has the smallest beam waist (See Tab. 4.4 for specific beam waist information)
-%in ez, the direction of gravity. We turned on the dipole trap with most of
-%the power in this beam and at the highest power possible. We turned on our
-%rf magnetic field and linearly ramped the frequency from 22 MHz to 4 MHz in
-%4 s. This flipped the spin of the highest energy atoms and then allowed the
-%remaining atoms to thermalize at a lower temperature. We decompressed the
-%quadrupole trap by ramping the current in the coils from 250 A to 60 A in an
-%exponential ramp with time constant τ = 1.5 s over 3 s. While decompressing,
-%we lowered the atoms into the dipole trap by ramping a smaller bias coil in
-%Helmholtz configuration providing field in ez from 10 A to 8 A. This lowers the
-%quadrupole zero toward the dipole trap.
-%We completed the evaporation to BEC in the optical dipole trap. The
-%quadrupole is still on, just barely compensating for gravity. We evaporated in
-%the optical dipole trap in either 3 s for typical BECs or 5 s for an elongated
-%BEC. For the overall power in the dipole trap, we either used a linear ramp
-%or sometimes we used an “O’Hara” ramp [103] to ramp from the initial power
-%command to the final power command. The O’Hara ramp ramps the dipole potential
-%more rapidly at first, then slows down. Also during this evaporation we
-%linearly ramped the amplitude command to acousto-optic modulator (AOM)
-%controlling the power balance in the two beams of our dipole trap. This further
-%lowered the power in the beam along ex while increasing the power in the ey
-%beam. After evaporation in the dipole trap, we ramped the quad current to 0 A
-%with an exponential ramp with time constant τ = 0.8 s over 5 s. Ramping off the
-%quadrupole continued the evaporation by decreasing the optical trap depth due
-%gravity. This sequence creates a |F = 1,mF = −1i 87Rb BEC in an optical dipole
-%trap.
+Finally, the quad current is ramped exponentially to $0$ A in $5$ s, leaving the atoms optically trapped. Then any desired experiment can be performed on the BEC. For daily checks of the BEC, no experiments are performed and the atoms are released from the trap and allowed to expand in time-of-flight for $16.2$ ms before being absorption imaged in the XY plane by the PIXIS imaging camera, pictured in fig. \ref{fig:BirdsEyeApparatus}b.
 
 \subsection{Changes to apparatus for Rubidium}\label{sec:BECchanges}
 
-Differences from Lauren's thesis:
+\subsubsection{Master laser setup}
 
-    Put master laser setup in
-    PBS cube on XY imaging system
-    Describe Hsin-I's new imaging path
-    Describe extra lens for beam shaping the dipole trap
+\subsubsection{Simultaneous in situ and TOF imaging}
+
+\subsubsection{Alignment imaging path}
+
+\subsubsection{ODT beam shaping}
 
 \subsection{Procedure for making a DFG}\label{sec:DFGsequence}
-Brief description of DFG making procedure (of old)
-%Our Zeeman slower slowed both 87Rb and 40K atomic beams. Because 40K is
-%lighter than 87Rb, the atoms will “bloom” or acquire a transverse velocity at the
-%output of the slower. To increase the number of 40K atoms ultimately captured
-%in the MOT, we cooled the atoms in an orthogonal direction to the slower immediately
-%after the oven, but before the slower. We loaded the 40K MOT first by
-%turning on the slower cooling, slower repump, transverse cooling, MOT cooling,
-%and MOT repump light for 40K, but not 87Rb. After 7 s of 40K MOT loading,
-%we also loaded 87Rb for a 1.5 s of MOT loading. The current in the large, anti-
-%Helmholtz was 25 A, similar to BEC creation.
-%We cooled both species in optical molasses for 2 ms. For 87Rb, we did an
-%abbreviated ramp of the MOT cooling light detuning from 33 MHz to 53 MHz
-%away from resonance. For 40K, we lowered the intensity of the MOT cooling
-%light without modifying its detuning. We optically pumped both species into
-%their maximally stretched magnetically trappable states, |F = 9/2,mF = 9/2i for
-%40K and |F = 2,mF = 2i for 87Rb. 40K had a dedicated optical pumping beam. We
-%used the slower rempump and MOT repump light, as well. For 87Rb, we pulsed
-%on the slower light and both the slower and MOT repump light.
-%Both species were then loaded into a quadrupole magnetic trap with a current
-%of 130 A in our large coils in anti-Helmholtz configuration. The currents in
-%our 3 pairs of Helmholtz bias coils are listed in Tab. 4.2 for both the creation of a
-%DFG and a BEC. Similar to the BEC sequence, we compressed the magnetic trap
-%by linearly ramping the current in in the large coils from 130 A to 160 A. After
-%compression, we cooled our atoms evaporatively via forced rf evaporation,
-%sweeping the rf frequency from 18 MHz to 2 MHz in 10 s. During evaporation,
-%the magnetic trap was plugged by a λ = 532 nm beam, tightly focused to ≈ 30 μm
-%and ≈ 5W in power, providing a repulsive potential around the quadrupole
-%zero to prevent Majorana losses. Since the 40K atoms were spin polarized and
-%therefore only interacted by increasingly suppressed p-wave interactions, they
-%re-thermalized largely due to sympathetic cooling with 87Rb atoms.
-%After the 10 s evaporation in the plugged quadrupole trap, we turned on
-%our crossed beam optical dipole trap at full power (∼ 6W) predominantly in
-%the more tightly focused beam. Both the green plug beam and the optical
-%dipole trap remain on as we decompressed the quadrupole trap by exponentially
-%ramping the current from 160 A to 25.5 A with time constant τ = 1.5 s
-%over 3 s. Next, we evaporated in the optical dipole trap by ramping the relative
-%power balance in the crossed beams to their final balance in 3 s. This reduced
-%the overall dipole trap depth because more power was in a beam with a larger
-%beam waist. We also ramped off the power in the green plug beam during this
-%3 s as well. We simultaneously evaporated from the dipole trap by lowering
-%the overall optical power with an O’Hara ramp and using an exponential ramp
-%to turn off the quadrupole field with time constant τ = 1.5 s over 2 s. At this
-%juncture, we had |F = 2,mF = 2i 87Rb atoms and |F = 9/2,mF = 9/2i 40K atoms in
-%our crossed beam optical dipole trap.
-%We then used adiabatic rapid passage (ARP) to transfer the 87Rb atoms from
-%the |F = 2,mF = 2i state to the |F = 1,mF = +1i ground state via 6.8556 GHz microwave
-%coupling (20.02 MHz from the zero field resonance) followed by ramping
-%the current in the bias ez coils 1 A in 50 ms. This state was chosen to minimize
-%spin changing collisions with 40K atoms during further evaporation [22]. After
-%the ARP, we briefly applied an on-resonant probe laser, ejecting any remaining
-%87Rb atoms in the F = 2 manifold from the trap. We evaporated further in the
-%optical trap again using an O’Hara ramp for 1 s. The optical potential from the
-%dipole trap no longer holds the 87Rb against gravity. We used a second ARP to
-%transfer the 40K atoms into the |F = 9/2,mF = −9/2i state by illuminating the
-%atoms with a 3.3 MHz rf field and sweeping the current in the bias ez coils 5 A in
-%150 ms. At the end of this sequence, we had a DFG of about 75, 000 40K atoms in
-%the |F = 9/2,mF = −9/2i state with temperature ≈ 0.4TF.
+
+To make a degenerate Fermi gas of \K{}, we followed a similar cooling procedure as for making a BEC, with some key differences. First, as mentioned in sec. \ref{sec:Feshbach}, due to the Pauli exclusion principle, spin polarized \K{} atoms cannot undergo \swave collisions, and therefore below a certain temperature have no method to thermalize on their own and cannot be evaporatively cooled. To overcome this problem, we cooled a mixture of \Rb{} and \K{}, effectively using \Rb{} as a collision mechanism to allow the Fermions to thermalize. Second, \K{} is slighly below half the mass of \Rb. This leads to a larger magnitude of transverse velocity for \K{} atoms in the Zeeman slower, leading to a larger fraction of atoms missing the capture region of the MOT. To mitigate this issue, we utilized transverse cooling of \K right before the Zeeman slower. This consisted of two pairs of counter-propagating beams along the \ez{}+\ey{} and \ez{}-\ey{} directions, performing Doppler cooling in the directions perpendicular to propagatuion (not shown in fig. \ref{fig:BirdsEyeApparatus}b). The lower mass of \K{} also leads to a larger number of Majorana losses near the center of the MOT: spin flips that take the atoms out of the trappable states because they are moving too fast to adiabatically follow the changing magnetic field direction \cite{Majorana1932,Sukumar1997, Brink2006}. To mitigate this issue, for cooling \K the center of the quadrupole trap was plugged by a tightly focused green (repulsive) laser beam (dark green in fig. \ref{fig:BirdsEyeApparatus}b).
+
+First, \K{} atoms starting at the oven were cooled via a Zeeman slower and transverse cooling and captured in a MOT for $7$ s. Then, both \K{} and \Rb{} atoms were slowed and MOT loaded for $1.5$ s. The subsequent optical molasses step was only $2$ ms long, with the \Rb{} MOT cooling light ramped linearly from $-20.6$ MHz below the the $\ket{F=2,m_F=2}$ to $\ket{F=3,m_F=3}$ transition ($120$ MHz beat-note command) to $-40.6$ MHz away from resonance ($100$ MHz beat-note command). In this time, the \K{} cooling light was turned down in intensity but the detuning remained unaltered.
+
+Next, \Rb{} was optically pumped into the $\ket{F=2, m_F=2}$ state using the slower cooling beam, while \K{} was optically pumped into the $\ket{F=9/2,m_F=9/2} state using a dedicated optical pumping beam in $250 \mu$s. These are magnetically trappable states, and we subsequently turned on the quad coil current to $130$ A to capture the atoms in the magnetic trap, along with the green plug beam at the center to prevent Majorana losses. Both species were compressed by a linear ramp of the quad current up to $160$ A in $0.5$ s. Then, forced rf evaporation was performed for $10$ s, sweeping the rf frequency linearly from $18$ MHz down to $2$ MHz.
+
+Then, the atoms were decompressed and loaded into the ODT, similarly to the BEC procedure. The ODT was turned on to an initial power of $2$ and an initial split command of $0.01$. The quad current was ramped down to $25.5$ A exponentially with a time constant of $\tau=1.5$ s in $3$ s. The evaporation in the ODT was split into two steps. During the first $3$ s step, the split was ramped linearly to its final command power of $0.65$, putting more power into the (less tightly focused) crossing beam. The green plug beam was ramped off during this step. During the second, $4$ s step, the overall power of the ODT was exponentially ramped down to [CHECK THE INTERMEDIATE ODT COMMAND FOR K], while the quad coil current was ramped exponentially to $0$.
+
+
+We then used adiabatic rapid passage (ARP) to transfer the 87Rb atoms from $\ket{F = 2,m_F = 2}$ to $\ket{F = 1,mF = +1}$ using a microwave coupling field and a $50$ ms ramp in biasZ coil current. Then, we pulsed on the XZ imaging beam to eject any remaining $F=1$ atoms. Then we perfomed one last evaporation step in the ODT, ramping the final power down to [CHECK THE FINAL ODT COMMAND FOR K]. The \Rb{} atoms were no longer suspended against gravity and fell out of the trap. We then were free to perform experiments with the degenerate \K{} cloud. 
 
 \subsection{Current status of Potassium apparatus}
-Differences from Lauren's thesis:
-	    Describe 2D MOT'
+
+At the time of writing, the \K{} part of the apparatus as described is no longer functional. The number of \K{} atoms collected in the MOT has started decaying significantly in January 2014, and by March was almost compeltely gone and could not be resurrected. The specific failure point of the setup was not clear. However, other groups have found that \K{} sources are much more stable, and a higher fraction of the (expensive) \K{} sources was utilized when the atoms were initially cooled with a 2-D MOT rather than a Zeeman slower.  
