@@ -260,6 +260,11 @@ Finally, the quad current is ramped exponentially to $0$ A in $5$ s, leaving the
 \subsection{Changes to apparatus for Rubidium}\label{sec:BECchanges}
 
 \subsubsection{Master laser setup}
+\begin{figure}
+	\includegraphics{"BEC_DFG figures/ApparatusCoils".pdf}
+\caption{}
+\label{fig:ApparatusCoils}
+\end{figure}
 
 \subsubsection{Simultaneous in situ and TOF imaging}
 
@@ -273,7 +278,7 @@ To make a degenerate Fermi gas of \K{}, we followed a similar cooling procedure 
 
 First, \K{} atoms starting at the oven were cooled via a Zeeman slower and transverse cooling and captured in a MOT for $7$ s. Then, both \K{} and \Rb{} atoms were slowed and MOT loaded for $1.5$ s. The subsequent optical molasses step was only $2$ ms long, with the \Rb{} MOT cooling light ramped linearly from $-20.6$ MHz below the the $\ket{F=2,m_F=2}$ to $\ket{F=3,m_F=3}$ transition ($120$ MHz beat-note command) to $-40.6$ MHz away from resonance ($100$ MHz beat-note command). In this time, the \K{} cooling light was turned down in intensity but the detuning remained unaltered.
 
-Next, \Rb{} was optically pumped into the $\ket{F=2, m_F=2}$ state using the slower cooling beam, while \K{} was optically pumped into the $\ket{F=9/2,m_F=9/2} state using a dedicated optical pumping beam in $250 \mu$s. These are magnetically trappable states, and we subsequently turned on the quad coil current to $130$ A to capture the atoms in the magnetic trap, along with the green plug beam at the center to prevent Majorana losses. Both species were compressed by a linear ramp of the quad current up to $160$ A in $0.5$ s. Then, forced rf evaporation was performed for $10$ s, sweeping the rf frequency linearly from $18$ MHz down to $2$ MHz.
+Next, \Rb{} was optically pumped into the $\ket{F=2, m_F=2}$ state using the slower cooling beam, while \K{} was optically pumped into the $\ket{F=9/2,m_F=9/2}$ state using a dedicated optical pumping beam in $250 \mu$s. These are magnetically trappable states, and we subsequently turned on the quad coil current to $130$ A to capture the atoms in the magnetic trap, along with the green plug beam at the center to prevent Majorana losses. Both species were compressed by a linear ramp of the quad current up to $160$ A in $0.5$ s. Then, forced rf evaporation was performed for $10$ s, sweeping the rf frequency linearly from $18$ MHz down to $2$ MHz.
 
 Then, the atoms were decompressed and loaded into the ODT, similarly to the BEC procedure. The ODT was turned on to an initial power of $2$ and an initial split command of $0.01$. The quad current was ramped down to $25.5$ A exponentially with a time constant of $\tau=1.5$ s in $3$ s. The evaporation in the ODT was split into two steps. During the first $3$ s step, the split was ramped linearly to its final command power of $0.65$, putting more power into the (less tightly focused) crossing beam. The green plug beam was ramped off during this step. During the second, $4$ s step, the overall power of the ODT was exponentially ramped down to [CHECK THE INTERMEDIATE ODT COMMAND FOR K], while the quad coil current was ramped exponentially to $0$.
 
@@ -282,6 +287,43 @@ We then used adiabatic rapid passage (ARP) to transfer the 87Rb atoms from $\ket
 
 \subsection{Current status of Potassium apparatus}
 
-At the time of writing, the \K{} part of the apparatus as described is no longer functional. The number of \K{} atoms collected in the MOT has started decaying significantly in January 2014, and by March was almost compeltely gone and could not be resurrected. The specific failure point of the setup was not clear. However, other groups have found that atomic sources are much more stable, and a higher fraction of the (expensive) \K{} sources can be utilized when the atoms were initially cooled with a 2-D MOT rather than a Zeeman slower \cite{Catani2006,UehlingerThesis,Pedrozo2016}. Therefore, rather than attempting to revive the existing set-up, the decision was made to build a 2-D MOT for both \K{} and \Rb{}.
+At the time of writing, the \K{} part of the apparatus as described is no longer functional. The number of \K{} atoms collected in the MOT has started decaying significantly in January 2014, and by March was almost compeltely gone and could not be resurrected. The specific failure point of the setup was not clear. However, other groups have found that atomic sources are much more stable, and a higher fraction of the (expensive) \K{} sources can be utilized when the atoms were initially cooled with a 2-D MOT rather than a Zeeman slower \cite{Catani2006,UehlingerThesis,Pedrozo2016}. Therefore, rather than continuing to attempt to revive the existing set-up, the decision was made to build a 2-D MOT for both \K{} and \Rb{}.
 
-The  
+The design of our 2D MOT is closely based on the design in Thomas Uehlinger's diplome thesis \cite{UehlingerThesis}. The design was developed by Dalia Ornelas, and initially implemented by Marcell Gall before it was taken over by the rest of the RbK team. The schemtaic of the planned vacuum system (with attached optics) is pictured in Figure \ref{fig:2DMOTschematic}. On the left side of the schematic, there are optics directing the pushing beam into a miniconflat viewport. The viewport is part of a cross, with the \K{} and \Rb{} ovens attached to the two ends of the cross, with gate valves allowing one to close off one or both sources from the rest of the vacuum system. From there, the cross attaches to the main 2D MOT cell via a mini-conflat flange. 
+
+The cell is a custom machined stainless steel frame with rectangular anti-reflection (AR) coated windows on four sides and mini-conflat conectors on two ends, pictured in more detail in Figure \ref{fig:2DMOTcellPhoto}. Two aluminum mounting crosses attach two either end of the cell. Four aluminum bars are connected between the crosses, and the main 2D MOT optics are mounted on those four bars. The opposite end of the cell (right in fig. \ref{fig:2DMOTschematic}) sandwiches a differential pumping tube in the mini-conflat connection and connects to another cross. The top of the cross connects to a small ion pump. The bottom connects to a rotatable feed-through mechanism with a 'flag', a square of metal, attached inside. The rotator rotates the flag in and out of the atomic beam path, providing a means of losing off the main chamber from the atomic beam and push beam light. The fourth end of the cross connects to another gate valve, separating the 2D MOT vacuum system from the main experiment chamber. The other end of this gave valve connects to a flange that is meant to connect directly to the main experiment chamber.  
+
+
+\begin{figure}
+	\includegraphics{"BEC_DFG figures/2DMOTschematic".png}
+\caption{Schematic of the 2D MOT setup. The mini-conflat on the right is to be attached to the existing experiment chamber, directing the atomic beam into the 3D MOT. }
+\label{fig:2DMOTschematic}
+\end{figure}
+
+A picture of the stainless cell is shown in Figure \ref{fig:2DMOTcellPhoto}. Attaching the glass windows to the stainless steel frame in a vacuum tight way proved to be quite difficult, and this picture was taken during one of the attempts to do so using epoxy. The clamps around the cell served to keep the windows in place as the epoxy was curing. In the final design, the seal was made with indium, with gaskets custom machined to press the windows onto the cell. We roughly followed the indium sealing method presented in \cite{Weatherill2009}, with gaskets above and below the windows. We also employed pre-squashing, where a metal piece in the shape of the window was first pressed onto the indium wire to flatten it and minimize the amount of pressure that needed to be appied to the glass window.  
+\begin{figure}
+	\includegraphics{"BEC_DFG figures/2DMOTcellPhoto".png}
+\caption{Picture of 2D MOT cell during an attempt to epoxy AR coated windows onto the stainless steel frame. The clamps serve to hold the windows in place while epoxy cures.}
+\label{fig:2DMOTcellPhoto}
+\end{figure}
+
+The main 2D MOT optics direct the cooling and repump beams into the cell from two directions, and retro-reflect them on the other end, producing cooling along those two directions (hence the name 2D MOT). The optical set-up along one of those directions is presented schematically in Figure \ref{fig:2DMOToptics}. The cell is elongated along the atomic beam direction, to maximize the time the atoms are cooled while travelling to the 3D MOT. Because of this, instead of a highly eliptical cooling beam, four MOT beams are launched in a row, almost overlapping, from each of the two directions. This is accomplished by splitting one beam into four with four sequential beam-splitting cubes (BSs). 
+
+The 2D MOT cooling and repump light is first periscoped over from a fiber and lens assembly (designed to shape the beam to be roughly $1$ inch in diameter). It then goes through a half-wave plate (HWP) before entering the first $70/30$ beam splitter. $30\%$ of the light is sent through a quarter-wave plate (QWP) tuned to provide circularly polarized light into the cell. On the other side of the cell, the beam hits another QWP before being retro-reflected back into the cell. Since the beam hits the QWP on the other side of the cell twice, the circular polarization is preserved.  The remaining  $70\%$ of the light goes into the next $70/30$ BS, sending $21\%$ of the total beam power into the second arm going into the cell, to be retro-reflected in the same way. The remaining $49\%$ hits a $50/50$ BS, sending $25.5\%$ of the total beam power into the third retro-reflected arm. The final cube is a polarizing beam-splitter (PBS), and the HWP before the cubes is tuned to ensure all of the light is sent into the cell on this last, fourth, arm. 
+
+The push beam enters from the oven direction and serves to provide some velocity to the atoms along the long direction of the cell to ensure they continue to travel to the 3D MOT, while still providing some cooling along the longitudinal direction. In order to provide this cooling, the push beam is also retr-reflected, with the help of a specially machined differential pumping tube (on the right in fig.  \ref{fig:2DMOToptics}). The differential pumping tube is machined to have a $45^{\circ}$ angled polished end, reflecting all of the light except for the central part towards a retro-reflecting mirror outside the cell. Along the other 2D-MOT cooling direction (up and down in fig.  \ref{fig:2DMOToptics}), this whole set of optics is replicated, with the exception of the push beam retro-reflection.   
+
+\begin{figure}
+	\includegraphics{"BEC_DFG figures/2DMOToptics".pdf}
+\caption{Schematic of 2D MOT optics along one direction. the main cooling and repump beam is split into four parallel arms by four beam splitter cubes. The push beam enters from the oven direction and is retro-reflected via a custom machined and polished differential pumping tube. These optics are mounted on crosses attached to the 2D MOT cell.}
+\label{fig:2DMOToptics}
+\end{figure}
+
+The current 2D-MOT setup is pictured in Figure \ref{fig:Current2DMOTphoto}. The vacuum system has been assembled and successfully pumped down, with a octagonal test chamber in place of the main experimental chamber. This test chamber is intended to be used to send probe light through and detect flourescence to characterize the atomic beam coming out of the 2D MOT. The optics have been assembled and the quarter-wave plates lightly epoxied onto the BS cubes and mirrors, although as can be seen in the picture some have regrettably fallen off. Quadropole coils have been wound around each of the four windows, onto 3D printed coil winding forms. BiasZ coils have also been wound to cancel out stray gradients along the atomic beam direction.
+\begin{figure}
+	\includegraphics{"BEC_DFG figures/Current2DMOTphoto".png}
+\caption{Picture of current 2D MOT apparatus. The vacuum system is in place, optics are (mostly) mounted and coils to generate the quadrupole trap and cancel gradients along the atomic beam direction have been wound.  }
+\label{fig:Current2DMOTphoto}
+\end{figure}
+
+The two Toptica TA-pro systems that were used to provide all \K light in the past are still operational, and need to be re-purposed to provide both 2D MOT and 3D MOT cooling and repump light. A new Toptica TA-pro was also purchased, with the intent to implement gray molasses cooling on the \K D1 line as described in \cite{Fernandes2012}. 
