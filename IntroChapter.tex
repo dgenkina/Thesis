@@ -218,16 +218,17 @@ A photograph of the main experiment is shown in Figure \ref{fig:ExperimentPictur
 \end{figure}
 
 \subsection{Laser beams}\label{sec:laserBeams}
-Figure \ref{fig:BirdsEyeApparatus} details the beam paths of the light going through the atoms. Figure \ref{fig:BirdsEyeApparatus}a shows a side view of the apparatus. The up and down going MOTcooling beams are shown in red, reaching the atoms when the flipper mirrors $M_{top}$ and $M_{bottom}$ are flipped in. The down going probe beam, used for imaging along the $x-y$ axis both in situ and in time-of-flight, is shown in solid blue. The probe beam is split via a polarizing beam splitter cube to allow for both in situ and time-of-flight imagnig of the same cloud, shown in the inset in fig.  \ref{fig:BirdsEyeApparatus}b and described in greater detail in sec. \ref{sec:BECchanges}.  The dashed blue line represents the upward going probe beam introduced for alignment purposes, described in greater detail in sec. \ref{sec:BECchanges}. 
+Figure \ref{fig:BirdsEyeApparatus} details the beam paths of the light going through the atoms. Figure \ref{fig:BirdsEyeApparatus}a shows a side view of the apparatus. The up and down going MOTcooling beams are shown in red, reaching the atoms when the flipper mirrors $M_{top}$ and $M_{bottom}$ are flipped in. The down going probe beam, used for imaging along the $x-y$ axis both in situ and in time-of-flight, is shown in solid blue. The probe beam is split via a polarizing beam splitter cube to allow for both in situ and time-of-flight imagnig of the same cloud, shown in the inset in fig.  \ref{fig:BirdsEyeApparatus}b and described in greater detail in sec. \ref{sec:BECchanges}.  The dashed blue line represents the upward going probe beam introduced for alignment purposes, described in greater detail in sec. \ref{sec:BECchanges}. The kinematic base mirror (green in the figure) is removable, and only inserted when the alignment beam is in use. 
+
 \begin{figure}
 	\includegraphics{"BEC_DFG figures/BirdsEyeApparatus".pdf}
-\caption{Schematic of RbK apparatus. (a) Side view of apparatus. Only beams propagating along the \ez{} direction through the atoms is pictured. (b) Top view of apparatus. Only beams propagating along the $x-y$ plane are shown. Schematic is not to scale and the angles are approximate}
+\caption{Schematic of RbK apparatus. (a) Side view of apparatus. Only beams propagating along the \ez{} direction through the atoms are pictured. (b) Top view of apparatus. Only beams propagating along the $x$-$y$ plane are shown. Schematic is not to scale and the angles are approximate.}
 \label{fig:BirdsEyeApparatus}
 \end{figure}
 
 Figure \ref{fig:BirdsEyeApparatus}b show's a bird's eye view of the apparatus, with optics on the main floor breadboard. The slower cooling (solid dark blue) and slower repump (dashed dark blue) are coming in from the left to slow the atoms as they are moving through the Zeeman slower. The remaining four MOT cooling beams, coming from four opposing directions, are shown in red.  They reach the atoms when their flipper mirrrors, $M1-4$, are flipped in. All six flipper mirrors are computer controlled by the same digital channel, so they can be flipped in and out together. Only the beams going in through mirrors $M1$ and $M2$ are accompanied by MOT repump light, dashed red lines. The repump light for \Rb{} (both MOT and slower) comes from a Toptica DL-100 laser. The cooling light (MOT, slower) as well as imaging beams, come from a Toptica TA-100 tapered amplifier system. Both laser are frequency referenced against a master laser, a toptica DL-pro, which is frequency stabalized to a \Rb{} atomic transition via saturation spectroscopy (see section \ref{sec:BECchanges}).
 
-The optical dipole trap beams (solid green) come from the same 1064 nm laser (IPG YDL-30-LP), and are split via an acousto-optic modulator into two orders, which enter from opposite directions and intersect each other at approximately a $90$ degree angle, providing confinement along all three axes.  There is a 1-D optical lattice beam (dashed green), also 1064 nm (IPG YAR-10K-1064-LP-SF, seeded by a pick off from an NPPhotonics seed laser), sent in past the $M2$ mirror and retroreflected on the opposite end of the chamber to form a standing wave pattern. This was also used for experiments in Chapters \ref{SynDimChapter,BlochOscChapter}. There is also another imaging beam, imaging the atoms along the $x-z$ plane, going to a Flea3 camera. 
+The optical dipole trap beams (solid green) come from the same 1064 nm laser (IPG YDL-30-LP), and are split via an acousto-optic modulator into two orders, which enter from opposite directions and intersect each other at approximately a $90$ degree angle, providing confinement along all three axes.  There is a 1-D optical lattice beam (dashed green), also 1064 nm (IPG YAR-10K-1064-LP-SF, seeded by a pick off from an NPPhotonics seed laser), sent in past the $M2$ mirror and retroreflected on the opposite end of the chamber to form a standing wave pattern. This was also used for experiments in Chapters \ref{SynDimChapter,BlochOscChapter}. There is also another imaging beam, imaging the atoms along the $x$-$z$ plane, going to a Flea3 camera. 
 
 There are three available Raman beams (solid magenta): Raman A, entering past the flipped-out $M2$ mirror, Raman B, at $90$ degrees to Raman A entering past the $M1$ mirror, and Raman C, counter-propagating with Raman A and entering past the $M4$ mirror. The Raman beams are derived from a tunable Coherent MBR-110 Ti:Sapphire laser seeded by a Coherent Verdi V-10 laser. For experiments described in Chapters \ref{SynDimChapter,BlochOscChapter}, we used the Raman A and C beams.
 
@@ -261,16 +262,50 @@ Finally, the quad current is ramped exponentially to $0$ A in $5$ s, leaving the
 
 \subsubsection{Master laser setup}
 \begin{figure}
-	\includegraphics{"BEC_DFG figures/ApparatusCoils".pdf}
+	\includegraphics{"BEC_DFG figures/NewMasterBoard".png}
 \caption{}
-\label{fig:ApparatusCoils}
+\label{fig:NewMasterBoard}
 \end{figure}
 
-\subsubsection{Simultaneous in situ and TOF imaging}
 
 \subsubsection{Alignment imaging path}
 
+\begin{figure}
+	\includegraphics{"BEC_DFG figures/HsinI's imaging path".png}
+\caption{}
+\label{fig:HsinIsImaging}
+\end{figure}
+
+\begin{figure}
+	\includegraphics{"BEC_DFG figures/HsinIsImagingBottom".png}
+\caption{}
+\label{fig:HsinIsImagingBottom}
+\end{figure}
+
 \subsubsection{ODT beam shaping}
+Without any lenses, adjusting the camera for minimal waist size (ie  the focus, hopefully) see 42 x 55 um waist as calculated by the beam profiler camera
+Putting in a 500 mm cylindrical lens. Since the rotating mount is rather large, had to move the XY translator a little closer to the atoms along the beam path. 
+Using the rotation mount to make the beam tight in the vertical and broad in the horizontal. Get 39X 89 um.
+Would like a slightly larger beam waist in the horizontal if possible. Will try a 400 mm lens instead. 
+Get 37 x 115 um. Will try that. 
+
+I understand that I need to put the window in a useful place, but unfortunately the area is getting pretty crowded, and there is only one place I think I can reasonably fit it in - right after the 1st mirror after the cylindrical lens.
+ 
+Looking at it on the beam profiler camera, I can use the vertical knob on the window to steer the beam in the vertical by only about 100 um. 
+However, I can rotate the window by hand to the desired place, and then use the knob as a fine adjust.
+Aligned the beam to be at the same spot on the beam profiler camera where it is without the cylindrical lens or window. The measured beam waists are 37 x 101 um. 
+
+\begin{figure}
+	\includegraphics{"BEC_DFG figures/ODTlensSchematic".png}
+\caption{}
+\label{fig:ODTlensSchematic}
+\end{figure}
+
+\begin{figure}
+	\includegraphics{"BEC_DFG figures/ODTlensGraphs".png}
+\caption{}
+\label{fig:ODTlensGraphs}
+\end{figure}
 
 \subsection{Procedure for making a DFG}\label{sec:DFGsequence}
 
