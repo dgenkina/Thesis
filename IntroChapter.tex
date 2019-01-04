@@ -1,6 +1,6 @@
 \renewcommand{\thechapter}{2}
 
-\chapter{Introduction}
+\chapter{Introduction}\label{chap:Intro}
 
 \section{Bose-Einstein condensation}
 
@@ -207,7 +207,7 @@ The tunability of interactions provided by Feshbach resonances has allowed for c
 
 \section{RbK apparatus}
 
-The rubidium-potassium (RbK) appartus at NIST Gaithersburg has been previously detailed in \cite{Lin2009,KarinaThesis, LaurenThesis}. In this thesis, we will give a brief overview of the apparatus and how it is used to produce BECs of \Rb{} and DFGs of \K{}, and only give detailed documentation for those parts of the apparatus that differ from previous works. 
+The rubidium-potassium (RbK) appartus at NIST Gaithersburg has been previously detailed in \cite{Lin2009,KarinaThesis, AycockThesis}. In this thesis, we will give a brief overview of the apparatus and how it is used to produce BECs of \Rb{} and DFGs of \K{}, and only give detailed documentation for those parts of the apparatus that differ from previous works. 
 
 A photograph of the main experiment is shown in Figure \ref{fig:ExperimentPicture}. This is mounted on an optical table, with the science chamber elevated above the surface of the table. The atoms start at the ovens (off to the right, not in the photograph) and travel down the Zeeman slower until they are trapped in the science chamber. The optical dipole trap laser, as well as the 1-D optical lattice laser, are located on the optical table and coupled into optical fibers, which are output on the main floor of breadboard before being sent towards the atoms. All other lasers are located on other optical table and brought over to the experiment table via optical fibers. 
 
@@ -260,13 +260,21 @@ Finally, the quad current is ramped exponentially to $0$ A in $5$ s, leaving the
 
 \subsection{Changes to apparatus for Rubidium}\label{sec:BECchanges}
 
+In this section, we describe a few of the changes that were made to the apparatus since the writing of Lauren Aycock's thesis\cite{AycockThesis}. This is not an exhaustive list, but rather the most notable changes to the main setup affecting BEC production or adding capabilities to the apparatus. 
+
 \subsubsection{Master laser setup}
+In 2014, the master laser board was replaced by a new version, with a new laser that was not dying. The laser was a Toptica DL-Pro, and it output approximately $80$ mW, allowing for an extra beam arm that was used to imprint a phase shift on half the cloud to produce a soliton in the soliton project [ADD REFERENCE TO POINT IN THESIS HERE]\cite{Aycock2017}.
 \begin{figure}
 	\includegraphics{"BEC_DFG figures/NewMasterBoard".png}
-\caption{}
+\caption{New master board layout. }
 \label{fig:NewMasterBoard}
 \end{figure}
 
+The layout of the new master laser board is shown in Figure \ref{fig:NewMasterBoard}. The board contains saturated absorption spectroscopy to lock the laser frequency relative to the atomic resonance, an ouput port to send to the cooling and repump lasers for beat note locking and monitoring purposes, and an ouput port (partially dismantled in the figure) for any use if necessary. There are two mirrors directly in at the laser output, for easy re-alignment of the whole board if a diode is changed or other internal laser adjustments are made. 
+
+Next, the beam is used for saturated absorption spectroscopy, as describe in section 8.3 of \cite{Foot}. Then, the beam is split into two branches by a polarizing beam splitter cube (PBS). The power split between the branches can be adjusted by a half wavpelate (HWP) preceeding the PBS. One branch is used as the probe beam in saturated absorption (red in the figure). This branch goes through the Rb vapor cell and is then sent to a photodetector. The photodetector reading is sent to a scope for monitoring and to a lock-in amplifier, used to derive the error signal for frequency locking.  The rest of the beam (white) then hits another PBS cube (again preceeded by a HWP to control the power split), splitting off the pump beam (green) for saturated absorption spectroscopy. This beam is sent to an acousto-optic modulator (AOM). This AOM's frequency is modulated by the lock-in amplifier [LOOK UP RELEVANT NUMBERs]. The 0th order out of the AOM is blocked by a razor blade. The 1st order is retro-reflected in a cat's eye configuration \cite{Donley2005}. Note that after retro-reflection, the second pass through the AOM also produces a 0th and 1st order beam. This 0th order beam is not bocked, but continues along the 1st order (pump beam) path at a slightly different angle - care must be taken to avoid aligning this order to counterpropagate with the probe.   The double-passed beam (1st order in both directions, so frequency shifted up twice) is then used as the pump and sent through the Rb vapor cell in the opposite direction of the probe beam.  
+
+The rest of the laser beam (white) then goes through an optical isolator, to avoid any subsequent reflections off of fiber tips or anything else from disturbing the saturated absorption frequency lock. Then, the beam hits another HWP followed by a PBS, splitting off the former soliton beam (yellow). In the figure, the soliton beam launch has been partially dismantled, but can be revived at any moment if needed. The beam was double-passed through an AOM in a cat's eye configuration before being sent into a fiber launch. The rest of the laser power (white) is sent into a fiber that is connected to  a fiber splitter box, providing light for beat note locking of the \Rb{} repump and cooling lasers as well as for monitoring the master laser on a wavementer and Faby-Perot cavity. 
 
 \subsubsection{Alignment imaging path}
 
@@ -283,27 +291,34 @@ Finally, the quad current is ramped exponentially to $0$ A in $5$ s, leaving the
 \end{figure}
 
 \subsubsection{ODT beam shaping}
-Without any lenses, adjusting the camera for minimal waist size (ie  the focus, hopefully) see 42 x 55 um waist as calculated by the beam profiler camera
-Putting in a 500 mm cylindrical lens. Since the rotating mount is rather large, had to move the XY translator a little closer to the atoms along the beam path. 
-Using the rotation mount to make the beam tight in the vertical and broad in the horizontal. Get 39X 89 um.
-Would like a slightly larger beam waist in the horizontal if possible. Will try a 400 mm lens instead. 
-Get 37 x 115 um. Will try that. 
 
-I understand that I need to put the window in a useful place, but unfortunately the area is getting pretty crowded, and there is only one place I think I can reasonably fit it in - right after the 1st mirror after the cylindrical lens.
- 
-Looking at it on the beam profiler camera, I can use the vertical knob on the window to steer the beam in the vertical by only about 100 um. 
-However, I can rotate the window by hand to the desired place, and then use the knob as a fine adjust.
-Aligned the beam to be at the same spot on the beam profiler camera where it is without the cylindrical lens or window. The measured beam waists are 37 x 101 um. 
+In 2015, two projects were being carried out on the apparatus at the same time: the soliton project [PUT REFERENCE TO PAPER HERE]\cite{Aycock2017} and the synthetic dimensions project detailed in chapter \ref{chap:BochOsc}. The soliton project used an elongated BEC, requiring the dipole trap to be highly elongated along one direction, here \ex{} $+$ \ey{}. For this, only the 0th order of the ODT was used and it was made very tight both along the horizontal and vertical directions: with $42$ and $55$ $\mu$m waists, respectivelly. The synthetic dimensions projects suffered from momentum changing collisions, and therefore needed the cloud to be as dilute as possible. For this, the 0th order ODT beam still needed to be tight in the vertical direction to suspend against gravity, but needed to be as wide as possible (while still retaining a detectable atom number) in the horizontal. Therefore, an extra cyllindrical lens on a removable, rotatable mount was added in the beam path to witch between the two configurations. 
+
+
+%Without any lenses, adjusting the camera for minimal waist size (ie  the focus, hopefully) see 42 x 55 um waist as calculated by the beam profiler camera
+%Putting in a 500 mm cylindrical lens. Since the rotating mount is rather large, had to move the XY translator a little closer to the atoms along the beam path. 
+%Using the rotation mount to make the beam tight in the vertical and broad in the horizontal. Get 39X 89 um.
+%Would like a slightly larger beam waist in the horizontal if possible. Will try a 400 mm lens instead. 
+%Get 37 x 115 um. Will try that. 
+%I understand that I need to put the window in a useful place, but unfortunately the area is getting pretty crowded, and there is only one place I think I can reasonably fit it in - right after the 1st mirror after the cylindrical lens.
+%
+%Looking at it on the beam profiler camera, I can use the vertical knob on the window to steer the beam in the vertical by only about 100 um. 
+%However, I can rotate the window by hand to the desired place, and then use the knob as a fine adjust.
+%Aligned the beam to be at the same spot on the beam profiler camera where it is without the cylindrical lens or window. The measured beam waists are 37 x 101 um. 
 
 \begin{figure}
 	\includegraphics{"BEC_DFG figures/ODTlensSchematic".png}
-\caption{}
+\caption{Schematic of beam shaping optics in the path of the 0th order ODT beam, after the split AOM. The new lens, on a removable mount, is cylindrical, shaping the beam along the horizontal axis only. }
 \label{fig:ODTlensSchematic}
 \end{figure}
 
+The location of this new lens is detailed in Figure \ref{fig:ODTlensSchematic}. Without this lens, the beam was sent through a telescope (the $f=10$ and $f=15$ cm lenses [DOESNT MAKE SENSE CHECK IF ONE IS DIVERGENT]) before reaching an $f=25$ cm focusing lens, placed $25$ cm away the center of the chamber to focus the beam at the atoms. The beam waist as a function of propagation distance along this beam path is shown in blue in Figure \ref{fig:ODTlensGraphs} a. This graph was made by Dr. Ian Spielman from a python calculation of gaussian beam optics. According to the calculation, the beam is focused down to a $45$ $\mu$m waist at the atoms located at a displacement of $1400$ mm. 
+
+The additional lens used was an $f=40$ cm cyllindrical lens, rotated in its rotating mount to focus the beam slightly in the horizontal direction. The effect of this lens on the horizontal beam waist along its path was calculated and plotted (again by Ian using his code) in Figure \ref{fig:ODTlensGraphs} b. This plot was made for a $f=75$ cm lens instead of $f=40$ cm, but the qualitative effect is the same. As seen in the figure, the waist of the beam is not significantly impacted by the addition of the lens, but the focus is shifte away from the atoms, resulting in a larger waist at the atoms. The horizontal beam waist at the atoms with the $f=40$ cm lens as measured by a beam profiler camera was $115$ $\mu$m. This was the configuration used in the experiments described in Chapter \ref{chap:BlochOsc}.
+
 \begin{figure}
 	\includegraphics{"BEC_DFG figures/ODTlensGraphs".png}
-\caption{}
+\caption{Beam waist as a function of propagation distance as calculated by Ian Spielman's code.  Graphs also made by Ian Spielman. The atoms are at displacement = $140$ cm. (a) Without additional lens. Blue line represents horizontal beam waist. (b) With an additional $f=75$ cm lens $12$ cm in before the next optic. }
 \label{fig:ODTlensGraphs}
 \end{figure}
 

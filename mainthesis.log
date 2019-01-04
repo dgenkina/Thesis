@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2018.8.16)  3 JAN 2019 16:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2018.8.16)  4 JAN 2019 11:23
 entering extended mode
 **./mainthesis.tex
 (mainthesis.tex
@@ -526,7 +526,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
 \openout5 = `mainthesis.lot'.
 
  [6] (mainthesis.lof [7]
-Overfull \hbox (6.39468pt too wide) in paragraph at lines 15--15
+Overfull \hbox (6.39468pt too wide) in paragraph at lines 18--18
  \OT1/cmr/m/n/12 place, op-tics are (mostly) mounted and coils to gen-er-ate th
 e quadrupole 
  []
@@ -561,7 +561,7 @@ ier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.64 
-      [3] <"BEC_DFG figures/condensation".pdf, id=253, 375.804pt x 216.81pt>
+      [3] <"BEC_DFG figures/condensation".pdf, id=258, 375.804pt x 216.81pt>
 File: "BEC_DFG figures/condensation".pdf Graphic file (type pdf)
 
 <use "BEC_DFG figures/condensation".pdf>
@@ -574,7 +574,7 @@ been already used, duplicate ignored
                    \relax 
 l.72 \begin{equation}
                       [4 <./BEC_DFG figures/condensation.pdf>]
-<"BEC_DFG figures/CondensingAtoms".png, id=284, 426.8748pt x 128.1588pt>
+<"BEC_DFG figures/CondensingAtoms".png, id=289, 426.8748pt x 128.1588pt>
 File: "BEC_DFG figures/CondensingAtoms".png Graphic file (type png)
 
 <use "BEC_DFG figures/CondensingAtoms".png>
@@ -613,7 +613,7 @@ tifier (name{page.7}) has been already used, duplicate ignored
                    \relax 
 l.124 \end{equation}
                      [7]
-<"BEC_DFG figures/InSitu".pdf, id=308, 325.215pt x 433.62pt>
+<"BEC_DFG figures/InSitu".pdf, id=313, 325.215pt x 433.62pt>
 File: "BEC_DFG figures/InSitu".pdf Graphic file (type pdf)
 
 <use "BEC_DFG figures/InSitu".pdf>
@@ -630,7 +630,7 @@ been already used, duplicate ignored
                    \relax 
 l.147 \end{equation}
                      [8] [9 <./BEC_DFG figures/InSitu.pdf>] [10]
-<"BEC_DFG figures/FermiDist".pdf, id=338, 448.07399pt x 216.81pt>
+<"BEC_DFG figures/FermiDist".pdf, id=343, 448.07399pt x 216.81pt>
 File: "BEC_DFG figures/FermiDist".pdf Graphic file (type pdf)
 
 <use "BEC_DFG figures/FermiDist".pdf>
@@ -643,7 +643,7 @@ Overfull \hbox (21.68033pt too wide) in paragraph at lines 175--176
  []
 
 [11] [12 <./BEC_DFG figures/FermiDist.pdf>]
-<"BEC_DFG figures/FeshbachSchematic".png, id=374, 433.62pt x 244.7544pt>
+<"BEC_DFG figures/FeshbachSchematic".png, id=379, 433.62pt x 244.7544pt>
 File: "BEC_DFG figures/FeshbachSchematic".png Graphic file (type png)
 
 <use "BEC_DFG figures/FeshbachSchematic".png>
@@ -679,9 +679,9 @@ LaTeX Warning: Citation `Zwierlein04' on page 15 undefined on input line 206.
 LaTeX Warning: Citation `Lin2009' on page 15 undefined on input line 210.
 
 
-LaTeX Warning: Citation `LaurenThesis' on page 15 undefined on input line 210.
+LaTeX Warning: Citation `AycockThesis' on page 15 undefined on input line 210.
 
-<"BEC_DFG figures/ExperimentPicture".png, id=390, 433.62pt x 338.7054pt>
+<"BEC_DFG figures/ExperimentPicture".png, id=395, 433.62pt x 338.7054pt>
 File: "BEC_DFG figures/ExperimentPicture".png Graphic file (type png)
 
 <use "BEC_DFG figures/ExperimentPicture".png>
@@ -694,7 +694,7 @@ Overfull \hbox (7.2264pt too wide) in paragraph at lines 215--216
  []
 
 [15] [16 <./BEC_DFG figures/ExperimentPicture.png>]
-<"BEC_DFG figures/BirdsEyeApparatus".pdf, id=409, 439.72781pt x 417.3482pt>
+<"BEC_DFG figures/BirdsEyeApparatus".pdf, id=414, 439.72781pt x 417.3482pt>
 File: "BEC_DFG figures/BirdsEyeApparatus".pdf Graphic file (type pdf)
 
 <use "BEC_DFG figures/BirdsEyeApparatus".pdf>
@@ -719,7 +719,7 @@ n input line 233.
 LaTeX Warning: Reference `SwaveScatteringChapter' on page 19 undefined on input
  line 235.
 
-<"BEC_DFG figures/ApparatusCoils".pdf, id=437, 391.30692pt x 169.00339pt>
+<"BEC_DFG figures/ApparatusCoils".pdf, id=442, 391.30692pt x 169.00339pt>
 File: "BEC_DFG figures/ApparatusCoils".pdf Graphic file (type pdf)
 
 <use "BEC_DFG figures/ApparatusCoils".pdf>
@@ -732,168 +732,177 @@ LaTeX Warning: Reference `SwaveScatteringChapter' on page 19 undefined on input
  line 244.
 
 [19] [20 <./BEC_DFG figures/ApparatusCoils.pdf>] [21] [22]
-<"BEC_DFG figures/NewMasterBoard".png, id=567, 433.62pt x 243.7908pt>
+
+LaTeX Warning: Citation `AycockThesis' on page 23 undefined on input line 263.
+
+<"BEC_DFG figures/NewMasterBoard".png, id=572, 433.62pt x 243.7908pt>
 File: "BEC_DFG figures/NewMasterBoard".png Graphic file (type png)
 
 <use "BEC_DFG figures/NewMasterBoard".png>
 Package pdftex.def Info: "BEC_DFG figures/NewMasterBoard".png used on input lin
-e 265.
+e 268.
 (pdftex.def)             Requested size: 433.61894pt x 243.7902pt.
 
-Overfull \hbox (7.2264pt too wide) in paragraph at lines 265--266
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 268--269
 [][] 
  []
 
-<"BEC_DFG figures/HsinI's imaging path".png, id=568, 408.91231pt x 281.05pt>
+[23]
+<"BEC_DFG figures/HsinI's imaging path".png, id=578, 408.91231pt x 281.05pt>
 File: "BEC_DFG figures/HsinI's imaging path".png Graphic file (type png)
 
 <use "BEC_DFG figures/HsinI's imaging path".png>
 Package pdftex.def Info: "BEC_DFG figures/HsinI's imaging path".png used on inp
-ut line 274.
+ut line 277.
 (pdftex.def)             Requested size: 408.9113pt x 281.0493pt.
 
-<"BEC_DFG figures/HsinIsImagingBottom".png, id=569, 1202.4925pt x 966.61125pt>
+<"BEC_DFG figures/HsinIsImagingBottom".png, id=579, 433.62pt x 348.3414pt>
 File: "BEC_DFG figures/HsinIsImagingBottom".png Graphic file (type png)
 
 <use "BEC_DFG figures/HsinIsImagingBottom".png>
 Package pdftex.def Info: "BEC_DFG figures/HsinIsImagingBottom".png used on inpu
-t line 280.
-(pdftex.def)             Requested size: 1202.48956pt x 966.6089pt.
+t line 283.
+(pdftex.def)             Requested size: 433.61894pt x 348.34055pt.
 
-Overfull \hbox (776.09702pt too wide) in paragraph at lines 280--281
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 283--284
 [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 343.01222pt on input line 283.
+LaTeX Warning: Reference `chap:BochOsc' on page 24 undefined on input line 290.
 
-[23] [24 <./BEC_DFG figures/NewMasterBoard.png> <./BEC_DFG figures/HsinI's imag
-ing path.png>] [25 <./BEC_DFG figures/HsinIsImagingBottom.png (PNG copy)>]
+
+[24 <./BEC_DFG figures/NewMasterBoard.png>]
 <"BEC_DFG figures/ODTlensSchematic".png, id=585, 446.6286pt x 142.131pt>
 File: "BEC_DFG figures/ODTlensSchematic".png Graphic file (type png)
 
 <use "BEC_DFG figures/ODTlensSchematic".png>
 Package pdftex.def Info: "BEC_DFG figures/ODTlensSchematic".png used on input l
-ine 299.
+ine 305.
 (pdftex.def)             Requested size: 446.6275pt x 142.13063pt.
 
-Overfull \hbox (20.23495pt too wide) in paragraph at lines 299--300
+Overfull \hbox (20.23495pt too wide) in paragraph at lines 305--306
 [][] 
  []
 
-<"BEC_DFG figures/ODTlensGraphs".png, id=586, 433.62pt x 495.7722pt>
+[25 <./BEC_DFG figures/HsinI's imaging path.png>] [26 <./BEC_DFG figures/HsinIs
+ImagingBottom.png> <./BEC_DFG figures/ODTlensSchematic.png>]
+
+LaTeX Warning: Reference `chap:BlochOsc' on page 27 undefined on input line 312
+.
+
+<"BEC_DFG figures/ODTlensGraphs".png, id=600, 433.62pt x 495.7722pt>
 File: "BEC_DFG figures/ODTlensGraphs".png Graphic file (type png)
 
 <use "BEC_DFG figures/ODTlensGraphs".png>
 Package pdftex.def Info: "BEC_DFG figures/ODTlensGraphs".png used on input line
- 305.
+ 315.
 (pdftex.def)             Requested size: 433.61894pt x 495.77098pt.
 
-Overfull \hbox (7.2264pt too wide) in paragraph at lines 305--306
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 315--316
 [][] 
  []
 
 
-LaTeX Warning: Citation `Majorana1932' on page 26 undefined on input line 312.
+LaTeX Warning: Citation `Majorana1932' on page 27 undefined on input line 322.
 
 
-LaTeX Warning: Citation `Sukumar1997' on page 26 undefined on input line 312.
+LaTeX Warning: Citation `Sukumar1997' on page 27 undefined on input line 322.
 
 
-LaTeX Warning: Citation `Brink2006' on page 26 undefined on input line 312.
+LaTeX Warning: Citation `Brink2006' on page 27 undefined on input line 322.
 
-[26] [27 <./BEC_DFG figures/ODTlensSchematic.png>] [28 <./BEC_DFG figures/ODTle
-nsGraphs.png>] [29]
+[27] [28 <./BEC_DFG figures/ODTlensGraphs.png>] [29]
 
-LaTeX Warning: Citation `Catani2006' on page 30 undefined on input line 325.
+LaTeX Warning: Citation `Catani2006' on page 30 undefined on input line 335.
 
 
-LaTeX Warning: Citation `UehlingerThesis' on page 30 undefined on input line 32
+LaTeX Warning: Citation `UehlingerThesis' on page 30 undefined on input line 33
 5.
 
 
-LaTeX Warning: Citation `Pedrozo2016' on page 30 undefined on input line 325.
+LaTeX Warning: Citation `Pedrozo2016' on page 30 undefined on input line 335.
 
 
-LaTeX Warning: Citation `UehlingerThesis' on page 30 undefined on input line 32
+LaTeX Warning: Citation `UehlingerThesis' on page 30 undefined on input line 33
 7.
 
 
-Overfull \hbox (0.33328pt too wide) in paragraph at lines 327--328
+Overfull \hbox (0.33328pt too wide) in paragraph at lines 337--338
 []\OT1/cmr/m/n/12 The de-sign of our 2D MOT is closely based on the de-sign in 
 Thomas Uehlinger's
  []
 
-[30] <"BEC_DFG figures/2DMOTschematic".png, id=616, 462.0462pt x 361.35pt>
+[30] <"BEC_DFG figures/2DMOTschematic".png, id=625, 462.0462pt x 361.35pt>
 File: "BEC_DFG figures/2DMOTschematic".png Graphic file (type png)
 
 <use "BEC_DFG figures/2DMOTschematic".png>
 Package pdftex.def Info: "BEC_DFG figures/2DMOTschematic".png used on input lin
-e 333.
+e 343.
 (pdftex.def)             Requested size: 462.04506pt x 361.34912pt.
 
-Overfull \hbox (35.65251pt too wide) in paragraph at lines 333--334
+Overfull \hbox (35.65251pt too wide) in paragraph at lines 343--344
 [][] 
  []
 
 
-LaTeX Warning: Citation `Weatherill2009' on page 31 undefined on input line 338
+LaTeX Warning: Citation `Weatherill2009' on page 31 undefined on input line 348
 .
 
-<"BEC_DFG figures/2DMOTcellPhoto".png, id=618, 433.62pt x 243.7908pt>
+<"BEC_DFG figures/2DMOTcellPhoto".png, id=627, 433.62pt x 243.7908pt>
 File: "BEC_DFG figures/2DMOTcellPhoto".png Graphic file (type png)
 
 <use "BEC_DFG figures/2DMOTcellPhoto".png>
 Package pdftex.def Info: "BEC_DFG figures/2DMOTcellPhoto".png used on input lin
-e 340.
+e 350.
 (pdftex.def)             Requested size: 433.61894pt x 243.7902pt.
 
-Overfull \hbox (7.2264pt too wide) in paragraph at lines 340--341
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 350--351
 [][] 
  []
 
 [31] [32 <./BEC_DFG figures/2DMOTschematic.png>] [33 <./BEC_DFG figures/2DMOTce
 llPhoto.png>]
-<"BEC_DFG figures/2DMOToptics".pdf, id=637, 433.62pt x 233.09586pt>
+<"BEC_DFG figures/2DMOToptics".pdf, id=645, 433.62pt x 233.09586pt>
 File: "BEC_DFG figures/2DMOToptics".pdf Graphic file (type pdf)
 
 <use "BEC_DFG figures/2DMOToptics".pdf>
 Package pdftex.def Info: "BEC_DFG figures/2DMOToptics".pdf used on input line 3
-52.
+62.
 (pdftex.def)             Requested size: 433.61894pt x 233.09528pt.
 
-Overfull \hbox (7.2264pt too wide) in paragraph at lines 352--353
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 362--363
 [][] 
  []
 
-<"BEC_DFG figures/Current2DMOTphoto".png, id=639, 433.62pt x 243.7908pt>
+<"BEC_DFG figures/Current2DMOTphoto".png, id=647, 433.62pt x 243.7908pt>
 File: "BEC_DFG figures/Current2DMOTphoto".png Graphic file (type png)
 
 <use "BEC_DFG figures/Current2DMOTphoto".png>
 Package pdftex.def Info: "BEC_DFG figures/Current2DMOTphoto".png used on input 
-line 359.
+line 369.
 (pdftex.def)             Requested size: 433.61894pt x 243.7902pt.
 
-Overfull \hbox (7.2264pt too wide) in paragraph at lines 359--360
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 369--370
 [][] 
  []
 
-[34 <./BEC_DFG figures/2DMOToptics.pdf>]
 
-LaTeX Warning: Citation `Fernandes2012' on page 35 undefined on input line 364.
+LaTeX Warning: Citation `Fernandes2012' on page 34 undefined on input line 374.
 
 
-) [35 <./BEC_DFG figures/Current2DMOTphoto.png>] (mainthesis.bbl
+) [34] [35 <./BEC_DFG figures/2DMOToptics.pdf> <./BEC_DFG figures/Current2DMOTp
+hoto.png>] [36] (mainthesis.bbl
 Underfull \hbox (badness 2503) in paragraph at lines 10--14
 []\OT1/cmr/m/n/12 Daniel Adam Steck.  Ru-bid-ium 87 d line data.  Avail-able on
 -line,
  []
 
-[36
+[37
 
-] [37])
+] [38])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 159.
- [38]
+ [39]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 159.
  (mainthesis.aux (Abstract.aux) (Titlepage.aux) (Copyright.aux)
 (IntroChapter.aux))
@@ -911,33 +920,30 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 159.
  ) 
 Here is how much of TeX's memory you used:
- 7369 strings out of 493333
- 106227 string characters out of 3139191
- 208220 words of memory out of 3000000
- 10574 multiletter control sequences out of 15000+200000
+ 7373 strings out of 493333
+ 106272 string characters out of 3139191
+ 208304 words of memory out of 3000000
+ 10578 multiletter control sequences out of 15000+200000
  12942 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,8n,34p,1641b,447s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{subsubsection.1.3.4.4} has been referenced but do
-es not exist, replaced by a fixed one
-
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmti12.pfb>
-Output written on mainthesis.pdf (46 pages, 8589073 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmti12.pfb>
+Output written on mainthesis.pdf (47 pages, 7489794 bytes).
 PDF statistics:
- 763 PDF objects out of 1000 (max. 8388607)
+ 773 PDF objects out of 1000 (max. 8388607)
  128 named destinations out of 1000 (max. 500000)
  222 words of extra memory for PDF output out of 10000 (max. 10000000)
 
