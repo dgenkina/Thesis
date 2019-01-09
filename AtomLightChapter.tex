@@ -4,7 +4,7 @@
 
 \section{Atomic structure}
 
-Alkali atoms (those in the first column of the periodic table) are the most amenable to laser cooling because their energy level structure is relatively simple. It can be understood as primarily the energy state of the single electron in the outer shell, interacting with the rest of the atom---the nucleus and all the other electrons---as a whole. The quantum numbers that describe the energy levels of the atom are the overall energy of the orbital occupied by the outermost electron $N$, that electron's spin $S$, the orbital angular momentum $L$, and finally the nuclear spin $I$. The work described in this thesis was done with alkali species \Rb{} and \K{}.
+Alkali atoms (those in the first column of the periodic table) are the most amenable to laser cooling because their energy level structure is relatively simple. It can be understood as primarily the energy state of the single electron in the outer shell, interacting with the rest of the atom---the nucleus and all the other electrons---as a whole. The quantum numbers that describe the energy levels of the atom are the radial quantum number of the outermost electron $N$, that electron's spin $S$, the orbital angular momentum $L$, and finally the nuclear spin $I$. The work described in this thesis was done with alkali species \Rb{} and \K{}.
 
 \subsection{Fine and hyperfine sturcutre}
 
@@ -68,9 +68,9 @@ From this we can get a better picture of the shifts at low fields, where $\mu_B 
 \end{equation}
 We recognize the term linear in $mx$,  $E_{hfs}mx/(2I+1) = (g_J-g_I)\mu_B B m/(2I+1)$. In addition, there is a term quadratic in $mx$:
 \begin{equation}
-\Delta E_{hfs} \frac{m^2x^2}{2I+1)^2} = \frac{(g_J-g_I)^2 \mu_B^2 B^2 m^2}{\Delta E_{hfs} (2I+1)^2} = \epsilon(B) m,
+\Delta E_{hfs} \frac{m^2x^2}{2I+1)^2} = \frac{(g_J-g_I)^2 \mu_B^2 B^2 m^2}{\Delta E_{hfs} (2I+1)^2} = \epsilon(B) m^2,
 \end{equation}
-where in the last term we have defined $\epsilon$, the magnitude of this 'quadratic' Zeeman shift. For the magnetic field strengths used in experiments described in this thesis, the linear term plus quadratic correction are sufficient for describing the energy levels.
+where in the last term we have defined $\epsilon(B)$, the magnitude of this 'quadratic' Zeeman energy shift. For the magnetic field strengths used in experiments described in this thesis, the linear term plus quadratic correction are sufficient for describing the energy levels.
 %
 %. Here $\mu_B$ is the Bohr magneton, and $g_J$ and $g_I$ are Lande g-factors. Since $g_J\gg g_I$, at high fields the nuclear spin interaction becomes small compared to the total energy shift, and the levels are grouped according to their $m_J$ quantum number, as seen in Figure \ref{fig:hyperfineSteck}.
 %	
@@ -84,16 +84,65 @@ where $\hbar \omega_z = \mu_B g_F B_z/\hbar$, and the kinetic energy Hamiltonian
 
 \section{Near-resonant atom-light interaction}\label{chap:2sec:atomLight}
 
-In this section, we will assume the atom can be treated as a two-level system: one with a ground and excited atomic state, with an energy difference of energy difference $\hbar\omega_0$. When such an atom, starting in the ground state, is illuminated by a laser beam with frequency $\hbar\omega_{\rm{L}}$, there are three kinds of transitions that occur: during aborption the atom aborbs a photon from the laser and goes from the ground to the excited state; during stimulated emission, the atom emits a photon into the field of the laser beam and jump from the excited to the ground state; during spontaneous emission, the atom decays to the ground state from the excited state with no help from the laser, emitting into a random vacuum mode. Stimulated emission results in coherent light co-propagating with the laser beam, while spontaneous emission results in light scattering incoherently in any direction. The rate of spontaneous emission from an excited state is given by the natural transition linewidth of the transition $\Gamma$. 
+In this section, we will assume the atom can be treated as a two-level system: one with a ground and excited atomic state, with an energy difference of energy difference $\hbar\omega_0$. When such an atom, starting in the ground state, is illuminated by a laser beam with frequency $\hbar\omega_{\rm{L}}$, there are three kinds of transitions that occur: during aborption the atom aborbs a photon from the laser and goes from the ground to the excited state; during stimulated emission, the atom emits a photon into the field of the laser beam and jump from the excited to the ground state; during spontaneous emission, the atom decays to the ground state from the excited state with no help from the laser, emitting into a random vacuum mode. Stimulated emission results in coherent light co-propagating with the laser beam, while spontaneous emission results in light scattering incoherently in any direction. The rate of spontaneous emission from an excited state is given by the natural transition linewidth of the atomic transition $\Gamma$. 
 
 \subsection{Rabi oscillations}
 
-On timescales short compared to $1/\Gamma$, spontaneous emission can be ignored, and an atom undergoes coherent Rabi oscillations between the ground and excited states via cycles of absorption and stimulated emission\cite{LCT}. Taking $c_g$ and $c_e$ to be the time-dependent coefficients multiplying the eigenstate wavefuntions of the ground and excited state respectively, and assuming the atom starts in the ground state $c_g(t=0)=1$, the excited state population is given by
+On timescales short compared to $1/\Gamma$, spontaneous emission can be ignored, and an atom undergoes coherent Rabi oscillations between the ground and excited states via cycles of absorption and stimulated emission\cite{LCT}.  Let us consider the Hamiltonian 
 \begin{equation}
-c_e(t)=-i\frac{\Omega}{\Omega'}{\rm sin}\left(\frac{\Omega't}{2}\right)e^{-i\delta t/2},
+H=H_0 + H_{\rm L}(t),
 \end{equation}
-where $\Omega$ is the Rabi frequency given by $\Omega^2 = \frac{\Gamma\lambda_L^3}{h(2\pi)^3}I$, with $\lambda_L$ as the laser wavelength, $h$ as Plank's constant and $I$ as the laser intensity,  $\Omega'=\sqrt{\Omega^2+\delta^2}$ is the generalized Rabi frequency and $\delta=\omega_0-\omega_{\rm{L}}$ is the detuniong of the laser from atomic resonance. 
+where $H_0$ is the bare atomic Hamiltonian and $H_{\rm L}$ is the interaction with the laser beam. We can write the wavefunction $\Psi$ as a linear combination of the two eignestates (for a two-level atom) of the bare Hamiltonian as 
+\begin{equation}
+\Psi = c_g(t)\phi_g ({\bf r})e^{-i\omega_g t} + c_e(t)\phi_e ({\bf r})e^{-i\omega_e t},
+\end{equation}
+where $c_g(t)$ and $c_e(t)$ are the time-dependent coefficients multiplying the eigenstate wavefuntions $\phi_g$ and $\phi_e$ of the ground and excited state respectively, and ${\bf r}$ is the spatial cooridnate. Absorbing any diagonal elements of $H_{\rm L}$ into $H_0$, multiplying both sides of the Schroedinger equation from the left by $\psi_j$ and integrating over ${\bf r}$, we can write down the Schroedinger equation as two coupled equations:
+\begin{equation}
+i\hbar\frac{dc_g(t)}{dt} = c_e(t) H_{\rm L}^{ge}(t)e^{-i\omega_0t}
+\end{equation}
+and 
+\begin{equation}
+i\hbar\frac{dc_e(t)}{dt} = c_g(t) H_{\rm L}^{eg}(t)e^{i\omega_0t},
+\end{equation}
+where $ H_{\rm L}^{ge}(t)$ is the off-diagonal element of the laser coupling Hamiltonian that couples the excited to the ground state and  $H_{\rm L}^{ge}(t)= H_{\rm L}^{eg*}(t)$. This coupling Hamiltonian can be written in terms of the electric field produced by the laser beam coupling to the electric dipole moment of the atom as
+\begin{equation}
+ H_{\rm L}^{ge}(t) = \hbar \Omega {\rm cos}(kz - \omega_{\rm L} t)
+\end{equation}
+with
+\begin{equation}
+\Omega = \frac{-eE}{\hbar}\int \phi_g({\bf r}) {\bf r} \phi_e ({\bf r}) dr
+\end{equation}
+the Rabi frequency, characterizing the coupling strength between the laser field (with amplitude $E$) and the atom. Here, $e$ is the charge of the electron. The Rabi frequency can also be related to the natural linewidth of the atomic transition $\Gamma$ via $\Omega^2 = \frac{\Gamma\lambda_L^3}{h(2\pi)^3}I$, with $\lambda_L$ as the laser wavelength, $h$ as Plank's constant and $I$ as the laser intensity.
 
+To solve this Schroedinger equation, we make the traditional transformation to the rotating frame:
+\begin{align}
+c'_g(t) & = c_g(t)\\
+c'_e(t) & = c_e(t) e^{-i\delta t}, 
+\end{align}
+where $\delta = \omega_0 - \omega_{\rm L}$ is the detuning of laser light from resonance. In this frame, we can write the atom-light Hamiltonian in the $\begin{pmatrix} c'_g \\ c'_e \end{pmatrix}$ basis as:
+\begin{equation}
+H = \hbar \begin{pmatrix} -\delta/2 & \Omega/2 \\ \Omega/2 & \delta/2 \end{pmatrix}.
+\label{eqn:TwoLevelHam}
+\end{equation}
+In the limit of no coupling, $\Omega = 0$, in the rotating frame the eigenenegies are $E_{\pm} = \pm \hbar \delta/2$. For non-zero coupling, finding the eigenvalues of H gives 
+\begin{equation}
+E_{\pm} = \pm \hbar \sqrt{\delta^2 + \Omega^2}/2.
+\label{eqn:TwoLevelEnergy}
+\end{equation}
+The eigenenrgies are shifted in the presence of the light. 
+
+Assuming the atom starts in the ground state $c_g(t=0)=1$, we can solve the Shroedinger equation with the above Hamiltonian
+\begin{equation}
+i\hbar \frac{d}{dt} \begin{pmatrix} c'_g \\ c'_e \end{pmatrix} = H \begin{pmatrix} c'_g \\ c'_e \end{pmatrix}
+\end{equation}
+we obtain the oscillating excited state population 
+\begin{equation}
+c'_e(t) = -i \frac{\Omega}{\sqrt{\Omega^2 + \delta^2}}{\rm sin}\left(\frac{\sqrt{\Omega^2 + \delta^2}t}{2}\right),
+\label{eq:Rabi}
+\end{equation} 
+known as Rabi oscillations. The frequency of these oscillations is the generalized Rabi frequency $\Omega'=\sqrt{\Omega^2 + \delta^2}$. The amplitude of the oscillation is maximum when the laser is on-resonance, $\delta=0$. As the detuning increases, the contrast in excited and ground populations decreases, while the frequency of the oscillation increases. 
+
+\subsection{Scattering}
 In the regime where spontaneous emission cannot be ignored, Rabi oscillations of each individual atom are intermittently interrupted by decay to the ground state. Averaging over an atomic ensamble, on the time scale of a single Rabi oscillation the overall excited state population reaches a steady state, and the rate of spontaneous emission becomes constant. Since during spontaneous emission the ejected photon can go into any vacuum mode, this process can be thought of as the scattering of photons by the atoms. This scattering rate is given by\cite{LCT}
 \begin{equation}
 \gamma_{\rm{sc}}= \frac{\Gamma}{2} \frac{I/I_{\rm{sat}}}{1+4(\delta/\Gamma)^2 +I/I_{\rm{sat}}},
@@ -101,38 +150,35 @@ In the regime where spontaneous emission cannot be ignored, Rabi oscillations of
 \end{equation}
 where $I_{\rm{sat}}$ is the saturation intensity. This is the intensity at which the timescale of spontaneous emission matches the Rabi oscillation rate, reducing the capacity for absorption of extra light.   
 
-
-
 \subsection{Adiabatic rapid passage}
+
+Suppose there is a two-level atom in its ground state that an experimentalist wants to transfer into the excited state. To transfer it with perfect fidelity using Rabi oscillations, one would need a perfectly on-resonant beam and very percise timing to shut off the coupling field at the maximum of the excited state population. This is challenging and not very stable to small perturbations in background field. A more robust technique is known as adiabatic rapid passage. 
+
+Suppose the two energy levels of the atom are sensitive to some external parameter. Commonly (as in the case with hyperfine sublevels), they are sensitive to an external magnetic field $B$, and in the small field limit are linear in $B$. Therefore, the detuning that goes into the Hamiltonian in eqn. \ref{eqn:TwoLevelHam} becomes $\hbar\delta = A*B - \hbar\omega_{\rm L}$, where $A$ is the coupling constant in the hyperfine (or other) Hamiltonian.   In the limit of zero coupling strength, diagonalizing the Hamiltonian amounts to calculating the eigenergies in the rotating frame as a function of the control parameter $B$. These are represented in black in figure \ref{fig:ARPfigure}. Note that the two levels cross each other when their energy difference matches $\hbar\omega_{\rm L}$, on resonance.
+\begin{figure}
+	\includegraphics{"Chapter4 Figures/ARPfigure".pdf}
+\caption{Adiabatic rapid passage (ARP). Black lines represent energies of the ground and excited state, in the rotating frame, with zero coupling. Blue line represent these bands with rf coupling turned on.}
+\label{fig:ARPfigure}
+\end{figure}
+
+Once the coupling field is turned on (in the case of the hyperfine interaction, and rf-field), the two levels split near the resonance and an avoided crossing appears, as seen in blue in Figure \ref{fig:ARPfigure}. Crucially, away from resonance towards the left, the bottom coupled state overlaps closely with the uncoupled (black state). Far from resonance, the ground state is largely unaffected by the presence of light. On the other hand, far from the resonance on the right, the lower coupled state overlaps almost perfectly with the excited uncoupled state. Adiabatic rapid passage (ARP) takes advantage of this change.
+
+The ARP protocol is as follows. Start at field
 
 \section{Far-off resonant atom-light interaction}
 
-	As described in section \ref{chap:2sec:atomLight}, on timescales where spontaneous emission can be neglected, two-level atoms exposed to laser radiation undergo coherent Rabi oscillations between the two levels. Starting with $c_g$ and $c_e$ as the time-dependent coefficients multiplying the eigenstate wavefuntions of the ground and excited state respectively, and assuming the atom starts in the ground state $c_g(t=0)=1$, we make the traditional transformation to the rotating frame:
-\begin{align}
-c'_g(t) & = c_g(t)\\
-c'_e(t) & = c_e(t) e^{-i\delta t}, 
-\end{align}
-where $\delta$ is the detuning of laser light from resonance. In this frame, we can write the atom-light Hamiltonian in the $\begin{pmatrix} c'_g \\ c'_e \end{pmatrix}$ basis as:
+	We can infer the behavior of atoms in a far-detuned laser field by taking the near resonant solutions from eqns. \ref{eqn:TwoLevelEnergy} and \ref{eq:Rabi} in the limit $\delta \gg \Omega$. First, looking at the excited state population in eqn. \ref{eq:Rabi}, the amplitude of the excited state population oscillation approaches zero. Therefore, as expected, no absorption of the light actually takes place and the atom remains in the ground state. 
+	However, the light still effects the atom by shifting the eigenenergies via eqn. \ref{eqn:TwoLevelEnergy}. Recalling that the bare eigenenrgies in the rotating frame are given by $E_{\pm}=\pm \hbar\delta/2$, the energy shift from bare is given by
 \begin{equation}
-H = \hbar \begin{pmatrix} -\delta/2 & \Omega/2 \\ \Omega/2 & \delta/2 \end{pmatrix},
+\Delta E_{\pm} = \pm\hbar\sqrt{\delta^2+\Omega^2}/2 -\pm \hbar\delta/2
 \end{equation}
-where $\Omega$ is the coupling strength, also known as the Rabi frequency. In the limit of no coupling, $\Omega = 0$, in the rotating frame the eigenenegies are $E_{\pm} = \pm \hbar \delta/2$. For non-zero coupling, finding the eigenvalues of H gives $E_{\pm} = \pm \hbar \sqrt{\delta^2 + \Omega^2}/2$. Therefore, the bare (without light) eigenenrgies are shifted in the presence of the light. 
-
-	For a far detuned laser beam, one expects that no absorption of the light will actually take place, and the atom will remain entirely in the ground state. Indeed, solving the Shroedinger equation with the above Hamiltonian
+Expanding the energy shift in the small parameter $\Omega/\delta$, we obtain the shifted energies $E_{\pm} = \pm \hbar \sqrt{\delta^2 + \Omega^2}/2 \approx \pm (\delta/2 + \Omega^2/4\delta)$. The shift from bare energy levels is thus 
 \begin{equation}
-i\hbar \frac{d}{dt} \begin{pmatrix} c'_g \\ c'_e \end{pmatrix} = H \begin{pmatrix} c'_g \\ c'_e \end{pmatrix}
-\end{equation}
-we obtain the oscillating excited state population 
-\begin{equation}
-c'_e(t) = -i \frac{\Omega}{\sqrt{\Omega^2 + \delta^2}}{\rm sin}\left(\frac{\sqrt{\Omega^2 + \delta^2}t}{2}\right),
-\end{equation}
-where the amplitude of the oscillation approches zero in the limit $\Omega \ll \delta$. Thus, the only effect of the light in this regime is to shift the eigenenergies of the ground and excited states. Expanding the energies in the small parameter $\Omega/\delta$, we obtain the shifted energies $E_{\pm} = \pm \hbar \sqrt{\delta^2 + \Omega^2}/2 \approx \pm (\delta/2 + \Omega^2/4\delta)$. The shift from bare energy levels is thus 
-\begin{equation}
-\Delta E_{\pm} = \pm \Omega^2/4\delta.
+\Delta E_{\pm} \approx \pm \hbar(\delta/2 + \Omega^2/4\delta)-\pm \hbar\delta/2 = \pm \hbar \Omega^2/4\delta.
 \end{equation}
 This laser intensity dependent energy shift is called the AC Stark shift, and is the basis of most laser created potentials for cold atoms. 
 	
-	For the ground state, and a red detuned laser beam (where the laser frequency is lower than the resonant frequency), this creates energy minima in locations of maximal laser intensity. For the lattice described in this chapter, as well as for the trapping of our atoms in the final stages of cooling, we use high power (up to 10 W) lasers with wavelength $\lambda_L = 1064 $ nm. 
+For the ground state, and a red detuned laser beam (where the laser frequency is lower than the resonant frequency), this creates energy minima in locations of maximal laser intensity. For the lattice described in this chapter, as well as for the trapping of our atoms in the final stages of cooling, we use high power (up to 10 W) lasers with wavelength $\lambda_L = 1064 $ nm. 
 
 \section{Absorption imaging}\label{sec:absorptionImaging}
 

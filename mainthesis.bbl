@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{1}
 
 \bibitem{Steck}
 Daniel~Adam Steck.
@@ -12,12 +12,6 @@ T.~G. Tiecke.
 \newblock Available online,
   http://www.tobiastiecke.nl/archive/PotassiumProperties.pdf, May 2011.
 \newblock v1.02.
-
-\bibitem{Karina2012}
-K.~Jim\'enez-Garc\'{\i}a, L.~J. LeBlanc, R.~A. Williams, M.~C. Beeler, A.~R.
-  Perry, and I.~B. Spielman.
-\newblock Peierls substitution in an engineered lattice potential.
-\newblock {\em Phys. Rev. Lett.}, 108:225303, May 2012.
 
 \bibitem{BreitRabi}
 G.~Breit and I.~I. Rabi.
@@ -46,22 +40,16 @@ Karina Jimenez-Garcia.
 \newblock PhD thesis, Joint Quantum Institute, National Institute of Standards
   and Technology, and the University of Maryland, 2012.
 
+\bibitem{Karina2012}
+K.~Jim\'enez-Garc\'{\i}a, L.~J. LeBlanc, R.~A. Williams, M.~C. Beeler, A.~R.
+  Perry, and I.~B. Spielman.
+\newblock Peierls substitution in an engineered lattice potential.
+\newblock {\em Phys. Rev. Lett.}, 108:225303, May 2012.
+
 \bibitem{SteckTextbook}
 Daniel~Adam Steck.
 \newblock Quantum and atom optics.
 \newblock Available online at http://steck.us/teaching, January 2015.
 \newblock revision 0.12.2.
-
-\bibitem{Genkina2015}
-D.~Genkina, L.~M. Aycock, B.~K. Stuhl, H-I Lu, R.~A. Williams, and I.~B.
-  Spielman.
-\newblock Feshbach enhanced s-wave scattering of fermions: direct observation
-  with optimized absorption imaging.
-\newblock {\em New Journal of Physics}, 18:013001, Dec 2015.
-
-\bibitem{LJLthesis}
-Lindsey~J. LeBlanc.
-\newblock {\em {Exploring many-body physics with ultracold atoms}}.
-\newblock PhD thesis, University of Toronto, 2011.
 
 \end{thebibliography}
