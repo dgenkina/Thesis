@@ -2,9 +2,91 @@
 
 \chapter{Atom Light Interactions}
 
+\section{Atomic structure}
+
+Alkali atoms (those in the first column of the periodic table) are the most amenable to laser cooling because their energy level structure is relatively simple. It can be understood as primarily the energy state of the single electron in the outer shell, interacting with the rest of the atom---the nucleus and all the other electrons---as a whole. The quantum numbers that describe the energy levels of the atom are the overall energy of the orbital occupied by the outermost electron $N$, that electron's spin $S$, the orbital angular momentum $L$, and finally the nuclear spin $I$. The work described in this thesis was done with alkali species \Rb{} and \K{}.
+
+\subsection{Fine and hyperfine sturcutre}
+
+The spin orbit interaction, or coupling between $L$ and $S$, give rise to the fine structure of the atom. This is the splitting of energies according to the quantum number $J$, where the operator $\textbf{J}=\textbf{L}+\textbf{S}$ and $|L - S| \leq J \leq |L + S|$.  The ground state of \Rb{}, in term notation $N^{2S+1}L_J$ is $5^2S_{1/2}$, where $S$ is orbital notation indicating $L=0$. Since $L=0$, the ground state only has one possible value of $J=1/2$, and there is no ground state hyperfine splitting. The first excited state $5^2P_J$ has orbital angular momentum $L=1$ (as indicated by $P$ in orbital notation. Therefore, $J$ can take on two different values: $1/2$ and $3/2$, producing a hyperfine splitting between the $5^2P_{1/2}$ and $5^2P_{3/2}$. The energy splitting between the ground $5^2S_{1/2}$ and lower excited $5^2P_{1/2}$ level is conventionally called the $D1$ line, and the splitting between $5^2S_{1/2}$ and  $5^2P_{3/2}$ is the $D2$ line. For other alkalis, including \K{}, the ground state structure is identical and only the $N$ value is different. Therefore, even though their energies vary, $D1$ and $D2$ lines feature in all alkalis.
+
+\begin{figure}
+	\includegraphics{"Chapter2 Figures/RbKatomicStruct".pdf}
+\caption{Atomic structure of the ground and first excites states, with fine and hyperfine splittings. (a)\Rb{}. Values from \cite{Steck}. (b). \K{}. Values from \cite{Tiecke}.}
+\label{fig:RbKatomicStruct}
+\end{figure}
+
+There is also a contribution from the nuclear spin $\mathbf{I}$, which gives rise to hyperfine structure of the states. For \Rb{}, $I=3/2$ and for \K{}, $I=4$. The total spin, including nuclear spin, is indicated by the quantum number $F$, and $|J - I| \leq F \leq |J + I|$. The interaction with the nuclear spin splits the ground state of \Rb{} into two manifolds, $F=1$ and $F=2$. Similarly for \K{}, it splits the ground state into $F=9/2$ and $F=7/2$ manifolds. The structure of the ground and first excited states of \Rb{} and \K{}, including both the fine and hyperfine splittings, is diagrammed in Figure \ref{fig:RbKatomicStruct}. Note that the $D1$ and $D2$ transitions are in the optical regime, making them amenable to laser cooling. The fine structure splitting of the excited states is in the far infrared, whereas the hyperfine splitting of the ground states is in the microwave regime.  
+
+\subsection{Interaction with static magnetic fields}
+In a static background magnetic field $\mathbf{B}$, the atomic angular momentum interacts with the field via the Hamiltonian
+\begin{equation}
+H_B = \frac{\mu_B}{\hbar}(g_S\mathbf{S}+g_L\mathbf{L}+g_I\mathbf{I})\cdot\mathbf{B},
+\end{equation}
+where $\mu_B$ is the Bohr magneton, $g_S$, $g_L$ and $g_I$ are the spin, orbital and nuclear Lande g-factors correcting their respective magnetic dipole moments. Without loss of generality, we can define the magnetic field to be in the \ez{} direction, $\mathbf{B}=B_z$\ez{}, to obtain
+\begin{equation}
+H_B = \frac{\mu_B}{\hbar}(g_S S_z+g_L L_z+g_I I_z) B_z.
+\label{eqn:BHam}
+\end{equation}
+%Interaction with magnetic fields gives rize to Zeeman (fine structure) and anomalous Zeeman (hyperfine structure). In between there are Paschen-bach and breit-rabi regimes
+
+At very low magntic field strengths, where the energy shift due to $H_B$ is small compared to the hyperfine splitting, the total angular momentum $F$ remains a good quantum number, and the Hamiltonian in eqn. \ref{eqn:BHam} can be re-written as
+\begin{equation}
+H_B = \frac{\mu_B}{\hbar}(g_F F_z) B_z,
+\label{eqn:BHam}
+\end{equation}
+where the effective Lande g-factor is dependent on the angular momentum quantum numbers:
+\begin{equation}
+g_F = g_J\frac{F(F+1)-I(I+1)+J(J+1)}{2F(F+1)} + g_I\frac{F(F+1)+I(I+1)-J(J+1)}{2F(F+1)}.
+\end{equation}
+In this regime, the levels split linearly according to the $F_z$ projection quantum number, $m_F$. For the ground state of \Rb{}, it splits into three hyperfine states in the $F=1$ manifold ($m_F=0,\pm1$) and five hyperfine states in the $F=2$ manifold ($m_F=0,\pm1,\pm2$). This regime is at fields $B\leq\approx1$ Gauss for \Rb{}, as seen in Figure \ref{fig:hyperfineSteck}. 
+
+At fields producing energy shifts small compared to the fine structure splitting, but not negligible compared to the hyperfine splitting, $F$ is no longer a good quantum number, and the relevant Hamiltonian becomes
+\begin{equation}
+H_B = \frac{\mu_B}{\hbar}(g_J J_z+g_I I_z) B_z.
+\end{equation}
+Here, since $g_I \ll g_J$, the energy dependence on $B_z$ is dominated by a linear dependence on the $J_z$ projection quantum number, $m_J$, as seen in the higher field limit in Figure \ref{fig:hyperfineSteck}. 
+
+\begin{figure}
+	\includegraphics[scale=0.6]{"Chapter4 Figures/HyperfineFromSteck".pdf}
+\caption{Energy structure of hyperfine states of the ground state of \Rb{} as a function of external magnetic field strength in Gauss.  Figure from ref. \cite{Steck}}
+\label{fig:hyperfineSteck}
+\end{figure}
+
+In the intermediate regime, there is in general no analytic solution for the eigenenrgies and one must resort to numerics. However, for the specific case of $J=1/2$ applicable to alkali ground states, there is an analytic solution given by the Breit-Rabi formula \cite{BreitRabi}:
+\begin{equation}
+E_{\ket{J=1/2 m_J I m_I}} = - \frac{\Delta E_{hfs}}{2(2I+1}+g_I \mu_B m B \pm \frac{\Delta E_{hfs}}{2}\left(1+\frac{4mx}{2I+1}+x^2\right)^{1/2},
+\label{eqn:BreitRabi}
+\end{equation}
+where $\Delta E_{hfs}$ is the zero field hyperfine splitting, $m=m_I\pm m_J$, and
+\begin{equation}
+x=\frac{(g_J - g_I)\mu_B B}{\Delta E_{hfs}}.
+\end{equation}
+From this we can get a better picture of the shifts at low fields, where $\mu_B B\ll E_{hfs}$. Expanding eqn. \ref{eqn:BreitRabi} to second order in small parameter $4mx/(2I+1)+x^2$, and neglecting the field-independent terms, we obtain
+\begin{equation}
+\Delta E_{\ket{J=1/2 m_J I m_I}}\approx \frac{\Delta E_{hfs}}{2}\left(\frac{1}{2}\left[\frac{4mx}{2I+1}+x^2\right]-\frac{1}{8}\left[\frac{16m^2 x^2}{(2I+1)^2} +\frac{4mx^3}{2I+1}+x^4\right]\right).
+\end{equation}
+We recognize the term linear in $mx$,  $E_{hfs}mx/(2I+1) = (g_J-g_I)\mu_B B m/(2I+1)$. In addition, there is a term quadratic in $mx$:
+\begin{equation}
+\Delta E_{hfs} \frac{m^2x^2}{2I+1)^2} = \frac{(g_J-g_I)^2 \mu_B^2 B^2 m^2}{\Delta E_{hfs} (2I+1)^2} = \epsilon(B) m,
+\end{equation}
+where in the last term we have defined $\epsilon$, the magnitude of this 'quadratic' Zeeman shift. For the magnetic field strengths used in experiments described in this thesis, the linear term plus quadratic correction are sufficient for describing the energy levels.
+%
+%. Here $\mu_B$ is the Bohr magneton, and $g_J$ and $g_I$ are Lande g-factors. Since $g_J\gg g_I$, at high fields the nuclear spin interaction becomes small compared to the total energy shift, and the levels are grouped according to their $m_J$ quantum number, as seen in Figure \ref{fig:hyperfineSteck}.
+%	
+%At low fields, however, the states are approximately linearly dependent on the $m_F$ quantum number. The linear shift from the $B=0$ states is known as the linear Zeeman shift. In the intermediate regime, the correction to the linear shift can be expressed in terms of and energy correction to each hyperfine state $\epsilon(B)|m_F|^2$, known as the quadratic Zeeman shift. For the magnetic fields used in experiments described in this thesis, this correction is sufficient for describing the energy levels. 
+
+The form of the approximate Hamiltonian in this regime for any value of $F$ is given by
+\begin{equation}
+H_0 = H_{\rm KE} + \hbar \omega_z \mathbf{F_z} + \hbar\epsilon \mathbf{F_z}^2,
+\end{equation}
+where $\hbar \omega_z = \mu_B g_F B_z/\hbar$, and the kinetic energy Hamiltonian $H_{\rm KE} = \hbar^2 \vec{k}^2/2m \mathcal{I}$, and $\mathcal{I}$ is the identity matrix.
+
 \section{Near-resonant atom-light interaction}\label{chap:2sec:atomLight}
 
 In this section, we will assume the atom can be treated as a two-level system: one with a ground and excited atomic state, with an energy difference of energy difference $\hbar\omega_0$. When such an atom, starting in the ground state, is illuminated by a laser beam with frequency $\hbar\omega_{\rm{L}}$, there are three kinds of transitions that occur: during aborption the atom aborbs a photon from the laser and goes from the ground to the excited state; during stimulated emission, the atom emits a photon into the field of the laser beam and jump from the excited to the ground state; during spontaneous emission, the atom decays to the ground state from the excited state with no help from the laser, emitting into a random vacuum mode. Stimulated emission results in coherent light co-propagating with the laser beam, while spontaneous emission results in light scattering incoherently in any direction. The rate of spontaneous emission from an excited state is given by the natural transition linewidth of the transition $\Gamma$. 
+
+\subsection{Rabi oscillations}
 
 On timescales short compared to $1/\Gamma$, spontaneous emission can be ignored, and an atom undergoes coherent Rabi oscillations between the ground and excited states via cycles of absorption and stimulated emission\cite{LCT}. Taking $c_g$ and $c_e$ to be the time-dependent coefficients multiplying the eigenstate wavefuntions of the ground and excited state respectively, and assuming the atom starts in the ground state $c_g(t=0)=1$, the excited state population is given by
 \begin{equation}
@@ -19,6 +101,38 @@ In the regime where spontaneous emission cannot be ignored, Rabi oscillations of
 \end{equation}
 where $I_{\rm{sat}}$ is the saturation intensity. This is the intensity at which the timescale of spontaneous emission matches the Rabi oscillation rate, reducing the capacity for absorption of extra light.   
 
+
+
+\subsection{Adiabatic rapid passage}
+
+\section{Far-off resonant atom-light interaction}
+
+	As described in section \ref{chap:2sec:atomLight}, on timescales where spontaneous emission can be neglected, two-level atoms exposed to laser radiation undergo coherent Rabi oscillations between the two levels. Starting with $c_g$ and $c_e$ as the time-dependent coefficients multiplying the eigenstate wavefuntions of the ground and excited state respectively, and assuming the atom starts in the ground state $c_g(t=0)=1$, we make the traditional transformation to the rotating frame:
+\begin{align}
+c'_g(t) & = c_g(t)\\
+c'_e(t) & = c_e(t) e^{-i\delta t}, 
+\end{align}
+where $\delta$ is the detuning of laser light from resonance. In this frame, we can write the atom-light Hamiltonian in the $\begin{pmatrix} c'_g \\ c'_e \end{pmatrix}$ basis as:
+\begin{equation}
+H = \hbar \begin{pmatrix} -\delta/2 & \Omega/2 \\ \Omega/2 & \delta/2 \end{pmatrix},
+\end{equation}
+where $\Omega$ is the coupling strength, also known as the Rabi frequency. In the limit of no coupling, $\Omega = 0$, in the rotating frame the eigenenegies are $E_{\pm} = \pm \hbar \delta/2$. For non-zero coupling, finding the eigenvalues of H gives $E_{\pm} = \pm \hbar \sqrt{\delta^2 + \Omega^2}/2$. Therefore, the bare (without light) eigenenrgies are shifted in the presence of the light. 
+
+	For a far detuned laser beam, one expects that no absorption of the light will actually take place, and the atom will remain entirely in the ground state. Indeed, solving the Shroedinger equation with the above Hamiltonian
+\begin{equation}
+i\hbar \frac{d}{dt} \begin{pmatrix} c'_g \\ c'_e \end{pmatrix} = H \begin{pmatrix} c'_g \\ c'_e \end{pmatrix}
+\end{equation}
+we obtain the oscillating excited state population 
+\begin{equation}
+c'_e(t) = -i \frac{\Omega}{\sqrt{\Omega^2 + \delta^2}}{\rm sin}\left(\frac{\sqrt{\Omega^2 + \delta^2}t}{2}\right),
+\end{equation}
+where the amplitude of the oscillation approches zero in the limit $\Omega \ll \delta$. Thus, the only effect of the light in this regime is to shift the eigenenergies of the ground and excited states. Expanding the energies in the small parameter $\Omega/\delta$, we obtain the shifted energies $E_{\pm} = \pm \hbar \sqrt{\delta^2 + \Omega^2}/2 \approx \pm (\delta/2 + \Omega^2/4\delta)$. The shift from bare energy levels is thus 
+\begin{equation}
+\Delta E_{\pm} = \pm \Omega^2/4\delta.
+\end{equation}
+This laser intensity dependent energy shift is called the AC Stark shift, and is the basis of most laser created potentials for cold atoms. 
+	
+	For the ground state, and a red detuned laser beam (where the laser frequency is lower than the resonant frequency), this creates energy minima in locations of maximal laser intensity. For the lattice described in this chapter, as well as for the trapping of our atoms in the final stages of cooling, we use high power (up to 10 W) lasers with wavelength $\lambda_L = 1064 $ nm. 
 
 \section{Absorption imaging}\label{sec:absorptionImaging}
 
@@ -57,37 +171,7 @@ There are two commonly used protocols for measuring cold atomic clouds, in situ 
 
 In time-of-flight measurements, the trapping potential is abruptly snapped off after the experiment, and the atoms are allowed to free fall and expand for some time $t$. For our experiments, $t$ was on the order of tens of miliseconds. In the regime where time $t$ is long enough that the atoms travel much further than the initial extent of the cloud in the directions transverse to the imaging axis, the final position of the atoms is determined almost exclusively by their in situ momentum, not their in situ position. Therefore, time-of-flight imaging in this regime measures the atomic distribution as a function of momentum, not position.  
 
-
 \section{One dimensional optical lattices}\label{chap:4sec:1DOL}
-
-
-\subsection{Far off-resonant atom-light interaction}
-	As described in section \ref{chap:2sec:atomLight}, on timescales where spontaneous emission can be neglected, two-level atoms exposed to laser radiation undergo coherent Rabi oscillations between the two levels. Starting with $c_g$ and $c_e$ as the time-dependent coefficients multiplying the eigenstate wavefuntions of the ground and excited state respectively, and assuming the atom starts in the ground state $c_g(t=0)=1$, we make the traditional transformation to the rotating frame:
-\begin{align}
-c'_g(t) & = c_g(t)\\
-c'_e(t) & = c_e(t) e^{-i\delta t}, 
-\end{align}
-where $\delta$ is the detuning of laser light from resonance. In this frame, we can write the atom-light Hamiltonian in the $\begin{pmatrix} c'_g \\ c'_e \end{pmatrix}$ basis as:
-\begin{equation}
-H = \hbar \begin{pmatrix} -\delta/2 & \Omega/2 \\ \Omega/2 & \delta/2 \end{pmatrix},
-\end{equation}
-where $\Omega$ is the coupling strength, also known as the Rabi frequency. In the limit of no coupling, $\Omega = 0$, in the rotating frame the eigenenegies are $E_{\pm} = \pm \hbar \delta/2$. For non-zero coupling, finding the eigenvalues of H gives $E_{\pm} = \pm \hbar \sqrt{\delta^2 + \Omega^2}/2$. Therefore, the bare (without light) eigenenrgies are shifted in the presence of the light. 
-
-	For a far detuned laser beam, one expects that no absorption of the light will actually take place, and the atom will remain entirely in the ground state. Indeed, solving the Shroedinger equation with the above Hamiltonian
-\begin{equation}
-i\hbar \frac{d}{dt} \begin{pmatrix} c'_g \\ c'_e \end{pmatrix} = H \begin{pmatrix} c'_g \\ c'_e \end{pmatrix}
-\end{equation}
-we obtain the oscillating excited state population 
-\begin{equation}
-c'_e(t) = -i \frac{\Omega}{\sqrt{\Omega^2 + \delta^2}}{\rm sin}\left(\frac{\sqrt{\Omega^2 + \delta^2}t}{2}\right),
-\end{equation}
-where the amplitude of the oscillation approches zero in the limit $\Omega \ll \delta$. Thus, the only effect of the light in this regime is to shift the eigenenergies of the ground and excited states. Expanding the energies in the small parameter $\Omega/\delta$, we obtain the shifted energies $E_{\pm} = \pm \hbar \sqrt{\delta^2 + \Omega^2}/2 \approx \pm (\delta/2 + \Omega^2/4\delta)$. The shift from bare energy levels is thus 
-\begin{equation}
-\Delta E_{\pm} = \pm \Omega^2/4\delta.
-\end{equation}
-This laser intensity dependent energy shift is called the AC Stark shift, and is the basis of most laser created potentials for cold atoms. 
-	
-	For the ground state, and a red detuned laser beam (where the laser frequency is lower than the resonant frequency), this creates energy minima in locations of maximal laser intensity. For the lattice described in this chapter, as well as for the trapping of our atoms in the final stages of cooling, we use high power (up to 10 W) lasers with wavelength $\lambda_L = 1064 $ nm. 
 
 \subsection{Lattice Hamiltonian}
 
@@ -227,25 +311,6 @@ In contrast to pulsing, adiabatic loading turns the lattice on slowly, such that
 
 \section{Raman and rf coupling}\label{chap:4sec:rf}
 
-\subsection{Hyperfine structure}
-	Alkali atoms' energy levels can be understood as primarily the energy state of the single electron in the outer shell. Fine structure arises from different combinations of angular momenta, including orbital angular momentum of the outermost electron with respect to the nucleus $\mathbf{L}$, the electron spin $\mathbf{S}$ and the nuclear spin $\mathbf{I}$. The total electron angular momentum is the combination of orbital and the spin angular momenta $\mathbf{J} = \mathbf{L} +\mathbf{S}$, and the quantum number can be any integer $|L - S| \leq J \leq |L + S|$. The ground state of \Rb{}, in term notation $^{2S+1}L_J$ is $^2S_{1/2}$, where $S$ is orbital notation indicating $L=0$. Since the total spin quantum number $J=1/2$, this produces two possible spin projection quantum numbers, $m_J=\pm1/2$.
-
-	There is also a contribution from the nuclear spin $\mathbf{I}$, resolvable at low magnetic fields, which gives rise to hyperfine structure of the states. For \Rb{}, $I=3/2$. The total spin, including nuclear spin, is indicated by the quantum number $F$, and $|J - I| \leq F \leq |J + I|$. The interaction with the nuclear spin splits the ground state of \Rb{} into two manifolds, $F=1$ and $F=2$, with three hyperfine states in the $F=1$ manifold ($m_F=0,\pm1$) and five hyperfine states in the $F=2$ manifold ($m_F=0,\pm1,\pm2$). These states couple to an external magnetic field $B_z$ along some direction $\mathbf{e}_z$ via the Hamiltonian $H_B=\mu_B(g_JJ_z+g_II_z)B_z/\hbar$. Here $\mu_B$ is the Bohr magneton, and $g_J$ and $g_I$ are Lande g-factors. Since $g_J\gg g_I$, at high fields the nuclear spin interaction becomes small compared to the total energy shift, and the levels are grouped according to their $m_J$ quantum number, as seen in Figure \ref{fig:hyperfineSteck}.
-
-At low fields, however, the states are approximately linearly dependent on the $m_F$ quantum number. The linear shift from the $B=0$ states is known as the linear Zeeman shift. In the intermediate regime, the correction to the linear shift can be expressed in terms of and energy correction to each hyperfine state $\epsilon(B)|m_F|^2$, known as the quadratic Zeeman shift. For the magnetic fields used in experiments described in this thesis, this correction is sufficient for describing the energy levels. 
-
-\begin{figure}
-	\includegraphics[scale=0.6]{"Chapter4 Figures/HyperfineFromSteck".pdf}
-\caption{Energy structure of hyperfine states of the ground state of \Rb{} as a function of external magnetic field strength in Gauss.  Figure from ref. \cite{Steck}}
-\label{fig:hyperfineSteck}
-\end{figure}
-
-The form of the Hamiltonian in this regime for any value of $F$ is given by
-\begin{equation}
-H_0 = H_{\rm KE} + \hbar \omega_z \mathbf{F_z} + \hbar\epsilon \mathbf{F_z}^2,
-\end{equation}
-where $\hbar \omega_z = \mu_B g_F B_z/\hbar$, and the kinetic energy Hamiltonian $H_{\rm KE} = \hbar^2 \vec{k}^2/2m \mathcal{I}$, and $\mathcal{I}$ is the identity matrix.
-
 \subsection{Rf coupling Hamiltonian}
 
 	For the $F=1$ manifold, there are three available spin states $m_F = 0,\pm1$. There are many ways of introducing coupling terms between the different hyperfine states. Here, we will explain two methods: rf coupling and Raman coupling. Rf coupling is a radio-frequency oscillating magnetic field, in our case produced by a pair of circular coils in series side by side above the atoms (see \cite{KarinaThesis}). Assuming the rf oscillating field is polarized along the $\mathbf{e}_x$, with the bias field along $\mathbf{e}_z$, the coupling Hamiltonian is given by $H_{rf} = \mu_B g_F \vec{\mathbf{F}}\cdot{}\vec{B} = \mu_B g_F \mathbf{F}_x B_x {\rm cos}(\omega t)$, where $2 \pi\omega$ is the rf frequency. The schematic of this setup is shown in Figure \ref{fig:RamanRfSchematic}.
@@ -348,6 +413,12 @@ These population oscillations can then be fit for coupling strength $\hbar\Omega
 \end{figure}
 
 Figure \ref{fig:RamanPulsing}b shows an example time series of Raman pulsing in the $F=1$ manifold, starting in the $m_F=0$ state, with fitted parameters  $\hbar\Omega=1.47\pm0.01 E_R$ and $\hbar\delta = 0.004\pm0.024 E_R$. Note that although the coupling strength is almost double the rf coupling strenth in Figure \ref{fig:RfPulsing}c, the contrast (peak to peak oscillation of the fractional population in, say, the $mF=0$ state) is much lower in the Raman data than in the rf. This is a direct consequence of the recoil momentum transfer, and can be understood by looking at the band structure. For rf, the coupled bands at initial momentum $k_x=0$ are separated by the coupling strength, see Figure \ref{fig:rfBandStruct}b. For Raman, even at zero coupling strength, due to the shifting of the parabolas by $2k_R$, and $k_x=0$ the higher bands are $\hbar^2(2k_R)^2/2m=4E_R$ separated from the lower bands. Therefore, the energy difference is larger and the fraction in the excited band will be lower, leading to lower contrast. 
+
+
+
+
+
+
 
 
 
