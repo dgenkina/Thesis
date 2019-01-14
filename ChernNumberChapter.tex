@@ -1,5 +1,96 @@
 \renewcommand{\thechapter}{1}
 
-\chapter{Topology and Chern number}
+\chapter{Introduction}
+Although quantum mechanics has been well established since the early 20th century, there are still many quantum phenomena that are not well understood and are not easy to calculate. These include high temperature superconductivity, fractional quantum Hall physics, and groudn states of frustrated amorphous materials. One of the reasons these problems are proving elusive is that calculation of properties of many-body quantum mechanical systems is computationally intensive enough to be completely prohibitive in a large class of problems. 
 
-\section{This is a test}
+Quantum simulation provides an attractive alternative to direct computation. In it, a test quantum system, here ultracold atoms, is used to simulate a more complicated, less experimentally accessible quantum system, such as a non-trivial material from condensed matter physics. In order to get to the point where unsolved problems can be solved with quantum simulation, tools must be built up to create and verify Hamiltonians in the test system that are relevant to the more complex target system. In this thesis, we present a technique for creating topologically non-trivial Hamiltonians for ultracold atoms and experimentally measuring their topological properties.
+
+\section{Condensed matter context}
+Topology has been a field of mathematics since the 17th century. Its importance in physics, particularly in the study of crystalline materials in condensed matter, was first discovered by Thouless, Kohmoto, Nightingale and den Nijs \cite{Thouless1982}. They used topology to explain the shockingly precise quantization of resisitivity in the quantum Hall effect. Since then, topology has been central to condensed matter, from topological insulators\cite{Qi2011} to fractional quantum hall physics\cite{Stormer1999}. There have been many excellent pedagogical texts written on this matter. Here, we include only a brief overview of the physics that is relevant for motivating Chapters \ref{chap:SynDim, chap:BlochOsc} of this thesis.  
+
+\subsection{Topology}
+Topology is the study of how things can be continuously transformed into other things without tearing or gluing parts together. Things that can be continuously transformed into each other under those rules are called homeomorphic to each other. Classes of objects that are all homeomorphic to each other belong to the same topological class. These classes are characterized by a topological invariant, an integer. Surfaces in 3D can be characterized by their genus $g$, essentially the number of holes in the shape. Since holes cannot be opened up or closed by a continous transformation, the number of holes is a topological invariant that can be used for classification. 
+
+Figure \ref{fig:bakedGoods} shows some examples of objects with different genus $g$. A loaf of bread has no holes, and is therefore topologically equivalent to a sphere, with $g=0$. A bagel has one hole, and is topologically equivalent to a torus, or a coffe mug, or any other number of things with a single through hole, with $g=1$. A pretzel has $3$ through holes, and is therefore topologically distinct from both the loaf and the bagel, with $g=3$. 
+\begin{figure}
+	\includegraphics{"ChernNum Figures/TopologyBakedGoods".png}
+\label{fig:bakedGoods}
+\caption{Topology of baked goods. They are classified according to genus $g$, the number of holes.}
+\end{figure}
+
+More formally, the Gauss-Bonnet theorem states that the integral of the Gaussian curvature $K$ over a closed surface $S$ is an integer multiple of $2\pi$:
+\begin{equation}
+\chi = \frac{1}{2\pi}\int_S K dA,
+\label{eqn:GaussBonnet}
+\end{equation}
+where the integer $\chi$ is called the Euler characterisitic, and is related to the genus via $\chi = 2 - 2g$. Essentially, the total curvature of a closed surface is quantized to integer values, and any closed surface can be classified by that integer. Surfaces with equal $\chi$ can be continuously transformed into each other.
+
+\subsection{Band topology in materials}
+The same general principles can be applied to the bands within the band structure of a crystalline material. Crystalline materials are characterized by a periodic structure. The primitive unit cell, or the minimal repeating unit of the lattice, can be parametrized by primitive unit vectors $\vec{a}_i$, where $i$ indexes from $1$ to the number of dimensions $d$. In momentum space, the repeating structure is parametrized by reciprocal lattice vectors $\vec{K}_i$. According to Bloch's theorem \cite{Ashcroft}, the eigenstate wavefunction for some eigenband in a periodic potential in $d$ dimensions can be written as 
+\begin{equation}
+\ket{\Psi(\vec{k})} = e^{i\vec{k}\cdot\vec{r}}\ket{u(\vec{k})},
+\end{equation}
+where $\vec{k}$ is the crystal momentum, $\vec{r}$ is the spatial coordinate, and $\ket{u(\vec{k})}$ is periodic with the reciprocal lattice periodicity. Reciprocal lattice space is well defined for an infinite system, and is a good approximation for a system that is large compared to the primitive lattice size.
+
+There is a phase ambiguity in the definition of the Bloch wavefunction, such that the physics remains invariant under the transformation 
+\begin{equation}
+\ket{u(\vec{k}} \rightarrow e^{i\phi(\vec{k})}\ket{u(\vec{k})},
+\label{eqn:phaseTransform}
+\end{equation}
+which is reminiscent of gauge invariance in electrostatics. The corresponding non-gauge invariant potential is called the Berry connection $\vec{A}$, and is given by 
+\begin{equation}
+\vec{A}=-i\bra{u(\vec{k})}\nabla_{\vec{k}}\ket{u(\vec{k})}.
+\end{equation}
+Under the transformation eq. \ref{eqn:phaseTransform}, $\vec{A} \rightarrow \vec{A} + \nabla_{\vec{k}}\phi(\vec{k})$. The gauge invariant field is therefore $\vec{\mathcal{F}}=\nabla\times\vec{A}$, where $\vec{\mathcal{F}}$ is known as the Berry curvature. 
+
+From this, the geometric phase, or Berry phase $\gamma_c$, can be defined as the phase aquired over a closed curve$c$  in parameter space that is independent of the rate at which the curve is traversed:
+\begin{equation}
+\gamma_c = \int_c \vec{A}\cdot d\vec{k} = \int_S \vec{\mathcal{F}}\cdot dS,
+\end{equation}
+where $S$ is a surface bounded by the  curve $c$, and in the second equality we have invoked Stoke's theorem. 
+
+The Berry curvature integrated over the entire Brillouin zone, or primitive cell in reciprocal lattice space, is quantized in units of $2\pi$:
+\begin{equation}
+C=\frac{1}{2\pi} \int_S \vec{\mathcal{F}}\cdot dS,
+\end{equation}
+where $C$ is an integer. This bears a strong similarity to the Gauss-Bonnet theorem, eqn. \ref{eqn:GaussBonnet}, with the Gaussian curvature replaced by the Berry curvature, and the closed surface in real space replaced by the Brillouin zone in momentum space. Similarly, the integer $C$ is a topological invariant and can be used to classify the topological properties of the bands. For periodic structures in 2D, this invariant is called the Chern number. 
+
+	Integral over the Berry curvature definition in infinite system
+	Bulk-edge correspondence in finite system
+
+
+\subsection{Quantum Hall Effect}
+The iconic example of non-trivial topological structure in condensed matter is the quantum Hall effect. First, let us review the regular Hall effect. In it, a slab of metal, very thin along one dimension such as to be effectively 2D, has a magnetic field threaded through it perpendicular to the plane of the metal, as shown in Figure \ref{fig:HallEffect}. Then, a magnetic field is applied along one direction of the 2D material. This accellerates the electrons via the electrostatic force $F=qE$ 
+\begin{figure}
+	\includegraphics{"ChernNum Figures/HallEffect".png}
+\label{fig:HallEffect}
+\caption{}
+\end{figure}
+
+\begin{figure}
+	\includegraphics{"ChernNum Figures/qhe".png}
+\label{fig:qhe}
+\caption{}
+\end{figure}
+		Quantum Hall Effect (with/without disorder)
+
+\subsection{Hofstadter regime}
+	Aharonov-Bohm effect - phase as magnetic field
+\begin{figure}
+	\includegraphics{"ChernNum Figures/ABphase".png}
+\label{fig:ABphase}
+\caption{}
+\end{figure}
+		Hofstadter Butterfly
+
+\begin{figure}
+	\includegraphics{"ChernNum Figures/Hofstadter".png}
+\label{fig:Hofstadter}
+\caption{}
+\end{figure}
+		Diophantine equation 	
+		Topological insulators
+
+\section{Ultracold atoms for quantum simulation}
+They are quantum and well controlled and detected
+Neutral atoms act as though they're in a magnetic field

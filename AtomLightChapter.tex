@@ -1,4 +1,4 @@
-\renewcommand{\thechapter}{3}
+\renewcommand{\thechapter}{1}
 
 \chapter{Atom Light Interactions}
 
@@ -6,7 +6,7 @@
 
 Alkali atoms (those in the first column of the periodic table) are the most amenable to laser cooling because their energy level structure is relatively simple. It can be understood as primarily the energy state of the single electron in the outer shell, interacting with the rest of the atom---the nucleus and all the other electrons---as a whole. The quantum numbers that describe the energy levels of the atom are the radial quantum number of the outermost electron $N$, that electron's spin $S$, the orbital angular momentum $L$, and finally the nuclear spin $I$. The work described in this thesis was done with alkali species \Rb{} and \K{}.
 
-\subsection{Fine and hyperfine sturcutre}
+\subsection{Fine and hyperfine sturcutre}\label{sec:hyperfine}
 
 The spin orbit interaction, or coupling between $L$ and $S$, give rise to the fine structure of the atom. This is the splitting of energies according to the quantum number $J$, where the operator $\textbf{J}=\textbf{L}+\textbf{S}$ and $|L - S| \leq J \leq |L + S|$.  The ground state of \Rb{}, in term notation $N^{2S+1}L_J$ is $5^2S_{1/2}$, where $S$ is orbital notation indicating $L=0$. Since $L=0$, the ground state only has one possible value of $J=1/2$, and there is no ground state hyperfine splitting. The first excited state $5^2P_J$ has orbital angular momentum $L=1$ (as indicated by $P$ in orbital notation. Therefore, $J$ can take on two different values: $1/2$ and $3/2$, producing a hyperfine splitting between the $5^2P_{1/2}$ and $5^2P_{3/2}$. The energy splitting between the ground $5^2S_{1/2}$ and lower excited $5^2P_{1/2}$ level is conventionally called the $D1$ line, and the splitting between $5^2S_{1/2}$ and  $5^2P_{3/2}$ is the $D2$ line. For other alkalis, including \K{}, the ground state structure is identical and only the $N$ value is different. Therefore, even though their energies vary, $D1$ and $D2$ lines feature in all alkalis.
 
@@ -18,7 +18,7 @@ The spin orbit interaction, or coupling between $L$ and $S$, give rise to the fi
 
 There is also a contribution from the nuclear spin $\mathbf{I}$, which gives rise to hyperfine structure of the states. For \Rb{}, $I=3/2$ and for \K{}, $I=4$. The total spin, including nuclear spin, is indicated by the quantum number $F$, and $|J - I| \leq F \leq |J + I|$. The interaction with the nuclear spin splits the ground state of \Rb{} into two manifolds, $F=1$ and $F=2$. Similarly for \K{}, it splits the ground state into $F=9/2$ and $F=7/2$ manifolds. The structure of the ground and first excited states of \Rb{} and \K{}, including both the fine and hyperfine splittings, is diagrammed in Figure \ref{fig:RbKatomicStruct}. Note that the $D1$ and $D2$ transitions are in the optical regime, making them amenable to laser cooling. The fine structure splitting of the excited states is in the far infrared, whereas the hyperfine splitting of the ground states is in the microwave regime.  
 
-\subsection{Interaction with static magnetic fields}
+\subsection{Interaction with static magnetic fields}\label{sec:hyperfineField}
 In a static background magnetic field $\mathbf{B}$, the atomic angular momentum interacts with the field via the Hamiltonian
 \begin{equation}
 H_B = \frac{\mu_B}{\hbar}(g_S\mathbf{S}+g_L\mathbf{L}+g_I\mathbf{I})\cdot\mathbf{B},
@@ -82,11 +82,11 @@ H_0 = H_{\rm KE} + \hbar \omega_z \mathbf{F_z} + \hbar\epsilon \mathbf{F_z}^2,
 \end{equation}
 where $\hbar \omega_z = \mu_B g_F B_z/\hbar$, and the kinetic energy Hamiltonian $H_{\rm KE} = \hbar^2 \vec{k}^2/2m \mathcal{I}$, and $\mathcal{I}$ is the identity matrix.
 
-\section{Near-resonant atom-light interaction}\label{chap:2sec:atomLight}
+\section{Near-resonant atom-light interaction}\label{sec:NRatomLight}
 
 In this section, we will assume the atom can be treated as a two-level system: one with a ground and excited atomic state, with an energy difference of energy difference $\hbar\omega_0$. When such an atom, starting in the ground state, is illuminated by a laser beam with frequency $\hbar\omega_{\rm{L}}$, there are three kinds of transitions that occur: during aborption the atom aborbs a photon from the laser and goes from the ground to the excited state; during stimulated emission, the atom emits a photon into the field of the laser beam and jump from the excited to the ground state; during spontaneous emission, the atom decays to the ground state from the excited state with no help from the laser, emitting into a random vacuum mode. Stimulated emission results in coherent light co-propagating with the laser beam, while spontaneous emission results in light scattering incoherently in any direction. The rate of spontaneous emission from an excited state is given by the natural transition linewidth of the atomic transition $\Gamma$. 
 
-\subsection{Rabi oscillations}
+\subsection{Rabi oscillations}\label{sec:Rabi}
 
 On timescales short compared to $1/\Gamma$, spontaneous emission can be ignored, and an atom undergoes coherent Rabi oscillations between the ground and excited states via cycles of absorption and stimulated emission\cite{LCT}.  Let us consider the Hamiltonian 
 \begin{equation}
@@ -142,7 +142,7 @@ c'_e(t) = -i \frac{\Omega}{\sqrt{\Omega^2 + \delta^2}}{\rm sin}\left(\frac{\sqrt
 \end{equation} 
 known as Rabi oscillations. The frequency of these oscillations is the generalized Rabi frequency $\Omega'=\sqrt{\Omega^2 + \delta^2}$. The amplitude of the oscillation is maximum when the laser is on-resonance, $\delta=0$. As the detuning increases, the contrast in excited and ground populations decreases, while the frequency of the oscillation increases. 
 
-\subsection{Scattering}
+\subsection{Scattering}\label{sec:scattering}
 In the regime where spontaneous emission cannot be ignored, Rabi oscillations of each individual atom are intermittently interrupted by decay to the ground state. Averaging over an atomic ensamble, on the time scale of a single Rabi oscillation the overall excited state population reaches a steady state, and the rate of spontaneous emission becomes constant. Since during spontaneous emission the ejected photon can go into any vacuum mode, this process can be thought of as the scattering of photons by the atoms. This scattering rate is given by\cite{LCT}
 \begin{equation}
 \gamma_{\rm{sc}}= \frac{\Gamma}{2} \frac{I/I_{\rm{sat}}}{1+4(\delta/\Gamma)^2 +I/I_{\rm{sat}}},
@@ -150,22 +150,26 @@ In the regime where spontaneous emission cannot be ignored, Rabi oscillations of
 \end{equation}
 where $I_{\rm{sat}}$ is the saturation intensity. This is the intensity at which the timescale of spontaneous emission matches the Rabi oscillation rate, reducing the capacity for absorption of extra light.   
 
-\subsection{Adiabatic rapid passage}
+\subsection{Adiabatic rapid passage}\label{sec:ARP}
 
 Suppose there is a two-level atom in its ground state that an experimentalist wants to transfer into the excited state. To transfer it with perfect fidelity using Rabi oscillations, one would need a perfectly on-resonant beam and very percise timing to shut off the coupling field at the maximum of the excited state population. This is challenging and not very stable to small perturbations in background field. A more robust technique is known as adiabatic rapid passage. 
 
 Suppose the two energy levels of the atom are sensitive to some external parameter. Commonly (as in the case with hyperfine sublevels), they are sensitive to an external magnetic field $B$, and in the small field limit are linear in $B$. Therefore, the detuning that goes into the Hamiltonian in eqn. \ref{eqn:TwoLevelHam} becomes $\hbar\delta = A*B - \hbar\omega_{\rm L}$, where $A$ is the coupling constant in the hyperfine (or other) Hamiltonian.   In the limit of zero coupling strength, diagonalizing the Hamiltonian amounts to calculating the eigenergies in the rotating frame as a function of the control parameter $B$. These are represented in black in figure \ref{fig:ARPfigure}. Note that the two levels cross each other when their energy difference matches $\hbar\omega_{\rm L}$, on resonance.
 \begin{figure}
 	\includegraphics{"Chapter4 Figures/ARPfigure".pdf}
-\caption{Adiabatic rapid passage (ARP). Black lines represent energies of the ground and excited state, in the rotating frame, with zero coupling. Blue line represent these bands with rf coupling turned on.}
+\caption{Adiabatic rapid passage (ARP). Black lines represent energies of the ground and excited state, in the rotating frame, with zero coupling. Blue line represent these bands with rf coupling turned on. The dashed lines represent the starting point of an ARP ($B_{start}$), the resonant field value ($B_{res}$) and the end point of an ARP ($B_{stop}$).}
 \label{fig:ARPfigure}
 \end{figure}
 
 Once the coupling field is turned on (in the case of the hyperfine interaction, and rf-field), the two levels split near the resonance and an avoided crossing appears, as seen in blue in Figure \ref{fig:ARPfigure}. Crucially, away from resonance towards the left, the bottom coupled state overlaps closely with the uncoupled (black state). Far from resonance, the ground state is largely unaffected by the presence of light. On the other hand, far from the resonance on the right, the lower coupled state overlaps almost perfectly with the excited uncoupled state. Adiabatic rapid passage (ARP) takes advantage of this change.
 
-The ARP protocol is as follows. Start at field
+The ARP protocol is as follows. Start at bias field (or other control parameter) where turning on the coupling field does not significantly perturb the eigenstate ($B_{start}$ in the figure). Turn on the coupling field adiabatically (slow with respect to the time scale associated with the level splitting energy $\tau = h/(E_{e}-E_{g})$), such that the atom remains entirely in the ground state $\ket{g}$. Then, sweep the control parameter accross the resonance, again adiabatically with respect to the coupled level splitting (blue in the figure). The sweep rate can be optimized to be faster away from resonance, where $E_{e}-E_{g}$ is large and slower closer to the avoided crossing. Then, at a final value of the control parameter where the lowest coupled state overlaps almost perfectly with the bare excited state $\ket{e}$, adiabatically turn off the coupling field, leaving the atoms in the excited state. 
 
-\section{Far-off resonant atom-light interaction}
+The 'rapid' part of adiabatic rapid passage refers to the procedure having to be fast with respect to the spontaneous emission timescale, since in the coupled basis there is some population in the excited state and spontaneous decay would disrupt the process. This procedure is relatively insensitive to field fluctuations (as long as $B_{res}$ is roughly in the middle of the relatively long sweep, the procedure will succeed). It can also be applied to multi-level situations, where the atoms traverse multiple avoided crossings in the same sweep and can be efficiently transferred from one stretch state $m_F=F$ to the other $m_F=-F$, or vice versa. 
+
+
+
+\section{Far-off resonant atom-light interaction}\label{sec:FoRatomLight}
 
 	We can infer the behavior of atoms in a far-detuned laser field by taking the near resonant solutions from eqns. \ref{eqn:TwoLevelEnergy} and \ref{eq:Rabi} in the limit $\delta \gg \Omega$. First, looking at the excited state population in eqn. \ref{eq:Rabi}, the amplitude of the excited state population oscillation approaches zero. Therefore, as expected, no absorption of the light actually takes place and the atom remains in the ground state. 
 	However, the light still effects the atom by shifting the eigenenergies via eqn. \ref{eqn:TwoLevelEnergy}. Recalling that the bare eigenenrgies in the rotating frame are given by $E_{\pm}=\pm \hbar\delta/2$, the energy shift from bare is given by
@@ -356,6 +360,8 @@ In contrast to pulsing, adiabatic loading turns the lattice on slowly, such that
 
 
 \section{Raman and rf coupling}\label{chap:4sec:rf}
+
+In this section, we will introduce Raman and rf coupling between the hyperfine sublevels of the ground state of \Rb{}. While we will focus on the $F=1$ and $F=2$ manifolds of this ground state due to their relevance to the experiments described in Chapters \ref{chap:SynDim,chap:BlochOsc}, the discussion can be easily extended to any value of $F$. 
 
 \subsection{Rf coupling Hamiltonian}
 

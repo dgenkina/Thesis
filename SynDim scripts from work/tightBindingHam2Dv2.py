@@ -230,7 +230,7 @@ pan2.set_ylim(-2.5,2.5)
 pan2.set_xlim(-0.5,0.5)
 
 figure.text(0.05,0.6,r'site $m$', rotation='vertical', size=8)
-plt.savefig('Z:/My Documents/papers etc/Bloch Osc/Figures/figure3v6b.pdf', dpi=500)
+#plt.savefig('Z:/My Documents/papers etc/Bloch Osc/Figures/figure3v6b.pdf', dpi=500)
 
-np.savez('figure3b',kjQ3P1=kjQ3P1/(2.0*np.pi),VmagQ3P1=VmagQ3P1[:,kmQ3P1.size/2,:],
-         kjQ5P2=kjQ5P2/(2.0*np.pi),VmagQ5P2=VmagQ5P2[:,kmQ5P2.size/2,:])
+#np.savez('figure3b',kjQ3P1=kjQ3P1/(2.0*np.pi),VmagQ3P1=VmagQ3P1[:,kmQ3P1.size/2,:],
+#         kjQ5P2=kjQ5P2/(2.0*np.pi),VmagQ5P2=VmagQ5P2[:,kmQ5P2.size/2,:])

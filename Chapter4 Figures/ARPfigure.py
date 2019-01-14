@@ -52,7 +52,7 @@ def E(B, Omega):
     E = np.sqrt(delta(B)**2.0 + Omega**2.0)/2
     return (-E,E)
 
-Blist = np.arange(0.0,0.45,0.0001)
+Blist = np.arange(0.0,0.455,0.0001)
 EoffP = np.zeros(Blist.size)
 EoffM = np.zeros(Blist.size)
 EonP = np.zeros(Blist.size)
@@ -80,5 +80,10 @@ pan.text(0,-4.1,r'$\ket{g}$')
 pan.text(0,4.0, r'$\ket{e}$')
 pan.set_ylabel(r'Energy [arb. u.]')
 pan.set_xlabel(r'B [Gauss]')
-
+pan.axvline(x=0.0275, color='k',linestyle= '--')
+pan.axvline(x=Blist[Blist.size/2],color='k',linestyle= '--')
+pan.axvline(x=0.4275, color='k',linestyle= '--')
+pan.text(0.03, -5.4, r'$B_{start}$')
+pan.text(0.23, -5.4, r'$B_{res}$')
+pan.text(0.385, -5.4, r'$B_{stop}$')
 plt.savefig('ARPfigure.pdf',transparent=True)
