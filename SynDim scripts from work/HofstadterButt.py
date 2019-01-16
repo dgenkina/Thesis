@@ -19,28 +19,46 @@ q=3.0
 c=4.0/q#0.0#1064.0/790.0#
 
 
-def TBham2d(tx,tm,p,q,kj,km):
-
-    H=np.zeros((q,q), dtype=complex)
-    kList = np.zeros(q)
+def TBham2dV2(tx,tm,p,q,kj,km):
+    kj=np.array(kj)
+    km=np.array(km)
+#    H=np.zeros((kj.size,km.size,q,q), dtype=complex)
+#    kList = np.zeros((kj.size,q))
     cent=np.int(q/2)
-    for i in np.arange(q):
-        kList[i]=kj-2.0*np.pi*p*(i-cent)/q
-        H[i,i]=-2.0*tx*np.cos(kList[i])
-        if i==0:
-            if q==1:
-                H[i,i]+=-2.0*tm*np.cos(km*q)
-            else:
-                H[i,i+1]=-tm
-                H[i,q-1]=-tm*np.exp(1.0j*km*q)
-        elif i==q-1:
-            H[i,0]=-tm*np.exp(-1.0j*km*q)
-            H[i,i-1]=-tm
-        else:
-            H[i,i+1]=-tm
-            H[i,i-1]=-tm
+    kList = (np.ones((q,kj.size))*kj).transpose() - 2.0*np.pi*p*(np.arange(q)*np.ones((kj.size,q))-cent)/q
+    
+    H = np.einsum('ij,ljm->iljm',-2.0*tx*np.cos(kList),np.array([np.diag(np.ones(q))]*km.size))
+#    H = np.diag(-2.0*tx*np.cos(kList)) 
+    if q>2:
+        H = H - tm*np.array([[np.diag(np.ones(q-1),1)]*km.size]*kj.size)
+        H = H - tm*np.array([[np.diag(np.ones(q-1),-1)]*km.size]*kj.size)
+    try:
+        H = H - np.einsum('il,jk->iljk',np.array([tm*np.exp(-1.0j*km*q)]*kj.size),np.diag(np.array([1.0]),-(q-1)))
+        H = H - np.einsum('il,jk->iljk',np.array([tm*np.exp(1.0j*km*q)]*kj.size),np.diag(np.array([1.0]),(q-1)))
+    except ValueError:
+        print 'going to exception'
+        H = H - tm*np.exp(-1.0j*km*q)*np.diag(np.array([1.0]),-(q-1))
+        H = H - tm*np.exp(1.0j*km*q)*np.diag(np.array([1.0]),(q-1))
+        
+#    H = H - np.diag(tm*np.exp(1.0j*km*q),q) 
+#    
+#    for i in np.arange(q):
+#        kList[i]=kj-2.0*np.pi*p*(i-cent)/q
+#        H[i,i]=-2.0*tx*np.cos(kList[i])
+#        if i==0:
+#            if q==1:
+#                H[i,i]+=-2.0*tm*np.cos(km*q)
+#            else:
+#                H[i,i+1]=-tm
+#                H[i,q-1]=-tm*np.exp(1.0j*km*q)
+#        elif i==q-1:
+#            H[i,0]=-tm*np.exp(-1.0j*km*q)
+#            H[i,i-1]=-tm
+#        else:
+#            H[i,i+1]=-tm
+#            H[i,i-1]=-tm
 
-    return H,kList
+    return H
     
 def getEigenspectrum(tx,tm,p,q, plot=True):
     kjList=np.linspace(-np.pi,np.pi,300)
@@ -64,7 +82,16 @@ def getEigenspectrum(tx,tm,p,q, plot=True):
         pan.imshow(Egrid[:,:,0], cmap='Greys', extent=(kmList[0],kmList[-1],kjList[0],kjList[-1]))
     return Egrid,kjList,kmList,mgrid, Vmag
 
-qList = np.arange(2,100,1)
+def getEigenspectrumAll(tx,tm,p,q):
+    kjList=np.linspace(-np.pi,np.pi,30)
+    kmList=np.linspace(-np.pi/q,np.pi/q,30)
+    H = TBham2dV2(tx,tm,p,q,kjList,kmList)
+
+    E,V = np.linalg.eigh(H)
+            
+    return E
+
+qList = np.arange(1,100,1)
 fluxList = np.zeros((0))
 ElistAll = np.zeros((0))
 for qind, q in enumerate(qList):
@@ -72,10 +99,12 @@ for qind, q in enumerate(qList):
     pList = np.append(1,pList[[np.remainder(q,p)!=0 for p in pList]])
     for pind, p in enumerate(pList):
         flux = np.float(p)/np.float(q)
-        Egrid,kjList,kmList,mgrid, Vmag = getEigenspectrum(0.1,0.1,p,q, plot=False)
+        Egrid = getEigenspectrumAll(0.1,0.1,p,q)
         Elist = Egrid.flatten()
         fluxList = np.append(fluxList,[flux]*Elist.size)
         ElistAll = np.append(ElistAll,Elist)
+        
+np.savez('HofstadtersButt',fluxList=fluxList,ElistAll=ElistAll)
         
 fig = plt.figure()
 pan = fig.add_subplot(111)

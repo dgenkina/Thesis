@@ -28,7 +28,7 @@ rcParams['pdf.fonttype'] = 42 # True type fonts
 rcParams['font.family'] = 'sans-serif'
 rcParams['font.serif'] = ['']
 rcParams['font.sans-serif'] = ['Helvetica']
-rcParams['text.latex.preamble'] = [r'\usepackage{cmbright}',r'\usepackage{amsmath}']
+rcParams['text.latex.preamble'] = [r'\usepackage{amsmath}']
 
 
 rcParams['axes.linewidth'] = 0.75
@@ -147,17 +147,18 @@ def getMaxFitTheory(qlist,fracList,sigma,plot=False):
         
     return xP,dxP
 
-filenamelist=['08Mar2017_F1_chern_1.npz']    
-filenamelist=['07Mar2017_F1_chern_-1.npz','27Feb2017_F2_chern_-1.npz',
-              '09Mar2017_Rf_Corrected.npz','22Mar2017_Rf_Corrected.npz',
-              '08Mar2017_F1_chern_1.npz','28Feb2017_F2_chern_1.npz']
+fileroot='C:/Users/swooty/Documents/Thesis Data/Final Bloch Osc data/'
+filenamelist=[fileroot+'08Mar2017_F1_chern_1.npz']    
+#filenamelist=[fileroot+'07Mar2017_F1_chern_-1.npz',fileroot+'27Feb2017_F2_chern_-1.npz',
+#              fileroot+'09Mar2017_Rf_Corrected.npz',fileroot+'22Mar2017_Rf_Corrected.npz',
+#              fileroot+'08Mar2017_F1_chern_1.npz',fileroot+'28Feb2017_F2_chern_1.npz']
 plotBool=True
 width=15
 lw=10
 Slist=[1]
-Slist=[1,2,1,2,1,2]
+#Slist=[1,2,1,2,1,2]
 clist=[1]
-clist=[-1,-1,0,0,1,1]
+#clist=[-1,-1,0,0,1,1]
 titleList=['(a)','(d)','(b)','(e)','(c)','(f)']
 mainFig = plt.figure()
 mainFig.clear()
@@ -165,7 +166,7 @@ mainFig.set_size_inches(3.5,4.0)
 gs = gridspec.GridSpec(3,2)
 gs.update(left=0.15, right=0.95, top=0.85, bottom = 0.1, wspace=0.15, hspace=0.25)
 
-filename='27Feb2017_F2_chern_-1.npz'
+filename=fileroot+'27Feb2017_F2_chern_-1.npz'
 i=1
 
 for i,filename in enumerate(filenamelist):
@@ -198,7 +199,7 @@ for i,filename in enumerate(filenamelist):
         sigmaArray=np.array((sigmaM2,sigmaM,sigma0,sigmaP,sigmaP2))
         mag=2.0*fractionP2+fractionP-fractionM-2.0*fractionM2
         sigmaMag=np.sqrt(4.0*sigmaP2**2.0+sigmaP**2.0+sigmaM**2.0+4.0*sigmaM2**2.0)
-    theoryFile=np.load('SynDimBandStructure_F'+str(S)+'_n7_Chern'+str(clist[i])+'.npz')
+    theoryFile=np.load(fileroot+'SynDimBandStructure_F'+str(S)+'_n7_Chern'+str(clist[i])+'.npz')
     kList=theoryFile['kList']
     pops=theoryFile['pops'][:,0,:]
     

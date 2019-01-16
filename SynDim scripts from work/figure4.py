@@ -43,12 +43,12 @@ import numpy as np
 
 ColorMap = "afmhot"
 
-datafileF1p=np.load('08Mar2017_F1_chern_1.npz')
-datafileF1m=np.load('07Mar2017_F1_chern_-1.npz')
-datafileF10=np.load('09Mar2017_Rf_Corrected.npz')
-datafileF2p=np.load('28Feb2017_F2_chern_1.npz')
-datafileF2m=np.load('27Feb2017_F2_chern_-1.npz')
-datafileF20=np.load('22Mar2017_Rf_Corrected.npz')
+datafileF1p=np.load('C:/Users/swooty/Documents/Thesis Data/Final Bloch Osc data/08Mar2017_F1_chern_1.npz')
+datafileF1m=np.load('C:/Users/swooty/Documents/Thesis Data/Final Bloch Osc data/07Mar2017_F1_chern_-1.npz')
+datafileF10=np.load('C:/Users/swooty/Documents/Thesis Data/Final Bloch Osc data/09Mar2017_Rf_Corrected.npz')
+datafileF2p=np.load('C:/Users/swooty/Documents/Thesis Data/Final Bloch Osc data/28Feb2017_F2_chern_1.npz')
+datafileF2m=np.load('C:/Users/swooty/Documents/Thesis Data/Final Bloch Osc data/27Feb2017_F2_chern_-1.npz')
+datafileF20=np.load('C:/Users/swooty/Documents/Thesis Data/Final Bloch Osc data/22Mar2017_Rf_Corrected.npz')
 width=4
 lw=15
 figure = plt.figure()
@@ -123,7 +123,7 @@ fractionM2=datafileF20['fractionM2']
 pan2=figure.add_subplot(gs[4])
 pan2.scatter(qlist,[1 for j in range(qlist.size)],c=fractionP,s=width,vmin=0.0,vmax=0.5,cmap='Blues', marker='_',linewidths=lw)
 pan2.scatter(qlist,[0 for j in range(qlist.size)],c=fraction0,s=width,vmin=0.0,vmax=0.5,cmap='Blues', marker='_',linewidths=lw)
-pan2.scatter(qlist,[-1 for j in range(qlist.size)],c=fractionM,s=wiFalsedth,vmin=0.0,vmax=0.5,cmap='Blues', marker='_',linewidths=lw)
+pan2.scatter(qlist,[-1 for j in range(qlist.size)],c=fractionM,s=width,vmin=0.0,vmax=0.5,cmap='Blues', marker='_',linewidths=lw)
 pan2.scatter(qlist,[2 for j in range(qlist.size)],c=fractionP2,s=width,vmin=0.0,vmax=0.5,cmap='Blues', marker='_',linewidths=lw)
 pan2.scatter(qlist,[-2 for j in range(qlist.size)],c=fractionM2,s=width,vmin=0.0,vmax=0.5,cmap='Blues', marker='_',linewidths=lw)
 pan2.set_xlabel(r'Crystal momentum $q_x$ [$k_L$]')

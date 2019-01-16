@@ -1,149 +1,242 @@
 \renewcommand{\thechapter}{6}
 
 \chapter{Measuring Chern Number in Synthetic Dimesnions}\label{chap:BlochOsc}
+As discussed in Chapter \ref{chap:Chern}, the 2D topological invariant as applied to band topology, the Chern number, is well defined for an infinite 2D system. For any finite system, the Chern number can be thought of as the Chern number of an inifinite system that locally looks like the bulk of the finite system. This begs the question, how narrow can a system get for this extension of the definition of Chern number to still be meaningful? 
 
-\section{Introduction}
+In this chapter, we describe our experiment in measuring Chern number in the effectively 2-D synthetic dimensional lattice, as described in Chapter \ref{chap:SynDim}. This lattice was elongated along the real direction and extremely narrow along the synthetic direction, only 3 or 5 sites wide. We performed a transport experiment to sample the band structure of this system as a function of crystal momentum $k_x$ along the real direction, and observed the resulting motion along the transverse, synthetic, direction, as shown schematically in Figure \ref{fig:laughlinPump}. 
 
-\section{Experiment}
-	Loading F=1 and F=2 manifolds
-	Applying a force to induce Bloch oscillations
-	Rf correction
+Figure \ref{fig:laughlinPump}a sketches the atoms loaded into the lowest band of the synthetic dimensions lattice in the $F=2$ manifold of \Rb{}, creating $5$ sites along the synthetic direction. As in Chapter \ref{chap:SynDim}, there was a 1D optical lattice along the longitudinal \ex{} direction, with lattice tunneling $t_x$ between adjacent sites labelled by $j$. Internal spin states of the atoms defined sites along the transverse $\ess{}$ direction, with tunneling $t_s$ induced by either rf or Raman coupling. In the case of rf coupling, no phase was imprinted, $\phi_{\rm AB}=0$. In the case of Raman coupling, an overall phase $\phi_{\rm AB}\neq 0$ was imprinted, and we choose the Landau gauge in which the phase is written on the longitudinal tunneling coefficient $t_x=|t_x|e^{i\phi_{\rm AB}m}$.
+
+The histogram in Figure \ref{fig:laughlinPump}a shows the fractional populations $n_m$ in each site $m$. An example hybryd TOF image (see sec. \ref{sec:SynDimCalibration}) is shown below in Figure \ref{fig:laughlinPump}c, with the central $m=0$ order marked by red crosshairs. Then, a force is applied along the long (real) dimension of the system for some time $\Delta t$, and a transverse response is observed, as seen in  Figure \ref{fig:laughlinPump}b. The fractional population has become maximized in the $m=1$ site, and the sample hybrid TOF image in Figure \ref{fig:laughlinPump}d shows a displacement along the longitudinal momentum axis of $\Delta q_x$. 
+
+\begin{figure*}
+\includegraphics{"BlochOsc Figures/figure1v15".pdf}
+\caption{Quantum Hall effect in Hofstadter ribbons. (a) 5-site wide ribbon with real tunneling coefficients along $\bf{\mathit{e}_s}$   and complex tunneling coefficients along \ex,  creating a non-zero phase  $\phi$ around each plaquette. (b) After applying a force along \ex  for a time $\Delta t$, atomic populations shift transversely along $\bf{\mathit{e}_s}$, signaling the Hall effect. (c,d)  TOF absorption images giving hybrid momentum/position density distributions $n(k_x,m)$. Prior to applying the force (c), the $m=0$ momentum peak is at $k_x=0$, marked by the red cross. Then, in (d), the force directly changed $q_x$, evidenced by the displacement $\Delta q_x$ of crystal momentum, and via the Hall effect shifted population along $\bf{\mathit{e}_s}$. }
+\label{fig:laughlinPump}
+\end{figure*}
+
+Due to the extremely narrow widths in the synthetic dimension, our measurment cannot be readily interpreted as a quantum Hall conductivity measurment, and a meaningful Chern number is not readily extracted that way, as discussed in sec. \ref{sec:qh}. However, we leverege the TKNN Diophantine equation \cite{Thouless1982} to perform an alternative measurement of the Chern number, discussed in \ref{sec:Diophantine}. We show how this equation arises naturally in our synthetic dimensional system, and claim that with this metric we can extend the definition of the Chern meaningfully to systems as narrow as ours.  
+
+\section{Experimental procedure}
+
+The setup for this experiment followed closely that of the original synthetic dimensions experiment, as described in sec. \ref{sec:SynDimSetup}. In contrast with the experiment described in Chapter \ref{chap:SynDim}, we performed this experiment in both the $F=1$ and $F=2$ hyperfine manifolds of \Rb{}, creating both $3$-site and $5$-site wide strips. We began the experiment by adiabatically loading the full synthetic dimensional system for both $F=1$ and $F=2$, with both Raman coupling ($\Phi_{\rm AB}\neq0$) and rf coupling ($\Phi_{\rm AB}=0$). 
+
+\subsection{Loading procedures}
+The loading procedure for the Raman coupled case was  as follows. Prepare a \Rb{} BEC (see sec. \ref{sec:BECsequence}) in the $m_F=0$ hyperfine state of the $F=1$ manifold. Ramp on the 1D optical lattice along \ex{} adiabatically in $300$ ms. For experiments in the $F=2$ manifold, microwaves were then used to transfer into said manifold whiel already in the lattice [DONT REMEMBER EXACT PROCEDURE FOR THIS LOOK UP ON EXPERIMENT]. This was done after lattice loading to minimize the amount of time the atoms spent in the $F=2$ manifold and thereby limit the spin-changing collisions and losses associated with that state [FIND CITATION FOR THIS].   Then, the Raman coupling field was ramped on adiabatically in $30$ ms.
+
+Loading the ground state of the $F=2$ manifold presented a unique restriction, as illustrated by Figure \ref{fig:LoadF2}. For the experiments described in Chapter \ref{chap:SynDim}, a bias magnetic field $B_z$ was chosen such that the effectic quadratic Zeeman shift $\hbar\epsilon = 0.05 E_L$, in lattice recoil energy units. However, in the $F=2$ case at this field, with a lattice depth of $4.4 E_L$, the $m_F=0$ ground state does not adiabatically connect to the Raman-coupled ground state. This is because, as shown in the band structure in Figure \ref{fig:LoadF2}a, the $m_F=\pm2$ energies of the lattice-coupled system at $q_x=0$ are lower in energy than the $m_F=0$ state. Therefore, to avoid this issue, we chose a bias field such that the quadratic Zeeman shift was $\hbar\epsilon = 0.02 E_L$. The band structure for this case is shown in Figure \ref{fig:LoadF2}b. Here, the $m_F=0$ sinusoid at crystal momentum $q_x=0$ is still the lowest energy, and therefore connects adiabatically to the Raman coupled ground state. 
+\begin{figure}
+\includegraphics{"BlochOsc Figures/LoadF2".pdf}
+\caption{Band structure of the lattice-coupled system in $F=2$. Here, lattice depth $V_0=4.4 E_L$, Raman coupling $\hbar\Omega=0$, and detuning $\hbar\delta=0$. (a) Quadratic shift $\hbar\epsilon=0.05 E_L$. At $q_x=0$, $m_F=0$ is not the ground state. (b) Quadratic shift $\hbar\epsilon = 0.02 E_L$.  At $q_x=0$, $m_F=0$ isthe ground state.}
+\label{fig:LoadF2}
+\end{figure}
+
+For the case where tunneling along the synthetic dimension was provided by rf coupling ($\Phi_{\rm AB}=0$), the loading procedure was as follows. Start in the $F=1,m_F=-1$ state, we turned the 1D optical lattice on adiabatically in $300$ ms, same as the Raman case. For $F=2$, we then transferred to the $F=2,m_F=-2$ state [CHECK HOW THIS IS DONE]. Then, we set the bias field to a large detuning $\hbar\delta>1 E_R$. Implementing adiabatic rapid passage (see sec. \ref{sec:ARP}), we then swept the field to resonance in $\approx 50$ ms, thereby loading the rf coupled ground state. This is necessary in the rf case as opposed to the Raman case, because there is no momentum shift in the band structure, and therefore turning on the rf coupling opens up an avoided crossing at $q_x=0$ and everywhere else, making it impossible to be adiabatic with respect to this turn on while on resonance. 
+
+\subsection{Application of force and measurement}
+After adiabatically loading the ground state at $q_x=0$ for all the configurations, we applied a constant force to the atoms, inducing a linear evolution of the crystal momentum given by
+\begin{equation}
+F_x=\hbar\frac{dq_x}{dt}.
+\end{equation} 	
+
+To apply this force, we displaced the crossing beam of the ODT, such that instead of being held at the potential minimum, the atoms were on an edge of the Gaussing beam, with a locally linear optical potential. This displacement was achieved by frequency shifting the AOM that controlled the split between the two ODT orders (see fig. \ref{fig:BirdsEyeApparatus}). This is shown schematically in Figure \ref{fig:kickFigure}. Figure \ref{fig:kickFigure}a shows the atoms (indicated by a black dot) at the minimum of the gaussian crossing beam (potential in blue), with no force applied. Figure \ref{fig:kickFigure}b shows the beam displaced to the right relative to the atoms, and the locally linear potential experienced by the atoms results in a positive force. Similarly, in Figure \ref{fig:kickFigure}c the beam is displaced to the left resulting in a negative force. 
+
+\begin{figure}
+\includegraphics{"BlochOsc Figures/kickFigure".pdf}
+\caption{Application of a constant force by displacing a Gaussian beam potential. (a) Atoms are at the minimum of the Gaussian potential, not experiencing a force. (b) Beam is displaced to the left, atoms experience a local linear potential resulting in a constant positive force. (c) Beam is displaced to the right, atoms experience a local linear potential resulting in a constant negative force.  }
+\label{fig:kickFigure}
+\end{figure}
+
+An example of the resulting evolution of the system is shown in Figure \ref{fig:kickBsTOF}. Figure \ref{fig:kickBsTOF}a shows the lowest three bands of the Raman coupled synthetic dimesnions band structure in the $F=2$ manifold, for our approximate experimental parameters of $V_0 = 4.4 E_L$, $\hbar\Omega = 0.5 E_L$, $\hbar\delta = 0 E_L$ and $\hbar\epsilon = 0.02 E_L$. The starting point of the BEC at $q_x=0$ is indicated by the black dot in the lowest band. The color indicates the modal position $\bar{m}$ along the synthetic direction. Modal position is a slight variant on the magnetization used in sec. \ref{sec:SynDimBandStructure}. The modal position was found by taking the fractional populations $n_{m}$ in the different $m$ sites at a given crystal momentum, and fitting them to a Gaussian distribution. The peak of the Gaussian distribution was taken as the modal position $\bar{m}$. In this experiment, we use $\bar{m}$ as the metric of location along $\ess{}$ in favor of the more conventional magnetization given by $\langle m\rangle=\sum_{m}m*n_{m}$ to avoid the large uncertainties introduced in the magnetization from number fluctuations in the extremal $m=\pm F$ sites. 
+\begin{figure}
+\includegraphics{"BlochOsc Figures/figure2Av2".pdf}
+\caption{Band structure in a 5-site wide ribbon.  (a) Band structure computed using full Hamiltonian for a $4.4 E_L$ deep 1-D lattice ($\lambda_L=$ 1064 nm), $0.5 E_L$ Raman coupling strength ($\lambda_R = $ 790 nm), and quadratic Zeeman shift $\epsilon=0.02 E_L$, giving $\Phi/\Phi_0 \approx 4/3$, $t_x = 0.078(2) E_L$, $t_s=2.3(1) t_x$. The color indicates modal position $\bar{m}$. The black dot indicates the initial loading parameters.  (b) TOF absorption images $n(k_x,m)$ for varying longitudinal crystal momenta $q_x$.  }
+\label{fig:kickBsTOF}
+\end{figure}
+
+We displaced the crossing ODT beam to one side to apply a positive force, inducing motion to the right $q_x\rightarrow q_x>0$ in the band structure, for various amounts of time $\Delta t$ inducing various changes in crystal momentum $\Delta q_x$. We then followed the same measurement protocol as described in sec. \ref{sec:SynDimCalibration}: we abruptly turned off the lattice, Raman or rf, and trapping ODT beams and allowed the atoms to expand in time-of-flight for $16$ ms, mapping initial momentum $k_x$ to position on the TOF images.  During TOF, we applied a $2$ ms [CHECK THIS NUMBER] Stern-Gerlach gradient pulse, separating the atoms according to site $m$ along an axis perpendicular to \ex{}. We therefore performed a hybrid measurment of momentum $k_x$ along the longitudinal \ex{} axis and single site resolved position $m$ along the transverse $\ess{}$ direction. 
+
+From these hybrid TOF images, we extracted the fractional population in each site $m$. In addition, from the change in position along the momentum axis $k_x$ we detected the crystal momentum $\Delta q_x$ for each image, as shown in Figure \ref{fig:LaughlinPump}c,d.  We therefore observed the evolution in the fractional populations and modal position as a function of $q_x$. Sample TOF images at different values of the crystal momentum are shown in Figure \ref{fig:kickBsTOF}, with different single-site resolved imaging along $\ess{}$ represented in the vertical direction, different $m$ sites shaded in different colors, corresponding to the colorbar in Figure \ref{fig:kickBsTOF}a. Similarly, the ODT crossing beam was displaced to the opposite side an equal amount, applying the same magnitude of force in the opposite direction and incuding motion to the left  $q_x\rightarrow q_x<0$ in the band structure. In this way, we obtained a complete map of the fractional populations $n_m$ in each transverse site $m$ for each value of the longitudinal crystal momentum $q_x$.
+
+\subsection{Density reduction}
+When force was applied to the atoms, their crystal momentum $q_x$ evolved, and they were no longer confined to a minimum of the band strucutre. This opened up the possibility for two-body collisions between the atoms that conserved the overall momentum and energy of the pair while changing the crystal momentum of each atom \cite{Campbell2006}. This lead to a smearing of the atoms along the crystal momentum axis, obsuring the measurement. 
+
+To mitigate this problem, it was necessary to cut down on the atomic density as much as possible while retaining enough atoms to observe a signal. In addition to re-shaping the ODT beam (see sec. \ref{sec:ODTbeamShape}), we also cut down the overall atom number after creating the BEC and before loading the synthetic dimensional lattice. Starting in $F=1, m_F=0$, we applied a microwave pulse resonant with the $\ket{F=1,m_F=0}\rightarrow\ket{F=2,m_F=-1}$ transition for $1$ ms [CHECK THIS NUMBER], until $\approx80\%$ of the atoms were transferred to the $F=2$ manifold. We then shined on the XZ probe beam to selectively blow away the $F=2$ atoms, leaving $\approx 1000$ atoms in the condensate.  
+
+\subsection{Rf correction}
+For rf-coupled experiments, our loading procedure into the lowest band at $q_x=0$ resulted in some latent non-adiabaticity that we could not get rid of or fully explain. This non-adiabaticity resulted in oscillations in the fractional populations $n_m$ as a function of time, even though the rf-coupled band structure predicts no dependence of $n_m$ on $q_x$. However, these oscillations were present as a function of time even when no force was applied to the atoms, indicating that these variations were dependent on time and on not $q_x$. Therefore, we used data obtained with no force applied to correct the time-dependent variation in data where the force was applied.
+\begin{figure}
+\includegraphics{"BlochOsc Figures/RfCorrection".pdf}
+\caption{Correction of oscillations in rf coupled data. (a,b,c) Raw fractional populations $n_m$ observed as a function of time $\Delta t$ with (a) positive force applied, (b) negative force applied, and (c) no force applied. (d,e) Corrected fractional populations $n_m^{\rm corrected}$ with (d) positive force applied, (e) negative force applied. (f) Corrected data as a function of crystal momentum for both force directions combined.  }
+\label{fig:RfCorrection}
+\end{figure}
+
+Our correction procedure is shown in Figure \ref{fig:RfCorrection}.  Figure \ref{fig:RfCorrection}a,b,c shows the raw fractional populations as a function of time for the case where a force was applied to the right, to the left, and not at all, respectively. Note that the observed oscillations are quite large, but consistent between the three cases. This implies that whatever mechanism is causing these oscillations is a time dependent one and not a consequence of any change in longitudinal crystal momentum $q_x$. 
+
+To correct the data and extract the change in fractional populations caused by varying $q_x$, we first calculate the change in fractional population as a function of time for the data with no force applied. This is given by $\Delta n_m^{F=0}(t) = n_m^{F=0}(t) - n_m^{F=0}(0)$. We then subtract this change from the data with force applied via $n_m^{F\neq0,{\rm corrected}}(t)=n_m^{F\neq0}(t)-\Delta n_m^{F=0}(t)$. These corrected fractional populations as a function of time are shown in Figure \ref{fig:RfCorrection}d,e for positive and negative force, respectively. In Figure \ref{fig:RfCorrection}f, we have combined the corrected positive and negative force data and plotted it as a function of crystal momentum, effectively mapping out the fractional populations everywhere in the lowest band. 
+
 	Field stabilization
 
 \section{Quantum Hall Effect interpretation}
 	Microscopic view of QHE
 	Application to our system
-	Inadequacy of the model for our finite system
 
-\section{Measuring Chern number via Diophantine equation}
-	TKNN Diophantine equation in our setup
-	Details of application: fitting parabolas, fitting a line
-	Results
-	Discussion: Chern number measured in this way as a function of coupling strength, size...
-
-\section{Conclusion}
-
-\section{Introduction}
-	The importance of topology in physical systems is famously evidenced by the quantum Hall effect's role as an ultra-precise realization of the von Klitzing constant $R_K = h/e^2$ of resistance\cite{Klitzing1980}. Although topological order is only strictly defined for infinite systems, the bulk properties of macroscopic topological systems closely resemble those of the corresponding infinite system. For 2-D systems in a magnetic field $B_0$, the topology is characterized by an integer invariant called the Chern number. Even at laboratory fields of tens of Tesla, crystalline materials have a small magnetic flux $\Phi=AB_0$ per individual lattice plaquette (with area $A$) compared to the flux quantum $\Phi_0=h/e$. Superlattice \cite{Geisler2004,Melinte2004,Feil2007,Dean2013} and ultracold atom\cite{Miyake2013,Aidelsburger2013,Jotzu2014,An2017} systems now realize 2-D lattices in a regime where the magnetic flux per plaquette $\Phi$ is a significant fraction of $\Phi_0$. %This ``Hofstadter regime'', inaccessible to traditional condensed matter experiments, supports a range of Chern numbers beyond the low field values of $\pm1$. 
-% In experiment, their topology is typically inferred from edge or surface modes that arise at the interface between systems of different topology: the bulk-edge correspondence\cite{Thouless1982,Datta1995}.
-
-	Experimental signatures of Chern numbers generally leverage one of two physical effects: in condensed matter systems the edge-bulk correspondence allows the Chern number to be inferred from the quantized Hall conductivity $\sigma_{\rm{H}} = C/R_{\rm{K}}$, and in cold-atom experiments direct probes of the underlying band structure at every value of crystal momentum give access to the Chern number through either static \cite{Aidelsburger2015,Wang2013} or dynamic \cite{Song2018,Tarnowski2018,Sun2018,Asteria2018} signatures.  Both of these connections derive from the pioneering work of  Thouless, Kohmoto, Nightingale, and den Nijs\cite{Thouless1982}, in the now famous TKNN paper.  Going beyond these well known techniques, the TKNN paper showed that for rational flux $\Phi/\Phi_0 = P/Q$ (for relatively prime integers $P$ and $Q$) the integer solutions  $s$ and $C$ to the Diophantine equation 
-\begin{equation}
-1 = Q s - P C
-\label{eqn:Diophantine}
-\end{equation}  
-uniquely\footnote{Subject to the constraint $|C|\leq |Q|/2$\cite{Thouless1982, Kohmoto1989}. The integer $s$ has no bearing on our argument, but has been interpreted as the charge transported when the periodic potential is adiabatically displaced \cite{MacDonald1984,Kunz1986}.} determine the Chern number $C$ of the lowest band. Following theoretical work\cite{Huang2013,Liu2013,Wang2013,Zhang2016,Mugel2017}, we leveraged this TKNN equation to determine the Chern number of our system.
-		
-\begin{figure*}
-\includegraphics{"BlochOsc Figures/figure1v15".pdf}
-\caption{Quantum Hall effect in Hofstadter ribbons. \textbf{a}. 5-site wide ribbon with real tunneling coefficients along $\bf{\mathit{e}_s}$   and complex tunneling coefficients along \ex,  creating a non-zero phase  $\phi$ around each plaquette.  \textbf{b}. After applying a force along \ex  for a time $\Delta t$, atomic populations shift transversely along $\bf{\mathit{e}_s}$, signaling the Hall effect. \textbf{c,d}.  TOF absorption images giving hybrid momentum/position density distributions $n(k_x,m)$. Prior to applying the force \textbf{c}, the $m=0$ momentum peak is at $k_x=0$, marked by the red cross. Then, in \textbf{d}, the force directly changed $q_x$, evidenced by the displacement $\Delta q_x$ of crystal momentum, and via the Hall effect shifted population along $\bf{\mathit{e}_s}$. }
-\label{fig:laughlinPump}
-\end{figure*}
-
-\section{Experimental setup}
-	
-	We studied ultracold neutral atoms in a square lattice with a large magnetic flux per plaquette. As pictured in  Fig. \ref{fig:laughlinPump}a, our system consisted of a 2-D lattice that was extremely narrow along one direction, just 3 or 5 sites wide - out of reach of traditional condensed matter experiments, with hard wall boundary conditions: a ribbon. Our system was qualitatively well described by the Harper-Hofstadter Hamiltonian in the Landau gauge\cite{Harper1955,Hofstadter1976}
-\begin{equation}
-\hat{H}= -\sum\limits_{m,j}\left({t_x e^{i\phi m}|j,m\rangle\langle j+1,m|+t_s|j,m\rangle\langle j,m+1|}\right) + \rm{H.c.},
-    %  &+\sum\limits_{m,j}{F_x a j H(t=0)|j,m\rangle\langle j,m|},
-\label{eqn:Hamiltonian}
-\end{equation}
-where $j$ and $m$ label lattice sites along \ex    and $\bf{\mathit{e}_s}$, with tunneling strengths $t_x$ and $t_s$ respectively. As shown in Fig. \ref{fig:laughlinPump}a, tunneling along \ex    was accompanied by a phase shift $e^{i\phi m}$. Hopping around a single plaquette of this lattice imprints a phase $\phi$, analogous to the Aharanov-Bohm phase, emulating a magnetic flux $\Phi/\Phi_0=\phi/2\pi$. We implemented this 2-D lattice by combining a 1-D optical lattice defining sites along an extended direction \ex, with atomic spin states forming lattice sites along a narrow, synthetic\cite{Celi2014,Stuhl2015,Mancini2015,Meier2016} direction $\bf{\mathit{e}_s}$. The exact Hamiltonian of the underlying atomic system differs from the Harper-Hofstadter Hamiltonian above in that $t_s$ is non-uniform due to Clebsch-Gordan coefficients and there is a small $m^2$ dependent potential term due to the quadratic Zeeman shift (see Appendix D). 
-
-	This system exhibits a Hall effect, where a longitudinal force $F_{\parallel}$ -- analogous to the electric force $e E_{\parallel}$ in electonic systems -- drives a transverse `Hall' current density $j_{\perp} = \sigma_{\rm{H}} E_{\parallel}$ for non-zero $\Phi/\Phi_0$. A longitudinal force $F_x$ would drive a change in the dimensionless crystal momentum $\hbar\Delta q_x/\hbar G$  and a transverse displacement $\Delta m$, giving a dimensionless Hall conductivity  $N G\Delta m/ \Delta q_x=\sigma_{\rm{H}} R_{\rm{K}}={\tilde\sigma}_{\rm{H}}$, where $G$ is the reciprocal lattice constant and $N$ is the number of carriers per plaquette (see Appendix C).  Starting with Bose-condensed atoms in the lattice's ground state (with transverse density shown in Fig. \ref{fig:laughlinPump}a) we applied a force along \ex and obtained $\Delta m$ from site resolved density distributions\cite{Wang2013} along $\bf{\mathit{e}_s}$ (Fig. \ref{fig:laughlinPump}b). Leveraging the TKNN equation (eq. \ref{eqn:Diophantine}), we further show that the force required to move the atoms a single lattice site signals the infinite system's Chern number. 
-	
-	Our quantum Hall ribbons were created with optically trapped $^{87}\rm{Rb}$ Bose-Einstein condensates (BECs) in either the $F=1$ or $2$ ground state hyperfine manifold, creating $3$ or $5$  site-wide ribbons from the $2F+1$ states available in either manifold. We first loaded BECs into a 1-D optical lattice along \ex formed by a retro-reflected $\lambda_L=1064$ nm laser beam. This created a lattice with period $a=\lambda_L/2$ and depth $4.4(1) E_L$, giving tunneling strength $t_x = 0.078(2) E_L$. Here, $E_L=\hbar^2 k_L^2/2m_{\rm{Rb}}$ is the single photon recoil energy; $\hbar k_L=2\pi\hbar/\lambda_L$ is the single photon recoil momentum; and $m_{\rm{Rb}}$ is the atomic mass. We induced tunneling along $\bf{\mathit{e}_s}$ with either a spatially uniform rf magnetic field or two-photon Raman transitions. The tunneling strength was $t_s = 2.3(1) t_x$ for Raman coupling in the $F=2$ manifold, $t_s = 2.8(1) t_x$ for Raman coupling in the $F=1$ manifold, and $t_s = 7.4(5) t_x$ for rf coupling in both manifolds. The rf-induced tunneling imparted at most only a spatially uniform tunneling phase, giving $\phi/2\pi = 0$. In contrast the Raman coupling, formed by a pair of counter propagating laser beams with wavelength $\lambda_R=790$ nm, imparted a phase factor $\exp{(-2ik_Rx)}$. Here, $\hbar k_R=2\pi\hbar/\lambda_R$ is the Raman recoil momentum, giving $\phi/2\pi\approx4/3$. We then applied a force by shifting the center of the confining potential along \ex, effectively applying a linear potential. Using time-of-flight (TOF) techniques\cite{Stuhl2015}, we measured hybrid momentum/position density distributions $n(k_x,m)$, a function of momentum along \ex and position along $\bf{\mathit{e}_s}$, as seen in Fig. \ref{fig:laughlinPump}c-d. 
-	
-\begin{figure}
-\includegraphics{"BlochOsc Figures/figure2Av2".pdf}
-\caption{Band structure in a 5-site wide ribbon.  \textbf{a}. Band structure computed using full Hamiltonian for a $4.4 E_L$ deep 1-D lattice ($\lambda_L=$ 1064 nm), $0.5 E_L$ Raman coupling strength ($\lambda_R = $ 790 nm), and quadratic Zeeman shift $\epsilon=0.02 E_L$, giving $\Phi/\Phi_0 \approx 4/3$, $t_x = 0.078(2) E_L$, $t_s=2.3(1) t_x$ (see Appendix D). The color indicates modal position $\bar{m}$. The black dot indicates the initial loading parameters.  \textbf{b}. TOF absorption images $n(k_x,m)$ for varying longitudinal crystal momenta $q_x$.  }
-\label{fig:bandStructure}
-\end{figure}
 
 \begin{figure}
 \includegraphics{"BlochOsc Figures/figure2Bv3".pdf}
 \caption{Hall displacement. Top: modal position $\bar{m}$ is plotted as a function of $q_x$ for the 5-site ribbon with flux \textbf{a}. $\Phi/\Phi_0=0$, \textbf{b}. $\Phi/\Phi_0\approx-4/3$, \textbf{c}. $\Phi/\Phi_0\approx4/3$. Gray circles depict the measurements; black dashed lines are the prediction of our simple $\tilde{\sigma}_\textrm{H}$ and red curves are the expectation from the band structure of our thin ribbon. Bottom: Extracted conductivity from the slope of a line of best fit to the data (gray circles) and theory (red lines) as a function of maximum $|q_x|$ included in the fit range, for each flux value. As discussed in Appendix B, the $\Phi/\Phi_0=0$ data was compensated to account for non-adiabaticity in the loading procedure. }
 \label{fig:magnetization}
 \end{figure}
+	Inadequacy of the model for our finite system
+
+\section{Measuring Chern number via Diophantine equation}
+	TKNN Diophantine equation in our setup
 
 \begin{figure}
 \includegraphics{"BlochOsc Figures/figure3v7".pdf}
 \caption{Chern number from the TKNN equation.  \textbf{a}. Lowest band energy within the Brillouin zone in an extended 2-D system, where $q_x$ and $q_s$ are crystal momenta along \ex and $\bf{\mathit{e}_s}$, respectively. Top. $\Phi/\Phi_0=0$. Middle. $\Phi/\Phi_0=1/3$: Brillouin zone shrinks by a factor of $3$ and becomes 3-fold degenerate, distance between adjacent energy minima spaced by $2k_L/Q$ is labeled. Bottom. $\Phi/\Phi_0=2/5$. \textbf{b}.  Fractional population in each spin state in the lowest band at $q_s=0$. Top. $\Phi/\Phi_0=1/3$. Bottom. $\Phi/\Phi_0=2/5$. A momentum shift along \ex of $2k_{\rm{L}}/Q$ is accompanied by an integer number of spin flips $C$. A line connecting magnetic states separated by $2k_L/Q$, with slope $C=1$ (top) and $-2$ (bottom), is indicated. }
 \label{fig:Diophantine}
 \end{figure}
-	
-\section{Hall conductivity measurement}
 
-	We measured the Hall conductivity beginning with a BEC at $q_x(t=0)=0$ in the lowest band with transverse position $\bar{m}_0=0$ (see Appendix A).  Fig. \ref{fig:bandStructure}a shows the band structure of our system as a function of crystal momentum along \ex, with color indicating the modal position along $\bf{\mathit{e}_s}$, calculated by diagonalizing the full Hamiltonian of our system (see Appendix D). We applied a force $F_x=0.106(5) E_L/\lambda_L$ for varying times $\Delta t$, directly changing the longitudinal crystal momentum from $0$ to a final $q_x$ and giving a transverse Hall displacement from $0$ to a final $\bar{m}$. Figure \ref{fig:bandStructure}b shows a collection of hybrid density distributions, where each column depicts $n(k_x,m)$ for a specific final $q_x$, labelled by the overall horizontal axis. For each column, the change in crystal momentum is marked by the horizontal displacement of the diffraction orders relative to their location in the central $q_x=0$ column. The transverse displacement is visible in the overall shift in density along $m$ as a function of $q_x$, i.e., between columns.  
 
-	Figure \ref{fig:magnetization}(left) quantifies this Hall effect by plotting $\bar{m}$ as a function of $q_x$ for $\Phi/\Phi_0=0$, $-4/3$, and $4/3$. The data is represented by gray dots, with uncertainty bars reflecting the propagated standard uncertainty from averaging six identical runs. For zero flux $\Phi/\Phi_0=0$ (Fig. \ref{fig:magnetization}a), $\bar{m}$ was independent of $q_x$; in contrast, for non-zero flux $\Phi/\Phi_0\approx\pm4/3$  (Fig. \ref{fig:magnetization}b,c),  $\bar{m}$ depends linearly on $q_x$ with non-zero slope. These linear dependencies evoke our earlier discussion of the Hall conductance $\tilde{\sigma}_{\rm{H}}$, in which we anticipated slopes equal to the Chern number. Linear fits to the data give $\tilde{\sigma}_{\rm{H}}=0.01(1)$, $0.87(3)$, and $-0.85(3)$ for zero, negative and positive flux respectively, showing the expected qualitative behavior. The expected slopes, given by the Chern number, $\sigma_{\rm{H}}=0,\pm1$ are indicated by black dashed lines in Fig. \ref{fig:magnetization}(left). 
+\begin{figure}
+\includegraphics{"BlochOsc Figures/FitGaussiansChern".pdf}
+\caption{}
+\label{fig:FitGaussiansChern}
+\end{figure}
+	Details of application: fitting parabolas, fitting a line
+	Results
 
-	The red curves in Fig. \ref{fig:magnetization}(left) show the expected behavior for our 5-site wide system for adiabatic changes in $q_x$ as calculated from exact diagonalization of the full Hamiltonian (see Appendix D), always within the lowest band (Fig. \ref{fig:bandStructure}a), i.e., Bloch oscillations.  This theory predicts a nearly linear slope for small $q_x$ sharply returning to $\bar{m}=0$ at the edges of the Brillouin zone. A linear fit to this theory produces $\tilde{\sigma}_{\rm{H}}\approx0$, $0.6$, and $-0.6$ for zero, negative and positive flux respectively, far from the Chern number. This discrepancy is resolved by recalling that Bloch oscillations require adiabatic motion, and the band gaps at the edge of the Brillouin zone close as the ribbon width grows, making the Bloch oscillation model inapplicable. The departure of the data from the adiabatic theory at the edges of the Brillouin zone indicates a partial break down of adiabaticity was present in our data. One might suspect that limiting the domain of the linear fit such that band edge effects are excluded would still provide a good measure of the Chern number. However, as shown in Fig. \ref{fig:magnetization}(right), the slope of the best fit line for non-trivial topologies, and thus the measured conductivity, depends highly on the selected domain for both the theoretical (red) and experimental (black) data, and the appropriate choice of range is ambiguous. We conclude that for an extremely narrow system such as ours, a conductivity measurement is insufficient for determining the Chern number at reasonable tunneling strengths \cite{Mugel2017}. 
-	
-\section{Chern number measurement via TKNN Diophantine equation}
-
-	To better identify Chern numbers, we relate  the TKNN equation (Eqn. \ref{eqn:Diophantine}) to the physical processes present in our system.  Although the Hofstadter Hamiltonian in Eqn. \ref{eqn:Hamiltonian} is only invariant under $m$-translations that are integer multiples of $Q$ , a so-called ``magnetic-displacement'' by $\Delta m=1$ accompanied with a crystal momentum shift $\Delta q_x/2 k_{\rm R} = P/Q$ leaves Eqn. \ref{eqn:Hamiltonian} unchanged.  Together, these symmetry operations give a $Q$-fold reduction of the Brillouin zone along ${\bf e}_s$, and add a $Q$-fold degeneracy, as illustrated in Fig. \ref{fig:Diophantine}a  for $\Phi/\Phi_0=0$, $1/3$, and $2/5$.  Recalling that the Brillouin zone is $2 \hbar k_{\rm L}$ periodic along ${\bf e}_x$, it follows that a displacement by $2 k_{\rm L}/Q$ to the nearest symmetry related state involves an integer $C$ magnetic displacements, shown in Fig. \ref{fig:Diophantine}b for $\Phi/\Phi_0=1/3$ and $2/5$, given by solutions to $2  k_{\rm L} s - 2  k_{\rm R} C = 2  k_{\rm L}/Q$, where $s$ counts the number of times the Brillouin zone was ``wrapped around’’ during the $C$ vertical displacements. Because this is exactly the TKNN equation (\ref{eqn:Diophantine}), we identify $C$ as the Chern number.  Both $C$ and $s$ directly relate to physical processes.  First, each time the  Brillouin zone is wrapped around — implying a net change of momentum by $2 \hbar k_{\rm L}$ — a pair of photons must be exchanged between the optical lattice laser beams.  Second, each change of $m$ by 1 must be accompanied by a $2 \hbar k_{\rm R}$ recoil kick imparted by the Raman lasers as they change the spin state.  This physical motivation of the TKNN equation remains broadly applicable even for our narrow lattice, providing an alternate signature of the Chern number.
-	
-	
 \begin{figure}
 \includegraphics{"BlochOsc Figures/figure4v4".pdf}
 \caption{Chern number measurement.  Lowest band fractional population measured as a function of crystal momentum in the  \ex  and position in the $\bf{\mathit{e}_s}$. Darker color indicates higher fractional population. In the Raman-coupled cases, the points represent the fitted population maxima and the Chern number is extracted from the best fit line to those points.  \textbf{a}. 3-site (left) and 5-site (right) systems with positive flux.  \textbf{b} 3-site (left) and 5-site (right) system with zero flux.  \textbf{c}. 3-site (left) and 5-site (right) systems with negative flux. The parameters for 3-site data were identical to those for 5-site data, see Fig. \ref{fig:magnetization} a, except $t_s =2.880(1)t_x$.}
 \label{fig:finalData}
 \end{figure}
-
-	 Figure \ref{fig:finalData} shows the full evolution of fractional population in each $m$ site as a function of crystal momentum $q_x$ in the lowest band.  The black circles locate the peak of the fractional population in each spin state. We identify the locations of those peaks as the crystal momenta at which the atoms were displaced by a single lattice site along $\bf{\mathit{e}_s}$ starting at $q_x=0$, similar to the suggestions in Refs. \cite{Zhang2016,Mugel2017}. We associate the Chern number with the slope of a linear fit through the three peak locations.  For the 3-site wide ribbon, we measured a Chern number of $0.99(4), -0.98(5)$ for negative and positive flux respectively\footnote{Our Chern number extraction scheme fails for the rf case as the fractional populations are flat and there is no peak. We therefore assign a Chern number of $0$ to flat distributions.}, in agreement with the exact theory as calculated from the full Hamiltonian (see Appendix D), which predicts $\pm0.97(1)$, with uncertainties reflecting fit uncertainty of peak locations.  For the 5-site wide ribbon,  we measured $1.11(2), -0.97(4)$, close to the theoretical prediction of $\pm 1.07(1)$. The deviation from unity results from $\Phi/\Phi_0-4/3\approx0.01$, a non-zero quadratic Zeeman shift, and $t_s>t_x$ allowing hybridization of the edge states\cite{Mugel2017}.
-	 
-\section{Conclusion}
 	
-	Our direct microscopic observations of topologically driven transverse transport demonstrate the power of combining momentum and site-resolved position measurements. With the addition of interactions, these systems have been shown to display chiral currents \cite{Tai2017}, and with many-body interactions are predicted to give rise to complex phase diagrams supporting vortex lattices and charge density waves\cite{Greschner2015,Greschner2016,CalvaneseStrinati2017}. Realizations of controlled cyclic coupling giving periodic boundary conditions\cite{Celi2014} along $\bf{\mathit{e}_s}$ could elucidate the appearance of edge modes as the coupling between two of the three states is smoothly tuned to zero. In addition, due to the non-trivial topology as well as the low heating afforded by synthetic dimensional systems, a quantum Fermi gas dressed similarly to our system would be a good candidate for realizing fractional Chern insulators\cite{Parameswaran2013}.  
 
-\section*{Acknowledgments}
-This work was partially supported by the Air Force Office of Scientific Research’s Quantum Matter MURI, NIST, and NSF (through the Physics Frontier Center
-at the JQI).
-
-\section*{Appendix A: Experimental detail} We created nearly pure $^{87}\rm{Rb}$ BECs in a crossed optical dipole trap\cite{Stuhl2015} with frequencies $(\omega_x,\omega_y,\omega_z)/2\pi=(27.1(2),58.4(8),94.2(5))\ {\mathrm{Hz}}$. We deliberately used small, low density BECs with $\approx10^3$ atoms to limit unwanted scattering processes in regimes of dynamical instability\cite{Campbell2006}. At various times in the sequence, we used coherent rf and microwave techniques to prepare the hyperfine $\ket{F,m_F}$ state of interest. The 1-D optical lattice was always ramped on linearly in 300 ms. For non-zero $\phi$, we turned on the Raman beams adiabatically in 30 ms after ramping on the lattice. For $\phi=0$ we used adiabatic rapid passage starting in $m_F=-F$ and swept the bias magnetic field in $\approx50$ ms to resonance. We applied forces by spatially displacing the optical dipole beam providing longitudinal confinement (by frequency shifting an acousto-optic modulator), effectively adding a linear contribution to the existent harmonic potential for displacements small compared to the beam waist. 
-
-We define the modal position $\bar{m}$ as the center of a Gaussian fit to the population distribution along $\bf{\mathit{e}_s}$. 
-
-
-\section*{Appendix B: Rf correction} In experiments where the tunneling along $\bf{\mathit{e}_s}$ was induced by a uniform rf magnetic field ($\Phi/\Phi_0=0$), our loading procedure had remnant non-adiabaticity that led to temporal oscillations in the fractional populations in different $m$ states at the $40\%$ level. To separate the effects due to this non-adiabaticity from transverse transport, we performed the experiment with identical preparations without applying the longitudinal force. We then used the observed oscillations as a function of time without an applied force as a baseline, and report the difference in fractional populations between that baseline and the cases where the force was applied. 
-
-\section*{Appendix C: Hall conductivity} The current density can be expressed as $j_{\perp}=n_{2\rm{D}}v_{\perp}e$, where $n_{2\rm{D}}$ is the 2-D charge carrier density, $v_{\perp}$ is the transverse velocity and $e$ is the electron charge. Using $\sigma_{\rm{H}} E_{\parallel}=F_{\parallel}\sigma_{\rm{H}}/e$, and choosing some increment of time $\Delta t$, we have $v_{\perp}=\Delta x_{\perp}/\Delta t$, and $F_{\parallel} = \hbar \Delta q_{\parallel}/\Delta t$, where $q_{\parallel}$ is the crystal momentum along the direction of the force. Re-expressing $n_{2D}$ in number of carriers $N$ per plaquette, defining $\Delta x_{\perp}$ as transverse displacement in units of lattice periods, we obtain $N G\Delta x_{\perp}/ \Delta q_{\parallel}=\sigma_{\rm{H}} R_{\rm{K}}$.
-
-
-\section*{Appendix D: Full Hamiltonian}
+\section{Conclusion}
+Discussion: Chern number measured in this way as a function of coupling strength, size...
+%\section{Introduction}
+%	The importance of topology in physical systems is famously evidenced by the quantum Hall effect's role as an ultra-precise realization of the von Klitzing constant $R_K = h/e^2$ of resistance\cite{Klitzing1980}. Although topological order is only strictly defined for infinite systems, the bulk properties of macroscopic topological systems closely resemble those of the corresponding infinite system. For 2-D systems in a magnetic field $B_0$, the topology is characterized by an integer invariant called the Chern number. Even at laboratory fields of tens of Tesla, crystalline materials have a small magnetic flux $\Phi=AB_0$ per individual lattice plaquette (with area $A$) compared to the flux quantum $\Phi_0=h/e$. Superlattice \cite{Geisler2004,Melinte2004,Feil2007,Dean2013} and ultracold atom\cite{Miyake2013,Aidelsburger2013,Jotzu2014,An2017} systems now realize 2-D lattices in a regime where the magnetic flux per plaquette $\Phi$ is a significant fraction of $\Phi_0$. %This ``Hofstadter regime'', inaccessible to traditional condensed matter experiments, supports a range of Chern numbers beyond the low field values of $\pm1$. 
+%% In experiment, their topology is typically inferred from edge or surface modes that arise at the interface between systems of different topology: the bulk-edge correspondence\cite{Thouless1982,Datta1995}.
 %
-%\begin{figure*}
+%	Experimental signatures of Chern numbers generally leverage one of two physical effects: in condensed matter systems the edge-bulk correspondence allows the Chern number to be inferred from the quantized Hall conductivity $\sigma_{\rm{H}} = C/R_{\rm{K}}$, and in cold-atom experiments direct probes of the underlying band structure at every value of crystal momentum give access to the Chern number through either static \cite{Aidelsburger2015,Wang2013} or dynamic \cite{Song2018,Tarnowski2018,Sun2018,Asteria2018} signatures.  Both of these connections derive from the pioneering work of  Thouless, Kohmoto, Nightingale, and den Nijs\cite{Thouless1982}, in the now famous TKNN paper.  Going beyond these well known techniques, the TKNN paper showed that for rational flux $\Phi/\Phi_0 = P/Q$ (for relatively prime integers $P$ and $Q$) the integer solutions  $s$ and $C$ to the Diophantine equation 
 %\begin{equation}
-%\begin{align*}
-%H = \sum _{m=-F,n=-\infty}^{F,\infty}&\left(\hbar^2\left(q_x-2m\Phi/\Phi_0-2n\right)^2 k_L^2/2m_{\rm{Rb}} + h\delta m+\epsilon m^2\right)\ket{q_x+n2k_L,m}\bra{q_x+n2k_L,m}\\
-%&+\hbar\Omega\sqrt{F(F+1)-m(m+1)}/2\sqrt{2}\ket{q_x+n2k_L,m}\bra{q_x+n2k_L,m+1} +\rm{H.c.}\\
-%&+U/4\ket{q_x+n2k_L,m}\bra{q_x+(n+1)2k_L,m} +\rm{H.c.}
-%\end{align*}
-%\label{eqn:FullHam}
-%\end{equation}
+%1 = Q s - P C
+%\label{eqn:Diophantine}
+%\end{equation}  
+%uniquely\footnote{Subject to the constraint $|C|\leq |Q|/2$\cite{Thouless1982, Kohmoto1989}. The integer $s$ has no bearing on our argument, but has been interpreted as the charge transported when the periodic potential is adiabatically displaced \cite{MacDonald1984,Kunz1986}.} determine the Chern number $C$ of the lowest band. Following theoretical work\cite{Huang2013,Liu2013,Wang2013,Zhang2016,Mugel2017}, we leveraged this TKNN equation to determine the Chern number of our system.
+%		
+%\begin{figure*}
+%\includegraphics{"BlochOsc Figures/figure1v15".pdf}
+%\caption{Quantum Hall effect in Hofstadter ribbons. \textbf{a}. 5-site wide ribbon with real tunneling coefficients along $\bf{\mathit{e}_s}$   and complex tunneling coefficients along \ex,  creating a non-zero phase  $\phi$ around each plaquette.  \textbf{b}. After applying a force along \ex  for a time $\Delta t$, atomic populations shift transversely along $\bf{\mathit{e}_s}$, signaling the Hall effect. \textbf{c,d}.  TOF absorption images giving hybrid momentum/position density distributions $n(k_x,m)$. Prior to applying the force \textbf{c}, the $m=0$ momentum peak is at $k_x=0$, marked by the red cross. Then, in \textbf{d}, the force directly changed $q_x$, evidenced by the displacement $\Delta q_x$ of crystal momentum, and via the Hall effect shifted population along $\bf{\mathit{e}_s}$. }
+%\label{fig:laughlinPump}
 %\end{figure*}
-
-The spin dependent Hamiltonian, in the presence of Raman coupling and a 1-D optical lattice can be written as
-\begin{equation*}
-H = \sum _{m=-F,n=-\infty}^{F,\infty}H_{0}+H_{\rm{R}}+H_{\rm{L}},
-\end{equation*}
-where the diagonal term
-\begin{eqnarray*}
-H_{0} =&\\
-&\left(\hbar^2\left(q_x-2m\Phi/\Phi_0-2n\right)^2 k_L^2/2m_{\rm{Rb}}+h\delta m+\epsilon m^2 \right)\\
-&\ket{q_x+n2k_L,m}\bra{q_x+n2k_L,m}
-\end{eqnarray*}
-includes the kinetic energy as well as the two-photon Raman detuning from resonance $\delta$ and the quadratic Zeeman shift $\epsilon$. Here,  $m$ represents atomic spin, $n$ represents lattice order in the momentum basis, $q$ is the longitudinal crystal momentum, and $m_{\rm{Rb}}$ is the atomic mass.  The second term represents the Raman coupling  with coupling strength $\Omega$, with anisotropic tunneling arising from the spin-dependent prefactor (Clebsch-Gordan coefficient):
-\begin{eqnarray*}
-H_{\rm{R}} =&\\
-&\hbar\Omega\sqrt{F(F+1)-m(m+1)}/2\sqrt{2}\ket{q_x+n2k_L,m}\bra{q_x+n2k_L,m+1}\\
-&+\rm{H.c.}
-\end{eqnarray*}
-Here,  H.c. stands for Hermitian conjugate. The third term represents lattice coupling to higher order lattice states, with lattice depth $U$: 
-\begin{equation*}
-H_{\rm{L}} = U/4\ket{q_x+n2k_L,m}\bra{q_x+(n+1)2k_L,m} +\rm{H.c.}
-\end{equation*}
-In our experiment, $\hbar\Omega=0.5(2)E_L$ for Raman coupling and $\hbar\Omega = 0.57(1) E_L$ for rf coupling, $U=4.4(4) E_L$ for all preparations. In our calculations, we found that restricting $-7<n<7$ was sufficient at our energies. 
-
-We choose the appropriate tunneling coefficients $t_x$ and $t_s$ for the approximate tight-binding Hamiltonian Eqn. \ref{eqn:Hamiltonian} as those that optimally reproduce the lowest two bands, relevant for our experiment. 
+%
+%\section{Experimental setup}
+%	
+%	We studied ultracold neutral atoms in a square lattice with a large magnetic flux per plaquette. As pictured in  Fig. \ref{fig:laughlinPump}a, our system consisted of a 2-D lattice that was extremely narrow along one direction, just 3 or 5 sites wide - out of reach of traditional condensed matter experiments, with hard wall boundary conditions: a ribbon. Our system was qualitatively well described by the Harper-Hofstadter Hamiltonian in the Landau gauge\cite{Harper1955,Hofstadter1976}
+%\begin{equation}
+%\hat{H}= -\sum\limits_{m,j}\left({t_x e^{i\phi m}|j,m\rangle\langle j+1,m|+t_s|j,m\rangle\langle j,m+1|}\right) + \rm{H.c.},
+%    %  &+\sum\limits_{m,j}{F_x a j H(t=0)|j,m\rangle\langle j,m|},
+%\label{eqn:Hamiltonian}
+%\end{equation}
+%where $j$ and $m$ label lattice sites along \ex    and $\bf{\mathit{e}_s}$, with tunneling strengths $t_x$ and $t_s$ respectively. As shown in Fig. \ref{fig:laughlinPump}a, tunneling along \ex    was accompanied by a phase shift $e^{i\phi m}$. Hopping around a single plaquette of this lattice imprints a phase $\phi$, analogous to the Aharanov-Bohm phase, emulating a magnetic flux $\Phi/\Phi_0=\phi/2\pi$. We implemented this 2-D lattice by combining a 1-D optical lattice defining sites along an extended direction \ex, with atomic spin states forming lattice sites along a narrow, synthetic\cite{Celi2014,Stuhl2015,Mancini2015,Meier2016} direction $\bf{\mathit{e}_s}$. The exact Hamiltonian of the underlying atomic system differs from the Harper-Hofstadter Hamiltonian above in that $t_s$ is non-uniform due to Clebsch-Gordan coefficients and there is a small $m^2$ dependent potential term due to the quadratic Zeeman shift (see Appendix D). 
+%
+%	This system exhibits a Hall effect, where a longitudinal force $F_{\parallel}$ -- analogous to the electric force $e E_{\parallel}$ in electonic systems -- drives a transverse `Hall' current density $j_{\perp} = \sigma_{\rm{H}} E_{\parallel}$ for non-zero $\Phi/\Phi_0$. A longitudinal force $F_x$ would drive a change in the dimensionless crystal momentum $\hbar\Delta q_x/\hbar G$  and a transverse displacement $\Delta m$, giving a dimensionless Hall conductivity  $N G\Delta m/ \Delta q_x=\sigma_{\rm{H}} R_{\rm{K}}={\tilde\sigma}_{\rm{H}}$, where $G$ is the reciprocal lattice constant and $N$ is the number of carriers per plaquette (see Appendix C).  Starting with Bose-condensed atoms in the lattice's ground state (with transverse density shown in Fig. \ref{fig:laughlinPump}a) we applied a force along \ex and obtained $\Delta m$ from site resolved density distributions\cite{Wang2013} along $\bf{\mathit{e}_s}$ (Fig. \ref{fig:laughlinPump}b). Leveraging the TKNN equation (eq. \ref{eqn:Diophantine}), we further show that the force required to move the atoms a single lattice site signals the infinite system's Chern number. 
+%	
+%	Our quantum Hall ribbons were created with optically trapped $^{87}\rm{Rb}$ Bose-Einstein condensates (BECs) in either the $F=1$ or $2$ ground state hyperfine manifold, creating $3$ or $5$  site-wide ribbons from the $2F+1$ states available in either manifold. We first loaded BECs into a 1-D optical lattice along \ex formed by a retro-reflected $\lambda_L=1064$ nm laser beam. This created a lattice with period $a=\lambda_L/2$ and depth $4.4(1) E_L$, giving tunneling strength $t_x = 0.078(2) E_L$. Here, $E_L=\hbar^2 k_L^2/2m_{\rm{Rb}}$ is the single photon recoil energy; $\hbar k_L=2\pi\hbar/\lambda_L$ is the single photon recoil momentum; and $m_{\rm{Rb}}$ is the atomic mass. We induced tunneling along $\bf{\mathit{e}_s}$ with either a spatially uniform rf magnetic field or two-photon Raman transitions. The tunneling strength was $t_s = 2.3(1) t_x$ for Raman coupling in the $F=2$ manifold, $t_s = 2.8(1) t_x$ for Raman coupling in the $F=1$ manifold, and $t_s = 7.4(5) t_x$ for rf coupling in both manifolds. The rf-induced tunneling imparted at most only a spatially uniform tunneling phase, giving $\phi/2\pi = 0$. In contrast the Raman coupling, formed by a pair of counter propagating laser beams with wavelength $\lambda_R=790$ nm, imparted a phase factor $\exp{(-2ik_Rx)}$. Here, $\hbar k_R=2\pi\hbar/\lambda_R$ is the Raman recoil momentum, giving $\phi/2\pi\approx4/3$. We then applied a force by shifting the center of the confining potential along \ex, effectively applying a linear potential. Using time-of-flight (TOF) techniques\cite{Stuhl2015}, we measured hybrid momentum/position density distributions $n(k_x,m)$, a function of momentum along \ex and position along $\bf{\mathit{e}_s}$, as seen in Fig. \ref{fig:laughlinPump}c-d. 
+%	
+%\begin{figure}
+%\includegraphics{"BlochOsc Figures/figure2Av2".pdf}
+%\caption{Band structure in a 5-site wide ribbon.  \textbf{a}. Band structure computed using full Hamiltonian for a $4.4 E_L$ deep 1-D lattice ($\lambda_L=$ 1064 nm), $0.5 E_L$ Raman coupling strength ($\lambda_R = $ 790 nm), and quadratic Zeeman shift $\epsilon=0.02 E_L$, giving $\Phi/\Phi_0 \approx 4/3$, $t_x = 0.078(2) E_L$, $t_s=2.3(1) t_x$ (see Appendix D). The color indicates modal position $\bar{m}$. The black dot indicates the initial loading parameters.  \textbf{b}. TOF absorption images $n(k_x,m)$ for varying longitudinal crystal momenta $q_x$.  }
+%\label{fig:bandStructure}
+%\end{figure}
+%
+%\begin{figure}
+%\includegraphics{"BlochOsc Figures/figure2Bv3".pdf}
+%\caption{Hall displacement. Top: modal position $\bar{m}$ is plotted as a function of $q_x$ for the 5-site ribbon with flux \textbf{a}. $\Phi/\Phi_0=0$, \textbf{b}. $\Phi/\Phi_0\approx-4/3$, \textbf{c}. $\Phi/\Phi_0\approx4/3$. Gray circles depict the measurements; black dashed lines are the prediction of our simple $\tilde{\sigma}_\textrm{H}$ and red curves are the expectation from the band structure of our thin ribbon. Bottom: Extracted conductivity from the slope of a line of best fit to the data (gray circles) and theory (red lines) as a function of maximum $|q_x|$ included in the fit range, for each flux value. As discussed in Appendix B, the $\Phi/\Phi_0=0$ data was compensated to account for non-adiabaticity in the loading procedure. }
+%\label{fig:magnetization}
+%\end{figure}
+%
+%\begin{figure}
+%\includegraphics{"BlochOsc Figures/figure3v7".pdf}
+%\caption{Chern number from the TKNN equation.  \textbf{a}. Lowest band energy within the Brillouin zone in an extended 2-D system, where $q_x$ and $q_s$ are crystal momenta along \ex and $\bf{\mathit{e}_s}$, respectively. Top. $\Phi/\Phi_0=0$. Middle. $\Phi/\Phi_0=1/3$: Brillouin zone shrinks by a factor of $3$ and becomes 3-fold degenerate, distance between adjacent energy minima spaced by $2k_L/Q$ is labeled. Bottom. $\Phi/\Phi_0=2/5$. \textbf{b}.  Fractional population in each spin state in the lowest band at $q_s=0$. Top. $\Phi/\Phi_0=1/3$. Bottom. $\Phi/\Phi_0=2/5$. A momentum shift along \ex of $2k_{\rm{L}}/Q$ is accompanied by an integer number of spin flips $C$. A line connecting magnetic states separated by $2k_L/Q$, with slope $C=1$ (top) and $-2$ (bottom), is indicated. }
+%\label{fig:Diophantine}
+%\end{figure}
+%	
+%\section{Hall conductivity measurement}
+%
+%	We measured the Hall conductivity beginning with a BEC at $q_x(t=0)=0$ in the lowest band with transverse position $\bar{m}_0=0$ (see Appendix A).  Fig. \ref{fig:bandStructure}a shows the band structure of our system as a function of crystal momentum along \ex, with color indicating the modal position along $\bf{\mathit{e}_s}$, calculated by diagonalizing the full Hamiltonian of our system (see Appendix D). We applied a force $F_x=0.106(5) E_L/\lambda_L$ for varying times $\Delta t$, directly changing the longitudinal crystal momentum from $0$ to a final $q_x$ and giving a transverse Hall displacement from $0$ to a final $\bar{m}$. Figure \ref{fig:bandStructure}b shows a collection of hybrid density distributions, where each column depicts $n(k_x,m)$ for a specific final $q_x$, labelled by the overall horizontal axis. For each column, the change in crystal momentum is marked by the horizontal displacement of the diffraction orders relative to their location in the central $q_x=0$ column. The transverse displacement is visible in the overall shift in density along $m$ as a function of $q_x$, i.e., between columns.  
+%
+%	Figure \ref{fig:magnetization}(left) quantifies this Hall effect by plotting $\bar{m}$ as a function of $q_x$ for $\Phi/\Phi_0=0$, $-4/3$, and $4/3$. The data is represented by gray dots, with uncertainty bars reflecting the propagated standard uncertainty from averaging six identical runs. For zero flux $\Phi/\Phi_0=0$ (Fig. \ref{fig:magnetization}a), $\bar{m}$ was independent of $q_x$; in contrast, for non-zero flux $\Phi/\Phi_0\approx\pm4/3$  (Fig. \ref{fig:magnetization}b,c),  $\bar{m}$ depends linearly on $q_x$ with non-zero slope. These linear dependencies evoke our earlier discussion of the Hall conductance $\tilde{\sigma}_{\rm{H}}$, in which we anticipated slopes equal to the Chern number. Linear fits to the data give $\tilde{\sigma}_{\rm{H}}=0.01(1)$, $0.87(3)$, and $-0.85(3)$ for zero, negative and positive flux respectively, showing the expected qualitative behavior. The expected slopes, given by the Chern number, $\sigma_{\rm{H}}=0,\pm1$ are indicated by black dashed lines in Fig. \ref{fig:magnetization}(left). 
+%
+%	The red curves in Fig. \ref{fig:magnetization}(left) show the expected behavior for our 5-site wide system for adiabatic changes in $q_x$ as calculated from exact diagonalization of the full Hamiltonian (see Appendix D), always within the lowest band (Fig. \ref{fig:bandStructure}a), i.e., Bloch oscillations.  This theory predicts a nearly linear slope for small $q_x$ sharply returning to $\bar{m}=0$ at the edges of the Brillouin zone. A linear fit to this theory produces $\tilde{\sigma}_{\rm{H}}\approx0$, $0.6$, and $-0.6$ for zero, negative and positive flux respectively, far from the Chern number. This discrepancy is resolved by recalling that Bloch oscillations require adiabatic motion, and the band gaps at the edge of the Brillouin zone close as the ribbon width grows, making the Bloch oscillation model inapplicable. The departure of the data from the adiabatic theory at the edges of the Brillouin zone indicates a partial break down of adiabaticity was present in our data. One might suspect that limiting the domain of the linear fit such that band edge effects are excluded would still provide a good measure of the Chern number. However, as shown in Fig. \ref{fig:magnetization}(right), the slope of the best fit line for non-trivial topologies, and thus the measured conductivity, depends highly on the selected domain for both the theoretical (red) and experimental (black) data, and the appropriate choice of range is ambiguous. We conclude that for an extremely narrow system such as ours, a conductivity measurement is insufficient for determining the Chern number at reasonable tunneling strengths \cite{Mugel2017}. 
+%	
+%\section{Chern number measurement via TKNN Diophantine equation}
+%
+%	To better identify Chern numbers, we relate  the TKNN equation (Eqn. \ref{eqn:Diophantine}) to the physical processes present in our system.  Although the Hofstadter Hamiltonian in Eqn. \ref{eqn:Hamiltonian} is only invariant under $m$-translations that are integer multiples of $Q$ , a so-called ``magnetic-displacement'' by $\Delta m=1$ accompanied with a crystal momentum shift $\Delta q_x/2 k_{\rm R} = P/Q$ leaves Eqn. \ref{eqn:Hamiltonian} unchanged.  Together, these symmetry operations give a $Q$-fold reduction of the Brillouin zone along ${\bf e}_s$, and add a $Q$-fold degeneracy, as illustrated in Fig. \ref{fig:Diophantine}a  for $\Phi/\Phi_0=0$, $1/3$, and $2/5$.  Recalling that the Brillouin zone is $2 \hbar k_{\rm L}$ periodic along ${\bf e}_x$, it follows that a displacement by $2 k_{\rm L}/Q$ to the nearest symmetry related state involves an integer $C$ magnetic displacements, shown in Fig. \ref{fig:Diophantine}b for $\Phi/\Phi_0=1/3$ and $2/5$, given by solutions to $2  k_{\rm L} s - 2  k_{\rm R} C = 2  k_{\rm L}/Q$, where $s$ counts the number of times the Brillouin zone was ``wrapped around’’ during the $C$ vertical displacements. Because this is exactly the TKNN equation (\ref{eqn:Diophantine}), we identify $C$ as the Chern number.  Both $C$ and $s$ directly relate to physical processes.  First, each time the  Brillouin zone is wrapped around — implying a net change of momentum by $2 \hbar k_{\rm L}$ — a pair of photons must be exchanged between the optical lattice laser beams.  Second, each change of $m$ by 1 must be accompanied by a $2 \hbar k_{\rm R}$ recoil kick imparted by the Raman lasers as they change the spin state.  This physical motivation of the TKNN equation remains broadly applicable even for our narrow lattice, providing an alternate signature of the Chern number.
+%	
+%	
+%\begin{figure}
+%\includegraphics{"BlochOsc Figures/figure4v4".pdf}
+%\caption{Chern number measurement.  Lowest band fractional population measured as a function of crystal momentum in the  \ex  and position in the $\bf{\mathit{e}_s}$. Darker color indicates higher fractional population. In the Raman-coupled cases, the points represent the fitted population maxima and the Chern number is extracted from the best fit line to those points.  \textbf{a}. 3-site (left) and 5-site (right) systems with positive flux.  \textbf{b} 3-site (left) and 5-site (right) system with zero flux.  \textbf{c}. 3-site (left) and 5-site (right) systems with negative flux. The parameters for 3-site data were identical to those for 5-site data, see Fig. \ref{fig:magnetization} a, except $t_s =2.880(1)t_x$.}
+%\label{fig:finalData}
+%\end{figure}
+%
+%	 Figure \ref{fig:finalData} shows the full evolution of fractional population in each $m$ site as a function of crystal momentum $q_x$ in the lowest band.  The black circles locate the peak of the fractional population in each spin state. We identify the locations of those peaks as the crystal momenta at which the atoms were displaced by a single lattice site along $\bf{\mathit{e}_s}$ starting at $q_x=0$, similar to the suggestions in Refs. \cite{Zhang2016,Mugel2017}. We associate the Chern number with the slope of a linear fit through the three peak locations.  For the 3-site wide ribbon, we measured a Chern number of $0.99(4), -0.98(5)$ for negative and positive flux respectively\footnote{Our Chern number extraction scheme fails for the rf case as the fractional populations are flat and there is no peak. We therefore assign a Chern number of $0$ to flat distributions.}, in agreement with the exact theory as calculated from the full Hamiltonian (see Appendix D), which predicts $\pm0.97(1)$, with uncertainties reflecting fit uncertainty of peak locations.  For the 5-site wide ribbon,  we measured $1.11(2), -0.97(4)$, close to the theoretical prediction of $\pm 1.07(1)$. The deviation from unity results from $\Phi/\Phi_0-4/3\approx0.01$, a non-zero quadratic Zeeman shift, and $t_s>t_x$ allowing hybridization of the edge states\cite{Mugel2017}.
+%	 
+%\section{Conclusion}
+%	
+%	Our direct microscopic observations of topologically driven transverse transport demonstrate the power of combining momentum and site-resolved position measurements. With the addition of interactions, these systems have been shown to display chiral currents \cite{Tai2017}, and with many-body interactions are predicted to give rise to complex phase diagrams supporting vortex lattices and charge density waves\cite{Greschner2015,Greschner2016,CalvaneseStrinati2017}. Realizations of controlled cyclic coupling giving periodic boundary conditions\cite{Celi2014} along $\bf{\mathit{e}_s}$ could elucidate the appearance of edge modes as the coupling between two of the three states is smoothly tuned to zero. In addition, due to the non-trivial topology as well as the low heating afforded by synthetic dimensional systems, a quantum Fermi gas dressed similarly to our system would be a good candidate for realizing fractional Chern insulators\cite{Parameswaran2013}.  
+%
+%\section*{Acknowledgments}
+%This work was partially supported by the Air Force Office of Scientific Research’s Quantum Matter MURI, NIST, and NSF (through the Physics Frontier Center
+%at the JQI).
+%
+%\section*{Appendix A: Experimental detail} We created nearly pure $^{87}\rm{Rb}$ BECs in a crossed optical dipole trap\cite{Stuhl2015} with frequencies $(\omega_x,\omega_y,\omega_z)/2\pi=(27.1(2),58.4(8),94.2(5))\ {\mathrm{Hz}}$. We deliberately used small, low density BECs with $\approx10^3$ atoms to limit unwanted scattering processes in regimes of dynamical instability\cite{Campbell2006}. At various times in the sequence, we used coherent rf and microwave techniques to prepare the hyperfine $\ket{F,m_F}$ state of interest. The 1-D optical lattice was always ramped on linearly in 300 ms. For non-zero $\phi$, we turned on the Raman beams adiabatically in 30 ms after ramping on the lattice. For $\phi=0$ we used adiabatic rapid passage starting in $m_F=-F$ and swept the bias magnetic field in $\approx50$ ms to resonance. We applied forces by spatially displacing the optical dipole beam providing longitudinal confinement (by frequency shifting an acousto-optic modulator), effectively adding a linear contribution to the existent harmonic potential for displacements small compared to the beam waist. 
+%
+%We define the modal position $\bar{m}$ as the center of a Gaussian fit to the population distribution along $\bf{\mathit{e}_s}$. 
+%
+%
+%\section*{Appendix B: Rf correction} In experiments where the tunneling along $\bf{\mathit{e}_s}$ was induced by a uniform rf magnetic field ($\Phi/\Phi_0=0$), our loading procedure had remnant non-adiabaticity that led to temporal oscillations in the fractional populations in different $m$ states at the $40\%$ level. To separate the effects due to this non-adiabaticity from transverse transport, we performed the experiment with identical preparations without applying the longitudinal force. We then used the observed oscillations as a function of time without an applied force as a baseline, and report the difference in fractional populations between that baseline and the cases where the force was applied. 
+%
+%\section*{Appendix C: Hall conductivity} The current density can be expressed as $j_{\perp}=n_{2\rm{D}}v_{\perp}e$, where $n_{2\rm{D}}$ is the 2-D charge carrier density, $v_{\perp}$ is the transverse velocity and $e$ is the electron charge. Using $\sigma_{\rm{H}} E_{\parallel}=F_{\parallel}\sigma_{\rm{H}}/e$, and choosing some increment of time $\Delta t$, we have $v_{\perp}=\Delta x_{\perp}/\Delta t$, and $F_{\parallel} = \hbar \Delta q_{\parallel}/\Delta t$, where $q_{\parallel}$ is the crystal momentum along the direction of the force. Re-expressing $n_{2D}$ in number of carriers $N$ per plaquette, defining $\Delta x_{\perp}$ as transverse displacement in units of lattice periods, we obtain $N G\Delta x_{\perp}/ \Delta q_{\parallel}=\sigma_{\rm{H}} R_{\rm{K}}$.
+%
+%
+%\section*{Appendix D: Full Hamiltonian}
+%%
+%%\begin{figure*}
+%%\begin{equation}
+%%\begin{align*}
+%%H = \sum _{m=-F,n=-\infty}^{F,\infty}&\left(\hbar^2\left(q_x-2m\Phi/\Phi_0-2n\right)^2 k_L^2/2m_{\rm{Rb}} + h\delta m+\epsilon m^2\right)\ket{q_x+n2k_L,m}\bra{q_x+n2k_L,m}\\
+%%&+\hbar\Omega\sqrt{F(F+1)-m(m+1)}/2\sqrt{2}\ket{q_x+n2k_L,m}\bra{q_x+n2k_L,m+1} +\rm{H.c.}\\
+%%&+U/4\ket{q_x+n2k_L,m}\bra{q_x+(n+1)2k_L,m} +\rm{H.c.}
+%%\end{align*}
+%%\label{eqn:FullHam}
+%%\end{equation}
+%%\end{figure*}
+%
+%The spin dependent Hamiltonian, in the presence of Raman coupling and a 1-D optical lattice can be written as
+%\begin{equation*}
+%H = \sum _{m=-F,n=-\infty}^{F,\infty}H_{0}+H_{\rm{R}}+H_{\rm{L}},
+%\end{equation*}
+%where the diagonal term
+%\begin{eqnarray*}
+%H_{0} =&\\
+%&\left(\hbar^2\left(q_x-2m\Phi/\Phi_0-2n\right)^2 k_L^2/2m_{\rm{Rb}}+h\delta m+\epsilon m^2 \right)\\
+%&\ket{q_x+n2k_L,m}\bra{q_x+n2k_L,m}
+%\end{eqnarray*}
+%includes the kinetic energy as well as the two-photon Raman detuning from resonance $\delta$ and the quadratic Zeeman shift $\epsilon$. Here,  $m$ represents atomic spin, $n$ represents lattice order in the momentum basis, $q$ is the longitudinal crystal momentum, and $m_{\rm{Rb}}$ is the atomic mass.  The second term represents the Raman coupling  with coupling strength $\Omega$, with anisotropic tunneling arising from the spin-dependent prefactor (Clebsch-Gordan coefficient):
+%\begin{eqnarray*}
+%H_{\rm{R}} =&\\
+%&\hbar\Omega\sqrt{F(F+1)-m(m+1)}/2\sqrt{2}\ket{q_x+n2k_L,m}\bra{q_x+n2k_L,m+1}\\
+%&+\rm{H.c.}
+%\end{eqnarray*}
+%Here,  H.c. stands for Hermitian conjugate. The third term represents lattice coupling to higher order lattice states, with lattice depth $U$: 
+%\begin{equation*}
+%H_{\rm{L}} = U/4\ket{q_x+n2k_L,m}\bra{q_x+(n+1)2k_L,m} +\rm{H.c.}
+%\end{equation*}
+%In our experiment, $\hbar\Omega=0.5(2)E_L$ for Raman coupling and $\hbar\Omega = 0.57(1) E_L$ for rf coupling, $U=4.4(4) E_L$ for all preparations. In our calculations, we found that restricting $-7<n<7$ was sufficient at our energies. 
+%
+%We choose the appropriate tunneling coefficients $t_x$ and $t_s$ for the approximate tight-binding Hamiltonian Eqn. \ref{eqn:Hamiltonian} as those that optimally reproduce the lowest two bands, relevant for our experiment. 

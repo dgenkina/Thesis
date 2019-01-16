@@ -19,7 +19,7 @@ The work described in this chapter was published in\cite{Stuhl2015}.
 %	
 %	By applying large effective fields to atomic Bose-Einstein condensates (BECs), we directly imaged individual, deterministically prepared, bulk and edge eigenstates.  In IQHE systems these states would govern the conductivity, but as individual eigenstates they exhibit no time-dependance.  The corresponding dynamical entities are edge magnietoplasmons, consisting of superpositions of edge eigenstates in different Landau levels\cite{Kern1991,Ashoori1992}, or here magnetic bands.  We launched these excitations and recorded their full motion for the first time, observing both a chiral drift along the system's edge and the underlying skipping motion.
 
-\section{Synthetic dimensions setup}
+\section{Synthetic dimensions setup}\label{sec:SynDimSetup}
 
 Any internal degree of freedom can be thought of as a synthetic dimension---the different internal states can be treated as sites along this synthetic direction. As long as there is some sense of distance along this direction, i.e. some of the internal states are 'nearest neighbors' while others are not, this is a meaningful treatment. In our case an effective 2-D lattice is formed by sites formed by a 1-D optical lattice along a 'real' direction, here  ${\bf e}_x$, and the atom's spin states forming sites along a 'synthetic' direction,  ${\bf e}_s$. 
 
@@ -110,7 +110,28 @@ For computational convenience, we convert to lattice recoil units, $E_L=\hbar^2 
 \end{equation}
 where $\hbar\delta$, $\hbar\Omega$ and $\hbar\epsilon$ are now written in units of $E_L$, $q$ is written in units of $k_L$ and we have used the fact that $\phi_{\rm AB}/2\pi = k_R/k_L$. The off-diagonal blocks ${\bf \frac{V_0}{4}}$ will be the same 3x3 diagonal matices, with $\frac{V_0}{4}$ in units of $E_L$. 
 
-\subsection{Band structure}
+This Hamiltonian can be written for general values of $F$ in the presence of Raman coupling and a 1-D optical lattice as
+\begin{equation*}
+H = \sum _{m=-F,n=-\infty}^{F,\infty}H_{0}+H_{\rm{R}}+H_{\rm{L}},
+\end{equation*}
+where the diagonal term
+\begin{eqnarray*}
+H_{0} =&\\
+&\left(\hbar^2\left(q-2m\Phi/\Phi_0-2n\right)^2 k_L^2/2m+\hbar\delta m+\hbar\epsilon m^2 \right)\\
+&\ket{q+n2k_L,m}\bra{q+n2k_L,m}
+\end{eqnarray*}
+includes the kinetic energy as well as the two-photon Raman detuning from resonance $\delta$ and the quadratic Zeeman shift $\epsilon$. The second term represents the Raman coupling  with coupling strength $\hbar\Omega$, with anisotropic tunneling arising from the spin-dependent prefactor (Clebsch-Gordan coefficient):
+\begin{eqnarray*}
+H_{\rm{R}} =&\\
+&\hbar\Omega\sqrt{F(F+1)-m(m+1)}/2\sqrt{2}\ket{q+n2k_L,m}\bra{q+n2k_L,m+1}\\
+&+\rm{H.c.}
+\end{eqnarray*}
+Here,  H.c. stands for Hermitian conjugate. The third term represents lattice coupling to higher order lattice states, with lattice depth $V_0$: 
+\begin{equation*}
+H_{\rm{L}} = V_0/4\ket{q+n2k_L,m}\bra{q+(n+1)2k_L,m} +\rm{H.c.}
+\end{equation*}
+
+\subsection{Band structure}\label{sec:SynDimBandStructure}
 \begin{figure}
 	\includegraphics{"SynDim Figures/SynDimBandStructure".pdf}
 \caption{Band structure of the synthetic dimensions Hamiltonian, eqn. \ref{eqn:SynDimHam}. For all panels, the detuning $\hbar\delta=0$ and the quadratic shift $\hbar\epsilon=0.02 E_L$. (a) $F=1$, $\hbar\Omega=0.0$. (b) $F=1$, $\hbar\Omega=0.5$. (c) $F=2$, $\hbar\Omega=0.0$. (d) $F=2$, $\hbar\Omega=0.5$. }
