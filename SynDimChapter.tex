@@ -28,7 +28,7 @@ The experimental setup for this system is schematically represented in \ref{fig:
 
 \begin{figure}
 	\includegraphics{"SynDim Figures/Fig1_Schematic".pdf}
-\caption{Setup of effective 2-D lattice. (a) Beam geometry. The BEC is subject to a bias magnetic field $B_0$ in the ${\bf e}_z$ direction. The 1-D lattice beam and Raman beams are both along the ${\bf e}_x$ direction, and the rf field can be applied with projections onto both the  ${\bf e}_x$ and  ${\bf e}_y$. (b) Schematic of the effective 2-D lattice. Sites along  ${\bf e}_x$ are formed by the 1-D optical lattice and labelled by site number $j$. Sites along the synthetic direction  ${\bf e}_s$ are formed by the spin states: 3 sites for atoms in the $F=1$ manifold and 5 sites for atoms in $F=2$. These sites are labelled by $m$. Raman transitions induce a phase shift, which can be gauge transformed into a tunneling phase along the  ${\bf e}_x$ direction. This leads to a net phase when hopping around a single lattice plaquette of $\phi_{AB}$.  }
+\caption[Setup of effective 2-D lattice]{Setup of effective 2-D lattice. (a) Beam geometry. The BEC is subject to a bias magnetic field $B_0$ in the ${\bf e}_z$ direction. The 1-D lattice beam and Raman beams are both along the ${\bf e}_x$ direction, and the rf field can be applied with projections onto both the  ${\bf e}_x$ and  ${\bf e}_y$. (b) Schematic of the effective 2-D lattice. Sites along  ${\bf e}_x$ are formed by the 1-D optical lattice and labelled by site number $j$. Sites along the synthetic direction  ${\bf e}_s$ are formed by the spin states: 3 sites for atoms in the $F=1$ manifold and 5 sites for atoms in $F=2$. These sites are labelled by $m$. Raman transitions induce a phase shift, which can be gauge transformed into a tunneling phase along the  ${\bf e}_x$ direction. This leads to a net phase when hopping around a single lattice plaquette of $\phi_{AB}$.  }
 \label{fig:synDimSchematic}
 \end{figure}
 
@@ -41,7 +41,7 @@ To see how this phase implies an effective magnetic field, we draw an analogy to
 
 \section{Hamiltonian of the effective 2-D system}
 
-\subsection{Hamiltonian}
+\subsection{Hamiltonian}\label{sec:SynDimHamiltonian}
 The full Hamiltonian of this system, without making the tight binding approximation, can be written down by combining the lattice Hamiltonian (eqn. \ref{eqn:LatHam}) and the rf (eqn. \ref{eqn:rfHam}) or Raman Hamiltonian (eqn. \ref{eqn:RamanHam}). To do this, we write a new basis that encompasses both the momentum and the spin degrees of freedom. For the lattice Hamiltonian, we used the momentum basis
 \begin{equation}
  \begin{pmatrix} \vdots \\
@@ -113,6 +113,7 @@ where $\hbar\delta$, $\hbar\Omega$ and $\hbar\epsilon$ are now written in units 
 This Hamiltonian can be written for general values of $F$ in the presence of Raman coupling and a 1-D optical lattice as
 \begin{equation*}
 H = \sum _{m=-F,n=-\infty}^{F,\infty}H_{0}+H_{\rm{R}}+H_{\rm{L}},
+\label{eqn:SynDimHamiltonian}
 \end{equation*}
 where the diagonal term
 \begin{eqnarray*}
@@ -134,7 +135,7 @@ H_{\rm{L}} = V_0/4\ket{q+n2k_L,m}\bra{q+(n+1)2k_L,m} +\rm{H.c.}
 \subsection{Band structure}\label{sec:SynDimBandStructure}
 \begin{figure}
 	\includegraphics{"SynDim Figures/SynDimBandStructure".pdf}
-\caption{Band structure of the synthetic dimensions Hamiltonian, eqn. \ref{eqn:SynDimHam}. For all panels, the detuning $\hbar\delta=0$ and the quadratic shift $\hbar\epsilon=0.02 E_L$. (a) $F=1$, $\hbar\Omega=0.0$. (b) $F=1$, $\hbar\Omega=0.5$. (c) $F=2$, $\hbar\Omega=0.0$. (d) $F=2$, $\hbar\Omega=0.5$. }
+\caption[Band structure of the synthetic dimensions Hamiltonian]{Band structure of the synthetic dimensions Hamiltonian, eqn. \ref{eqn:SynDimHam}. For all panels, the detuning $\hbar\delta=0$ and the quadratic shift $\hbar\epsilon=0.02 E_L$. (a) $F=1$, $\hbar\Omega=0.0$. (b) $F=1$, $\hbar\Omega=0.5$. (c) $F=2$, $\hbar\Omega=0.0$. (d) $F=2$, $\hbar\Omega=0.5$. }
 \label{fig:SynDimBandStruct}
 \end{figure}
 
@@ -151,7 +152,7 @@ To calibrate the lattice depth $V_0$ in the synthetic dimensions system, we can 
 
 \begin{figure}
 	\includegraphics{"SynDim Figures/SynDimPulsing".pdf}
-\caption{Calibration of synthetic dimesnions lattice. (a) Ramping procedure. The blue line represents the 1-D lattice depth as a function of time and the red line represents Raman coupling as a function of time. Both are held on for a variable amount of time $t$, producing Rabi oscillations. (b) Example of fractional populations in different $m$ states as a function of time $t$ in the $F=1$ manifold. Dots indicate data and lines indicate the best fit to theory, with parameters $\hbar\Omega=0.56\pm0.01 E_L$ and $\hbar\delta = 0.029 \pm 0.002 E_L$. (c) Example time-of-flight image in the $F=1$ manifold. A Stern-Gerlach gradient pulse separates different $m$ states along the horizontal axis, while the lattice and Raman beams give momentum along the vertical axis. (d)  Example of fractional populations in different $m$ states as a function of time $t$ in the $F=2$ manifold. Dots indicate data and lines indicate the best fit to theory, with parameters $\hbar\Omega=0.61\pm0.002 E_L$ and $\hbar\delta = 0.002 \pm 0.001 E_L$. (e) Example time-of-flight image in the $F=2$ manifold. A Stern-Gerlach gradient pulse separates different $m$ states along the horizontal axis, while the lattice and Raman beams give momentum along the vertical axis.  }
+\caption[Calibration of synthetic dimesnions lattice]{Calibration of synthetic dimesnions lattice. (a) Ramping procedure. The blue line represents the 1-D lattice depth as a function of time and the red line represents Raman coupling as a function of time. Both are held on for a variable amount of time $t$, producing Rabi oscillations. (b) Example of fractional populations in different $m$ states as a function of time $t$ in the $F=1$ manifold. Dots indicate data and lines indicate the best fit to theory, with parameters $\hbar\Omega=0.56\pm0.01 E_L$ and $\hbar\delta = 0.029 \pm 0.002 E_L$. (c) Example time-of-flight image in the $F=1$ manifold. A Stern-Gerlach gradient pulse separates different $m$ states along the horizontal axis, while the lattice and Raman beams give momentum along the vertical axis. (d)  Example of fractional populations in different $m$ states as a function of time $t$ in the $F=2$ manifold. Dots indicate data and lines indicate the best fit to theory, with parameters $\hbar\Omega=0.61\pm0.002 E_L$ and $\hbar\delta = 0.002 \pm 0.001 E_L$. (e) Example time-of-flight image in the $F=2$ manifold. A Stern-Gerlach gradient pulse separates different $m$ states along the horizontal axis, while the lattice and Raman beams give momentum along the vertical axis.  }
 \label{fig:SynDimPulsing}
 \end{figure}
 
@@ -188,7 +189,7 @@ To go from the full Hamiltonian, eqn. \ref{eqn:SynDimHam}, to the tight binding 
 
 \begin{figure}
 	\includegraphics{"SynDim Figures/tbFit".pdf}
-\caption{Band structure of the tight binding versus full Hamiltonian. $V_0=6.0 E_L$, giving $t_x=0.1 E_L$, $\hbar\delta=0$, $\hbar\epsilon=0.02 E_L$, $\hbar\Omega=0.5 E_L$. (a) $F=1$, fitted value $t_s=0.154 E_L$. (b) $F=2$, fitted value $t_s=0.284$. }
+\caption[Band structure of the tight binding versus full Hamiltonian]{Band structure of the tight binding versus full Hamiltonian. $V_0=6.0 E_L$, giving $t_x=0.1 E_L$, $\hbar\delta=0$, $\hbar\epsilon=0.02 E_L$, $\hbar\Omega=0.5 E_L$. (a) $F=1$, fitted value $t_s=0.154 E_L$. (b) $F=2$, fitted value $t_s=0.284$. }
 \label{fig:tbFit}
 \end{figure}
 %=======
@@ -223,7 +224,7 @@ After calibrating the synthetic dimensional lattice via pulsing, we can study th
 
 \begin{figure}
 	\includegraphics{"SynDim Figures/Fig2_EdgeStates".pdf}
-\caption{Eigenstates of the synthetic dimensions lattice. Left column: time-of-flight images, with position along ${\bf e}_s$ on the vertical axis and momentum along ${\bf e}_s$ on the horizontal. Right column: fractional populations in each site $m$.  (a,b) Rf coupling, resulting in $\phi_{\rm AB}=0$. (c,f) Raman coupling, resulting in $\phi_{\rm AB}>0$, adiabatically loaded from the $m_F=1$ state.  (d,g) Raman coupling, resulting in $\phi_{\rm AB}>0$, adiabatically loaded from the $m_F=0$ state. (c,f) Raman coupling, resulting in $\phi_{\rm AB}>0$, adiabatically loaded from the $m_F=-1$ state.}
+\caption[Eigenstates of the synthetic dimensions lattice]{Eigenstates of the synthetic dimensions lattice. Left column: time-of-flight images, with position along ${\bf e}_s$ on the vertical axis and momentum along ${\bf e}_s$ on the horizontal. Right column: fractional populations in each site $m$.  (a,b) Rf coupling, resulting in $\phi_{\rm AB}=0$. (c,f) Raman coupling, resulting in $\phi_{\rm AB}>0$, adiabatically loaded from the $m_F=1$ state.  (d,g) Raman coupling, resulting in $\phi_{\rm AB}>0$, adiabatically loaded from the $m_F=0$ state. (c,f) Raman coupling, resulting in $\phi_{\rm AB}>0$, adiabatically loaded from the $m_F=-1$ state.}
 \label{fig:TOFeigenstates}
 \end{figure}
 
@@ -246,7 +247,7 @@ We  define the current $I_{m=\pm1}=n_m \langle v_m \rangle$, where $n_m$ is the 
 
 \begin{figure}
 	\includegraphics{"SynDim Figures/Fig3_EdgeCurrent".pdf}
-\caption{Measuring chiral currents in synthetic dimensions. (a) Schematic of the formation of chiral currents when the system is loaded into the bulk $m=0$ site and tunneling along ${\bf e}_s$ is turned on suddenly. (b) Fractional population ine each spin state as a function of time for a system with $\phi_{\rm AB}>0$. Dots represent data and lines represent theory, with parameters $\hbar\Omega=0.5 E_L$, $V_0=6 E_L$, $\hbar\delta=0.001 E_L$, and $\hbar\epsilon=0.05 E_L$. (c) Chiral current $\mathcal{I}$ as a function of time for $\phi_{\rm AB}>0$ (red) $\phi_{\rm AB}=0$ (empty black dots) and $\phi_{\rm AB}<0$ (solid black). (d) Chiral current $\mathcal{I}$ as a function of $\langle|m|\rangle$ for the three values of $\phi_{\rm AB}$. Solid lines calculated from theory, with the same parameters as in (b) for $\phi_{\rm AB}\neq0$, and with parameters $\hbar\Omega=033 E_L$, $V_0=6 E_L$, $\hbar\delta=-0.01 E_L$, and $\hbar\epsilon=0.05 E_L$ for $\phi_{\rm AB}=0$.  (e) Peak chiral current $\mathcal{I}_{\rm max}$ as a fucntion of tunneling asymmetry $t_s/t_x$. Inset: slope of best fit lines of current $\mathcal{I}$ as a function of $\langle|m|\rangle$ (as in (d)) as a function of tunneling asymmetry $t_s/t_x$: nearly independent. }
+\caption[Measuring chiral currents in synthetic dimensions]{Measuring chiral currents in synthetic dimensions. (a) Schematic of the formation of chiral currents when the system is loaded into the bulk $m=0$ site and tunneling along ${\bf e}_s$ is turned on suddenly. (b) Fractional population ine each spin state as a function of time for a system with $\phi_{\rm AB}>0$. Dots represent data and lines represent theory, with parameters $\hbar\Omega=0.5 E_L$, $V_0=6 E_L$, $\hbar\delta=0.001 E_L$, and $\hbar\epsilon=0.05 E_L$. (c) Chiral current $\mathcal{I}$ as a function of time for $\phi_{\rm AB}>0$ (red) $\phi_{\rm AB}=0$ (empty black dots) and $\phi_{\rm AB}<0$ (solid black). (d) Chiral current $\mathcal{I}$ as a function of $\langle|m|\rangle$ for the three values of $\phi_{\rm AB}$. Solid lines calculated from theory, with the same parameters as in (b) for $\phi_{\rm AB}\neq0$, and with parameters $\hbar\Omega=033 E_L$, $V_0=6 E_L$, $\hbar\delta=-0.01 E_L$, and $\hbar\epsilon=0.05 E_L$ for $\phi_{\rm AB}=0$.  (e) Peak chiral current $\mathcal{I}_{\rm max}$ as a fucntion of tunneling asymmetry $t_s/t_x$. Inset: slope of best fit lines of current $\mathcal{I}$ as a function of $\langle|m|\rangle$ (as in (d)) as a function of tunneling asymmetry $t_s/t_x$: nearly independent. }
 \label{fig:edgeCurrents}
 \end{figure}
 
@@ -261,7 +262,7 @@ We observed an analogue of these skipping orbits in our system. We performed the
 
 \begin{figure}
 	\includegraphics{"SynDim Figures/Fig4_SkippingOrbit".pdf}
-\caption{Imaging skipping orbits. (a) Schematic of pulsing experiment when atoms are initialized on the edge. (b) Schematic of the tilted box potential applied along the synthetic direction. (c) Expectation value of position along ${\bf e}_s$, $\langle m \rangle$, as a function of pulse time for atoms initialized in the $m=+1$ (red) and $m=-1$ (blue) states. Dots represent data and lines are from theory with parameters $\hbar\Omega=0.41 E_L$, $V_0=5.2 E_L$, $\hbar\delta=\pm0.087 E_L$, and $\hbar\epsilon=0.13 E_L$. (d) Expectation value of the group velocity along ${\bf e}_x$, $\langle v_x\rangle$, for the same data as in (c). (e) Expectation value of displacement along ${\bf e}_x$,  $\langle \delta j \rangle$ in units of lattice spacing, for the same data as in (c) and (d). The displacement was obtained by integrating $\langle v_x/a \rangle$, where $a$ is the period of the optical lattice. Atoms initialized in $m=-1$ performed skipping orbits to the left, while atoms starting in $m=-1$ travelled to the right.  }
+\caption[Imaging skipping orbits]{Imaging skipping orbits. (a) Schematic of pulsing experiment when atoms are initialized on the edge. (b) Schematic of the tilted box potential applied along the synthetic direction. (c) Expectation value of position along ${\bf e}_s$, $\langle m \rangle$, as a function of pulse time for atoms initialized in the $m=+1$ (red) and $m=-1$ (blue) states. Dots represent data and lines are from theory with parameters $\hbar\Omega=0.41 E_L$, $V_0=5.2 E_L$, $\hbar\delta=\pm0.087 E_L$, and $\hbar\epsilon=0.13 E_L$. (d) Expectation value of the group velocity along ${\bf e}_x$, $\langle v_x\rangle$, for the same data as in (c). (e) Expectation value of displacement along ${\bf e}_x$,  $\langle \delta j \rangle$ in units of lattice spacing, for the same data as in (c) and (d). The displacement was obtained by integrating $\langle v_x/a \rangle$, where $a$ is the period of the optical lattice. Atoms initialized in $m=-1$ performed skipping orbits to the left, while atoms starting in $m=-1$ travelled to the right.  }
 \label{fig:skippingOrbits}
 \end{figure}
 

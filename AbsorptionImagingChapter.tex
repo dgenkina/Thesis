@@ -52,7 +52,7 @@ In the following sections, we describe two versions of numerical simulations tha
 \begin{figure}
 	\subfigure[]{\includegraphics[scale=1.0]{"Chapter2 Figures/figure1".pdf}}
 	\subfigure[]{\includegraphics[scale=1.0]{"Chapter2 Figures/figure2".pdf}}
-\caption{(a) Dependence of velocity and detuning on position simulated for \K{} at three different imaging times and a probe intensity $I_0=0.8 I_{\rm sat}$. (b) Column densities deduced from optical depths obtained from recoil detuning corrected simulation of on-resonant imaging of $^{40}K$ atoms at probe intensity $I_0=0.8 I_{\rm sat}$. The blue line is the input column density $\sigma_0 n=1.6$. The green line is the high probe intensity corrected column density given by Eq. (\ref{eq2}). The red line is the column density as expanded to second order in time, Eq. (\ref{eq:perturb}).}
+\caption[Recoil induced detuning]{(a) Dependence of velocity and detuning on position simulated for \K{} at three different imaging times and a probe intensity $I_0=0.8 I_{\rm sat}$. (b) Column densities deduced from optical depths obtained from recoil detuning corrected simulation of on-resonant imaging of $^{40}K$ atoms at probe intensity $I_0=0.8 I_{\rm sat}$. The blue line is the input column density $\sigma_0 n=1.6$. The green line is the high probe intensity corrected column density given by Eq. (\ref{eq2}). The red line is the column density as expanded to second order in time, Eq. (\ref{eq:perturb}).}
 \label{fig:expos}
 \end{figure}
 %\par By considering this equation perturbatively in imaging time we obtain corrections to second order \cite{LJLthesis}
@@ -116,7 +116,7 @@ Even at longer imaging times, the problem can be analytically solved for limits 
 %We recognize the right hand sides of Eq. (\ref{eq6}) and Eq. (\ref{eq8}) as the two terms in Eq. (\ref{eq2}). Thus, as shown in  Fig. \ref{fig:IsatLimits}, $OD^{\rm{sim1}}$  coincides with the optical depth as predicted by Eq. (\ref{eq2}) in both the small and large probe intensity limits.
 \begin{figure}
 	\includegraphics{"Chapter2 Figures/figure3".pdf}
-\caption{Optical depth as a function of probe intensity as predicted by the simulation (blue symbols) and by Eq. (\ref{eq2}) (green curves), for three different imaging times. As expected, the predictions agree in both the high and low intensity limits, and differ for probe intensities comparable to the saturation intensity and longer imaging times. }
+\caption[Optical depth as a function of probe intensity]{Optical depth as a function of probe intensity as predicted by the simulation (blue symbols) and by Eq. (\ref{eq2}) (green curves), for three different imaging times. As expected, the predictions agree in both the high and low intensity limits, and differ for probe intensities comparable to the saturation intensity and longer imaging times. }
 \label{fig:IsatLimits}
 \end{figure}
 
@@ -125,7 +125,7 @@ The simulation allows us to extract both the intensity and the detuning as a fun
 \begin{figure}
 	\subfigure[]{\includegraphics{"Chapter2 Figures/figure4".pdf}}
 	\subfigure[]{\includegraphics{"Chapter2 Figures/figure5".pdf}}
-\caption{(a) Position of atoms as a function of imaging time for atoms in the first (solid green), middle (dashed red), and last (dotted blue) bins of the simulated density distribution for an initial cloud 50 \um{} in extent. The probe intensity used in this calculation was $1.2\, I_{\rm{sat}}$, and the column density was $\sigma_0 n=1.6$. (b) The velocity of a single composite atom as a function of probe intensity for various imaging times. Simulation data (dots) and numerical  solutions of Eq. (\ref{eq10}) (lines) are in agreement.}
+\caption[Checking stationary atom assumption]{(a) Position of atoms as a function of imaging time for atoms in the first (solid green), middle (dashed red), and last (dotted blue) bins of the simulated density distribution for an initial cloud 50 \um{} in extent. The probe intensity used in this calculation was $1.2\, I_{\rm{sat}}$, and the column density was $\sigma_0 n=1.6$. (b) The velocity of a single composite atom as a function of probe intensity for various imaging times. Simulation data (dots) and numerical  solutions of Eq. (\ref{eq10}) (lines) are in agreement.}
 \label{fig:simTests}
 \end{figure}	
 
@@ -178,7 +178,7 @@ We then used this version of the simulation to look at the motion of composite a
 \begin{figure}
 	\subfigure[]{\includegraphics[scale=0.9]{"Chapter2 Figures/figure6a".pdf}}
 	\subfigure[]{\includegraphics[scale=0.9]{"Chapter2 Figures/figure6b".pdf}}
-\caption{Phase space evolution of an atomic cloud exposed to probe light with intensity $\tilde{I}_0=1.2$. We defined $\Delta v=v -\left< v(t) \right>$  and $\Delta z=z-\left< z(t) \right>$, subtracting out the center of mass position and velocity of the cloud. The column density $\sigma_0 n$ is 1.6, and the initial cloud is a Gaussian with a width of 10 $\mu$m in (a) and 1 $\mu$m in (b). The center of mass velocities $\left< v\right>$ are (0,  3.41, 5.26, 6.52, 7.50, 8.32) m/s sequentially, and are the same for both initial cloud widths. }
+\caption[Phase space evolution of the atomic cloud]{Phase space evolution of an atomic cloud exposed to probe light with intensity $\tilde{I}_0=1.2$. We defined $\Delta v=v -\left< v(t) \right>$  and $\Delta z=z-\left< z(t) \right>$, subtracting out the center of mass position and velocity of the cloud. The column density $\sigma_0 n$ is 1.6, and the initial cloud is a Gaussian with a width of 10 $\mu$m in (a) and 1 $\mu$m in (b). The center of mass velocities $\left< v\right>$ are (0,  3.41, 5.26, 6.52, 7.50, 8.32) m/s sequentially, and are the same for both initial cloud widths. }
 \label{fig:phaseSpace}
 \end{figure}
 
@@ -190,7 +190,7 @@ It remains to check how the atoms' acrobatics affect the resulting optical depth
 \begin{figure}
 	\subfigure[]{\includegraphics{"Chapter2 Figures/figure7".pdf}}
 	\subfigure[]{\includegraphics{"Chapter2 Figures/figure8".pdf}}
-\caption{(a) Top. Optical depth as a function of probe intensity for an imaging time $t=100$ \us. $OD^{\rm{(1)}}$ and $OD^{\rm{(2)}}$ are optical depths predicted from a given column density by Eq. (\ref{eq2}) and (\ref{eq:perturb}) respectively.  The two versions of simulated optical depth, $OD^{\rm{sim1}}$ (green curve) and $OD^{\rm{sim2}}$ (green dots) are plotted. Bottom. The fractional difference between two versions of the simulated $OD$, $\left|OD^{\rm{sim1}}-OD^{\rm{sim2}}\right|/OD^{\rm{sim1}}$. (b) The optical depth as a function of probe intensity for three imaging times: $t=40$ \us{} (cyan),  $t=75$ \us{} (magenta),  $t=100$ \us{} (red). The dots represent experimental data and the lines represent the best fit of simulated data. The optimal fit parameters pictured are a $\sigma_0 n$ of 1.627(5) and saturation intensity of 29(7) counts/\us{}.}
+\caption[Comparison of stationary and moving atom simulations]{(a) Top. Optical depth as a function of probe intensity for an imaging time $t=100$ \us. $OD^{\rm{(1)}}$ and $OD^{\rm{(2)}}$ are optical depths predicted from a given column density by Eq. (\ref{eq2}) and (\ref{eq:perturb}) respectively.  The two versions of simulated optical depth, $OD^{\rm{sim1}}$ (green curve) and $OD^{\rm{sim2}}$ (green dots) are plotted. Bottom. The fractional difference between two versions of the simulated $OD$, $\left|OD^{\rm{sim1}}-OD^{\rm{sim2}}\right|/OD^{\rm{sim1}}$. (b) The optical depth as a function of probe intensity for three imaging times: $t=40$ \us{} (cyan),  $t=75$ \us{} (magenta),  $t=100$ \us{} (red). The dots represent experimental data and the lines represent the best fit of simulated data. The optimal fit parameters pictured are a $\sigma_0 n$ of 1.627(5) and saturation intensity of 29(7) counts/\us{}.}
 \label{fig:compareModelsAndIsat}
 \end{figure}
 
@@ -230,7 +230,7 @@ This simulation allowed us to interpret experimental data. For a given imaging t
 \begin{figure}
 	\subfigure[]{\includegraphics{"Chapter2 Figures/figure9a".pdf}}
 	\subfigure[]{\includegraphics{"Chapter2 Figures/figure9b".pdf}}
-\caption{SNR for three different column densities after correcting for recoil induced detuning. (a) SNR as a function of imaging time for a probe intensity of $I_0=5.0 I_{\rm sat}$ and (b) SNR as a function of probe intensity for an imaging time of 50 \us{}.}
+\caption[Signal-to-noise optimization]{SNR for three different column densities after correcting for recoil induced detuning. (a) SNR as a function of imaging time for a probe intensity of $I_0=5.0 I_{\rm sat}$ and (b) SNR as a function of probe intensity for an imaging time of 50 \us{}.}
 \label{fig:SNR}
 \end{figure}
 

@@ -22,7 +22,7 @@ m0 = 0
 c=1064.0/790.0
 
 fileroot = 'C:/Users/swooty/Documents/Thesis Data/Final Bloch Osc data/'
-filename10 = 'SynDimBandStructure_F9_n19_Chern1Flat.npz'
+filename10 = 'SynDimBandStructure_F7_n13_Chern1Flat.npz'
 filename2 = 'SynDimBandStructure_F2_n7_Chern1Flat.npz'
 file10=np.load(fileroot+filename10)
 file2=np.load(fileroot+filename2)
@@ -42,7 +42,7 @@ for i in range(s):
     d=panel.scatter(file2['kList'],file2['E'][:,i],c=file2['m'][:,i],vmin=-S,vmax=S, marker='.',lw=0)
 panel.set_xlim(-1.0,1.0)
 
-S = 9
+S = 7
 s = 2*S+1
 panel=fig.add_subplot(gs[0,4:8])
 for i in range(s):   

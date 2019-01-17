@@ -1,24 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{Steck}
-Daniel~Adam Steck.
-\newblock Rubidium 87 d line data.
-\newblock Available online, http://steck.us/alkalidata, April 2018.
-\newblock revision 2.1.5.
-
-\bibitem{Tiecke}
-T.~G. Tiecke.
-\newblock Properties of potassium.
-\newblock Available online,
-  http://www.tobiastiecke.nl/archive/PotassiumProperties.pdf, May 2011.
-\newblock v1.02.
-
-\bibitem{Karina2012}
-K.~Jim\'enez-Garc\'{\i}a, L.~J. LeBlanc, R.~A. Williams, M.~C. Beeler, A.~R.
-  Perry, and I.~B. Spielman.
-\newblock Peierls substitution in an engineered lattice potential.
-\newblock {\em Phys. Rev. Lett.}, 108:225303, May 2012.
-
 \bibitem{Thouless1982}
 D.~J. Thouless, M.~Kohmoto, M.~P. Nightingale, and M.~den Nijs.
 \newblock Quantized hall conductance in a two-dimensional periodic potential.
@@ -38,6 +19,19 @@ Horst~L. Stormer.
 N.W. Ashcroft and N.D. Mermin.
 \newblock {\em {Solid State Physics}}.
 \newblock Saunders College, Philadelphia, 1976.
+
+\bibitem{Steck}
+Daniel~Adam Steck.
+\newblock Rubidium 87 d line data.
+\newblock Available online, http://steck.us/alkalidata, April 2018.
+\newblock revision 2.1.5.
+
+\bibitem{Tiecke}
+T.~G. Tiecke.
+\newblock Properties of potassium.
+\newblock Available online,
+  http://www.tobiastiecke.nl/archive/PotassiumProperties.pdf, May 2011.
+\newblock v1.02.
 
 \bibitem{BreitRabi}
 G.~Breit and I.~I. Rabi.
@@ -60,6 +54,12 @@ Karina Jimenez-Garcia.
 \newblock {\em Artificial Gauge Fields for Ultracold Neutral Atoms}.
 \newblock PhD thesis, Joint Quantum Institute, National Institute of Standards
   and Technology, and the University of Maryland, 2012.
+
+\bibitem{Karina2012}
+K.~Jim\'enez-Garc\'{\i}a, L.~J. LeBlanc, R.~A. Williams, M.~C. Beeler, A.~R.
+  Perry, and I.~B. Spielman.
+\newblock Peierls substitution in an engineered lattice potential.
+\newblock {\em Phys. Rev. Lett.}, 108:225303, May 2012.
 
 \bibitem{SteckTextbook}
 Daniel~Adam Steck.
@@ -393,5 +393,40 @@ Gretchen~K. Campbell, Jongchul Mun, Micah Boyd, Erik~W. Streed, Wolfgang
   Ketterle, and David~E. Pritchard.
 \newblock Parametric amplification of scattered atom pairs.
 \newblock {\em Phys. Rev. Lett.}, 96:020406, Jan 2006.
+
+\bibitem{Mugel2017}
+Samuel Mugel, Alexandre Dauphin, Pietro Massignan, Leticia Tarruell, Maciej
+  Lewenstein, Carlos Lobo, and Alessio Celi.
+\newblock Measuring chern numbers in hofstadter strips.
+\newblock {\em SciPost}, 2017.
+
+\bibitem{Huang2013}
+Zhoushen Huang and Daniel~P. Arovas.
+\newblock Entanglement spectrum and wannier center flow of the hofstadter
+  problem.
+\newblock {\em Phys. Rev. B}, 86:245109, Dec 2012.
+
+\bibitem{Liu2013}
+Xiong-Jun Liu, K.~T. Law, T.~K. Ng, and Patrick~A. Lee.
+\newblock Detecting topological phases in cold atoms.
+\newblock {\em Phys. Rev. Lett.}, 111:120402, Sep 2013.
+
+\bibitem{Wang2013}
+Lei Wang, Alexey~A. Soluyanov, and Matthias Troyer.
+\newblock Proposal for direct measurement of topological invariants in optical
+  lattices.
+\newblock {\em Phys. Rev. Lett.}, 110(16):166802--, Apr 2013.
+
+\bibitem{Zhang2016}
+Dan-Wei Zhang and Shuai Cao.
+\newblock Measuring the spin chern number in time-reversal-invariant hofstadter
+  optical lattices.
+\newblock {\em Physics Letters A}, 380(42):3541--3545, Oct 2016.
+
+\bibitem{Kohmoto1989}
+Mahito Kohmoto.
+\newblock Zero modes and the quantized hall conductance of the two-dimensional
+  lattice in a magnetic field.
+\newblock {\em Phys. Rev. B}, 39:11943--11949, Jun 1989.
 
 \end{thebibliography}
