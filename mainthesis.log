@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2018.8.16)  16 JAN 2019 16:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2018.8.16)  17 JAN 2019 11:20
 entering extended mode
 **./mainthesis.tex
 (mainthesis.tex
@@ -421,7 +421,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 LaTeX Warning: Unused global option(s):
     [pdflatex].
 
-No file mainthesis.aux.
+(mainthesis.aux)
 \openout1 = `mainthesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
@@ -438,7 +438,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
 LaTeX Font Info:    ... okay on input line 80.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 80.
 LaTeX Font Info:    ... okay on input line 80.
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count133
 \scratchdimen=\dimen150
@@ -474,15 +474,17 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 80.
 LaTeX Info: Redefining \pageref on input line 80.
 LaTeX Info: Redefining \nameref on input line 80.
+
+(mainthesis.out) (mainthesis.out)
 \@outlinefile=\write3
 \openout3 = `mainthesis.out'.
 
 \openout2 = `Abstract.aux'.
 
-
-(Abstract.tex
+ (Abstract.tex
 LaTeX Font Info:    Try loading font information for U+lasy on input line 15.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )) [1
 
@@ -513,2435 +515,80 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
 
 
 ] [4])
+
+Package hyperref Warning: old toc file detected, not used; run LaTeX again.
+
 \tf@toc=\write4
 \openout4 = `mainthesis.toc'.
 
- [5
+[5
 
 ]
+
+Package hyperref Warning: old lot file detected, not used; run LaTeX again.
+
 \tf@lot=\write5
 \openout5 = `mainthesis.lot'.
 
- [6]
+[6]
+
+Package hyperref Warning: old lof file detected, not used; run LaTeX again.
+
 \tf@lof=\write6
 \openout6 = `mainthesis.lof'.
 
- [7]
-\openout2 = `ChernNumberChapter.aux'.
-
- (ChernNumberChapter.tex
-Chapter 1.
-
-LaTeX Warning: Citation `Thouless1982' on page 1 undefined on input line 9.
-
-
-LaTeX Warning: Citation `Qi2011' on page 1 undefined on input line 9.
-
-
-LaTeX Warning: Citation `Stormer1999' on page 1 undefined on input line 9.
-
-
-LaTeX Warning: Reference `chap:SynDim, chap:BlochOsc' on page 1 undefined on in
-put line 9.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.10 
-      [1
-
-]
-
-LaTeX Warning: Reference `fig:bakedGoods' on page 2 undefined on input line 14.
-
-
-<"ChernNum Figures/TopologyBakedGoods".png, id=44, 433.62pt x 165.7392pt>
-File: "ChernNum Figures/TopologyBakedGoods".png Graphic file (type png)
-
-<use "ChernNum Figures/TopologyBakedGoods".png>
-Package pdftex.def Info: "ChernNum Figures/TopologyBakedGoods".png used on inpu
-t line 16.
-(pdftex.def)             Requested size: 433.61894pt x 165.73877pt.
-
-Overfull \hbox (7.2264pt too wide) in paragraph at lines 16--18
-[][]
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.27 
-      [2]
-
-LaTeX Warning: Citation `Ashcroft' on page 3 undefined on input line 29.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.34 
-      [3 <./ChernNum Figures/TopologyBakedGoods.png>]
-
-LaTeX Warning: Reference `eqn:phaseTransform' on page 4 undefined on input line
- 44.
-
-
-LaTeX Warning: Reference `eqn:GaussBonnet' on page 4 undefined on input line 56
-.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.57 
-      [4]
-
-LaTeX Warning: Reference `fig:HallEffect' on page 5 undefined on input line 63.
-
-
-<"ChernNum Figures/HallEffect".png, id=70, 234.1548pt x 190.7928pt>
-File: "ChernNum Figures/HallEffect".png Graphic file (type png)
-
-<use "ChernNum Figures/HallEffect".png>
-Package pdftex.def Info: "ChernNum Figures/HallEffect".png used on input line 6
-5.
-(pdftex.def)             Requested size: 234.15422pt x 190.79231pt.
-
-<"ChernNum Figures/qhe".png, id=71, 421.575pt x 295.1025pt>
-File: "ChernNum Figures/qhe".png Graphic file (type png)
-
-<use "ChernNum Figures/qhe".png>
-Package pdftex.def Info: "ChernNum Figures/qhe".png used on input line 71.
-(pdftex.def)             Requested size: 421.57396pt x 295.10176pt.
-
-<"ChernNum Figures/ABphase".png, id=72, 459.6372pt x 178.7478pt>
-File: "ChernNum Figures/ABphase".png Graphic file (type png)
-
-<use "ChernNum Figures/ABphase".png>
-Package pdftex.def Info: "ChernNum Figures/ABphase".png used on input line 80.
-(pdftex.def)             Requested size: 459.63608pt x 178.74734pt.
-
-Overfull \hbox (33.24353pt too wide) in paragraph at lines 80--82
-[][]
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.85 
-      [5 <./ChernNum Figures/HallEffect.png>]
-<"ChernNum Figures/Hofstadter".png, id=79, 433.62pt x 297.20023pt>
-File: "ChernNum Figures/Hofstadter".png Graphic file (type png)
-
-<use "ChernNum Figures/Hofstadter".png>
-Package pdftex.def Info: "ChernNum Figures/Hofstadter".png used on input line 8
-7.
-(pdftex.def)             Requested size: 433.61894pt x 297.19948pt.
-
-Overfull \hbox (7.2264pt too wide) in paragraph at lines 87--89
-[][]
- []
-
-)pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.128 \include{ChernNumberChapter}
-                                   [6 <./ChernNum Figures/qhe.png>]pdfTeX warni
-ng (ext4): destination with the same identifier (name{page.7}) has been already
- used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.128 \include{ChernNumberChapter}
-                                   [7 <./ChernNum Figures/ABphase.png> <./Chern
-Num Figures/Hofstadter.png>]
-\openout2 = `AtomLightChapter.aux'.
-
- (AtomLightChapter.tex
-Chapter 1.
-[8
-
-
-]
-<"Chapter2 Figures/RbKatomicStruct".pdf, id=102, 448.07399pt x 484.51414pt>
-File: "Chapter2 Figures/RbKatomicStruct".pdf Graphic file (type pdf)
-
-<use "Chapter2 Figures/RbKatomicStruct".pdf>
-Package pdftex.def Info: "Chapter2 Figures/RbKatomicStruct".pdf used on input l
-ine 14.
-(pdftex.def)             Requested size: 448.07288pt x 484.51297pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 14--15
-[][] 
- []
-
-
-LaTeX Warning: Citation `Steck' on page 9 undefined on input line 15.
-
-
-LaTeX Warning: Citation `Tiecke' on page 9 undefined on input line 15.
-
-
-LaTeX Warning: Citation `Steck' on page 9 undefined on input line 15.
-
-
-LaTeX Warning: Citation `Tiecke' on page 9 undefined on input line 15.
-
-
-LaTeX Warning: Reference `fig:RbKatomicStruct' on page 9 undefined on input lin
-e 19.
-
-
-LaTeX Warning: Reference `eqn:BHam' on page 9 undefined on input line 33.
-
-[9] [10 <./Chapter2 Figures/RbKatomicStruct.pdf>]
-
-LaTeX Warning: Reference `fig:hyperfineSteck' on page 11 undefined on input lin
-e 42.
-
-
-LaTeX Warning: Reference `fig:hyperfineSteck' on page 11 undefined on input lin
-e 48.
-
-<"Chapter4 Figures/HyperfineFromSteck".pdf, id=126, 794.97pt x 614.295pt>
-File: "Chapter4 Figures/HyperfineFromSteck".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/HyperfineFromSteck".pdf>
-Package pdftex.def Info: "Chapter4 Figures/HyperfineFromSteck".pdf used on inpu
-t line 51.
-(pdftex.def)             Requested size: 476.98569pt x 368.57983pt.
-
-Overfull \hbox (50.59314pt too wide) in paragraph at lines 51--52
-[][] 
- []
-
-
-LaTeX Warning: Citation `Steck' on page 11 undefined on input line 52.
-
-
-LaTeX Warning: Citation `Steck' on page 11 undefined on input line 52.
-
-
-LaTeX Warning: Citation `BreitRabi' on page 11 undefined on input line 56.
-
-[11] [12 <./Chapter4 Figures/HyperfineFromSteck.pdf, page is rotated 90 degrees
->]
-
-LaTeX Warning: Reference `eqn:BreitRabi' on page 13 undefined on input line 65.
-
-
-[13]
-
-LaTeX Warning: Citation `LCT' on page 14 undefined on input line 91.
-
-[14] [15] [16]
-
-LaTeX Warning: Citation `LCT' on page 17 undefined on input line 146.
-
-
-LaTeX Warning: Reference `eqn:TwoLevelHam' on page 17 undefined on input line 1
-57.
-
-
-LaTeX Warning: Reference `fig:ARPfigure' on page 17 undefined on input line 157
-.
-
-<"Chapter4 Figures/ARPfigure".pdf, id=180, 433.62pt x 216.81pt>
-File: "Chapter4 Figures/ARPfigure".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/ARPfigure".pdf>
-Package pdftex.def Info: "Chapter4 Figures/ARPfigure".pdf used on input line 15
-9.
-(pdftex.def)             Requested size: 433.61894pt x 216.80946pt.
-
-Overfull \hbox (7.2264pt too wide) in paragraph at lines 159--160
-[][] 
- []
-
-[17]
-
-LaTeX Warning: Reference `fig:ARPfigure' on page 18 undefined on input line 164
-.
-
-[18 <./Chapter4 Figures/ARPfigure.pdf>]
-
-LaTeX Warning: Reference `eqn:TwoLevelEnergy' on page 19 undefined on input lin
-e 174.
-
-
-LaTeX Warning: Reference `eq:Rabi' on page 19 undefined on input line 174.
-
-
-LaTeX Warning: Reference `eq:Rabi' on page 19 undefined on input line 174.
-
-
-LaTeX Warning: Reference `eqn:TwoLevelEnergy' on page 19 undefined on input lin
-e 175.
-
-[19]
-
-LaTeX Warning: Reference `fig:absorptionIntor' on page 20 undefined on input li
-ne 189.
-
-
-LaTeX Warning: Reference `fig:absorptionIntor' on page 20 undefined on input li
-ne 189.
-
-[20] <"Chapter2 Figures/Picture1a".png, id=243, 246.1998pt x 359.9046pt>
-File: "Chapter2 Figures/Picture1a".png Graphic file (type png)
-
-<use "Chapter2 Figures/Picture1a".png>
-Package pdftex.def Info: "Chapter2 Figures/Picture1a".png used on input line 19
-6.
-(pdftex.def)             Requested size: 110.78888pt x 161.95557pt.
-
-<"Chapter2 Figures/Picture1c".pdf, id=244, 173.448pt x 187.902pt>
-File: "Chapter2 Figures/Picture1c".pdf Graphic file (type pdf)
-
-<use "Chapter2 Figures/Picture1c".pdf>
-Package pdftex.def Info: "Chapter2 Figures/Picture1c".pdf used on input line 19
-7.
-(pdftex.def)             Requested size: 156.10175pt x 169.11023pt.
-
-<"Chapter2 Figures/Picture1b".png, id=245, 250.536pt x 304.4976pt>
-File: "Chapter2 Figures/Picture1b".png Graphic file (type png)
-
-<use "Chapter2 Figures/Picture1b".png>
-Package pdftex.def Info: "Chapter2 Figures/Picture1b".png used on input line 19
-8.
-(pdftex.def)             Requested size: 125.26768pt x 152.24843pt.
-
-
-LaTeX Warning: Reference `eq:scatrate' on page 21 undefined on input line 203.
-
-[21 <./Chapter2 Figures/Picture1a.png> <./Chapter2 Figures/Picture1c.pdf> <./Ch
-apter2 Figures/Picture1b.png>]
-
-LaTeX Warning: Reference `eq:dIdz' on page 22 undefined on input line 210.
-
-
-LaTeX Warning: Reference `eq2' on page 22 undefined on input line 215.
-
-
-LaTeX Warning: Reference `fig:absorptionIntor' on page 22 undefined on input li
-ne 215.
-
-
-LaTeX Warning: Reference `fig:absorptionIntor' on page 22 undefined on input li
-ne 217.
-
-
-LaTeX Warning: Reference `eq:dIdz' on page 22 undefined on input line 217.
-
-
-LaTeX Warning: Reference `AbsorptionImagingChapter' on page 22 undefined on inp
-ut line 217.
-
-[22] [23]
-
-LaTeX Warning: Citation `Ashcroft' on page 24 undefined on input line 236.
-
-[24]
-Overfull \hbox (19.96951pt too wide) detected at line 264
-[]\OML/cmm/m/it/12 H[] \OT1/cmr/m/n/12 = [] [] \OML/cmm/m/it/12 ;
- []
-
-[25]
-
-LaTeX Warning: Reference `fig:latticeBandStructure' on page 26 undefined on inp
-ut line 277.
-
-<"Chapter4 Figures/figure1".pdf, id=313, 448.07399pt x 289.08pt>
-File: "Chapter4 Figures/figure1".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/figure1".pdf>
-Package pdftex.def Info: "Chapter4 Figures/figure1".pdf used on input line 290.
-
-(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 290--291
-[][] 
- []
-
-[26] [27 <./Chapter4 Figures/figure1.pdf>] [28]
-
-LaTeX Warning: Citation `Marzari2012' on page 29 undefined on input line 319.
-
-
-LaTeX Warning: Reference `fig:pulsingSchematic' on page 29 undefined on input l
-ine 323.
-
-[29]
-
-LaTeX Warning: Reference `fig:pulsingSchematic' on page 30 undefined on input l
-ine 334.
-
-<"Chapter4 Figures/figure2".pdf, id=356, 448.07399pt x 289.08pt>
-File: "Chapter4 Figures/figure2".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/figure2".pdf>
-Package pdftex.def Info: "Chapter4 Figures/figure2".pdf used on input line 337.
-
-(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 337--338
-[][] 
- []
-
-
-LaTeX Warning: Reference `fig:pulsingSchematic' on page 30 undefined on input l
-ine 341.
-
-
-LaTeX Warning: Reference `fig:pulsingSchematic' on page 30 undefined on input l
-ine 341.
-
-
-LaTeX Warning: Reference `fig:latticePulsing' on page 30 undefined on input lin
-e 346.
-
-
-LaTeX Warning: Reference `eqn:timeEvolveLat' on page 30 undefined on input line
- 346.
-
-
-LaTeX Warning: Reference `fig:latticePulsing' on page 30 undefined on input lin
-e 346.
-
-<"Chapter4 Figures/LatticePulsing".pdf, id=357, 448.07399pt x 289.08pt>
-File: "Chapter4 Figures/LatticePulsing".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/LatticePulsing".pdf>
-Package pdftex.def Info: "Chapter4 Figures/LatticePulsing".pdf used on input li
-ne 348.
-(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 348--349
-[][] 
- []
-
-[30] [31 <./Chapter4 Figures/figure2.pdf>]
-
-LaTeX Warning: Reference `fig:pulsingSchematic' on page 32 undefined on input l
-ine 353.
-
-<"Chapter4 Figures/figure3".pdf, id=395, 448.07399pt x 289.08pt>
-File: "Chapter4 Figures/figure3".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/figure3".pdf>
-Package pdftex.def Info: "Chapter4 Figures/figure3".pdf used on input line 356.
-
-(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 356--357
-[][] 
- []
-
-
-LaTeX Warning: Reference `chap:SynDim,chap:BlochOsc' on page 32 undefined on in
-put line 364.
-
-[32 <./Chapter4 Figures/LatticePulsing.pdf>] [33 <./Chapter4 Figures/figure3.pd
-f>]
-
-LaTeX Warning: Citation `KarinaThesis' on page 34 undefined on input line 368.
-
-
-LaTeX Warning: Reference `fig:RamanRfSchematic' on page 34 undefined on input l
-ine 368.
-
-
-LaTeX Warning: Citation `LCT' on page 34 undefined on input line 369.
-
-[34] <"Chapter4 Figures/RfRamanSetupBeams".pdf, id=472, 794.97pt x 614.295pt>
-File: "Chapter4 Figures/RfRamanSetupBeams".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/RfRamanSetupBeams".pdf>
-Package pdftex.def Info: "Chapter4 Figures/RfRamanSetupBeams".pdf used on input
- line 394.
-(pdftex.def)             Requested size: 238.49284pt x 184.28992pt.
-
-<"Chapter4 Figures/RfRamanSetupLevels".pdf, id=473, 794.97pt x 614.295pt>
-File: "Chapter4 Figures/RfRamanSetupLevels".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/RfRamanSetupLevels".pdf>
-Package pdftex.def Info: "Chapter4 Figures/RfRamanSetupLevels".pdf used on inpu
-t line 395.
-(pdftex.def)             Requested size: 238.49284pt x 184.28992pt.
-
-Overfull \hbox (53.20422pt too wide) in paragraph at lines 394--396
-[][] [][] 
- []
-
-
-LaTeX Warning: Citation `Karina2012' on page 35 undefined on input line 396.
-
-
-LaTeX Warning: Citation `Karina2012' on page 35 undefined on input line 396.
-
-
-LaTeX Warning: Reference `fig:RfBandStruct' on page 35 undefined on input line 
-400.
-
-
-LaTeX Warning: Reference `eqn:rfHam' on page 35 undefined on input line 400.
-
-
-LaTeX Warning: Reference `fig:RfBandStruct' on page 35 undefined on input line 
-400.
-
-
-LaTeX Warning: Reference `fig:RfBandStruct' on page 35 undefined on input line 
-400.
-
-
-LaTeX Warning: Reference `fig:RfBandStruct' on page 35 undefined on input line 
-400.
-
-
-LaTeX Warning: Reference `fig:RfBandStruct' on page 35 undefined on input line 
-400.
-
-
-LaTeX Warning: Reference `fig:RfBandStruct' on page 35 undefined on input line 
-400.
-
-[35 <./Chapter4 Figures/RfRamanSetupBeams.pdf, page is rotated 90 degrees> <./C
-hapter4 Figures/RfRamanSetupLevels.pdf, page is rotated 90 degrees>]
-<"Chapter4 Figures/rfBandStructure".pdf, id=489, 448.07399pt x 289.08pt>
-File: "Chapter4 Figures/rfBandStructure".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/rfBandStructure".pdf>
-Package pdftex.def Info: "Chapter4 Figures/rfBandStructure".pdf used on input l
-ine 403.
-(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 403--404
-[][] 
- []
-
-
-LaTeX Warning: Reference `eqn:rfHam' on page 36 undefined on input line 404.
-
-
-LaTeX Warning: Reference `eqn:rfHam' on page 36 undefined on input line 404.
-
-
-LaTeX Warning: Reference `fig:RamanRfSchematic' on page 36 undefined on input l
-ine 410.
-
-
-LaTeX Warning: Reference `fig:RamanRfSchematic' on page 36 undefined on input l
-ine 410.
-
-
-LaTeX Warning: Reference `fig:RamanRfSchematic' on page 36 undefined on input l
-ine 410.
-
-
-LaTeX Warning: Citation `SteckTextbook' on page 36 undefined on input line 410.
-
-
-[36] [37 <./Chapter4 Figures/rfBandStructure.pdf>]
-
-LaTeX Warning: Reference `eqn:rfHam' on page 38 undefined on input line 421.
-
-
-LaTeX Warning: Reference `fig:RamanBandStruct' on page 38 undefined on input li
-ne 433.
-
-
-LaTeX Warning: Reference `fig:RamanBandStruct' on page 38 undefined on input li
-ne 433.
-
-
-LaTeX Warning: Reference `fig:RamanBandStruct' on page 38 undefined on input li
-ne 433.
-
-
-LaTeX Warning: Reference `fig:RamanBandStruct' on page 38 undefined on input li
-ne 433.
-
-
-LaTeX Warning: Citation `KarinaThesis' on page 38 undefined on input line 433.
-
-
-LaTeX Warning: Reference `fig:RamanBandStruct' on page 38 undefined on input li
-ne 433.
-
-
-LaTeX Warning: Reference `fig:RamanBandStruct' on page 38 undefined on input li
-ne 433.
-
-
-LaTeX Warning: Reference `fig:RamanBandStruct' on page 38 undefined on input li
-ne 433.
-
-[38]
-<"Chapter4 Figures/RamanBandStructure".pdf, id=544, 448.07399pt x 289.08pt>
-File: "Chapter4 Figures/RamanBandStructure".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/RamanBandStructure".pdf>
-Package pdftex.def Info: "Chapter4 Figures/RamanBandStructure".pdf used on inpu
-t line 436.
-(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 436--437
-[][] 
- []
-
-
-LaTeX Warning: Reference `eqn:RamanHam' on page 39 undefined on input line 437.
-
-
-
-LaTeX Warning: Reference `eqn:RamanHam' on page 39 undefined on input line 437.
-
-
-[39] [40 <./Chapter4 Figures/RamanBandStructure.pdf>]
-
-LaTeX Warning: Reference `fig:RfPulsing' on page 41 undefined on input line 450
-.
-
-
-LaTeX Warning: Reference `fig:RamanPulsing' on page 41 undefined on input line 
-450.
-
-<"Chapter4 Figures/RfPulsing".pdf, id=599, 448.07399pt x 433.62pt>
-File: "Chapter4 Figures/RfPulsing".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/RfPulsing".pdf>
-Package pdftex.def Info: "Chapter4 Figures/RfPulsing".pdf used on input line 45
-4.
-(pdftex.def)             Requested size: 448.07288pt x 433.61894pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 454--455
-[][] 
- []
-
-
-LaTeX Warning: Reference `fig:RfPulsing' on page 41 undefined on input line 459
-.
-
-
-LaTeX Warning: Reference `fig:RfPulsing' on page 41 undefined on input line 459
-.
-
-<"Chapter4 Figures/RamanPulsing".pdf, id=600, 448.07399pt x 433.62pt>
-File: "Chapter4 Figures/RamanPulsing".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/RamanPulsing".pdf>
-Package pdftex.def Info: "Chapter4 Figures/RamanPulsing".pdf used on input line
- 462.
-(pdftex.def)             Requested size: 448.07288pt x 433.61894pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 462--463
-[][] 
- []
-
-
-LaTeX Warning: Reference `fig:RamanPulsing' on page 41 undefined on input line 
-467.
-
-
-LaTeX Warning: Reference `fig:RfPulsing' on page 41 undefined on input line 467
-.
-
-
-LaTeX Warning: Reference `fig:rfBandStruct' on page 41 undefined on input line 
-467.
-
-[41] [42 <./Chapter4 Figures/RfPulsing.pdf>] [43 <./Chapter4 Figures/RamanPulsi
-ng.pdf>]) [44]
-\openout2 = `IntroChapter.aux'.
-
- (IntroChapter.tex
-Chapter 2.
-[45
-
-
-]
-
-LaTeX Warning: Citation `Pethick' on page 46 undefined on input line 32.
-
-[46]
-
-LaTeX Warning: Reference `fig:BoseDistribution' on page 47 undefined on input l
-ine 63.
-
-
-LaTeX Warning: Reference `eqn:excitedPopulation' on page 47 undefined on input 
-line 63.
-
-
-LaTeX Warning: Reference `eqn:groundPopulation' on page 47 undefined on input l
-ine 63.
-
-[47] <"BEC_DFG figures/condensation".pdf, id=720, 375.804pt x 216.81pt>
-File: "BEC_DFG figures/condensation".pdf Graphic file (type pdf)
-
-<use "BEC_DFG figures/condensation".pdf>
-Package pdftex.def Info: "BEC_DFG figures/condensation".pdf used on input line 
-66.
-(pdftex.def)             Requested size: 375.80309pt x 216.80946pt.
- [48 <./BEC_DFG figures/condensation.pdf>]
-
-LaTeX Warning: Reference `fig:BoseDistribution' on page 49 undefined on input l
-ine 80.
-
-
-LaTeX Warning: Reference `eqn:tc' on page 49 undefined on input line 86.
-
-<"BEC_DFG figures/CondensingAtoms".png, id=744, 426.8748pt x 128.1588pt>
-File: "BEC_DFG figures/CondensingAtoms".png Graphic file (type png)
-
-<use "BEC_DFG figures/CondensingAtoms".png>
-Package pdftex.def Info: "BEC_DFG figures/CondensingAtoms".png used on input li
-ne 89.
-(pdftex.def)             Requested size: 426.87375pt x 128.15848pt.
-
-
-LaTeX Warning: Reference `fig:CondensingAtoms' on page 49 undefined on input li
-ne 94.
-
-
-LaTeX Warning: Reference `sec:timeOfFlight' on page 49 undefined on input line 
-94.
-
-
-LaTeX Warning: Reference `sec:absorptionImaging' on page 49 undefined on input 
-line 94.
-
-
-LaTeX Warning: Reference `fig:CondensingAtoms' on page 49 undefined on input li
-ne 94.
-
-
-LaTeX Warning: Reference `fig:CondensingAtoms' on page 49 undefined on input li
-ne 94.
-
-
-LaTeX Warning: Reference `fig:CondensingAtoms' on page 49 undefined on input li
-ne 94.
-
-[49 <./BEC_DFG figures/CondensingAtoms.png>]
-
-LaTeX Warning: Citation `Egorov2013' on page 50 undefined on input line 101.
-
-
-LaTeX Warning: Citation `Pethick' on page 50 undefined on input line 101.
-
-[50] [51] <"BEC_DFG figures/InSitu".pdf, id=767, 325.215pt x 433.62pt>
-File: "BEC_DFG figures/InSitu".pdf Graphic file (type pdf)
-
-<use "BEC_DFG figures/InSitu".pdf>
-Package pdftex.def Info: "BEC_DFG figures/InSitu".pdf used on input line 134.
-(pdftex.def)             Requested size: 325.2142pt x 433.61894pt.
-
-
-LaTeX Warning: Reference `fig:InSitu' on page 52 undefined on input line 139.
-
-
-LaTeX Warning: Reference `sec:timeOfFlight' on page 52 undefined on input line 
-139.
-
-
-LaTeX Warning: Reference `fig:InSitu' on page 52 undefined on input line 139.
-
-[52] [53 <./BEC_DFG figures/InSitu.pdf>]
-
-LaTeX Warning: Reference `eqn:numberOfStates' on page 54 undefined on input lin
-e 154.
-
-[54]
-
-LaTeX Warning: Reference `eqn:densityOfStates' on page 55 undefined on input li
-ne 168.
-
-<"BEC_DFG figures/FermiDist".pdf, id=796, 448.07399pt x 216.81pt>
-File: "BEC_DFG figures/FermiDist".pdf Graphic file (type pdf)
-
-<use "BEC_DFG figures/FermiDist".pdf>
-Package pdftex.def Info: "BEC_DFG figures/FermiDist".pdf used on input line 175
-.
-(pdftex.def)             Requested size: 448.07288pt x 216.80946pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 175--176
-[][] 
- []
-
-
-LaTeX Warning: Reference `fig:FermiDist' on page 55 undefined on input line 180
-.
-
-[55]
-
-LaTeX Warning: Citation `KetterleDFG' on page 56 undefined on input line 185.
-
-[56 <./BEC_DFG figures/FermiDist.pdf>]
-
-LaTeX Warning: Reference `fig:FeshbachSchematic' on page 57 undefined on input 
-line 189.
-
-
-LaTeX Warning: Reference `fig:FeshbachSchematic' on page 57 undefined on input 
-line 191.
-
-<"BEC_DFG figures/FeshbachSchematic".png, id=827, 433.62pt x 244.7544pt>
-File: "BEC_DFG figures/FeshbachSchematic".png Graphic file (type png)
-
-<use "BEC_DFG figures/FeshbachSchematic".png>
-Package pdftex.def Info: "BEC_DFG figures/FeshbachSchematic".png used on input 
-line 194.
-(pdftex.def)             Requested size: 433.61894pt x 244.75378pt.
-
-Overfull \hbox (7.2264pt too wide) in paragraph at lines 194--195
-[][] 
- []
-
-
-LaTeX Warning: Citation `KetterleDFG' on page 57 undefined on input line 195.
-
-
-LaTeX Warning: Citation `KetterleDFG' on page 57 undefined on input line 195.
-
-
-LaTeX Warning: Citation `Chin10' on page 57 undefined on input line 199.
-
-[57] [58 <./BEC_DFG figures/FeshbachSchematic.png>]
-
-LaTeX Warning: Citation `Greiner03' on page 59 undefined on input line 206.
-
-
-LaTeX Warning: Citation `Zwierlein03' on page 59 undefined on input line 206.
-
-
-LaTeX Warning: Citation `Jochim03' on page 59 undefined on input line 206.
-
-
-LaTeX Warning: Citation `Bartenstein04' on page 59 undefined on input line 206.
-
-
-
-LaTeX Warning: Citation `Bourdel04' on page 59 undefined on input line 206.
-
-
-LaTeX Warning: Citation `Zwierlein04' on page 59 undefined on input line 206.
-
-
-LaTeX Warning: Citation `Regal04' on page 59 undefined on input line 206.
-
-
-LaTeX Warning: Citation `Lin2009' on page 59 undefined on input line 210.
-
-
-LaTeX Warning: Citation `KarinaThesis' on page 59 undefined on input line 210.
-
-
-LaTeX Warning: Citation `AycockThesis' on page 59 undefined on input line 210.
-
-
-LaTeX Warning: Reference `fig:ExperimentPicture' on page 59 undefined on input 
-line 212.
-
-<"BEC_DFG figures/ExperimentPicture".png, id=838, 433.62pt x 338.7054pt>
-File: "BEC_DFG figures/ExperimentPicture".png Graphic file (type png)
-
-<use "BEC_DFG figures/ExperimentPicture".png>
-Package pdftex.def Info: "BEC_DFG figures/ExperimentPicture".png used on input 
-line 215.
-(pdftex.def)             Requested size: 433.61894pt x 338.70457pt.
-
-Overfull \hbox (7.2264pt too wide) in paragraph at lines 215--216
-[][] 
- []
-
-
-LaTeX Warning: Reference `fig:BirdsEyeApparatus' on page 59 undefined on input 
-line 221.
-
-
-LaTeX Warning: Reference `fig:BirdsEyeApparatus' on page 59 undefined on input 
-line 221.
-
-
-LaTeX Warning: Reference `fig:BirdsEyeApparatus' on page 59 undefined on input 
-line 221.
-
-
-LaTeX Warning: Reference `sec:BECchanges' on page 59 undefined on input line 22
-1.
-
-
-LaTeX Warning: Reference `sec:BECchanges' on page 59 undefined on input line 22
-1.
-
-[59] [60 <./BEC_DFG figures/ExperimentPicture.png>]
-<"BEC_DFG figures/BirdsEyeApparatus".pdf, id=852, 439.72781pt x 417.3482pt>
-File: "BEC_DFG figures/BirdsEyeApparatus".pdf Graphic file (type pdf)
-
-<use "BEC_DFG figures/BirdsEyeApparatus".pdf>
-Package pdftex.def Info: "BEC_DFG figures/BirdsEyeApparatus".pdf used on input 
-line 224.
-(pdftex.def)             Requested size: 439.72673pt x 417.34718pt.
-
-Overfull \hbox (13.33418pt too wide) in paragraph at lines 224--225
-[][] 
- []
-
-
-LaTeX Warning: Reference `fig:BirdsEyeApparatus' on page 61 undefined on input 
-line 229.
-
-
-LaTeX Warning: Reference `sec:BECchanges' on page 61 undefined on input line 22
-9.
-
-
-LaTeX Warning: Reference `SynDimChapter,BlochOscChapter' on page 61 undefined o
-n input line 231.
-
-[61] [62 <./BEC_DFG figures/BirdsEyeApparatus.pdf>]
-
-LaTeX Warning: Reference `SynDimChapter,BlochOscChapter' on page 63 undefined o
-n input line 233.
-
-
-LaTeX Warning: Reference `fig:BirdsEyeApparatus' on page 63 undefined on input 
-line 235.
-
-
-LaTeX Warning: Reference `sec:DFGsequence' on page 63 undefined on input line 2
-35.
-
-
-LaTeX Warning: Reference `SwaveScatteringChapter' on page 63 undefined on input
- line 235.
-
-<"BEC_DFG figures/ApparatusCoils".pdf, id=877, 391.30692pt x 169.00339pt>
-File: "BEC_DFG figures/ApparatusCoils".pdf Graphic file (type pdf)
-
-<use "BEC_DFG figures/ApparatusCoils".pdf>
-Package pdftex.def Info: "BEC_DFG figures/ApparatusCoils".pdf used on input lin
-e 239.
-(pdftex.def)             Requested size: 391.30595pt x 169.00298pt.
-
-
-LaTeX Warning: Reference `fig:ApparatusCoils' on page 63 undefined on input lin
-e 244.
-
-
-LaTeX Warning: Reference `SwaveScatteringChapter' on page 63 undefined on input
- line 244.
-
-[63] [64 <./BEC_DFG figures/ApparatusCoils.pdf>]
-
-LaTeX Warning: Reference `fig:BirdsEyeApparatus' on page 65 undefined on input 
-line 251.
-
-
-LaTeX Warning: Reference `fig:BirdsEyeApparatus' on page 65 undefined on input 
-line 251.
-
-[65]
-
-LaTeX Warning: Reference `fig:BirdsEyeApparatus' on page 66 undefined on input 
-line 253.
-
-
-LaTeX Warning: Reference `fig:BirdsEyeApparatus' on page 66 undefined on input 
-line 253.
-
-
-LaTeX Warning: Reference `fig:BirdsEyeApparatus' on page 66 undefined on input 
-line 255.
-
-[66]
-
-LaTeX Warning: Reference `fig:BirdsEyeApparatus' on page 67 undefined on input 
-line 259.
-
-
-LaTeX Warning: Citation `AycockThesis' on page 67 undefined on input line 263.
-
-
-LaTeX Warning: Citation `Aycock2017' on page 67 undefined on input line 266.
-
-<"BEC_DFG figures/NewMasterBoard".png, id=1004, 433.62pt x 243.7908pt>
-File: "BEC_DFG figures/NewMasterBoard".png Graphic file (type png)
-
-<use "BEC_DFG figures/NewMasterBoard".png>
-Package pdftex.def Info: "BEC_DFG figures/NewMasterBoard".png used on input lin
-e 268.
-(pdftex.def)             Requested size: 433.61894pt x 243.7902pt.
-
-Overfull \hbox (7.2264pt too wide) in paragraph at lines 268--269
-[][] 
- []
-
-[67]
-
-LaTeX Warning: Reference `fig:NewMasterBoard' on page 68 undefined on input lin
-e 273.
-
-
-LaTeX Warning: Citation `Foot' on page 68 undefined on input line 275.
-
-
-LaTeX Warning: Citation `Donley2005' on page 68 undefined on input line 275.
-
-[68 <./BEC_DFG figures/NewMasterBoard.png>] [69]
-
-LaTeX Warning: Reference `fig:HsinIsImagingBottomSchematic' on page 70 undefine
-d on input line 282.
-
-
-LaTeX Warning: Reference `fig:BirdsEyeApparatus' on page 70 undefined on input 
-line 282.
-
-
-<"BEC_DFG figures/HsinIsImagingBottomSchematic".png, id=1021, 397.485pt x 298.7
-16pt>
-File: "BEC_DFG figures/HsinIsImagingBottomSchematic".png Graphic file (type png
-)
- <use "BEC_DFG figures/HsinIsImagingBottomSchematic".png>
-Package pdftex.def Info: "BEC_DFG figures/HsinIsImagingBottomSchematic".png use
-d on input line 284.
-(pdftex.def)             Requested size: 397.48402pt x 298.71526pt.
-
-
-LaTeX Warning: Reference `fig:HsinIsImagingLens' on page 70 undefined on input 
-line 289.
-
-<"BEC_DFG figures/HsinIsImagingLens".png, id=1022, 332.9238pt x 179.2296pt>
-File: "BEC_DFG figures/HsinIsImagingLens".png Graphic file (type png)
-
-<use "BEC_DFG figures/HsinIsImagingLens".png>
-Package pdftex.def Info: "BEC_DFG figures/HsinIsImagingLens".png used on input 
-line 291.
-(pdftex.def)             Requested size: 332.92297pt x 179.22914pt.
- [70] [71 <./BEC_DFG figures/HsinIsImagingBottomSchematic.png>]
-
-LaTeX Warning: Reference `fig:HsinIsImaging' on page 72 undefined on input line
- 296.
-
-<"BEC_DFG figures/HsinI's imaging path".png, id=1034, 408.91231pt x 281.05pt>
-File: "BEC_DFG figures/HsinI's imaging path".png Graphic file (type png)
-
-<use "BEC_DFG figures/HsinI's imaging path".png>
-Package pdftex.def Info: "BEC_DFG figures/HsinI's imaging path".png used on inp
-ut line 298.
-(pdftex.def)             Requested size: 408.9113pt x 281.0493pt.
- [72 <./BEC_DFG figures/HsinIsImagingLens.png>] [73 <./BEC_DFG figures/HsinI's 
-imaging path.png>]
-
-LaTeX Warning: Citation `PriceThesis' on page 74 undefined on input line 305.
-
-[74]
-Missing character: There is no Œ in font cmr12!
-Missing character: There is no º in font cmr12!
-Missing character: There is no Œ in font cmr12!
-Missing character: There is no º in font cmr12!
-Missing character: There is no Œ in font cmr12!
-Missing character: There is no º in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
-
-
-LaTeX Warning: Reference `fig:FPGAservoTurnOn' on page 75 undefined on input li
-ne 315.
-
-
-LaTeX Warning: Reference `fig:FPGAservoTurnOn' on page 75 undefined on input li
-ne 317.
-
-<"BEC_DFG figures/FPGAservoTurnOn".png, id=1053, 441.8106pt x 580.0872pt>
-File: "BEC_DFG figures/FPGAservoTurnOn".png Graphic file (type png)
-
-<use "BEC_DFG figures/FPGAservoTurnOn".png>
-Package pdftex.def Info: "BEC_DFG figures/FPGAservoTurnOn".png used on input li
-ne 320.
-(pdftex.def)             Requested size: 441.80951pt x 580.08578pt.
-
-Overfull \hbox (15.41696pt too wide) in paragraph at lines 320--321
-[][] 
- []
-
-[75]
-
-LaTeX Warning: Reference `fig:FPGAservoCalib' on page 76 undefined on input lin
-e 325.
-
-<"BEC_DFG figures/FPGAservoCalib".png, id=1058, 433.62pt x 299.6713pt>
-File: "BEC_DFG figures/FPGAservoCalib".png Graphic file (type png)
-
-<use "BEC_DFG figures/FPGAservoCalib".png>
-Package pdftex.def Info: "BEC_DFG figures/FPGAservoCalib".png used on input lin
-e 327.
-(pdftex.def)             Requested size: 433.61894pt x 299.67055pt.
-
-Overfull \hbox (7.2264pt too wide) in paragraph at lines 327--328
-[][] 
- []
-
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ú in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ù in font cmr12!
-
-Overfull \hbox (12.03918pt too wide) in paragraph at lines 332--333
-\OT1/cmr/m/n/12 the FPGA are in the shared google drive un-der 'RbK/Lab Note-bo
-ok/Electonics/FPGA
- []
-
-
-LaTeX Warning: Citation `Aycock2017' on page 76 undefined on input line 335.
-
-
-LaTeX Warning: Reference `chap:BochOsc' on page 76 undefined on input line 335.
-
-
-<"BEC_DFG figures/ODTlensSchematic".png, id=1059, 446.6286pt x 142.131pt>
-File: "BEC_DFG figures/ODTlensSchematic".png Graphic file (type png)
-
-<use "BEC_DFG figures/ODTlensSchematic".png>
-Package pdftex.def Info: "BEC_DFG figures/ODTlensSchematic".png used on input l
-ine 350.
-(pdftex.def)             Requested size: 446.6275pt x 142.13063pt.
-
-Overfull \hbox (20.23495pt too wide) in paragraph at lines 350--351
-[][] 
- []
-
-
-LaTeX Warning: Reference `fig:ODTlensSchematic' on page 76 undefined on input l
-ine 355.
-
-
-LaTeX Warning: Reference `fig:ODTlensGraphs' on page 76 undefined on input line
- 355.
-
-[76] [77 <./BEC_DFG figures/FPGAservoTurnOn.png>] [78 <./BEC_DFG figures/FPGAse
-rvoCalib.png> <./BEC_DFG figures/ODTlensSchematic.png>]
-
-LaTeX Warning: Reference `fig:ODTlensGraphs' on page 79 undefined on input line
- 357.
-
-
-LaTeX Warning: Reference `chap:BlochOsc' on page 79 undefined on input line 357
-.
-
-<"BEC_DFG figures/ODTlensGraphs".png, id=1080, 433.62pt x 495.7722pt>
-File: "BEC_DFG figures/ODTlensGraphs".png Graphic file (type png)
-
-<use "BEC_DFG figures/ODTlensGraphs".png>
-Package pdftex.def Info: "BEC_DFG figures/ODTlensGraphs".png used on input line
- 360.
-(pdftex.def)             Requested size: 433.61894pt x 495.77098pt.
-
-Overfull \hbox (7.2264pt too wide) in paragraph at lines 360--361
-[][] 
- []
-
-
-LaTeX Warning: Reference `sec:Feshbach' on page 79 undefined on input line 367.
-
-
-
-LaTeX Warning: Reference `fig:BirdsEyeApparatus' on page 79 undefined on input 
-line 367.
-
-
-LaTeX Warning: Citation `Majorana1932' on page 79 undefined on input line 367.
-
-
-LaTeX Warning: Citation `Sukumar1997' on page 79 undefined on input line 367.
-
-
-LaTeX Warning: Citation `Brink2006' on page 79 undefined on input line 367.
-
-
-LaTeX Warning: Reference `fig:BirdsEyeApparatus' on page 79 undefined on input 
-line 367.
-
-[79] [80 <./BEC_DFG figures/ODTlensGraphs.png>] [81]
-
-LaTeX Warning: Reference `sec:ARP' on page 82 undefined on input line 376.
-
-
-LaTeX Warning: Citation `Catani2006' on page 82 undefined on input line 380.
-
-
-LaTeX Warning: Citation `UehlingerThesis' on page 82 undefined on input line 38
-0.
-
-
-LaTeX Warning: Citation `Pedrozo2016' on page 82 undefined on input line 380.
-
-
-LaTeX Warning: Citation `UehlingerThesis' on page 82 undefined on input line 38
-2.
-
-
-LaTeX Warning: Reference `fig:2DMOTschematic' on page 82 undefined on input lin
-e 382.
-
-
-Overfull \hbox (0.33328pt too wide) in paragraph at lines 382--383
-[]\OT1/cmr/m/n/12 The de-sign of our 2D MOT is closely based on the de-sign in 
-Thomas Uehlinger's
- []
-
-[82]
-
-LaTeX Warning: Reference `fig:2DMOTcellPhoto' on page 83 undefined on input lin
-e 384.
-
-
-LaTeX Warning: Reference `fig:2DMOTschematic' on page 83 undefined on input lin
-e 384.
-
-<"BEC_DFG figures/2DMOTschematic".png, id=1101, 462.0462pt x 361.35pt>
-File: "BEC_DFG figures/2DMOTschematic".png Graphic file (type png)
-
-<use "BEC_DFG figures/2DMOTschematic".png>
-Package pdftex.def Info: "BEC_DFG figures/2DMOTschematic".png used on input lin
-e 388.
-(pdftex.def)             Requested size: 462.04506pt x 361.34912pt.
-
-Overfull \hbox (35.65251pt too wide) in paragraph at lines 388--389
-[][] 
- []
-
-
-LaTeX Warning: Reference `fig:2DMOTcellPhoto' on page 83 undefined on input lin
-e 393.
-
-
-LaTeX Warning: Citation `Weatherill2009' on page 83 undefined on input line 393
-.
-
-<"BEC_DFG figures/2DMOTcellPhoto".png, id=1102, 433.62pt x 243.7908pt>
-File: "BEC_DFG figures/2DMOTcellPhoto".png Graphic file (type png)
-
-<use "BEC_DFG figures/2DMOTcellPhoto".png>
-Package pdftex.def Info: "BEC_DFG figures/2DMOTcellPhoto".png used on input lin
-e 395.
-(pdftex.def)             Requested size: 433.61894pt x 243.7902pt.
-
-Overfull \hbox (7.2264pt too wide) in paragraph at lines 395--396
-[][] 
- []
-
-[83] [84 <./BEC_DFG figures/2DMOTschematic.png>]
-
-LaTeX Warning: Reference `fig:2DMOToptics' on page 85 undefined on input line 4
-00.
-
-[85 <./BEC_DFG figures/2DMOTcellPhoto.png>]
-
-LaTeX Warning: Reference `fig:2DMOToptics' on page 86 undefined on input line 4
-04.
-
-
-LaTeX Warning: Reference `fig:2DMOToptics' on page 86 undefined on input line 4
-04.
-
-<"BEC_DFG figures/2DMOToptics".pdf, id=1120, 433.62pt x 233.09586pt>
-File: "BEC_DFG figures/2DMOToptics".pdf Graphic file (type pdf)
-
-<use "BEC_DFG figures/2DMOToptics".pdf>
-Package pdftex.def Info: "BEC_DFG figures/2DMOToptics".pdf used on input line 4
-07.
-(pdftex.def)             Requested size: 433.61894pt x 233.09528pt.
-
-Overfull \hbox (7.2264pt too wide) in paragraph at lines 407--408
-[][] 
- []
-
-
-LaTeX Warning: Reference `fig:Current2DMOTphoto' on page 86 undefined on input 
-line 412.
-
-<"BEC_DFG figures/Current2DMOTphoto".png, id=1121, 433.62pt x 243.7908pt>
-File: "BEC_DFG figures/Current2DMOTphoto".png Graphic file (type png)
-
-<use "BEC_DFG figures/Current2DMOTphoto".png>
-Package pdftex.def Info: "BEC_DFG figures/Current2DMOTphoto".png used on input 
-line 414.
-(pdftex.def)             Requested size: 433.61894pt x 243.7902pt.
-
-Overfull \hbox (7.2264pt too wide) in paragraph at lines 414--415
-[][] 
- []
-
-[86]
-
-LaTeX Warning: Citation `Fernandes2012' on page 87 undefined on input line 419.
-
-
-) [87 <./BEC_DFG figures/2DMOToptics.pdf>] [88 <./BEC_DFG figures/Current2DMOTp
-hoto.png>]
-\openout2 = `AbsorptionImagingChapter.aux'.
-
- (AbsorptionImagingChapter.tex
-Chapter 3.
-
-LaTeX Warning: Reference `SwaveScatteringChapter' on page 89 undefined on input
- line 5.
-
-
-LaTeX Warning: Citation `Genkina2015' on page 89 undefined on input line 5.
-
-
-LaTeX Warning: Reference `eq:dIdz' on page 89 undefined on input line 10.
-
-[89
-
-
-]
-
-LaTeX Warning: Reference `fig:expos' on page 90 undefined on input line 21.
-
-
-LaTeX Warning: Reference `eq3' on page 90 undefined on input line 24.
-
-
-LaTeX Warning: Reference `eq4' on page 90 undefined on input line 24.
-
-
-LaTeX Warning: Reference `eq3' on page 90 undefined on input line 30.
-
-[90]
-
-LaTeX Warning: Citation `LJLthesis' on page 91 undefined on input line 34.
-
-
-LaTeX Warning: Reference `fig:expos' on page 91 undefined on input line 39.
-
-
-LaTeX Warning: Reference `eq2' on page 91 undefined on input line 39.
-
-
-LaTeX Warning: Reference `eq:perturb' on page 91 undefined on input line 39.
-
-
-LaTeX Warning: Reference `eq:perturb' on page 91 undefined on input line 39.
-
-<"Chapter2 Figures/figure1".pdf, id=1162, 231.26399pt x 216.81pt>
-File: "Chapter2 Figures/figure1".pdf Graphic file (type pdf)
-
-<use "Chapter2 Figures/figure1".pdf>
-Package pdftex.def Info: "Chapter2 Figures/figure1".pdf used on input line 53.
-(pdftex.def)             Requested size: 231.26341pt x 216.80946pt.
-
-<"Chapter2 Figures/figure2".pdf, id=1163, 231.26399pt x 216.81pt>
-File: "Chapter2 Figures/figure2".pdf Graphic file (type pdf)
-
-<use "Chapter2 Figures/figure2".pdf>
-Package pdftex.def Info: "Chapter2 Figures/figure2".pdf used on input line 54.
-(pdftex.def)             Requested size: 231.26341pt x 216.80946pt.
-
-Overfull \hbox (38.74536pt too wide) in paragraph at lines 53--55
-[][] [][] 
- []
-
-
-LaTeX Warning: Reference `eq2' on page 91 undefined on input line 55.
-
-
-LaTeX Warning: Reference `eq:perturb' on page 91 undefined on input line 55.
-
-
-LaTeX Warning: Reference `eq2' on page 91 undefined on input line 55.
-
-
-LaTeX Warning: Reference `eq:perturb' on page 91 undefined on input line 55.
-
-
-LaTeX Warning: Reference `eq3' on page 91 undefined on input line 76.
-
-
-LaTeX Warning: Reference `eq4' on page 91 undefined on input line 76.
-
-
-LaTeX Warning: Reference `algorithm1' on page 91 undefined on input line 76.
-
-[91] [92 <./Chapter2 Figures/figure1.pdf> <./Chapter2 Figures/figure2.pdf
-
-pdfTeX warning: miktex-pdftex.exe (file ./Chapter2 Figures/figure2.pdf): PDF in
-clusion: multiple pdfs with page group included in a single page
->]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 81.
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 84.
-
-
-LaTeX Warning: Reference `eq3' on page 93 undefined on input line 91.
-
-
-LaTeX Warning: Reference `eq4' on page 93 undefined on input line 92.
-
-
-LaTeX Warning: Reference `eq2' on page 93 undefined on input line 102.
-
-
-LaTeX Warning: Reference `fig:IsatLimits' on page 93 undefined on input line 10
-2.
-
-
-LaTeX Warning: Reference `eq2' on page 93 undefined on input line 102.
-
-
-LaTeX Warning: Reference `eq2' on page 93 undefined on input line 104.
-
-
-LaTeX Warning: Reference `eq2' on page 93 undefined on input line 104.
-
-
-LaTeX Warning: Reference `fig:IsatLimits' on page 93 undefined on input line 10
-4.
-
-
-LaTeX Warning: Reference `eq2' on page 93 undefined on input line 104.
-
-<"Chapter2 Figures/figure3".pdf, id=1208, 433.62pt x 216.81pt>
-File: "Chapter2 Figures/figure3".pdf Graphic file (type pdf)
-
-<use "Chapter2 Figures/figure3".pdf>
-Package pdftex.def Info: "Chapter2 Figures/figure3".pdf used on input line 118.
-
-(pdftex.def)             Requested size: 433.61894pt x 216.80946pt.
-
-Overfull \hbox (7.2264pt too wide) in paragraph at lines 118--119
-[][] 
- []
-
-
-LaTeX Warning: Reference `eq2' on page 93 undefined on input line 119.
-
-
-LaTeX Warning: Reference `eq2' on page 93 undefined on input line 119.
-
-
-LaTeX Warning: Reference `fig:simTests' on page 93 undefined on input line 123.
-
-
-[93] <"Chapter2 Figures/figure4".pdf, id=1240, 231.26399pt x 216.81pt>
-File: "Chapter2 Figures/figure4".pdf Graphic file (type pdf)
-
-<use "Chapter2 Figures/figure4".pdf>
-Package pdftex.def Info: "Chapter2 Figures/figure4".pdf used on input line 126.
-
-(pdftex.def)             Requested size: 231.26341pt x 216.80946pt.
-
-<"Chapter2 Figures/figure5".pdf, id=1241, 231.26399pt x 216.81pt>
-File: "Chapter2 Figures/figure5".pdf Graphic file (type pdf)
-
-<use "Chapter2 Figures/figure5".pdf>
-Package pdftex.def Info: "Chapter2 Figures/figure5".pdf used on input line 127.
-
-(pdftex.def)             Requested size: 231.26341pt x 216.80946pt.
-
-Overfull \hbox (38.74536pt too wide) in paragraph at lines 126--128
-[][] [][] 
- []
-
-
-LaTeX Warning: Reference `eq10' on page 94 undefined on input line 128.
-
-
-LaTeX Warning: Reference `eq10' on page 94 undefined on input line 128.
-
-
-LaTeX Warning: Reference `algorithm2' on page 94 undefined on input line 138.
-
-[94 <./Chapter2 Figures/figure3.pdf>] [95 <./Chapter2 Figures/figure4.pdf> <./C
-hapter2 Figures/figure5.pdf
-
-pdfTeX warning: miktex-pdftex.exe (file ./Chapter2 Figures/figure5.pdf): PDF in
-clusion: multiple pdfs with page group included in a single page
->]pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.146 \STATE
-             $z[n]=z_0$, $\delta[n]=0$ \COMMENT{initialize position and detu...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@rem.1}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.146 \STATE
-             $z[n]=z_0$, $\delta[n]=0$ \COMMENT{initialize position and detu...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.2}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.147 \STATE
-             $O[i]=n$ \COMMENT{make a list of composite atom indexes, ordere...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@rem.2}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.147 \STATE
-             $O[i]=n$ \COMMENT{make a list of composite atom indexes, ordere...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.3}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.148 \STATE
-             $I[n=0,t]=I_0$ \COMMENT{ $t$ is the time index, $I$ is in units...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@rem.3}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.148 \STATE
-             $I[n=0,t]=I_0$ \COMMENT{ $t$ is the time index, $I$ is in units...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.4}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.149 \STATE
-             $H_f=0$ \COMMENT{Radiant fluence seen by camera after passing t...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@rem.4}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.149 \STATE
-             $H_f=0$ \COMMENT{Radiant fluence seen by camera after passing t...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.5}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.150 \FOR[loop over time steps]{$t=0$ to $t_f$}
-                                                pdfTeX warning (ext4): destinat
-ion with the same identifier (name{ALC@rem.5}) has been already used, duplicate
- ignored
-<to be read again> 
-                   \relax 
-l.150 \FOR[loop over time steps]{$t=0$ to $t_f$}
-                                                pdfTeX warning (ext4): destinat
-ion with the same identifier (name{ALC@line.6}) has been already used, duplicat
-e ignored
-<to be read again> 
-                   \relax 
-l.151  \FOR[loop over superatoms]{$i=1$ to $N$}
-                                               pdfTeX warning (ext4): destinati
-on with the same identifier (name{ALC@rem.6}) has been already used, duplicate 
-ignored
-<to be read again> 
-                   \relax 
-l.151  \FOR[loop over superatoms]{$i=1$ to $N$}
-                                               pdfTeX warning (ext4): destinati
-on with the same identifier (name{ALC@line.7}) has been already used, duplicate
- ignored
-<to be read again> 
-                   \relax 
-l.152 \STATE
-             $n=O[i]$ \COMMENT{apply probe intensity to composite atoms in o...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@rem.7}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.152 \STATE
-             $n=O[i]$ \COMMENT{apply probe intensity to composite atoms in o...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.8}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.153  \STATE
-              $A=\sigma_0 N_{sa} dz$ \COMMENT{dz is length over which atoms ...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@rem.8}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.153  \STATE
-              $A=\sigma_0 N_{sa} dz$ \COMMENT{dz is length over which atoms ...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.9}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.154  \STATE
-              $B=v_{\rm{r}} dt/(\hbar c  N_{sa})$  \COMMENT{dt is the time s...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@rem.9}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.154  \STATE
-              $B=v_{\rm{r}} dt/(\hbar c  N_{sa})$  \COMMENT{dt is the time s...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.10})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.155 \STATE
-             $I[n,t]=I[n-1,t] - A I[n-1,t]/(1+\delta[n]^2+I[n-1,t])$  \COMME...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@rem.10}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.155 \STATE
-             $I[n,t]=I[n-1,t] - A I[n-1,t]/(1+\delta[n]^2+I[n-1,t])$  \COMME...
-
-LaTeX Warning: Reference `eq3' on page 96 undefined on input line 155.
-
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.11})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.156 \STATE
-             $\delta[n]\mathrel{+}=B\left(I[n-1,t]-I[n,t]\right)$  \COMMENT{...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@rem.11}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.156 \STATE
-             $\delta[n]\mathrel{+}=B\left(I[n-1,t]-I[n,t]\right)$  \COMMENT{...
-
-LaTeX Warning: Reference `eq4' on page 96 undefined on input line 156.
-
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.12})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.157 \STATE
-             $z[n]\mathrel{+}=dt\Gamma\delta/2k$ \COMMENT{$k$ is the wavenum...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@rem.12}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.157 \STATE
-             $z[n]\mathrel{+}=dt\Gamma\delta/2k$ \COMMENT{$k$ is the wavenum...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.13})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.158 \ENDFOR
-             pdfTeX warning (ext4): destination with the same identifier (name{
-ALC@rem.13}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.158 \ENDFOR
-             
-
-LaTeX Warning: Reference `eq3' on page 96 undefined on input line 166.
-
-
-LaTeX Warning: Reference `eq4' on page 96 undefined on input line 166.
-
-
-LaTeX Warning: Reference `eq3' on page 96 undefined on input line 166.
-
-
-LaTeX Warning: Reference `eq4' on page 96 undefined on input line 166.
-
-[96]
-
-LaTeX Warning: Reference `eq10' on page 97 undefined on input line 173.
-
-
-LaTeX Warning: Reference `fig:simTests' on page 97 undefined on input line 173.
-
-
-
-LaTeX Warning: Reference `fig:phaseSpace' on page 97 undefined on input line 17
-6.
-
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.4.1
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.179 	\subfigure
-                 []{\includegraphics[scale=0.9]{"Chapter2 Figures/figure6a"....
-<"Chapter2 Figures/figure6a".pdf, id=1324, 397.485pt x 252.945pt>
-File: "Chapter2 Figures/figure6a".pdf Graphic file (type pdf)
-
-<use "Chapter2 Figures/figure6a".pdf>
-Package pdftex.def Info: "Chapter2 Figures/figure6a".pdf used on input line 179
-.
-(pdftex.def)             Requested size: 357.73318pt x 227.64839pt.
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.4.2
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.180 	\subfigure
-                 []{\includegraphics[scale=0.9]{"Chapter2 Figures/figure6b"....
-<"Chapter2 Figures/figure6b".pdf, id=1325, 397.485pt x 252.945pt>
-File: "Chapter2 Figures/figure6b".pdf Graphic file (type pdf)
-
-<use "Chapter2 Figures/figure6b".pdf>
-Package pdftex.def Info: "Chapter2 Figures/figure6b".pdf used on input line 180
-.
-(pdftex.def)             Requested size: 357.73318pt x 227.64839pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 179--181
-[][]
- []
-
-
-LaTeX Warning: Reference `fig:compareModelsAndIsat' on page 97 undefined on inp
-ut line 186.
-
-<"Chapter2 Figures/figure7".pdf, id=1326, 231.26399pt x 216.81pt>
-File: "Chapter2 Figures/figure7".pdf Graphic file (type pdf)
-
-<use "Chapter2 Figures/figure7".pdf>
-Package pdftex.def Info: "Chapter2 Figures/figure7".pdf used on input line 191.
-
-(pdftex.def)             Requested size: 231.26341pt x 216.80946pt.
-
-<"Chapter2 Figures/figure8".pdf, id=1327, 231.26399pt x 216.81pt>
-File: "Chapter2 Figures/figure8".pdf Graphic file (type pdf)
-
-<use "Chapter2 Figures/figure8".pdf>
-Package pdftex.def Info: "Chapter2 Figures/figure8".pdf used on input line 192.
-
-(pdftex.def)             Requested size: 231.26341pt x 216.80946pt.
-
-Overfull \hbox (38.74536pt too wide) in paragraph at lines 191--193
-[][] [][] 
- []
-
-
-LaTeX Warning: Reference `eq2' on page 97 undefined on input line 193.
-
-
-LaTeX Warning: Reference `eq:perturb' on page 97 undefined on input line 193.
-
-
-LaTeX Warning: Reference `eq2' on page 97 undefined on input line 193.
-
-
-LaTeX Warning: Reference `eq:perturb' on page 97 undefined on input line 193.
-
-
-LaTeX Warning: Reference `eq3' on page 97 undefined on input line 200.
-
-
-LaTeX Warning: Reference `eq4' on page 97 undefined on input line 200.
-
-[97] [98 <./Chapter2 Figures/figure6a.pdf> <./Chapter2 Figures/figure6b.pdf
-
-pdfTeX warning: miktex-pdftex.exe (file ./Chapter2 Figures/figure6b.pdf): PDF i
-nclusion: multiple pdfs with page group included in a single page
->] [99 <./Chapter2 Figures/figure7.pdf> <./Chapter2 Figures/figure8.pdf
-
-pdfTeX warning: miktex-pdftex.exe (file ./Chapter2 Figures/figure8.pdf): PDF in
-clusion: multiple pdfs with page group included in a single page
->]
-
-LaTeX Warning: Reference `fig:compareModelsAndIsat' on page 100 undefined on in
-put line 202.
-
-[100]
-
-LaTeX Warning: Reference `fig:SNR' on page 101 undefined on input line 218.
-
-
-LaTeX Warning: Reference `fig:SNR' on page 101 undefined on input line 218.
-
-
-LaTeX Warning: Reference `eq2' on page 101 undefined on input line 218.
-
-
-LaTeX Warning: Reference `fig:SNR' on page 101 undefined on input line 221.
-
-<"Chapter2 Figures/figure9a".pdf, id=1448, 231.26399pt x 216.81pt>
-File: "Chapter2 Figures/figure9a".pdf Graphic file (type pdf)
-
-<use "Chapter2 Figures/figure9a".pdf>
-Package pdftex.def Info: "Chapter2 Figures/figure9a".pdf used on input line 231
-.
-(pdftex.def)             Requested size: 231.26341pt x 216.80946pt.
-
-<"Chapter2 Figures/figure9b".pdf, id=1449, 231.26399pt x 216.81pt>
-File: "Chapter2 Figures/figure9b".pdf Graphic file (type pdf)
-
-<use "Chapter2 Figures/figure9b".pdf>
-Package pdftex.def Info: "Chapter2 Figures/figure9b".pdf used on input line 232
-.
-(pdftex.def)             Requested size: 231.26341pt x 216.80946pt.
-
-Overfull \hbox (38.74536pt too wide) in paragraph at lines 231--233
-[][] [][] 
- []
-
-) [101] [102 <./Chapter2 Figures/figure9a.pdf> <./Chapter2 Figures/figure9b.pdf
-
-
-pdfTeX warning: miktex-pdftex.exe (file ./Chapter2 Figures/figure9b.pdf): PDF i
-nclusion: multiple pdfs with page group included in a single page
->]
-\openout2 = `SwaveScatteringChapter.aux'.
-
- (SwaveScatteringChapter.tex
-Chapter 4.
-
-LaTeX Warning: Citation `Regal04' on page 103 undefined on input line 5.
-
-
-LaTeX Warning: Citation `Genkina2015' on page 103 undefined on input line 5.
-
-
-Overfull \hbox (35.56223pt too wide) in paragraph at lines 5--6
-\OT1/cmr/m/n/12 ha-los of $[]K$ atoms in the vicin-ity of a Fes-bach res-o-nanc
-e be-tween the $[]$
- []
-
-
-LaTeX Warning: Reference `sec:Feshbach' on page 103 undefined on input line 7.
-
-
-LaTeX Warning: Citation `Tiesinga93' on page 103 undefined on input line 7.
-
-
-LaTeX Warning: Citation `Lysebo09' on page 103 undefined on input line 7.
-
-
-LaTeX Warning: Citation `Gao11' on page 103 undefined on input line 7.
-
-
-LaTeX Warning: Citation `Inouye98' on page 103 undefined on input line 7.
-
-
-LaTeX Warning: Citation `Cornish00' on page 103 undefined on input line 7.
-
-
-LaTeX Warning: Citation `Regal03' on page 103 undefined on input line 7.
-
-
-LaTeX Warning: Citation `OHara02' on page 103 undefined on input line 7.
-
-
-LaTeX Warning: Citation `Monroe93' on page 103 undefined on input line 7.
-
-[103
-
-
-]
-
-LaTeX Warning: Reference `AbsorptionImagingChapter' on page 104 undefined on in
-put line 11.
-
-
-LaTeX Warning: Reference `sec:DFGsequence' on page 104 undefined on input line 
-14.
-
-
-LaTeX Warning: Citation `DeMarco99' on page 104 undefined on input line 20.
-
-[104]
-
-LaTeX Warning: Reference `sec:magneticCoils' on page 105 undefined on input lin
-e 23.
-
-
-LaTeX Warning: Reference `sec:magneticCoils' on page 105 undefined on input lin
-e 23.
-
-
-LaTeX Warning: Citation `Chin10' on page 105 undefined on input line 23.
-
-
-LaTeX Warning: Reference `sec:laserBeams' on page 105 undefined on input line 2
-5.
-
-
-LaTeX Warning: Citation `Wu05' on page 105 undefined on input line 25.
-
-
-LaTeX Warning: Citation `Edwards10' on page 105 undefined on input line 25.
-
-
-LaTeX Warning: Citation `Wu05' on page 105 undefined on input line 25.
-
-
-LaTeX Warning: Citation `Edwards10' on page 105 undefined on input line 25.
-
-[105]
-
-LaTeX Warning: Reference `AbsorptionImagingChapter' on page 106 undefined on in
-put line 34.
-
-
-LaTeX Warning: Reference `fig:SampleCorrection' on page 106 undefined on input 
-line 34.
-
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.1
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.36 	\subfigure
-                []{\includegraphics{"Chapter3 Figures/figure10a".pdf}}
-<"Chapter3 Figures/figure10a".pdf, id=1512, 216.81pt x 216.81pt>
-File: "Chapter3 Figures/figure10a".pdf Graphic file (type pdf)
-
-<use "Chapter3 Figures/figure10a".pdf>
-Package pdftex.def Info: "Chapter3 Figures/figure10a".pdf used on input line 36
-.
-(pdftex.def)             Requested size: 216.80946pt x 216.80946pt.
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.37 	\subfigure
-                []{\includegraphics{"Chapter3 Figures/figure10b".pdf}}
-<"Chapter3 Figures/figure10b".pdf, id=1513, 216.81pt x 216.81pt>
-File: "Chapter3 Figures/figure10b".pdf Graphic file (type pdf)
-
-<use "Chapter3 Figures/figure10b".pdf>
-Package pdftex.def Info: "Chapter3 Figures/figure10b".pdf used on input line 37
-.
-(pdftex.def)             Requested size: 216.80946pt x 216.80946pt.
-
-Overfull \hbox (9.83746pt too wide) in paragraph at lines 36--38
-[][] [][] 
- []
-
-[106]
-
-LaTeX Warning: Reference `fig:halo' on page 107 undefined on input line 42.
-
-<"Chapter3 Figures/Picture12".pdf, id=1518, 794.97pt x 614.295pt>
-File: "Chapter3 Figures/Picture12".pdf Graphic file (type pdf)
-
-<use "Chapter3 Figures/Picture12".pdf>
-Package pdftex.def Info: "Chapter3 Figures/Picture12".pdf used on input line 44
-.
-(pdftex.def)             Requested size: 174.89394pt x 135.14531pt.
-
-<"Chapter3 Figures/figure12b".pdf, id=1519, 289.08pt x 180.675pt>
-File: "Chapter3 Figures/figure12b".pdf Graphic file (type pdf)
-
-<use "Chapter3 Figures/figure12b".pdf>
-Package pdftex.def Info: "Chapter3 Figures/figure12b".pdf used on input line 45
-.
-(pdftex.def)             Requested size: 260.16959pt x 162.60599pt.
-
-Overfull \hbox (11.28206pt too wide) in paragraph at lines 44--46
-[][] [][] 
- []
-
-[107 <./Chapter3 Figures/figure10a.pdf> <./Chapter3 Figures/figure10b.pdf
-
-pdfTeX warning: miktex-pdftex.exe (file ./Chapter3 Figures/figure10b.pdf): PDF 
-inclusion: multiple pdfs with page group included in a single page
->] [108 <./Chapter3 Figures/Picture12.pdf, page is rotated 90 degrees> <./Chapt
-er3 Figures/figure12b.pdf>]
-
-LaTeX Warning: Reference `fig:halo' on page 109 undefined on input line 52.
-
-
-LaTeX Warning: Reference `fig:halo' on page 109 undefined on input line 52.
-
-
-LaTeX Warning: Reference `eqn:feshbach' on page 109 undefined on input line 56.
-
-
-
-LaTeX Warning: Citation `DeMarco99' on page 109 undefined on input line 56.
-
-
-LaTeX Warning: Reference `eqn:feshbach' on page 109 undefined on input line 58.
-
-
-[109]
-
-LaTeX Warning: Reference `fig:fittedFractions' on page 110 undefined on input l
-ine 67.
-
-
-LaTeX Warning: Reference `eqn:fitFeshbach' on page 110 undefined on input line 
-67.
-
-
-LaTeX Warning: Citation `Regal04' on page 110 undefined on input line 69.
-
-<"Chapter3 Figures/figure11".pdf, id=2375, 325.215pt x 252.945pt>
-File: "Chapter3 Figures/figure11".pdf Graphic file (type pdf)
-
-<use "Chapter3 Figures/figure11".pdf>
-Package pdftex.def Info: "Chapter3 Figures/figure11".pdf used on input line 71.
-
-(pdftex.def)             Requested size: 325.2142pt x 252.94438pt.
- [110]) [111 <./Chapter3 Figures/figure11.pdf>]
-\openout2 = `SynDimChapter.aux'.
-
- (SynDimChapter.tex
-Chapter 5.
-
-LaTeX Warning: Citation `Klitzing1980' on page 112 undefined on input line 6.
-
-
-LaTeX Warning: Citation `Thouless1982' on page 112 undefined on input line 6.
-
-
-LaTeX Warning: Citation `Hofstadter1976' on page 112 undefined on input line 8.
-
-
-
-LaTeX Warning: Citation `Geisler2004' on page 112 undefined on input line 10.
-
-
-LaTeX Warning: Citation `Hunt2013' on page 112 undefined on input line 10.
-
-
-LaTeX Warning: Citation `Jaksch2003' on page 112 undefined on input line 10.
-
-
-LaTeX Warning: Citation `Aidelsburger2013' on page 112 undefined on input line 
-10.
-
-
-LaTeX Warning: Citation `Miyake2013' on page 112 undefined on input line 10.
-
-
-LaTeX Warning: Citation `Jotzu2014' on page 112 undefined on input line 10.
-
-
-LaTeX Warning: Citation `Aidelsburger2014' on page 112 undefined on input line 
-10.
-
-
-LaTeX Warning: Citation `Mancini2015' on page 112 undefined on input line 10.
-
-
-LaTeX Warning: Citation `Hafezi2013' on page 112 undefined on input line 10.
-
-
-LaTeX Warning: Citation `Celi2014' on page 112 undefined on input line 10.
-
-[112
-
-
-]
-
-LaTeX Warning: Citation `Stuhl2015' on page 113 undefined on input line 12.
-
-
-LaTeX Warning: Reference `fig:synDimSchematic' on page 113 undefined on input l
-ine 26.
-
-<"SynDim Figures/Fig1_Schematic".pdf, id=2464, 361.44937pt x 319.82887pt>
-File: "SynDim Figures/Fig1_Schematic".pdf Graphic file (type pdf)
-
-<use "SynDim Figures/Fig1_Schematic".pdf>
-Package pdftex.def Info: "SynDim Figures/Fig1_Schematic".pdf used on input line
- 30.
-(pdftex.def)             Requested size: 361.44847pt x 319.82808pt.
-
-
-LaTeX Warning: Reference `fig:synDimSchematic' on page 113 undefined on input l
-ine 36.
-
-[113] [114 <./SynDim Figures/Fig1_Schematic.pdf>]
-
-LaTeX Warning: Reference `fig:synDimSchematic' on page 115 undefined on input l
-ine 38.
-
-
-LaTeX Warning: Citation `Aharonov1959' on page 115 undefined on input line 40.
-
-
-LaTeX Warning: Citation `Aharonov1992' on page 115 undefined on input line 40.
-
-[115]
-
-LaTeX Warning: Reference `eqn:LatHam' on page 116 undefined on input line 45.
-
-
-LaTeX Warning: Reference `eqn:rfHam' on page 116 undefined on input line 45.
-
-
-LaTeX Warning: Reference `eqn:RamanHam' on page 116 undefined on input line 45.
-
-
-[116] [117]
-
-LaTeX Warning: Reference `eqn:RamanAllF' on page 118 undefined on input line 10
-1.
-
-
-Overfull \hbox (10.4841pt too wide) in paragraph at lines 103--104
-[]\OT1/cmr/m/n/12 For com-pu-ta-tional con-ve-nience, we con-vert to lat-tice r
-e-coil units, $\OML/cmm/m/it/12 E[] \OT1/cmr/m/n/12 = [][]\OML/cmm/m/it/12 k[]=
-\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 m$\OT1/cmr/m/n/12 ,
- []
-
-
-Overfull \hbox (0.38487pt too wide) detected at line 110
-[][]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 n\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 =E[] \
-OT1/cmr/m/n/12 = [] [] \OML/cmm/m/it/12 ;
- []
-
-[118]
-<"SynDim Figures/SynDimBandStructure".pdf, id=2645, 448.07399pt x 361.35pt>
-File: "SynDim Figures/SynDimBandStructure".pdf Graphic file (type pdf)
-
-<use "SynDim Figures/SynDimBandStructure".pdf>
-Package pdftex.def Info: "SynDim Figures/SynDimBandStructure".pdf used on input
- line 136.
-(pdftex.def)             Requested size: 448.07288pt x 361.34912pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 136--137
-[][] 
- []
-
-
-LaTeX Warning: Reference `eqn:SynDimHam' on page 119 undefined on input line 13
-7.
-
-
-LaTeX Warning: Reference `eqn:SynDimHam' on page 119 undefined on input line 13
-7.
-
-
-LaTeX Warning: Reference `fig:SynDimBandStruct' on page 119 undefined on input 
-line 141.
-
-
-LaTeX Warning: Reference `fig:latticeBandStructure' on page 119 undefined on in
-put line 141.
-
-[119] [120 <./SynDim Figures/SynDimBandStructure.pdf>]
-
-LaTeX Warning: Reference `sec:Raman' on page 121 undefined on input line 143.
-
-
-LaTeX Warning: Reference `fig:SynDimBandStruct' on page 121 undefined on input 
-line 143.
-
-
-LaTeX Warning: Reference `sec:Raman' on page 121 undefined on input line 143.
-
-
-LaTeX Warning: Reference `fig:SynDimBandStruct' on page 121 undefined on input 
-line 145.
-
-
-LaTeX Warning: Reference `fig:SynDimBandStruct' on page 121 undefined on input 
-line 145.
-
-
-LaTeX Warning: Reference `fig:SynDimBandStruct' on page 121 undefined on input 
-line 145.
-
-
-LaTeX Warning: Reference `fig:SynDimBandStruct' on page 121 undefined on input 
-line 145.
-
-
-LaTeX Warning: Reference `fig:SynDimBandStruct' on page 121 undefined on input 
-line 145.
-
-
-LaTeX Warning: Reference `fig:SynDimBandStruct' on page 121 undefined on input 
-line 145.
-
-
-LaTeX Warning: Reference `sec:LatticeCalib' on page 121 undefined on input line
- 150.
-
-
-LaTeX Warning: Reference `sec:RamanCalib' on page 121 undefined on input line 1
-50.
-
-[121] <"SynDim Figures/SynDimPulsing".pdf, id=2704, 448.07399pt x 433.62pt>
-File: "SynDim Figures/SynDimPulsing".pdf Graphic file (type pdf)
-
-<use "SynDim Figures/SynDimPulsing".pdf>
-Package pdftex.def Info: "SynDim Figures/SynDimPulsing".pdf used on input line 
-153.
-(pdftex.def)             Requested size: 448.07288pt x 433.61894pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 153--154
-[][] 
- []
-
-
-LaTeX Warning: Float too large for page by 13.02226pt on input line 156.
-
-
-LaTeX Warning: Reference `fig:SynDimPulsing' on page 122 undefined on input lin
-e 158.
-
-
-LaTeX Warning: Reference `fig:SynDimPulsing' on page 122 undefined on input lin
-e 160.
-
-[122] [123 <./SynDim Figures/SynDimPulsing.pdf>]
-
-LaTeX Warning: Reference `fig:SynDimPulsing' on page 124 undefined on input lin
-e 162.
-
-
-LaTeX Warning: Reference `fig:SynDimPulsing' on page 124 undefined on input lin
-e 162.
-
-
-LaTeX Warning: Reference `fig:SynDimPulsing' on page 124 undefined on input lin
-e 164.
-
-
-LaTeX Warning: Reference `fig:SynDimPulsing' on page 124 undefined on input lin
-e 164.
-
-[124]
-
-LaTeX Warning: Reference `fig:synDimSchematic' on page 125 undefined on input l
-ine 172.
-
-
-LaTeX Warning: Reference `sec:tightBinding' on page 125 undefined on input line
- 172.
-
-
-Overfull \hbox (18.82191pt too wide) detected at line 185
-[]\OML/cmm/m/it/12 H \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12  [] [] \OML/cmm/m/it/12
- t[]\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 k[]; m \OT1/cmr/m/n/12 + 1\OMS/cmsy/m/n/
-12 ih\OML/cmm/m/it/12 k[]; m\OMS/cmsy/m/n/12 j \OT1/cmr/m/n/12 + \OML/cmm/m/it/
-12 h:c: \OT1/cmr/m/n/12 + 2\OML/cmm/m/it/12 t[][]\OT1/cmr/m/n/12 (\OML/cmm/m/it
-/12 k[] \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 []\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/1
-2 j\OML/cmm/m/it/12 k[]; m\OMS/cmsy/m/n/12 ih\OML/cmm/m/it/12 k[]; m\OMS/cmsy/m
-/n/12 j \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 A[]\OMS/cmsy/m/n/12 j\OML/cmm/m/it/1
-2 k[]; m\OMS/cmsy/m/n/12 ih\OML/cmm/m/it/12 k[]; m\OMS/cmsy/m/n/12 j
- []
-
-
-LaTeX Warning: Reference `eqn:SynDimHam' on page 125 undefined on input line 18
-7.
-
-
-LaTeX Warning: Reference `eqn:TBhamKspace' on page 125 undefined on input line 
-187.
-
-[125] <"SynDim Figures/tbFit".pdf, id=2774, 448.07399pt x 216.81pt>
-File: "SynDim Figures/tbFit".pdf Graphic file (type pdf)
-
-<use "SynDim Figures/tbFit".pdf>
-Package pdftex.def Info: "SynDim Figures/tbFit".pdf used on input line 190.
-(pdftex.def)             Requested size: 448.07288pt x 216.80946pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 190--191
-[][] 
- []
-
-
-LaTeX Warning: Reference `fig:tbFit' on page 126 undefined on input line 218.
-
-
-LaTeX Warning: Reference `eqn:SynDimHam' on page 126 undefined on input line 21
-8.
-
-
-LaTeX Warning: Reference `eqn:TBhamKspace' on page 126 undefined on input line 
-218.
-
-[126 <./SynDim Figures/tbFit.pdf>]
-<"SynDim Figures/Fig2_EdgeStates".pdf, id=2804, 264.99pt x 404.02745pt>
-File: "SynDim Figures/Fig2_EdgeStates".pdf Graphic file (type pdf)
-
-<use "SynDim Figures/Fig2_EdgeStates".pdf>
-Package pdftex.def Info: "SynDim Figures/Fig2_EdgeStates".pdf used on input lin
-e 225.
-(pdftex.def)             Requested size: 264.98935pt x 404.02646pt.
-
-
-LaTeX Warning: Reference `fig:TOFeigenstates' on page 127 undefined on input li
-ne 230.
-
-
-LaTeX Warning: Reference `fig:TOFeigenstates' on page 127 undefined on input li
-ne 230.
-
-
-LaTeX Warning: Reference `fig:TOFeigenstates' on page 127 undefined on input li
-ne 232.
-
-
-LaTeX Warning: Reference `fig:TOFeigenstates' on page 127 undefined on input li
-ne 232.
-
-
-LaTeX Warning: Reference `fig:SynDimBandStruct' on page 127 undefined on input 
-line 232.
-
-
-LaTeX Warning: Reference `fig:TOFeigenstates' on page 127 undefined on input li
-ne 232.
-
-
-LaTeX Warning: Reference `sec:SynDimCalibration' on page 127 undefined on input
- line 232.
-
-
-LaTeX Warning: Reference `fig:TOFeigenstates' on page 127 undefined on input li
-ne 232.
-
-[127] [128 <./SynDim Figures/Fig2_EdgeStates.pdf>]
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
-
-
-LaTeX Warning: Reference `fig:TOFeigenstates' on page 129 undefined on input li
-ne 234.
-
-
-LaTeX Warning: Reference `fig:SynDimBandStruct' on page 129 undefined on input 
-line 236.
-
-
-LaTeX Warning: Reference `fig:TOFeigenstates' on page 129 undefined on input li
-ne 236.
-
-
-LaTeX Warning: Reference `fig:TOFeigenstates' on page 129 undefined on input li
-ne 236.
-
-
-LaTeX Warning: Citation `Hugel2014' on page 129 undefined on input line 236.
-
-
-LaTeX Warning: Reference `sec:SynDimCalibration' on page 129 undefined on input
- line 240.
-
-
-LaTeX Warning: Reference `fig:edgeCurrents' on page 129 undefined on input line
- 240.
-
-
-LaTeX Warning: Reference `fig:edgeCurrents' on page 129 undefined on input line
- 240.
-
-
-LaTeX Warning: Reference `fig:SynDimSetup' on page 129 undefined on input line 
-243.
-
-[129]
-
-LaTeX Warning: Reference `fig:edgeCurrents' on page 130 undefined on input line
- 245.
-
-
-LaTeX Warning: Reference `fig:edgeCurrents' on page 130 undefined on input line
- 245.
-
-
-LaTeX Warning: Reference `fig:edgeCurrents' on page 130 undefined on input line
- 245.
-
-
-LaTeX Warning: Reference `fig:edgeCurrents' on page 130 undefined on input line
- 245.
-
-
-LaTeX Warning: Reference `fig:edgeCurrents' on page 130 undefined on input line
- 245.
-
-<"SynDim Figures/Fig3_EdgeCurrent".pdf, id=2846, 365.365pt x 406.76968pt>
-File: "SynDim Figures/Fig3_EdgeCurrent".pdf Graphic file (type pdf)
-
-<use "SynDim Figures/Fig3_EdgeCurrent".pdf>
-Package pdftex.def Info: "SynDim Figures/Fig3_EdgeCurrent".pdf used on input li
-ne 248.
-(pdftex.def)             Requested size: 365.3641pt x 406.76868pt.
-
-
-LaTeX Warning: Reference `fig:edgeCurrents' on page 130 undefined on input line
- 253.
-
-
-LaTeX Warning: Reference `fig:edgeCurrents' on page 130 undefined on input line
- 253.
-
-
-LaTeX Warning: Reference `fig:edgeCurrents' on page 130 undefined on input line
- 253.
-
-[130] [131 <./SynDim Figures/Fig3_EdgeCurrent.pdf>]
-
-LaTeX Warning: Reference `fig:skippingOrbits' on page 132 undefined on input li
-ne 260.
-
-
-LaTeX Warning: Reference `fig:skippingOrbits' on page 132 undefined on input li
-ne 260.
-
-<"SynDim Figures/Fig4_SkippingOrbit".pdf, id=2896, 266.9975pt x 402.50375pt>
-File: "SynDim Figures/Fig4_SkippingOrbit".pdf Graphic file (type pdf)
-
-<use "SynDim Figures/Fig4_SkippingOrbit".pdf>
-Package pdftex.def Info: "SynDim Figures/Fig4_SkippingOrbit".pdf used on input 
-line 263.
-(pdftex.def)             Requested size: 266.99683pt x 402.50276pt.
-
-
-LaTeX Warning: Reference `fig:skippingOrbits' on page 132 undefined on input li
-ne 268.
-
-
-LaTeX Warning: Reference `fig:skippingOrbits' on page 132 undefined on input li
-ne 268.
-
-[132] [133 <./SynDim Figures/Fig4_SkippingOrbit.pdf>]
-
-LaTeX Warning: Reference `fig:skippingOrbits' on page 134 undefined on input li
-ne 270.
-
-) [134]
+[7]
 \openout2 = `BlochOscChapter.aux'.
 
  (BlochOscChapter.tex
 Chapter 6.
 
-LaTeX Warning: Reference `chap:Chern' on page 135 undefined on input line 4.
+LaTeX Warning: Reference `chap:Chern' on page 1 undefined on input line 4.
 
 
-LaTeX Warning: Reference `chap:SynDim' on page 135 undefined on input line 6.
+LaTeX Warning: Reference `chap:SynDim' on page 1 undefined on input line 6.
 
 
-LaTeX Warning: Reference `fig:laughlinPump' on page 135 undefined on input line
- 6.
+LaTeX Warning: Reference `fig:laughlinPump' on page 1 undefined on input line 6
+.
 
 
-LaTeX Warning: Reference `fig:laughlinPump' on page 135 undefined on input line
- 8.
+LaTeX Warning: Reference `fig:laughlinPump' on page 1 undefined on input line 8
+.
 
 
-LaTeX Warning: Reference `chap:SynDim' on page 135 undefined on input line 8.
+LaTeX Warning: Reference `chap:SynDim' on page 1 undefined on input line 8.
 
-[135
-
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.10 T
+      he histogram in Figure \ref{fig:laughlinPump}a shows the fractional po...
+[1
 
 ]
 
-LaTeX Warning: Reference `fig:laughlinPump' on page 136 undefined on input line
- 10.
+LaTeX Warning: Reference `fig:laughlinPump' on page 2 undefined on input line 1
+0.
 
 
-LaTeX Warning: Reference `sec:SynDimCalibration' on page 136 undefined on input
- line 10.
+LaTeX Warning: Reference `sec:SynDimCalibration' on page 2 undefined on input l
+ine 10.
 
 
-LaTeX Warning: Reference `fig:laughlinPump' on page 136 undefined on input line
- 10.
+LaTeX Warning: Reference `fig:laughlinPump' on page 2 undefined on input line 1
+0.
 
 
-LaTeX Warning: Reference `fig:laughlinPump' on page 136 undefined on input line
- 10.
+LaTeX Warning: Reference `fig:laughlinPump' on page 2 undefined on input line 1
+0.
 
 
-LaTeX Warning: Reference `fig:laughlinPump' on page 136 undefined on input line
- 10.
+LaTeX Warning: Reference `fig:laughlinPump' on page 2 undefined on input line 1
+0.
 
-<"BlochOsc Figures/figure1v15".pdf, id=2974, 440.84702pt x 371.88937pt>
+<"BlochOsc Figures/figure1v15".pdf, id=48, 440.84702pt x 371.88937pt>
 File: "BlochOsc Figures/figure1v15".pdf Graphic file (type pdf)
 
 <use "BlochOsc Figures/figure1v15".pdf>
@@ -2954,40 +601,50 @@ Overfull \hbox (14.45338pt too wide) in paragraph at lines 13--14
  []
 
 
-LaTeX Warning: Reference `sec:qh' on page 136 undefined on input line 18.
+LaTeX Warning: Reference `sec:qh' on page 2 undefined on input line 18.
 
 
-LaTeX Warning: Citation `Thouless1982' on page 136 undefined on input line 18.
+LaTeX Warning: Citation `Thouless1982' on page 2 undefined on input line 18.
 
 
-LaTeX Warning: Reference `sec:Diophantine' on page 136 undefined on input line 
-18.
+LaTeX Warning: Reference `sec:Diophantine' on page 2 undefined on input line 18
+.
 
 
-LaTeX Warning: Reference `sec:SynDimSetup' on page 136 undefined on input line 
-22.
+LaTeX Warning: Reference `sec:SynDimSetup' on page 2 undefined on input line 22
+.
 
 
-LaTeX Warning: Reference `chap:SynDim' on page 136 undefined on input line 22.
+LaTeX Warning: Reference `chap:SynDim' on page 2 undefined on input line 22.
 
 
-LaTeX Warning: Reference `sec:BECsequence' on page 136 undefined on input line 
-25.
+LaTeX Warning: Reference `sec:BECsequence' on page 2 undefined on input line 25
+.
 
-[136] [137 <./BlochOsc Figures/figure1v15.pdf>]
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.26 
+      [2]pdfTeX warning (ext4): destination with the same identifier (name{page
+.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.26 
+      [3 <./BlochOsc Figures/figure1v15.pdf>]
 
-LaTeX Warning: Reference `fig:LoadF2' on page 138 undefined on input line 27.
+LaTeX Warning: Reference `fig:LoadF2' on page 4 undefined on input line 27.
 
 
-LaTeX Warning: Reference `chap:SynDim' on page 138 undefined on input line 27.
+LaTeX Warning: Reference `chap:SynDim' on page 4 undefined on input line 27.
 
 
-LaTeX Warning: Reference `fig:LoadF2' on page 138 undefined on input line 27.
+LaTeX Warning: Reference `fig:LoadF2' on page 4 undefined on input line 27.
 
 
-LaTeX Warning: Reference `fig:LoadF2' on page 138 undefined on input line 27.
+LaTeX Warning: Reference `fig:LoadF2' on page 4 undefined on input line 27.
 
-<"BlochOsc Figures/LoadF2".pdf, id=3083, 448.07399pt x 216.81pt>
+<"BlochOsc Figures/LoadF2".pdf, id=156, 448.07399pt x 216.81pt>
 File: "BlochOsc Figures/LoadF2".pdf Graphic file (type pdf)
 
 <use "BlochOsc Figures/LoadF2".pdf>
@@ -2999,31 +656,41 @@ Overfull \hbox (21.68033pt too wide) in paragraph at lines 29--30
  []
 
 
-LaTeX Warning: Reference `sec:ARP' on page 138 undefined on input line 34.
+LaTeX Warning: Reference `sec:ARP' on page 4 undefined on input line 34.
 
-[138]
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.35 
+      [4]
 
-LaTeX Warning: Reference `fig:BirdsEyeApparatus' on page 139 undefined on input
- line 42.
-
-
-LaTeX Warning: Reference `fig:kickFigure' on page 139 undefined on input line 4
-2.
-
-
-LaTeX Warning: Reference `fig:kickFigure' on page 139 undefined on input line 4
-2.
+LaTeX Warning: Reference `fig:BirdsEyeApparatus' on page 5 undefined on input l
+ine 42.
 
 
-LaTeX Warning: Reference `fig:kickFigure' on page 139 undefined on input line 4
-2.
+LaTeX Warning: Reference `fig:kickFigure' on page 5 undefined on input line 42.
 
 
-LaTeX Warning: Reference `fig:kickFigure' on page 139 undefined on input line 4
-2.
 
-[139 <./BlochOsc Figures/LoadF2.pdf>]
-<"BlochOsc Figures/kickFigure".pdf, id=3132, 448.07399pt x 216.81pt>
+LaTeX Warning: Reference `fig:kickFigure' on page 5 undefined on input line 42.
+
+
+
+LaTeX Warning: Reference `fig:kickFigure' on page 5 undefined on input line 42.
+
+
+
+LaTeX Warning: Reference `fig:kickFigure' on page 5 undefined on input line 42.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.43 
+      [5 <./BlochOsc Figures/LoadF2.pdf>]
+<"BlochOsc Figures/kickFigure".pdf, id=216, 448.07399pt x 216.81pt>
 File: "BlochOsc Figures/kickFigure".pdf Graphic file (type pdf)
 
 <use "BlochOsc Figures/kickFigure".pdf>
@@ -3036,51 +703,57 @@ Overfull \hbox (21.68033pt too wide) in paragraph at lines 45--46
  []
 
 
-LaTeX Warning: Reference `fig:kickBsTOF' on page 140 undefined on input line 50
-.
+LaTeX Warning: Reference `fig:kickBsTOF' on page 6 undefined on input line 50.
 
 
-LaTeX Warning: Reference `fig:kickBsTOF' on page 140 undefined on input line 50
-.
+LaTeX Warning: Reference `fig:kickBsTOF' on page 6 undefined on input line 50.
 
 
-LaTeX Warning: Reference `sec:SynDimBandStructure' on page 140 undefined on inp
-ut line 50.
+LaTeX Warning: Reference `sec:SynDimBandStructure' on page 6 undefined on input
+ line 50.
 
-<"BlochOsc Figures/figure2Av2".pdf, id=3133, 330.73563pt x 320.48532pt>
+<"BlochOsc Figures/figure2Av2".pdf, id=217, 330.73563pt x 320.48532pt>
 File: "BlochOsc Figures/figure2Av2".pdf Graphic file (type pdf)
 
 <use "BlochOsc Figures/figure2Av2".pdf>
 Package pdftex.def Info: "BlochOsc Figures/figure2Av2".pdf used on input line 5
 2.
 (pdftex.def)             Requested size: 330.7348pt x 320.48454pt.
- [140 <./BlochOsc Figures/kickFigure.pdf>]
+pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.56 
+      [6 <./BlochOsc Figures/kickFigure.pdf>]
 
-LaTeX Warning: Reference `sec:SynDimCalibration' on page 141 undefined on input
- line 57.
+LaTeX Warning: Reference `sec:SynDimCalibration' on page 7 undefined on input l
+ine 57.
 
-[141 <./BlochOsc Figures/figure2Av2.pdf>]
+pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.58 
+      [7 <./BlochOsc Figures/figure2Av2.pdf>]
 
-LaTeX Warning: Reference `fig:LaughlinPump' on page 142 undefined on input line
- 59.
-
-
-LaTeX Warning: Reference `fig:kickBsTOF' on page 142 undefined on input line 59
-.
-
-
-LaTeX Warning: Reference `fig:kickBsTOF' on page 142 undefined on input line 59
-.
+LaTeX Warning: Reference `fig:LaughlinPump' on page 8 undefined on input line 5
+9.
 
 
-LaTeX Warning: Citation `Campbell2006' on page 142 undefined on input line 62.
+LaTeX Warning: Reference `fig:kickBsTOF' on page 8 undefined on input line 59.
 
-[142]
 
-LaTeX Warning: Reference `sec:ODTbeamShape' on page 143 undefined on input line
- 64.
+LaTeX Warning: Reference `fig:kickBsTOF' on page 8 undefined on input line 59.
 
-<"BlochOsc Figures/RfCorrection".pdf, id=3205, 448.07399pt x 505.89pt>
+
+LaTeX Warning: Citation `Campbell2006' on page 8 undefined on input line 62.
+
+[8]
+
+LaTeX Warning: Reference `sec:ODTbeamShape' on page 9 undefined on input line 6
+4.
+
+<"BlochOsc Figures/RfCorrection".pdf, id=291, 448.07399pt x 505.89pt>
 File: "BlochOsc Figures/RfCorrection".pdf Graphic file (type pdf)
 
 <use "BlochOsc Figures/RfCorrection".pdf>
@@ -3093,73 +766,90 @@ Overfull \hbox (21.68033pt too wide) in paragraph at lines 69--70
  []
 
 
-LaTeX Warning: Reference `fig:RfCorrection' on page 143 undefined on input line
- 74.
+LaTeX Warning: Reference `fig:RfCorrection' on page 9 undefined on input line 7
+4.
 
 
-LaTeX Warning: Reference `fig:RfCorrection' on page 143 undefined on input line
- 74.
+LaTeX Warning: Reference `fig:RfCorrection' on page 9 undefined on input line 7
+4.
 
-[143] [144 <./BlochOsc Figures/RfCorrection.pdf>]
+[9] [10 <./BlochOsc Figures/RfCorrection.pdf>]
 
-LaTeX Warning: Reference `fig:RfCorrection' on page 145 undefined on input line
- 76.
+LaTeX Warning: Reference `fig:RfCorrection' on page 11 undefined on input line 
+76.
 
 
-LaTeX Warning: Reference `fig:RfCorrection' on page 145 undefined on input line
- 76.
+LaTeX Warning: Reference `fig:RfCorrection' on page 11 undefined on input line 
+76.
 
-<"BlochOsc Figures/figure2Bv3".pdf, id=3270, 408.59653pt x 243.74362pt>
+[11]
+
+LaTeX Warning: Reference `eqn:qHconductivity' on page 12 undefined on input lin
+e 101.
+
+
+LaTeX Warning: Reference `eqn:qHconductivity' on page 12 undefined on input lin
+e 105.
+
+<"BlochOsc Figures/figure2Bv3".pdf, id=363, 408.59653pt x 243.74362pt>
 File: "BlochOsc Figures/figure2Bv3".pdf Graphic file (type pdf)
 
 <use "BlochOsc Figures/figure2Bv3".pdf>
-Package pdftex.def Info: "BlochOsc Figures/figure2Bv3".pdf used on input line 8
-6.
+Package pdftex.def Info: "BlochOsc Figures/figure2Bv3".pdf used on input line 1
+19.
 (pdftex.def)             Requested size: 408.59552pt x 243.74301pt.
 
-<"BlochOsc Figures/figure3v7".pdf, id=3271, 419.5675pt x 245.41687pt>
+
+LaTeX Warning: Reference `sec:RfCorrection' on page 12 undefined on input line 
+120.
+
+
+LaTeX Warning: Reference `sec:RfCorrection' on page 12 undefined on input line 
+120.
+
+<"BlochOsc Figures/figure3v7".pdf, id=364, 419.5675pt x 245.41687pt>
 File: "BlochOsc Figures/figure3v7".pdf Graphic file (type pdf)
 
 <use "BlochOsc Figures/figure3v7".pdf>
-Package pdftex.def Info: "BlochOsc Figures/figure3v7".pdf used on input line 96
-.
+Package pdftex.def Info: "BlochOsc Figures/figure3v7".pdf used on input line 12
+9.
 (pdftex.def)             Requested size: 419.56647pt x 245.41626pt.
 
-<"BlochOsc Figures/FitGaussiansChern".pdf, id=3272, 433.62pt x 352.31625pt>
+<"BlochOsc Figures/FitGaussiansChern".pdf, id=365, 433.62pt x 352.31625pt>
 File: "BlochOsc Figures/FitGaussiansChern".pdf Graphic file (type pdf)
 
 <use "BlochOsc Figures/FitGaussiansChern".pdf>
 Package pdftex.def Info: "BlochOsc Figures/FitGaussiansChern".pdf used on input
- line 103.
+ line 136.
 (pdftex.def)             Requested size: 433.61894pt x 352.31538pt.
 
-Overfull \hbox (7.2264pt too wide) in paragraph at lines 103--104
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 136--137
 [][] 
  []
 
-<"BlochOsc Figures/figure4v4".pdf, id=3273, 440.84702pt x 275.27844pt>
+<"BlochOsc Figures/figure4v4".pdf, id=366, 440.84702pt x 275.27844pt>
 File: "BlochOsc Figures/figure4v4".pdf Graphic file (type pdf)
 
 <use "BlochOsc Figures/figure4v4".pdf>
-Package pdftex.def Info: "BlochOsc Figures/figure4v4".pdf used on input line 11
-1.
+Package pdftex.def Info: "BlochOsc Figures/figure4v4".pdf used on input line 14
+4.
 (pdftex.def)             Requested size: 440.84593pt x 275.27776pt.
 
-Overfull \hbox (14.45338pt too wide) in paragraph at lines 111--112
+Overfull \hbox (14.45338pt too wide) in paragraph at lines 144--145
 [][] 
  []
 
 
-LaTeX Warning: Reference `fig:magnetization' on page 145 undefined on input lin
-e 112.
+LaTeX Warning: Reference `fig:magnetization' on page 12 undefined on input line
+ 145.
 
 
-LaTeX Warning: Reference `fig:magnetization' on page 145 undefined on input lin
-e 112.
+LaTeX Warning: Reference `fig:magnetization' on page 12 undefined on input line
+ 145.
 
-) [145] [146 <./BlochOsc Figures/figure2Bv3.pdf>] [147 <./BlochOsc Figures/figu
-re3v7.pdf>] [148 <./BlochOsc Figures/FitGaussiansChern.pdf>] [149 <./BlochOsc F
-igures/figure4v4.pdf>] (mainthesis.bbl
+) [12] [13 <./BlochOsc Figures/figure2Bv3.pdf>] [14 <./BlochOsc Figures/figure3
+v7.pdf>] [15 <./BlochOsc Figures/FitGaussiansChern.pdf>] [16 <./BlochOsc Figure
+s/figure4v4.pdf>] [17] (mainthesis.bbl
 Underfull \hbox (badness 2503) in paragraph at lines 4--8
 []\OT1/cmr/m/n/12 Daniel Adam Steck.  Ru-bid-ium 87 d line data.  Avail-able on
 -line,
@@ -3177,23 +867,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--15
  2011.
  []
 
-[150
+[18
 
-] [151] [152] [153]
+] [19] [20] [21]
 Missing character: There is no √ in font cmr12!
 Missing character: There is no ± in font cmr12!
- [154] [155] [156]
+ [22] [23] [24]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no â in font cmr12!
- [157])
+ [25])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 161.
- [158]
+ [26]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 161.
- (mainthesis.aux
-(Abstract.aux) (Titlepage.aux) (Copyright.aux) (ChernNumberChapter.aux)
-(AtomLightChapter.aux) (IntroChapter.aux) (AbsorptionImagingChapter.aux)
-(SwaveScatteringChapter.aux) (SynDimChapter.aux) (BlochOscChapter.aux))
+ (mainthesis.aux (Abstract.aux)
+(Titlepage.aux) (Copyright.aux) (BlochOscChapter.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 161.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 161.
 
@@ -3203,8 +891,8 @@ Package rerunfilecheck Warning: File `mainthesis.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `mainthesis.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  F249E6892ED74B5930ADF7A6128C61BC;5504.
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  2200DCB4B8C8A24A14DCDE6DC083CC03;838.
 
 LaTeX Warning: There were undefined references.
 
@@ -3214,36 +902,32 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 161.
  ) 
 Here is how much of TeX's memory you used:
- 8190 strings out of 493333
- 122488 string characters out of 3139191
+ 7284 strings out of 493333
+ 103972 string characters out of 3139191
  198121 words of memory out of 3000000
- 10936 multiletter control sequences out of 15000+200000
- 12942 words of font info for 49 fonts, out of 3000000 for 9000
+ 10523 multiletter control sequences out of 15000+200000
+ 10199 words of font info for 38 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,10n,34p,1922b,560s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx6.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mssi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on mainthesis.pdf (165 pages, 12034431 bytes).
+ 42i,8n,34p,1879b,448s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmssi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on mainthesis.pdf (33 pages, 2450742 bytes).
 PDF statistics:
- 3639 PDF objects out of 4296 (max. 8388607)
- 518 named destinations out of 1000 (max. 500000)
- 366 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 649 PDF objects out of 1000 (max. 8388607)
+ 123 named destinations out of 1000 (max. 500000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

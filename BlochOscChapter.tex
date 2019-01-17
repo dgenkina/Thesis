@@ -63,7 +63,7 @@ When force was applied to the atoms, their crystal momentum $q_x$ evolved, and t
 
 To mitigate this problem, it was necessary to cut down on the atomic density as much as possible while retaining enough atoms to observe a signal. In addition to re-shaping the ODT beam (see sec. \ref{sec:ODTbeamShape}), we also cut down the overall atom number after creating the BEC and before loading the synthetic dimensional lattice. Starting in $F=1, m_F=0$, we applied a microwave pulse resonant with the $\ket{F=1,m_F=0}\rightarrow\ket{F=2,m_F=-1}$ transition for $1$ ms [CHECK THIS NUMBER], until $\approx80\%$ of the atoms were transferred to the $F=2$ manifold. We then shined on the XZ probe beam to selectively blow away the $F=2$ atoms, leaving $\approx 1000$ atoms in the condensate.  
 
-\subsection{Rf correction}
+\subsection{Rf correction} \label{sec:RfCorrection}
 For rf-coupled experiments, our loading procedure into the lowest band at $q_x=0$ resulted in some latent non-adiabaticity that we could not get rid of or fully explain. This non-adiabaticity resulted in oscillations in the fractional populations $n_m$ as a function of time, even though the rf-coupled band structure predicts no dependence of $n_m$ on $q_x$. However, these oscillations were present as a function of time even when no force was applied to the atoms, indicating that these variations were dependent on time and on not $q_x$. Therefore, we used data obtained with no force applied to correct the time-dependent variation in data where the force was applied.
 \begin{figure}
 \includegraphics{"BlochOsc Figures/RfCorrection".pdf}
@@ -78,16 +78,50 @@ To correct the data and extract the change in fractional populations caused by v
 	Field stabilization
 
 \section{Quantum Hall Effect interpretation}
-	Microscopic view of QHE
-	Application to our system
+
+The measurement we performed is similar to a quantum Hall conductivity measurement: we pierced a 2D material with an effective magnetic field, applied a force (an electric field in a conventional quantum Hall setup), and observed a transverse response. To draw a more direct analogy, we can describe the quantum Hall effect from the microscopic perspective. 
+
+\subsection{Microscoping view of QHE}
+In the quantum Hall effect, a longitudinal force $F_{\parallel}$, induced by an electric field $F_{\parallel}=e E_{\parallel}$, drives a transverse `Hall' current density 
+\begin{equation}
+j_{\perp} = \sigma_{\rm{H}} E_{\parallel},
+\label{eqn:qHconductivity}
+\end{equation}
+where $\sigma_{\rm{H}}$ is the Hall conductivity.  This transverse current density can be expressed as 
+\begin{equation}
+j_{\perp}=n_{2\rm{D}}v_{\perp}e,
+\end{equation}
+where $n_{2\rm{D}}$ is the 2-D charge carrier density, $v_{\perp}$ is the transverse velocity of the charge carriers and $e$ is the electron charge. Choosing some increment of time $\Delta t$, we can express $v_{\perp}$ and $F_{\parallel}$ as 
+\begin{equation}
+v_{\perp}=\frac{\Delta x_{\perp}}{\Delta t},
+\end{equation}
+and 
+\begin{equation}
+F_{\parallel} = \hbar \frac{\Delta q_{\parallel}}{\Delta t},
+\end{equation}
+where $q_{\parallel}$ is the crystal momentum along the direction of the force. Plugging this into eqn. \ref{eqn:qHconductivity}, we obtain
+\begin{equation}
+n_{2{\rm D}} e  \frac{x_{\perp}}{\Delta t} = \hbar \frac{\Delta q_{\parallel}}{\Delta t} \frac{\sigma_{\rm H}}{e}
+\end{equation}
+ Re-expressing $n_{2D}$ in number of carriers $N$ per plaquette, defining $\Delta x_{\perp}$ as transverse displacement in units of lattice periods, we plug the above definitions into eqn. \ref{eqn:qHconductivity} to obtain
+\begin{equation}
+N G\frac{\Delta x_{\perp}}{\Delta q_{\parallel}}=\sigma_{\rm{H}} \frac{h}{e^2},
+\end{equation}
+where $G$ is the reciprocal lattice vector.  
+
+A longitudinal force $F_x$ would drive a change in the dimensionless crystal momentum $\hbar\Delta q_x/\hbar G$  and a transverse displacement $\Delta m$, giving a dimensionless Hall conductivity  $N G\Delta m/ \Delta q_x=\sigma_{\rm{H}} R_{\rm{K}}={\tilde\sigma}_{\rm{H}}$, where $G$ is the reciprocal lattice constant and $N$ is the number of carriers per plaquette (see Appendix C). 
+
+
+\subsection{Chern number from Hall conductivity}
+
+\subsection{Inadequacy for narrow systems}
 
 
 \begin{figure}
 \includegraphics{"BlochOsc Figures/figure2Bv3".pdf}
-\caption{Hall displacement. Top: modal position $\bar{m}$ is plotted as a function of $q_x$ for the 5-site ribbon with flux \textbf{a}. $\Phi/\Phi_0=0$, \textbf{b}. $\Phi/\Phi_0\approx-4/3$, \textbf{c}. $\Phi/\Phi_0\approx4/3$. Gray circles depict the measurements; black dashed lines are the prediction of our simple $\tilde{\sigma}_\textrm{H}$ and red curves are the expectation from the band structure of our thin ribbon. Bottom: Extracted conductivity from the slope of a line of best fit to the data (gray circles) and theory (red lines) as a function of maximum $|q_x|$ included in the fit range, for each flux value. As discussed in Appendix B, the $\Phi/\Phi_0=0$ data was compensated to account for non-adiabaticity in the loading procedure. }
+\caption{Hall displacement. Top: modal position $\bar{m}$ is plotted as a function of $q_x$ for the 5-site ribbon with flux \textbf{a}. $\Phi/\Phi_0=0$, \textbf{b}. $\Phi/\Phi_0\approx-4/3$, \textbf{c}. $\Phi/\Phi_0\approx4/3$. Gray circles depict the measurements; black dashed lines are the prediction of our simple $\tilde{\sigma}_\textrm{H}$ and red curves are the expectation from the band structure of our thin ribbon. Bottom: Extracted conductivity from the slope of a line of best fit to the data (gray circles) and theory (red lines) as a function of maximum $|q_x|$ included in the fit range, for each flux value. As discussed in sec. \ref{sec:RfCorrection}, the $\Phi/\Phi_0=0$ data was compensated to account for non-adiabaticity in the loading procedure. }
 \label{fig:magnetization}
 \end{figure}
-	Inadequacy of the model for our finite system
 
 \section{Measuring Chern number via Diophantine equation}
 	TKNN Diophantine equation in our setup

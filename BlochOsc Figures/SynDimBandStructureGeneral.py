@@ -80,7 +80,7 @@ def FxFlat(S):
                 F[i,j]=1.0/np.sqrt(2)
     return F
 
-def RamanLatHam(k, omega, delta, epsilon, U, n, S, m0,c=c):
+def RamanLatHam(k, omega, delta, epsilon, U, n, S, m0,c=c, Flat=Flat):
     
     Nlat=2*n+1
     Nspin=int(2*S+1)
@@ -109,7 +109,7 @@ def RamanLatHam(k, omega, delta, epsilon, U, n, S, m0,c=c):
                 H[i,j]=U/4.0         
     return H, kStates
     
-def plotSynDimBandStructGen(omega, delta, epsilon, U, n,S, m0,c=c,kList=np.linspace(-1.0,1.0,600),save=False,magCell=False,plot=True):
+def plotSynDimBandStructGen(omega, delta, epsilon, U, n,S, m0,c=c,kList=np.linspace(-1.0,1.0,600),save=False,magCell=False,plot=True,Flat=Flat):
     i=0  
         
     s=int(2*S+1)
@@ -123,7 +123,7 @@ def plotSynDimBandStructGen(omega, delta, epsilon, U, n,S, m0,c=c,kList=np.linsp
     if magCell:
         magInUnitCell=np.zeros((kList.size,s-2))
     for k in kList:
-        H,kstates=RamanLatHam(k, omega, delta, epsilon, U, n,S,m0,c=c)
+        H,kstates=RamanLatHam(k, omega, delta, epsilon, U, n,S,m0,c=c,Flat=Flat)
         Energies, eigenstates = LA.eig(H)
         sort = np.argsort(Energies)
         Esorted, eVsorted = Energies[sort], eigenstates[:,sort]
