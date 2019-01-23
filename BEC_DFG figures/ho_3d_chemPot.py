@@ -136,6 +136,6 @@ pan.plot(0.0,zeta/(1.0-zeta)/1e6,'g*')
 
 plt.legend()
 pan.set_ylabel(r'$n(\epsilon)G(\epsilon)/N$')
-pan.set_xlabel(r'Energy $\epsilon$ [$\hbar\bar{\omega}$]')
+pan.set_xlabel(r'$\epsilon/\hbar\bar{\omega}$')
 
 plt.savefig('condensation.pdf',transparent=True)

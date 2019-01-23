@@ -97,7 +97,7 @@ for i,T in enumerate(Tlist):
 nAtT0 = np.zeros(E_ho_list.size)
 nAtT0[E_ho_list<E_F]= 1.0
 pan.plot(E_ho_list,nAtT0,label=r'$T=0$')
-pan.set_xlabel(r'Energy $\epsilon$ [$\hbar\bar{\omega}$]')
+pan.set_xlabel(r'$\epsilon/\hbar\bar{\omega}$')
 pan.set_ylabel(r'$n(\epsilon)$')
 plt.legend()
 

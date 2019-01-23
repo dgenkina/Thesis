@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2018.8.16)  17 JAN 2019 16:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2018.8.16)  22 JAN 2019 23:15
 entering extended mode
 **./mainthesis.tex
 (mainthesis.tex
@@ -540,512 +540,230 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
 \openout6 = `mainthesis.lof'.
 
  [10]
-\openout2 = `ChernNumberChapter.aux'.
+\openout2 = `IntroChapter.aux'.
 
- (ChernNumberChapter.tex
-Chapter 1.
+ (IntroChapter.tex
+Chapter 3.
 
-LaTeX Warning: Reference `chap:SynDim, chap:BlochOsc' on page 1 undefined on in
-put line 9.
+LaTeX Warning: Reference `sec:BECintro' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Reference `sec:DFGintro' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Reference `sec:RbK' on page 1 undefined on input line 4.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.10 
-      [1
+l.16 T
+      he Bose distribution leads to Bose-Einstein condensation, the collapse...
+[1
 
-]
-<"ChernNum Figures/TopologyBakedGoods".png, id=576, 433.62pt x 165.7392pt>
-File: "ChernNum Figures/TopologyBakedGoods".png Graphic file (type png)
-
-<use "ChernNum Figures/TopologyBakedGoods".png>
-Package pdftex.def Info: "ChernNum Figures/TopologyBakedGoods".png used on inpu
-t line 16.
-(pdftex.def)             Requested size: 433.61894pt x 165.73877pt.
-
-Overfull \hbox (7.2264pt too wide) in paragraph at lines 16--18
-[][]
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.27 
-      [2]pdfTeX warning (ext4): destination with the same identifier (name{page
-.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.34 
-      [3 <./ChernNum Figures/TopologyBakedGoods.png>]pdfTeX warning (ext4): des
-tination with the same identifier (name{page.4}) has been already used, duplica
-te ignored
-<to be read again> 
-                   \relax 
-l.57 
-      [4] <"ChernNum Figures/HallEffect".png, id=606, 234.1548pt x 190.7928pt>
-File: "ChernNum Figures/HallEffect".png Graphic file (type png)
-
-<use "ChernNum Figures/HallEffect".png>
-Package pdftex.def Info: "ChernNum Figures/HallEffect".png used on input line 6
-5.
-(pdftex.def)             Requested size: 234.15422pt x 190.79231pt.
-
-<"ChernNum Figures/qhe".png, id=607, 421.575pt x 295.1025pt>
-File: "ChernNum Figures/qhe".png Graphic file (type png)
-
-<use "ChernNum Figures/qhe".png>
-Package pdftex.def Info: "ChernNum Figures/qhe".png used on input line 71.
-(pdftex.def)             Requested size: 421.57396pt x 295.10176pt.
-
-<"ChernNum Figures/ABphase".png, id=608, 459.6372pt x 178.7478pt>
-File: "ChernNum Figures/ABphase".png Graphic file (type png)
-
-<use "ChernNum Figures/ABphase".png>
-Package pdftex.def Info: "ChernNum Figures/ABphase".png used on input line 80.
-(pdftex.def)             Requested size: 459.63608pt x 178.74734pt.
-
-Overfull \hbox (33.24353pt too wide) in paragraph at lines 80--82
-[][]
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.85 
-      [5 <./ChernNum Figures/HallEffect.png>]
-<"ChernNum Figures/Hofstadter".png, id=613, 433.62pt x 297.20023pt>
-File: "ChernNum Figures/Hofstadter".png Graphic file (type png)
-
-<use "ChernNum Figures/Hofstadter".png>
-Package pdftex.def Info: "ChernNum Figures/Hofstadter".png used on input line 8
-7.
-(pdftex.def)             Requested size: 433.61894pt x 297.19948pt.
-
-Overfull \hbox (7.2264pt too wide) in paragraph at lines 87--89
-[][]
- []
-
-)pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has
+]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.128 \include{ChernNumberChapter}
-                                   [6 <./ChernNum Figures/qhe.png>]pdfTeX warni
-ng (ext4): destination with the same identifier (name{page.7}) has been already
- used, duplicate ignored
+l.32 \end{equation}
+                    [2]pdfTeX warning (ext4): destination with the same identif
+ier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.128 \include{ChernNumberChapter}
-                                   [7 <./ChernNum Figures/ABphase.png> <./Chern
-Num Figures/Hofstadter.png>]
-\openout2 = `AtomLightChapter.aux'.
-
- (AtomLightChapter.tex
-Chapter 1.
-pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.12 
-      [8
-
-
-]
-<"Chapter2 Figures/RbKatomicStruct".pdf, id=626, 448.07399pt x 484.51414pt>
-File: "Chapter2 Figures/RbKatomicStruct".pdf Graphic file (type pdf)
-
-<use "Chapter2 Figures/RbKatomicStruct".pdf>
-Package pdftex.def Info: "Chapter2 Figures/RbKatomicStruct".pdf used on input l
-ine 14.
-(pdftex.def)             Requested size: 448.07288pt x 484.51297pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 14--15
-[][] 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.9}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.34 \begin{equation}
-                      [9]pdfTeX warning (ext4): destination with the same ident
-ifier (name{page.10}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.34 \begin{equation}
-                      [10 <./Chapter2 Figures/RbKatomicStruct.pdf>]
-<"Chapter4 Figures/HyperfineFromSteck".pdf, id=657, 794.97pt x 614.295pt>
-File: "Chapter4 Figures/HyperfineFromSteck".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/HyperfineFromSteck".pdf>
-Package pdftex.def Info: "Chapter4 Figures/HyperfineFromSteck".pdf used on inpu
-t line 51.
-(pdftex.def)             Requested size: 476.98569pt x 368.57983pt.
-
-Overfull \hbox (50.59314pt too wide) in paragraph at lines 51--52
-[][] 
- []
-
-[11] [12 <./Chapter4 Figures/HyperfineFromSteck.pdf, page is rotated 90 degrees
->] [13] [14] [15] [16]
-<"Chapter4 Figures/ARPfigure".pdf, id=718, 433.62pt x 216.81pt>
-File: "Chapter4 Figures/ARPfigure".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/ARPfigure".pdf>
-Package pdftex.def Info: "Chapter4 Figures/ARPfigure".pdf used on input line 15
-9.
-(pdftex.def)             Requested size: 433.61894pt x 216.80946pt.
-
-Overfull \hbox (7.2264pt too wide) in paragraph at lines 159--160
-[][] 
- []
-
-[17] [18 <./Chapter4 Figures/ARPfigure.pdf>] [19] [20]
-<"Chapter2 Figures/Picture1a".png, id=782, 246.1998pt x 359.9046pt>
-File: "Chapter2 Figures/Picture1a".png Graphic file (type png)
-
-<use "Chapter2 Figures/Picture1a".png>
-Package pdftex.def Info: "Chapter2 Figures/Picture1a".png used on input line 19
-6.
-(pdftex.def)             Requested size: 110.78888pt x 161.95557pt.
-
-<"Chapter2 Figures/Picture1c".pdf, id=783, 173.448pt x 187.902pt>
-File: "Chapter2 Figures/Picture1c".pdf Graphic file (type pdf)
-
-<use "Chapter2 Figures/Picture1c".pdf>
-Package pdftex.def Info: "Chapter2 Figures/Picture1c".pdf used on input line 19
-7.
-(pdftex.def)             Requested size: 156.10175pt x 169.11023pt.
-
-<"Chapter2 Figures/Picture1b".png, id=784, 250.536pt x 304.4976pt>
-File: "Chapter2 Figures/Picture1b".png Graphic file (type png)
-
-<use "Chapter2 Figures/Picture1b".png>
-Package pdftex.def Info: "Chapter2 Figures/Picture1b".png used on input line 19
-8.
-(pdftex.def)             Requested size: 125.26768pt x 152.24843pt.
- [21 <./Chapter2 Figures/Picture1a.png> <./Chapter2 Figures/Picture1c.pdf> <./C
-hapter2 Figures/Picture1b.png>] [22]
-[23] [24]
-Overfull \hbox (19.96951pt too wide) detected at line 264
-[]\OML/cmm/m/it/12 H[] \OT1/cmr/m/n/12 = [] [] \OML/cmm/m/it/12 ;
- []
-
-[25] <"Chapter4 Figures/figure1".pdf, id=857, 448.07399pt x 289.08pt>
-File: "Chapter4 Figures/figure1".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/figure1".pdf>
-Package pdftex.def Info: "Chapter4 Figures/figure1".pdf used on input line 290.
-
-(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 290--291
-[][] 
- []
-
-[26] [27 <./Chapter4 Figures/figure1.pdf>] [28] [29]
-<"Chapter4 Figures/figure2".pdf, id=902, 448.07399pt x 289.08pt>
-File: "Chapter4 Figures/figure2".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/figure2".pdf>
-Package pdftex.def Info: "Chapter4 Figures/figure2".pdf used on input line 337.
-
-(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 337--338
-[][] 
- []
-
-<"Chapter4 Figures/LatticePulsing".pdf, id=908, 448.07399pt x 289.08pt>
-File: "Chapter4 Figures/LatticePulsing".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/LatticePulsing".pdf>
-Package pdftex.def Info: "Chapter4 Figures/LatticePulsing".pdf used on input li
-ne 348.
-(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 348--349
-[][] 
- []
-
-[30] [31 <./Chapter4 Figures/figure2.pdf>]
-<"Chapter4 Figures/figure3".pdf, id=945, 448.07399pt x 289.08pt>
-File: "Chapter4 Figures/figure3".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/figure3".pdf>
-Package pdftex.def Info: "Chapter4 Figures/figure3".pdf used on input line 356.
-
-(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 356--357
-[][] 
- []
-
-
-LaTeX Warning: Reference `chap:SynDim,chap:BlochOsc' on page 32 undefined on in
-put line 364.
-
-[32 <./Chapter4 Figures/LatticePulsing.pdf>] [33 <./Chapter4 Figures/figure3.pd
-f>] [34]
-<"Chapter4 Figures/RfRamanSetupBeams".pdf, id=1023, 794.97pt x 614.295pt>
-File: "Chapter4 Figures/RfRamanSetupBeams".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/RfRamanSetupBeams".pdf>
-Package pdftex.def Info: "Chapter4 Figures/RfRamanSetupBeams".pdf used on input
- line 394.
-(pdftex.def)             Requested size: 238.49284pt x 184.28992pt.
-
-<"Chapter4 Figures/RfRamanSetupLevels".pdf, id=1024, 794.97pt x 614.295pt>
-File: "Chapter4 Figures/RfRamanSetupLevels".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/RfRamanSetupLevels".pdf>
-Package pdftex.def Info: "Chapter4 Figures/RfRamanSetupLevels".pdf used on inpu
-t line 395.
-(pdftex.def)             Requested size: 238.49284pt x 184.28992pt.
-
-Overfull \hbox (53.20422pt too wide) in paragraph at lines 394--396
-[][] [][] 
- []
-
-[35 <./Chapter4 Figures/RfRamanSetupBeams.pdf, page is rotated 90 degrees> <./C
-hapter4 Figures/RfRamanSetupLevels.pdf, page is rotated 90 degrees>]
-<"Chapter4 Figures/rfBandStructure".pdf, id=1049, 448.07399pt x 289.08pt>
-File: "Chapter4 Figures/rfBandStructure".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/rfBandStructure".pdf>
-Package pdftex.def Info: "Chapter4 Figures/rfBandStructure".pdf used on input l
-ine 403.
-(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 403--404
-[][] 
- []
-
-[36] [37 <./Chapter4 Figures/rfBandStructure.pdf>] [38]
-<"Chapter4 Figures/RamanBandStructure".pdf, id=1117, 448.07399pt x 289.08pt>
-File: "Chapter4 Figures/RamanBandStructure".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/RamanBandStructure".pdf>
-Package pdftex.def Info: "Chapter4 Figures/RamanBandStructure".pdf used on inpu
-t line 436.
-(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 436--437
-[][] 
- []
-
-[39] [40 <./Chapter4 Figures/RamanBandStructure.pdf>]
-<"Chapter4 Figures/RfPulsing".pdf, id=1175, 448.07399pt x 433.62pt>
-File: "Chapter4 Figures/RfPulsing".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/RfPulsing".pdf>
-Package pdftex.def Info: "Chapter4 Figures/RfPulsing".pdf used on input line 45
-4.
-(pdftex.def)             Requested size: 448.07288pt x 433.61894pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 454--455
-[][] 
- []
-
-<"Chapter4 Figures/RamanPulsing".pdf, id=1178, 448.07399pt x 433.62pt>
-File: "Chapter4 Figures/RamanPulsing".pdf Graphic file (type pdf)
-
-<use "Chapter4 Figures/RamanPulsing".pdf>
-Package pdftex.def Info: "Chapter4 Figures/RamanPulsing".pdf used on input line
- 462.
-(pdftex.def)             Requested size: 448.07288pt x 433.61894pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 462--463
-[][] 
- []
-
-
-LaTeX Warning: Reference `fig:rfBandStruct' on page 41 undefined on input line 
-467.
-
-[41] [42 <./Chapter4 Figures/RfPulsing.pdf>] [43 <./Chapter4 Figures/RamanPulsi
-ng.pdf>]) [44]
-\openout2 = `IntroChapter.aux'.
-
- (IntroChapter.tex
-Chapter 2.
-[45
-
-
-] [46] [47]
-<"BEC_DFG figures/condensation".pdf, id=1300, 375.804pt x 216.81pt>
+l.54 \end{equation}
+                    [3]
+<"BEC_DFG figures/condensation".pdf, id=611, 375.804pt x 216.81pt>
 File: "BEC_DFG figures/condensation".pdf Graphic file (type pdf)
 
 <use "BEC_DFG figures/condensation".pdf>
 Package pdftex.def Info: "BEC_DFG figures/condensation".pdf used on input line 
-66.
+68.
 (pdftex.def)             Requested size: 375.80309pt x 216.80946pt.
- [48 <./BEC_DFG figures/condensation.pdf>] <"BEC_DFG figures/CondensingAtoms".p
-ng, id=1324, 426.8748pt x 128.1588pt>
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.74 \begin{equation}
+                      [4]pdfTeX warning (ext4): destination with the same ident
+ifier (name{page.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.87 \end{equation}
+                    [5 <./BEC_DFG figures/condensation.pdf>]
+<"BEC_DFG figures/CondensingAtoms".png, id=652, 426.8748pt x 128.1588pt>
 File: "BEC_DFG figures/CondensingAtoms".png Graphic file (type png)
 
 <use "BEC_DFG figures/CondensingAtoms".png>
 Package pdftex.def Info: "BEC_DFG figures/CondensingAtoms".png used on input li
-ne 89.
+ne 91.
 (pdftex.def)             Requested size: 426.87375pt x 128.15848pt.
- [49 <./BEC_DFG figures/CondensingAtoms.png>] [50] [51]
-<"BEC_DFG figures/InSitu".pdf, id=1355, 325.215pt x 433.62pt>
+pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.99 \subsection{Interacting Bose gas}
+                                       [6 <./BEC_DFG figures/CondensingAtoms.pn
+g>]pdfTeX warning (ext4): destination with the same identifier (name{page.7}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.116 \end{equation}
+                     [7]pdfTeX warning (ext4): destination with the same identi
+fier (name{page.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.132 \end{equation}
+                     [8]
+<"BEC_DFG figures/InSitu".pdf, id=681, 325.215pt x 433.62pt>
 File: "BEC_DFG figures/InSitu".pdf Graphic file (type pdf)
 
 <use "BEC_DFG figures/InSitu".pdf>
-Package pdftex.def Info: "BEC_DFG figures/InSitu".pdf used on input line 134.
+Package pdftex.def Info: "BEC_DFG figures/InSitu".pdf used on input line 136.
 (pdftex.def)             Requested size: 325.2142pt x 433.61894pt.
- [52] [53 <./BEC_DFG figures/InSitu.pdf>]
-[54] <"BEC_DFG figures/FermiDist".pdf, id=1385, 448.07399pt x 216.81pt>
+pdfTeX warning (ext4): destination with the same identifier (name{page.9}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.153 
+       [9]pdfTeX warning (ext4): destination with the same identifier (name{pag
+e.10}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.153 
+       [10 <./BEC_DFG figures/InSitu.pdf>] [11]
+<"BEC_DFG figures/FermiDist".pdf, id=722, 448.07399pt x 216.81pt>
 File: "BEC_DFG figures/FermiDist".pdf Graphic file (type pdf)
 
 <use "BEC_DFG figures/FermiDist".pdf>
-Package pdftex.def Info: "BEC_DFG figures/FermiDist".pdf used on input line 175
+Package pdftex.def Info: "BEC_DFG figures/FermiDist".pdf used on input line 179
 .
 (pdftex.def)             Requested size: 448.07288pt x 216.80946pt.
 
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 175--176
+Overfull \hbox (21.68033pt too wide) in paragraph at lines 179--180
 [][] 
  []
 
-[55] [56 <./BEC_DFG figures/FermiDist.pdf>]
-<"BEC_DFG figures/FeshbachSchematic".png, id=1419, 433.62pt x 244.7544pt>
+[12 <./BEC_DFG figures/FermiDist.pdf>] [13]
+<"BEC_DFG figures/FeshbachSchematic".png, id=759, 433.62pt x 244.7544pt>
 File: "BEC_DFG figures/FeshbachSchematic".png Graphic file (type png)
 
 <use "BEC_DFG figures/FeshbachSchematic".png>
 Package pdftex.def Info: "BEC_DFG figures/FeshbachSchematic".png used on input 
-line 194.
+line 198.
 (pdftex.def)             Requested size: 433.61894pt x 244.75378pt.
 
-Overfull \hbox (7.2264pt too wide) in paragraph at lines 194--195
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 198--199
 [][] 
  []
 
-[57] [58 <./BEC_DFG figures/FeshbachSchematic.png>]
-<"BEC_DFG figures/ExperimentPicture".png, id=1441, 433.62pt x 338.7054pt>
+[14 <./BEC_DFG figures/FeshbachSchematic.png>] [15]
+<"BEC_DFG figures/ExperimentPicture".png, id=792, 433.62pt x 338.7054pt>
 File: "BEC_DFG figures/ExperimentPicture".png Graphic file (type png)
 
 <use "BEC_DFG figures/ExperimentPicture".png>
 Package pdftex.def Info: "BEC_DFG figures/ExperimentPicture".png used on input 
-line 215.
+line 219.
 (pdftex.def)             Requested size: 433.61894pt x 338.70457pt.
 
-Overfull \hbox (7.2264pt too wide) in paragraph at lines 215--216
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 219--220
 [][] 
  []
 
-[59] [60 <./BEC_DFG figures/ExperimentPicture.png>]
-<"BEC_DFG figures/BirdsEyeApparatus".pdf, id=1464, 439.72781pt x 417.3482pt>
+[16 <./BEC_DFG figures/ExperimentPicture.png>]
+<"BEC_DFG figures/BirdsEyeApparatus".pdf, id=805, 439.72781pt x 417.3482pt>
 File: "BEC_DFG figures/BirdsEyeApparatus".pdf Graphic file (type pdf)
 
 <use "BEC_DFG figures/BirdsEyeApparatus".pdf>
 Package pdftex.def Info: "BEC_DFG figures/BirdsEyeApparatus".pdf used on input 
-line 224.
+line 228.
 (pdftex.def)             Requested size: 439.72673pt x 417.34718pt.
 
-Overfull \hbox (13.33418pt too wide) in paragraph at lines 224--225
+Overfull \hbox (13.33418pt too wide) in paragraph at lines 228--229
 [][] 
  []
 
 
-LaTeX Warning: Reference `SynDimChapter,BlochOscChapter' on page 61 undefined o
-n input line 231.
+LaTeX Warning: Reference `SynDimChapter,BlochOscChapter' on page 17 undefined o
+n input line 235.
 
-[61] [62 <./BEC_DFG figures/BirdsEyeApparatus.pdf>]
+[17] [18 <./BEC_DFG figures/BirdsEyeApparatus.pdf>]
 
-LaTeX Warning: Reference `SynDimChapter,BlochOscChapter' on page 63 undefined o
-n input line 233.
+LaTeX Warning: Reference `SynDimChapter,BlochOscChapter' on page 19 undefined o
+n input line 237.
 
 
-LaTeX Warning: Reference `SwaveScatteringChapter' on page 63 undefined on input
- line 235.
+LaTeX Warning: Reference `SwaveScatteringChapter' on page 19 undefined on input
+ line 239.
 
-<"BEC_DFG figures/ApparatusCoils".pdf, id=1491, 391.30692pt x 169.00339pt>
+<"BEC_DFG figures/ApparatusCoils".pdf, id=834, 391.30692pt x 169.00339pt>
 File: "BEC_DFG figures/ApparatusCoils".pdf Graphic file (type pdf)
 
 <use "BEC_DFG figures/ApparatusCoils".pdf>
 Package pdftex.def Info: "BEC_DFG figures/ApparatusCoils".pdf used on input lin
-e 239.
+e 243.
 (pdftex.def)             Requested size: 391.30595pt x 169.00298pt.
 
 
-LaTeX Warning: Reference `SwaveScatteringChapter' on page 63 undefined on input
- line 244.
+LaTeX Warning: Reference `SwaveScatteringChapter' on page 19 undefined on input
+ line 248.
 
-[63] [64 <./BEC_DFG figures/ApparatusCoils.pdf>] [65] [66]
-<"BEC_DFG figures/NewMasterBoard".png, id=1624, 433.62pt x 243.7908pt>
+[19] [20 <./BEC_DFG figures/ApparatusCoils.pdf>] [21] [22]
+<"BEC_DFG figures/NewMasterBoard".png, id=971, 433.62pt x 243.7908pt>
 File: "BEC_DFG figures/NewMasterBoard".png Graphic file (type png)
 
 <use "BEC_DFG figures/NewMasterBoard".png>
 Package pdftex.def Info: "BEC_DFG figures/NewMasterBoard".png used on input lin
-e 268.
+e 272.
 (pdftex.def)             Requested size: 433.61894pt x 243.7902pt.
 
-Overfull \hbox (7.2264pt too wide) in paragraph at lines 268--269
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 272--273
 [][] 
  []
 
-[67] [68 <./BEC_DFG figures/NewMasterBoard.png>] [69]
-<"BEC_DFG figures/HsinIsImagingBottomSchematic".png, id=1647, 397.485pt x 298.7
-16pt>
+[23] [24 <./BEC_DFG figures/NewMasterBoard.png>] [25]
+<"BEC_DFG figures/HsinIsImagingBottomSchematic".png, id=996, 397.485pt x 298.71
+6pt>
 File: "BEC_DFG figures/HsinIsImagingBottomSchematic".png Graphic file (type png
 )
  <use "BEC_DFG figures/HsinIsImagingBottomSchematic".png>
 Package pdftex.def Info: "BEC_DFG figures/HsinIsImagingBottomSchematic".png use
-d on input line 284.
+d on input line 288.
 (pdftex.def)             Requested size: 397.48402pt x 298.71526pt.
 
-<"BEC_DFG figures/HsinIsImagingLens".png, id=1649, 332.9238pt x 179.2296pt>
+<"BEC_DFG figures/HsinIsImagingLens".png, id=998, 332.9238pt x 179.2296pt>
 File: "BEC_DFG figures/HsinIsImagingLens".png Graphic file (type png)
 
 <use "BEC_DFG figures/HsinIsImagingLens".png>
 Package pdftex.def Info: "BEC_DFG figures/HsinIsImagingLens".png used on input 
-line 291.
+line 295.
 (pdftex.def)             Requested size: 332.92297pt x 179.22914pt.
- [70] [71 <./BEC_DFG figures/HsinIsImagingBottomSchematic.png>]
-<"BEC_DFG figures/HsinI's imaging path".png, id=1660, 408.91231pt x 281.05pt>
+ [26] [27 <./BEC_DFG figures/HsinIsImagingBottomSchematic.png>]
+<"BEC_DFG figures/HsinI's imaging path".png, id=1012, 408.91231pt x 281.05pt>
 File: "BEC_DFG figures/HsinI's imaging path".png Graphic file (type png)
 
 <use "BEC_DFG figures/HsinI's imaging path".png>
 Package pdftex.def Info: "BEC_DFG figures/HsinI's imaging path".png used on inp
-ut line 298.
+ut line 302.
 (pdftex.def)             Requested size: 408.9113pt x 281.0493pt.
- [72 <./BEC_DFG figures/HsinIsImagingLens.png>] [73 <./BEC_DFG figures/HsinI's 
-imaging path.png>] [74]
-Missing character: There is no Œ in font cmr12!
-Missing character: There is no º in font cmr12!
-Missing character: There is no Œ in font cmr12!
-Missing character: There is no º in font cmr12!
-Missing character: There is no Œ in font cmr12!
-Missing character: There is no º in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
-
-<"BEC_DFG figures/FPGAservoTurnOn".png, id=1679, 441.8106pt x 580.0872pt>
+ [28 <./BEC_DFG figures/HsinIsImagingLens.png>] [29 <./BEC_DFG figures/HsinI's 
+imaging path.png>] [30]
+<"BEC_DFG figures/FPGAservoTurnOn".png, id=1034, 419.166pt x 542.9886pt>
 File: "BEC_DFG figures/FPGAservoTurnOn".png Graphic file (type png)
 
 <use "BEC_DFG figures/FPGAservoTurnOn".png>
 Package pdftex.def Info: "BEC_DFG figures/FPGAservoTurnOn".png used on input li
-ne 320.
-(pdftex.def)             Requested size: 441.80951pt x 580.08578pt.
+ne 322.
+(pdftex.def)             Requested size: 419.16498pt x 542.98727pt.
 
-Overfull \hbox (15.41696pt too wide) in paragraph at lines 320--321
-[][] 
- []
-
-[75] <"BEC_DFG figures/FPGAservoCalib".png, id=1686, 433.62pt x 299.6713pt>
+<"BEC_DFG figures/FPGAservoCalib".png, id=1036, 433.62pt x 299.6713pt>
 File: "BEC_DFG figures/FPGAservoCalib".png Graphic file (type png)
 
 <use "BEC_DFG figures/FPGAservoCalib".png>
 Package pdftex.def Info: "BEC_DFG figures/FPGAservoCalib".png used on input lin
-e 327.
+e 329.
 (pdftex.def)             Requested size: 433.61894pt x 299.67055pt.
 
-Overfull \hbox (7.2264pt too wide) in paragraph at lines 327--328
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 329--330
 [][] 
  []
 
@@ -1056,783 +774,100 @@ Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
 
-Overfull \hbox (12.03918pt too wide) in paragraph at lines 332--333
-\OT1/cmr/m/n/12 the FPGA are in the shared google drive un-der 'RbK/Lab Note-bo
-ok/Electonics/FPGA
+Overfull \hbox (7.54153pt too wide) in paragraph at lines 327--334
+\OT1/cmr/m/n/12 drive un-der 'RbK/Lab Note-book/Electonics/FPGA Quad Servo (Fro
+m Ryan)'. When
  []
 
+[31] [32 <./BEC_DFG figures/FPGAservoTurnOn.png>] [33 <./BEC_DFG figures/FPGAse
+rvoCalib.png>]
 
-LaTeX Warning: Reference `chap:BochOsc' on page 76 undefined on input line 335.
+LaTeX Warning: Reference `chap:BochOsc' on page 34 undefined on input line 336.
 
 
-<"BEC_DFG figures/ODTlensSchematic".png, id=1688, 446.6286pt x 142.131pt>
+<"BEC_DFG figures/ODTlensSchematic".png, id=1055, 446.6286pt x 142.131pt>
 File: "BEC_DFG figures/ODTlensSchematic".png Graphic file (type png)
 
 <use "BEC_DFG figures/ODTlensSchematic".png>
 Package pdftex.def Info: "BEC_DFG figures/ODTlensSchematic".png used on input l
-ine 350.
+ine 351.
 (pdftex.def)             Requested size: 446.6275pt x 142.13063pt.
 
-Overfull \hbox (20.23495pt too wide) in paragraph at lines 350--351
+Overfull \hbox (20.23495pt too wide) in paragraph at lines 351--352
 [][] 
  []
 
-[76] [77 <./BEC_DFG figures/FPGAservoTurnOn.png>] [78 <./BEC_DFG figures/FPGAse
-rvoCalib.png> <./BEC_DFG figures/ODTlensSchematic.png>]
-<"BEC_DFG figures/ODTlensGraphs".png, id=1708, 433.62pt x 495.7722pt>
+[34 <./BEC_DFG figures/ODTlensSchematic.png>]
+<"BEC_DFG figures/ODTlensGraphs".png, id=1067, 433.62pt x 495.7722pt>
 File: "BEC_DFG figures/ODTlensGraphs".png Graphic file (type png)
 
 <use "BEC_DFG figures/ODTlensGraphs".png>
 Package pdftex.def Info: "BEC_DFG figures/ODTlensGraphs".png used on input line
- 360.
+ 361.
 (pdftex.def)             Requested size: 433.61894pt x 495.77098pt.
 
-Overfull \hbox (7.2264pt too wide) in paragraph at lines 360--361
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 361--362
 [][] 
  []
 
-[79] [80 <./BEC_DFG figures/ODTlensGraphs.png>] [81]
-Overfull \hbox (0.33328pt too wide) in paragraph at lines 382--383
+[35] [36 <./BEC_DFG figures/ODTlensGraphs.png>] [37] [38]
+Overfull \hbox (0.33328pt too wide) in paragraph at lines 383--384
 []\OT1/cmr/m/n/12 The de-sign of our 2D MOT is closely based on the de-sign in 
 Thomas Uehlinger's
  []
 
-[82] <"BEC_DFG figures/2DMOTschematic".png, id=1743, 462.0462pt x 361.35pt>
+<"BEC_DFG figures/2DMOTschematic".png, id=1102, 462.0462pt x 361.35pt>
 File: "BEC_DFG figures/2DMOTschematic".png Graphic file (type png)
 
 <use "BEC_DFG figures/2DMOTschematic".png>
 Package pdftex.def Info: "BEC_DFG figures/2DMOTschematic".png used on input lin
-e 388.
+e 389.
 (pdftex.def)             Requested size: 462.04506pt x 361.34912pt.
 
-Overfull \hbox (35.65251pt too wide) in paragraph at lines 388--389
+Overfull \hbox (35.65251pt too wide) in paragraph at lines 389--390
 [][] 
  []
 
-<"BEC_DFG figures/2DMOTcellPhoto".png, id=1746, 433.62pt x 243.7908pt>
+<"BEC_DFG figures/2DMOTcellPhoto".png, id=1105, 433.62pt x 243.7908pt>
 File: "BEC_DFG figures/2DMOTcellPhoto".png Graphic file (type png)
 
 <use "BEC_DFG figures/2DMOTcellPhoto".png>
 Package pdftex.def Info: "BEC_DFG figures/2DMOTcellPhoto".png used on input lin
-e 395.
+e 396.
 (pdftex.def)             Requested size: 433.61894pt x 243.7902pt.
 
-Overfull \hbox (7.2264pt too wide) in paragraph at lines 395--396
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 396--397
 [][] 
  []
 
-[83] [84 <./BEC_DFG figures/2DMOTschematic.png>] [85 <./BEC_DFG figures/2DMOTce
+[39] [40 <./BEC_DFG figures/2DMOTschematic.png>] [41 <./BEC_DFG figures/2DMOTce
 llPhoto.png>]
-<"BEC_DFG figures/2DMOToptics".pdf, id=1766, 433.62pt x 233.09586pt>
+<"BEC_DFG figures/2DMOToptics".pdf, id=1130, 433.62pt x 233.09586pt>
 File: "BEC_DFG figures/2DMOToptics".pdf Graphic file (type pdf)
 
 <use "BEC_DFG figures/2DMOToptics".pdf>
 Package pdftex.def Info: "BEC_DFG figures/2DMOToptics".pdf used on input line 4
-07.
+08.
 (pdftex.def)             Requested size: 433.61894pt x 233.09528pt.
 
-Overfull \hbox (7.2264pt too wide) in paragraph at lines 407--408
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 408--409
 [][] 
  []
 
-<"BEC_DFG figures/Current2DMOTphoto".png, id=1768, 433.62pt x 243.7908pt>
+<"BEC_DFG figures/Current2DMOTphoto".png, id=1132, 433.62pt x 243.7908pt>
 File: "BEC_DFG figures/Current2DMOTphoto".png Graphic file (type png)
 
 <use "BEC_DFG figures/Current2DMOTphoto".png>
 Package pdftex.def Info: "BEC_DFG figures/Current2DMOTphoto".png used on input 
-line 414.
+line 415.
 (pdftex.def)             Requested size: 433.61894pt x 243.7902pt.
 
-Overfull \hbox (7.2264pt too wide) in paragraph at lines 414--415
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 415--416
 [][] 
  []
 
-[86]) [87 <./BEC_DFG figures/2DMOToptics.pdf>] [88 <./BEC_DFG figures/Current2D
-MOTphoto.png>]
-\openout2 = `AbsorptionImagingChapter.aux'.
-
- (AbsorptionImagingChapter.tex
-Chapter 3.
-
-LaTeX Warning: Reference `SwaveScatteringChapter' on page 89 undefined on input
- line 5.
-
-[89
-
-
-] [90] <"Chapter2 Figures/figure1".pdf, id=1818, 231.26399pt x 216.81pt>
-File: "Chapter2 Figures/figure1".pdf Graphic file (type pdf)
-
-<use "Chapter2 Figures/figure1".pdf>
-Package pdftex.def Info: "Chapter2 Figures/figure1".pdf used on input line 53.
-(pdftex.def)             Requested size: 231.26341pt x 216.80946pt.
-
-<"Chapter2 Figures/figure2".pdf, id=1819, 231.26399pt x 216.81pt>
-File: "Chapter2 Figures/figure2".pdf Graphic file (type pdf)
-
-<use "Chapter2 Figures/figure2".pdf>
-Package pdftex.def Info: "Chapter2 Figures/figure2".pdf used on input line 54.
-(pdftex.def)             Requested size: 231.26341pt x 216.80946pt.
-
-Overfull \hbox (38.74536pt too wide) in paragraph at lines 53--55
-[][] [][] 
- []
-
-[91] [92 <./Chapter2 Figures/figure1.pdf> <./Chapter2 Figures/figure2.pdf
-
-pdfTeX warning: miktex-pdftex.exe (file ./Chapter2 Figures/figure2.pdf): PDF in
-clusion: multiple pdfs with page group included in a single page
->]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 81.
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 84.
- <"Chapter2 Figures/figure3".pdf, id=1879, 433.62pt x 216.81pt>
-File: "Chapter2 Figures/figure3".pdf Graphic file (type pdf)
-
-<use "Chapter2 Figures/figure3".pdf>
-Package pdftex.def Info: "Chapter2 Figures/figure3".pdf used on input line 118.
-
-(pdftex.def)             Requested size: 433.61894pt x 216.80946pt.
-
-Overfull \hbox (7.2264pt too wide) in paragraph at lines 118--119
-[][] 
- []
-
-[93] <"Chapter2 Figures/figure4".pdf, id=1915, 231.26399pt x 216.81pt>
-File: "Chapter2 Figures/figure4".pdf Graphic file (type pdf)
-
-<use "Chapter2 Figures/figure4".pdf>
-Package pdftex.def Info: "Chapter2 Figures/figure4".pdf used on input line 126.
-
-(pdftex.def)             Requested size: 231.26341pt x 216.80946pt.
-
-<"Chapter2 Figures/figure5".pdf, id=1916, 231.26399pt x 216.81pt>
-File: "Chapter2 Figures/figure5".pdf Graphic file (type pdf)
-
-<use "Chapter2 Figures/figure5".pdf>
-Package pdftex.def Info: "Chapter2 Figures/figure5".pdf used on input line 127.
-
-(pdftex.def)             Requested size: 231.26341pt x 216.80946pt.
-
-Overfull \hbox (38.74536pt too wide) in paragraph at lines 126--128
-[][] [][] 
- []
-
-[94 <./Chapter2 Figures/figure3.pdf>] [95 <./Chapter2 Figures/figure4.pdf> <./C
-hapter2 Figures/figure5.pdf
-
-pdfTeX warning: miktex-pdftex.exe (file ./Chapter2 Figures/figure5.pdf): PDF in
-clusion: multiple pdfs with page group included in a single page
->]pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.146 \STATE
-             $z[n]=z_0$, $\delta[n]=0$ \COMMENT{initialize position and detu...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@rem.1}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.146 \STATE
-             $z[n]=z_0$, $\delta[n]=0$ \COMMENT{initialize position and detu...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.2}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.147 \STATE
-             $O[i]=n$ \COMMENT{make a list of composite atom indexes, ordere...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@rem.2}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.147 \STATE
-             $O[i]=n$ \COMMENT{make a list of composite atom indexes, ordere...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.3}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.148 \STATE
-             $I[n=0,t]=I_0$ \COMMENT{ $t$ is the time index, $I$ is in units...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@rem.3}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.148 \STATE
-             $I[n=0,t]=I_0$ \COMMENT{ $t$ is the time index, $I$ is in units...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.4}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.149 \STATE
-             $H_f=0$ \COMMENT{Radiant fluence seen by camera after passing t...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@rem.4}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.149 \STATE
-             $H_f=0$ \COMMENT{Radiant fluence seen by camera after passing t...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.5}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.150 \FOR[loop over time steps]{$t=0$ to $t_f$}
-                                                pdfTeX warning (ext4): destinat
-ion with the same identifier (name{ALC@rem.5}) has been already used, duplicate
- ignored
-<to be read again> 
-                   \relax 
-l.150 \FOR[loop over time steps]{$t=0$ to $t_f$}
-                                                pdfTeX warning (ext4): destinat
-ion with the same identifier (name{ALC@line.6}) has been already used, duplicat
-e ignored
-<to be read again> 
-                   \relax 
-l.151  \FOR[loop over superatoms]{$i=1$ to $N$}
-                                               pdfTeX warning (ext4): destinati
-on with the same identifier (name{ALC@rem.6}) has been already used, duplicate 
-ignored
-<to be read again> 
-                   \relax 
-l.151  \FOR[loop over superatoms]{$i=1$ to $N$}
-                                               pdfTeX warning (ext4): destinati
-on with the same identifier (name{ALC@line.7}) has been already used, duplicate
- ignored
-<to be read again> 
-                   \relax 
-l.152 \STATE
-             $n=O[i]$ \COMMENT{apply probe intensity to composite atoms in o...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@rem.7}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.152 \STATE
-             $n=O[i]$ \COMMENT{apply probe intensity to composite atoms in o...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.8}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.153  \STATE
-              $A=\sigma_0 N_{sa} dz$ \COMMENT{dz is length over which atoms ...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@rem.8}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.153  \STATE
-              $A=\sigma_0 N_{sa} dz$ \COMMENT{dz is length over which atoms ...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.9}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.154  \STATE
-              $B=v_{\rm{r}} dt/(\hbar c  N_{sa})$  \COMMENT{dt is the time s...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@rem.9}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.154  \STATE
-              $B=v_{\rm{r}} dt/(\hbar c  N_{sa})$  \COMMENT{dt is the time s...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.10})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.155 \STATE
-             $I[n,t]=I[n-1,t] - A I[n-1,t]/(1+\delta[n]^2+I[n-1,t])$  \COMME...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@rem.10}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.155 \STATE
-             $I[n,t]=I[n-1,t] - A I[n-1,t]/(1+\delta[n]^2+I[n-1,t])$  \COMME...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.11})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.156 \STATE
-             $\delta[n]\mathrel{+}=B\left(I[n-1,t]-I[n,t]\right)$  \COMMENT{...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@rem.11}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.156 \STATE
-             $\delta[n]\mathrel{+}=B\left(I[n-1,t]-I[n,t]\right)$  \COMMENT{...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.12})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.157 \STATE
-             $z[n]\mathrel{+}=dt\Gamma\delta/2k$ \COMMENT{$k$ is the wavenum...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@rem.12}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.157 \STATE
-             $z[n]\mathrel{+}=dt\Gamma\delta/2k$ \COMMENT{$k$ is the wavenum...
-pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.13})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.158 \ENDFOR
-             pdfTeX warning (ext4): destination with the same identifier (name{
-ALC@rem.13}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.158 \ENDFOR
-              [96]pdfTeX warning (ext4): destination with the same identifier (
-name{subfigure.4.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.179 	\subfigure
-                 []{\includegraphics[scale=0.9]{"Chapter2 Figures/figure6a"....
-<"Chapter2 Figures/figure6a".pdf, id=2008, 397.485pt x 252.945pt>
-File: "Chapter2 Figures/figure6a".pdf Graphic file (type pdf)
-
-<use "Chapter2 Figures/figure6a".pdf>
-Package pdftex.def Info: "Chapter2 Figures/figure6a".pdf used on input line 179
-.
-(pdftex.def)             Requested size: 357.73318pt x 227.64839pt.
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.4.2
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.180 	\subfigure
-                 []{\includegraphics[scale=0.9]{"Chapter2 Figures/figure6b"....
-<"Chapter2 Figures/figure6b".pdf, id=2009, 397.485pt x 252.945pt>
-File: "Chapter2 Figures/figure6b".pdf Graphic file (type pdf)
-
-<use "Chapter2 Figures/figure6b".pdf>
-Package pdftex.def Info: "Chapter2 Figures/figure6b".pdf used on input line 180
-.
-(pdftex.def)             Requested size: 357.73318pt x 227.64839pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 179--181
-[][]
- []
-
-<"Chapter2 Figures/figure7".pdf, id=2011, 231.26399pt x 216.81pt>
-File: "Chapter2 Figures/figure7".pdf Graphic file (type pdf)
-
-<use "Chapter2 Figures/figure7".pdf>
-Package pdftex.def Info: "Chapter2 Figures/figure7".pdf used on input line 191.
-
-(pdftex.def)             Requested size: 231.26341pt x 216.80946pt.
-
-<"Chapter2 Figures/figure8".pdf, id=2012, 231.26399pt x 216.81pt>
-File: "Chapter2 Figures/figure8".pdf Graphic file (type pdf)
-
-<use "Chapter2 Figures/figure8".pdf>
-Package pdftex.def Info: "Chapter2 Figures/figure8".pdf used on input line 192.
-
-(pdftex.def)             Requested size: 231.26341pt x 216.80946pt.
-
-Overfull \hbox (38.74536pt too wide) in paragraph at lines 191--193
-[][] [][] 
- []
-
-[97] [98 <./Chapter2 Figures/figure6a.pdf> <./Chapter2 Figures/figure6b.pdf
-
-pdfTeX warning: miktex-pdftex.exe (file ./Chapter2 Figures/figure6b.pdf): PDF i
-nclusion: multiple pdfs with page group included in a single page
->] [99 <./Chapter2 Figures/figure7.pdf> <./Chapter2 Figures/figure8.pdf
-
-pdfTeX warning: miktex-pdftex.exe (file ./Chapter2 Figures/figure8.pdf): PDF in
-clusion: multiple pdfs with page group included in a single page
->] [100] <"Chapter2 Figures/figure9a".pdf, id=2140, 231.26399pt x 216.81pt>
-File: "Chapter2 Figures/figure9a".pdf Graphic file (type pdf)
-
-<use "Chapter2 Figures/figure9a".pdf>
-Package pdftex.def Info: "Chapter2 Figures/figure9a".pdf used on input line 231
-.
-(pdftex.def)             Requested size: 231.26341pt x 216.80946pt.
-
-<"Chapter2 Figures/figure9b".pdf, id=2141, 231.26399pt x 216.81pt>
-File: "Chapter2 Figures/figure9b".pdf Graphic file (type pdf)
-
-<use "Chapter2 Figures/figure9b".pdf>
-Package pdftex.def Info: "Chapter2 Figures/figure9b".pdf used on input line 232
-.
-(pdftex.def)             Requested size: 231.26341pt x 216.80946pt.
-
-Overfull \hbox (38.74536pt too wide) in paragraph at lines 231--233
-[][] [][] 
- []
-
-) [101] [102 <./Chapter2 Figures/figure9a.pdf> <./Chapter2 Figures/figure9b.pdf
-
-
-pdfTeX warning: miktex-pdftex.exe (file ./Chapter2 Figures/figure9b.pdf): PDF i
-nclusion: multiple pdfs with page group included in a single page
->]
-\openout2 = `SwaveScatteringChapter.aux'.
-
- (SwaveScatteringChapter.tex
-Chapter 4.
-
-Overfull \hbox (35.56223pt too wide) in paragraph at lines 5--6
-\OT1/cmr/m/n/12 ha-los of $[]K$ atoms in the vicin-ity of a Fes-bach res-o-nanc
-e be-tween the $[]$
- []
-
-[103
-
-
-] [104] [105]pdfTeX warning (ext4): destination with the same identifier (name{
-subfigure.1.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.36 	\subfigure
-                []{\includegraphics{"Chapter3 Figures/figure10a".pdf}}
-<"Chapter3 Figures/figure10a".pdf, id=2232, 216.81pt x 216.81pt>
-File: "Chapter3 Figures/figure10a".pdf Graphic file (type pdf)
-
-<use "Chapter3 Figures/figure10a".pdf>
-Package pdftex.def Info: "Chapter3 Figures/figure10a".pdf used on input line 36
-.
-(pdftex.def)             Requested size: 216.80946pt x 216.80946pt.
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.37 	\subfigure
-                []{\includegraphics{"Chapter3 Figures/figure10b".pdf}}
-<"Chapter3 Figures/figure10b".pdf, id=2233, 216.81pt x 216.81pt>
-File: "Chapter3 Figures/figure10b".pdf Graphic file (type pdf)
-
-<use "Chapter3 Figures/figure10b".pdf>
-Package pdftex.def Info: "Chapter3 Figures/figure10b".pdf used on input line 37
-.
-(pdftex.def)             Requested size: 216.80946pt x 216.80946pt.
-
-Overfull \hbox (9.83746pt too wide) in paragraph at lines 36--38
-[][] [][] 
- []
-
-[106] <"Chapter3 Figures/Picture12".pdf, id=2239, 794.97pt x 614.295pt>
-File: "Chapter3 Figures/Picture12".pdf Graphic file (type pdf)
-
-<use "Chapter3 Figures/Picture12".pdf>
-Package pdftex.def Info: "Chapter3 Figures/Picture12".pdf used on input line 44
-.
-(pdftex.def)             Requested size: 174.89394pt x 135.14531pt.
-
-<"Chapter3 Figures/figure12b".pdf, id=2240, 289.08pt x 180.675pt>
-File: "Chapter3 Figures/figure12b".pdf Graphic file (type pdf)
-
-<use "Chapter3 Figures/figure12b".pdf>
-Package pdftex.def Info: "Chapter3 Figures/figure12b".pdf used on input line 45
-.
-(pdftex.def)             Requested size: 260.16959pt x 162.60599pt.
-
-Overfull \hbox (11.28206pt too wide) in paragraph at lines 44--46
-[][] [][] 
- []
-
-[107 <./Chapter3 Figures/figure10a.pdf> <./Chapter3 Figures/figure10b.pdf
-
-pdfTeX warning: miktex-pdftex.exe (file ./Chapter3 Figures/figure10b.pdf): PDF 
-inclusion: multiple pdfs with page group included in a single page
->] [108 <./Chapter3 Figures/Picture12.pdf, page is rotated 90 degrees> <./Chapt
-er3 Figures/figure12b.pdf>] [109]
-<"Chapter3 Figures/figure11".pdf, id=3100, 325.215pt x 252.945pt>
-File: "Chapter3 Figures/figure11".pdf Graphic file (type pdf)
-
-<use "Chapter3 Figures/figure11".pdf>
-Package pdftex.def Info: "Chapter3 Figures/figure11".pdf used on input line 71.
-
-(pdftex.def)             Requested size: 325.2142pt x 252.94438pt.
- [110]) [111 <./Chapter3 Figures/figure11.pdf>]
-\openout2 = `SynDimChapter.aux'.
-
- (SynDimChapter.tex
-Chapter 5.
-[112
-
-
-]
-<"SynDim Figures/Fig1_Schematic".pdf, id=3206, 361.44937pt x 319.82887pt>
-File: "SynDim Figures/Fig1_Schematic".pdf Graphic file (type pdf)
-
-<use "SynDim Figures/Fig1_Schematic".pdf>
-Package pdftex.def Info: "SynDim Figures/Fig1_Schematic".pdf used on input line
- 30.
-(pdftex.def)             Requested size: 361.44847pt x 319.82808pt.
- [113] [114 <./SynDim Figures/Fig1_Schematic.pdf>] [115] [116] [117]
-Overfull \hbox (10.4841pt too wide) in paragraph at lines 103--104
-[]\OT1/cmr/m/n/12 For com-pu-ta-tional con-ve-nience, we con-vert to lat-tice r
-e-coil units, $\OML/cmm/m/it/12 E[] \OT1/cmr/m/n/12 = [][]\OML/cmm/m/it/12 k[]=
-\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 m$\OT1/cmr/m/n/12 ,
- []
-
-
-Overfull \hbox (0.38487pt too wide) detected at line 110
-[][]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 n\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 =E[] \
-OT1/cmr/m/n/12 = [] [] \OML/cmm/m/it/12 ;
- []
-
-[118]
-<"SynDim Figures/SynDimBandStructure".pdf, id=3394, 448.07399pt x 361.35pt>
-File: "SynDim Figures/SynDimBandStructure".pdf Graphic file (type pdf)
-
-<use "SynDim Figures/SynDimBandStructure".pdf>
-Package pdftex.def Info: "SynDim Figures/SynDimBandStructure".pdf used on input
- line 137.
-(pdftex.def)             Requested size: 448.07288pt x 361.34912pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 137--138
-[][] 
- []
-
-[119] [120 <./SynDim Figures/SynDimBandStructure.pdf>] [121]
-<"SynDim Figures/SynDimPulsing".pdf, id=3465, 448.07399pt x 433.62pt>
-File: "SynDim Figures/SynDimPulsing".pdf Graphic file (type pdf)
-
-<use "SynDim Figures/SynDimPulsing".pdf>
-Package pdftex.def Info: "SynDim Figures/SynDimPulsing".pdf used on input line 
-154.
-(pdftex.def)             Requested size: 448.07288pt x 433.61894pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 154--155
-[][] 
- []
-
-
-LaTeX Warning: Float too large for page by 13.02226pt on input line 157.
-
-[122] [123 <./SynDim Figures/SynDimPulsing.pdf>] [124]
-Overfull \hbox (18.82191pt too wide) detected at line 186
-[]\OML/cmm/m/it/12 H \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12  [] [] \OML/cmm/m/it/12
- t[]\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 k[]; m \OT1/cmr/m/n/12 + 1\OMS/cmsy/m/n/
-12 ih\OML/cmm/m/it/12 k[]; m\OMS/cmsy/m/n/12 j \OT1/cmr/m/n/12 + \OML/cmm/m/it/
-12 h:c: \OT1/cmr/m/n/12 + 2\OML/cmm/m/it/12 t[][]\OT1/cmr/m/n/12 (\OML/cmm/m/it
-/12 k[] \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 []\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/1
-2 j\OML/cmm/m/it/12 k[]; m\OMS/cmsy/m/n/12 ih\OML/cmm/m/it/12 k[]; m\OMS/cmsy/m
-/n/12 j \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 A[]\OMS/cmsy/m/n/12 j\OML/cmm/m/it/1
-2 k[]; m\OMS/cmsy/m/n/12 ih\OML/cmm/m/it/12 k[]; m\OMS/cmsy/m/n/12 j
- []
-
-[125] <"SynDim Figures/tbFit".pdf, id=3543, 448.07399pt x 216.81pt>
-File: "SynDim Figures/tbFit".pdf Graphic file (type pdf)
-
-<use "SynDim Figures/tbFit".pdf>
-Package pdftex.def Info: "SynDim Figures/tbFit".pdf used on input line 191.
-(pdftex.def)             Requested size: 448.07288pt x 216.80946pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 191--192
-[][] 
- []
-
-[126 <./SynDim Figures/tbFit.pdf>]
-<"SynDim Figures/Fig2_EdgeStates".pdf, id=3574, 264.99pt x 404.02745pt>
-File: "SynDim Figures/Fig2_EdgeStates".pdf Graphic file (type pdf)
-
-<use "SynDim Figures/Fig2_EdgeStates".pdf>
-Package pdftex.def Info: "SynDim Figures/Fig2_EdgeStates".pdf used on input lin
-e 226.
-(pdftex.def)             Requested size: 264.98935pt x 404.02646pt.
- [127] [128 <./SynDim Figures/Fig2_EdgeStates.pdf>]
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
-
-
-LaTeX Warning: Reference `fig:SynDimSetup' on page 129 undefined on input line 
-244.
-
-[129]
-<"SynDim Figures/Fig3_EdgeCurrent".pdf, id=3636, 365.365pt x 406.76968pt>
-File: "SynDim Figures/Fig3_EdgeCurrent".pdf Graphic file (type pdf)
-
-<use "SynDim Figures/Fig3_EdgeCurrent".pdf>
-Package pdftex.def Info: "SynDim Figures/Fig3_EdgeCurrent".pdf used on input li
-ne 249.
-(pdftex.def)             Requested size: 365.3641pt x 406.76868pt.
- [130] [131 <./SynDim Figures/Fig3_EdgeCurrent.pdf>]
-<"SynDim Figures/Fig4_SkippingOrbit".pdf, id=3690, 266.9975pt x 402.50375pt>
-File: "SynDim Figures/Fig4_SkippingOrbit".pdf Graphic file (type pdf)
-
-<use "SynDim Figures/Fig4_SkippingOrbit".pdf>
-Package pdftex.def Info: "SynDim Figures/Fig4_SkippingOrbit".pdf used on input 
-line 264.
-(pdftex.def)             Requested size: 266.99683pt x 402.50276pt.
- [132] [133 <./SynDim Figures/Fig4_SkippingOrbit.pdf>]) [134]
-\openout2 = `BlochOscChapter.aux'.
-
- (BlochOscChapter.tex
-Chapter 6.
-[135
-
-
-] <"BlochOsc Figures/figure1v15".pdf, id=3778, 440.84702pt x 371.88937pt>
-File: "BlochOsc Figures/figure1v15".pdf Graphic file (type pdf)
-
-<use "BlochOsc Figures/figure1v15".pdf>
-Package pdftex.def Info: "BlochOsc Figures/figure1v15".pdf used on input line 1
-3.
-(pdftex.def)             Requested size: 440.84593pt x 371.88846pt.
-
-Overfull \hbox (14.45338pt too wide) in paragraph at lines 13--14
-[][] 
- []
-
-
-LaTeX Warning: Reference `sec:qh' on page 136 undefined on input line 18.
-
-
-LaTeX Warning: Reference `sec:Diophantine' on page 136 undefined on input line 
-18.
-
-[136] [137 <./BlochOsc Figures/figure1v15.pdf>]
-<"BlochOsc Figures/LoadF2".pdf, id=3893, 448.07399pt x 216.81pt>
-File: "BlochOsc Figures/LoadF2".pdf Graphic file (type pdf)
-
-<use "BlochOsc Figures/LoadF2".pdf>
-Package pdftex.def Info: "BlochOsc Figures/LoadF2".pdf used on input line 29.
-(pdftex.def)             Requested size: 448.07288pt x 216.80946pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 29--30
-[][] 
- []
-
-[138] [139 <./BlochOsc Figures/LoadF2.pdf>]
-<"BlochOsc Figures/kickFigure".pdf, id=3944, 448.07399pt x 216.81pt>
-File: "BlochOsc Figures/kickFigure".pdf Graphic file (type pdf)
-
-<use "BlochOsc Figures/kickFigure".pdf>
-Package pdftex.def Info: "BlochOsc Figures/kickFigure".pdf used on input line 4
-5.
-(pdftex.def)             Requested size: 448.07288pt x 216.80946pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 45--46
-[][] 
- []
-
-<"BlochOsc Figures/figure2Av2".pdf, id=3948, 330.73563pt x 320.48532pt>
-File: "BlochOsc Figures/figure2Av2".pdf Graphic file (type pdf)
-
-<use "BlochOsc Figures/figure2Av2".pdf>
-Package pdftex.def Info: "BlochOsc Figures/figure2Av2".pdf used on input line 5
-2.
-(pdftex.def)             Requested size: 330.7348pt x 320.48454pt.
- [140 <./BlochOsc Figures/kickFigure.pdf>] [141 <./BlochOsc Figures/figure2Av2.
-pdf>]
-
-LaTeX Warning: Reference `fig:LaughlinPump' on page 142 undefined on input line
- 59.
-
-[142] <"BlochOsc Figures/RfCorrection".pdf, id=4023, 448.07399pt x 505.89pt>
-File: "BlochOsc Figures/RfCorrection".pdf Graphic file (type pdf)
-
-<use "BlochOsc Figures/RfCorrection".pdf>
-Package pdftex.def Info: "BlochOsc Figures/RfCorrection".pdf used on input line
- 69.
-(pdftex.def)             Requested size: 448.07288pt x 505.88875pt.
-
-Overfull \hbox (21.68033pt too wide) in paragraph at lines 69--70
-[][] 
- []
-
-[143] [144 <./BlochOsc Figures/RfCorrection.pdf>] [145] [146]
-<"BlochOsc Figures/figure2Bv3".pdf, id=4113, 408.59653pt x 243.74362pt>
-File: "BlochOsc Figures/figure2Bv3".pdf Graphic file (type pdf)
-
-<use "BlochOsc Figures/figure2Bv3".pdf>
-Package pdftex.def Info: "BlochOsc Figures/figure2Bv3".pdf used on input line 1
-31.
-(pdftex.def)             Requested size: 408.59552pt x 243.74301pt.
-
-
-LaTeX Warning: Reference `fig:bandStructure' on page 147 undefined on input lin
-e 138.
-
-[147] [148 <./BlochOsc Figures/figure2Bv3.pdf>]
-
-LaTeX Warning: Reference `fig:NarrowBandGap' on page 149 undefined on input lin
-e 140.
-
-
-LaTeX Warning: Reference `fig:NarrowBandGap' on page 149 undefined on input lin
-e 140.
-
-
-LaTeX Warning: Reference `fig:NarrowBandGap' on page 149 undefined on input lin
-e 140.
-
-<"BlochOsc Figures/NarrowBandGap".png, id=4144, 458.1918pt x 233.1912pt>
-File: "BlochOsc Figures/NarrowBandGap".png Graphic file (type png)
-
-<use "BlochOsc Figures/NarrowBandGap".png>
-Package pdftex.def Info: "BlochOsc Figures/NarrowBandGap".png used on input lin
-e 143.
-(pdftex.def)             Requested size: 458.19069pt x 233.19061pt.
-
-Overfull \hbox (31.79814pt too wide) in paragraph at lines 143--144
-[][] 
- []
-
-[149] [150 <./BlochOsc Figures/NarrowBandGap.png>]
-
-LaTeX Warning: Citation `MacDonald1984' on page 151 undefined on input line 159
-.
-
-
-LaTeX Warning: Citation `Kunz1986' on page 151 undefined on input line 159.
-
-<"BlochOsc Figures/figure3v7".pdf, id=4162, 419.5675pt x 245.41687pt>
-File: "BlochOsc Figures/figure3v7".pdf Graphic file (type pdf)
-
-<use "BlochOsc Figures/figure3v7".pdf>
-Package pdftex.def Info: "BlochOsc Figures/figure3v7".pdf used on input line 16
-2.
-(pdftex.def)             Requested size: 419.56647pt x 245.41626pt.
-
-
-LaTeX Warning: Reference `eqn:Hamiltonian' on page 151 undefined on input line 
-167.
-
-
-LaTeX Warning: Reference `eqn:Hamiltonian' on page 151 undefined on input line 
-167.
-
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
-[151] [152 <./BlochOsc Figures/figure3v7.pdf>]
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no î in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no î in font cmr12!
-
-<"BlochOsc Figures/FitGaussiansChern".pdf, id=4205, 433.62pt x 352.31625pt>
-File: "BlochOsc Figures/FitGaussiansChern".pdf Graphic file (type pdf)
-
-<use "BlochOsc Figures/FitGaussiansChern".pdf>
-Package pdftex.def Info: "BlochOsc Figures/FitGaussiansChern".pdf used on input
- line 172.
-(pdftex.def)             Requested size: 433.61894pt x 352.31538pt.
-
-Overfull \hbox (7.2264pt too wide) in paragraph at lines 172--173
-[][] 
- []
-
-[153] [154 <./BlochOsc Figures/FitGaussiansChern.pdf>]
-<"BlochOsc Figures/figure4v4".pdf, id=4245, 440.84702pt x 275.27844pt>
-File: "BlochOsc Figures/figure4v4".pdf Graphic file (type pdf)
-
-<use "BlochOsc Figures/figure4v4".pdf>
-Package pdftex.def Info: "BlochOsc Figures/figure4v4".pdf used on input line 18
-2.
-(pdftex.def)             Requested size: 440.84593pt x 275.27776pt.
-
-Overfull \hbox (14.45338pt too wide) in paragraph at lines 182--183
-[][] 
- []
-
-[155 <./BlochOsc Figures/figure4v4.pdf>]) [156] (mainthesis.bbl
+[42]) [43 <./BEC_DFG figures/2DMOToptics.pdf>] [44 <./BEC_DFG figures/Current2D
+MOTphoto.png>] (mainthesis.bbl
 Underfull \hbox (badness 2503) in paragraph at lines 24--28
 []\OT1/cmr/m/n/12 Daniel Adam Steck.  Ru-bid-ium 87 d line data.  Avail-able on
 -line,
@@ -1850,28 +885,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--35
  2011.
  []
 
-[157
+[45
 
-] [158] [159] [160]
+] [46] [47] [48]
 Missing character: There is no √ in font cmr12!
 Missing character: There is no ± in font cmr12!
- [161] [162] [163]
+ [49] [50] [51]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no â in font cmr12!
- [164])
+ [52]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ì in font cmr12!
+ [53])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 161.
- [165]
+ [54]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 161.
  (mainthesis.aux
-(Abstract.aux) (Titlepage.aux) (Copyright.aux) (ChernNumberChapter.aux)
-(AtomLightChapter.aux) (IntroChapter.aux) (AbsorptionImagingChapter.aux)
-(SwaveScatteringChapter.aux) (SynDimChapter.aux) (BlochOscChapter.aux))
+(Abstract.aux) (Titlepage.aux) (Copyright.aux) (IntroChapter.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 161.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 161.
-Package rerunfilecheck Info: File `mainthesis.out' has not changed.
-(rerunfilecheck)             Checksum: DCB9881F79D81B2CEEB0419CFFE81D48;5769.
 
+
+Package rerunfilecheck Warning: File `mainthesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `mainthesis.out':
+(rerunfilecheck)             Before: 4C5AD5B04BEBB825085AF0F8046D7E4E;6048
+(rerunfilecheck)             After:  5A64EF2DD5781D3BF499AFCEC8A86C5B;1265.
 
 LaTeX Warning: There were undefined references.
 
@@ -1881,36 +924,450 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 161.
  ) 
 Here is how much of TeX's memory you used:
- 8362 strings out of 493333
- 125214 string characters out of 3139191
- 214030 words of memory out of 3000000
- 11047 multiletter control sequences out of 15000+200000
- 12942 words of font info for 49 fonts, out of 3000000 for 9000
+ 7831 strings out of 493333
+ 113287 string characters out of 3139191
+ 214353 words of memory out of 3000000
+ 10801 multiletter control sequences out of 15000+200000
+ 11898 words of font info for 46 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,10n,34p,1922b,564s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx6.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mssi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on mainthesis.pdf (175 pages, 12370379 bytes).
+ 42i,8n,34p,1641b,448s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{equation.3.1.6} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.3.1.5} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.3.1.12} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.3.1.9} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.3.1.7} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.7.11} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.7.10} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.7.9} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.7.8} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.7.7} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.7.6} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.7.5} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.7.4} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.7.3} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.7.2} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.7.1} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.6.7} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.6.6} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.6.5} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.6.4} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.6.3} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.6.2} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.6.1} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.5.3} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.5.2} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.5.1} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.4.6} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.4.5} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.4.4} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.4.3} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.4.2} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.4.1} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.3.20} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.3.19} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.3.18} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.3.17} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.3.16} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.3.15} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.3.14} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.3.13} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.3.12} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.3.11} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.3.10} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.3.9} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.3.8} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.3.7} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.3.6} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.3.5} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.3.4} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.3.3} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.3.2} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.3.1} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.2.13} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.2.12} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.2.11} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.2.10} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.2.9} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.2.8} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.2.7} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.2.6} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.2.5} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.2.4} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.2.3} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.2.2} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.2.1} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.3.3.4.4} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.3.3.4.3} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.3.3.4.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.3.3.4.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.7.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.7.3.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.7.3.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.7.3.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.7.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.7.2.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.7.2.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.7.2.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.7.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.7.1.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.7.1.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.7.1.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.7.1.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.7.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.7} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{section.6.5} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.6.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.6.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.2.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.2.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.2.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.2.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.6.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.6.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.6} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{section.5.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.5.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.5.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.5} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.6} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.5} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.4} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.3.6} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.3.5} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.3.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.3.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.3.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.3.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.3.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.2.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.2.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.3.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.1.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.1.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.3.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.3} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.6.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.6.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.6.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.2.6} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.5.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.5.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.5.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.2.5} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.4.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.2.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.2.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.2.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.2.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.2.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.2.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.1.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.1.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.2.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.2} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.1.1.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.1.1.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmti12.pfb>
+Output written on mainthesis.pdf (64 pages, 6414452 bytes).
 PDF statistics:
- 4487 PDF objects out of 5155 (max. 8388607)
- 546 named destinations out of 1000 (max. 500000)
- 979 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1373 PDF objects out of 1440 (max. 8388607)
+ 343 named destinations out of 1000 (max. 500000)
+ 733 words of extra memory for PDF output out of 10000 (max. 10000000)
 

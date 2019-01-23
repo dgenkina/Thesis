@@ -22,7 +22,7 @@ q=3.0
 c=-1064.0/790.0#4.0/q#0.0#
 periodic=False
 Flat=True
-saveBandStruct=True
+saveBandStruct=False
 
 #
 #S=4
@@ -400,4 +400,4 @@ def plotSynDimBandStructGenTBClean(omega, delta, epsilon, tx, S, m0,c=c,kList=np
             pan3.scatter(kList,[i for j in range(kList.size)],c=pops[:,int(np.ceil(s/q))-1,i],cmap='Blues',vmin=0.0,vmax=1.0/S,marker='_',linewidths=10)
 
 
-    return kList, E, m
+    return kList, E, m, pops

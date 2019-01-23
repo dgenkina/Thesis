@@ -388,6 +388,13 @@ Dario H\"{u}gel and Bel\'{e}n Paredes.
 \newblock {Chiral ladders and the edges of quantum Hall insulators}.
 \newblock {\em Phys. Rev. A}, 89(2):023619, 2014.
 
+\bibitem{Harper1955}
+P~G Harper.
+\newblock Single band motion of conduction electrons in a uniform magnetic
+  field.
+\newblock {\em Proceedings of the Physical Society. Section A}, 68(10):874,
+  1955.
+
 \bibitem{Campbell2006}
 Gretchen~K. Campbell, Jongchul Mun, Micah Boyd, Erik~W. Streed, Wolfgang
   Ketterle, and David~E. Pritchard.
@@ -428,5 +435,39 @@ Mahito Kohmoto.
 \newblock Zero modes and the quantized hall conductance of the two-dimensional
   lattice in a magnetic field.
 \newblock {\em Phys. Rev. B}, 39:11943--11949, Jun 1989.
+
+\bibitem{Tai2017}
+M.~Eric Tai, Alexander Lukin, Matthew Rispoli, Robert Schittko, Tim Menke, Dan
+  Borgnia, Philipp~M. Preiss, Fabian Grusdt, Adam~M. Kaufman, and Markus
+  Greiner.
+\newblock Microscopy of the interacting harper–hofstadter model in the
+  two-body limit.
+\newblock {\em Nature}, 546:519--, June 2017.
+
+\bibitem{Greschner2015}
+S.~Greschner, M.~Piraud, F.~Heidrich-Meisner, I.~P. McCulloch, U.~Schollw\"ock,
+  and T.~Vekua.
+\newblock Spontaneous increase of magnetic flux and chiral-current reversal in
+  bosonic ladders: Swimming against the tide.
+\newblock {\em Phys. Rev. Lett.}, 115:190402, Nov 2015.
+
+\bibitem{Greschner2016}
+S.~Greschner, M.~Piraud, F.~Heidrich-Meisner, I.~P. McCulloch, U.~Schollw\"ock,
+  and T.~Vekua.
+\newblock Symmetry-broken states in a system of interacting bosons on a two-leg
+  ladder with a uniform abelian gauge field.
+\newblock {\em Phys. Rev. A}, 94:063628, Dec 2016.
+
+\bibitem{CalvaneseStrinati2017}
+Marcello Calvanese~Strinati, Eyal Cornfeld, Davide Rossini, Simone Barbarino,
+  Marcello Dalmonte, Rosario Fazio, Eran Sela, and Leonardo Mazza.
+\newblock Laughlin-like states in bosonic and fermionic atomic synthetic
+  ladders.
+\newblock {\em Phys. Rev. X}, 7:021033, Jun 2017.
+
+\bibitem{Parameswaran2013}
+Siddharth~A. Parameswaran, Rahul Roy, and Shivaji~L. Sondhi.
+\newblock Fractional quantum hall physics in topological flat bands.
+\newblock {\em Comptes Rendus Physique}, 14(9):816--839, 2013.
 
 \end{thebibliography}

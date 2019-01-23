@@ -12,6 +12,7 @@ from scipy import linalg as sLA
 from scipy import stats
 import matplotlib.pyplot as plt
 import lineFit2
+import tightBindingHam as tbh
 #import readIgor
 
 hbar = 1.0545718e-34 # reduced Planck constant m^2 kg/s

@@ -41,7 +41,7 @@ rcParams['ytick.minor.width'] = 0.75      # minor tick width in points
 plt.close(1)
 fig = plt.figure(1,figsize=(4.5,6.0))
 gs = gridspec.GridSpec(2,1)
-gs.update(left=0.05, right=0.95, top=0.95, bottom = 0.05,wspace = 0.1,hspace=0.1)
+gs.update(left=0.05, right=0.95, top=0.95, bottom = 0.05,wspace = 0.1,hspace=0.3)
 
 def ThomasFermi(x,x0,omega,A,offset):
     tf = offset - A*(omega*(x-x0))**2.0
@@ -81,6 +81,8 @@ pan=fig.add_subplot(gs[0])
 pan.imshow(od1)
 pan.set_xticks([])
 pan.set_yticks([])
+pan.set_xlabel(r'$x$ position')
+pan.set_ylabel(r'$y$ position')
 pan.set_title('(a)')
 
 pan=fig.add_subplot(gs[1])
@@ -90,6 +92,8 @@ pan.plot(xlist,Gopt, 'k-.')
 pan.set_ylim(-3.0,72.0)
 pan.set_xticks([])
 pan.set_yticks([])
+pan.set_xlabel(r'$x$ position')
+pan.set_ylabel(r'Integrated atom number [arb. u.]')
 pan.set_title('(b)')
 #pan=fig.add_subplot(212)
 #pan.plot(np.sum(od2,axis=0),'b-')
