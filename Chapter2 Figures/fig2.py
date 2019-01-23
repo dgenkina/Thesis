@@ -71,8 +71,8 @@ odpanel.axvline(x = 25.0,linestyle='--',color = 'k')
 
 handles, labels = odpanel.get_legend_handles_labels()
 odpanel.text(75,1.65,r'$\sigma_0 n$', rotation=0, size=10)
-odpanel.text(75,1.0,'Eq. 2.4', rotation=-10, size=10)
-odpanel.text(75,3.55,'Eq. 2.10', rotation=50, size=10)
+odpanel.text(75,1.0,'Eq. 2.27', rotation=-10, size=10)
+odpanel.text(75,3.55,'Eq. 4.6', rotation=50, size=10)
 odpanel.text(19,3.0, 'recoil time', rotation=90)
 
 plt.savefig('figure2.pdf', transparent=True)

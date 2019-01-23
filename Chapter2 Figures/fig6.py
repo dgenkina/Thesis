@@ -48,7 +48,7 @@ figure1=plt.figure()
 figure1.clear()
 figure1.set_size_inches(5.5,3.5)
 gs = gridspec.GridSpec(2,len(indeces)/2)
-gs.update(left=0.2, right=0.95, top=0.85, bottom = 0.15)
+gs.update(left=0.2, right=0.95, top=0.85, bottom = 0.15, hspace=0.3, wspace=0.1)
 figure1.suptitle(r'Cloud width =' +str(width*1e6)+ r' $\mu \rm{m}$' )
 panel = {}
 cmposition1 = []
@@ -68,15 +68,19 @@ for i in range(len(indeces)):
     panel[i].set_xlim(-2,2)
     panel[i].set_ylim(-0.06,0.06)
     panel[i].set_title("t = "+str(index*0.2)+" us")
-    panel[i].yaxis.set_ticks([])
+    panel[i].yaxis.set_ticks([-0.06,-0.03,0,0.03,0.06])
+    panel[i].yaxis.set_ticklabels([])
     if i<3:
-        panel[i].xaxis.set_ticks([])
+        panel[i].xaxis.set_ticks([-2,-1,0,1,2])
+        panel[i].xaxis.set_ticklabels([])
     else:
         panel[i].xaxis.set_ticks([-2,-1,0,1,2])
-panel[0].yaxis.set_ticks([-0.06,-0.03,0,0.03,0.06])
-panel[3].yaxis.set_ticks([-0.06,-0.03,0,0.03,0.06])
+        panel[i].set_xlabel(r'$\Delta \rm{z}$ [$\mu \rm{m}$]')
+panel[0].yaxis.set_ticklabels([-0.06,-0.03,0,0.03,0.06])
+panel[3].yaxis.set_ticklabels([-0.06,-0.03,0,0.03,0.06])
 panel[0].set_ylabel(r'$\Delta \rm{v}$ [m/s]')
-panel[3].set_xlabel(r'$\Delta \rm{z}$ [$\mu \rm{m}$]')
+panel[3].set_ylabel(r'$\Delta \rm{v}$ [m/s]')
+
 figure1.show()
 plt.savefig('figure6b.pdf', transparent=True)
 
@@ -89,7 +93,7 @@ figure2=plt.figure()
 figure2.clear()
 figure2.set_size_inches(5.5,3.5)
 gs = gridspec.GridSpec(2,len(indeces)/2)
-gs.update(left=0.2, right=0.95, top=0.85, bottom = 0.15)
+gs.update(left=0.2, right=0.95, top=0.85, bottom = 0.15, hspace = 0.3, wspace=0.1)
 figure2.suptitle(r'Cloud width =' +str(width*1e6)+ r' $\mu \rm{m}$' )
 panel = {}
 
@@ -110,15 +114,19 @@ for i in range(len(indeces)):
     panel[i].set_xlim(-20,20)
     panel[i].set_ylim(-0.4,0.4)
     panel[i].set_title("t = "+str(index*0.2)+" us")
-    panel[i].yaxis.set_ticks([])
+    panel[i].yaxis.set_ticks([-0.4,-0.2,0,0.2,0.4])
+    panel[i].yaxis.set_ticklabels([])
     if i<3:
-        panel[i].xaxis.set_ticks([])
+        panel[i].xaxis.set_ticks([-20,-10,0,10,20])
+        panel[i].xaxis.set_ticklabels([])
     else:
         panel[i].xaxis.set_ticks([-20,-10,0,10,20])
-panel[0].yaxis.set_ticks([-0.4,-0.2,0,0.2,0.4])
-panel[3].yaxis.set_ticks([-0.4,-0.2,0,0.2,0.4])
+        panel[i].set_xlabel(r'$\Delta \rm{z}$ [$\mu \rm{m}$]')
+
+panel[0].yaxis.set_ticklabels([-0.4,-0.2,0,0.2,0.4])
+panel[3].yaxis.set_ticklabels([-0.4,-0.2,0,0.2,0.4])
 panel[0].set_ylabel(r'$\Delta \rm{v}$ [m/s]')
-panel[3].set_xlabel(r'$\Delta \rm{z}$ [$\mu \rm{m}$]')
+panel[3].set_ylabel(r'$\Delta \rm{v}$ [m/s]')
 figure2.show()
 plt.savefig('figure6a.pdf', transparent=True)
 

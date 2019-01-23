@@ -31,7 +31,7 @@ rcParams['pdf.fonttype'] = 42 # True type fonts
 rcParams['font.family'] = 'serif'
 rcParams['font.serif'] = ['Computer Modern Roman']
 rcParams['text.usetex'] = True
-rcParams['text.latex.preamble'] = [r'\usepackage{amsmath}']
+rcParams['text.latex.preamble'] = [r'\usepackage{amsmath}', r'\usepackage{braket}']
 
 rcParams['axes.linewidth'] = 0.75
 rcParams['lines.linewidth'] = 0.75
@@ -88,6 +88,7 @@ panel.set_title('(b)')
 cbar_axes = fig2.add_subplot(gs[0,9])
 cbar = fig2.colorbar(d,cax=cbar_axes,ticks=np.array([-1,0,1]))
 cbar_axes.yaxis.set_ticks_position('left')
+cbar_axes.set_ylabel(r'$\langle m \rangle$')
 
 #Get F=2 Omega=0 band structure
 c=1064.0/790.0
@@ -126,5 +127,6 @@ panel.set_title('(d)')
 cbar_axes = fig2.add_subplot(gs[1,9])
 cbar = fig2.colorbar(d,cax=cbar_axes,ticks=np.array([-2,-1,0,1,2]))
 cbar_axes.yaxis.set_ticks_position('left')
+cbar_axes.set_ylabel(r'$\langle m \rangle$')
 
 plt.savefig('SynDimBandStructure.pdf', transparent=True)
