@@ -91,12 +91,21 @@ def getEigenspectrumAll(tx,tm,p,q):
             
     return E
 
-qList = np.arange(1,100,1)
+def gcd_recursive(a, b):
+    if b == 0:
+        return a
+    else:
+        return gcd_recursive(b, a % b)
+    
+def mutuallyPrime(q,p):
+    return gcd_recursive(p,q)==1
+    
+qList = np.arange(1,30,1)
 fluxList = np.zeros((0))
 ElistAll = np.zeros((0))
 for qind, q in enumerate(qList):
     pList = np.arange(q-1)+1
-    pList = np.append(1,pList[[np.remainder(q,p)!=0 for p in pList]])
+    pList = np.append(1,pList[[mutuallyPrime(p,q) for p in pList]])
     for pind, p in enumerate(pList):
         flux = np.float(p)/np.float(q)
         Egrid = getEigenspectrumAll(0.1,0.1,p,q)
@@ -108,4 +117,4 @@ np.savez('HofstadtersButt',fluxList=fluxList,ElistAll=ElistAll)
         
 fig = plt.figure()
 pan = fig.add_subplot(111)
-pan.plot(fluxList,ElistAll,'k.')
+pan.plot(fluxList,ElistAll,'k.', markersize=1)
