@@ -28,7 +28,7 @@ rcParams['pdf.fonttype'] = 42 # True type fonts
 rcParams['font.family'] = 'serif'
 rcParams['font.serif'] = ['Computer Modern Roman']
 rcParams['text.usetex'] = True
-rcParams['text.latex.preamble'] = [r'\usepackage{amsmath}']
+rcParams['text.latex.preamble'] = [r'\usepackage{amsmath}',r'\usepackage{upgreek}']
 
 rcParams['axes.linewidth'] = 0.75
 rcParams['lines.linewidth'] = 0.75
@@ -57,7 +57,7 @@ pan = fig.add_subplot(gs[:,0])
 pan.imshow(od,vmin=-0.1, vmax=0.3)
 pan.set_xticks([])
 pan.set_yticks([32,97,162])
-pan.set_yticklabels([r'$2k_L$',r'$0$',r'$-2k_RL$'])
+pan.set_yticklabels([r'$2k_{\rm L}$',r'$0$',r'$-2k_{\rm L}$'])
 pan.set_title('(a)')
 pan.set_ylabel(r'$k_x$')
 
@@ -65,9 +65,9 @@ pan.set_ylabel(r'$k_x$')
 lowU = np.load('LatticePulsingLowU.npz')
 
 panel = fig.add_subplot(gs[0,1:])
-panel.plot(lowU['time']*1e6,lowU['fractions'][:,0],'bo', label=r'$k_x=+2k_R$')
+panel.plot(lowU['time']*1e6,lowU['fractions'][:,0],'bo', label=r'$k_x=+2k_{\rm R}$')
 panel.plot(lowU['time']*1e6,lowU['fractions'][:,1],'go', label=r'$k_x=0$')
-panel.plot(lowU['time']*1e6,lowU['fractions'][:,2],'ro', label=r'$k_x=-2k_R$')
+panel.plot(lowU['time']*1e6,lowU['fractions'][:,2],'ro', label=r'$k_x=-2k_{\rm R}$')
 panel.plot(lowU['tForFit']*1e6,lowU['pop0'],'b-')
 panel.plot(lowU['tForFit']*1e6,lowU['pop1'],'g-')
 panel.plot(lowU['tForFit']*1e6,lowU['pop2'],'r-')
@@ -80,14 +80,14 @@ panel.set_title('(b)')
 highU = np.load('LatticePulsingHighU.npz')
 
 panel = fig.add_subplot(gs[1,1:])
-panel.plot(highU['time']*1e6,highU['fractions'][:,0],'bo', label=r'$k_x=+2k_R$')
+panel.plot(highU['time']*1e6,highU['fractions'][:,0],'bo', label=r'$k_x=+2k_{\rm R}$')
 panel.plot(highU['time']*1e6,highU['fractions'][:,1],'go', label=r'$k_x=0$')
-panel.plot(highU['time']*1e6,highU['fractions'][:,2],'ro', label=r'$k_x=-2k_R$')
+panel.plot(highU['time']*1e6,highU['fractions'][:,2],'ro', label=r'$k_x=-2k_{\rm R}$')
 panel.plot(highU['tForFit']*1e6,highU['pop0'],'b-')
 panel.plot(highU['tForFit']*1e6,highU['pop1'],'g-')
 panel.plot(highU['tForFit']*1e6,highU['pop2'],'r-')
 
-panel.set_xlabel(r'Lattice pulse time [$\mu$s]')
+panel.set_xlabel(r'Lattice pulse time [$\upmu$s]')
 panel.set_ylabel('Fractional population')
 panel.set_title('(c)')
 plt.legend()

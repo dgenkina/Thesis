@@ -49,49 +49,50 @@ rcParams['ytick.minor.width'] = 0.75      # minor tick width in points
 ColorMap = "afmhot"
 epsilon =0.04
 
-#kList = np.linspace(-1.0,1.0,600)
-#E00,m00 = fitRf.RfBandStructure(0.0, 0.0, epsilon, kList = kList, plot =False)
-#E50,m50 = fitRf.RfBandStructure(5.0, 0.0, epsilon, kList = kList, plot =False)
-#E01,m01 = fitRf.RfBandStructure(0.0, 1.0, epsilon, kList = kList, plot =False)
-#E51,m51 = fitRf.RfBandStructure(5.0, 1.0, epsilon, kList = kList, plot =False)
-#
-#fig1 = plt.figure(1,figsize=(6.2,4.0))
-#n=6
-#gs = gridspec.GridSpec(2,2*n+1)
-#gs.update(left=0.15, right=0.85, top=0.85, bottom = 0.15,wspace=2.0)
-#
-#
-#pan1 = fig1.add_subplot(gs[0:n])
-#for i in range(3):
-#    d=pan1.scatter(kList,E00[:,i],c=m00[:,i],vmin=-1,vmax=1,cmap='jet_r',marker='.')
-#pan1.set_xticks([])
-#pan1.set_ylabel(r'Energy [$E_R$]')
-#pan1.set_title('(a)')
-#
-#
-#    
-#pan2 = fig1.add_subplot(gs[n:2*n])
-#for i in range(3):
-#    pan2.scatter(kList,E50[:,i],c=m50[:,i],vmin=-1,vmax=1,cmap='jet_r',marker='.')
-#pan2.set_xticks([])
-#pan2.set_title('(b)')   
-#    
-#pan3 = fig1.add_subplot(gs[2*n+1:3*n+1])
-#for i in range(3):
-#    pan3.scatter(kList,E01[:,i],c=m01[:,i],vmin=-1,vmax=1,cmap='jet_r',marker='.')
-#pan3.set_ylabel(r'Energy [$E_R$]')
-#pan3.set_xlabel(r'$k_x$ [$k_R$]')
-#pan3.set_title('(c)')  
-#
-#pan4 = fig1.add_subplot(gs[3*n+1:4*n+1])
-#for i in range(3):
-#    pan4.scatter(kList,E51[:,i],c=m51[:,i],vmin=-1,vmax=1,cmap='jet_r',marker='.')    
-#pan4.set_xlabel(r'$k_x$ [$k_R$]')
-#pan4.set_title('(d)')  
-#cbar_axes = fig1.add_subplot(gs[:,2*n])
-#cbar = fig1.colorbar(d,cax=cbar_axes,ticks=np.array([-1,0,1]))
-#
-#plt.savefig('rfBandStructure.pdf', transparent=True)
+kList = np.linspace(-1.0,1.0,600)
+E00,m00 = fitRf.RfBandStructure(0.0, 0.0, epsilon, kList = kList, plot =False)
+E50,m50 = fitRf.RfBandStructure(5.0, 0.0, epsilon, kList = kList, plot =False)
+E01,m01 = fitRf.RfBandStructure(0.0, 1.0, epsilon, kList = kList, plot =False)
+E51,m51 = fitRf.RfBandStructure(5.0, 1.0, epsilon, kList = kList, plot =False)
+
+plt.close(2)
+fig = plt.figure(2,figsize=(6.2,4.0))
+n=6
+gs = gridspec.GridSpec(2,2*n+1)
+gs.update(left=0.15, right=0.85, top=0.85, bottom = 0.15,wspace=2.0)
+
+
+pan1 = fig.add_subplot(gs[0:n])
+for i in range(3):
+    d=pan1.scatter(kList,E00[:,i],c=m00[:,i],vmin=-1,vmax=1,cmap='jet_r',marker='.')
+pan1.set_xticks([])
+pan1.set_ylabel(r'Energy $E/E_{\rm R}$')
+pan1.set_title('(a)')
+
+
+    
+pan2 = fig.add_subplot(gs[n:2*n])
+for i in range(3):
+    pan2.scatter(kList,E50[:,i],c=m50[:,i],vmin=-1,vmax=1,cmap='jet_r',marker='.')
+pan2.set_xticks([])
+pan2.set_title('(b)')   
+    
+pan3 = fig.add_subplot(gs[2*n+1:3*n+1])
+for i in range(3):
+    pan3.scatter(kList,E01[:,i],c=m01[:,i],vmin=-1,vmax=1,cmap='jet_r',marker='.')
+pan3.set_ylabel(r'Energy $E/E_{\rm R}$')
+pan3.set_xlabel(r'$k_x/k_{\rm R}$')
+pan3.set_title('(c)')  
+
+pan4 = fig.add_subplot(gs[3*n+1:4*n+1])
+for i in range(3):
+    pan4.scatter(kList,E51[:,i],c=m51[:,i],vmin=-1,vmax=1,cmap='jet_r',marker='.')    
+pan4.set_xlabel(r'$k_x/k_{\rm R}$')
+pan4.set_title('(d)')  
+cbar_axes = fig.add_subplot(gs[:,2*n])
+cbar = fig.colorbar(d,cax=cbar_axes,ticks=np.array([-1,0,1]))
+
+plt.savefig('rfBandStructure.pdf', transparent=True)
 
 kList = np.linspace(-3.0,3.0,1200)
 E00,m00 = fitRaman.plotRamanBandStruct(0.0, 0.0, epsilon, kList = kList, plot =False)
@@ -101,6 +102,7 @@ E01,m01 = fitRaman.plotRamanBandStruct(0.0, 1.0, epsilon, kList = kList, plot =F
 E11,m11 = fitRaman.plotRamanBandStruct(1.0, 1.0, epsilon, kList = kList, plot =False)
 E51,m51 = fitRaman.plotRamanBandStruct(5.0, 1.0, epsilon, kList = kList, plot =False)
 
+plt.close(1)
 fig1 = plt.figure(1,figsize=(6.2,4.0))
 n=6
 gs = gridspec.GridSpec(2,3*n+1)
@@ -111,7 +113,7 @@ pan1 = fig1.add_subplot(gs[0:n])
 for i in range(3):
     d=pan1.scatter(kList,E00[:,i],c=m00[:,i],vmin=-1,vmax=1,cmap='jet_r',marker='.')
 pan1.set_xticks([])
-pan1.set_ylabel(r'Energy [$E_R$]')
+pan1.set_ylabel(r'Energy $E/E_{\rm R}$')
 pan1.set_title('(a)')
 pan1.set_ylim([-3,12])
 
@@ -135,15 +137,15 @@ pan3.set_ylim([-3,12])
 pan4 = fig1.add_subplot(gs[3*n+1:4*n+1])
 for i in range(3):
     pan4.scatter(kList,E01[:,i],c=m01[:,i],vmin=-1,vmax=1,cmap='jet_r',marker='.')
-pan4.set_ylabel(r'Energy [$E_R$]')
-pan4.set_xlabel(r'$k_x$ [$k_R$]')
+pan4.set_ylabel(r'Energy $E/E_{\rm R}$')
+pan4.set_xlabel(r'$k_x/k_{\rm R}$')
 pan4.set_title('(d)') 
 pan4.set_ylim([-3,12]) 
 
 pan5 = fig1.add_subplot(gs[4*n+1:5*n+1])
 for i in range(3):
     pan5.scatter(kList,E11[:,i],c=m11[:,i],vmin=-1,vmax=1,cmap='jet_r',marker='.')    
-pan5.set_xlabel(r'$k_x$ [$k_R$]')
+pan5.set_xlabel(r'$k_x/k_{\rm R}$')
 pan5.set_title('(e)')
 pan5.set_yticks([])  
 pan5.set_ylim([-3,12])
@@ -151,7 +153,7 @@ pan5.set_ylim([-3,12])
 pan6 = fig1.add_subplot(gs[5*n+1:6*n+1])
 for i in range(3):
     pan6.scatter(kList,E51[:,i],c=m51[:,i],vmin=-1,vmax=1,cmap='jet_r',marker='.')    
-pan6.set_xlabel(r'$k_x$ [$k_R$]')
+pan6.set_xlabel(r'$k_x/k_{\rm R}$')
 pan6.set_title('(f)')  
 pan6.set_yticks([])
 pan6.set_ylim([-3,12])

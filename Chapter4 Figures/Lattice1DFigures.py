@@ -80,87 +80,87 @@ def plotLatticeBandStructure(U,n, BZs = 1, plot = True):
 kList0, Energies0, eigV = plotLatticeBandStructure(0,7, BZs = 3, plot = False)
 kList4, Energies4, eigV = plotLatticeBandStructure(4.0,7, BZs = 3, plot = False)
 
-#figure = plt.figure(1,figsize=(6.2,4.0))
-#gs = gridspec.GridSpec(1,1)
-#gs.update(left=0.15, right=0.85, top=0.85, bottom = 0.15)
-#pan1 = figure.add_subplot(gs[0])
-#pan1.plot(kList0, Energies0[:,:3], 'b-.')
-#pan1.plot(kList4,Energies4[:,:3], 'b-')
-#pan1.set_xlabel(r'$q/k_L$')
-#pan1.set_ylabel(r'Energy [$E_L$]')
-#pan1.axvline(x=1.0,c='k')
-#pan1.axvline(x=-1.0,c='k')
-#
-#plt.savefig('figure1.pdf', transparent=True)
-#figure.show()
+figure = plt.figure(1,figsize=(6.2,4.0))
+gs = gridspec.GridSpec(1,1)
+gs.update(left=0.15, right=0.85, top=0.85, bottom = 0.15)
+pan1 = figure.add_subplot(gs[0])
+pan1.plot(kList0, Energies0[:,:3], 'b-.')
+pan1.plot(kList4,Energies4[:,:3], 'b-')
+pan1.set_xlabel(r'$q/k_{\rm L}$')
+pan1.set_ylabel(r'Energy $E/E_{\rm L}$')
+pan1.axvline(x=1.0,c='k')
+pan1.axvline(x=-1.0,c='k')
+
+plt.savefig('figure1.pdf', transparent=True)
+figure.show()
 #    
 #
-#pops = fitLattice.propagateLatHamFit(0.00012*Erecoil/hbar, 8.0,k=0,psi0='norm' )
+pops = fitLattice.propagateLatHamFit(0.00012*Erecoil/hbar, 8.0,k=0,psi0='norm' )
 #
 #
 kList0, Energies0, eigV0 = plotLatticeBandStructure(0,7, BZs = 1, plot = False)
 kList4, Energies4, eigV4 = plotLatticeBandStructure(8.0,7, BZs = 1, plot = False)
-#
-#psi0 = np.zeros(Energies4.shape[1],dtype=complex)
-#psi0[psi0.size/2] = 1.0
-#
-#Vinv4 = sLA.inv(eigV4)
-#psi4 = np.dot(Vinv4,psi0)
-#proj4 = np.absolute(psi4)**2.0
-#
-#Vinv0 = sLA.inv(eigV0)
-#psi0 = np.dot(Vinv0,psi0)
-#proj0 = np.absolute(psi0)**2.0
-#
-#scale = 20
-#
-#fig2 = plt.figure(2,figsize=(6.2,4.0))
-#gs = gridspec.GridSpec(4,3)
-#gs.update(left=0.15, right=0.85, top=0.85, bottom = 0.15,hspace = 1.0)
-#
-#pan = fig2.add_subplot(gs[0,:])
-#xlist = np.linspace(0,10,1000)
-#ylist = 8.0*np.ones(xlist.size)
-#ylist[xlist<2.0] = 0.0
-#ylist[xlist>8.0] = 0.0
-#pan.plot(xlist,ylist,'k-')
-#pan.set_xticks([])
-#pan.set_xlabel(r'time')
-#pan.set_yticks([0,8])
-#pan.set_ylabel(r'$V_0$ [$E_L$]')
-#pan.set_title('(a)')
-#
-#
-#
-#pan = fig2.add_subplot(gs[1:,1])
-#pan.plot(kList4,Energies4[:,:3], 'b-') 
-#pan.plot(0,Energies4[kList4.size/2,0], marker = 'o',c='b', markersize = np.sqrt(proj4[0])*scale)
-#pan.plot(0,Energies4[kList4.size/2,1], marker = 'o',c='b', markersize = np.sqrt(proj4[1])*scale)
-#pan.plot(0,Energies4[kList4.size/2,2], marker = 'o',c='b', markersize = np.sqrt(proj4[2])*scale)
-#pan.set_yticks([])
-#pan.set_xlabel(r'$q/k_L$')
-#pan.set_title('(c)')
-#
-#pan = fig2.add_subplot(gs[1:,0])
-#pan.plot(kList0,Energies0[:,:3], 'b-') 
-#pan.plot(0,Energies0[kList0.size/2,0], marker = 'o',c='b', markersize = np.sqrt(proj0[0])*scale)
-#pan.plot(0,Energies0[kList0.size/2,1], marker = 'o',c='b', markersize = np.sqrt(proj0[1])*scale)
-#pan.plot(0,Energies0[kList0.size/2,2], marker = 'o',c='b', markersize = np.sqrt(proj0[2])*scale)
-#pan.set_xlabel(r'$q/k_L$')
-#pan.set_ylabel(r'Energy [$E_L$]')
-#pan.set_title('(b)')
-#
-#pan = fig2.add_subplot(gs[1:,2])
-#pan.plot(kList0,Energies0[:,:3], 'b-') 
-#pan.plot(0,Energies0[kList0.size/2,0], marker = 'o',c='b', markersize = np.sqrt(pops[1])*scale)
-#pan.plot(0,Energies0[kList0.size/2,1], marker = 'o',c='r', markersize = np.sqrt(pops[0])*scale*np.sqrt(2),fillstyle='left',markeredgewidth = 0)
-#pan.plot(0,Energies0[kList0.size/2,2], marker = 'o',c='g', markersize = np.sqrt(pops[2])*scale*np.sqrt(2),fillstyle = 'right', markeredgewidth = 0)
-#pan.set_yticks([])
-#pan.set_xlabel(r'$q/k_L$')
-#pan.set_title('(d)')
-#plt.savefig('figure2.pdf', transparent=True)    
-#
-#fig2.show()
+
+psi0 = np.zeros(Energies4.shape[1],dtype=complex)
+psi0[psi0.size/2] = 1.0
+
+Vinv4 = sLA.inv(eigV4)
+psi4 = np.dot(Vinv4,psi0)
+proj4 = np.absolute(psi4)**2.0
+
+Vinv0 = sLA.inv(eigV0)
+psi0 = np.dot(Vinv0,psi0)
+proj0 = np.absolute(psi0)**2.0
+
+scale = 20
+
+fig2 = plt.figure(2,figsize=(6.2,4.0))
+gs = gridspec.GridSpec(4,3)
+gs.update(left=0.15, right=0.85, top=0.85, bottom = 0.15,hspace = 1.0)
+
+pan = fig2.add_subplot(gs[0,:])
+xlist = np.linspace(0,10,1000)
+ylist = 8.0*np.ones(xlist.size)
+ylist[xlist<2.0] = 0.0
+ylist[xlist>8.0] = 0.0
+pan.plot(xlist,ylist,'k-')
+pan.set_xticks([])
+pan.set_xlabel(r'time')
+pan.set_yticks([0,8])
+pan.set_ylabel(r'$V_0$ [$E_{\rm L}$]')
+pan.set_title('(a)')
+
+
+
+pan = fig2.add_subplot(gs[1:,1])
+pan.plot(kList4,Energies4[:,:3], 'b-') 
+pan.plot(0,Energies4[kList4.size/2,0], marker = 'o',c='b', markersize = np.sqrt(proj4[0])*scale)
+pan.plot(0,Energies4[kList4.size/2,1], marker = 'o',c='b', markersize = np.sqrt(proj4[1])*scale)
+pan.plot(0,Energies4[kList4.size/2,2], marker = 'o',c='b', markersize = np.sqrt(proj4[2])*scale)
+pan.set_yticks([])
+pan.set_xlabel(r'$q/k_{\rm L}$')
+pan.set_title('(c)')
+
+pan = fig2.add_subplot(gs[1:,0])
+pan.plot(kList0,Energies0[:,:3], 'b-') 
+pan.plot(0,Energies0[kList0.size/2,0], marker = 'o',c='b', markersize = np.sqrt(proj0[0])*scale)
+pan.plot(0,Energies0[kList0.size/2,1], marker = 'o',c='b', markersize = np.sqrt(proj0[1])*scale)
+pan.plot(0,Energies0[kList0.size/2,2], marker = 'o',c='b', markersize = np.sqrt(proj0[2])*scale)
+pan.set_xlabel(r'$q/k_{\rm L}$')
+pan.set_ylabel(r'Energy $E/E_{\rm L}$')
+pan.set_title('(b)')
+
+pan = fig2.add_subplot(gs[1:,2])
+pan.plot(kList0,Energies0[:,:3], 'b-') 
+pan.plot(0,Energies0[kList0.size/2,0], marker = 'o',c='b', markersize = np.sqrt(pops[1])*scale)
+pan.plot(0,Energies0[kList0.size/2,1], marker = 'o',c='r', markersize = np.sqrt(pops[0])*scale*np.sqrt(2),fillstyle='left',markeredgewidth = 0)
+pan.plot(0,Energies0[kList0.size/2,2], marker = 'o',c='g', markersize = np.sqrt(pops[2])*scale*np.sqrt(2),fillstyle = 'right', markeredgewidth = 0)
+pan.set_yticks([])
+pan.set_xlabel(r'$q/k_{\rm L}$')
+pan.set_title('(d)')
+plt.savefig('figure2.pdf', transparent=True)    
+
+fig2.show()
 #
 #
 #
@@ -168,12 +168,12 @@ kList4, Energies4, eigV4 = plotLatticeBandStructure(8.0,7, BZs = 1, plot = False
 
 #Adiabatic loading figure
 pops = np.abs(eigV4[:,0])**2.0
-
-fig2 = plt.figure(3,figsize=(6.2,4.0))
+plt.close(3)
+fig3 = plt.figure(3,figsize=(6.2,4.0))
 gs = gridspec.GridSpec(4,3)
 gs.update(left=0.15, right=0.85, top=0.85, bottom = 0.15,hspace = 1.0)
 
-pan = fig2.add_subplot(gs[0,:])
+pan = fig3.add_subplot(gs[0,:])
 xlist = np.linspace(0,10,1000)
 ylist = (xlist - 2.0)*8.0/6.0
 ylist[xlist<2.0] = 0.0
@@ -182,39 +182,39 @@ pan.plot(xlist,ylist,'k-')
 pan.set_xticks([])
 pan.set_xlabel(r'time')
 pan.set_yticks([0,8])
-pan.set_ylabel(r'$V_0$ [$E_L$]')
+pan.set_ylabel(r'$V_0/E_{\rm L}$')
 pan.set_title('(a)')
 
 
 
-pan = fig2.add_subplot(gs[1:,1])
+pan = fig3.add_subplot(gs[1:,1])
 pan.plot(kList4,Energies4[:,:3], 'b-') 
 pan.plot(0,Energies4[kList4.size/2,0], marker = 'o',c='b', markersize = np.sqrt(proj0[0])*scale)
 pan.plot(0,Energies4[kList4.size/2,1], marker = 'o',c='b', markersize = np.sqrt(proj0[1])*scale)
 pan.plot(0,Energies4[kList4.size/2,2], marker = 'o',c='b', markersize = np.sqrt(proj0[2])*scale)
 pan.set_yticks([])
-pan.set_xlabel(r'$q/k_L$')
+pan.set_xlabel(r'$q/k_{\rm L}$')
 pan.set_title('(c)')
 
-pan = fig2.add_subplot(gs[1:,0])
+pan = fig3.add_subplot(gs[1:,0])
 pan.plot(kList0,Energies0[:,:3], 'b-') 
 pan.plot(0,Energies0[kList0.size/2,0], marker = 'o',c='b', markersize = np.sqrt(proj0[0])*scale)
 pan.plot(0,Energies0[kList0.size/2,1], marker = 'o',c='b', markersize = np.sqrt(proj0[1])*scale)
 pan.plot(0,Energies0[kList0.size/2,2], marker = 'o',c='b', markersize = np.sqrt(proj0[2])*scale)
-pan.set_xlabel(r'$q/k_L$')
-pan.set_ylabel(r'Energy [$E_L$]')
+pan.set_xlabel(r'$q/k_{\rm L}$')
+pan.set_ylabel(r'Energy $E/E_{\rm L}$')
 pan.set_title('(b)')
 
-pan = fig2.add_subplot(gs[1:,2])
+pan = fig3.add_subplot(gs[1:,2])
 pan.plot(kList0,Energies0[:,:3], 'b-') 
 pan.plot(0,Energies0[kList0.size/2,0], marker = 'o',c='b', markersize = np.sqrt(pops[Energies4.shape[1]/2])*scale)
 pan.plot(0,Energies0[kList0.size/2,1], marker = 'o',c='r', markersize = np.sqrt(pops[Energies4.shape[1]/2-1])*scale*np.sqrt(2),fillstyle='left',markeredgewidth = 0)
 pan.plot(0,Energies0[kList0.size/2,2], marker = 'o',c='g', markersize = np.sqrt(pops[Energies4.shape[1]/2+1])*scale*np.sqrt(2),fillstyle = 'right', markeredgewidth = 0)
 pan.set_yticks([])
-pan.set_xlabel(r'$q/k_L$')
+pan.set_xlabel(r'$q/k_{\rm L}$')
 pan.set_title('(d)')
 plt.savefig('figure3.pdf', transparent=True)    
 
-fig2.show()
+fig3.show()
         
  

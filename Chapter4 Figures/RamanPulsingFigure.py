@@ -73,7 +73,7 @@ pan.imshow(od,vmin=-0.1, vmax=1.0)
 pan.set_xticks([])
 pan.set_ylabel(r'$k_x$')
 pan.set_yticks([30,140,235])
-pan.set_yticklabels([r'$2k_R$',r'$0$',r'$-2k_R$'])
+pan.set_yticklabels([r'$2k_{\rm R}$',r'$0$',r'$-2k_{\rm R} $'])
 pan.set_title('(a)')
 
 pan.text(220,16,r'$-1$',color='white')
