@@ -100,21 +100,21 @@ def gcd_recursive(a, b):
 def mutuallyPrime(q,p):
     return gcd_recursive(p,q)==1
     
-qList = np.arange(1,35,1)
-fluxList = np.zeros((0))
-ElistAll = np.zeros((0))
-for qind, q in enumerate(qList):
-    pList = np.arange(q-1)+1
-    pList = np.append(1,pList[[mutuallyPrime(p,q) for p in pList]])
-    for pind, p in enumerate(pList):
-        flux = np.float(p)/np.float(q)
-        Egrid = getEigenspectrumAll(0.1,0.1,p,q)
-        Elist = Egrid.flatten()
-        fluxList = np.append(fluxList,[flux]*Elist.size)
-        ElistAll = np.append(ElistAll,Elist)
-        
-np.savez('HofstadtersButt',fluxList=fluxList,ElistAll=ElistAll)
-        
-fig = plt.figure()
-pan = fig.add_subplot(111)
-pan.plot(fluxList,ElistAll,'k.', markersize=1)
+#qList = np.arange(1,35,1)
+#fluxList = np.zeros((0))
+#ElistAll = np.zeros((0))
+#for qind, q in enumerate(qList):
+#    pList = np.arange(q-1)+1
+#    pList = np.append(1,pList[[mutuallyPrime(p,q) for p in pList]])
+#    for pind, p in enumerate(pList):
+#        flux = np.float(p)/np.float(q)
+#        Egrid = getEigenspectrumAll(0.1,0.1,p,q)
+#        Elist = Egrid.flatten()
+#        fluxList = np.append(fluxList,[flux]*Elist.size)
+#        ElistAll = np.append(ElistAll,Elist)
+#        
+#np.savez('HofstadtersButt',fluxList=fluxList,ElistAll=ElistAll)
+#        
+#fig = plt.figure()
+#pan = fig.add_subplot(111)
+#pan.plot(fluxList,ElistAll,'k.', markersize=1)

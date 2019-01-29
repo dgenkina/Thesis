@@ -36,15 +36,23 @@ rcParams['ytick.major.width'] = 0.75       # major tick width in points
 rcParams['ytick.minor.width'] = 0.75      # minor tick width in points
 
 hofFile = np.load('HofstadtersButt.npz')
+flux = hofFile['fluxList']
+E = hofFile['ElistAll']/0.1
+
+E = E[flux!=1]
+flux = flux[flux!=1]
 
 plt.close(1)
 fig = plt.figure(1,figsize=(6.2,5.0))
 gs = gridspec.GridSpec(1,1)
 gs.update(left=0.15, right=0.95, top=0.95, bottom = 0.15,hspace = 0.3,wspace=4.5)
 
+
 pan = fig.add_subplot(gs[0])
-pan.plot(hofFile['fluxList'],hofFile['ElistAll']/0.1,'k.', markersize=1)
+#pan.plot(hofFile['fluxList'],hofFile['ElistAll']/0.1,'k.', markersize=1)
+pan.hist2d(flux,E,bins=[620,400],normed=True,vmax=2, cmap='gray_r')
 pan.set_xlabel(r'Flux $\Phi/\Phi_0$')
+pan.set_xlim(0.0,1.0)
 pan.set_ylabel(r'Energy E/$t_x$')
 
-plt.savefig('HofstadterFig.pdf',transparent=True)
+#plt.savefig('HofstadterFig.pdf',transparent=True)

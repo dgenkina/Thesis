@@ -1,15 +1,15 @@
 \renewcommand{\thechapter}{1}
 
 \chapter{Introduction}\label{chap:Chern}
-Although quantum mechanics has been well established since the early 20th century, there are still many quantum phenomena that are not well understood and are not easy to calculate. These include high temperature superconductivity, fractional quantum Hall physics, and groudn states of frustrated amorphous materials. One of the reasons these problems are proving elusive is that calculation of properties of many-body quantum mechanical systems is computationally intensive enough to be completely prohibitive in a large class of problems. 
+Although quantum mechanics has been well established since the early 20th century, there are still many quantum phenomena that are not well understood and are not easy to calculate. These include high temperature superconductivity, fractional quantum Hall physics, and ground states of frustrated amorphous materials. One of the reasons these problems are proving elusive is that calculation of properties of many-body quantum mechanical systems is computationally intensive enough to be completely prohibitive in a large class of problems. 
 
 Quantum simulation provides an attractive alternative to direct computation. In it, a test quantum system, here ultracold atoms, is used to simulate a more complicated, less experimentally accessible quantum system, such as a non-trivial material from condensed matter physics. In order to get to the point where unsolved problems can be solved with quantum simulation, tools must be built up to create and verify Hamiltonians in the test system that are relevant to the more complex target system. In this thesis, we present a technique for creating topologically non-trivial Hamiltonians for ultracold atoms and experimentally measuring their topological properties.
 
 \section{Condensed matter context}
-Topology has been a field of mathematics since the 17th century. Its importance in physics, particularly in the study of crystalline materials in condensed matter, was first discovered by Thouless, Kohmoto, Nightingale and den Nijs \cite{Thouless1982}. They used topology to explain the shockingly precise quantization of resisitivity in the quantum Hall effect. Since then, topology has been central to condensed matter, from topological insulators\cite{Qi2011} to fractional quantum hall physics\cite{Stormer1999}. There have been many excellent pedagogical texts written on this matter. Here, we include only a brief overview of the physics that is relevant for motivating Chapters \ref{chap:SynDim, chap:BlochOsc} of this thesis.  
+Topology has been a field of mathematics since the 17th century. Its importance in physics, particularly in the study of crystalline materials in condensed matter, was first discovered by Thouless, Kohmoto, Nightingale and den Nijs \cite{Thouless1982}. They used topology to explain the shockingly precise quantization of resistivity in the quantum Hall effect. Since then, topology has been central to condensed matter, from topological insulators\cite{Qi2011} to fractional quantum hall physics\cite{Stormer1999}. There have been many excellent pedagogical texts written on this matter. Here, we include only a brief overview of the physics that is relevant for motivating Chapters \ref{chap:SynDim, chap:BlochOsc} of this thesis.  
 
 \subsection{Topology}
-Topology is the study of how things can be continuously transformed into other things without tearing or gluing parts together. Things that can be continuously transformed into each other under those rules are called homeomorphic to each other. Classes of objects that are all homeomorphic to each other belong to the same topological class. These classes are characterized by a topological invariant, an integer. Surfaces in 3D can be characterized by their genus $g$, essentially the number of holes in the shape. Since holes cannot be opened up or closed by a continous transformation, the number of holes is a topological invariant that can be used for classification. 
+Topology is the study of how things can be continuously transformed into other things without tearing or gluing parts together. Things that can be continuously transformed into each other under those rules are called homeomorphic to each other. Classes of objects that are all homeomorphic to each other belong to the same topological class. These classes are characterized by a topological invariant, an integer. Surfaces in 3D can be characterized by their genus $g$, essentially the number of holes in the shape. Since holes cannot be opened up or closed by a continuous transformation, the number of holes is a topological invariant that can be used for classification. 
 
 Figure \ref{fig:bakedGoods} shows some examples of objects with different genus $g$. A loaf of bread has no holes, and is therefore topologically equivalent to a sphere, with $g=0$. A bagel has one hole, and is topologically equivalent to a torus, or a coffe mug, or any other number of things with a single through hole, with $g=1$. A pretzel has $3$ through holes, and is therefore topologically distinct from both the loaf and the bagel, with $g=3$. 
 \begin{figure}
@@ -23,7 +23,7 @@ More formally, the Gauss-Bonnet theorem states that the integral of the Gaussian
 \chi = \frac{1}{2\pi}\int_S K dA,
 \label{eqn:GaussBonnet}
 \end{equation}
-where the integer $\chi$ is called the Euler characterisitic, and is related to the genus via $\chi = 2 - 2g$. Essentially, the total curvature of a closed surface is quantized to integer values, and any closed surface can be classified by that integer. Surfaces with equal $\chi$ can be continuously transformed into each other.
+where the integer $\chi$ is called the Euler characteristic, and is related to the genus via $\chi = 2 - 2g$. Essentially, the total curvature of a closed surface is quantized to integer values, and any closed surface can be classified by that integer. Surfaces with equal $\chi$ can be continuously transformed into each other.
 
 \subsection{Band topology in materials}
 The same general principles can be applied to the bands within the band structure of a crystalline material. Crystalline materials are characterized by a periodic structure. The primitive unit cell, or the minimal repeating unit of the lattice, can be parametrized by primitive unit vectors $\vec{a}_i$, where $i$ indexes from $1$ to the number of dimensions $d$. In momentum space, the repeating structure is parametrized by reciprocal lattice vectors $\vec{K}_i$. According to Bloch's theorem \cite{Ashcroft}, the eigenstate wavefunction for some eigenband in a periodic potential in $d$ dimensions can be written as 
@@ -43,58 +43,162 @@ which is reminiscent of gauge invariance in electrostatics. The corresponding no
 \end{equation}
 Under the transformation eq. \ref{eqn:phaseTransform}, $\vec{A} \rightarrow \vec{A} + \nabla_{\vec{k}}\phi(\vec{k})$. The gauge invariant field is therefore $\vec{\mathcal{F}}=\nabla\times\vec{A}$, where $\vec{\mathcal{F}}$ is known as the Berry curvature. 
 
-From this, the geometric phase, or Berry phase $\gamma_c$, can be defined as the phase aquired over a closed curve$c$  in parameter space that is independent of the rate at which the curve is traversed:
+From this, the geometric phase, or Berry phase\cite{Berry1984} $\gamma_c$, can be defined as the phase acquired over a closed curve $c$  in parameter space that is independent of the rate at which the curve is traversed:
 \begin{equation}
 \gamma_c = \int_c \vec{A}\cdot d\vec{k} = \int_S \vec{\mathcal{F}}\cdot dS,
+\label{eqn:BerryPhase}
 \end{equation}
 where $S$ is a surface bounded by the  curve $c$, and in the second equality we have invoked Stoke's theorem. 
 
 The Berry curvature integrated over the entire Brillouin zone, or primitive cell in reciprocal lattice space, is quantized in units of $2\pi$:
 \begin{equation}
 C=\frac{1}{2\pi} \int_S \vec{\mathcal{F}}\cdot dS,
+\label{eqn:ChernFromBerryCurvature}
 \end{equation}
 where $C$ is an integer. This bears a strong similarity to the Gauss-Bonnet theorem, eqn. \ref{eqn:GaussBonnet}, with the Gaussian curvature replaced by the Berry curvature, and the closed surface in real space replaced by the Brillouin zone in momentum space. Similarly, the integer $C$ is a topological invariant and can be used to classify the topological properties of the bands. For periodic structures in 2D, this invariant is called the Chern number. 
 
-	Bulk-edge correspondence in finite system
+In finite systems, the transition to momentum space is necessarily discretized. The integral in eqn. \ref{eqn:BerryPhase} is no longer continuous, and the identification of the Chern number can only be made in the continuous limit. In short, the Chern number corresponds to the Chern number of the system in the imaginary scenario where its bulk was extended indefinitely. In finite systems, the edges of the system become important. The edge of the system is an interface between a topologically non-trivial region (the system in question) and a topologically trivial region (the surrounding air or other material). These edges support conducting edge modes.  The number of these conducting edge modes is equal to the total Chern number of the filled bands in the bulk. This is known as the bulk-edge correspondence\cite{Thouless1982,Datta1995}, and has been widely used to experimentally detect the effective Chern number. 
 
-
-\subsection{Quantum Hall Effect}
-The iconic example of non-trivial topological structure in condensed matter is the quantum Hall effect. First, let us review the regular Hall effect. In it, a slab of metal, very thin along one dimension such as to be effectively 2D, has a magnetic field threaded through it perpendicular to the plane of the metal, as shown in Figure \ref{fig:HallEffect}. Then, a magnetic field is applied along one direction of the 2D material. This accellerates the electrons via the electrostatic force $F=qE$ 
+%
+%\subsection{Quantum Hall Effect}
+%The iconic example of non-trivial topological structure in condensed matter is the quantum Hall effect. Here, the underlying lattice structure does not play an important role. Electrons are treated as free particles constrained to travel along their substrate.
+%
+%First, let us review the regular Hall effect. In it, a slab of metal, very thin along one dimension such as to be effectively 2D, has a magnetic field $\mathbf{B} = B_z$\ez{} threaded through it perpendicular to the plane of the metal, as shown in Figure \ref{fig:HallEffect}.
+%\begin{figure}
+%	\includegraphics{"ChernNum Figures/HallEffectOrbits".png}
+%\label{fig:HallEffect}
+%\caption[Hall effect setup]{Hall effect setup. A slab of metal very thin along one axis acts as a 2D constraint for the electrons to travel in. A magnetic field normal to the plane pierces the metal. Electrons travel in cyclotron orbits in the bulk and perform skipping orbits along the edges.}
+%\end{figure}
+%The equation of motion for an electron bound to travel in the \ex{}-\ey{} plane is then given by
+%\begin{equation}
+%m_e \frac{d\vec{v}}{dt} = e\vec{v}\times\vec{B} = v_y B_z {\bf \mathit{e}}_x - v_x B_z {\bf \mathit{e}}_y,
+%\end{equation}
+%where $m_e$ is the electron mass, $e$ is the charge of the electron, and $\vec{v}$ is its velocity. This can be solved in general to obtain circular orbits, centered on some point $X$,$Y$ with some radius $R$, but with a fixed orbital frequency $\omega_B = eB/m$. These orbits are called cyclotron orbits, and $\omega_B$ is known as the cyclotron frequency. The chirality of the orbits, i.e. whether they are clockwise or counterclockwise, is prescribed by the direction of the magnetic field. 
+%
+%If the system is finite, as is the case in all reality, the electrons at the edge of the system will not be able to complete cyclotron orbits. However, the chirality of the orbits must till be preserved, and electrons reflected off the edge will continue semi-orbits in a defined direction along each edge, as shown in Figure \ref{fig:HallEffect}.  These are knon as skipping orbits. 
+%
+%Then, an electric field is applied along one direction of the material. This accellerates the electrons via the electrostatic force $F_x=e E_x$, and makes the equation of motion
+%\begin{equation}
+%m_e \frac{d\vec{v}}{dt} = v_y B_z {\bf \mathit{e}}_x - v_x B_z {\bf \mathit{e}}_y + m E_x  {\bf \mathit{e}}_x .
+%\end{equation}
+%We can solve this for the steady state, where $d\vec{v}/dt = 0$. We get $v_x = 0$ and $v_y = - E_x/B_z$. Equivalently, for a field along \ey{}, we would get  $v_x = E_y/B_z$ and $v_y = 0$
+%
+%This can be written in terms of a tensor conductivity. To define the conductivity, let us first define the current density $\vec{J} = -ne\vec{v}$, where $n$ is the 2D charge carrier density. Then, the conducticity matrix is defined as $\vec{J} = \sigma\vec{E}$. Writing down the above result in this form, we get 
+%\begin{equation} 
+%\vec{J} = -n e  \begin{pmatrix} E_y/B_z \\  - E_x/B_z \end{pmatrix} = \begin{pmatrix} 0 & -ne/B_z \\ ne/B_z & 0 \end{pmatrix} \begin{pmatrix} E_x \\ E_y \end{pmatrix}. 
+%\label{eqn:HEconductivity}
+%\end{equation}
+%Therefore, the transverse conductivity (off-diagonal elements of the conductivity matrix) is inversely proportional to the field. 
+%
+%The setup for the quantum Hall effect is the same: a 2D material is pierced with a magnetic field normal to the material. The Hamiltonian for electrons in a magnetic field $\vec{B}$ can be written in terms of the vector potential $\vec{A}$, satistying $\vec{B} = \nabla \times \vec{A}$, where $\vec{A}$ is defined with a gauge freedom $\vec{A}\rightarrow\vec{A}+\vec{\nabla} f$ for some function $f$. The Hamiltonian is
+%\begin{equation}
+%H = \frac{1}{2m}\left(\vec{p} - e \vec{A}\right)^2,
+%\end{equation}
+%where $\vec{p}$ is the canonical momentum. We choose the Landau gauge, where $\vec{A}$ is chosen to lie along one direction only, here $\vec{A} = B_z x {\bf \mathit{e}}_y$. The Hamiltonian becomes
+%\begin{equation}
+%H =   \frac{1}{2m}\left(p_x^2 + (p_y +e B_z x)^2\right).
+%\end{equation}
+%This Hamiltonian is independent of the $y$ spatial coordinate. Therefore, we assume that solutions are plane waves along \ey{} and adopt the anzats $\Psi_{k_y}(x,y) = e^{i k_y y}f_{k_y}(x)$. Plugging this anzats into the Hamiltonian, we get
+%\begin{equation}
+%H f_{k_y} =   \frac{1}{2m}\left(p_x^2 + (\hbar k_y +e B_z x)^2\right) f_{k_y}.
+%\end{equation}
+%We can rewrite this in terms of the previously defined cyclotron frequency and a magnetic length ${\it l}_B = \sqrt{\hbar/eB}$ as 
+%\begin{equation}
+%H = \frac{1}{2m}p_x^2 + \frac{m\omega_B^2}{2}(x+k_y{\it l}_B^2)^2,
+%\end{equation}
+%which is the Hamiltonian for a harmonic oscillator with the center displaced along \ex{} by $-k_y{\it l}_B^2$. The eignenergies are the harmonic oscillator energies $E_n = \hbar \omega_B (n + 1/2)$, and the eigenstates are harmonic oscillator eigenstates 
+%\begin{equation}
+%f_{k_y} \propto H_n(x+k_y{\it l}_B^2)e^{-(x+k_y{\it l}_B^2)^2/2{\it l}_B^2},
+%\end{equation}
+%where $H_n$ are the Hermite polynomeals. 
+%
+%Note that the momentum $k_y$ is correlated with the central position of the wavefunction $x_0 = -k_y {\it l}_B^2$, and the wavefunctions have a characteristic width given by the magnetic length ${\it l}_B$. Additionally, the eigenenrgies do not depend on the momentum $k_y$. Therefore, there is a massive degeneracy in each energy level, given by the number of transverse momentum states. These energy levels are called Landau levels.  
+%
+%If we now add an electric field $\vec{E} = E_x$\ex{}, the Hamiltonian aquires an extra term 
+%\begin{equation}
+%H = \frac{1}{2m}\left(p_x^2 + (p_y +e B_z x)^2\right) +eE_x x,
+%\end{equation}
+%which (completing the square in $x$ dependent terms) can be written as
+%\begin{equation}
+%H = \frac{1}{2m}p_x^2 + \frac{m\omega_B^2}{2}\left(x + k_y {\it l}_B^2 + \frac{m E_x}{e B^2}\right)^2 - k_y {\it l}_B^2 e E -\frac{m E^2}{2 B^2},
+%\end{equation}
+%which is again the harmonic oscillator but with the energies shifted to
+%\begin{equation}
+%E_{n,k_y} = \hbar\omega_B\left(n+\frac{1}{2}\right) - k_y {\it l}_B^2 e E -\frac{m E^2}{2 B^2}.
+%\end{equation}
+%Note that the energy is now dependent on $k_y$, lifting the degeneracy of the Landau levels. We can now compute the transverse conductivity by finding the group velocity $v_y$:
+%\begin{equation}
+%v_y = \frac{1}{\hbar}\frac{\partial E_{n,k_y}}{\partial k} =  -\frac{e}{\hbar}E {\it l}_B^2 = -\frac{E}{B},
+%\end{equation}
+%giving precisely the same transverse conductivity as in the classical case eqn. \ref{eqn:HEconductivity}.
+%
+%\begin{figure}
+%	\includegraphics{"ChernNum Figures/qhe".png}
+%\label{fig:qhe}
+%\caption{}
+%\end{figure}
+%
+%	Disorder leads to quantization - conductivity in between flux quanta is messed up, but on flux quanta enforced by topology
+\subsection{Magnetic field in 2D and Aharonov-Bohm phase}
+Without the constraint of a lattice, the behavior of electrons in a magnetic field is well known. They experience a force $ e\vec{v}\times\vec{B}$, where $e$ is the electron charge, $\vec{v}$ is their velocity, and $\vec{B}$ is the magnetic field. If the electrons are confined to a 2D slab, as in the classical Hall effect, and the magnetic field is perpendicular to the slab (see Figure \ref{fig:HallEffect}) perform orbits with frequency  $\omega_B = eB/m$. These orbits are called cyclotron orbits, and $\omega_B$ is known as the cyclotron frequency. The chirality of the orbits, i.e. whether they are clockwise or counterclockwise, is prescribed by the direction of the magnetic field. If the system is finite, as is the case in all reality, the electrons at the edge of the system will not be able to complete cyclotron orbits. However, the chirality of the orbits must till be preserved, and electrons reflected off the edge will continue semi-orbits in a defined direction along each edge, as shown in Figure \ref{fig:HallEffect}.  These are known as skipping orbits. 
 \begin{figure}
-	\includegraphics{"ChernNum Figures/HallEffect".png}
+	\includegraphics{"ChernNum Figures/HallEffectOrbits".png}
 \label{fig:HallEffect}
-\caption{}
+\caption[Hall effect setup]{Hall effect setup. A slab of metal very thin along one axis acts as a 2D constraint for the electrons to travel in. A magnetic field normal to the plane pierces the metal. Electrons travel in cyclotron orbits in the bulk and perform skipping orbits along the edges.}
 \end{figure}
-Cyclotron orbits, skipping orbits
-\begin{figure}
-	\includegraphics{"ChernNum Figures/qhe".png}
-\label{fig:qhe}
-\caption{}
-\end{figure}
-	Quantum Hall Effect
 
-	Solve QHE in Landau gauge - get massive degeneracy, dependence of momentum along y on position along x
-
-	Disorder leads to quantization - conductivity in between flux quanta is messed up, but on flux quanta enforced by topology
-
-\subsection{Hofstadter regime}
-	Aharonov-Bohm effect - phase as magnetic field
+In the same geometry, the presence of an underlying crystal lattice constrains the motion of the electrons. In order to understand the effect of a magnetic field in this case, particularly in the quantum limit, it is useful to think of the field in terms of the Aharonov-Bohm effect.
 \begin{figure}
 	\includegraphics{"ChernNum Figures/ABphase".png}
 \label{fig:ABphase}
-\caption{}
+\caption[Aharanov-Bohm experiment]{Aharanov-Bohm experiment. Two electrons, initially phase coherent, are sent around an infinite solenoid with a magnetic flux $\Phi$ going through the solenoid, and no field outside. Electrons interfered on the other side are found to have a phase difference proportional to the enclosed flux. }
 \end{figure}
-		Hofstadter Butterfly
+The setup for the Ahoranov-Bohm effect is shown in Figure \ref{fig:ABphase}. There is an infinite solenoid with a current running through it, resulting in a uniform magnetic field $\vec{B}=B_z$\ez{} inside the solenoid. Outside the solenoid, the field is zero. However, the vector potential $\vec{A}$, which defines a magnetic field through $\vec{B} = \vec{\nabla}\times\vec{A}$ can be non-zero, as long as its curl remains zero.  In the experiment\cite{Aharonov1959}, two electrons were sent around the solenoid, never experiencing a magnetic field. Classically, the electrons should pass unaffected. In reality, though the electron's trajectory was unchanged, the quantum mechanical phase was effected. Two electrons that started out in phase acquired a phase difference$\phi_{AB} =2\pi \Phi/\Phi_0$, where $\Phi = A\times B_z$ is the flux through the solenoid given by the field $B_z$ times the area inside the solenoid $A$, and $\Phi_0 = h/e$ is the flux quantum. 
+
+For electrons on a 2D lattice, this provides a way to treat interpret a magnetic field quantum mechanically. The smallest unit of the lattice, called a plaquette, will have some magnetic flux through it $\Phi = A\times B_z$. As far the as the electron is concerned, which is only constrained to move around the plaquette, it is as if there is an infinite solenoid with magnetic flux $\Phi$ through it is piercing the center of the plaquette. Therefore, an electron hopping in a closed loop around the plaquette will acquire a phase $\phi_{AB} =2\pi \Phi/\Phi_0$. We will use this treatment in the next section.
+
+\subsection{Hofstadter regime}
+The Hofstadter regime\cite{Hofstadter1976} for 2D electrons in a magnetic field occurs when the magnetic flux per individual lattice plaquette is a non-negligible fraction of a flux quantum. This regimes are hard to reach experimentally, since the typical plaquette size in crystalline material is of order a square Angstrom, and the magnetic field necessary to thread a magnetic flux of $\Phi_0$ through such a narrow area is of order $\approx10^4$ Tesla, not accessible with current technology. Several platforms have however reached the Hofstadter regime by engineering systems with large effective plaquette size in engineered materials\cite{Geisler2004,Hunt2013}.
+
+For a square lattice with sites along \ex{} labeled by index $j$ and sites along \ey{} labeled by $k$, in the tight binding limit, the Harper-Hofstadter Hamiltonian can be written in the Landau gauge as
+\begin{equation}
+H=-\sum_{j,k} t_x e^{i\phi_{\rm AB}k}\ket{j+1,k}\bra{j,k}+t_y|j,k+1\rangle\langle j,k| +  h.c.,
+\label{eqn:hofstadterHam}
+\end{equation} 
+where $t_x$ and $t_y$ are the tunneling amplitudes along \ex{} and \ey{}, and h.c. is the Hermitian conjugate. Here, we have labeled the states by site indexes along both directions $\ket{j,k}$ and included only nearest neighbor tunneling. The choice of Landau gauge is here represented by the phase factor $e^{i\phi_{\rm AB}k}$ being only on the tunneling term along \ex{}.
+
+This Hamiltonian can be solved to find its eigenenergies for a range of phases  $\phi_{\rm AB}$, and therefore different fluxes per lattice plaquette $\Phi/\Phi_0$. Note that the Hamiltonian is invariant to changes of phase in integer units of $2\pi$, and therefore the physics is invariant under changes of magnetic flux per plaquette of $\Phi_0$. 
 
 \begin{figure}
-	\includegraphics{"ChernNum Figures/HofstadterFig".pdf}
+	\includegraphics{"ChernNum Figures/HofstadterFig".png}
 \label{fig:Hofstadter}
-\caption{}
+\caption[Hofstadter butterfly]{Hofstadter butterfly calculated in 2D momentum space for isotropic tunneling $t_x=t_y$.}
 \end{figure}
-		Diophantine equation 	
+The spectrum of the Hamiltonian for a range of flux values is shown in Figure \ref{fig:Hofstadter}. This is known as the Hofstadter butterfly, and is remarkable for its fractal structure. In the limit of flux $\Phi/\Phi_0\rightarrow0$, the fractal bands come together to form equally spaced composite bands, Landau levels underlying the quantum Hall effect\cite{Ando1975,Klitzing1980,Laughlin1981}. The topology of each energy level for each flux value, as defined by the Chern number, can be found through eqn. \ref{eqn:ChernFromBerryCurvature}. In the quantum Hall effect limit, the Chern number of each Landau level is $C=1$.
 
-Chern number has to be 1 in qhe - no lattice to reflect off of, and therefore no way to make transverse sites come out of order!
+\subsection{Diophantine equation} 	
+In their seminal paper explaining the topological nature of the quantum Hall effect\cite{Thouless1982}, Thouless, Kohmoto, Nightingale and den Nijs also found an alternative way to find the Chern number 
+This equation states that for rational flux $\Phi/\Phi_0 = P/Q$ (for relatively prime integers $P$ and $Q$) the integer solutions  $s$ and $C$ to the Diophantine equation
+\begin{equation}
+1 = Q s - P C,
+\label{eqn:Diophantine}
+\end{equation}  
+under the constraint $|C|\leq |Q|/2$\cite{Thouless1982, Kohmoto1989}, uniquely determine the Chern number of the lowest band. We refer to this equation as the TKNN Diophantine equation, and will make use of it in Chapter \ref{chap:BlochOsc}. 
 
 \section{Ultracold atoms for quantum simulation}
-They are quantum and well controlled and detected
-Neutral atoms act as though they're in a magnetic field, analogous to electrons
+The phenomenon of Bose--Einstein condensation (BEC) was first predicted in 1924\cite{Bose1924}. But it wasn't until 1995 that techniques for cooling atoms down to ultracold temperatures allowed for an experimental realization of this phase of matter. The first BEC was created and observed by two labs, one at NIST\cite{Anderson1995} and one at MIT\cite{Davis1995}. The realization of a BEC won Eric Cornell, Carl Wieman and Wolfgang Kettrle the Nobel prize in 2001. Since then, similar cooling techniques have been applied to Fermionic atomic species. Though no phase transition occurs for these atoms, at ultracold temperatures they start to differ significantly from an ideal gas. Atoms in this regime are known as a degenerate Fermi gas (DFG), and they were first experimentally realized in 1999 in the group of Deborah Jin. 
+
+Since their realization, BECs and DFGs have become widely studied, both for their fundamental properties and as a platform for quantum simulation. A key tool that makes ultracold atoms amenable to simulating condensed matter systems is optical lattices. These lattices serve as analogues of crystal structure in a solid, with atoms serving as analogues of electrons. Optical lattices are created by laser light and can be used to create almost any geometry, from square\cite{Greiner2001} to triangular\cite{Becker2010,Struck2011}, to hexagonal\cite{Tarruell2012} to Kagome\cite{Liu2010}. This allows for simulation of almost any crystal structure, and even the creation of periodic structures not yet found in nature. 
+
+Moreover, these optical lattices can be tuned in situ, giving the experimenter dynamical control of Hamiltonian parameters far beyond what is possible in condensed matter settings. This allowed for the realization of the previously predicted \cite{Fisher1989} quantum phase transition from the superfluid to the Mott insulating phase in a BEC\cite{Greiner2002,Mun2008}.
+
+Another feature of these systems is their intrinsic cleanliness. They are practically disorder-free, and disorder can be introduced in a controlled way, making it possible to experimentally parse out its role. 
+
+Additionally, there are 
+
+	control of interactions with Feshbach resonances
+
+One drawback of ultracold atomic systems is that they are made with neutral atoms, limiting their interactions with magnetic fields to those arising from their magnetic dipole moment. It might seem that the interesting physics of 2D systems in magnetic fields, as described in the previous section, would not lend itself to quantum simulation in these settings. However, many techniques have emerged for creating artificial magnetic fields, or terms in the atomic Hamiltonian that are identical to the charged particle--magnetic field interaction. One proposal was rotating the atoms such that the Coreolis force takes the role of the Lorentz force\cite{Cooper2008}. Another is engineering laser coupling in a precise geometry to induce effective magnetic fields\cite{Juzeliunas2006}, which was successfully realized\cite{Lin2009b} and extended to creating a spin-orbit coupled Bose gas\cite{Lin2011}. 
+
+On a lattice, the cold atomic approach of imprinting Ahoranov-Bohm phases, rather than using large external fields, has opened the way for simulation of large magnetic fluxes\cite{Jaksch2003,Mueller2004,Sorensen2005}. Several experiments have used this approach to reach the Hofstadter regime\cite{Aidelsburger2013,Miyake2013,Jotzu2014,Aidelsburger2014,Mancini2015,An2017}. Furthermore, the approach of synthetic dimensions\cite{Celi2014} has enabled reaching the Hofstadter regime without laser modulation. The experimental realization and detection with this technique as described in\cite{Stuhl2015} is detailed in Chapter \ref{chap:SynDim} of this thesis. It has also been successfully used by other groups\cite{Mancini2015,Meier2016}. In Chapter \ref{chap:BlochOsc} of this thesis, we further detail our experiment detecting the underlying topology of these synthetic dimensional lattices. 
+
