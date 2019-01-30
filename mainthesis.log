@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2018.8.16)  29 JAN 2019 13:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2018.8.16)  29 JAN 2019 21:27
 entering extended mode
 **./mainthesis.tex
 (mainthesis.tex
@@ -429,7 +429,19 @@ LaTeX Warning: Unused global option(s):
     [pdflatex].
 
 (mainthesis.aux (Abstract.aux) (Titlepage.aux) (Copyright.aux)
-(BlochOscChapter.aux))
+(ChernNumberChapter.aux) (AtomLightChapter.aux
+
+LaTeX Warning: Label `eqn:BHam' multiply defined.
+
+
+LaTeX Warning: Label `fig:pulsingSchematic' multiply defined.
+
+) (IntroChapter.aux) (AbsorptionImagingChapter.aux) (SwaveScatteringChapter.aux
+) (SynDimChapter.aux) (BlochOscChapter.aux
+
+LaTeX Warning: Label `eqn:Diophantine' multiply defined.
+
+))
 \openout1 = `mainthesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
@@ -446,8 +458,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
 LaTeX Font Info:    ... okay on input line 81.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
 LaTeX Font Info:    ... okay on input line 81.
-
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count133
 \scratchdimen=\dimen150
@@ -495,18 +506,19 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 15.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)) [1
-
-
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-\openout2 = `Titlepage.aux'.
-
- (Titlepage.tex
-Underfull \hbox (badness 10000) in paragraph at lines 30--32
-
+)
+Overfull \hbox (13.39926pt too wide) in paragraph at lines 14--28
+  [] 
  []
 
-) [2
+[1
+
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]) [2]
+\openout2 = `Titlepage.aux'.
+
+ (Titlepage.tex)
+[3
 
 
 ]
@@ -520,57 +532,1110 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
 
-[3
+[4
 
 
-] [4]) (mainthesis.toc)
+] [5]) (mainthesis.toc [2
+
+] [3])
 \tf@toc=\write4
 \openout4 = `mainthesis.toc'.
 
- [2
-
-] (mainthesis.lot)
+ [4] (mainthesis.lot)
 \tf@lot=\write5
 \openout5 = `mainthesis.lot'.
 
- [3] (mainthesis.lof)
+ [5] (mainthesis.lof
+[6])
 \tf@lof=\write6
 \openout6 = `mainthesis.lof'.
 
- [4]
-\openout2 = `BlochOscChapter.aux'.
+ [7]
+\openout2 = `ChernNumberChapter.aux'.
 
+ (ChernNumberChapter.tex
+Chapter 1.
 
-(BlochOscChapter.tex
-Chapter 7.
-
-LaTeX Warning: Reference `chap:Chern' on page 1 undefined on input line 4.
-
-
-LaTeX Warning: Reference `chap:SynDim' on page 1 undefined on input line 6.
-
-
-LaTeX Warning: Reference `chap:SynDim' on page 1 undefined on input line 8.
-
-
-LaTeX Warning: Reference `eqn:TBhamFlat' on page 1 undefined on input line 8.
-
-
-LaTeX Warning: Reference `chap:SynDim' on page 1 undefined on input line 15.
+LaTeX Warning: Reference `chap:SynDim, chap:BlochOsc' on page 1 undefined on in
+put line 9.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.16 
+l.10 
       [1
 
 ]
+<"ChernNum Figures/TopologyBakedGoods".png, id=610, 456.7464pt x 196.5744pt>
+File: "ChernNum Figures/TopologyBakedGoods".png Graphic file (type png)
 
-LaTeX Warning: Reference `sec:SynDimCalibration' on page 2 undefined on input l
-ine 17.
+<use "ChernNum Figures/TopologyBakedGoods".png>
+Package pdftex.def Info: "ChernNum Figures/TopologyBakedGoods".png used on inpu
+t line 16.
+(pdftex.def)             Requested size: 456.74529pt x 196.57391pt.
 
-<"BlochOsc Figures/figure1v15".pdf, id=170, 440.84702pt x 371.88937pt>
+Overfull \hbox (30.35274pt too wide) in paragraph at lines 16--18
+[][]
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.27 
+      [2]pdfTeX warning (ext4): destination with the same identifier (name{page
+.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.34 
+      [3 <./ChernNum Figures/TopologyBakedGoods.png>]pdfTeX warning (ext4): des
+tination with the same identifier (name{page.4}) has been already used, duplica
+te ignored
+<to be read again> 
+                   \relax 
+l.59 
+      [4]
+<"ChernNum Figures/HallEffectOrbits".png, id=645, 329.5512pt x 242.3454pt>
+File: "ChernNum Figures/HallEffectOrbits".png Graphic file (type png)
+
+<use "ChernNum Figures/HallEffectOrbits".png>
+Package pdftex.def Info: "ChernNum Figures/HallEffectOrbits".png used on input 
+line 145.
+(pdftex.def)             Requested size: 329.55037pt x 242.3448pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.149 
+       [5] <"ChernNum Figures/ABphase".png, id=650, 434.5836pt x 197.538pt>
+File: "ChernNum Figures/ABphase".png Graphic file (type png)
+
+<use "ChernNum Figures/ABphase".png>
+Package pdftex.def Info: "ChernNum Figures/ABphase".png used on input line 152.
+
+(pdftex.def)             Requested size: 434.58253pt x 197.5375pt.
+
+Overfull \hbox (8.18999pt too wide) in paragraph at lines 152--154
+[][]
+ []
+
+[6 <./ChernNum Figures/HallEffectOrbits.png>] [7 <./ChernNum Figures/ABphase.pn
+g>] <"ChernNum Figures/HofstadterFig".png, id=668, 448.074pt x 359.9046pt>
+File: "ChernNum Figures/HofstadterFig".png Graphic file (type png)
+
+<use "ChernNum Figures/HofstadterFig".png>
+Package pdftex.def Info: "ChernNum Figures/HofstadterFig".png used on input lin
+e 173.
+(pdftex.def)             Requested size: 448.07289pt x 359.90372pt.
+
+Overfull \hbox (21.68034pt too wide) in paragraph at lines 173--175
+[][]
+ []
+
+[8] [9 <./ChernNum Figures/HofstadterFig.png>] [10] [11]) [12]
+\openout2 = `AtomLightChapter.aux'.
+
+
+(AtomLightChapter.tex
+Chapter 2.
+[13
+
+
+]
+<"Chapter2 Figures/RbKatomicStruct".pdf, id=786, 448.07399pt x 484.51414pt>
+File: "Chapter2 Figures/RbKatomicStruct".pdf Graphic file (type pdf)
+
+<use "Chapter2 Figures/RbKatomicStruct".pdf>
+Package pdftex.def Info: "Chapter2 Figures/RbKatomicStruct".pdf used on input l
+ine 18.
+(pdftex.def)             Requested size: 448.07288pt x 484.51297pt.
+
+Overfull \hbox (21.68033pt too wide) in paragraph at lines 18--19
+[][] 
+ []
+
+[14] [15 <./Chapter2 Figures/RbKatomicStruct.pdf>] [16]
+<"Chapter4 Figures/HyperfineFromSteck".pdf, id=823, 794.97pt x 614.295pt>
+File: "Chapter4 Figures/HyperfineFromSteck".pdf Graphic file (type pdf)
+
+<use "Chapter4 Figures/HyperfineFromSteck".pdf>
+Package pdftex.def Info: "Chapter4 Figures/HyperfineFromSteck".pdf used on inpu
+t line 55.
+(pdftex.def)             Requested size: 476.98569pt x 368.57983pt.
+
+Overfull \hbox (50.59314pt too wide) in paragraph at lines 55--56
+[][] 
+ []
+
+[17 <./Chapter4 Figures/HyperfineFromSteck.pdf, page is rotated 90 degrees>]
+[18] [19] [20] [21] [22]
+<"Chapter4 Figures/ARPfigure".pdf, id=883, 433.62pt x 216.81pt>
+File: "Chapter4 Figures/ARPfigure".pdf Graphic file (type pdf)
+
+<use "Chapter4 Figures/ARPfigure".pdf>
+Package pdftex.def Info: "Chapter4 Figures/ARPfigure".pdf used on input line 16
+3.
+(pdftex.def)             Requested size: 433.61894pt x 216.80946pt.
+
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 163--164
+[][] 
+ []
+
+[23 <./Chapter4 Figures/ARPfigure.pdf>] [24] [25]
+<"Chapter2 Figures/Picture1a".png, id=942, 246.1998pt x 359.9046pt>
+File: "Chapter2 Figures/Picture1a".png Graphic file (type png)
+
+<use "Chapter2 Figures/Picture1a".png>
+Package pdftex.def Info: "Chapter2 Figures/Picture1a".png used on input line 20
+0.
+(pdftex.def)             Requested size: 110.78888pt x 161.95557pt.
+
+<"Chapter2 Figures/Picture1c".pdf, id=943, 173.448pt x 187.902pt>
+File: "Chapter2 Figures/Picture1c".pdf Graphic file (type pdf)
+
+<use "Chapter2 Figures/Picture1c".pdf>
+Package pdftex.def Info: "Chapter2 Figures/Picture1c".pdf used on input line 20
+1.
+(pdftex.def)             Requested size: 156.10175pt x 169.11023pt.
+
+<"Chapter2 Figures/Picture1b".png, id=944, 250.536pt x 304.4976pt>
+File: "Chapter2 Figures/Picture1b".png Graphic file (type png)
+
+<use "Chapter2 Figures/Picture1b".png>
+Package pdftex.def Info: "Chapter2 Figures/Picture1b".png used on input line 20
+2.
+(pdftex.def)             Requested size: 125.26768pt x 152.24843pt.
+ [26 <./Chapter2 Figures/Picture1a.png> <./Chapter2 Figures/Picture1c.pdf> <./C
+hapter2 Figures/Picture1b.png>] [27]
+[28] [29]
+Overfull \hbox (18.0806pt too wide) detected at line 268
+[]\OML/cmm/m/it/12 H[] \OT1/cmr/m/n/12 = [] [] \OML/cmm/m/it/12 ;
+ []
+
+[30] <"Chapter4 Figures/figure1".pdf, id=1015, 448.07399pt x 289.08pt>
+File: "Chapter4 Figures/figure1".pdf Graphic file (type pdf)
+
+<use "Chapter4 Figures/figure1".pdf>
+Package pdftex.def Info: "Chapter4 Figures/figure1".pdf used on input line 294.
+
+(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
+
+Overfull \hbox (21.68033pt too wide) in paragraph at lines 294--295
+[][] 
+ []
+
+[31] [32 <./Chapter4 Figures/figure1.pdf>] [33] [34]
+<"Chapter4 Figures/figure2".pdf, id=1060, 448.07399pt x 289.08pt>
+File: "Chapter4 Figures/figure2".pdf Graphic file (type pdf)
+
+<use "Chapter4 Figures/figure2".pdf>
+Package pdftex.def Info: "Chapter4 Figures/figure2".pdf used on input line 341.
+
+(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
+
+Overfull \hbox (21.68033pt too wide) in paragraph at lines 341--342
+[][] 
+ []
+
+<"Chapter4 Figures/LatticePulsing".pdf, id=1066, 448.07399pt x 289.08pt>
+File: "Chapter4 Figures/LatticePulsing".pdf Graphic file (type pdf)
+
+<use "Chapter4 Figures/LatticePulsing".pdf>
+Package pdftex.def Info: "Chapter4 Figures/LatticePulsing".pdf used on input li
+ne 352.
+(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
+
+Overfull \hbox (21.68033pt too wide) in paragraph at lines 352--353
+[][] 
+ []
+
+[35] [36 <./Chapter4 Figures/figure2.pdf>]
+<"Chapter4 Figures/figure3".pdf, id=1101, 448.07399pt x 289.08pt>
+File: "Chapter4 Figures/figure3".pdf Graphic file (type pdf)
+
+<use "Chapter4 Figures/figure3".pdf>
+Package pdftex.def Info: "Chapter4 Figures/figure3".pdf used on input line 360.
+
+(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
+
+Overfull \hbox (21.68033pt too wide) in paragraph at lines 360--361
+[][] 
+ []
+
+[37 <./Chapter4 Figures/LatticePulsing.pdf>] [38] [39 <./Chapter4 Figures/figur
+e3.pdf>]
+<"Chapter4 Figures/RfRamanSetupBeams".pdf, id=1188, 794.97pt x 614.295pt>
+File: "Chapter4 Figures/RfRamanSetupBeams".pdf Graphic file (type pdf)
+
+<use "Chapter4 Figures/RfRamanSetupBeams".pdf>
+Package pdftex.def Info: "Chapter4 Figures/RfRamanSetupBeams".pdf used on input
+ line 399.
+(pdftex.def)             Requested size: 238.49284pt x 184.28992pt.
+
+<"Chapter4 Figures/RfRamanSetupLevels".pdf, id=1189, 794.97pt x 614.295pt>
+File: "Chapter4 Figures/RfRamanSetupLevels".pdf Graphic file (type pdf)
+
+<use "Chapter4 Figures/RfRamanSetupLevels".pdf>
+Package pdftex.def Info: "Chapter4 Figures/RfRamanSetupLevels".pdf used on inpu
+t line 400.
+(pdftex.def)             Requested size: 238.49284pt x 184.28992pt.
+
+Overfull \hbox (53.20422pt too wide) in paragraph at lines 399--401
+[][] [][] 
+ []
+
+[40 <./Chapter4 Figures/RfRamanSetupBeams.pdf, page is rotated 90 degrees> <./C
+hapter4 Figures/RfRamanSetupLevels.pdf, page is rotated 90 degrees>]
+<"Chapter4 Figures/rfBandStructure".pdf, id=1214, 448.07399pt x 289.08pt>
+File: "Chapter4 Figures/rfBandStructure".pdf Graphic file (type pdf)
+
+<use "Chapter4 Figures/rfBandStructure".pdf>
+Package pdftex.def Info: "Chapter4 Figures/rfBandStructure".pdf used on input l
+ine 408.
+(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
+
+Overfull \hbox (21.68033pt too wide) in paragraph at lines 408--409
+[][] 
+ []
+
+[41] [42 <./Chapter4 Figures/rfBandStructure.pdf>] [43]
+<"Chapter4 Figures/RamanBandStructure".pdf, id=1285, 448.07399pt x 289.08pt>
+File: "Chapter4 Figures/RamanBandStructure".pdf Graphic file (type pdf)
+
+<use "Chapter4 Figures/RamanBandStructure".pdf>
+Package pdftex.def Info: "Chapter4 Figures/RamanBandStructure".pdf used on inpu
+t line 441.
+(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
+
+Overfull \hbox (21.68033pt too wide) in paragraph at lines 441--442
+[][] 
+ []
+
+[44] [45 <./Chapter4 Figures/RamanBandStructure.pdf>]
+<"Chapter4 Figures/RfPulsing".pdf, id=1346, 448.07399pt x 433.62pt>
+File: "Chapter4 Figures/RfPulsing".pdf Graphic file (type pdf)
+
+<use "Chapter4 Figures/RfPulsing".pdf>
+Package pdftex.def Info: "Chapter4 Figures/RfPulsing".pdf used on input line 45
+9.
+(pdftex.def)             Requested size: 448.07288pt x 433.61894pt.
+
+Overfull \hbox (21.68033pt too wide) in paragraph at lines 459--460
+[][] 
+ []
+
+[46] [47 <./Chapter4 Figures/RfPulsing.pdf>]
+<"Chapter4 Figures/RamanPulsing".pdf, id=1395, 448.07399pt x 433.62pt>
+File: "Chapter4 Figures/RamanPulsing".pdf Graphic file (type pdf)
+
+<use "Chapter4 Figures/RamanPulsing".pdf>
+Package pdftex.def Info: "Chapter4 Figures/RamanPulsing".pdf used on input line
+ 467.
+(pdftex.def)             Requested size: 448.07288pt x 433.61894pt.
+
+Overfull \hbox (21.68033pt too wide) in paragraph at lines 467--468
+[][] 
+ []
+
+
+LaTeX Warning: Reference `fig:rfBandStruct' on page 48 undefined on input line 
+472.
+
+) [48] [49 <./Chapter4 Figures/RamanPulsing.pdf>]
+\openout2 = `IntroChapter.aux'.
+
+ (IntroChapter.tex
+Chapter 3.
+[50
+
+
+] [51] [52]
+<"BEC_DFG figures/condensation".pdf, id=1474, 375.804pt x 216.81pt>
+File: "BEC_DFG figures/condensation".pdf Graphic file (type pdf)
+
+<use "BEC_DFG figures/condensation".pdf>
+Package pdftex.def Info: "BEC_DFG figures/condensation".pdf used on input line 
+68.
+(pdftex.def)             Requested size: 375.80309pt x 216.80946pt.
+ [53] [54 <./BEC_DFG figures/condensation.pdf>]
+<"BEC_DFG figures/CondensingAtoms".png, id=1507, 450.483pt x 156.1032pt>
+File: "BEC_DFG figures/CondensingAtoms".png Graphic file (type png)
+
+<use "BEC_DFG figures/CondensingAtoms".png>
+Package pdftex.def Info: "BEC_DFG figures/CondensingAtoms".png used on input li
+ne 91.
+(pdftex.def)             Requested size: 450.48189pt x 156.1028pt.
+
+Overfull \hbox (24.08934pt too wide) in paragraph at lines 91--92
+[][] 
+ []
+
+[55 <./BEC_DFG figures/CondensingAtoms.png>] [56] [57]
+<"BEC_DFG figures/InSitu".pdf, id=1537, 325.215pt x 433.62pt>
+File: "BEC_DFG figures/InSitu".pdf Graphic file (type pdf)
+
+<use "BEC_DFG figures/InSitu".pdf>
+Package pdftex.def Info: "BEC_DFG figures/InSitu".pdf used on input line 136.
+(pdftex.def)             Requested size: 325.2142pt x 433.61894pt.
+ [58] [59 <./BEC_DFG figures/InSitu.pdf>]
+[60] <"BEC_DFG figures/FermiDist".pdf, id=1574, 448.07399pt x 216.81pt>
+File: "BEC_DFG figures/FermiDist".pdf Graphic file (type pdf)
+
+<use "BEC_DFG figures/FermiDist".pdf>
+Package pdftex.def Info: "BEC_DFG figures/FermiDist".pdf used on input line 179
+.
+(pdftex.def)             Requested size: 448.07288pt x 216.80946pt.
+
+Overfull \hbox (21.68033pt too wide) in paragraph at lines 179--180
+[][] 
+ []
+
+[61 <./BEC_DFG figures/FermiDist.pdf>] [62]
+<"BEC_DFG figures/FeshbachSchematic".png, id=1607, 433.62pt x 244.7544pt>
+File: "BEC_DFG figures/FeshbachSchematic".png Graphic file (type png)
+
+<use "BEC_DFG figures/FeshbachSchematic".png>
+Package pdftex.def Info: "BEC_DFG figures/FeshbachSchematic".png used on input 
+line 198.
+(pdftex.def)             Requested size: 433.61894pt x 244.75378pt.
+
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 198--199
+[][] 
+ []
+
+[63 <./BEC_DFG figures/FeshbachSchematic.png>] [64]
+<"BEC_DFG figures/ExperimentPicture".png, id=1638, 433.62pt x 338.7054pt>
+File: "BEC_DFG figures/ExperimentPicture".png Graphic file (type png)
+
+<use "BEC_DFG figures/ExperimentPicture".png>
+Package pdftex.def Info: "BEC_DFG figures/ExperimentPicture".png used on input 
+line 219.
+(pdftex.def)             Requested size: 433.61894pt x 338.70457pt.
+
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 219--220
+[][] 
+ []
+
+[65 <./BEC_DFG figures/ExperimentPicture.png>]
+<"BEC_DFG figures/BirdsEyeApparatus".pdf, id=1649, 439.72781pt x 417.3482pt>
+File: "BEC_DFG figures/BirdsEyeApparatus".pdf Graphic file (type pdf)
+
+<use "BEC_DFG figures/BirdsEyeApparatus".pdf>
+Package pdftex.def Info: "BEC_DFG figures/BirdsEyeApparatus".pdf used on input 
+line 228.
+(pdftex.def)             Requested size: 439.72673pt x 417.34718pt.
+
+Overfull \hbox (13.33418pt too wide) in paragraph at lines 228--229
+[][] 
+ []
+
+
+LaTeX Warning: Reference `SynDimChapter,BlochOscChapter' on page 66 undefined o
+n input line 235.
+
+[66] [67 <./BEC_DFG figures/BirdsEyeApparatus.pdf>]
+
+LaTeX Warning: Reference `SynDimChapter,BlochOscChapter' on page 68 undefined o
+n input line 237.
+
+
+LaTeX Warning: Reference `SwaveScatteringChapter' on page 68 undefined on input
+ line 239.
+
+<"BEC_DFG figures/ApparatusCoils".pdf, id=1676, 391.30692pt x 169.00339pt>
+File: "BEC_DFG figures/ApparatusCoils".pdf Graphic file (type pdf)
+
+<use "BEC_DFG figures/ApparatusCoils".pdf>
+Package pdftex.def Info: "BEC_DFG figures/ApparatusCoils".pdf used on input lin
+e 243.
+(pdftex.def)             Requested size: 391.30595pt x 169.00298pt.
+
+
+LaTeX Warning: Reference `SwaveScatteringChapter' on page 68 undefined on input
+ line 248.
+
+[68] [69 <./BEC_DFG figures/ApparatusCoils.pdf>] [70] [71] [72]
+<"BEC_DFG figures/NewMasterBoard".png, id=1814, 433.62pt x 243.7908pt>
+File: "BEC_DFG figures/NewMasterBoard".png Graphic file (type png)
+
+<use "BEC_DFG figures/NewMasterBoard".png>
+Package pdftex.def Info: "BEC_DFG figures/NewMasterBoard".png used on input lin
+e 272.
+(pdftex.def)             Requested size: 433.61894pt x 243.7902pt.
+
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 272--273
+[][] 
+ []
+
+[73 <./BEC_DFG figures/NewMasterBoard.png>] [74]
+<"BEC_DFG figures/HsinIsImagingBottomSchematic".png, id=1833, 397.485pt x 298.7
+16pt>
+File: "BEC_DFG figures/HsinIsImagingBottomSchematic".png Graphic file (type png
+)
+ <use "BEC_DFG figures/HsinIsImagingBottomSchematic".png>
+Package pdftex.def Info: "BEC_DFG figures/HsinIsImagingBottomSchematic".png use
+d on input line 288.
+(pdftex.def)             Requested size: 397.48402pt x 298.71526pt.
+ [75]
+<"BEC_DFG figures/HsinIsImagingLens".png, id=1839, 332.9238pt x 179.2296pt>
+File: "BEC_DFG figures/HsinIsImagingLens".png Graphic file (type png)
+
+<use "BEC_DFG figures/HsinIsImagingLens".png>
+Package pdftex.def Info: "BEC_DFG figures/HsinIsImagingLens".png used on input 
+line 295.
+(pdftex.def)             Requested size: 332.92297pt x 179.22914pt.
+
+<"BEC_DFG figures/HsinI's imaging path".png, id=1841, 408.91231pt x 281.05pt>
+File: "BEC_DFG figures/HsinI's imaging path".png Graphic file (type png)
+
+<use "BEC_DFG figures/HsinI's imaging path".png>
+Package pdftex.def Info: "BEC_DFG figures/HsinI's imaging path".png used on inp
+ut line 302.
+(pdftex.def)             Requested size: 408.9113pt x 281.0493pt.
+ [76 <./BEC_DFG figures/HsinIsImagingBottomSchematic.png>] [77 <./BEC_DFG figur
+es/HsinIsImagingLens.png>]
+[78 <./BEC_DFG figures/HsinI's imaging path.png>] [79]
+<"BEC_DFG figures/FPGAservoTurnOn".png, id=1865, 419.166pt x 542.9886pt>
+File: "BEC_DFG figures/FPGAservoTurnOn".png Graphic file (type png)
+
+<use "BEC_DFG figures/FPGAservoTurnOn".png>
+Package pdftex.def Info: "BEC_DFG figures/FPGAservoTurnOn".png used on input li
+ne 322.
+(pdftex.def)             Requested size: 419.16498pt x 542.98727pt.
+
+<"BEC_DFG figures/FPGAservoCalib".png, id=1867, 433.62pt x 299.6713pt>
+File: "BEC_DFG figures/FPGAservoCalib".png Graphic file (type png)
+
+<use "BEC_DFG figures/FPGAservoCalib".png>
+Package pdftex.def Info: "BEC_DFG figures/FPGAservoCalib".png used on input lin
+e 329.
+(pdftex.def)             Requested size: 433.61894pt x 299.67055pt.
+
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 329--330
+[][] 
+ []
+
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ú in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ù in font cmr12!
+
+Overfull \hbox (7.54153pt too wide) in paragraph at lines 327--334
+\OT1/cmr/m/n/12 drive un-der 'RbK/Lab Note-book/Electonics/FPGA Quad Servo (Fro
+m Ryan)'. When
+ []
+
+
+LaTeX Warning: Reference `chap:BochOsc' on page 80 undefined on input line 336.
+
+
+[80] [81 <./BEC_DFG figures/FPGAservoTurnOn.png>] [82 <./BEC_DFG figures/FPGAse
+rvoCalib.png>]
+<"BEC_DFG figures/ODTlensSchematic".png, id=1884, 446.6286pt x 142.131pt>
+File: "BEC_DFG figures/ODTlensSchematic".png Graphic file (type png)
+
+<use "BEC_DFG figures/ODTlensSchematic".png>
+Package pdftex.def Info: "BEC_DFG figures/ODTlensSchematic".png used on input l
+ine 351.
+(pdftex.def)             Requested size: 446.6275pt x 142.13063pt.
+
+Overfull \hbox (20.23495pt too wide) in paragraph at lines 351--352
+[][] 
+ []
+
+[83 <./BEC_DFG figures/ODTlensSchematic.png>]
+<"BEC_DFG figures/ODTlensGraphs".png, id=1894, 433.62pt x 495.7722pt>
+File: "BEC_DFG figures/ODTlensGraphs".png Graphic file (type png)
+
+<use "BEC_DFG figures/ODTlensGraphs".png>
+Package pdftex.def Info: "BEC_DFG figures/ODTlensGraphs".png used on input line
+ 361.
+(pdftex.def)             Requested size: 433.61894pt x 495.77098pt.
+
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 361--362
+[][] 
+ []
+
+[84] [85 <./BEC_DFG figures/ODTlensGraphs.png>] [86]
+Overfull \hbox (0.33328pt too wide) in paragraph at lines 383--384
+[]\OT1/cmr/m/n/12 The de-sign of our 2D MOT is closely based on the de-sign in 
+Thomas Uehlinger's
+ []
+
+[87] <"BEC_DFG figures/2DMOTschematic".png, id=1929, 493.3632pt x 396.5214pt>
+File: "BEC_DFG figures/2DMOTschematic".png Graphic file (type png)
+
+<use "BEC_DFG figures/2DMOTschematic".png>
+Package pdftex.def Info: "BEC_DFG figures/2DMOTschematic".png used on input lin
+e 389.
+(pdftex.def)             Requested size: 493.362pt x 396.52042pt.
+
+Overfull \hbox (66.96945pt too wide) in paragraph at lines 389--390
+[][] 
+ []
+
+<"BEC_DFG figures/2DMOTcellPhoto".png, id=1932, 433.62pt x 243.7908pt>
+File: "BEC_DFG figures/2DMOTcellPhoto".png Graphic file (type png)
+
+<use "BEC_DFG figures/2DMOTcellPhoto".png>
+Package pdftex.def Info: "BEC_DFG figures/2DMOTcellPhoto".png used on input lin
+e 396.
+(pdftex.def)             Requested size: 433.61894pt x 243.7902pt.
+
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 396--397
+[][] 
+ []
+
+[88] [89 <./BEC_DFG figures/2DMOTschematic.png>] [90 <./BEC_DFG figures/2DMOTce
+llPhoto.png>]
+<"BEC_DFG figures/2DMOToptics".pdf, id=1952, 433.62pt x 233.09586pt>
+File: "BEC_DFG figures/2DMOToptics".pdf Graphic file (type pdf)
+
+<use "BEC_DFG figures/2DMOToptics".pdf>
+Package pdftex.def Info: "BEC_DFG figures/2DMOToptics".pdf used on input line 4
+08.
+(pdftex.def)             Requested size: 433.61894pt x 233.09528pt.
+
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 408--409
+[][] 
+ []
+
+<"BEC_DFG figures/Current2DMOTphoto".png, id=1954, 433.62pt x 244.2726pt>
+File: "BEC_DFG figures/Current2DMOTphoto".png Graphic file (type png)
+
+<use "BEC_DFG figures/Current2DMOTphoto".png>
+Package pdftex.def Info: "BEC_DFG figures/Current2DMOTphoto".png used on input 
+line 415.
+(pdftex.def)             Requested size: 433.61894pt x 244.272pt.
+
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 415--416
+[][] 
+ []
+
+[91]) [92 <./BEC_DFG figures/2DMOToptics.pdf>] [93 <./BEC_DFG figures/Current2D
+MOTphoto.png>]
+\openout2 = `AbsorptionImagingChapter.aux'.
+
+ (AbsorptionImagingChapter.tex
+Chapter 4.
+
+LaTeX Warning: Reference `SwaveScatteringChapter' on page 94 undefined on input
+ line 5.
+
+[94
+
+
+] [95] <"Chapter2 Figures/figure1".pdf, id=2004, 231.26399pt x 216.81pt>
+File: "Chapter2 Figures/figure1".pdf Graphic file (type pdf)
+
+<use "Chapter2 Figures/figure1".pdf>
+Package pdftex.def Info: "Chapter2 Figures/figure1".pdf used on input line 53.
+(pdftex.def)             Requested size: 231.26341pt x 216.80946pt.
+
+<"Chapter2 Figures/figure2".pdf, id=2005, 231.26399pt x 216.81pt>
+File: "Chapter2 Figures/figure2".pdf Graphic file (type pdf)
+
+<use "Chapter2 Figures/figure2".pdf>
+Package pdftex.def Info: "Chapter2 Figures/figure2".pdf used on input line 54.
+(pdftex.def)             Requested size: 231.26341pt x 216.80946pt.
+
+Overfull \hbox (38.74536pt too wide) in paragraph at lines 53--55
+[][] [][] 
+ []
+
+[96] [97 <./Chapter2 Figures/figure1.pdf> <./Chapter2 Figures/figure2.pdf
+
+pdfTeX warning: miktex-pdftex.exe (file ./Chapter2 Figures/figure2.pdf): PDF in
+clusion: multiple pdfs with page group included in a single page
+>]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 67.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 70.
+ <"Chapter2 Figures/figure3".pdf, id=2065, 433.62pt x 216.81pt>
+File: "Chapter2 Figures/figure3".pdf Graphic file (type pdf)
+
+<use "Chapter2 Figures/figure3".pdf>
+Package pdftex.def Info: "Chapter2 Figures/figure3".pdf used on input line 104.
+
+(pdftex.def)             Requested size: 433.61894pt x 216.80946pt.
+
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 104--105
+[][] 
+ []
+
+[98] <"Chapter2 Figures/figure4".pdf, id=2101, 231.26399pt x 216.81pt>
+File: "Chapter2 Figures/figure4".pdf Graphic file (type pdf)
+
+<use "Chapter2 Figures/figure4".pdf>
+Package pdftex.def Info: "Chapter2 Figures/figure4".pdf used on input line 112.
+
+(pdftex.def)             Requested size: 231.26341pt x 216.80946pt.
+
+<"Chapter2 Figures/figure5".pdf, id=2102, 231.26399pt x 216.81pt>
+File: "Chapter2 Figures/figure5".pdf Graphic file (type pdf)
+
+<use "Chapter2 Figures/figure5".pdf>
+Package pdftex.def Info: "Chapter2 Figures/figure5".pdf used on input line 113.
+
+(pdftex.def)             Requested size: 231.26341pt x 216.80946pt.
+
+Overfull \hbox (38.74536pt too wide) in paragraph at lines 112--114
+[][] [][] 
+ []
+
+[99 <./Chapter2 Figures/figure3.pdf>] [100 <./Chapter2 Figures/figure4.pdf> <./
+Chapter2 Figures/figure5.pdf
+
+pdfTeX warning: miktex-pdftex.exe (file ./Chapter2 Figures/figure5.pdf): PDF in
+clusion: multiple pdfs with page group included in a single page
+>]pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.1}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.132 \STATE
+             $z[n]=z_0$, $\delta[n]=0$ \COMMENT{initialize position and detu...
+pdfTeX warning (ext4): destination with the same identifier (name{ALC@rem.1}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.132 \STATE
+             $z[n]=z_0$, $\delta[n]=0$ \COMMENT{initialize position and detu...
+pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.2}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.133 \STATE
+             $O[i]=n$ \COMMENT{make a list of composite atom indexes, ordere...
+pdfTeX warning (ext4): destination with the same identifier (name{ALC@rem.2}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.133 \STATE
+             $O[i]=n$ \COMMENT{make a list of composite atom indexes, ordere...
+pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.3}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.134 \STATE
+             $I[n=0,t]=I_0$ \COMMENT{ $t$ is the time index, $I$ is in units...
+pdfTeX warning (ext4): destination with the same identifier (name{ALC@rem.3}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.134 \STATE
+             $I[n=0,t]=I_0$ \COMMENT{ $t$ is the time index, $I$ is in units...
+pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.4}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.135 \STATE
+             $H_f=0$ \COMMENT{Radiant fluence seen by camera after passing t...
+pdfTeX warning (ext4): destination with the same identifier (name{ALC@rem.4}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.135 \STATE
+             $H_f=0$ \COMMENT{Radiant fluence seen by camera after passing t...
+pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.5}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.136 \FOR[loop over time steps]{$t=0$ to $t_f$}
+                                                pdfTeX warning (ext4): destinat
+ion with the same identifier (name{ALC@rem.5}) has been already used, duplicate
+ ignored
+<to be read again> 
+                   \relax 
+l.136 \FOR[loop over time steps]{$t=0$ to $t_f$}
+                                                pdfTeX warning (ext4): destinat
+ion with the same identifier (name{ALC@line.6}) has been already used, duplicat
+e ignored
+<to be read again> 
+                   \relax 
+l.137  \FOR[loop over superatoms]{$i=1$ to $N$}
+                                               pdfTeX warning (ext4): destinati
+on with the same identifier (name{ALC@rem.6}) has been already used, duplicate 
+ignored
+<to be read again> 
+                   \relax 
+l.137  \FOR[loop over superatoms]{$i=1$ to $N$}
+                                               pdfTeX warning (ext4): destinati
+on with the same identifier (name{ALC@line.7}) has been already used, duplicate
+ ignored
+<to be read again> 
+                   \relax 
+l.138 \STATE
+             $n=O[i]$ \COMMENT{apply probe intensity to composite atoms in o...
+pdfTeX warning (ext4): destination with the same identifier (name{ALC@rem.7}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.138 \STATE
+             $n=O[i]$ \COMMENT{apply probe intensity to composite atoms in o...
+pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.8}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.139  \STATE
+              $A=\sigma_0 N_{sa} dz$ \COMMENT{dz is length over which atoms ...
+pdfTeX warning (ext4): destination with the same identifier (name{ALC@rem.8}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.139  \STATE
+              $A=\sigma_0 N_{sa} dz$ \COMMENT{dz is length over which atoms ...
+pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.9}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.140  \STATE
+              $B=v_{\rm{r}} dt/(\hbar c  N_{sa})$  \COMMENT{dt is the time s...
+pdfTeX warning (ext4): destination with the same identifier (name{ALC@rem.9}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.140  \STATE
+              $B=v_{\rm{r}} dt/(\hbar c  N_{sa})$  \COMMENT{dt is the time s...
+pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.10})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.141 \STATE
+             $I[n,t]=I[n-1,t] - A I[n-1,t]/(1+\delta[n]^2+I[n-1,t])$  \COMME...
+pdfTeX warning (ext4): destination with the same identifier (name{ALC@rem.10}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.141 \STATE
+             $I[n,t]=I[n-1,t] - A I[n-1,t]/(1+\delta[n]^2+I[n-1,t])$  \COMME...
+pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.11})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.142 \STATE
+             $\delta[n]\mathrel{+}=B\left(I[n-1,t]-I[n,t]\right)$  \COMMENT{...
+pdfTeX warning (ext4): destination with the same identifier (name{ALC@rem.11}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.142 \STATE
+             $\delta[n]\mathrel{+}=B\left(I[n-1,t]-I[n,t]\right)$  \COMMENT{...
+pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.12})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.143 \STATE
+             $z[n]\mathrel{+}=dt\Gamma\delta/2k$ \COMMENT{$k$ is the wavenum...
+pdfTeX warning (ext4): destination with the same identifier (name{ALC@rem.12}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.143 \STATE
+             $z[n]\mathrel{+}=dt\Gamma\delta/2k$ \COMMENT{$k$ is the wavenum...
+pdfTeX warning (ext4): destination with the same identifier (name{ALC@line.13})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.144 \ENDFOR
+             pdfTeX warning (ext4): destination with the same identifier (name{
+ALC@rem.13}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.144 \ENDFOR
+              [101]pdfTeX warning (ext4): destination with the same identifier 
+(name{subfigure.4.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.165 	\subfigure
+                 []{\includegraphics[scale=0.9]{"Chapter2 Figures/figure6a"....
+<"Chapter2 Figures/figure6a".pdf, id=2194, 397.485pt x 252.945pt>
+File: "Chapter2 Figures/figure6a".pdf Graphic file (type pdf)
+
+<use "Chapter2 Figures/figure6a".pdf>
+Package pdftex.def Info: "Chapter2 Figures/figure6a".pdf used on input line 165
+.
+(pdftex.def)             Requested size: 357.73318pt x 227.64839pt.
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.4.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.166 	\subfigure
+                 []{\includegraphics[scale=0.9]{"Chapter2 Figures/figure6b"....
+<"Chapter2 Figures/figure6b".pdf, id=2195, 397.485pt x 252.945pt>
+File: "Chapter2 Figures/figure6b".pdf Graphic file (type pdf)
+
+<use "Chapter2 Figures/figure6b".pdf>
+Package pdftex.def Info: "Chapter2 Figures/figure6b".pdf used on input line 166
+.
+(pdftex.def)             Requested size: 357.73318pt x 227.64839pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--167
+[][]
+ []
+
+<"Chapter2 Figures/figure7".pdf, id=2197, 231.26399pt x 216.81pt>
+File: "Chapter2 Figures/figure7".pdf Graphic file (type pdf)
+
+<use "Chapter2 Figures/figure7".pdf>
+Package pdftex.def Info: "Chapter2 Figures/figure7".pdf used on input line 177.
+
+(pdftex.def)             Requested size: 231.26341pt x 216.80946pt.
+
+<"Chapter2 Figures/figure8".pdf, id=2198, 231.26399pt x 216.81pt>
+File: "Chapter2 Figures/figure8".pdf Graphic file (type pdf)
+
+<use "Chapter2 Figures/figure8".pdf>
+Package pdftex.def Info: "Chapter2 Figures/figure8".pdf used on input line 178.
+
+(pdftex.def)             Requested size: 231.26341pt x 216.80946pt.
+
+Overfull \hbox (38.74536pt too wide) in paragraph at lines 177--179
+[][] [][] 
+ []
+
+[102] [103 <./Chapter2 Figures/figure6a.pdf> <./Chapter2 Figures/figure6b.pdf
+
+pdfTeX warning: miktex-pdftex.exe (file ./Chapter2 Figures/figure6b.pdf): PDF i
+nclusion: multiple pdfs with page group included in a single page
+>] [104 <./Chapter2 Figures/figure7.pdf> <./Chapter2 Figures/figure8.pdf
+
+pdfTeX warning: miktex-pdftex.exe (file ./Chapter2 Figures/figure8.pdf): PDF in
+clusion: multiple pdfs with page group included in a single page
+>] [105] <"Chapter2 Figures/figure9a".pdf, id=2320, 231.26399pt x 216.81pt>
+File: "Chapter2 Figures/figure9a".pdf Graphic file (type pdf)
+
+<use "Chapter2 Figures/figure9a".pdf>
+Package pdftex.def Info: "Chapter2 Figures/figure9a".pdf used on input line 215
+.
+(pdftex.def)             Requested size: 231.26341pt x 216.80946pt.
+
+<"Chapter2 Figures/figure9b".pdf, id=2321, 231.26399pt x 216.81pt>
+File: "Chapter2 Figures/figure9b".pdf Graphic file (type pdf)
+
+<use "Chapter2 Figures/figure9b".pdf>
+Package pdftex.def Info: "Chapter2 Figures/figure9b".pdf used on input line 216
+.
+(pdftex.def)             Requested size: 231.26341pt x 216.80946pt.
+
+Overfull \hbox (38.74536pt too wide) in paragraph at lines 215--217
+[][] [][] 
+ []
+
+) [106] [107 <./Chapter2 Figures/figure9a.pdf> <./Chapter2 Figures/figure9b.pdf
+
+
+pdfTeX warning: miktex-pdftex.exe (file ./Chapter2 Figures/figure9b.pdf): PDF i
+nclusion: multiple pdfs with page group included in a single page
+>]
+\openout2 = `SwaveScatteringChapter.aux'.
+
+ (SwaveScatteringChapter.tex
+Chapter 5.
+
+Overfull \hbox (35.56223pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/n/12 ha-los of $[]K$ atoms in the vicin-ity of a Fes-bach res-o-nanc
+e be-tween the $[]$
+ []
+
+[108
+
+
+] [109] [110]pdfTeX warning (ext4): destination with the same identifier (name{
+subfigure.1.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.36 	\subfigure
+                []{\includegraphics{"Chapter3 Figures/figure10a".pdf}}
+<"Chapter3 Figures/figure10a".pdf, id=2411, 216.81pt x 216.81pt>
+File: "Chapter3 Figures/figure10a".pdf Graphic file (type pdf)
+
+<use "Chapter3 Figures/figure10a".pdf>
+Package pdftex.def Info: "Chapter3 Figures/figure10a".pdf used on input line 36
+.
+(pdftex.def)             Requested size: 216.80946pt x 216.80946pt.
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.37 	\subfigure
+                []{\includegraphics{"Chapter3 Figures/figure10b".pdf}}
+<"Chapter3 Figures/figure10b".pdf, id=2412, 216.81pt x 216.81pt>
+File: "Chapter3 Figures/figure10b".pdf Graphic file (type pdf)
+
+<use "Chapter3 Figures/figure10b".pdf>
+Package pdftex.def Info: "Chapter3 Figures/figure10b".pdf used on input line 37
+.
+(pdftex.def)             Requested size: 216.80946pt x 216.80946pt.
+
+Overfull \hbox (9.83746pt too wide) in paragraph at lines 36--38
+[][] [][] 
+ []
+
+[111] <"Chapter3 Figures/Picture12".pdf, id=2418, 794.97pt x 614.295pt>
+File: "Chapter3 Figures/Picture12".pdf Graphic file (type pdf)
+
+<use "Chapter3 Figures/Picture12".pdf>
+Package pdftex.def Info: "Chapter3 Figures/Picture12".pdf used on input line 44
+.
+(pdftex.def)             Requested size: 174.89394pt x 135.14531pt.
+
+<"Chapter3 Figures/figure12b".pdf, id=2419, 289.08pt x 180.675pt>
+File: "Chapter3 Figures/figure12b".pdf Graphic file (type pdf)
+
+<use "Chapter3 Figures/figure12b".pdf>
+Package pdftex.def Info: "Chapter3 Figures/figure12b".pdf used on input line 45
+.
+(pdftex.def)             Requested size: 260.16959pt x 162.60599pt.
+
+Overfull \hbox (11.28206pt too wide) in paragraph at lines 44--46
+[][] [][] 
+ []
+
+[112 <./Chapter3 Figures/figure10a.pdf> <./Chapter3 Figures/figure10b.pdf
+
+pdfTeX warning: miktex-pdftex.exe (file ./Chapter3 Figures/figure10b.pdf): PDF 
+inclusion: multiple pdfs with page group included in a single page
+>] [113 <./Chapter3 Figures/Picture12.pdf, page is rotated 90 degrees> <./Chapt
+er3 Figures/figure12b.pdf>] [114]
+<"Chapter3 Figures/figure11".pdf, id=3279, 325.215pt x 252.945pt>
+File: "Chapter3 Figures/figure11".pdf Graphic file (type pdf)
+
+<use "Chapter3 Figures/figure11".pdf>
+Package pdftex.def Info: "Chapter3 Figures/figure11".pdf used on input line 71.
+
+(pdftex.def)             Requested size: 325.2142pt x 252.94438pt.
+ [115]) [116 <./Chapter3 Figures/figure11.pdf>]
+\openout2 = `SynDimChapter.aux'.
+
+ (SynDimChapter.tex
+Chapter 6.
+[117
+
+
+]
+
+LaTeX Warning: Reference `sec:SynDimEigenstates' on page 118 undefined on input
+ line 12.
+
+[118]
+<"SynDim Figures/Fig1_Schematic".pdf, id=3386, 361.44937pt x 319.82887pt>
+File: "SynDim Figures/Fig1_Schematic".pdf Graphic file (type pdf)
+
+<use "SynDim Figures/Fig1_Schematic".pdf>
+Package pdftex.def Info: "SynDim Figures/Fig1_Schematic".pdf used on input line
+ 22.
+(pdftex.def)             Requested size: 361.44847pt x 319.82808pt.
+ [119] [120 <./SynDim Figures/Fig1_Schematic.pdf>] [121] [122] [123]
+Overfull \hbox (10.4841pt too wide) in paragraph at lines 95--96
+[]\OT1/cmr/m/n/12 For com-pu-ta-tional con-ve-nience, we con-vert to lat-tice r
+e-coil units, $\OML/cmm/m/it/12 E[] \OT1/cmr/m/n/12 = [][]\OML/cmm/m/it/12 k[]=
+\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 m$\OT1/cmr/m/n/12 ,
+ []
+
+
+Overfull \hbox (29.75957pt too wide) detected at line 102
+[][]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 n\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 =E[] \
+OT1/cmr/m/n/12 = [] [] \OML/cmm/m/it/12 ;
+ []
+
+[124]
+<"SynDim Figures/SynDimBandStructure".pdf, id=3572, 448.07399pt x 361.35pt>
+File: "SynDim Figures/SynDimBandStructure".pdf Graphic file (type pdf)
+
+<use "SynDim Figures/SynDimBandStructure".pdf>
+Package pdftex.def Info: "SynDim Figures/SynDimBandStructure".pdf used on input
+ line 129.
+(pdftex.def)             Requested size: 448.07288pt x 361.34912pt.
+
+Overfull \hbox (21.68033pt too wide) in paragraph at lines 129--130
+[][] 
+ []
+
+[125] [126 <./SynDim Figures/SynDimBandStructure.pdf>] [127]
+<"SynDim Figures/SynDimPulsing".pdf, id=3643, 448.07399pt x 433.62pt>
+File: "SynDim Figures/SynDimPulsing".pdf Graphic file (type pdf)
+
+<use "SynDim Figures/SynDimPulsing".pdf>
+Package pdftex.def Info: "SynDim Figures/SynDimPulsing".pdf used on input line 
+146.
+(pdftex.def)             Requested size: 448.07288pt x 433.61894pt.
+
+Overfull \hbox (21.68033pt too wide) in paragraph at lines 146--147
+[][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 13.02226pt on input line 149.
+
+[128] [129 <./SynDim Figures/SynDimPulsing.pdf>] [130]
+Overfull \hbox (21.90059pt too wide) detected at line 180
+[]\OML/cmm/m/it/12 H \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12  [] [] \OML/cmm/m/it/12
+ t[]\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 k[]; m \OT1/cmr/m/n/12 + 1\OMS/cmsy/m/n/
+12 ih\OML/cmm/m/it/12 k[]; m\OMS/cmsy/m/n/12 j \OT1/cmr/m/n/12 + \OML/cmm/m/it/
+12 h:c: \OT1/cmr/m/n/12 + 2\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 t[]\OMS/cmsy/m/n/
+12 j[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 k[] \OMS/cmsy/m/n/12   \OML/cmm/m/it/12
+ []\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 k[]; m\OMS/cmsy/m/n/12 
+ih\OML/cmm/m/it/12 k[]; m\OMS/cmsy/m/n/12 j \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 
+A[]\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 k[]; m\OMS/cmsy/m/n/12 ih\OML/cmm/m/it/12
+ k[]; m\OMS/cmsy/m/n/12 j
+ []
+
+<"SynDim Figures/tbFit".pdf, id=3716, 448.07399pt x 216.81pt>
+File: "SynDim Figures/tbFit".pdf Graphic file (type pdf)
+
+<use "SynDim Figures/tbFit".pdf>
+Package pdftex.def Info: "SynDim Figures/tbFit".pdf used on input line 185.
+(pdftex.def)             Requested size: 448.07288pt x 216.80946pt.
+
+Overfull \hbox (21.68033pt too wide) in paragraph at lines 185--186
+[][] 
+ []
+
+[131] <"SynDim Figures/Fig2_EdgeStates".pdf, id=3727, 264.99pt x 404.02745pt>
+File: "SynDim Figures/Fig2_EdgeStates".pdf Graphic file (type pdf)
+
+<use "SynDim Figures/Fig2_EdgeStates".pdf>
+Package pdftex.def Info: "SynDim Figures/Fig2_EdgeStates".pdf used on input lin
+e 197.
+(pdftex.def)             Requested size: 264.98935pt x 404.02646pt.
+ [132 <./SynDim Figures/tbFit.pdf>]
+[133 <./SynDim Figures/Fig2_EdgeStates.pdf>]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ô in font cmr12!
+ [134] [135]
+<"SynDim Figures/Fig3_EdgeCurrent".pdf, id=3817, 365.365pt x 406.76968pt>
+File: "SynDim Figures/Fig3_EdgeCurrent".pdf Graphic file (type pdf)
+
+<use "SynDim Figures/Fig3_EdgeCurrent".pdf>
+Package pdftex.def Info: "SynDim Figures/Fig3_EdgeCurrent".pdf used on input li
+ne 220.
+(pdftex.def)             Requested size: 365.3641pt x 406.76868pt.
+
+
+LaTeX Warning: Float too large for page by 30.33868pt on input line 223.
+
+[136] [137 <./SynDim Figures/Fig3_EdgeCurrent.pdf>]
+<"SynDim Figures/Fig4_SkippingOrbit".pdf, id=3873, 266.9975pt x 402.50375pt>
+File: "SynDim Figures/Fig4_SkippingOrbit".pdf Graphic file (type pdf)
+
+<use "SynDim Figures/Fig4_SkippingOrbit".pdf>
+Package pdftex.def Info: "SynDim Figures/Fig4_SkippingOrbit".pdf used on input 
+line 235.
+(pdftex.def)             Requested size: 266.99683pt x 402.50276pt.
+) [138] [139 <./SynDim Figures/Fig4_SkippingOrbit.pdf>] [140]
+\openout2 = `BlochOscChapter.aux'.
+
+ (BlochOscChapter.tex
+Chapter 7.
+[141
+
+
+] <"BlochOsc Figures/figure1v15".pdf, id=3969, 440.84702pt x 371.88937pt>
 File: "BlochOsc Figures/figure1v15".pdf Graphic file (type pdf)
 
 <use "BlochOsc Figures/figure1v15".pdf>
@@ -582,32 +1647,8 @@ Overfull \hbox (14.45338pt too wide) in paragraph at lines 20--21
 [][] 
  []
 
-
-LaTeX Warning: Reference `sec:SynDimSetup' on page 2 undefined on input line 29
-.
-
-
-LaTeX Warning: Reference `chap:SynDim' on page 2 undefined on input line 29.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.30 
-      [2]pdfTeX warning (ext4): destination with the same identifier (name{page
-.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.30 
-      [3 <./BlochOsc Figures/figure1v15.pdf>]
-
-LaTeX Warning: Reference `sec:BECsequence' on page 4 undefined on input line 32
-.
-
-
-LaTeX Warning: Reference `chap:SynDim' on page 4 undefined on input line 34.
-
-<"BlochOsc Figures/LoadF2".pdf, id=283, 448.07399pt x 216.81pt>
+[142] [143 <./BlochOsc Figures/figure1v15.pdf>]
+<"BlochOsc Figures/LoadF2".pdf, id=4086, 448.07399pt x 216.81pt>
 File: "BlochOsc Figures/LoadF2".pdf Graphic file (type pdf)
 
 <use "BlochOsc Figures/LoadF2".pdf>
@@ -618,20 +1659,8 @@ Overfull \hbox (21.68033pt too wide) in paragraph at lines 36--37
 [][] 
  []
 
-
-LaTeX Warning: Reference `sec:ARP' on page 4 undefined on input line 41.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.42 
-      [4] [5 <./BlochOsc Figures/LoadF2.pdf>]
-
-LaTeX Warning: Reference `fig:BirdsEyeApparatus' on page 6 undefined on input l
-ine 49.
-
-<"BlochOsc Figures/kickFigure".pdf, id=344, 448.07399pt x 216.81pt>
+[144] [145 <./BlochOsc Figures/LoadF2.pdf>]
+<"BlochOsc Figures/kickFigure".pdf, id=4136, 448.07399pt x 216.81pt>
 File: "BlochOsc Figures/kickFigure".pdf Graphic file (type pdf)
 
 <use "BlochOsc Figures/kickFigure".pdf>
@@ -643,28 +1672,16 @@ Overfull \hbox (21.68033pt too wide) in paragraph at lines 52--53
 [][] 
  []
 
-
-LaTeX Warning: Reference `sec:SynDimBandStructure' on page 6 undefined on input
- line 57.
-
-<"BlochOsc Figures/figure2Av2".pdf, id=347, 330.73563pt x 320.48532pt>
+<"BlochOsc Figures/figure2Av2".pdf, id=4140, 330.73563pt x 320.48532pt>
 File: "BlochOsc Figures/figure2Av2".pdf Graphic file (type pdf)
 
 <use "BlochOsc Figures/figure2Av2".pdf>
 Package pdftex.def Info: "BlochOsc Figures/figure2Av2".pdf used on input line 5
 9.
 (pdftex.def)             Requested size: 330.7348pt x 320.48454pt.
- [6]
-
-LaTeX Warning: Reference `sec:SynDimCalibration' on page 7 undefined on input l
-ine 64.
-
-[7 <./BlochOsc Figures/kickFigure.pdf>] [8 <./BlochOsc Figures/figure2Av2.pdf>]
-
-LaTeX Warning: Reference `sec:ODTbeamShape' on page 9 undefined on input line 7
-1.
-
-[9] <"BlochOsc Figures/RfCorrection".pdf, id=429, 448.07399pt x 505.89pt>
+ [146] [147 <./BlochOsc Figures/kickFigure.pdf>] [148 <./BlochOsc Figures/figur
+e2Av2.pdf>] [149]
+<"BlochOsc Figures/RfCorrection".pdf, id=4222, 448.07399pt x 505.89pt>
 File: "BlochOsc Figures/RfCorrection".pdf Graphic file (type pdf)
 
 <use "BlochOsc Figures/RfCorrection".pdf>
@@ -676,21 +1693,16 @@ Overfull \hbox (21.68033pt too wide) in paragraph at lines 76--77
 [][] 
  []
 
-[10] [11 <./BlochOsc Figures/RfCorrection.pdf>] [12] [13]
-<"BlochOsc Figures/figure2Bv3".pdf, id=521, 408.59653pt x 243.74362pt>
+[150] [151 <./BlochOsc Figures/RfCorrection.pdf>] [152] [153]
+<"BlochOsc Figures/figure2Bv3".pdf, id=4313, 408.59653pt x 243.74362pt>
 File: "BlochOsc Figures/figure2Bv3".pdf Graphic file (type pdf)
 
 <use "BlochOsc Figures/figure2Bv3".pdf>
 Package pdftex.def Info: "BlochOsc Figures/figure2Bv3".pdf used on input line 1
 38.
 (pdftex.def)             Requested size: 408.59552pt x 243.74301pt.
-
-
-LaTeX Warning: Reference `sec:SynDimHamiltonian' on page 14 undefined on input 
-line 145.
-
-[14] [15 <./BlochOsc Figures/figure2Bv3.pdf>]
-<"BlochOsc Figures/NarrowBandGap".png, id=553, 458.1918pt x 233.1912pt>
+ [154] [155 <./BlochOsc Figures/figure2Bv3.pdf>]
+<"BlochOsc Figures/NarrowBandGap".png, id=4346, 458.1918pt x 233.1912pt>
 File: "BlochOsc Figures/NarrowBandGap".png Graphic file (type png)
 
 <use "BlochOsc Figures/NarrowBandGap".png>
@@ -702,12 +1714,8 @@ Overfull \hbox (31.79814pt too wide) in paragraph at lines 150--151
 [][] 
  []
 
-[16 <./BlochOsc Figures/NarrowBandGap.png>]
-
-LaTeX Warning: Reference `sec:DiophantineIntro' on page 17 undefined on input l
-ine 161.
-
-[17] <"BlochOsc Figures/figure3v7".pdf, id=577, 419.5675pt x 245.41687pt>
+[156 <./BlochOsc Figures/NarrowBandGap.png>] [157]
+<"BlochOsc Figures/figure3v7".pdf, id=4370, 419.5675pt x 245.41687pt>
 File: "BlochOsc Figures/figure3v7".pdf Graphic file (type pdf)
 
 <use "BlochOsc Figures/figure3v7".pdf>
@@ -720,15 +1728,14 @@ Missing character: There is no ô in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
- [18 <./BlochOsc Figures/figure3v7.pdf>]
+ [158 <./BlochOsc Figures/figure3v7.pdf>]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no î in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no î in font cmr12!
-
-<"BlochOsc Figures/FitGaussiansChern".pdf, id=619, 433.62pt x 352.31625pt>
+<"BlochOsc Figures/FitGaussiansChern".pdf, id=4409, 433.62pt x 352.31625pt>
 File: "BlochOsc Figures/FitGaussiansChern".pdf Graphic file (type pdf)
 
 <use "BlochOsc Figures/FitGaussiansChern".pdf>
@@ -740,20 +1747,8 @@ Overfull \hbox (7.2264pt too wide) in paragraph at lines 183--184
 [][] 
  []
 
-
-LaTeX Warning: Reference `eqn:SynDimHamiltonian' on page 19 undefined on input 
-line 188.
-
-[19] [20 <./BlochOsc Figures/FitGaussiansChern.pdf>]
-
-LaTeX Warning: Reference `eqn:TBhamKspace' on page 21 undefined on input line 1
-92.
-
-
-LaTeX Warning: Reference `eqn:TBhamKspace' on page 21 undefined on input line 1
-92.
-
-<"BlochOsc Figures/ChernDependenceFig".pdf, id=660, 448.07399pt x 216.81pt>
+[159] [160 <./BlochOsc Figures/FitGaussiansChern.pdf>]
+<"BlochOsc Figures/ChernDependenceFig".pdf, id=4451, 448.07399pt x 216.81pt>
 File: "BlochOsc Figures/ChernDependenceFig".pdf Graphic file (type pdf)
 
 <use "BlochOsc Figures/ChernDependenceFig".pdf>
@@ -765,7 +1760,7 @@ Overfull \hbox (21.68033pt too wide) in paragraph at lines 196--197
 [][] 
  []
 
-[21] <"BlochOsc Figures/figure4v4".pdf, id=666, 440.84702pt x 275.27844pt>
+[161] <"BlochOsc Figures/figure4v4".pdf, id=4457, 440.84702pt x 275.27844pt>
 File: "BlochOsc Figures/figure4v4".pdf Graphic file (type pdf)
 
 <use "BlochOsc Figures/figure4v4".pdf>
@@ -777,62 +1772,103 @@ Overfull \hbox (14.45338pt too wide) in paragraph at lines 206--207
 [][] 
  []
 
-[22 <./BlochOsc Figures/ChernDependenceFig.pdf>] [23 <./BlochOsc Figures/figure
-4v4.pdf>]) [24] (mainthesis.bbl [25
+[162 <./BlochOsc Figures/ChernDependenceFig.pdf>] [163 <./BlochOsc Figures/figu
+re4v4.pdf>]) [164] (mainthesis.bbl [165
 
-]
+] [166]
+Missing character: There is no √ in font cmr12!
+Missing character: There is no § in font cmr12!
+Missing character: There is no √ in font cmr12!
+Missing character: There is no ∂ in font cmr12!
+ [167]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ì in font cmr12!
- [26]
+Missing character: There is no √ in font cmr12!
+Missing character: There is no § in font cmr12!
+ [168] [169] [170]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no â in font cmr12!
-)
+ [171]
+Underfull \hbox (badness 1953) in paragraph at lines 345--349
+[]\OT1/cmr/m/n/12 Daniel Adam Steck.  Ru-bid-ium 87 d line data.  Avail-able on
+-line,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 351--356
+[]\OT1/cmr/m/n/12 T. G. Tiecke.  Prop-er-ties of potas-sium.  Avail-able on-lin
+e,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 351--356
+\OT1/cmr/m/n/12 http://www.tobiastiecke.nl/archive/PotassiumProperties.pdf, May
+ 2011.
+ []
+
+[172] [173]
+Missing character: There is no √ in font cmr12!
+Missing character: There is no ± in font cmr12!
+ [174] [175] [176]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ì in font cmr12!
+ [177])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 162.
- [27]
+ [178]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 162.
  (mainthesis.aux (Abstract.aux)
-(Titlepage.aux) (Copyright.aux) (BlochOscChapter.aux))
+(Titlepage.aux) (Copyright.aux) (ChernNumberChapter.aux) (AtomLightChapter.aux)
+(IntroChapter.aux) (AbsorptionImagingChapter.aux) (SwaveScatteringChapter.aux)
+(SynDimChapter.aux) (BlochOscChapter.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 162.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 162.
 Package rerunfilecheck Info: File `mainthesis.out' has not changed.
-(rerunfilecheck)             Checksum: A382BF762308B67DFBD71750648D9E33;1381.
+(rerunfilecheck)             Checksum: 9E12702433A28343A2500C30045026FD;6175.
 
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 162.
  ) 
 Here is how much of TeX's memory you used:
- 7342 strings out of 493333
- 104931 string characters out of 3139191
- 200318 words of memory out of 3000000
- 10582 multiletter control sequences out of 15000+200000
+ 8549 strings out of 493333
+ 127617 string characters out of 3139191
+ 216330 words of memory out of 3000000
+ 11159 multiletter control sequences out of 15000+200000
  14640 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,8n,34p,1879b,446s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmssi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on mainthesis.pdf (34 pages, 2721376 bytes).
+ 42i,10n,36p,2002b,564s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx6.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mssi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/ur
+w/helvetic/uhvr8a.pfb>
+Output written on mainthesis.pdf (189 pages, 12858736 bytes).
 PDF statistics:
- 810 PDF objects out of 1000 (max. 8388607)
- 92 named destinations out of 1000 (max. 500000)
- 200 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4773 PDF objects out of 5155 (max. 8388607)
+ 614 named destinations out of 1000 (max. 500000)
+ 1011 words of extra memory for PDF output out of 10000 (max. 10000000)
 
