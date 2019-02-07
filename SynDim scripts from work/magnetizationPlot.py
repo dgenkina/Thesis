@@ -100,9 +100,9 @@ bbox={}
 bbox[0] = [-180,215,400,100]
 bbox[1] = [35,76,200,50]#[-180,215,400,100]
 bbox[2] = [-92,15,200,50]#[-180,35,400,100]
-
+fileroot = 'C:/Users/swooty/Documents/Thesis Data/Final Bloch Osc data/'
 for i,filename in enumerate(filenamelist2):
-    dataFile=np.load(filename)
+    dataFile=np.load(fileroot + filename)
     S=2#Slist[i]
     #imbal=dataFile['imbalArray']
     #signalGood=dataFile['signalGood']
@@ -130,7 +130,7 @@ for i,filename in enumerate(filenamelist2):
         sigmaArray=np.array((sigmaM2,sigmaM,sigma0,sigmaP,sigmaP2))
         mag=2.0*fractionP2+fractionP-fractionM-2.0*fractionM2
         sigmaMag=np.sqrt(4.0*sigmaP2**2.0+sigmaP**2.0+sigmaM**2.0+4.0*sigmaM2**2.0)
-    theoryFile=np.load('SynDimBandStructure_F'+str(S)+'_n7_Chern'+str(clist2[i])+'.npz')
+    theoryFile=np.load(fileroot+'SynDimBandStructure_F'+str(S)+'_n7_Chern'+str(clist2[i])+'.npz')
     kList=theoryFile['kList']
     pops=theoryFile['pops'][:,0,:]
     
@@ -176,20 +176,22 @@ for i,filename in enumerate(filenamelist2):
     qrangeList = np.linspace(0.2,1.0,20)
     Alist = np.zeros(qrangeList.size)
     dAlist = np.zeros(qrangeList.size)
+    numPointsList = np.zeros(qrangeList.size)
 
     for ind,qrange in enumerate(qrangeList):
         qrangeBool=((qlist[fitGoodList]<qrange) & (qlist[fitGoodList]>-qrange))
         Alist[ind],B,dAlist[ind],dB = lineFit2.lineFit(qlist[fitGoodList][qrangeBool], mode[fitGoodList][qrangeBool],'q data','m data',yerr=sigmaMode[fitGoodList][qrangeBool],plot=False,errorbars=True, bounds=(np.array([-np.inf,-0.001]),np.array([np.inf,0.001])))
-    
+        numPointsList[ind] = qlist[fitGoodList][qrangeBool].size
     #pan.set_xlabel(r'$q_x$ [$k_L$]',size=14)
     #pan.set_ylabel(r'$\langle m \rangle$',size=14)
     qrangeListTh = np.linspace(0.01,1.0,25)
     AlistTh = np.zeros(qrangeListTh.size)
     dAlistTh = np.zeros(qrangeListTh.size)
+    numPointsListTh = np.zeros(qrangeListTh.size)
     for ind,qrange in enumerate(qrangeListTh):
         krangeBool=((kList[fitGoodTheoryList]<qrange) & (kList[fitGoodTheoryList]>-qrange))
         AlistTh[ind],B,dAlistTh[ind],dB = lineFit2.lineFit(kList[fitGoodTheoryList][krangeBool],modeTheory[fitGoodTheoryList][krangeBool],'q theory','m theory',plot=False, bounds=(np.array([-np.inf,-0.001]),np.array([np.inf,0.001])))
-    
+        numPointsListTh[ind] = kList[fitGoodTheoryList][krangeBool].size
     #if clist2[i]!=0:
 #    axins = inset_axes(pan,
 #                       width="20%", # width = 30% of parent_bbox
@@ -215,16 +217,17 @@ for i,filename in enumerate(filenamelist2):
         pan2.set_xticklabels(['0', '0.25', '0.5'])
         pan2.set_xlabel(r'Max $|q_x|$ in fit')
 #        
-#    extraFig=plt.figure()
-#    extraPan=extraFig.add_subplot(111)
-#    extraPan.errorbar(qrangeList,Alist*2.0/3.0,yerr=dAlist,fmt='k-',label='experiment')
-#    extraPan.errorbar(qrangeListTh,AlistTh*2.0/3.0,yerr=dAlistTh,fmt='r-',label='theory')
-#    extraPan.set_ylabel('Slope')
-#   # extraPan.set_yticks([0.2*clist2[i],0.6*clist2[i],1.0*clist2[i]])
-#    extraPan.set_xlabel(r'Max. $|q|$ in fit range' )
-#    extraPan.set_xticks([0.2,0.6,1.0])
-#    plt.legend()
-    #plt.savefig('Z:/My Documents/papers etc/talks and posters/slopeOfRange%i.png' %(i),dpi=400)
+    extraFig=plt.figure()
+    extraPan=extraFig.add_subplot(111)
+    extraPan.errorbar(qrangeList,Alist*2.0/3.0,yerr=dAlist/np.sqrt(numPointsList),fmt='k-',label='experiment')
+    extraPan.errorbar(qrangeListTh,AlistTh*2.0/3.0,yerr=dAlistTh/np.sqrt(numPointsListTh),fmt='r-',label='theory')
+    extraPan.set_ylabel('Slope')
+   # extraPan.set_yticks([0.2*clist2[i],0.6*clist2[i],1.0*clist2[i]])
+    extraPan.set_xlabel(r'Max. $|q|$ in fit range' )
+    extraPan.set_xticks([0.2,0.6,1.0])
+    extraPan.set_xlim(0.2,1.0)
+    plt.legend()
+    plt.savefig('C:/Users/swooty/Documents/Thesis/SynDim scripts from work/slopeOfRange%i.png' %(i),dpi=400)
 #    
     pan.plot(kList/2.0,lineFit2.line(kList,3.0*clist2[i]/2.0,0),'k--',linewidth=2)
     
@@ -251,7 +254,7 @@ for i,filename in enumerate(filenamelist2):
     
    
 fig.show()
-plt.savefig('Z:/My Documents/papers etc/Bloch Osc/Figures/magnetizationAll3.pdf',dpi=400)
+#plt.savefig('Z:/My Documents/papers etc/Bloch Osc/Figures/magnetizationAll3.pdf',dpi=400)
 #plt.savefig('Z:/My Documents/papers etc/talks and posters/magnetizationAll3.jpg',dpi=400)
 #totNum=dataFile['numM2'][fieldGoodArray]+dataFile['numM'][fieldGoodArray]+dataFile['num0'][fieldGoodArray]+dataFile['numP'][fieldGoodArray]+dataFile['numP2'][fieldGoodArray]
 #time=dataFile['tlist'][fieldGoodArray]

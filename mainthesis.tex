@@ -56,6 +56,8 @@
 \usepackage{algorithm}
 \usepackage{bbold}
 \usepackage{upgreek}
+\usepackage{pdfpages}
+
 
 %hyperref
 \usepackage[colorlinks=true,urlcolor=black,linkcolor=blue,citecolor=blue]{hyperref}
@@ -92,8 +94,8 @@
 %\include{Foreword} %(if present, lower-case Roman)
 %\addcontentsline{toc}{chapter}{Dedication}
 %\include{Dedication} %(if present, lower-case Roman)
-%\addcontentsline{toc}{chapter}{Acknowledgements}
-%\include{Acknowledgements} %(if present, lower-case Roman)
+\addcontentsline{toc}{chapter}{Acknowledgements}
+\include{Acknowledgements} %(if present, lower-case Roman)
 
 \renewcommand{\baselinestretch}{1}
 \small\normalsize
@@ -129,18 +131,15 @@
 \include{ChernNumberChapter}
 \include{AtomLightChapter}
 \include{IntroChapter}
-%\titleformat{\chapter}{\normalfont\large}{Appendix \thechapter:}{1em}{}
 
 \include{AbsorptionImagingChapter}
 \include{SwaveScatteringChapter}
 \include{SynDimChapter}
 \include{BlochOscChapter}
 
-%,\include{Chapter2}
-%\include{Chapter4}
-%\titleformat{\chapter}
-%{\normalfont\large}{Appendix \thechapter:}{1em}{}
-%\include{AppendixA}
+\titleformat{\chapter}{\normalfont\large}{Appendix \thechapter:}{1em}{}
+\include{AppendixA}
+\include{AppendixB}
 
 %\renewcommand{\baselinestretch}{1}
 %\small\normalsize

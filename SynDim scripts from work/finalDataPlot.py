@@ -149,16 +149,16 @@ def getMaxFitTheory(qlist,fracList,sigma,plot=False):
 
 fileroot='C:/Users/swooty/Documents/Thesis Data/Final Bloch Osc data/'
 filenamelist=[fileroot+'08Mar2017_F1_chern_1.npz']    
-#filenamelist=[fileroot+'07Mar2017_F1_chern_-1.npz',fileroot+'27Feb2017_F2_chern_-1.npz',
-#              fileroot+'09Mar2017_Rf_Corrected.npz',fileroot+'22Mar2017_Rf_Corrected.npz',
-#              fileroot+'08Mar2017_F1_chern_1.npz',fileroot+'28Feb2017_F2_chern_1.npz']
-plotBool=True
+filenamelist=[fileroot+'07Mar2017_F1_chern_-1.npz',fileroot+'27Feb2017_F2_chern_-1.npz',
+              fileroot+'09Mar2017_Rf_Corrected.npz',fileroot+'22Mar2017_Rf_Corrected.npz',
+              fileroot+'08Mar2017_F1_chern_1.npz',fileroot+'28Feb2017_F2_chern_1.npz']
+plotBool=False
 width=15
 lw=10
 Slist=[1]
-#Slist=[1,2,1,2,1,2]
+Slist=[1,2,1,2,1,2]
 clist=[1]
-#clist=[-1,-1,0,0,1,1]
+clist=[-1,-1,0,0,1,1]
 titleList=['(a)','(d)','(b)','(e)','(c)','(f)']
 mainFig = plt.figure()
 mainFig.clear()

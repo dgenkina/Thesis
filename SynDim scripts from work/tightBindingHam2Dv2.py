@@ -158,10 +158,10 @@ pan2.set_xlabel(r'$q_x$ [$2k_L$]')
 
 
 figure.text(0.05,0.6,r'$q_s$ [$2k_L$]', rotation='vertical', size=8)
-plt.savefig('Z:/My Documents/papers etc/Bloch Osc/Figures/figure3v6a.pdf', dpi=500)
-np.savez('figure3a',Egrid0=Egrid0[:,:,0].transpose(),kj0=kj0/(2.0*np.pi),km0=km0/(2.0*np.pi),
-         EgridQ3P1=EgridQ3P1[:,:,0].transpose(),kjQ3P1=kjQ3P1/(2.0*np.pi),kmQ3P1=kmQ3P1/(2.0*np.pi),
-         EgridQ5P2=EgridQ5P2[:,:,0].transpose(),kjQ5P2=kjQ5P2/(2.0*np.pi),kmQ5P2=kmQ5P2/(2.0*np.pi))
+#plt.savefig('Z:/My Documents/papers etc/Bloch Osc/Figures/figure3v6a.pdf', dpi=500)
+#np.savez('figure3a',Egrid0=Egrid0[:,:,0].transpose(),kj0=kj0/(2.0*np.pi),km0=km0/(2.0*np.pi),
+#         EgridQ3P1=EgridQ3P1[:,:,0].transpose(),kjQ3P1=kjQ3P1/(2.0*np.pi),kmQ3P1=kmQ3P1/(2.0*np.pi),
+#         EgridQ5P2=EgridQ5P2[:,:,0].transpose(),kjQ5P2=kjQ5P2/(2.0*np.pi),kmQ5P2=kmQ5P2/(2.0*np.pi))
 
 
 cdictC = {'red':   [(0.0,  1.0, 1.0), 

@@ -89,7 +89,7 @@ def getEigenspectrumAll(tx,tm,p,q):
 
     E,V = np.linalg.eigh(H)
             
-    return E
+    return E, V
 
 def gcd_recursive(a, b):
     if b == 0:
@@ -108,7 +108,7 @@ def mutuallyPrime(q,p):
 #    pList = np.append(1,pList[[mutuallyPrime(p,q) for p in pList]])
 #    for pind, p in enumerate(pList):
 #        flux = np.float(p)/np.float(q)
-#        Egrid = getEigenspectrumAll(0.1,0.1,p,q)
+#        Egrid, V = getEigenspectrumAll(0.1,0.1,p,q)
 #        Elist = Egrid.flatten()
 #        fluxList = np.append(fluxList,[flux]*Elist.size)
 #        ElistAll = np.append(ElistAll,Elist)

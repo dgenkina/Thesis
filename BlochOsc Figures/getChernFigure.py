@@ -162,12 +162,13 @@ Slist=[1]
 #Slist=[1,2,1,2,1,2]
 clist=[1]
 #clist=[-1,-1,0,0,1,1]
-filename=fileroot+'08Mar2017_F1_chern_1.npz'
+filename=fileroot+'07Mar2017_F1_chern_-1.npz'#'08Mar2017_F1_chern_1.npz'
 i=1
 
 print filename
 dataFile=np.load(filename)
 S=1
+c=-1
 #imbal=dataFile['imbalArray']
 #signalGood=dataFile['signalGood']
 cutoff=0.2
@@ -194,18 +195,27 @@ if S==2:
     sigmaArray=np.array((sigmaM2,sigmaM,sigma0,sigmaP,sigmaP2))
     mag=2.0*fractionP2+fractionP-fractionM-2.0*fractionM2
     sigmaMag=np.sqrt(4.0*sigmaP2**2.0+sigmaP**2.0+sigmaM**2.0+4.0*sigmaM2**2.0)
-theoryFile=np.load(fileroot+'SynDimBandStructure_F'+str(S)+'_n7_Chern'+str(1)+'.npz')
+theoryFile=np.load(fileroot+'SynDimBandStructure_F'+str(S)+'_n7_Chern'+str(c)+'.npz')
 kList=theoryFile['kList']
 pops=theoryFile['pops'][:,0,:]
 
 sort=np.argsort(qlist)
 
-indM=kList.size/6
-ind0=kList.size/2
-indP=5*kList.size/6
-indMd=qlist.size/6
-ind0d=qlist.size/2
-indPd=5*qlist.size/6
+if c>0:
+    indM=kList.size/6
+    ind0=kList.size/2
+    indP=5*kList.size/6
+    indMd=qlist.size/6
+    ind0d=qlist.size/2
+    indPd=5*qlist.size/6
+
+if c<0:
+    indM=5*kList.size/6
+    ind0=kList.size/2
+    indP=kList.size/6
+    indMd=5*qlist.size/6
+    ind0d=qlist.size/2
+    indPd=qlist.size/6
 
     
 plt.close(1)
@@ -260,7 +270,7 @@ pan.errorbar(np.array([xM,x0,xP]),np.array([-1,0,1]),yerr=np.array([dxM,dx0,dxP]
 pan.plot(xLine,yLine,'b-')
 pan.set_xlim(-1.25,1.25)
 #pan.set_title('Fit params in Ax+B, A='+str(np.round(A,3))+'+/-'+str(np.round(dA,4))+', B='+str(np.round(B,3))+'+/-'+str(np.round(dB,4)))
-pan.text(-0.5,-1.0,r'$C=$'+str(np.round(A*2/3,3)) + r'$\pm$'+str(np.round(dA*2/3,4)))
+pan.text(-0.5,-1.0,r'$C=$'+str(np.round(A*2/3,2)) + r'$\pm$'+str(np.round(dA*2/3,3)))
 pan.set_yticks([-1,0,1])
 pan.set_xlabel(r'crystal momentum [$k_L$]')
 pan.set_ylabel(r'site $m$')
@@ -276,4 +286,4 @@ pan.text(-0.5,-1.0,r'$C=$'+str(np.round(Ath*2/3,3)) + r'$\pm$'+str(np.round(dAth
 pan.set_xlabel(r'crystal momentum [$k_L$]')
 #pan.set_title('(d)')
 
-plt.savefig('findingChern.pdf',transparent=True)
+#plt.savefig('findingChern.pdf',transparent=True)
