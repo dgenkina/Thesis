@@ -67,3 +67,4 @@ pan.axhline(y=1.0,color='k',linestyle='--')
 plt.legend()
 
 plt.savefig('ChernDependenceFig.pdf',transparent=True)
+plt.savefig('ChernDependenceFig.png',transparent=True, dpi=400)
