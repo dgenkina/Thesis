@@ -33,7 +33,7 @@ deltaN=0.0
 phiN=0.2*2.0*np.pi
 epsilon=0.02
 Vmax=4.4
-blochOscTime = 0.0093 #Full 2k_L Bloch oscillation time in seconds
+blochOscTime = 0.014 #Full 2k_L Bloch oscillation time in seconds
 x0max=-hbar/(Erecoil*alpha*blochOscTime) #calculate by: hbar/(Erecoil*alpha*(full Bloch oscillation time)) or ((slope from q linefit)*e3*hbar)/(2.0*Erecoil*alpha)
 xHopt=10.0e-6 # in seconds
 phi=1064.0/790.0
@@ -45,7 +45,7 @@ tMax=latticeRampOnt + ramanRampOnt + blochOscTime/2.0# in seconds
 tstep=0.1 # in recoils
 tau=0.005
 
-dataFile=np.load('..\\Raman\\02Sep2016_FastKick.npz')
+#dataFile=np.load('..\\Raman\\02Sep2016_FastKick.npz')
 
 
 def params(t, Vmax, omegaMax, x0Max, delta0):
@@ -342,9 +342,7 @@ def getMode(S,fracList,sigmaList,centGuess='nan',plot=False):
     
     if centGuess=='nan':
         centGuess=float(mF[np.where(np.max(frac)==frac)[0][0]])
-    
-    (sigma,x0), cov=optimize.curve_fit(gaussian,mF,frac,p0=(S/(S+1.0),centGuess),sigma=yerr,absolute_sigma=False)
-    (dSigma,dx0)=np.sqrt(np.diag(cov))
+
     
     if plot:
         print centGuess
@@ -352,13 +350,18 @@ def getMode(S,fracList,sigmaList,centGuess='nan',plot=False):
         fig=plt.figure()
         pan=fig.add_subplot(111)
         pan.errorbar(mF,frac,yerr=yerr,fmt='bo')
+        
+        
+    (sigma,x0), cov=optimize.curve_fit(gaussian,mF,frac,p0=(S/(S+1.0),centGuess),sigma=yerr,absolute_sigma=False)
+    (dSigma,dx0)=np.sqrt(np.diag(cov))
+    if plot:
         pan.plot(mFforplot,gaussian(mFforplot,sigma,x0))
     return x0, dx0
 
 modeList = np.zeros(fracP.size)
 modeSigmaList = np.zeros(fracP.size)
-for ind in range(fracP.size):
-    modeList[ind], modeSigmaList[ind] = getMode(s,fracs[ind][::-1],0.02*np.ones(2*s+1),centGuess='nan',plot=False)
+for ind in range(fracP.size):    
+    modeList[ind], modeSigmaList[ind] = getMode(s,fracs[ind][::-1],0.01*np.ones(2*s+1),centGuess='nan',plot=False)
 
 fig1=plt.figure()
 pan1=fig1.add_subplot(1,1,1)
@@ -367,7 +370,7 @@ pan1.set_title(r'$\Omega$=%.2f,V=%.2f,$\delta_0$=%.3f,$\delta_N$=%.3f,$\phi_N$=%
 pan1.set_xlim(latticeRampOnt*1e3+ramanRampOnt*1e3,tMax*1e3)
 pan1.set_ylabel('Modal position')
 
-np.savez('TDSEkickF2experparams',omegaMax=omegaMax,Vmax=Vmax,latticeRampOnt=latticeRampOnt,
+np.savez('TDSEkickF2experparams'+str(np.round(blochOscTime*1e3,1)),omegaMax=omegaMax,Vmax=Vmax,latticeRampOnt=latticeRampOnt,
          ramanRampOnt=ramanRampOnt,delta0=delta0,epsilon=epsilon,blochOscTime=blochOscTime,
          x0max=x0max,phi=phi, modeList=modeList,modeSigmaList=modeSigmaList,
          fracs=fracs,com0=com0,tgrid=tgrid,psiOut=psiOut)

@@ -11,6 +11,37 @@ from matplotlib import rc, rcParams
 import matplotlib.gridspec as gridspec
 import matplotlib as mpl
 
+
+rcParams['axes.labelsize'] = 8
+rcParams['xtick.labelsize'] = 8
+rcParams['ytick.labelsize'] = 8
+rcParams['legend.fontsize'] = 8
+rcParams['axes.titlesize'] = 8
+
+
+rcParams['text.usetex'] = True
+rcParams['pdf.fonttype'] = 42 # True type fonts
+rcParams['font.family'] = 'sans-serif'
+rcParams['font.serif'] = ['']
+rcParams['font.sans-serif'] = ['Helvetica']
+rcParams['text.latex.preamble'] = [r'\usepackage{amsmath}']
+
+
+rcParams['axes.linewidth'] = 0.75
+rcParams['lines.linewidth'] = 0.75
+rcParams['lines.markersize'] = 2
+
+rcParams['xtick.major.size'] = 3      # major tick size in points
+rcParams['xtick.minor.size'] = 2      # minor tick size in points
+rcParams['xtick.major.width'] = 0.75       # major tick width in points
+rcParams['xtick.minor.width'] = 0.75      # minor tick width in points
+
+rcParams['ytick.major.size'] = 3      # major tick size in points
+rcParams['ytick.minor.size'] = 2      # minor tick size in points
+rcParams['ytick.major.width'] = 0.75       # major tick width in points
+rcParams['ytick.minor.width'] = 0.75      # minor tick width in points
+
+
 hbar = 1.0545718e-34 # reduced Planck constant m^2 kg/s
 mRb =1.44467e-25 #mass of rubidium in kg
 lambdaR = 790e-9 # Raman wavelength in m
@@ -148,71 +179,76 @@ mList5=np.arange(q5)-cent
 
 figure = plt.figure(1)
 figure.clear()
-figure.set_size_inches(2.5,5.0)
+figure.set_size_inches(3.5,2.75)
 
-gs = gridspec.GridSpec(2,1)
-gs.update(left=0.2, right=0.98, top=0.95, bottom = 0.15, hspace=0.2,wspace=0.05)
+gs = gridspec.GridSpec(1,2)
+gs.update(left=0.4, right=0.95, top=0.95, bottom = 0.15, hspace=0.2,wspace=0.15)
  
 pan0=figure.add_subplot(gs[0,0])
 pan0.imshow(Egrid0[:,:,0].transpose(), cmap='Greys',extent=(kj0[0]/(2.0*np.pi),kj0[-1]/(2.0*np.pi),km0[0]/(2.0*np.pi),km0[-1]/(2.0*np.pi)))
 pan0.set_xticks([-0.5,0.0,0.5])
 pan0.set_yticks([-0.5,-0.25,0.0,0.25,0.5])
-pan0.set_xlabel(r'$q_x$ [$2k_L$]')
+#pan0.set_xlabel(r'$q_x$ [$2k_L$]')
 pan0.set_ylabel(r'$q_s$ [$2k_L$]')
 pan0.set_yticklabels(['-1/2','-1/4','0','1/4','1/2'])
+pan0.set_xticklabels([])
 
-pan0=figure.add_subplot(gs[1,0])
+pan0=figure.add_subplot(gs[0,1])
 pan0.imshow(mgrid0.transpose(), cmap='Greys',extent=(kj0[0]/(2.0*np.pi),kj0[-1]/(2.0*np.pi),km0[0]/(2.0*np.pi),km0[-1]/(2.0*np.pi)))
 pan0.set_xticks([-0.5,0.0,0.5])
 pan0.set_yticks([-0.5,-0.25,0.0,0.25,0.5])
-pan0.set_yticklabels(['-1/2','-1/4','0','1/4','1/2'])
-pan0.set_xlabel(r'$q_x$ [$2k_L$]')
-pan0.set_ylabel(r'$q_s$ [$2k_L$]')
-plt.savefig('TbBsMagP0Q1.png',transparent=True)
+pan0.set_yticklabels([])
+pan0.set_xticklabels([])
+#pan0.set_xlabel(r'$q_x$ [$2k_L$]')
+#pan0.set_ylabel(r'$q_s$ [$2k_L$]')
+fileroot = 'C:/Users/swooty/Documents/Work/Bloch Osc Paper/Figures/'
+plt.savefig(fileroot+'TbBsMagP0Q1.pdf',transparent=True)
 
-figure = plt.figure(2)
-figure.clear()
-gs = gridspec.GridSpec(1,1)
-pan = figure.add_subplot(gs[0,0])
-pan.scatter(kj0,Egrid0[:,kj0.size/2,0],c=mgrid0[:,kj0.size/2],vmin=-1.0,vmax=1.0,marker='o')
+#figure = plt.figure(2)
+#figure.clear()
+#gs = gridspec.GridSpec(1,1)
+#pan = figure.add_subplot(gs[0,0])
+#pan.scatter(kj0,Egrid0[:,kj0.size/2,0],c=mgrid0[:,kj0.size/2],vmin=-1.0,vmax=1.0,marker='o')
 
 
 figure = plt.figure(3)
 figure.clear()
-figure.set_size_inches(2.5,2.5)
+figure.set_size_inches(3.5,1.5)
 
-gs = gridspec.GridSpec(2,1)
-gs.update(left=0.2, right=0.98, top=0.95, bottom = 0.15, hspace=0.1,wspace=0.05)
+gs = gridspec.GridSpec(1,2)
+gs.update(left=0.4, right=0.95, top=0.95, bottom = 0.15, hspace=0.1,wspace=0.15)
  
 pan0=figure.add_subplot(gs[0,0])
 pan0.imshow(EgridQ3P1[:,:,0].transpose(), cmap='Greys',extent=(kjQ3P1[0]/(2.0*np.pi),kjQ3P1[-1]/(2.0*np.pi),kmQ3P1[0]/(2.0*np.pi),kmQ3P1[-1]/(2.0*np.pi)))
 pan0.set_xticks([-0.5,0.0,0.5])
 pan0.set_yticks([-1.0/6.0,1.0/6.0])
 pan0.set_yticklabels(['-1/6','1/6'])
-pan0.set_xlabel(r'$q_x$ [$2k_L$]')
+#pan0.set_xlabel(r'$q_x$ [$2k_L$]')
 pan0.set_ylabel(r'$q_s$ [$2k_L$]')
+pan0.set_xticklabels([])
 
-pan0=figure.add_subplot(gs[1,0])
+pan0=figure.add_subplot(gs[0,1])
 pan0.imshow(mgridQ3P1.transpose(), cmap='threeSite',extent=(kjQ3P1[0]/(2.0*np.pi),kjQ3P1[-1]/(2.0*np.pi),kmQ3P1[0]/(2.0*np.pi),kmQ3P1[-1]/(2.0*np.pi)))
 pan0.set_xticks([-0.5,0.0,0.5])
 pan0.set_yticks([-1.0/6.0,1.0/6.0])
-pan0.set_yticklabels(['-1/6','1/6'])
-pan0.set_xlabel(r'$q_x$ [$2k_L$]')
-pan0.set_ylabel(r'$q_s$ [$2k_L$]')
-plt.savefig('TbBsMagP1Q3.png',transparent=True)
+pan0.set_yticklabels([])
+pan0.set_xticklabels([])
+#pan0.set_xlabel(r'$q_x$ [$2k_L$]')
+#pan0.set_ylabel(r'$q_s$ [$2k_L$]')
+plt.savefig(fileroot+'TbBsMagP1Q3.pdf',transparent=True)
 
-figure = plt.figure(4)
-figure.clear()
-gs = gridspec.GridSpec(1,1)
-pan = figure.add_subplot(gs[0,0])
-pan.scatter(kjQ3P1,EgridQ3P1[:,kjQ3P1.size/2,0],c=mgridQ3P1[:,kjQ3P1.size/2],vmin=-1.0,vmax=1.0,marker='o')
+#figure = plt.figure(4)
+#figure.clear()
+#gs = gridspec.GridSpec(1,1)
+#pan = figure.add_subplot(gs[0,0])
+#pan.scatter(kjQ3P1,EgridQ3P1[:,kjQ3P1.size/2,0],c=mgridQ3P1[:,kjQ3P1.size/2],vmin=-1.0,vmax=1.0,marker='o')
 
 figure = plt.figure(5)
 figure.clear()
-figure.set_size_inches(2.5,2.0)
+figure.set_size_inches(3.5,1.0)
 
-gs = gridspec.GridSpec(2,1)
-gs.update(left=0.25, right=0.98, top=0.95, bottom = 0.15, hspace=0.3,wspace=0.05)
+gs = gridspec.GridSpec(1,2)
+gs.update(left=0.4, right=0.95, top=0.95, bottom = 0.15, hspace=0.3,wspace=0.15)
  
 pan0=figure.add_subplot(gs[0,0])
 pan0.imshow(EgridQ5P2[:,:,0].transpose(), cmap='Greys',extent=(kjQ5P2[0]/(2.0*np.pi),kjQ5P2[-1]/(2.0*np.pi),kmQ5P2[0]/(2.0*np.pi),kmQ5P2[-1]/(2.0*np.pi)))
@@ -223,67 +259,34 @@ pan0.set_ylabel(r'$q_s$ [$2k_L$]')
 pan0.set_yticks([-0.1,0.1])
 pan0.set_yticklabels(['-1/10','1/10'])
 
-pan0=figure.add_subplot(gs[1,0])
+pan0=figure.add_subplot(gs[0,1])
 pan0.imshow(mgridQ5P2.transpose(), cmap='fiveSite',extent=(kjQ5P2[0]/(2.0*np.pi),kjQ5P2[-1]/(2.0*np.pi),kmQ5P2[0]/(2.0*np.pi),kmQ5P2[-1]/(2.0*np.pi)))
 pan0.set_xticks([-0.5,0.0,0.5])
 pan0.set_yticks([-0.1,0.1])
-pan0.set_yticklabels(['-1/10','1/10'])
+pan0.set_yticklabels([])
 pan0.set_xticklabels(['-1/2','0','1/2'])
 pan0.set_xlabel(r'$q_x$ [$2k_L$]')
-pan0.set_ylabel(r'$q_s$ [$2k_L$]')
-plt.savefig('TbBsMagP2Q5.png',transparent=True)
+#pan0.set_ylabel(r'$q_s$ [$2k_L$]')
+plt.savefig(fileroot+'TbBsMagP2Q5.pdf',transparent=True)
 
-figure = plt.figure(6)
-figure.clear()
-gs = gridspec.GridSpec(1,1)
-pan = figure.add_subplot(gs[0,0])
-pan.scatter(kjQ5P2,EgridQ5P2[:,kjQ5P2.size/2,0],c=mgridQ5P2[:,kjQ5P2.size/2],vmin=-1.0,vmax=1.0,marker='o')
-
-#
-#s=3
-#figure = plt.figure(2)
+#figure = plt.figure(6)
 #figure.clear()
-#figure.set_size_inches(2.5/np.float(s),2.5)
-#gs = gridspec.GridSpec(1,s)
+#gs = gridspec.GridSpec(1,1)
+#pan = figure.add_subplot(gs[0,0])
+#pan.scatter(kjQ5P2,EgridQ5P2[:,kjQ5P2.size/2,0],c=mgridQ5P2[:,kjQ5P2.size/2],vmin=-1.0,vmax=1.0,marker='o')
+
+
+#s=5
+#figure = plt.figure(3)
+#figure.clear()
+#figure.set_size_inches(2.5,2.5/np.float(s))
+#gs = gridspec.GridSpec(2,1)
 #gs.update(left=0.2, right=0.98, top=0.95, bottom = 0.15, hspace=0.0,wspace=0.0)
 #
-#kjmin = kjQ3P1[0]/(2.0*np.pi)
-#kjmax = kjQ3P1[-1]/(2.0*np.pi)
+#kjmin = kjQ5P2[0]/(2.0*np.pi)
+#kjmax = kjQ5P2[-1]/(2.0*np.pi)
 #kjdel = (kjmax-kjmin)/np.float(s)
-#N = kjQ3P1.size
-#for i in range(s):
-#    pan1=figure.add_subplot(gs[0,i])
-#    print 'average:'
-#    print str(np.average(mgridQ3P1.transpose()[:,i*N/s:(i+1)*N/s]))+' +/- '+str(np.std(mgridQ3P1.transpose()[:,i*N/s:(i+1)*N/s]))
-#    print 'center:'
-#    print mgridQ3P1.transpose()[N/2,i*N/s+N/s/2]
-#    print 'm:'
-#    m = np.int(np.round(np.average(mgridQ3P1.transpose()[:,i*N/s:(i+1)*N/s]),0))
-#    print m
-#    pan1.imshow(EgridQ3P1[:,:,0].transpose()[:,i*N/s:(i+1)*N/s], cmap=cmapDict[m],extent=(kjQ3P1[0]/(2.0*np.pi),kjQ3P1[-1]/(2.0*np.pi)/s,kmQ3P1[0]/(2.0*np.pi),kmQ3P1[-1]/(2.0*np.pi)))
-#    pan1.set_xticks([])
-#    if i==0:
-#        pan1.set_yticks([-1.0/6.0,1.0/6.0])
-#        pan1.set_yticklabels(['-1/6','1/6'])
-#    else:    
-#        pan1.set_yticks([])
-#pan1.set_xticks([-0.5,0.0,0.5])
-#pan1.set_xticklabels([])
-#pan1.set_yticks([-1.0/6.0,1.0/6.0])
-#pan1.set_yticklabels(['-1/6','1/6'])
-
-
-s=5
-figure = plt.figure(3)
-figure.clear()
-figure.set_size_inches(2.5,2.5/np.float(s))
-gs = gridspec.GridSpec(2,1)
-gs.update(left=0.2, right=0.98, top=0.95, bottom = 0.15, hspace=0.0,wspace=0.0)
-
-kjmin = kjQ5P2[0]/(2.0*np.pi)
-kjmax = kjQ5P2[-1]/(2.0*np.pi)
-kjdel = (kjmax-kjmin)/np.float(s)
-N = kjQ5P2.size
+#N = kjQ5P2.size
 #for i in range(s):
 #pan1=figure.add_subplot(gs[0,:])
 #pan1.imshow(EgridQ5P2[:,:,0].transpose(),cmap='Greys',extent=(kjQ5P2[0]/(2.0*np.pi),kjQ5P2[-1]/(2.0*np.pi)/s,kmQ5P2[0]/(2.0*np.pi),kmQ5P2[-1]/(2.0*np.pi)))
@@ -330,3 +333,37 @@ N = kjQ5P2.size
 #
 #
 #figure.text(0.05,0.6,r'$q_s$ [$2k_L$]', rotation='vertical', size=8)
+
+
+#
+#s=3
+#figure = plt.figure(2)
+#figure.clear()
+#figure.set_size_inches(2.5/np.float(s),2.5)
+#gs = gridspec.GridSpec(1,s)
+#gs.update(left=0.2, right=0.98, top=0.95, bottom = 0.15, hspace=0.0,wspace=0.0)
+#
+#kjmin = kjQ3P1[0]/(2.0*np.pi)
+#kjmax = kjQ3P1[-1]/(2.0*np.pi)
+#kjdel = (kjmax-kjmin)/np.float(s)
+#N = kjQ3P1.size
+#for i in range(s):
+#    pan1=figure.add_subplot(gs[0,i])
+#    print 'average:'
+#    print str(np.average(mgridQ3P1.transpose()[:,i*N/s:(i+1)*N/s]))+' +/- '+str(np.std(mgridQ3P1.transpose()[:,i*N/s:(i+1)*N/s]))
+#    print 'center:'
+#    print mgridQ3P1.transpose()[N/2,i*N/s+N/s/2]
+#    print 'm:'
+#    m = np.int(np.round(np.average(mgridQ3P1.transpose()[:,i*N/s:(i+1)*N/s]),0))
+#    print m
+#    pan1.imshow(EgridQ3P1[:,:,0].transpose()[:,i*N/s:(i+1)*N/s], cmap=cmapDict[m],extent=(kjQ3P1[0]/(2.0*np.pi),kjQ3P1[-1]/(2.0*np.pi)/s,kmQ3P1[0]/(2.0*np.pi),kmQ3P1[-1]/(2.0*np.pi)))
+#    pan1.set_xticks([])
+#    if i==0:
+#        pan1.set_yticks([-1.0/6.0,1.0/6.0])
+#        pan1.set_yticklabels(['-1/6','1/6'])
+#    else:    
+#        pan1.set_yticks([])
+#pan1.set_xticks([-0.5,0.0,0.5])
+#pan1.set_xticklabels([])
+#pan1.set_yticks([-1.0/6.0,1.0/6.0])
+#pan1.set_yticklabels(['-1/6','1/6'])

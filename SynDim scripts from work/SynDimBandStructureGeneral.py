@@ -21,7 +21,7 @@ lambdaL = 1.064e-6 #lattice wavelength in m
 Erecoil = (2.0*np.pi*hbar)**2.0/(2.0*mRb*lambdaL**2.0) #recoil energy
 q=7.0
 c=1064.0/790.0#0.0#3.0/q#
-Flat=False
+Flat=True
 
 
 cdictC = {'red':   [(0.0,  0.0, 1.0), 
@@ -228,33 +228,33 @@ def plotSynDimBandStructGen(omega, delta, epsilon, U, n,S, m0,c=c,kList=np.linsp
 #            pan4.plot(kList,magInUnitCell[:,j])
 #    pan4.set_xlabel(r'Crystal momentum [$k_L$]')
 #    pan4.set_ylabel('Magnetization')
-    if plot:
-        cDict={}
-        cDict[-2]='m-'
-        cDict[-1]='r-'
-        cDict[0]='g-'
-        cDict[1]='b-'
-        cDict[2]='c-'
-    #
-        fig5=plt.figure()
-        pan5=fig5.add_subplot(1,1,1)
-        for mF in np.arange(-S,S+1):
-            pan5.plot(kList/2.0,pops[:,0,mF+S],cDict[mF], label=r'$m_F$='+str(mF))
-        pan5.set_xlabel(r'$q_x$ [$2k_L$]')
-        pan5.set_xlim([-0.5,0.5])
-        pan5.set_ylabel('Fractional populations')
-        pan5.set_title('Lowest band')
-        plt.legend()
-    
-        fig6=plt.figure()
-        pan6=fig6.add_subplot(1,1,1)
-        for mF in np.arange(-S,S+1):
-            pan6.plot(kList/2.0,pops[:,1,mF+S],cDict[mF],label=r'$m_F$='+str(mF))
-        pan6.set_xlabel(r'$q_x$ [$2k_L$]')
-        pan6.set_xlim([-0.5,0.5])
-        pan6.set_ylabel('Fractional populations')
-        pan6.set_title('Second band')
-        plt.legend()    
+#    if plot:
+#        cDict={}
+#        cDict[-2]='m-'
+#        cDict[-1]='r-'
+#        cDict[0]='g-'
+#        cDict[1]='b-'
+#        cDict[2]='c-'
+#    #
+#        fig5=plt.figure()
+#        pan5=fig5.add_subplot(1,1,1)
+#        for mF in np.arange(-S,S+1):
+#            pan5.plot(kList/2.0,pops[:,0,mF+S],cDict[mF], label=r'$m_F$='+str(mF))
+#        pan5.set_xlabel(r'$q_x$ [$2k_L$]')
+#        pan5.set_xlim([-0.5,0.5])
+#        pan5.set_ylabel('Fractional populations')
+#        pan5.set_title('Lowest band')
+#        plt.legend()
+#    
+#        fig6=plt.figure()
+#        pan6=fig6.add_subplot(1,1,1)
+#        for mF in np.arange(-S,S+1):
+#            pan6.plot(kList/2.0,pops[:,1,mF+S],cDict[mF],label=r'$m_F$='+str(mF))
+#        pan6.set_xlabel(r'$q_x$ [$2k_L$]')
+#        pan6.set_xlim([-0.5,0.5])
+#        pan6.set_ylabel('Fractional populations')
+#        pan6.set_title('Second band')
+#        plt.legend()    
 #    
     if save:
         filename='SynDimBandStructure_F'+str(S)+'_n'+str(n)+'_Chern'+str(int(c))

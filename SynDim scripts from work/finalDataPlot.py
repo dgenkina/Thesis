@@ -22,7 +22,6 @@ rcParams['ytick.labelsize'] = 8
 rcParams['legend.fontsize'] = 8
 rcParams['axes.titlesize'] = 8
 
-
 rcParams['text.usetex'] = True
 rcParams['pdf.fonttype'] = 42 # True type fonts
 rcParams['font.family'] = 'sans-serif'
