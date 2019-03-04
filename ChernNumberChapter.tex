@@ -18,7 +18,7 @@ Figure \ref{fig:bakedGoods} shows some examples of objects with different genus 
 \caption[Topology of baked goods]{Topology of baked goods. They are classified according to genus $g$, the number of holes.}
 \end{figure}
 
-More formally, the Gauss-Bonnet theorem states that the integral of the Gaussian curvature $K$ over a closed surface $S$ is an integer multiple of $2\pi$:
+More formally, the Gauss-Bonnet theorem proves the discrete topology of 2D surfaces. It uses the Guassian curvature, $K$, defined at every point on the surface. The Gaussian curvature is defined as follows\cite{Grinfeld2014}: at any point on the surface, there is a normal vector, perpendicular to that point's tangent plane. The set of planes containing the normal vector are called normal planes. Each normal plane intersects the surface at a curve, with an assoicated curvature given by the coefficient of the quadratic term in a Taylor expansion of said curve. There is then a normal plane giving the maximal curvature $k_{max}$ and a normal plane giving the minimal curvature $k_{min}$ (if all the curvatures are the same $k$, as on a sphere, then $k_{max}=k_{min}=k$). The Gaussian curvature is just the product of the two, $K=k_{min}k_{max}$. The Gauss-Bonnet theorem\cite{Grinfeld2014} then states that the integral of the Gaussian curvature $K$ over a closed surface $S$ is an integer multiple of $2\pi$:
 \begin{equation}
 \chi = \frac{1}{2\pi}\int_S K dA,
 \label{eqn:GaussBonnet}
@@ -26,36 +26,36 @@ More formally, the Gauss-Bonnet theorem states that the integral of the Gaussian
 where the integer $\chi$ is called the Euler characteristic, and is related to the genus via $\chi = 2 - 2g$. Essentially, the total curvature of a closed surface is quantized to integer values, and any closed surface can be classified by that integer. Surfaces with equal $\chi$ can be continuously transformed into each other.
 
 \subsection{Band topology in materials}
-The same general principles can be applied to the bands within the band structure of a crystalline material. Crystalline materials are characterized by a periodic structure. The primitive unit cell, or the minimal repeating unit of the lattice, can be parametrized by primitive unit vectors $\vec{a}_i$, where $i$ indexes from $1$ to the number of dimensions $d$. In momentum space, the repeating structure is parametrized by reciprocal lattice vectors $\vec{K}_i$. According to Bloch's theorem \cite{Ashcroft}, the eigenstate wavefunction for some eigenband in a periodic potential in $d$ dimensions can be written as 
+The same general principles can be applied to the bands within the band structure of a crystalline material\cite{FranzMolenkamp}. Crystalline materials are characterized by a spatially periodic Hamiltonian. The primitive unit cell, or the minimal repeating unit of the lattice, can be parametrized by primitive unit vectors $\vec{a}_i$, where $i$ indexes from $1$ to the number of dimensions $d$. In momentum space, the repeating structure is parametrized by reciprocal lattice vectors $\vec{K}_i$. The eignestates of are labeled by a momentum $k$ and an energy $E$, with energies grouped into bands. According to Bloch's theorem \cite{Ashcroft}, the eigenstate wavefunction for some band in a periodic potential in $d$ dimensions can be written as 
 \begin{equation}
 \ket{\Psi(\vec{k})} = e^{i\vec{k}\cdot\vec{r}}\ket{u(\vec{k})},
 \end{equation}
-where $\vec{k}$ is the crystal momentum, $\vec{r}$ is the spatial coordinate, and $\ket{u(\vec{k})}$ is periodic with the reciprocal lattice periodicity. Reciprocal lattice space is well defined for an infinite system, and is a good approximation for a system that is large compared to the primitive lattice size.
+where $\vec{k}$ is the crystal momentum, $\vec{r}$ is the spatial coordinate, and $\ket{u(\vec{k})}$ is periodic with the reciprocal lattice periodicity. Reciprocal lattice space is continuously well defined for an infinite system. In a finite system, the reciprocal space becomes discrete. In the limit where the system is large compared to the primitive unit cell, one can still approximate a sum over $k$ states with an integral for many applications. However, the rigorous theorems of continuous mathematics no longer apply. 
 
-There is a phase ambiguity in the definition of the Bloch wavefunction, such that the physics remains invariant under the transformation 
+There is a phase ambiguity in the definition of the Bloch wavefunction, such that the physics remains invariant under the transformation\cite{FranzMolenkamp}
 \begin{equation}
-\ket{u(\vec{k}} \rightarrow e^{i\phi(\vec{k})}\ket{u(\vec{k})},
+\ket{u(\vec{k})} \rightarrow e^{i\phi(\vec{k})}\ket{u(\vec{k})},
 \label{eqn:phaseTransform}
 \end{equation}
-which is reminiscent of gauge invariance in electrostatics. The corresponding non-gauge invariant potential is called the Berry connection $\vec{A}$, and is given by 
+which is reminiscent of gauge invariance in electrostatics. The corresponding gauge-dependent potential is called the Berry connection $\vec{A}$, and is given by 
 \begin{equation}
 \vec{A}=-i\bra{u(\vec{k})}\nabla_{\vec{k}}\ket{u(\vec{k})}.
 \end{equation}
-Under the transformation eq. \ref{eqn:phaseTransform}, $\vec{A} \rightarrow \vec{A} + \nabla_{\vec{k}}\phi(\vec{k})$. The gauge invariant field is therefore $\vec{\mathcal{F}}=\nabla\times\vec{A}$, where $\vec{\mathcal{F}}$ is known as the Berry curvature. 
+Under the transformation eq. \ref{eqn:phaseTransform}, the Berry connection $\vec{A}$ goes to $\vec{A} + \nabla_{\vec{k}}\phi(\vec{k})$. The gauge invariant field, in 2 dimensions, is given by $\mathcal{F}=\frac{\partial A_y}{\partial k_x} - \frac{\partial A_x}{\partial k_y}$, where $\mathcal{F}$ is known as the Berry curvature. 
 
-From this, the geometric phase, or Berry phase\cite{Berry1984} $\gamma_c$, can be defined as the phase acquired over a closed curve $c$  in parameter space that is independent of the rate at which the curve is traversed:
+From this, the geometric phase, or Berry phase $\gamma_c$\cite{Berry1984}, can be defined as the phase acquired over a closed curve $c$  in parameter space that is independent of the rate at which the curve is traversed:
 \begin{equation}
 \gamma_c = \int_c \vec{A}\cdot d\vec{k} = \int_S \vec{\mathcal{F}}\cdot dS,
 \label{eqn:BerryPhase}
 \end{equation}
 where $S$ is a surface bounded by the  curve $c$, and in the second equality we have invoked Stoke's theorem. 
 
-The Berry curvature integrated over the entire Brillouin zone, or primitive cell in reciprocal lattice space, is quantized in units of $2\pi$:
+The Berry curvature integrated over the entire Brillouin zone, or primitive cell in reciprocal lattice space, is quantized in units of $2\pi$ and in 2D given by:
 \begin{equation}
-C=\frac{1}{2\pi} \int_S \vec{\mathcal{F}}\cdot dS,
+C=\frac{1}{2\pi} \int_{BZ} \mathcal{F}{\rm d}\vec{k},
 \label{eqn:ChernFromBerryCurvature}
 \end{equation}
-where $C$ is an integer. This bears a strong similarity to the Gauss-Bonnet theorem, eqn. \ref{eqn:GaussBonnet}, with the Gaussian curvature replaced by the Berry curvature, and the closed surface in real space replaced by the Brillouin zone in momentum space. Similarly, the integer $C$ is a topological invariant and can be used to classify the topological properties of the bands. For periodic structures in 2D, this invariant is called the Chern number. 
+where $C$ is an integer\cite{Chern,Alty1995}. This bears a strong similarity to the Gauss-Bonnet theorem, eqn. \ref{eqn:GaussBonnet}, with the Gaussian curvature replaced by the Berry curvature, and the closed surface in real space replaced by the Brillouin zone in momentum space. Similarly, the integer $C$ is a topological invariant and can be used to classify the topological properties of the bands. For periodic structures in 2D, this invariant is called the Chern number. 
 
 In finite systems, the transition to momentum space is necessarily discretized. The integral in eqn. \ref{eqn:BerryPhase} is no longer continuous, and the identification of the Chern number can only be made in the continuous limit. In short, the Chern number corresponds to the Chern number of the system in the imaginary scenario where its bulk was extended indefinitely. In finite systems, the edges of the system become important. The edge of the system is an interface between a topologically non-trivial region (the system in question) and a topologically trivial region (the surrounding air or other material). These edges support conducting edge modes.  The number of these conducting edge modes is equal to the total Chern number of the filled bands in the bulk. This is known as the bulk-edge correspondence\cite{Thouless1982,Datta1995}, and has been widely used to experimentally detect the effective Chern number. 
 
