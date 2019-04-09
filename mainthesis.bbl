@@ -1,242 +1,69 @@
 \begin{thebibliography}{10}
 
-\bibitem{Dagotto1994}
-Elbio Dagotto.
-\newblock Correlated electrons in high-temperature superconductors.
-\newblock {\em Rev. Mod. Phys.}, 66:763--840, Jul 1994.
+\bibitem{Ensher1996}
+J.~R. Ensher, D.~S. Jin, M.~R. Matthews, C.~E. Wieman, and E.~A. Cornell.
+\newblock Bose-einstein condensation in a dilute gas: Measurement of energy and
+  ground-state occupation.
+\newblock {\em Phys. Rev. Lett.}, 77:4984--4987, Dec 1996.
 
-\bibitem{Lee2006}
-Patrick~A. Lee, Naoto Nagaosa, and Xiao-Gang Wen.
-\newblock Doping a mott insulator: Physics of high-temperature
-  superconductivity.
-\newblock {\em Rev. Mod. Phys.}, 78:17--85, Jan 2006.
+\bibitem{Pethick}
+C.J. Pethick and H.~Smith.
+\newblock {\em {Bose-Einstein Condensation of Dilute Gases}}.
+\newblock Oxford University Press, Oxford, UK, 2005.
 
-\bibitem{Stormer1999}
-Horst~L. Stormer.
-\newblock Nobel lecture: The fractional quantum hall effect.
-\newblock {\em Rev. Mod. Phys.}, 71:875--889, Jul 1999.
+\bibitem{Egorov2013}
+M.~Egorov, B.~Opanchuk, P.~Drummond, B.~V. Hall, P.~Hannaford, and A.~I.
+  Sidorov.
+\newblock Measurement of $s$-wave scattering lengths in a two-component
+  bose-einstein condensate.
+\newblock {\em Phys. Rev. A}, 87:053614, May 2013.
 
-\bibitem{Murthy2003}
-Ganpathy Murthy and R.~Shankar.
-\newblock Hamiltonian theories of the fractional quantum hall effect.
-\newblock {\em Rev. Mod. Phys.}, 75:1101--1158, Oct 2003.
+\bibitem{KetterleDFG}
+W.~Ketterle and M.~W. Zwierlein.
+\newblock {Making, probing and understanding ultracold Fermi gases}.
+\newblock In {\em Ultracold Fermi Gases, Proceedings of the International
+  School of Physics `Enrico Fermi', Course CLXIV}, Varenna, 20-30 June 2006.
 
-\bibitem{Berthier2011}
-Ludovic Berthier and Giulio Biroli.
-\newblock Theoretical perspective on the glass transition and amorphous
-  materials.
-\newblock {\em Rev. Mod. Phys.}, 83:587--645, Jun 2011.
+\bibitem{OHara02}
+K.~M. O'Hara, S.~L. Hemmer, M.~E. Gehm, S.~R. Granade, and J.~E. Thomas.
+\newblock {Observation of a strongly interacting degenerate Fermi gas of
+  atoms}.
+\newblock {\em Science}, 298(5601):2179--2182, 2002.
 
-\bibitem{Thouless1982}
-D.~J. Thouless, M.~Kohmoto, M.~P. Nightingale, and M.~den Nijs.
-\newblock Quantized hall conductance in a two-dimensional periodic potential.
-\newblock {\em Phys. Rev. Lett.}, 49:405--408, Aug 1982.
+\bibitem{Jochim02}
+S.~Jochim, M.~Bartenstein, G.~Hendl, J.~Hecker Denschlag, R.~Grimm, A.~Mosk,
+  and M.~Weidem\"uller.
+\newblock Magnetic field control of elastic scattering in a cold gas of
+  fermionic lithium atoms.
+\newblock {\em Phys. Rev. Lett.}, 89:273202, Dec 2002.
 
-\bibitem{Qi2011}
-Xiao-Liang Qi and Shou-Cheng Zhang.
-\newblock Topological insulators and superconductors.
-\newblock {\em Rev. Mod. Phys.}, 83:1057--1110, Oct 2011.
+\bibitem{Dieckmann02}
+K.~Dieckmann, C.~A. Stan, S.~Gupta, Z.~Hadzibabic, C.~H. Schunck, and
+  W.~Ketterle.
+\newblock Decay of an ultracold fermionic lithium gas near a feshbach
+  resonance.
+\newblock {\em Phys. Rev. Lett.}, 89:203201, Oct 2002.
 
-\bibitem{Grinfeld2014}
-P.~Grinfeld.
-\newblock {\em {Introduction to Tensor Analysis and the Calculus of Moving
-  Surfaces.}}
-\newblock Springer, New York, 2014.
+\bibitem{Loftus02}
+T.~Loftus, C.~A. Regal, C.~Ticknor, J.~L. Bohn, and D.~S. Jin.
+\newblock Resonant control of elastic collisions in an optically trapped fermi
+  gas of atoms.
+\newblock {\em Phys. Rev. Lett.}, 88:173201, Apr 2002.
 
-\bibitem{FranzMolenkamp}
-Marcel Franz and Laurens Molenkamp.
-\newblock {\em {Contemporary Concepts of Condensed Matter Science: Topological
-  Insulators}}, volume~6.
-\newblock Elsevier Science, Burlington, 1 edition, 2013.
-
-\bibitem{Ashcroft}
-N.W. Ashcroft and N.D. Mermin.
-\newblock {\em {Solid State Physics}}.
-\newblock Saunders College, Philadelphia, 1976.
-
-\bibitem{Berry1984}
-Michael~Victor Berry.
-\newblock Quantal phase factors accompanying adiabatic changes.
-\newblock {\em Proceedings of the Royal Society of London. A. Mathematical and
-  Physical Sciences}, 392(1802):45--57, 1984.
-
-\bibitem{Chern}
-S~Y Cheng, P~Li, and G~Tian.
-\newblock {\em A Mathematician and His Mathematical Work}.
-\newblock WORLD SCIENTIFIC, 1996.
-
-\bibitem{Alty1995}
-L.~J. Alty.
-\newblock The generalized gauss–bonnet–chern theorem.
-\newblock {\em Journal of Mathematical Physics}, 36(6):3094--3105, 1995.
-
-\bibitem{Datta1995}
-S.~Datta.
-\newblock {\em Electronic transport in mesoscopic systems}.
-\newblock Cambridge University Press, 1995.
-
-\bibitem{Aharonov1959}
-Y.~Aharonov and D.~Bohm.
-\newblock Significance of electromagnetic potentials in quantum theory.
-\newblock {\em Phys. Rev.}, 115:485, 1959.
-
-\bibitem{Hofstadter1976}
-Douglas~R. Hofstadter.
-\newblock Energy levels and wave functions of bloch electrons in rational and
-  irrational magnetic fields.
-\newblock {\em Phys. Rev. B}, 14:2239--2249, Sep 1976.
-
-\bibitem{Geisler2004}
-M.~C. Geisler, J.~H. Smet, V.~Umansky, K.~von Klitzing, B.~Naundorf,
-  R.~Ketzmerick, and H.~Schweizer.
-\newblock Detection of a landau band-coupling-induced rearrangement of the
-  hofstadter butterfly.
-\newblock {\em Phys. Rev. Lett.}, 92:256801, Jun 2004.
-
-\bibitem{Hunt2013}
-B.~Hunt, J.~D. Sanchez-Yamagishi, A.~F. Young, M.~Yankowitz, B.~J. LeRoy,
-  K.~Watanabe, T.~Taniguchi, P.~Moon, M.~Koshino, P.~Jarillo-Herrero, and R.~C.
-  Ashoori.
-\newblock {Massive Dirac Fermions and Hofstadter Butterfly in a van der Waals
-  Heterostructure}.
-\newblock {\em Science}, 340:1427, 2013.
-
-\bibitem{Ando1975}
-Tsuneya Ando, Yukio Matsumoto, and Yasutada Uemura.
-\newblock Theory of hall effect in a two-dimensional electron system.
-\newblock {\em Journal of the Physical Society of Japan}, 39(2):279--288, 1975.
-
-\bibitem{Klitzing1980}
-K.~v. Klitzing, G.~Dorda, and M.~Pepper.
-\newblock New method for high-accuracy determination of the fine-structure
-  constant based on quantized hall resistance.
-\newblock {\em Phys. Rev. Lett.}, 45:494--497, Aug 1980.
-
-\bibitem{Laughlin1981}
-R.~B. Laughlin.
-\newblock Quantized hall conductivity in two dimensions.
-\newblock {\em Phys. Rev. B}, 23:5632--5633, May 1981.
-
-\bibitem{Kohmoto1989}
-Mahito Kohmoto.
-\newblock Zero modes and the quantized hall conductance of the two-dimensional
-  lattice in a magnetic field.
-\newblock {\em Phys. Rev. B}, 39:11943--11949, Jun 1989.
-
-\bibitem{Bose1924}
-Bose.
-\newblock Plancks gesetz und lichtquantenhypothese.
-\newblock {\em Zeitschrift f{\"u}r Physik}, 26(1):178--181, Dec 1924.
-
-\bibitem{Anderson1995}
-M.~H. Anderson, J.~R. Ensher, M.~R. Matthews, C.~E. Wieman, and E.~A. Cornell.
-\newblock Observation of bose-einstein condensation in a dilute atomic vapor.
-\newblock {\em Science}, 269(5221):198--201, 1995.
-
-\bibitem{Davis1995}
-K.~B. Davis, M.~O. Mewes, M.~R. Andrews, N.~J. van Druten, D.~S. Durfee, D.~M.
-  Kurn, and W.~Ketterle.
-\newblock Bose-einstein condensation in a gas of sodium atoms.
-\newblock {\em Phys. Rev. Lett.}, 75:3969--3973, Nov 1995.
-
-\bibitem{DeMarcoJin99}
-B.~DeMarco and D.~S. Jin.
-\newblock {Onset of Fermi degeneracy in a trapped atomic gas}.
-\newblock {\em {Science}}, {285}({5434}):{1703--1706}, {1999}.
-
-\bibitem{Truscott2001}
-Andrew~G. Truscott, Kevin~E. Strecker, William~I. McAlexander, Guthrie~B.
-  Partridge, and Randall~G. Hulet.
-\newblock Observation of fermi pressure in a gas of trapped atoms.
-\newblock {\em Science}, 291(5513):2570--2572, 2001.
-
-\bibitem{Greiner2001}
-Markus Greiner, Immanuel Bloch, Olaf Mandel, Theodor~W. H\"ansch, and Tilman
-  Esslinger.
-\newblock Exploring phase coherence in a 2d lattice of bose-einstein
-  condensates.
-\newblock {\em Phys. Rev. Lett.}, 87:160405, Oct 2001.
-
-\bibitem{Becker2010}
-C~Becker, P~Soltan-Panahi, J~Kronjäger, S~Dörscher, K~Bongs, and K~Sengstock.
-\newblock Ultracold quantum gases in triangular optical lattices.
-\newblock {\em New Journal of Physics}, 12(6):065025, jun 2010.
-
-\bibitem{Struck2011}
-J.~Struck, C.~Olschlager, R.~Le Targat, P.~Soltan-Panahi, A.~Eckardt,
-  M.~Lewenstein, P.~Windpassinger, and K.~Sengstock.
-\newblock Quantum simulation of frustrated classical magnetism in triangular
-  optical lattices.
-\newblock {\em Science}, 333(6045):996–999, 2011.
-
-\bibitem{Tarruell2012}
-Leticia Tarruell, Daniel Greif, Thomas Uehlinger, Gregor Jotzu, and Tilman
-  Esslinger.
-\newblock Creating, moving and merging dirac points with a fermi gas in a
-  tunable honeycomb lattice.
-\newblock {\em Nature}, Mar 2012.
-
-\bibitem{Liu2010}
-Guocai Liu, Shi-Liang Zhu, Shaojian Jiang, Fadi Sun, and W.~M. Liu.
-\newblock Simulating and detecting the quantum spin hall effect in the kagome
-  optical lattice.
-\newblock {\em Phys. Rev. A}, 82:053605, Nov 2010.
-
-\bibitem{Fisher1989}
-Matthew P.~A. Fisher, Peter~B. Weichman, G.~Grinstein, and Daniel~S. Fisher.
-\newblock Boson localization and the superfluid-insulator transition.
-\newblock {\em Phys. Rev. B}, 40:546--570, Jul 1989.
-
-\bibitem{Greiner2002}
-Markus Greiner, Olaf Mandel, Tilman Esslinger, Theodor~W. Hänsch, and Immanuel
-  Bloch.
-\newblock Quantum phase transition from a superfluid to a mott insulator in a
-  gas of ultracold atoms.
-\newblock {\em Nature}, 415:39--44, Jan 2002.
-
-\bibitem{Mun2008}
-J.~Mun.
-\newblock {\em Bose-Einstein Condensates in Optical Lattices: The Superfluid to
-  Mott Insulator Phase Transition}.
-\newblock PhD thesis, Massachusetts Institute of Technology, 2008.
-
-\bibitem{Fano1935}
-Ugo Fano.
-\newblock Sullo spettro di assorbimento dei gas nobili presso il limite dello
-  spettro d'arco.
-\newblock {\em Il Nuovo Cimento (1924-1942)}, 12(3):154--161, Mar 1935.
-
-\bibitem{Fano1961}
-U.~Fano.
-\newblock Effects of configuration interaction on intensities and phase shifts.
-\newblock {\em Phys. Rev.}, 124:1866--1878, Dec 1961.
-
-\bibitem{Feshbach1958}
-Herman Feshbach.
-\newblock Unified theory of nuclear reactions.
-\newblock {\em Annals of Physics}, 5(4):357 -- 390, 1958.
-
-\bibitem{Feshbach1962}
-Herman Feshbach.
-\newblock A unified theory of nuclear reactions. ii.
-\newblock {\em Annals of Physics}, 19(2):287 -- 313, 1962.
+\bibitem{Regal03b}
+C.~A. Regal, C.~Ticknor, J.~L. Bohn, and D.~S. Jin.
+\newblock Tuning $p$-wave interactions in an ultracold fermi gas of atoms.
+\newblock {\em Phys. Rev. Lett.}, 90:053201, Feb 2003.
 
 \bibitem{Chin10}
 C.~Chin, R.~Grimm, P.~Julienne, and E.~Tiesinga.
 \newblock Feshbach resonances in ultracold gases.
 \newblock {\em Rev. Mod. Phys.}, 82:1225--1286, 2010.
 
-\bibitem{Cornish00}
-S.~L. Cornish, N.~R. Claussen, J.~L. Roberts, E.~A. Cornell, and C.~E. Wieman.
-\newblock {Stable Rb-85 Bose-Einstein condensates with widely tunable
-  interactions}.
-\newblock {\em Phys. Rev. Lett.}, {85}({9}):{1795--1798}, {2000}.
-
-\bibitem{Jochim03}
-S.~Jochim, M.~Bartenstein, A.~Altmeyer, G.~Hendl, S.~Riedl, C.~Chin,
-  J.~Hecker~Denschlag, and R.~Grimm.
-\newblock {Bose-Einstein condensation of molecules}.
-\newblock {\em Science}, 302(5653):2101--2103, 2003.
+\bibitem{Greiner03}
+M.~Greiner, C.~A. Regal, and D.~S. Jin.
+\newblock {Emergence of a molecular Bose-Einstein condensate from a Fermi gas}.
+\newblock {\em Nature}, 426(6966):537--540, 2003.
 
 \bibitem{Zwierlein03}
 M.~W. Zwierlein, C.~A. Stan, C.~H. Schunck, S.~M.~F. Raupach, S.~Gupta,
@@ -244,15 +71,17 @@ M.~W. Zwierlein, C.~A. Stan, C.~H. Schunck, S.~M.~F. Raupach, S.~Gupta,
 \newblock {Observation of Bose-Einstein condensation of molecules}.
 \newblock {\em Phys. Rev. Lett.}, 91:250401, 2003.
 
-\bibitem{Regal04}
-C.~A. Regal, M.~Greiner, and D.~S. Jin.
-\newblock {Observation of resonance condensation of fermionic atom pairs}.
-\newblock {\em Phys. Rev. Lett.}, {92}({4}), {2004}.
+\bibitem{Jochim03}
+S.~Jochim, M.~Bartenstein, A.~Altmeyer, G.~Hendl, S.~Riedl, C.~Chin,
+  J.~Hecker~Denschlag, and R.~Grimm.
+\newblock {Bose-Einstein condensation of molecules}.
+\newblock {\em Science}, 302(5653):2101--2103, 2003.
 
-\bibitem{Greiner03}
-M.~Greiner, C.~A. Regal, and D.~S. Jin.
-\newblock {Emergence of a molecular Bose-Einstein condensate from a Fermi gas}.
-\newblock {\em Nature}, 426(6966):537--540, 2003.
+\bibitem{Bartenstein04}
+M.~Bartenstein, A.~Altmeyer, S.~Riedl, S.~Jochim, C.~Chin, J.~Hecker Denschlag,
+  and R.~Grimm.
+\newblock Collective excitations of a degenerate gas at the bec-bcs crossover.
+\newblock {\em Phys. Rev. Lett.}, 92:203201, 2004.
 
 \bibitem{Bourdel04}
 T.~Bourdel, L.~Khaykovich, J.~Cubizolles, J.~Zhang, F.~Chevy, M.~Teichmann,
@@ -260,107 +89,103 @@ T.~Bourdel, L.~Khaykovich, J.~Cubizolles, J.~Zhang, F.~Chevy, M.~Teichmann,
 \newblock {Experimental Study of the BEC-BCS Crossover Region in Lithium 6}.
 \newblock {\em Phys. Rev. Lett.}, 93:050401, 2004.
 
-\bibitem{Cooper2008}
-N.R. Cooper.
-\newblock Rapidly rotating atomic gases.
-\newblock {\em Advances in Physics}, 57(6):539--616, 2008.
+\bibitem{Zwierlein04}
+M.~W. Zwierlein, C.~A. Stan, C.~H. Schunck, S.~M.~F. Raupach, A.~J. Kerman, and
+  W.~Ketterle.
+\newblock {Condensation of pairs of Fermionic atoms near a Feshbach resonance}.
+\newblock {\em Phys. Rev. Lett.}, 92:120403, 2004.
 
-\bibitem{Juzeliunas2006}
-G.~Juzeli\ifmmode~\bar{u}\else \={u}\fi{}nas, J.~Ruseckas, P.~\"Ohberg, and
-  M.~Fleischhauer.
-\newblock Light-induced effective magnetic fields for ultracold atoms in planar
-  geometries.
-\newblock {\em Phys. Rev. A}, 73:025602, Feb 2006.
+\bibitem{Regal04}
+C.~A. Regal, M.~Greiner, and D.~S. Jin.
+\newblock {Observation of resonance condensation of fermionic atom pairs}.
+\newblock {\em Phys. Rev. Lett.}, {92}({4}), {2004}.
 
-\bibitem{Lin2009b}
-Y.~J. Lin, R.~L. Compton, K.~Jimenez-Garcia, J.~V. Porto, and I.~B. Spielman.
-\newblock Synthetic magnetic fields for ultracold neutral atoms.
-\newblock {\em Nature}, 462:628--632, 2009.
+\bibitem{Lin2009}
+Y.-J. Lin, A.~R. Perry, R.~L. Compton, I.~B. Spielman, and J.~V. Porto.
+\newblock Rapid production of $^{87}\text{R}\text{b}$ bose-einstein condensates
+  in a combined magnetic and optical potential.
+\newblock {\em Phys. Rev. A}, 79:063631, Jun 2009.
 
-\bibitem{Lin2011}
-Y-J. Lin, K.~Jim{\'e}nez-Garc{\'\i}a, and I.~B. Spielman.
-\newblock Spin-orbit-coupled {B}ose-{E}instein condensates.
-\newblock {\em Nature}, 471:83--86, 2011.
+\bibitem{KarinaThesis}
+Karina Jimenez-Garcia.
+\newblock {\em Artificial Gauge Fields for Ultracold Neutral Atoms}.
+\newblock PhD thesis, Joint Quantum Institute, National Institute of Standards
+  and Technology, and the University of Maryland, 2012.
 
-\bibitem{Jaksch2003}
-P.~Zoller D.~Jaksch.
-\newblock Creation of effective magnetic fields in optical lattices: the
-  hofstadter butterfly for cold neutral atoms.
-\newblock {\em New Journal of Physics}, 5(1):56, 2003.
+\bibitem{AycockThesis}
+Lauren~M. Aycock.
+\newblock {\em Topological excitations in a Bose gas and sexual harassment
+  reported by undergraduate physicists}.
+\newblock PhD thesis, Cornell University, Ithaca, NY, 1 2017.
 
-\bibitem{Mueller2004}
-Erich~J. Mueller.
-\newblock Artificial electromagnetism for neutral atoms: Escher staircase and
-  laughlin liquids.
-\newblock {\em Phys. Rev. A}, 70:041603, Oct 2004.
+\bibitem{Aycock2017}
+Lauren~M. Aycock, Hilary~M. Hurst, Dmitry~K. Efimkin, Dina Genkina, Hsin-I Lu,
+  Victor~M. Galitski, and I.~B. Spielman.
+\newblock Brownian motion of solitons in a bose{\textendash}einstein
+  condensate.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  114(10):2503--2508, 2017.
 
-\bibitem{Sorensen2005}
-Anders~S. S\o{}rensen, Eugene Demler, and Mikhail~D. Lukin.
-\newblock Fractional quantum hall states of atoms in optical lattices.
-\newblock {\em Phys. Rev. Lett.}, 94:086803, Mar 2005.
+\bibitem{Foot}
+Christopher~J. Foot.
+\newblock {\em {Atomic Physics}}.
+\newblock Cambridge University Press, Cambridge, UK, 2002.
 
-\bibitem{Aidelsburger2013}
-M.~Aidelsburger, M.~Atala, M.~Lohse, J.~T. Barreiro, B.~Paredes, and I.~Bloch.
-\newblock Realization of the hofstadter hamiltonian with ultracold atoms in
-  optical lattices.
-\newblock {\em Phys. Rev. Lett.}, 111(18):185301--, October 2013.
+\bibitem{Donley2005}
+E.~A. Donley, T.~P. Heavner, F.~Levi, M.~O. Tataw, and S.~R. Jefferts.
+\newblock Double-pass acousto-optic modulator system.
+\newblock {\em Review of Scientific Instruments}, 76(6):063112, 2005.
 
-\bibitem{Miyake2013}
-Hirokazu Miyake, Georgios~A. Siviloglou, Colin~J. Kennedy, William~Cody Burton,
-  and Wolfgang Ketterle.
-\newblock Realizing the harper hamiltonian with laser-assisted tunneling in
-  optical lattices.
-\newblock {\em Phys. Rev. Lett.}, 111:185302, Oct 2013.
+\bibitem{PriceThesis}
+Ryan Price.
+\newblock {\em Phase transitions in engineered ultracold quantum systems}.
+\newblock PhD thesis, University of Maryland College Park, Digital Repository
+  at the University of Maryland, 6 2016.
 
-\bibitem{Jotzu2014}
-Gregor Jotzu, Michael Messer, Remi Desbuquois, Martin Lebrat, Thomas Uehlinger,
-  Daniel Greif, and Tilman Esslinger.
-\newblock Experimental realization of the topological haldane model with
-  ultracold fermions.
-\newblock {\em Nature}, 515(7526):237--240, Nov 2014.
+\bibitem{Majorana1932}
+E.~Majorana.
+\newblock Atomi orientati in campo magnetico variabile.
+\newblock {\em Nuovo Cimento}, 9:43--50, Feb 1932.
 
-\bibitem{Aidelsburger2014}
-M~Aidelsburger, M~Lohse, C~Schweizer, M~Atala, J~T Barreiro, S~Nascimb{\`e}ne,
-  N.~R. Cooper, I.~Bloch, and N.~Goldman.
-\newblock {Measuring the Chern number of Hofstadter bands with ultracold
-  bosonic atoms}.
-\newblock {\em Nature Physics}, 11(2):162--166, December 2014.
+\bibitem{Sukumar1997}
+C.~V. Sukumar and D.~M. Brink.
+\newblock Spin-flip transitions in a magnetic trap.
+\newblock {\em Phys. Rev. A}, 56:2451--2454, Sep 1997.
 
-\bibitem{Mancini2015}
-M.~Mancini, G.~Pagano, G.~Cappellini, L.~Livi, M.~Rider, J.~Catani, C.~Sias,
-  P.~Zoller, M.~Inguscio, M.~Dalmonte, and L.~Fallani.
-\newblock Observation of chiral edge states with neutral fermions in synthetic
-  hall ribbons.
-\newblock {\em Science}, 349(6255):1510--, Sep 2015.
+\bibitem{Brink2006}
+D.~M. Brink and C.~V. Sukumar.
+\newblock Majorana spin-flip transitions in a magnetic trap.
+\newblock {\em Phys. Rev. A}, 74:035401, Sep 2006.
 
-\bibitem{An2017}
-Fangzhao~Alex An, Eric~J. Meier, and Bryce Gadway.
-\newblock Direct observation of chiral currents and magnetic reflection in
-  atomic flux lattices.
-\newblock {\em Science Advances}, 3(4), 2017.
+\bibitem{Catani2006}
+J.~Catani, P.~Maioli, L.~De~Sarlo, F.~Minardi, and M.~Inguscio.
+\newblock Intense slow beams of bosonic potassium isotopes.
+\newblock {\em Phys. Rev. A}, 73:033415, Mar 2006.
 
-\bibitem{Mazza2012}
-Leonardo Mazza, Alejandro Bermudez, Nathan Goldman, Matteo Rizzi, Miguel~Angel
-  Martin-Delgado, and Maciej Lewenstein.
-\newblock An optical-lattice-based quantum simulator for relativistic field
-  theories and topological insulators.
-\newblock {\em New Journal of Physics}, 14(1):015007, jan 2012.
+\bibitem{UehlingerThesis}
+Thomas Uehlinger.
+\newblock A 2-d magneto-optical trap as a high flux source of cold potassium
+  atoms.
+\newblock Master's thesis, Swiss Federal Institute of Technology Zurich,
+  Zurich, 5 2008.
 
-\bibitem{Celi2014}
-A.~Celi, P.~Massignan, J.~Ruseckas, N.~Goldman, I. B. Spielman,
-  G.~Juzeliunas, and M.~Lewenstein.
-\newblock Synthetic gauge fields in synthetic dimensions.
-\newblock {\em Phys. Rev. Lett.}, 112(4):043001--, Jan 2014.
+\bibitem{Pedrozo2016}
+E.~Pedrozo-Peñafiel, F.~Vivanco, P.~Castilho, R.~R. Paiva, K.~M. Farias, and
+  V.~S. Bagnato.
+\newblock Direct comparison between a two-dimensional magneto-optical trap and
+  a zeeman slower as sources of cold sodium atoms.
+\newblock {\em Laser Physics Letters}, 13:065501, May 2016.
 
-\bibitem{Stuhl2015}
-B.~K. Stuhl, H.-I. Lu, L.~M. Aycock, D.~Genkina, and I.~B. Spielman.
-\newblock Visualizing edge states with an atomic bose gas in the quantum hall
-  regime.
-\newblock {\em Science}, 349(6255):1514--, Sep 2015.
+\bibitem{Weatherill2009}
+K.~J. Weatherill, J.~D. Pritchard, P.~F. Griffin, U.~Dammalapati, C.~S. Adams,
+  and E.~Riis.
+\newblock A versatile and reliably reusable ultrahigh vacuum viewport.
+\newblock {\em Review of Scientific Instruments}, 80(2):026105, 2009.
 
-\bibitem{Meier2016}
-Eric~J. Meier, Fangzhao~Alex An, and Bryce Gadway.
-\newblock Atom-optics simulator of lattice transport phenomena.
-\newblock {\em Phys. Rev. A}, 93:051602, May 2016.
+\bibitem{Fernandes2012}
+D.~Rio Fernandes, F.~Sievers, N.~Kretzschmar, S.~Wu, C~Salomon, and F.~Chevy.
+\newblock Sub-doppler laser cooling of fermionic 40k atoms in three-dimensional
+  gray optical molasses.
+\newblock {\em Europhysics Letters}, 100:63001, Dec 2012.
 
 \end{thebibliography}

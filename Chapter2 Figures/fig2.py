@@ -66,7 +66,7 @@ line0 = odpanel.plot(trange*1.0e6, [outputTuple[0] for i in trange], 'b-', linew
 line1 = odpanel.plot(trange*1.0e6, outputTuple[2], 'g-', linewidth=2, label="$OD_1$")
 line2 = odpanel.plot(trange*1.0e6, outputTuple[3], 'r-', linewidth=2, label="$OD_2$")
 odpanel.set_xlabel("Imaging time [us]")
-odpanel.set_ylabel("Optical Depth")
+odpanel.set_ylabel("Column density")
 odpanel.axvline(x = 25.0,linestyle='--',color = 'k')
 
 handles, labels = odpanel.get_legend_handles_labels()
