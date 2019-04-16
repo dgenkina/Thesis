@@ -126,20 +126,21 @@ where $\hbar \omega_z = \mu_{\rm B} g_F B_z/\hbar$, and the kinetic energy Hamil
 
 \section{Near-resonant atom--light interaction}\label{sec:NRatomLight}
 
-In this section, we will assume the atom can be treated as a two-level system: one with a ground state of some energy $\hbar\omega_g$ and excited state with energy $\hbar\omega_e$, with an energy difference $\hbar\omega_0$. When such an atom, starting in the ground state, is illuminated by a laser beam with frequency $\hbar\omega_{\rm{L}}$, there are three kinds of transitions that occur: during absorption the atom absorbs a photon from the laser and goes from the ground to the excited state; during stimulated emission, the atom emits a photon into the field of the laser beam and jumps from the excited to the ground state; during spontaneous emission, the atom decays to the ground state from the excited state with no help from the laser, emitting into a random vacuum mode. Stimulated emission results in coherent light co-propagating with the laser beam, while spontaneous emission results in light scattering in any direction. The rate of spontaneous emission from an excited state is given by the natural transition linewidth of the atomic transition $\Gamma$. 
+In this section, we will assume the atom can be treated as a two-level system: one with a ground state of some energy $\hbar\omega_g$ and excited state with energy $\hbar\omega_e$, with an energy difference $\hbar\omega_0$. The interaction with a light source results from the electric dipole moment of the atom $\vec{d}=-\epsilon_0\vec{r}$ interacting with the electric field of the beam $\vec{\mathcal{E}}(t,\vec{r})$, giving\cite{Fox}
+\begin{equation}
+H_{\rm L}(t) = -\vec{d}\cdot\vec{\mathcal{E}}(t,\vec{r}).
+\label{eqn:atomlight}
+\end{equation}
+
+When very weak or no light is being shined on the atom, it still experiences the interaction with vacuum light modes. Through this mechanism, an atom in the excited state may still decay to its ground state (emitting a photon). This is called spontaneous emission, and the time scale on which the decay will happen is determined by the dipole matrix element of the transition, and is known as the  natural transition linewidth of the atomic transition $\Gamma$\cite{Fox}.
 
 \subsection{Rabi oscillations}\label{sec:Rabi}
 
-On timescales short compared to $1/\Gamma$, spontaneous emission can be ignored, and an atom undergoes coherent Rabi oscillations between the ground and excited states via cycles of absorption and stimulated emission\cite{LCT}.  Let us consider the Hamiltonian 
+When strong laser light is present, and on timescales short compared to $1/\Gamma$, spontaneous emission can be ignored\cite{LCT}.  Let us consider the Hamiltonian 
 \begin{equation}
 H=H_0 + H_{\rm L}(t),
 \end{equation}
-where $H_0$ is the bare atomic Hamiltonian and $H_{\rm L}$ is the interaction with the laser beam. The interaction with the laser results from the electric dipole moment of the atom $\vec{d}=-\epsilon_0\vec{r}$ interacting with the electric field of the beam $\vec{\mathcal{E}}(t,\vec{r})$, giving
-\begin{equation}
-H_{\rm L}(t) = -\vec{d}\cdot\vec{\mathcal{E}}(t,\vec{r}).
-\end{equation}
-
-We can write the wavefunction $\Psi$ as a linear combination of the two eigenstates (for a two-level atom) of the bare Hamiltonian $H_0$ as 
+where $H_0$ is the bare atomic Hamiltonian and $H_{\rm L}$ is the interaction with the laser beam eqn. \ref{eqn:atomlight}. We can write the wavefunction $\Psi$ as a linear combination of the two eigenstates (for a two-level atom) of the bare Hamiltonian $H_0$ as 
 \begin{equation}
 \Psi = c_g(t)\phi_g ({\bf r})e^{-i\omega_g t} + c_e(t)\phi_e ({\bf r})e^{-i\omega_e t},
 \end{equation}
@@ -151,15 +152,19 @@ and
 \begin{equation}
 i\hbar\frac{{\rm d}c_e(t)}{{\rm d}t} = c_g(t) H_{\rm L}^{eg}(t)e^{i\omega_0t},
 \end{equation}
-where $\omega_0 = \omega_e - \omega_g$ is the transition frequency, $ H_{\rm L}^{ge}(t)$ is the off-diagonal element of the laser coupling Hamiltonian that couples the excited to the ground state and  $H_{\rm L}^{ge}(t)= H_{\rm L}^{eg*}(t)$. This coupling Hamiltonian can be written in terms of the electric field produced by the laser beam coupling to the electric dipole moment of the atom as
+where $\omega_0 = \omega_e - \omega_g$ is the transition frequency, $ H_{\rm L}^{ge}(t)$ is the off-diagonal element of the laser coupling Hamiltonian that couples the excited to the ground state and  $H_{\rm L}^{ge}(t)= H_{\rm L}^{eg*}(t)$. For simplicity, let's consider light propagating along \ez{}, linearly polarized light along \ex{}, $\vec{\mathcal{E}} = (\mathcal{E}_0,0,0){\rm cos}(\omega t)$. The coupling Hamiltonian can then be written as\cite{Fox}
+\begin{equation}
+ H_{\rm L}^{ge}(t) = -\mu_{ge}\mathcal{E}_0{\rm cos}(\omega t),
+\end{equation}
+where the electric dipole matrix element $\mu_{ge}=\int \phi_g^* x \phi_e$. This can be written as
 \begin{equation}
  H_{\rm L}^{ge}(t) = \hbar \Omega {\rm cos}(kz - \omega_{\rm L} t)
 \end{equation}
 with
 \begin{equation}
-\Omega = \frac{-e\mathcal{E}}{\hbar}\int \phi_g({\bf r}) {\bf r} \phi_e ({\bf r}) {\rm d}^3 r
+\Omega = \frac{\mathcal{E}_0|\mu_{ge}|}{\hbar}
 \end{equation}
-the Rabi frequency, characterizing the coupling strength between the laser field (with electric field amplitude $\mathcal{E}$) and the atom. Here, $e$ is the charge of the electron. The Rabi frequency can also be related to the natural linewidth of the atomic transition $\Gamma$ via $\Omega^2 = \frac{\Gamma\lambda_{\rm L}^3}{h(2\pi)^3}I$, with $\lambda_{\rm L}$ as the laser wavelength, $h$ as Plank's constant and $I$ as the laser intensity.
+the Rabi frequency, characterizing the coupling strength between the laser field and the atom. Here, $e$ is the charge of the electron. 
 
 To solve this Schro\"edinger equation, we make the traditional transformation to the rotating frame:
 \begin{align}
