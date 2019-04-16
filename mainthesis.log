@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2018.8.16)  16 APR 2019 16:24
 entering extended mode
 **./mainthesis.tex
@@ -2125,3 +2126,1453 @@ PDF statistics:
  660 named destinations out of 1000 (max. 500000)
  1123 words of extra memory for PDF output out of 10000 (max. 10000000)
 
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.8.17)  10 APR 2019 17:26
+entering extended mode
+**./mainthesis.tex
+(mainthesis.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 75 language(s) loaded.
+(umdthesis-2.cls
+Document Class: umdthesis-2 2006/04/26 v0.1
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (titlesec.sty
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+\ttl@box=\box26
+\beforetitleunit=\skip43
+\aftertitleunit=\skip44
+\ttl@plus=\dimen103
+\ttl@minus=\dimen104
+\ttl@toksa=\toks14
+\titlewidth=\dimen105
+\titlewidthlast=\dimen106
+\titlewidthfirst=\dimen107
+)
+(setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip45
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks15
+\ex@=\dimen108
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen109
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen110
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks16
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks17
+\eqnshift@=\dimen111
+\alignsep@=\dimen112
+\tagshift@=\dimen113
+\tagwidth@=\dimen114
+\totwidth@=\dimen115
+\lineht@=\dimen116
+\@envbody=\toks18
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks20
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen117
+\Gin@req@width=\dimen118
+) (cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 373.
+Package: cite 2010/09/10  v 5.3
+)
+(lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+) (indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+) (latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 42.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip48
+\multirow@cntb=\count100
+\multirow@dima=\skip49
+\bigstrutjot=\dimen119
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.sty"
+Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)) (tabls.sty
+\tablinesep=\dimen120
+\arraylinesep=\dimen121
+\extrarulesep=\dimen122
+\@arstdepth=\dimen123
+\@arstheight=\dimen124
+\@skip@bove=\dimen125
+)
+(C:\Users\dng5\AppData\Roaming\MiKTeX\2.9\tex\latex\wrapfig\wrapfig.sty
+\wrapoverhang=\dimen126
+\WF@size=\dimen127
+\c@WF@wrappedlines=\count101
+\WF@box=\box29
+\WF@everypar=\toks21
+Package: wrapfig 2003/01/31  v 3.6
+)
+(slashbox.sty
+slashbox style by K.Yasuoka, May 1993.
+\@slashboxa=\box30
+\@slashboxb=\box31
+\@slashboxc=\box32
+\@slashboxwd=\count102
+\@slashboxht=\count103
+\@slashsepl=\dimen128
+\@slashsepr=\dimen129
+) (longtable.sty
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip50
+\LTright=\skip51
+\LTpre=\skip52
+\LTpost=\skip53
+\LTchunksize=\count104
+\LTcapwidth=\dimen130
+\LT@head=\box33
+\LT@firsthead=\box34
+\LT@foot=\box35
+\LT@lastfoot=\box36
+\LT@cols=\count105
+\LT@rows=\count106
+\c@LT@tables=\count107
+\c@LT@chunks=\count108
+\LT@p@ftn=\toks22
+) (supertabular.sty
+Package: supertabular 2004/02/20 v4.1e the supertabular environment
+\c@tracingst=\count109
+\ST@wd=\dimen131
+\ST@rightskip=\skip54
+\ST@leftskip=\skip55
+\ST@parfillskip=\skip56
+\ST@pageleft=\dimen132
+\ST@headht=\dimen133
+\ST@tailht=\dimen134
+\ST@pagesofar=\dimen135
+\ST@pboxht=\dimen136
+\ST@lineht=\dimen137
+\ST@stretchht=\dimen138
+\ST@prevht=\dimen139
+\ST@toadd=\dimen140
+\ST@dimen=\dimen141
+\ST@pbox=\box37
+)
+(C:\Users\dng5\AppData\Roaming\MiKTeX\2.9\tex\latex\subfigure\subfigure.sty
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip57
+\subfigcapskip=\skip58
+\subfigcaptopadj=\dimen142
+\subfigbottomskip=\skip59
+\subfigcapmargin=\dimen143
+\subfiglabelskip=\skip60
+\c@subfigure=\count110
+\c@lofdepth=\count111
+\c@subtable=\count112
+\c@lotdepth=\count113
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(C:\Users\dng5\AppData\Roaming\MiKTeX\2.9\tex\latex\subfigure\subfigure.cfg)
+\subfig@top=\skip61
+\subfig@bottom=\skip62
+)
+(braket.sty) (algorithmic.sty
+Package: algorithmic 2005/07/05
+
+Document Style `algorithmic' - environment
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count114
+\calc@Bcount=\count115
+\calc@Adimen=\dimen144
+\calc@Bdimen=\dimen145
+\calc@Askip=\skip63
+\calc@Bskip=\skip64
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count116
+\calc@Cskip=\skip65
+)
+\c@ALC@line=\count117
+\c@ALC@rem=\count118
+\c@ALC@depth=\count119
+\ALC@tlm=\skip66
+\algorithmicindent=\skip67
+) (algorithm.sty
+Package: algorithm 
+
+Document Style `algorithm' - floating environment
+("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count120
+\float@exts=\toks23
+\float@box=\box38
+\@float@everytoks=\toks24
+\@floatcapt=\box39
+)
+\@float@every@algorithm=\toks25
+\c@algorithm=\count121
+)
+(C:\Users\dng5\AppData\Roaming\MiKTeX\2.9\tex\latex\bbold\bbold.sty
+Package: bbold 1994/04/06 Bbold symbol package
+)
+(C:\Users\dng5\AppData\Roaming\MiKTeX\2.9\tex\latex\was\upgreek.sty
+Package: upgreek 2003/02/12 v2.0 (WaS)
+Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
+\symugrf@m=\mathgroup5
+LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
+(Font)                  U/eur/m/n --> U/eur/b/n on input line 38.
+)
+(C:\Users\dng5\AppData\Roaming\MiKTeX\2.9\tex\latex\pdfpages\pdfpages.sty
+Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
+
+(C:\Users\dng5\AppData\Roaming\MiKTeX\2.9\tex\latex\eso-pic\eso-pic.sty
+Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+) (xcolor.sty
+Package: xcolor 2004/07/04 v2.00 LaTeX color extensions (UK)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 136.
+Package xcolor Info: Color model `cmy' added on input line 972.
+Package xcolor Info: Color model `hsb' added on input line 980.
+Package xcolor Info: Color model `HTML' added on input line 1000.
+Package xcolor Info: Color model `HSB' added on input line 1006.
+Package xcolor Info: Color model `Gray' added on input line 1012.
+))
+\AM@pagewidth=\dimen146
+\AM@pageheight=\dimen147
+
+(C:\Users\dng5\AppData\Roaming\MiKTeX\2.9\tex\latex\pdfpages\pppdftex.def
+File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box40
+\AM@global@opts=\toks26
+\AM@toc@title=\toks27
+\c@AM@survey=\count122
+\AM@templatesizebox=\box41
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
+Package hobsub Info: Skipping package `kvdefinekeys' (already loaded).
+Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package hobsub Info: Skipping package `atbegshi' (already loaded).
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen148
+\Hy@linkcounter=\count123
+\Hy@pagecounter=\count124
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count125
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4383.
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count126
+ (url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5115.
+\XeTeXLinkMargin=\dimen149
+\Fld@menulength=\count127
+\Field@Width=\dimen150
+\Fld@charsize=\dimen151
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring ON on input line 6387.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count128
+\c@Item=\count129
+\c@Hfootnote=\count130
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+\Fld@listcount=\count131
+\c@bookmark@seq@number=\count132
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip68
+)
+
+LaTeX Warning: Unused global option(s):
+    [pdflatex].
+
+(mainthesis.aux (Abstract.aux) (Titlepage.aux) (Copyright.aux)
+(Acknowledgements.aux) (AtomLightChapter.aux
+
+LaTeX Warning: Label `eqn:BHam' multiply defined.
+
+
+LaTeX Warning: Label `fig:pulsingSchematic' multiply defined.
+
+))
+\openout1 = `mainthesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+ (C:\Users\dng5\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count133
+\scratchdimen=\dimen152
+\scratchbox=\box42
+\nofMPsegments=\count134
+\nofMParguments=\count135
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count136
+\MPscratchDim=\dimen153
+\MPnumerator=\count137
+\makeMPintoPDFobject=\count138
+\everyMPtoPDFconversion=\toks29
+)
+\AtBeginShipoutBox=\box43
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+Package hyperref Info: Link coloring ON on input line 83.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count139
+)
+LaTeX Info: Redefining \ref on input line 83.
+LaTeX Info: Redefining \pageref on input line 83.
+LaTeX Info: Redefining \nameref on input line 83.
+
+(mainthesis.out) (mainthesis.out)
+\@outlinefile=\write3
+\openout3 = `mainthesis.out'.
+
+\openout2 = `Abstract.aux'.
+
+ (Abstract.tex
+LaTeX Font Info:    Try loading font information for U+lasy on input line 15.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+Overfull \hbox (13.39926pt too wide) in paragraph at lines 14--28
+  [] 
+ []
+
+[1
+
+
+{C:/Users/dng5/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]) [2]
+\openout2 = `Titlepage.aux'.
+
+
+(Titlepage.tex) [3
+
+
+]
+\openout2 = `Copyright.aux'.
+
+ (Copyright.tex
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 13.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
+ [4
+
+
+] [5])
+\openout2 = `Acknowledgements.aux'.
+
+
+(Acknowledgements.tex [2
+
+
+] [3] [4]) [5] (mainthesis.toc)
+\tf@toc=\write4
+\openout4 = `mainthesis.toc'.
+
+ [6
+
+] (mainthesis.lot)
+\tf@lot=\write5
+\openout5 = `mainthesis.lot'.
+
+
+[7] (mainthesis.lof)
+\tf@lof=\write6
+\openout6 = `mainthesis.lof'.
+
+ [8]
+\openout2 = `AtomLightChapter.aux'.
+
+ (AtomLightChapter.tex
+Chapter 2.
+
+LaTeX Warning: Citation `Griffiths' on page 1 undefined on input line 15.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.16 \begin{equation}
+                      [1
+
+]
+
+LaTeX Warning: Citation `Thomas1926' on page 2 undefined on input line 21.
+
+
+LaTeX Warning: Citation `Griffiths' on page 2 undefined on input line 21.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.28 \end{equation}
+                    [2]
+<"Chapter2 Figures/RbKatomicStruct".pdf, id=217, 448.07399pt x 484.51414pt>
+File: "Chapter2 Figures/RbKatomicStruct".pdf Graphic file (type pdf)
+<use "Chapter2 Figures/RbKatomicStruct".pdf>
+Package pdftex.def Info: "Chapter2 Figures/RbKatomicStruct".pdf  used on input 
+line 39.
+(pdftex.def)             Requested size: 448.07288pt x 484.51297pt.
+
+Overfull \hbox (21.68033pt too wide) in paragraph at lines 39--40
+[][] 
+ []
+
+
+LaTeX Warning: Citation `Steck' on page 3 undefined on input line 40.
+
+
+LaTeX Warning: Citation `Tiecke' on page 3 undefined on input line 40.
+
+
+LaTeX Warning: Citation `Steck' on page 3 undefined on input line 40.
+
+
+LaTeX Warning: Citation `Tiecke' on page 3 undefined on input line 40.
+
+
+LaTeX Warning: Citation `Arimondo1977' on page 3 undefined on input line 49.
+
+
+LaTeX Warning: Citation `Steck' on page 3 undefined on input line 49.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.50 \begin{equation}
+                      [3]pdfTeX warning (ext4): destination with the same ident
+ifier (name{page.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.50 \begin{equation}
+                      [4 <./Chapter2 Figures/RbKatomicStruct.pdf>]
+
+LaTeX Warning: Citation `Arimondo1977' on page 5 undefined on input line 55.
+
+
+LaTeX Warning: Citation `Steck' on page 5 undefined on input line 55.
+
+
+LaTeX Warning: Citation `Steck' on page 5 undefined on input line 59.
+
+
+LaTeX Warning: Citation `Tiecke' on page 5 undefined on input line 59.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.62 
+      [5] [6]
+<"Chapter2 Figures/BreitRabi".pdf, id=253, 433.62pt x 216.81pt>
+File: "Chapter2 Figures/BreitRabi".pdf Graphic file (type pdf)
+<use "Chapter2 Figures/BreitRabi".pdf>
+Package pdftex.def Info: "Chapter2 Figures/BreitRabi".pdf  used on input line 9
+3.
+(pdftex.def)             Requested size: 433.61894pt x 216.80946pt.
+
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 93--94
+[][] 
+ []
+
+
+LaTeX Warning: Citation `BreitRabi' on page 7 undefined on input line 98.
+
+[7] [8 <./Chapter2 Figures/BreitRabi.pdf>]
+
+LaTeX Warning: Citation `LCT' on page 9 undefined on input line 133.
+
+[9] [10] [11]
+
+LaTeX Warning: Citation `LCT' on page 12 undefined on input line 193.
+
+[12]
+<"Chapter4 Figures/ARPfigure".pdf, id=348, 433.62pt x 216.81pt>
+File: "Chapter4 Figures/ARPfigure".pdf Graphic file (type pdf)
+<use "Chapter4 Figures/ARPfigure".pdf>
+Package pdftex.def Info: "Chapter4 Figures/ARPfigure".pdf  used on input line 2
+06.
+(pdftex.def)             Requested size: 433.61894pt x 216.80946pt.
+
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 206--207
+[][] 
+ []
+
+[13] [14 <./Chapter4 Figures/ARPfigure.pdf>] [15]
+<"Chapter2 Figures/Picture1a".pdf, id=402, 794.97pt x 1228.59pt>
+File: "Chapter2 Figures/Picture1a".pdf Graphic file (type pdf)
+<use "Chapter2 Figures/Picture1a".pdf>
+Package pdftex.def Info: "Chapter2 Figures/Picture1a".pdf  used on input line 2
+43.
+(pdftex.def)             Requested size: 357.7332pt x 552.8604pt.
+<"Chapter2 Figures/Picture1c".pdf, id=403, 173.448pt x 187.902pt>
+File: "Chapter2 Figures/Picture1c".pdf Graphic file (type pdf)
+<use "Chapter2 Figures/Picture1c".pdf>
+Package pdftex.def Info: "Chapter2 Figures/Picture1c".pdf  used on input line 2
+44.
+(pdftex.def)             Requested size: 156.10175pt x 169.11023pt.
+<"Chapter2 Figures/Picture1b".pdf, id=404, 794.97pt x 1228.59pt>
+File: "Chapter2 Figures/Picture1b".pdf Graphic file (type pdf)
+<use "Chapter2 Figures/Picture1b".pdf>
+Package pdftex.def Info: "Chapter2 Figures/Picture1b".pdf  used on input line 2
+45.
+(pdftex.def)             Requested size: 397.48402pt x 614.2935pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--246
+[][]
+ []
+
+
+Overfull \hbox (129.8043pt too wide) in paragraph at lines 243--246
+[][] [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 690.55722pt on input line 248.
+
+[16] [17 <./Chapter2 Figures/Picture1a.pdf, page is rotated 90 degrees> <./Chap
+ter2 Figures/Picture1c.pdf> <./Chapter2 Figures/Picture1b.pdf, page is rotated 
+90 degrees>]
+
+LaTeX Warning: Reference `AbsorptionImagingChapter' on page 18 undefined on inp
+ut line 264.
+
+[18] [19]
+
+LaTeX Warning: Citation `Ashcroft' on page 20 undefined on input line 283.
+
+[20]
+Overfull \hbox (18.0806pt too wide) detected at line 311
+[]\OML/cmm/m/it/12 H[] \OT1/cmr/m/n/12 = [] [] \OML/cmm/m/it/12 ;
+ []
+
+[21]
+<"Chapter4 Figures/figure1".pdf, id=484, 448.07399pt x 289.08pt>
+File: "Chapter4 Figures/figure1".pdf Graphic file (type pdf)
+<use "Chapter4 Figures/figure1".pdf>
+Package pdftex.def Info: "Chapter4 Figures/figure1".pdf  used on input line 337
+.
+(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
+
+Overfull \hbox (21.68033pt too wide) in paragraph at lines 337--338
+[][] 
+ []
+
+[22] [23 <./Chapter4 Figures/figure1.pdf>] [24]
+
+LaTeX Warning: Citation `Marzari2012' on page 25 undefined on input line 366.
+
+[25]
+<"Chapter4 Figures/figure2".pdf, id=527, 448.07399pt x 289.08pt>
+File: "Chapter4 Figures/figure2".pdf Graphic file (type pdf)
+<use "Chapter4 Figures/figure2".pdf>
+Package pdftex.def Info: "Chapter4 Figures/figure2".pdf  used on input line 384
+.
+(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
+
+Overfull \hbox (21.68033pt too wide) in paragraph at lines 384--385
+[][] 
+ []
+
+<"Chapter4 Figures/LatticePulsing".pdf, id=533, 448.07399pt x 289.08pt>
+File: "Chapter4 Figures/LatticePulsing".pdf Graphic file (type pdf)
+<use "Chapter4 Figures/LatticePulsing".pdf>
+Package pdftex.def Info: "Chapter4 Figures/LatticePulsing".pdf  used on input l
+ine 395.
+(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
+
+Overfull \hbox (21.68033pt too wide) in paragraph at lines 395--396
+[][] 
+ []
+
+[26] [27 <./Chapter4 Figures/figure2.pdf>]
+<"Chapter4 Figures/figure3".pdf, id=568, 448.07399pt x 289.08pt>
+File: "Chapter4 Figures/figure3".pdf Graphic file (type pdf)
+<use "Chapter4 Figures/figure3".pdf>
+Package pdftex.def Info: "Chapter4 Figures/figure3".pdf  used on input line 403
+.
+(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
+
+Overfull \hbox (21.68033pt too wide) in paragraph at lines 403--404
+[][] 
+ []
+
+[28 <./Chapter4 Figures/LatticePulsing.pdf>]
+
+LaTeX Warning: Reference `chap:SynDim' on page 29 undefined on input line 411.
+
+
+LaTeX Warning: Reference `chap:BlochOsc' on page 29 undefined on input line 411
+.
+
+
+LaTeX Warning: Citation `LCT' on page 29 undefined on input line 417.
+
+[29] [30 <./Chapter4 Figures/figure3.pdf>]
+<"Chapter2 Figures/RfRamanSetup".png, id=651, 456.2646pt x 178.7478pt>
+File: "Chapter2 Figures/RfRamanSetup".png Graphic file (type png)
+<use "Chapter2 Figures/RfRamanSetup".png>
+Package pdftex.def Info: "Chapter2 Figures/RfRamanSetup".png  used on input lin
+e 443.
+(pdftex.def)             Requested size: 456.26349pt x 178.74734pt.
+
+Overfull \hbox (29.87094pt too wide) in paragraph at lines 443--444
+[][] 
+ []
+
+
+LaTeX Warning: Citation `Karina2012' on page 31 undefined on input line 444.
+
+
+LaTeX Warning: Citation `Karina2012' on page 31 undefined on input line 444.
+
+[31 <./Chapter2 Figures/RfRamanSetup.png>]
+<"Chapter4 Figures/rfBandStructure".pdf, id=668, 448.07399pt x 289.08pt>
+File: "Chapter4 Figures/rfBandStructure".pdf Graphic file (type pdf)
+<use "Chapter4 Figures/rfBandStructure".pdf>
+Package pdftex.def Info: "Chapter4 Figures/rfBandStructure".pdf  used on input 
+line 451.
+(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
+
+Overfull \hbox (21.68033pt too wide) in paragraph at lines 451--452
+[][] 
+ []
+
+
+LaTeX Warning: Citation `SteckTextbook' on page 32 undefined on input line 458.
+
+
+[32] [33 <./Chapter4 Figures/rfBandStructure.pdf>] [34]
+<"Chapter4 Figures/RamanBandStructure".pdf, id=737, 448.07399pt x 289.08pt>
+File: "Chapter4 Figures/RamanBandStructure".pdf Graphic file (type pdf)
+<use "Chapter4 Figures/RamanBandStructure".pdf>
+Package pdftex.def Info: "Chapter4 Figures/RamanBandStructure".pdf  used on inp
+ut line 484.
+(pdftex.def)             Requested size: 448.07288pt x 289.07928pt.
+
+Overfull \hbox (21.68033pt too wide) in paragraph at lines 484--485
+[][] 
+ []
+
+[35] [36 <./Chapter4 Figures/RamanBandStructure.pdf>]
+<"Chapter4 Figures/RfPulsing".pdf, id=797, 448.07399pt x 433.62pt>
+File: "Chapter4 Figures/RfPulsing".pdf Graphic file (type pdf)
+<use "Chapter4 Figures/RfPulsing".pdf>
+Package pdftex.def Info: "Chapter4 Figures/RfPulsing".pdf  used on input line 5
+02.
+(pdftex.def)             Requested size: 448.07288pt x 433.61894pt.
+
+Overfull \hbox (21.68033pt too wide) in paragraph at lines 502--503
+[][] 
+ []
+
+[37] [38 <./Chapter4 Figures/RfPulsing.pdf>]
+<"Chapter4 Figures/RamanPulsing".pdf, id=847, 448.07399pt x 433.62pt>
+File: "Chapter4 Figures/RamanPulsing".pdf Graphic file (type pdf)
+<use "Chapter4 Figures/RamanPulsing".pdf>
+Package pdftex.def Info: "Chapter4 Figures/RamanPulsing".pdf  used on input lin
+e 510.
+(pdftex.def)             Requested size: 448.07288pt x 433.61894pt.
+
+Overfull \hbox (21.68033pt too wide) in paragraph at lines 510--511
+[][] 
+ []
+
+
+LaTeX Warning: Reference `fig:rfBandStruct' on page 39 undefined on input line 
+515.
+
+) [39] [40 <./Chapter4 Figures/RamanPulsing.pdf>]
+\openout2 = `IntroChapter.aux'.
+
+ (IntroChapter.tex
+Chapter 3.
+
+LaTeX Warning: Reference `sec:BECintro' on page 41 undefined on input line 4.
+
+
+LaTeX Warning: Reference `sec:DFGintro' on page 41 undefined on input line 4.
+
+
+LaTeX Warning: Reference `sec:RbK' on page 41 undefined on input line 4.
+
+[41
+
+
+] [42] [43]
+
+LaTeX Warning: Reference `fig:BoseDistribution' on page 44 undefined on input l
+ine 65.
+
+
+LaTeX Warning: Reference `eqn:excitedPopulation' on page 44 undefined on input 
+line 65.
+
+
+LaTeX Warning: Reference `eqn:groundPopulation' on page 44 undefined on input l
+ine 65.
+
+<"BEC_DFG figures/condensation".pdf, id=925, 375.804pt x 216.81pt>
+File: "BEC_DFG figures/condensation".pdf Graphic file (type pdf)
+<use "BEC_DFG figures/condensation".pdf>
+Package pdftex.def Info: "BEC_DFG figures/condensation".pdf  used on input line
+ 68.
+(pdftex.def)             Requested size: 375.80309pt x 216.80946pt.
+[44]
+
+LaTeX Warning: Reference `fig:BoseDistribution' on page 45 undefined on input l
+ine 82.
+
+[45 <./BEC_DFG figures/condensation.pdf>]
+
+LaTeX Warning: Reference `eqn:tc' on page 46 undefined on input line 88.
+
+<"BEC_DFG figures/CondensingAtoms".png, id=957, 450.483pt x 156.1032pt>
+File: "BEC_DFG figures/CondensingAtoms".png Graphic file (type png)
+<use "BEC_DFG figures/CondensingAtoms".png>
+Package pdftex.def Info: "BEC_DFG figures/CondensingAtoms".png  used on input l
+ine 91.
+(pdftex.def)             Requested size: 450.48189pt x 156.1028pt.
+
+Overfull \hbox (24.08934pt too wide) in paragraph at lines 91--92
+[][] 
+ []
+
+
+LaTeX Warning: Reference `fig:CondensingAtoms' on page 46 undefined on input li
+ne 96.
+
+
+LaTeX Warning: Reference `fig:CondensingAtoms' on page 46 undefined on input li
+ne 96.
+
+
+LaTeX Warning: Reference `fig:CondensingAtoms' on page 46 undefined on input li
+ne 96.
+
+
+LaTeX Warning: Reference `fig:CondensingAtoms' on page 46 undefined on input li
+ne 96.
+
+[46 <./BEC_DFG figures/CondensingAtoms.png>] [47] [48]
+<"BEC_DFG figures/InSitu".pdf, id=984, 325.215pt x 433.62pt>
+File: "BEC_DFG figures/InSitu".pdf Graphic file (type pdf)
+<use "BEC_DFG figures/InSitu".pdf>
+Package pdftex.def Info: "BEC_DFG figures/InSitu".pdf  used on input line 136.
+(pdftex.def)             Requested size: 325.2142pt x 433.61894pt.
+
+
+LaTeX Warning: Reference `fig:InSitu' on page 49 undefined on input line 141.
+
+
+LaTeX Warning: Reference `fig:InSitu' on page 49 undefined on input line 141.
+
+[49] [50 <./BEC_DFG figures/InSitu.pdf>]
+
+LaTeX Warning: Reference `eqn:numberOfStates' on page 51 undefined on input lin
+e 158.
+
+[51]
+
+LaTeX Warning: Reference `eqn:densityOfStates' on page 52 undefined on input li
+ne 172.
+
+<"BEC_DFG figures/FermiDist".pdf, id=1019, 448.07399pt x 216.81pt>
+File: "BEC_DFG figures/FermiDist".pdf Graphic file (type pdf)
+<use "BEC_DFG figures/FermiDist".pdf>
+Package pdftex.def Info: "BEC_DFG figures/FermiDist".pdf  used on input line 17
+9.
+(pdftex.def)             Requested size: 448.07288pt x 216.80946pt.
+
+Overfull \hbox (21.68033pt too wide) in paragraph at lines 179--180
+[][] 
+ []
+
+
+LaTeX Warning: Reference `fig:FermiDist' on page 52 undefined on input line 184
+.
+
+[52] [53 <./BEC_DFG figures/FermiDist.pdf>]
+
+LaTeX Warning: Reference `fig:FeshbachSchematic' on page 54 undefined on input 
+line 193.
+
+
+LaTeX Warning: Reference `fig:FeshbachSchematic' on page 54 undefined on input 
+line 195.
+
+<"BEC_DFG figures/Feshbach_plots".pdf, id=1054, 433.62pt x 180.675pt>
+File: "BEC_DFG figures/Feshbach_plots".pdf Graphic file (type pdf)
+<use "BEC_DFG figures/Feshbach_plots".pdf>
+Package pdftex.def Info: "BEC_DFG figures/Feshbach_plots".pdf  used on input li
+ne 198.
+(pdftex.def)             Requested size: 433.61894pt x 180.67455pt.
+
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 198--199
+[][] 
+ []
+
+[54] [55 <./BEC_DFG figures/Feshbach_plots.pdf>]
+
+LaTeX Warning: Reference `fig:ExperimentPicture' on page 56 undefined on input 
+line 216.
+
+<"BEC_DFG figures/ExperimentPicture".png, id=1097, 433.62pt x 338.7054pt>
+File: "BEC_DFG figures/ExperimentPicture".png Graphic file (type png)
+<use "BEC_DFG figures/ExperimentPicture".png>
+Package pdftex.def Info: "BEC_DFG figures/ExperimentPicture".png  used on input
+ line 219.
+(pdftex.def)             Requested size: 433.61894pt x 338.70457pt.
+
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 219--220
+[][] 
+ []
+
+
+LaTeX Warning: Reference `fig:BirdsEyeApparatus' on page 56 undefined on input 
+line 225.
+
+
+LaTeX Warning: Reference `fig:BirdsEyeApparatus' on page 56 undefined on input 
+line 225.
+
+
+LaTeX Warning: Reference `fig:BirdsEyeApparatus' on page 56 undefined on input 
+line 225.
+
+
+LaTeX Warning: Reference `sec:BECchanges' on page 56 undefined on input line 22
+5.
+
+
+LaTeX Warning: Reference `sec:BECchanges' on page 56 undefined on input line 22
+5.
+
+<"BEC_DFG figures/BirdsEyeApparatus".pdf, id=1098, 439.72781pt x 417.3482pt>
+File: "BEC_DFG figures/BirdsEyeApparatus".pdf Graphic file (type pdf)
+<use "BEC_DFG figures/BirdsEyeApparatus".pdf>
+Package pdftex.def Info: "BEC_DFG figures/BirdsEyeApparatus".pdf  used on input
+ line 228.
+(pdftex.def)             Requested size: 439.72673pt x 417.34718pt.
+
+Overfull \hbox (13.33418pt too wide) in paragraph at lines 228--229
+[][] 
+ []
+
+
+LaTeX Warning: Reference `fig:BirdsEyeApparatus' on page 56 undefined on input 
+line 233.
+
+
+LaTeX Warning: Reference `sec:BECchanges' on page 56 undefined on input line 23
+3.
+
+[56] [57 <./BEC_DFG figures/ExperimentPicture.png>] [58 <./BEC_DFG figures/Bird
+sEyeApparatus.pdf>]
+
+LaTeX Warning: Reference `chap:SynDim' on page 59 undefined on input line 235.
+
+
+LaTeX Warning: Reference `chap:BlochOsc' on page 59 undefined on input line 235
+.
+
+
+LaTeX Warning: Reference `chap:SynDim' on page 59 undefined on input line 237.
+
+
+LaTeX Warning: Reference `chap:BlochOsc' on page 59 undefined on input line 237
+.
+
+
+LaTeX Warning: Reference `fig:BirdsEyeApparatus' on page 59 undefined on input 
+line 239.
+
+
+LaTeX Warning: Reference `sec:DFGsequence' on page 59 undefined on input line 2
+39.
+
+
+LaTeX Warning: Reference `chap:SwaveScattering' on page 59 undefined on input l
+ine 239.
+
+[59]
+<"BEC_DFG figures/ApparatusCoils".pdf, id=1133, 391.30692pt x 169.00339pt>
+File: "BEC_DFG figures/ApparatusCoils".pdf Graphic file (type pdf)
+<use "BEC_DFG figures/ApparatusCoils".pdf>
+Package pdftex.def Info: "BEC_DFG figures/ApparatusCoils".pdf  used on input li
+ne 243.
+(pdftex.def)             Requested size: 391.30595pt x 169.00298pt.
+
+
+LaTeX Warning: Reference `fig:ApparatusCoils' on page 60 undefined on input lin
+e 248.
+
+
+LaTeX Warning: Reference `chap:SwaveScattering' on page 60 undefined on input l
+ine 248.
+
+[60 <./BEC_DFG figures/ApparatusCoils.pdf>]
+
+LaTeX Warning: Reference `fig:BirdsEyeApparatus' on page 61 undefined on input 
+line 255.
+
+
+LaTeX Warning: Reference `fig:BirdsEyeApparatus' on page 61 undefined on input 
+line 255.
+
+[61]
+
+LaTeX Warning: Reference `fig:BirdsEyeApparatus' on page 62 undefined on input 
+line 257.
+
+
+LaTeX Warning: Reference `fig:BirdsEyeApparatus' on page 62 undefined on input 
+line 257.
+
+
+LaTeX Warning: Reference `fig:BirdsEyeApparatus' on page 62 undefined on input 
+line 259.
+
+[62]
+
+LaTeX Warning: Reference `fig:BirdsEyeApparatus' on page 63 undefined on input 
+line 263.
+
+[63]
+<"BEC_DFG figures/NewMasterBoard".png, id=1264, 433.62pt x 243.7908pt>
+File: "BEC_DFG figures/NewMasterBoard".png Graphic file (type png)
+<use "BEC_DFG figures/NewMasterBoard".png>
+Package pdftex.def Info: "BEC_DFG figures/NewMasterBoard".png  used on input li
+ne 272.
+(pdftex.def)             Requested size: 433.61894pt x 243.7902pt.
+
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 272--273
+[][] 
+ []
+
+
+LaTeX Warning: Reference `fig:NewMasterBoard' on page 64 undefined on input lin
+e 277.
+
+[64 <./BEC_DFG figures/NewMasterBoard.png>] [65]
+
+LaTeX Warning: Reference `fig:HsinIsImagingBottomSchematic' on page 66 undefine
+d on input line 286.
+
+
+LaTeX Warning: Reference `fig:BirdsEyeApparatus' on page 66 undefined on input 
+line 286.
+
+<"BEC_DFG figures/HsinIsImagingBottomSchematic".png, id=1281, 397.485pt x 298.7
+16pt>
+File: "BEC_DFG figures/HsinIsImagingBottomSchematic".png Graphic file (type png
+)
+<use "BEC_DFG figures/HsinIsImagingBottomSchematic".png>
+Package pdftex.def Info: "BEC_DFG figures/HsinIsImagingBottomSchematic".png  us
+ed on input line 288.
+(pdftex.def)             Requested size: 397.48402pt x 298.71526pt.
+
+LaTeX Warning: Reference `fig:HsinIsImagingLens' on page 66 undefined on input 
+line 293.
+
+<"BEC_DFG figures/HsinIsImagingLens".png, id=1282, 332.9238pt x 179.2296pt>
+File: "BEC_DFG figures/HsinIsImagingLens".png Graphic file (type png)
+<use "BEC_DFG figures/HsinIsImagingLens".png>
+Package pdftex.def Info: "BEC_DFG figures/HsinIsImagingLens".png  used on input
+ line 295.
+(pdftex.def)             Requested size: 332.92297pt x 179.22914pt.
+[66] [67 <./BEC_DFG figures/HsinIsImagingBottomSchematic.png>]
+
+LaTeX Warning: Reference `fig:HsinIsImaging' on page 68 undefined on input line
+ 300.
+
+<"BEC_DFG figures/HsinI's imaging path".png, id=1295, 408.91231pt x 281.05pt>
+File: "BEC_DFG figures/HsinI's imaging path".png Graphic file (type png)
+<use "BEC_DFG figures/HsinI's imaging path".png>
+Package pdftex.def Info: "BEC_DFG figures/HsinI's imaging path".png  used on in
+put line 302.
+(pdftex.def)             Requested size: 408.9113pt x 281.0493pt.
+[68 <./BEC_DFG figures/HsinIsImagingLens.png>] [69 <./BEC_DFG figures/HsinI's i
+maging path.png>] [70]
+
+LaTeX Warning: Reference `fig:FPGAservoTurnOn' on page 71 undefined on input li
+ne 317.
+
+
+LaTeX Warning: Reference `fig:FPGAservoTurnOn' on page 71 undefined on input li
+ne 319.
+
+<"BEC_DFG figures/FPGAservoTurnOn".png, id=1315, 419.166pt x 542.9886pt>
+File: "BEC_DFG figures/FPGAservoTurnOn".png Graphic file (type png)
+<use "BEC_DFG figures/FPGAservoTurnOn".png>
+Package pdftex.def Info: "BEC_DFG figures/FPGAservoTurnOn".png  used on input l
+ine 322.
+(pdftex.def)             Requested size: 419.16498pt x 542.98727pt.
+
+LaTeX Warning: Reference `fig:FPGAservoCalib' on page 71 undefined on input lin
+e 327.
+
+<"BEC_DFG figures/FPGAservoCalib".png, id=1316, 433.62pt x 299.6713pt>
+File: "BEC_DFG figures/FPGAservoCalib".png Graphic file (type png)
+<use "BEC_DFG figures/FPGAservoCalib".png>
+Package pdftex.def Info: "BEC_DFG figures/FPGAservoCalib".png  used on input li
+ne 329.
+(pdftex.def)             Requested size: 433.61894pt x 299.67055pt.
+
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 329--330
+[][] 
+ []
+
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ú in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ù in font cmr12!
+
+Overfull \hbox (7.54153pt too wide) in paragraph at lines 327--334
+\OT1/cmr/m/n/12 drive un-der 'RbK/Lab Note-book/Electonics/FPGA Quad Servo (Fro
+m Ryan)'. When
+ []
+
+[71] [72 <./BEC_DFG figures/FPGAservoTurnOn.png>] [73 <./BEC_DFG figures/FPGAse
+rvoCalib.png>]
+
+LaTeX Warning: Reference `chap:BlochOsc' on page 74 undefined on input line 336
+.
+
+<"BEC_DFG figures/ODTlensSchematic".png, id=1335, 446.6286pt x 142.131pt>
+File: "BEC_DFG figures/ODTlensSchematic".png Graphic file (type png)
+<use "BEC_DFG figures/ODTlensSchematic".png>
+Package pdftex.def Info: "BEC_DFG figures/ODTlensSchematic".png  used on input 
+line 351.
+(pdftex.def)             Requested size: 446.6275pt x 142.13063pt.
+
+Overfull \hbox (20.23495pt too wide) in paragraph at lines 351--352
+[][] 
+ []
+
+
+LaTeX Warning: Reference `fig:ODTlensSchematic' on page 74 undefined on input l
+ine 356.
+
+
+LaTeX Warning: Reference `fig:ODTlensGraphs' on page 74 undefined on input line
+ 356.
+
+
+LaTeX Warning: Reference `fig:ODTlensGraphs' on page 74 undefined on input line
+ 358.
+
+
+LaTeX Warning: Reference `chap:BlochOsc' on page 74 undefined on input line 358
+.
+
+[74]
+<"BEC_DFG figures/ODTlensGraphs".png, id=1341, 433.62pt x 495.7722pt>
+File: "BEC_DFG figures/ODTlensGraphs".png Graphic file (type png)
+<use "BEC_DFG figures/ODTlensGraphs".png>
+Package pdftex.def Info: "BEC_DFG figures/ODTlensGraphs".png  used on input lin
+e 361.
+(pdftex.def)             Requested size: 433.61894pt x 495.77098pt.
+
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 361--362
+[][] 
+ []
+
+
+LaTeX Warning: Reference `sec:Feshbach' on page 75 undefined on input line 368.
+
+
+
+LaTeX Warning: Reference `fig:BirdsEyeApparatus' on page 75 undefined on input 
+line 368.
+
+
+LaTeX Warning: Reference `fig:BirdsEyeApparatus' on page 75 undefined on input 
+line 368.
+
+[75 <./BEC_DFG figures/ODTlensSchematic.png>] [76 <./BEC_DFG figures/ODTlensGra
+phs.png>] [77] [78]
+
+LaTeX Warning: Reference `fig:2DMOTschematic' on page 79 undefined on input lin
+e 383.
+
+
+Overfull \hbox (0.33328pt too wide) in paragraph at lines 383--384
+[]\OT1/cmr/m/n/12 The de-sign of our 2D MOT is closely based on the de-sign in 
+Thomas Uehlinger's
+ []
+
+
+LaTeX Warning: Reference `fig:2DMOTcellPhoto' on page 79 undefined on input lin
+e 385.
+
+
+LaTeX Warning: Reference `fig:2DMOTschematic' on page 79 undefined on input lin
+e 385.
+
+<"BEC_DFG figures/2DMOTschematic".png, id=1374, 493.3632pt x 396.5214pt>
+File: "BEC_DFG figures/2DMOTschematic".png Graphic file (type png)
+<use "BEC_DFG figures/2DMOTschematic".png>
+Package pdftex.def Info: "BEC_DFG figures/2DMOTschematic".png  used on input li
+ne 389.
+(pdftex.def)             Requested size: 493.362pt x 396.52042pt.
+
+Overfull \hbox (66.96945pt too wide) in paragraph at lines 389--390
+[][] 
+ []
+
+
+LaTeX Warning: Reference `fig:2DMOTcellPhoto' on page 79 undefined on input lin
+e 394.
+
+<"BEC_DFG figures/2DMOTcellPhoto".png, id=1376, 433.62pt x 243.7908pt>
+File: "BEC_DFG figures/2DMOTcellPhoto".png Graphic file (type png)
+<use "BEC_DFG figures/2DMOTcellPhoto".png>
+Package pdftex.def Info: "BEC_DFG figures/2DMOTcellPhoto".png  used on input li
+ne 396.
+(pdftex.def)             Requested size: 433.61894pt x 243.7902pt.
+
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 396--397
+[][] 
+ []
+
+[79] [80 <./BEC_DFG figures/2DMOTschematic.png>]
+
+LaTeX Warning: Reference `fig:2DMOToptics' on page 81 undefined on input line 4
+01.
+
+[81 <./BEC_DFG figures/2DMOTcellPhoto.png>]
+
+LaTeX Warning: Reference `fig:2DMOToptics' on page 82 undefined on input line 4
+05.
+
+
+LaTeX Warning: Reference `fig:2DMOToptics' on page 82 undefined on input line 4
+05.
+
+<"BEC_DFG figures/2DMOToptics".pdf, id=1396, 433.62pt x 233.09586pt>
+File: "BEC_DFG figures/2DMOToptics".pdf Graphic file (type pdf)
+<use "BEC_DFG figures/2DMOToptics".pdf>
+Package pdftex.def Info: "BEC_DFG figures/2DMOToptics".pdf  used on input line 
+408.
+(pdftex.def)             Requested size: 433.61894pt x 233.09528pt.
+
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 408--409
+[][] 
+ []
+
+
+LaTeX Warning: Reference `fig:Current2DMOTphoto' on page 82 undefined on input 
+line 413.
+
+<"BEC_DFG figures/Current2DMOTphoto".png, id=1397, 433.62pt x 244.2726pt>
+File: "BEC_DFG figures/Current2DMOTphoto".png Graphic file (type png)
+<use "BEC_DFG figures/Current2DMOTphoto".png>
+Package pdftex.def Info: "BEC_DFG figures/Current2DMOTphoto".png  used on input
+ line 415.
+(pdftex.def)             Requested size: 433.61894pt x 244.272pt.
+
+Overfull \hbox (7.2264pt too wide) in paragraph at lines 415--416
+[][] 
+ []
+
+[82]) [83 <./BEC_DFG figures/2DMOToptics.pdf>] [84 <./BEC_DFG figures/Current2D
+MOTphoto.png>] (mainthesis.bbl [85
+
+] [86] [87]
+Missing character: There is no √ in font cmr12!
+Missing character: There is no ± in font cmr12!
+ [88])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 161.
+ [89]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 161.
+ (mainthesis.aux
+(Abstract.aux) (Titlepage.aux) (Copyright.aux) (Acknowledgements.aux)
+(AtomLightChapter.aux) (IntroChapter.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 161.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 161.
+
+
+Package rerunfilecheck Warning: File `mainthesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `mainthesis.out':
+(rerunfilecheck)             Before: 5EA5A6D2C04FFFFE834C18B2C782E324;1727
+(rerunfilecheck)             After:  3533FB6968C8964F61881152F2DF6558;2847.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 161.
+ ) 
+Here is how much of TeX's memory you used:
+ 8592 strings out of 493305
+ 128886 string characters out of 3138877
+ 219362 words of memory out of 3000000
+ 11597 multiletter control sequences out of 15000+200000
+ 14640 words of font info for 55 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 42i,10n,42p,2002b,454s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmssi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmssi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on mainthesis.pdf (101 pages, 7420174 bytes).
+PDF statistics:
+ 1562 PDF objects out of 1728 (max. 8388607)
+ 289 named destinations out of 1000 (max. 500000)
+ 360 words of extra memory for PDF output out of 10000 (max. 10000000)
+
+>>>>>>> b69816dfbd0774bbcd21c9acc19bc822edcd0e5d

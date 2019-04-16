@@ -50,11 +50,19 @@ def ThomasFermi(x,x0,omega,A,offset):
     out[tf <= 0.0] = 0.0
     return out
 
+def ThomasFermi1d(x,x0,A,B):
+    tf = (A-B*(x-x0)**2.0)**2.0
+    out = np.zeros(x.size)
+    out[A-B*(x-x0)**2.0 > 0.0] = tf[A-B*(x-x0)**2.0 > 0.0]
+    out[A-B*(x-x0)**2.0 <= 0.0] = 0.0
+    return out
+
 def Gaussian(x,x0,sigma,A,offset):
     return A*np.exp(-((x-x0)/sigma)**2.0) + offset
     
     
-filename = 'C:/Users/swooty/Documents/Thesis Data/2017Aug20 Lattice calibrations/Flea3_20Aug2017_0074.ibw' 
+#filename = 'C:/Users/swooty/Documents/Thesis Data/2017Aug20 Lattice calibrations/Flea3_20Aug2017_0074.ibw' 
+filename = 'Y:/Data/2017/August/20/Flea3_20Aug2017_0074.ibw' 
 
 outDict = readIgor.processIBW(filename)
 od1 = outDict['od1'][330:380,250:340]
@@ -66,12 +74,13 @@ od2 = outDict['od2'][330:380,250:340]
 
 linOD = np.sum(od1,axis=0)
 xlist = np.arange(linOD.size)
-TFtry = ThomasFermi(xlist,47.0,0.5,1.0,70.0)
+TFtry = ThomasFermi1d(xlist,47.0,8.4,0.03)
 Gtry = Gaussian(xlist,47.0,12.0,70.0,0.0)
 
-popt,pcov = optimize.curve_fit(ThomasFermi, xlist,linOD, p0 = (47.0,0.5,1.0,70.0))
+popt,pcov = optimize.curve_fit(ThomasFermi1d, xlist,linOD, p0 = (47.0,8.4,0.03))
 print popt,pcov
-TFopt = ThomasFermi(xlist,*popt)
+TFopt = ThomasFermi1d(xlist,*popt)
+
 
 popt2,pcov2 = optimize.curve_fit(Gaussian, xlist,linOD, p0 = (47.0,12.0,70.0,0.0))
 print popt2,pcov2
